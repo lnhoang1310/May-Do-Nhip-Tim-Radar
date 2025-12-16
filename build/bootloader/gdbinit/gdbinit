@@ -1,0 +1,2 @@
+source D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/gdbinit/symbols
+source D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/gdbinit/connect

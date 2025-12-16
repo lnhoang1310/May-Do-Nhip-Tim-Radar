@@ -1,0 +1,35 @@
+Command: ninja flash
+[1/14] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[2/14] No install step for 'bootloader'
+[3/14] Completed 'bootloader'
+[4/14] Building C object esp-idf/Service_MQTT/CMakeFiles/__idf_Service_MQTT.dir/Service_MQTT.c.obj
+[5/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/Project_Anh_Sao.c.obj
+[6/14] Building C object esp-idf/BGT60TR13C_API_HeartRate/CMakeFiles/__idf_BGT60TR13C_API_HeartRate.dir/BGT60TR13C_API_HeartRate.c.obj
+[7/14] Linking C static library esp-idf\BGT60TR13C_API_HeartRate\libBGT60TR13C_API_HeartRate.a
+[8/14] Linking C static library esp-idf\Service_MQTT\libService_MQTT.a
+[9/14] Linking C static library esp-idf\main\libmain.a
+[10/14] Generating esp-idf/esp_system/ld/sections.ld
+[11/14] Linking CXX executable Project_Anh_Sao.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/Code/ESPIDF/Project_Anh_Sao/build/Project_Anh_Sao.bin
+[13/14] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\Project_Anh_Sao\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Code/ESPIDF/Project_Anh_Sao/build/partition_table/partition-table.bin D:/Code/ESPIDF/Project_Anh_Sao/build/Project_Anh_Sao.bin"
+Project_Anh_Sao.bin binary size 0x4a880 bytes. Smallest app partition is 0x100000 bytes. 0xb5780 bytes (71%) free.
+[13/14] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Code/ESPIDF/Project_Anh_Sao/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM16 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 Project_Anh_Sao.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM16
+
+A fatal error occurred: Could not open COM16, the port is busy or doesn't exist.
+(could not open port 'COM16': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2))
+
+Hint: Check if the port is correct and ESP connected
+
+FAILED: CMakeFiles/flash D:/Code/ESPIDF/Project_Anh_Sao/build/CMakeFiles/flash 
+C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Code/ESPIDF/Project_Anh_Sao/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.
