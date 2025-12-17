@@ -1,0 +1,1167 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\Project_Anh_Sao\build\Project_Anh_Sao.elf D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 2�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 16 2025 19:32:10[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2320ch (143884) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033234 vaddr=3fc9cb00 size=04b58h ( 19288) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00037d94 vaddr=40374000 size=08284h ( 33412) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=afe64h (720484) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000efe8c vaddr=4037c284 size=1082ch ( 67628) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=001006c0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (276) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (276) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) cpu_start: Multicore app[0m
+[0;32mI (295) cpu_start: Pro cpu start user code[0m
+[0;32mI (295) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (295) app_init: Application information:[0m
+[0;32mI (295) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (300) app_init: App version:      1[0m
+[0;32mI (303) app_init: Compile time:     Dec 16 2025 19:30:56[0m
+[0;32mI (308) app_init: ELF file SHA256:  e02234548...[0m
+[0;32mI (313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (320) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (324) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (328) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (334) heap_init: At 3FCA5D98 len 00043978 (270 KiB): RAM[0m
+[0;32mI (339) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (345) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (350) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: boya[0m
+[0;32mI (359) spi_flash: flash io: dio[0m
+[0;33mW (361) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (374) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (380) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (437) pp: pp rom version: e7ae62f[0m
+[0;32mI (437) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (447) wifi:wifi driver task: 3fcaab88, prio:23, stack:6656, core=0[0m
+[0;32mI (457) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (457) wifi:wifi certification version: v7.0[0m
+[0;32mI (457) wifi:config NVS flash: enabled[0m
+[0;32mI (457) wifi:config nano formatting: disabled[0m
+[0;32mI (457) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (467) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (467) wifi:Init management short buffer num: 32[0m
+[0;32mI (477) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (477) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (487) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (487) wifi:Init static rx buffer num: 10[0m
+[0;32mI (487) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (497) wifi_init: rx ba win: 6[0m
+[0;32mI (497) wifi_init: accept mbox: 6[0m
+[0;32mI (497) wifi_init: tcpip mbox: 32[0m
+[0;32mI (507) wifi_init: udp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp tx win: 5760[0m
+[0;32mI (517) wifi_init: tcp rx win: 5760[0m
+[0;32mI (517) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (567) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (567) wifi:enable tsf[0m
+[0;32mI (577) WIFI: Connecting to saved WiFi: Lâm Hoàng[0m
+[1;31mE (577) wifi:sta is connecting, return error[0m
+[0;33mW (577) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (577) Main: Waiting for wifi ...[0m
+[0;33mW (1087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1087) Main: Waiting for wifi ...[0m
+[0;33mW (1587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (1587) Main: Waiting for wifi ...[0m
+[0;33mW (2087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2087) Main: Waiting for wifi ...[0m
+[0;33mW (2587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (2587) Main: Waiting for wifi ...[0m
+[0;32mI (2987) WIFI: Disconnected, retrying...[0m
+[0;33mW (3087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3087) Main: Waiting for wifi ...[0m
+[0;33mW (3587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (3587) Main: Waiting for wifi ...[0m
+[0;33mW (4087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4087) Main: Waiting for wifi ...[0m
+[0;33mW (4587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (4587) Main: Waiting for wifi ...[0m
+[0;33mW (5087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5087) Main: Waiting for wifi ...[0m
+[0;32mI (5397) WIFI: Disconnected, retrying...[0m
+[0;33mW (5587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (5587) Main: Waiting for wifi ...[0m
+[0;33mW (6087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6087) Main: Waiting for wifi ...[0m
+[0;33mW (6587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (6587) Main: Waiting for wifi ...[0m
+[0;33mW (7087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (7087) Main: Waiting for wifi ...[0m
+[0;33mW (7587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (7587) Main: Waiting for wifi ...[0m
+[0;32mI (7807) WIFI: Disconnected, retrying...[0m
+[0;33mW (8087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (8087) Main: Waiting for wifi ...[0m
+[0;33mW (8587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (8587) Main: Waiting for wifi ...[0m
+[0;33mW (9087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9087) Main: Waiting for wifi ...[0m
+[0;33mW (9587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (9587) Main: Waiting for wifi ...[0m
+[0;33mW (10087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (10087) Main: Waiting for wifi ...[0m
+[0;32mI (10227) WIFI: Disconnected, retrying...[0m
+[0;33mW (10587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (10587) Main: Waiting for wifi ...[0m
+[0;33mW (11087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11087) Main: Waiting for wifi ...[0m
+[0;33mW (11587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (11587) Main: Waiting for wifi ...[0m
+[0;33mW (12087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12087) Main: Waiting for wifi ...[0m
+[0;33mW (12587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (12587) Main: Waiting for wifi ...[0m
+[0;32mI (12637) WIFI: Disconnected, retrying...[0m
+[0;33mW (13087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13087) Main: Waiting for wifi ...[0m
+[0;33mW (13587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (13587) Main: Waiting for wifi ...[0m
+[0;33mW (14087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14087) Main: Waiting for wifi ...[0m
+[0;33mW (14587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (14587) Main: Waiting for wifi ...[0m
+[0;32mI (15047) WIFI: Disconnected, retrying...[0m
+[0;33mW (15087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15087) Main: Waiting for wifi ...[0m
+[0;33mW (15587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (15587) Main: Waiting for wifi ...[0m
+[0;33mW (16087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16087) Main: Waiting for wifi ...[0m
+[0;33mW (16587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (16587) Main: Waiting for wifi ...[0m
+[0;33mW (17087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17087) Main: Waiting for wifi ...[0m
+[0;32mI (17457) WIFI: Disconnected, retrying...[0m
+[0;33mW (17587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (17587) Main: Waiting for wifi ...[0m
+[0;33mW (18087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18087) Main: Waiting for wifi ...[0m
+[0;33mW (18587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (18587) Main: Waiting for wifi ...[0m
+[0;33mW (19087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19087) Main: Waiting for wifi ...[0m
+[0;33mW (19587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (19587) Main: Waiting for wifi ...[0m
+[0;32mI (19867) WIFI: Disconnected, retrying...[0m
+[0;33mW (20087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20087) Main: Waiting for wifi ...[0m
+[0;33mW (20587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (20587) Main: Waiting for wifi ...[0m
+[0;33mW (21087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21087) Main: Waiting for wifi ...[0m
+[0;33mW (21587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (21587) Main: Waiting for wifi ...[0m
+[0;33mW (22087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (22087) Main: Waiting for wifi ...[0m
+[0;32mI (22287) WIFI: Disconnected, retrying...[0m
+[0;33mW (22587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (22587) Main: Waiting for wifi ...[0m
+[0;33mW (23087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (23087) Main: Waiting for wifi ...[0m
+[0;33mW (23587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (23587) Main: Waiting for wifi ...[0m
+[0;33mW (24087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24087) Main: Waiting for wifi ...[0m
+[0;33mW (24587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (24587) Main: Waiting for wifi ...[0m
+[0;32mI (24697) WIFI: Disconnected, retrying...[0m
+[0;33mW (25087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (25087) Main: Waiting for wifi ...[0m
+[0;33mW (25587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (25587) Main: Waiting for wifi ...[0m
+[0;33mW (26087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (26087) Main: Waiting for wifi ...[0m
+[0;33mW (26587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (26587) Main: Waiting for wifi ...[0m
+[0;33mW (27087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27087) Main: Waiting for wifi ...[0m
+[0;32mI (27107) WIFI: Disconnected, retrying...[0m
+[0;33mW (27587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (27587) Main: Waiting for wifi ...[0m
+[0;33mW (28087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (28087) Main: Waiting for wifi ...[0m
+[0;33mW (28587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (28587) Main: Waiting for wifi ...[0m
+[0;33mW (29087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29087) Main: Waiting for wifi ...[0m
+[0;32mI (29517) WIFI: Disconnected, retrying...[0m
+[0;33mW (29587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (29587) Main: Waiting for wifi ...[0m
+[0;33mW (30087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (30087) Main: Waiting for wifi ...[0m
+[0;33mW (30587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (30587) Main: Waiting for wifi ...[0m
+[0;33mW (31087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (31087) Main: Waiting for wifi ...[0m
+[0;33mW (31587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (31587) Main: Waiting for wifi ...[0m
+[0;32mI (31927) WIFI: Disconnected, retrying...[0m
+[0;33mW (32087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32087) Main: Waiting for wifi ...[0m
+[0;33mW (32587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (32587) Main: Waiting for wifi ...[0m
+[0;33mW (33087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (33087) Main: Waiting for wifi ...[0m
+[0;33mW (33587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (33587) Main: Waiting for wifi ...[0m
+[0;33mW (34087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34087) Main: Waiting for wifi ...[0m
+[0;32mI (34347) WIFI: Disconnected, retrying...[0m
+[0;33mW (34587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (34587) Main: Waiting for wifi ...[0m
+[0;33mW (35087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (35087) Main: Waiting for wifi ...[0m
+[0;33mW (35587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (35587) Main: Waiting for wifi ...[0m
+[0;33mW (36087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (36087) Main: Waiting for wifi ...[0m
+[0;33mW (36587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (36587) Main: Waiting for wifi ...[0m
+[0;32mI (36757) WIFI: Disconnected, retrying...[0m
+[0;33mW (37087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37087) Main: Waiting for wifi ...[0m
+[0;33mW (37587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (37587) Main: Waiting for wifi ...[0m
+[0;33mW (38087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (38087) Main: Waiting for wifi ...[0m
+[0;33mW (38587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (38587) Main: Waiting for wifi ...[0m
+[0;33mW (39087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (39087) Main: Waiting for wifi ...[0m
+[0;32mI (39167) WIFI: Disconnected, retrying...[0m
+[0;33mW (39587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (39587) Main: Waiting for wifi ...[0m
+[0;33mW (40087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (40087) Main: Waiting for wifi ...[0m
+[0;33mW (40587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (40587) Main: Waiting for wifi ...[0m
+[0;33mW (41087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (41087) Main: Waiting for wifi ...[0m
+[0;32mI (41577) WIFI: Disconnected, retrying...[0m
+[0;33mW (41587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (41587) Main: Waiting for wifi ...[0m
+[0;33mW (42087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42087) Main: Waiting for wifi ...[0m
+[0;33mW (42587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (42587) Main: Waiting for wifi ...[0m
+[0;33mW (43087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (43087) Main: Waiting for wifi ...[0m
+[0;33mW (43587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (43587) Main: Waiting for wifi ...[0m
+[0;32mI (43987) WIFI: Disconnected, retrying...[0m
+[0;33mW (44087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (44087) Main: Waiting for wifi ...[0m
+[0;33mW (44587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (44587) Main: Waiting for wifi ...[0m
+[0;33mW (45087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45087) Main: Waiting for wifi ...[0m
+[0;33mW (45587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (45587) Main: Waiting for wifi ...[0m
+[0;33mW (46087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (46087) Main: Waiting for wifi ...[0m
+[0;32mI (46407) WIFI: Disconnected, retrying...[0m
+[0;33mW (46587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (46587) Main: Waiting for wifi ...[0m
+[0;33mW (47087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47087) Main: Waiting for wifi ...[0m
+[0;33mW (47587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (47587) Main: Waiting for wifi ...[0m
+[0;33mW (48087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (48087) Main: Waiting for wifi ...[0m
+[0;33mW (48587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (48587) Main: Waiting for wifi ...[0m
+[0;32mI (48817) WIFI: Disconnected, retrying...[0m
+[0;33mW (49087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (49087) Main: Waiting for wifi ...[0m
+[0;33mW (49587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (49587) Main: Waiting for wifi ...[0m
+[0;33mW (50087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50087) Main: Waiting for wifi ...[0m
+[0;33mW (50587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (50587) Main: Waiting for wifi ...[0m
+[0;33mW (51087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (51087) Main: Waiting for wifi ...[0m
+[0;32mI (51227) WIFI: Disconnected, retrying...[0m
+[0;33mW (51587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (51587) Main: Waiting for wifi ...[0m
+[0;33mW (52087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52087) Main: Waiting for wifi ...[0m
+[0;33mW (52587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (52587) Main: Waiting for wifi ...[0m
+[0;33mW (53087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (53087) Main: Waiting for wifi ...[0m
+[0;33mW (53587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (53587) Main: Waiting for wifi ...[0m
+[0;32mI (53637) WIFI: Disconnected, retrying...[0m
+[0;33mW (54087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (54087) Main: Waiting for wifi ...[0m
+[0;33mW (54587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (54587) Main: Waiting for wifi ...[0m
+[0;33mW (55087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55087) Main: Waiting for wifi ...[0m
+[0;33mW (55587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (55587) Main: Waiting for wifi ...[0m
+[0;32mI (56047) WIFI: Disconnected, retrying...[0m
+[0;33mW (56087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (56087) Main: Waiting for wifi ...[0m
+[0;33mW (56587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (56587) Main: Waiting for wifi ...[0m
+[0;33mW (57087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (57087) Main: Waiting for wifi ...[0m
+[0;33mW (57587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (57587) Main: Waiting for wifi ...[0m
+[0;33mW (58087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (58087) Main: Waiting for wifi ...[0m
+[0;32mI (58467) WIFI: Disconnected, retrying...[0m
+[0;33mW (58587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (58587) Main: Waiting for wifi ...[0m
+[0;33mW (59087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (59087) Main: Waiting for wifi ...[0m
+[0;33mW (59587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (59587) Main: Waiting for wifi ...[0m
+[0;33mW (60087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60087) Main: Waiting for wifi ...[0m
+[0;33mW (60587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (60587) Main: Waiting for wifi ...[0m
+[0;32mI (60877) WIFI: Disconnected, retrying...[0m
+[0;33mW (61087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (61087) Main: Waiting for wifi ...[0m
+[0;33mW (61587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (61587) Main: Waiting for wifi ...[0m
+[0;33mW (62087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (62087) Main: Waiting for wifi ...[0m
+[0;33mW (62587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (62587) Main: Waiting for wifi ...[0m
+[0;33mW (63087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63087) Main: Waiting for wifi ...[0m
+[0;32mI (63287) WIFI: Disconnected, retrying...[0m
+[0;33mW (63587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (63587) Main: Waiting for wifi ...[0m
+[0;33mW (64087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (64087) Main: Waiting for wifi ...[0m
+[0;33mW (64587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (64587) Main: Waiting for wifi ...[0m
+[0;33mW (65087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65087) Main: Waiting for wifi ...[0m
+[0;33mW (65587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (65587) Main: Waiting for wifi ...[0m
+[0;32mI (65697) WIFI: Disconnected, retrying...[0m
+[0;33mW (66087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (66087) Main: Waiting for wifi ...[0m
+[0;33mW (66587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (66587) Main: Waiting for wifi ...[0m
+[0;33mW (67087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (67087) Main: Waiting for wifi ...[0m
+[0;33mW (67587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (67587) Main: Waiting for wifi ...[0m
+[0;33mW (68087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68087) Main: Waiting for wifi ...[0m
+[0;32mI (68107) WIFI: Disconnected, retrying...[0m
+[0;33mW (68587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (68587) Main: Waiting for wifi ...[0m
+[0;33mW (69087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (69087) Main: Waiting for wifi ...[0m
+[0;33mW (69587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (69587) Main: Waiting for wifi ...[0m
+[0;33mW (70087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70087) Main: Waiting for wifi ...[0m
+[0;32mI (70527) WIFI: Disconnected, retrying...[0m
+[0;33mW (70587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (70587) Main: Waiting for wifi ...[0m
+[0;33mW (71087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (71087) Main: Waiting for wifi ...[0m
+[0;33mW (71587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (71587) Main: Waiting for wifi ...[0m
+[0;33mW (72087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (72087) Main: Waiting for wifi ...[0m
+[0;33mW (72587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (72587) Main: Waiting for wifi ...[0m
+[0;32mI (72937) WIFI: Disconnected, retrying...[0m
+[0;33mW (73087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73087) Main: Waiting for wifi ...[0m
+[0;33mW (73587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (73587) Main: Waiting for wifi ...[0m
+[0;33mW (74087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (74087) Main: Waiting for wifi ...[0m
+[0;33mW (74587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (74587) Main: Waiting for wifi ...[0m
+[0;33mW (75087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75087) Main: Waiting for wifi ...[0m
+[0;32mI (75347) WIFI: Disconnected, retrying...[0m
+[0;33mW (75587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (75587) Main: Waiting for wifi ...[0m
+[0;33mW (76087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (76087) Main: Waiting for wifi ...[0m
+[0;33mW (76587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (76587) Main: Waiting for wifi ...[0m
+[0;33mW (77087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (77087) Main: Waiting for wifi ...[0m
+[0;33mW (77587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (77587) Main: Waiting for wifi ...[0m
+[0;32mI (77757) WIFI: Disconnected, retrying...[0m
+[0;33mW (78087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (78087) Main: Waiting for wifi ...[0m
+[0;33mW (78587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (78587) Main: Waiting for wifi ...[0m
+[0;33mW (79087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (79087) Main: Waiting for wifi ...[0m
+[0;33mW (79587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (79587) Main: Waiting for wifi ...[0m
+[0;33mW (80087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (80087) Main: Waiting for wifi ...[0m
+[0;32mI (80167) WIFI: Disconnected, retrying...[0m
+[0;33mW (80587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (80587) Main: Waiting for wifi ...[0m
+[0;33mW (81087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (81087) Main: Waiting for wifi ...[0m
+[0;33mW (81587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (81587) Main: Waiting for wifi ...[0m
+[0;33mW (82087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (82087) Main: Waiting for wifi ...[0m
+[0;33mW (82587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (82587) Main: Waiting for wifi ...[0m
+[0;32mI (82587) WIFI: Disconnected, retrying...[0m
+[0;33mW (83087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (83087) Main: Waiting for wifi ...[0m
+[0;33mW (83587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (83587) Main: Waiting for wifi ...[0m
+[0;33mW (84087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (84087) Main: Waiting for wifi ...[0m
+[0;33mW (84587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (84587) Main: Waiting for wifi ...[0m
+[0;32mI (84997) WIFI: Disconnected, retrying...[0m
+[0;33mW (85087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (85087) Main: Waiting for wifi ...[0m
+[0;33mW (85587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (85587) Main: Waiting for wifi ...[0m
+[0;33mW (86087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (86087) Main: Waiting for wifi ...[0m
+[0;33mW (86587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (86587) Main: Waiting for wifi ...[0m
+[0;33mW (87087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (87087) Main: Waiting for wifi ...[0m
+[0;32mI (87407) WIFI: Disconnected, retrying...[0m
+[0;33mW (87587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (87587) Main: Waiting for wifi ...[0m
+[0;33mW (88087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (88087) Main: Waiting for wifi ...[0m
+[0;33mW (88587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (88587) Main: Waiting for wifi ...[0m
+[0;33mW (89087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (89087) Main: Waiting for wifi ...[0m
+[0;33mW (89587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (89587) Main: Waiting for wifi ...[0m
+[0;32mI (89817) WIFI: Disconnected, retrying...[0m
+[0;33mW (90087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (90087) Main: Waiting for wifi ...[0m
+[0;33mW (90587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (90587) Main: Waiting for wifi ...[0m
+[0;33mW (91087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (91087) Main: Waiting for wifi ...[0m
+[0;33mW (91587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (91587) Main: Waiting for wifi ...[0m
+[0;33mW (92087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (92087) Main: Waiting for wifi ...[0m
+[0;32mI (92237) WIFI: Disconnected, retrying...[0m
+[0;33mW (92587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (92587) Main: Waiting for wifi ...[0m
+[0;33mW (93087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (93087) Main: Waiting for wifi ...[0m
+[0;33mW (93587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (93587) Main: Waiting for wifi ...[0m
+[0;33mW (94087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (94087) Main: Waiting for wifi ...[0m
+[0;33mW (94587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (94587) Main: Waiting for wifi ...[0m
+[0;32mI (94647) WIFI: Disconnected, retrying...[0m
+[0;33mW (95087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (95087) Main: Waiting for wifi ...[0m
+[0;33mW (95587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (95587) Main: Waiting for wifi ...[0m
+[0;33mW (96087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (96087) Main: Waiting for wifi ...[0m
+[0;33mW (96587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (96587) Main: Waiting for wifi ...[0m
+[0;32mI (97057) WIFI: Disconnected, retrying...[0m
+[0;33mW (97087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (97087) Main: Waiting for wifi ...[0m
+[0;33mW (97587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (97587) Main: Waiting for wifi ...[0m
+[0;33mW (98087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (98087) Main: Waiting for wifi ...[0m
+[0;33mW (98587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (98587) Main: Waiting for wifi ...[0m
+[0;33mW (99087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (99087) Main: Waiting for wifi ...[0m
+[0;32mI (99467) WIFI: Disconnected, retrying...[0m
+[0;33mW (99587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (99587) Main: Waiting for wifi ...[0m
+[0;33mW (100087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (100087) Main: Waiting for wifi ...[0m
+[0;33mW (100587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (100587) Main: Waiting for wifi ...[0m
+[0;33mW (101087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (101087) Main: Waiting for wifi ...[0m
+[0;33mW (101587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (101587) Main: Waiting for wifi ...[0m
+[0;32mI (101877) WIFI: Disconnected, retrying...[0m
+[0;33mW (102087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (102087) Main: Waiting for wifi ...[0m
+[0;33mW (102587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (102587) Main: Waiting for wifi ...[0m
+[0;33mW (103087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (103087) Main: Waiting for wifi ...[0m
+[0;33mW (103587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (103587) Main: Waiting for wifi ...[0m
+[0;33mW (104087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (104087) Main: Waiting for wifi ...[0m
+[0;32mI (104297) WIFI: Disconnected, retrying...[0m
+[0;33mW (104587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (104587) Main: Waiting for wifi ...[0m
+[0;33mW (105087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (105087) Main: Waiting for wifi ...[0m
+[0;33mW (105587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (105587) Main: Waiting for wifi ...[0m
+[0;33mW (106087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (106087) Main: Waiting for wifi ...[0m
+[0;33mW (106587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (106587) Main: Waiting for wifi ...[0m
+[0;32mI (106707) WIFI: Disconnected, retrying...[0m
+[0;33mW (107087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (107087) Main: Waiting for wifi ...[0m
+[0;33mW (107587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (107587) Main: Waiting for wifi ...[0m
+[0;33mW (108087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (108087) Main: Waiting for wifi ...[0m
+[0;33mW (108587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (108587) Main: Waiting for wifi ...[0m
+[0;33mW (109087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (109087) Main: Waiting for wifi ...[0m
+[0;32mI (109117) WIFI: Disconnected, retrying...[0m
+[0;33mW (109587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (109587) Main: Waiting for wifi ...[0m
+[0;33mW (110087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (110087) Main: Waiting for wifi ...[0m
+[0;33mW (110587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (110587) Main: Waiting for wifi ...[0m
+[0;33mW (111087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (111087) Main: Waiting for wifi ...[0m
+[0;32mI (111527) WIFI: Disconnected, retrying...[0m
+[0;33mW (111587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (111587) Main: Waiting for wifi ...[0m
+[0;33mW (112087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (112087) Main: Waiting for wifi ...[0m
+[0;33mW (112587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (112587) Main: Waiting for wifi ...[0m
+[0;33mW (113087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (113087) Main: Waiting for wifi ...[0m
+[0;33mW (113587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (113587) Main: Waiting for wifi ...[0m
+[0;32mI (113937) WIFI: Disconnected, retrying...[0m
+[0;33mW (114087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (114087) Main: Waiting for wifi ...[0m
+[0;33mW (114587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (114587) Main: Waiting for wifi ...[0m
+[0;33mW (115087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (115087) Main: Waiting for wifi ...[0m
+[0;33mW (115587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (115587) Main: Waiting for wifi ...[0m
+[0;33mW (116087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (116087) Main: Waiting for wifi ...[0m
+[0;32mI (116357) WIFI: Disconnected, retrying...[0m
+[0;33mW (116587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (116587) Main: Waiting for wifi ...[0m
+[0;33mW (117087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (117087) Main: Waiting for wifi ...[0m
+[0;33mW (117587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (117587) Main: Waiting for wifi ...[0m
+[0;33mW (118087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (118087) Main: Waiting for wifi ...[0m
+[0;33mW (118587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (118587) Main: Waiting for wifi ...[0m
+[0;32mI (118767) WIFI: Disconnected, retrying...[0m
+[0;33mW (119087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (119087) Main: Waiting for wifi ...[0m
+[0;33mW (119587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (119587) Main: Waiting for wifi ...[0m
+[0;33mW (120087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (120087) Main: Waiting for wifi ...[0m
+[0;33mW (120587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (120587) Main: Waiting for wifi ...[0m
+[0;33mW (121087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (121087) Main: Waiting for wifi ...[0m
+[0;32mI (121177) WIFI: Disconnected, retrying...[0m
+[0;33mW (121587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (121587) Main: Waiting for wifi ...[0m
+[0;33mW (122087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (122087) Main: Waiting for wifi ...[0m
+[0;33mW (122587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (122587) Main: Waiting for wifi ...[0m
+[0;33mW (123087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (123087) Main: Waiting for wifi ...[0m
+[0;33mW (123587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (123587) Main: Waiting for wifi ...[0m
+[0;32mI (123587) WIFI: Disconnected, retrying...[0m
+[0;33mW (124087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (124087) Main: Waiting for wifi ...[0m
+[0;33mW (124587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (124587) Main: Waiting for wifi ...[0m
+[0;33mW (125087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (125087) Main: Waiting for wifi ...[0m
+[0;33mW (125587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (125587) Main: Waiting for wifi ...[0m
+[0;32mI (125997) WIFI: Disconnected, retrying...[0m
+[0;33mW (126087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (126087) Main: Waiting for wifi ...[0m
+[0;33mW (126587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (126587) Main: Waiting for wifi ...[0m
+[0;33mW (127087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (127087) Main: Waiting for wifi ...[0m
+[0;33mW (127587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (127587) Main: Waiting for wifi ...[0m
+[0;33mW (128087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (128087) Main: Waiting for wifi ...[0m
+[0;32mI (128417) WIFI: Disconnected, retrying...[0m
+[0;33mW (128587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (128587) Main: Waiting for wifi ...[0m
+[0;33mW (129087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (129087) Main: Waiting for wifi ...[0m
+[0;33mW (129587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (129587) Main: Waiting for wifi ...[0m
+[0;33mW (130087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (130087) Main: Waiting for wifi ...[0m
+[0;33mW (130587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (130587) Main: Waiting for wifi ...[0m
+[0;32mI (130827) WIFI: Disconnected, retrying...[0m
+[0;33mW (131087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (131087) Main: Waiting for wifi ...[0m
+[0;33mW (131587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (131587) Main: Waiting for wifi ...[0m
+[0;33mW (132087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (132087) Main: Waiting for wifi ...[0m
+[0;33mW (132587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (132587) Main: Waiting for wifi ...[0m
+[0;33mW (133087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (133087) Main: Waiting for wifi ...[0m
+[0;32mI (133237) WIFI: Disconnected, retrying...[0m
+[0;33mW (133587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (133587) Main: Waiting for wifi ...[0m
+[0;33mW (134087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (134087) Main: Waiting for wifi ...[0m
+[0;33mW (134587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (134587) Main: Waiting for wifi ...[0m
+[0;33mW (135087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (135087) Main: Waiting for wifi ...[0m
+[0;33mW (135587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (135587) Main: Waiting for wifi ...[0m
+[0;32mI (135647) WIFI: Disconnected, retrying...[0m
+[0;33mW (136087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (136087) Main: Waiting for wifi ...[0m
+[0;33mW (136587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (136587) Main: Waiting for wifi ...[0m
+[0;33mW (137087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (137087) Main: Waiting for wifi ...[0m
+[0;33mW (137587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (137587) Main: Waiting for wifi ...[0m
+[0;32mI (138057) WIFI: Disconnected, retrying...[0m
+[0;33mW (138087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (138087) Main: Waiting for wifi ...[0m
+[0;33mW (138587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (138587) Main: Waiting for wifi ...[0m
+[0;33mW (139087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (139087) Main: Waiting for wifi ...[0m
+[0;33mW (139587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (139587) Main: Waiting for wifi ...[0m
+[0;33mW (140087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (140087) Main: Waiting for wifi ...[0m
+[0;32mI (140477) WIFI: Disconnected, retrying...[0m
+[0;33mW (140587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (140587) Main: Waiting for wifi ...[0m
+[0;33mW (141087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (141087) Main: Waiting for wifi ...[0m
+[0;33mW (141587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (141587) Main: Waiting for wifi ...[0m
+[0;33mW (142087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (142087) Main: Waiting for wifi ...[0m
+[0;33mW (142587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (142587) Main: Waiting for wifi ...[0m
+[0;32mI (142887) WIFI: Disconnected, retrying...[0m
+[0;33mW (143087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (143087) Main: Waiting for wifi ...[0m
+[0;33mW (143587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (143587) Main: Waiting for wifi ...[0m
+[0;33mW (144087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (144087) Main: Waiting for wifi ...[0m
+[0;33mW (144587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (144587) Main: Waiting for wifi ...[0m
+[0;33mW (145087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (145087) Main: Waiting for wifi ...[0m
+[0;32mI (145297) WIFI: Disconnected, retrying...[0m
+[0;33mW (145587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (145587) Main: Waiting for wifi ...[0m
+[0;33mW (146087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (146087) Main: Waiting for wifi ...[0m
+[0;33mW (146587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (146587) Main: Waiting for wifi ...[0m
+[0;33mW (147087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (147087) Main: Waiting for wifi ...[0m
+[0;33mW (147587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (147587) Main: Waiting for wifi ...[0m
+[0;32mI (147707) WIFI: Disconnected, retrying...[0m
+[0;33mW (148087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (148087) Main: Waiting for wifi ...[0m
+[0;33mW (148587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (148587) Main: Waiting for wifi ...[0m
+[0;33mW (149087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (149087) Main: Waiting for wifi ...[0m
+[0;33mW (149587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (149587) Main: Waiting for wifi ...[0m
+[0;33mW (150087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (150087) Main: Waiting for wifi ...[0m
+[0;32mI (150127) WIFI: Disconnected, retrying...[0m
+[0;33mW (150587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (150587) Main: Waiting for wifi ...[0m
+[0;33mW (151087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (151087) Main: Waiting for wifi ...[0m
+[0;33mW (151587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (151587) Main: Waiting for wifi ...[0m
+[0;33mW (152087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (152087) Main: Waiting for wifi ...[0m
+[0;32mI (152537) WIFI: Disconnected, retrying...[0m
+[0;33mW (152587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (152587) Main: Waiting for wifi ...[0m
+[0;33mW (153087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (153087) Main: Waiting for wifi ...[0m
+[0;33mW (153587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (153587) Main: Waiting for wifi ...[0m
+[0;33mW (154087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (154087) Main: Waiting for wifi ...[0m
+[0;33mW (154587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (154587) Main: Waiting for wifi ...[0m
+[0;32mI (154947) WIFI: Disconnected, retrying...[0m
+[0;33mW (155087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (155087) Main: Waiting for wifi ...[0m
+[0;33mW (155587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (155587) Main: Waiting for wifi ...[0m
+[0;33mW (156087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (156087) Main: Waiting for wifi ...[0m
+[0;33mW (156587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (156587) Main: Waiting for wifi ...[0m
+[0;33mW (157087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (157087) Main: Waiting for wifi ...[0m
+[0;32mI (157357) WIFI: Disconnected, retrying...[0m
+[0;33mW (157587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (157587) Main: Waiting for wifi ...[0m
+[0;33mW (158087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (158087) Main: Waiting for wifi ...[0m
+[0;33mW (158587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (158587) Main: Waiting for wifi ...[0m
+[0;33mW (159087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (159087) Main: Waiting for wifi ...[0m
+[0;33mW (159587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (159587) Main: Waiting for wifi ...[0m
+[0;32mI (159767) WIFI: Disconnected, retrying...[0m
+[0;33mW (160087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (160087) Main: Waiting for wifi ...[0m
+[0;33mW (160587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (160587) Main: Waiting for wifi ...[0m
+[0;33mW (161087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (161087) Main: Waiting for wifi ...[0m
+[0;33mW (161587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (161587) Main: Waiting for wifi ...[0m
+[0;33mW (162087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (162087) Main: Waiting for wifi ...[0m
+[0;32mI (162187) WIFI: Disconnected, retrying...[0m
+[0;33mW (162587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (162587) Main: Waiting for wifi ...[0m
+[0;33mW (163087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (163087) Main: Waiting for wifi ...[0m
+[0;33mW (163587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (163587) Main: Waiting for wifi ...[0m
+[0;33mW (164087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (164087) Main: Waiting for wifi ...[0m
+[0;33mW (164587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (164587) Main: Waiting for wifi ...[0m
+[0;32mI (164597) WIFI: Disconnected, retrying...[0m
+[0;33mW (165087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (165087) Main: Waiting for wifi ...[0m
+[0;33mW (165587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (165587) Main: Waiting for wifi ...[0m
+[0;33mW (166087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (166087) Main: Waiting for wifi ...[0m
+[0;33mW (166587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (166587) Main: Waiting for wifi ...[0m
+[0;32mI (167007) WIFI: Disconnected, retrying...[0m
+[0;33mW (167087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (167087) Main: Waiting for wifi ...[0m
+[0;33mW (167587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (167587) Main: Waiting for wifi ...[0m
+[0;33mW (168087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (168087) Main: Waiting for wifi ...[0m
+[0;33mW (168587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (168587) Main: Waiting for wifi ...[0m
+[0;33mW (169087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (169087) Main: Waiting for wifi ...[0m
+[0;32mI (169417) WIFI: Disconnected, retrying...[0m
+[0;33mW (169587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (169587) Main: Waiting for wifi ...[0m
+[0;33mW (170087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (170087) Main: Waiting for wifi ...[0m
+[0;33mW (170587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (170587) Main: Waiting for wifi ...[0m
+[0;33mW (171087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (171087) Main: Waiting for wifi ...[0m
+[0;33mW (171587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (171587) Main: Waiting for wifi ...[0m
+[0;32mI (171827) WIFI: Disconnected, retrying...[0m
+[0;33mW (172087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (172087) Main: Waiting for wifi ...[0m
+[0;33mW (172587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (172587) Main: Waiting for wifi ...[0m
+[0;33mW (173087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (173087) Main: Waiting for wifi ...[0m
+[0;33mW (173587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (173587) Main: Waiting for wifi ...[0m
+[0;33mW (174087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (174087) Main: Waiting for wifi ...[0m
+[0;32mI (174247) WIFI: Disconnected, retrying...[0m
+[0;33mW (174587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (174587) Main: Waiting for wifi ...[0m
+[0;33mW (175087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (175087) Main: Waiting for wifi ...[0m
+[0;33mW (175587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (175587) Main: Waiting for wifi ...[0m
+[0;33mW (176087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (176087) Main: Waiting for wifi ...[0m
+[0;33mW (176587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (176587) Main: Waiting for wifi ...[0m
+[0;32mI (176657) WIFI: Disconnected, retrying...[0m
+[0;33mW (177087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (177087) Main: Waiting for wifi ...[0m
+[0;33mW (177587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (177587) Main: Waiting for wifi ...[0m
+[0;33mW (178087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (178087) Main: Waiting for wifi ...[0m
+[0;33mW (178587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (178587) Main: Waiting for wifi ...[0m
+[0;32mI (179067) WIFI: Disconnected, retrying...[0m
+[0;33mW (179087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (179087) Main: Waiting for wifi ...[0m
+[0;33mW (179587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (179587) Main: Waiting for wifi ...[0m
+[0;33mW (180087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (180087) Main: Waiting for wifi ...[0m
+[0;33mW (180587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (180587) Main: Waiting for wifi ...[0m
+[0;33mW (181087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (181087) Main: Waiting for wifi ...[0m
+[0;32mI (181477) WIFI: Disconnected, retrying...[0m
+[0;33mW (181587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (181587) Main: Waiting for wifi ...[0m
+[0;33mW (182087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (182087) Main: Waiting for wifi ...[0m
+[0;33mW (182587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (182587) Main: Waiting for wifi ...[0m
+[0;33mW (183087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (183087) Main: Waiting for wifi ...[0m
+[0;33mW (183587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (183587) Main: Waiting for wifi ...[0m
+[0;32mI (183887) WIFI: Disconnected, retrying...[0m
+[0;33mW (184087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (184087) Main: Waiting for wifi ...[0m
+[0;33mW (184587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (184587) Main: Waiting for wifi ...[0m
+[0;33mW (185087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (185087) Main: Waiting for wifi ...[0m
+[0;33mW (185587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (185587) Main: Waiting for wifi ...[0m
+[0;33mW (186087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (186087) Main: Waiting for wifi ...[0m
+[0;32mI (186307) WIFI: Disconnected, retrying...[0m
+[0;33mW (186587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (186587) Main: Waiting for wifi ...[0m
+[0;33mW (187087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (187087) Main: Waiting for wifi ...[0m
+[0;33mW (187587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (187587) Main: Waiting for wifi ...[0m
+[0;33mW (188087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (188087) Main: Waiting for wifi ...[0m
+[0;33mW (188587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (188587) Main: Waiting for wifi ...[0m
+[0;32mI (188717) WIFI: Disconnected, retrying...[0m
+[0;33mW (189087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (189087) Main: Waiting for wifi ...[0m
+[0;33mW (189587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (189587) Main: Waiting for wifi ...[0m
+[0;33mW (190087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (190087) Main: Waiting for wifi ...[0m
+[0;33mW (190587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (190587) Main: Waiting for wifi ...[0m
+[0;33mW (191087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (191087) Main: Waiting for wifi ...[0m
+[0;32mI (191127) WIFI: Disconnected, retrying...[0m
+[0;33mW (191587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (191587) Main: Waiting for wifi ...[0m
+[0;33mW (192087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (192087) Main: Waiting for wifi ...[0m
+[0;33mW (192587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (192587) Main: Waiting for wifi ...[0m
+[0;33mW (193087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (193087) Main: Waiting for wifi ...[0m
+[0;32mI (193537) WIFI: Disconnected, retrying...[0m
+[0;33mW (193587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (193587) Main: Waiting for wifi ...[0m
+[0;33mW (194087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (194087) Main: Waiting for wifi ...[0m
+[0;33mW (194587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (194587) Main: Waiting for wifi ...[0m
+[0;33mW (195087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (195087) Main: Waiting for wifi ...[0m
+[0;33mW (195587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (195587) Main: Waiting for wifi ...[0m
+[0;32mI (195957) WIFI: Disconnected, retrying...[0m
+[0;33mW (196087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (196087) Main: Waiting for wifi ...[0m
+[0;33mW (196587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (196587) Main: Waiting for wifi ...[0m
+[0;33mW (197087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (197087) Main: Waiting for wifi ...[0m
+[0;33mW (197587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (197587) Main: Waiting for wifi ...[0m
+[0;33mW (198087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (198087) Main: Waiting for wifi ...[0m
+[0;32mI (198367) WIFI: Disconnected, retrying...[0m
+[0;33mW (198587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (198587) Main: Waiting for wifi ...[0m
+[0;33mW (199087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (199087) Main: Waiting for wifi ...[0m
+[0;33mW (199587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (199587) Main: Waiting for wifi ...[0m
+[0;33mW (200087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (200087) Main: Waiting for wifi ...[0m
+[0;33mW (200587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (200587) Main: Waiting for wifi ...[0m
+[0;32mI (200777) WIFI: Disconnected, retrying...[0m
+[0;33mW (201087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (201087) Main: Waiting for wifi ...[0m
+[0;33mW (201587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (201587) Main: Waiting for wifi ...[0m
+[0;33mW (202087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (202087) Main: Waiting for wifi ...[0m
+[0;33mW (202587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (202587) Main: Waiting for wifi ...[0m
+[0;33mW (203087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (203087) Main: Waiting for wifi ...[0m
+[0;32mI (203187) WIFI: Disconnected, retrying...[0m
+[0;33mW (203587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (203587) Main: Waiting for wifi ...[0m
+[0;33mW (204087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (204087) Main: Waiting for wifi ...[0m
+[0;33mW (204587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (204587) Main: Waiting for wifi ...[0m
+[0;33mW (205087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (205087) Main: Waiting for wifi ...[0m
+[0;33mW (205587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (205587) Main: Waiting for wifi ...[0m
+[0;32mI (205597) WIFI: Disconnected, retrying...[0m
+[0;33mW (206087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (206087) Main: Waiting for wifi ...[0m
+[0;33mW (206587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (206587) Main: Waiting for wifi ...[0m
+[0;33mW (207087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (207087) Main: Waiting for wifi ...[0m
+[0;33mW (207587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (207587) Main: Waiting for wifi ...[0m
+[0;32mI (208017) WIFI: Disconnected, retrying...[0m
+[0;33mW (208087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (208087) Main: Waiting for wifi ...[0m
+[0;33mW (208587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (208587) Main: Waiting for wifi ...[0m
+[0;33mW (209087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (209087) Main: Waiting for wifi ...[0m
+[0;33mW (209587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (209587) Main: Waiting for wifi ...[0m
+[0;33mW (210087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (210087) Main: Waiting for wifi ...[0m
+[0;32mI (210427) WIFI: Disconnected, retrying...[0m
+[0;33mW (210587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (210587) Main: Waiting for wifi ...[0m
+[0;33mW (211087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (211087) Main: Waiting for wifi ...[0m
+[0;33mW (211587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (211587) Main: Waiting for wifi ...[0m
+[0;33mW (212087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (212087) Main: Waiting for wifi ...[0m
+[0;33mW (212587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (212587) Main: Waiting for wifi ...[0m
+[0;32mI (212837) WIFI: Disconnected, retrying...[0m
+[0;33mW (213087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (213087) Main: Waiting for wifi ...[0m
+[0;33mW (213587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (213587) Main: Waiting for wifi ...[0m
+[0;33mW (214087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (214087) Main: Waiting for wifi ...[0m
+[0;33mW (214587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (214587) Main: Waiting for wifi ...[0m
+[0;33mW (215087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (215087) Main: Waiting for wifi ...[0m
+[0;32mI (215247) WIFI: Disconnected, retrying...[0m
+[0;33mW (215587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (215587) Main: Waiting for wifi ...[0m
+[0;33mW (216087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (216087) Main: Waiting for wifi ...[0m
+[0;33mW (216587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (216587) Main: Waiting for wifi ...[0m
+[0;33mW (217087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (217087) Main: Waiting for wifi ...[0m
+[0;33mW (217587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (217587) Main: Waiting for wifi ...[0m
+[0;32mI (217657) WIFI: Disconnected, retrying...[0m
+[0;33mW (218087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (218087) Main: Waiting for wifi ...[0m
+[0;33mW (218587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (218587) Main: Waiting for wifi ...[0m
+[0;33mW (219087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (219087) Main: Waiting for wifi ...[0m
+[0;33mW (219587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (219587) Main: Waiting for wifi ...[0m
+[0;32mI (220077) WIFI: Disconnected, retrying...[0m
+[0;33mW (220087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (220087) Main: Waiting for wifi ...[0m
+[0;33mW (220587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (220587) Main: Waiting for wifi ...[0m
+[0;33mW (221087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (221087) Main: Waiting for wifi ...[0m
+[0;33mW (221587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (221587) Main: Waiting for wifi ...[0m
+[0;33mW (222087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (222087) Main: Waiting for wifi ...[0m
+[0;32mI (222487) WIFI: Disconnected, retrying...[0m
+[0;33mW (222587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (222587) Main: Waiting for wifi ...[0m
+[0;33mW (223087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (223087) Main: Waiting for wifi ...[0m
+[0;33mW (223587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (223587) Main: Waiting for wifi ...[0m
+[0;33mW (224087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (224087) Main: Waiting for wifi ...[0m
+[0;33mW (224587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (224587) Main: Waiting for wifi ...[0m
+[0;32mI (224897) WIFI: Disconnected, retrying...[0m
+[0;33mW (225087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (225087) Main: Waiting for wifi ...[0m
+[0;33mW (225587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (225587) Main: Waiting for wifi ...[0m
+[0;33mW (226087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (226087) Main: Waiting for wifi ...[0m
+[0;33mW (226587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (226587) Main: Waiting for wifi ...[0m
+[0;33mW (227087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (227087) Main: Waiting for wifi ...[0m
+[0;32mI (227307) WIFI: Disconnected, retrying...[0m
+[0;33mW (227587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (227587) Main: Waiting for wifi ...[0m
+[0;33mW (228087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (228087) Main: Waiting for wifi ...[0m
+[0;33mW (228587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (228587) Main: Waiting for wifi ...[0m
+[0;33mW (229087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (229087) Main: Waiting for wifi ...[0m
+[0;33mW (229587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (229587) Main: Waiting for wifi ...[0m
+[0;32mI (229717) WIFI: Disconnected, retrying...[0m
+[0;33mW (230087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (230087) Main: Waiting for wifi ...[0m
+[0;33mW (230587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (230587) Main: Waiting for wifi ...[0m
+[0;33mW (231087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (231087) Main: Waiting for wifi ...[0m
+[0;33mW (231587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (231587) Main: Waiting for wifi ...[0m
+[0;33mW (232087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (232087) Main: Waiting for wifi ...[0m
+[0;32mI (232137) WIFI: Disconnected, retrying...[0m
+[0;33mW (232587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (232587) Main: Waiting for wifi ...[0m
+[0;33mW (233087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (233087) Main: Waiting for wifi ...[0m
+[0;33mW (233587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (233587) Main: Waiting for wifi ...[0m
+[0;33mW (234087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (234087) Main: Waiting for wifi ...[0m
+[0;32mI (234547) WIFI: Disconnected, retrying...[0m
+[0;33mW (234587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (234587) Main: Waiting for wifi ...[0m
+[0;33mW (235087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (235087) Main: Waiting for wifi ...[0m
+[0;33mW (235587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (235587) Main: Waiting for wifi ...[0m
+[0;33mW (236087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (236087) Main: Waiting for wifi ...[0m
+[0;33mW (236587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (236587) Main: Waiting for wifi ...[0m
+[0;32mI (236957) WIFI: Disconnected, retrying...[0m
+[0;33mW (237087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (237087) Main: Waiting for wifi ...[0m
+[0;33mW (237587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (237587) Main: Waiting for wifi ...[0m
+[0;33mW (238087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (238087) Main: Waiting for wifi ...[0m
+[0;33mW (238587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (238587) Main: Waiting for wifi ...[0m
+[0;33mW (239087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (239087) Main: Waiting for wifi ...[0m
+[0;32mI (239367) WIFI: Disconnected, retrying...[0m
+[0;33mW (239587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (239587) Main: Waiting for wifi ...[0m
+[0;33mW (240087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (240087) Main: Waiting for wifi ...[0m
+[0;33mW (240587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (240587) Main: Waiting for wifi ...[0m
+[0;33mW (241087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (241087) Main: Waiting for wifi ...[0m
+[0;33mW (241587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (241587) Main: Waiting for wifi ...[0m
+[0;32mI (241787) WIFI: Disconnected, retrying...[0m
+[0;33mW (242087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (242087) Main: Waiting for wifi ...[0m
+[0;33mW (242587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (242587) Main: Waiting for wifi ...[0m
+[0;33mW (243087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (243087) Main: Waiting for wifi ...[0m
+[0;33mW (243587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (243587) Main: Waiting for wifi ...[0m
+[0;33mW (244087) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (244087) Main: Waiting for wifi ...[0m
+[0;32mI (244197) WIFI: Disconnected, retrying...[0m
+[0;33mW (244587) wifi:Haven't to connect to a suitable AP now![0m
+[0;32mI (244587) Main: Waiting for wifi ...[0m

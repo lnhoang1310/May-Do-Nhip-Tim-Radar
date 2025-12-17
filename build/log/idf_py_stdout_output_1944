@@ -1,0 +1,533 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\Project_Anh_Sao\build\Project_Anh_Sao.elf D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 16 2025 19:32:10[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=232bch (144060) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=000332e4 vaddr=3fc9cb00 size=04b58h ( 19288) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00037e44 vaddr=40374000 size=081d4h ( 33236) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=afde8h (720360) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000efe10 vaddr=4037c1d4 size=108dch ( 67804) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=001006f4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (276) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (276) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) cpu_start: Multicore app[0m
+[0;32mI (295) cpu_start: Pro cpu start user code[0m
+[0;32mI (295) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (295) app_init: Application information:[0m
+[0;32mI (295) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (300) app_init: App version:      1[0m
+[0;32mI (303) app_init: Compile time:     Dec 16 2025 19:30:56[0m
+[0;32mI (308) app_init: ELF file SHA256:  64f3037db...[0m
+[0;32mI (313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (320) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (324) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (328) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (334) heap_init: At 3FCA5D98 len 00043978 (270 KiB): RAM[0m
+[0;32mI (339) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (345) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (350) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: boya[0m
+[0;32mI (359) spi_flash: flash io: dio[0m
+[0;33mW (361) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (374) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (380) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (437) pp: pp rom version: e7ae62f[0m
+[0;32mI (437) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (447) wifi:wifi driver task: 3fcaab88, prio:23, stack:6656, core=0[0m
+[0;32mI (457) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (457) wifi:wifi certification version: v7.0[0m
+[0;32mI (457) wifi:config NVS flash: enabled[0m
+[0;32mI (457) wifi:config nano formatting: disabled[0m
+[0;32mI (467) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (467) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (467) wifi:Init management short buffer num: 32[0m
+[0;32mI (477) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (477) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (487) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (487) wifi:Init static rx buffer num: 10[0m
+[0;32mI (487) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (497) wifi_init: rx ba win: 6[0m
+[0;32mI (497) wifi_init: accept mbox: 6[0m
+[0;32mI (497) wifi_init: tcpip mbox: 32[0m
+[0;32mI (507) wifi_init: udp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp tx win: 5760[0m
+[0;32mI (517) wifi_init: tcp rx win: 5760[0m
+[0;32mI (517) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (567) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (567) wifi:enable tsf[0m
+[0;32mI (577) WIFI: Saved WiFi found: Lâm Hoàng[0m
+[0;32mI (577) WIFI: WiFi started[0m
+[1;31mE (577) wifi:sta is connecting, return error[0m
+[0;32mI (577) Main: Waiting for wifi ...[0m
+[0;32mI (1077) Main: Waiting for wifi ...[0m
+[0;32mI (1577) Main: Waiting for wifi ...[0m
+[0;32mI (2077) Main: Waiting for wifi ...[0m
+[0;32mI (2577) Main: Waiting for wifi ...[0m
+[0;33mW (2987) WIFI: WiFi disconnected[0m
+[0;32mI (2987) WIFI: Retrying WiFi... (1)[0m
+[0;32mI (3077) Main: Waiting for wifi ...[0m
+[0;32mI (3577) Main: Waiting for wifi ...[0m
+[0;32mI (4077) Main: Waiting for wifi ...[0m
+[0;32mI (4577) Main: Waiting for wifi ...[0m
+[0;32mI (5077) Main: Waiting for wifi ...[0m
+[0;33mW (5397) WIFI: WiFi disconnected[0m
+[0;32mI (5397) WIFI: Retrying WiFi... (2)[0m
+[0;32mI (5577) Main: Waiting for wifi ...[0m
+[0;32mI (6077) Main: Waiting for wifi ...[0m
+[0;32mI (6577) Main: Waiting for wifi ...[0m
+[0;32mI (7077) Main: Waiting for wifi ...[0m
+[0;32mI (7577) Main: Waiting for wifi ...[0m
+[0;33mW (7807) WIFI: WiFi disconnected[0m
+[0;32mI (7807) WIFI: Retrying WiFi... (3)[0m
+[0;32mI (8077) Main: Waiting for wifi ...[0m
+[0;32mI (8577) Main: Waiting for wifi ...[0m
+[0;32mI (9077) Main: Waiting for wifi ...[0m
+[0;32mI (9577) Main: Waiting for wifi ...[0m
+[0;32mI (10077) Main: Waiting for wifi ...[0m
+[0;33mW (10227) WIFI: WiFi disconnected[0m
+[0;32mI (10227) WIFI: Retrying WiFi... (4)[0m
+[0;32mI (10577) Main: Waiting for wifi ...[0m
+[0;32mI (11077) Main: Waiting for wifi ...[0m
+[0;32mI (11577) Main: Waiting for wifi ...[0m
+[0;32mI (12077) Main: Waiting for wifi ...[0m
+[0;32mI (12577) Main: Waiting for wifi ...[0m
+[0;33mW (12637) WIFI: WiFi disconnected[0m
+[0;32mI (12637) WIFI: Retrying WiFi... (5)[0m
+[0;32mI (13077) Main: Waiting for wifi ...[0m
+[0;32mI (13577) Main: Waiting for wifi ...[0m
+[0;32mI (14077) Main: Waiting for wifi ...[0m
+[0;32mI (14577) Main: Waiting for wifi ...[0m
+[0;33mW (15047) WIFI: WiFi disconnected[0m
+[0;32mI (15047) WIFI: Retrying WiFi... (6)[0m
+[0;32mI (15077) Main: Waiting for wifi ...[0m
+[0;32mI (15577) Main: Waiting for wifi ...[0m
+[0;32mI (16077) Main: Waiting for wifi ...[0m
+[0;32mI (16577) Main: Waiting for wifi ...[0m
+[0;32mI (17077) Main: Waiting for wifi ...[0m
+[0;33mW (17457) WIFI: WiFi disconnected[0m
+[0;32mI (17457) WIFI: Retrying WiFi... (7)[0m
+[0;32mI (17577) Main: Waiting for wifi ...[0m
+[0;32mI (18077) Main: Waiting for wifi ...[0m
+[0;32mI (18577) Main: Waiting for wifi ...[0m
+[0;32mI (19077) Main: Waiting for wifi ...[0m
+[0;32mI (19577) Main: Waiting for wifi ...[0m
+[0;33mW (19877) WIFI: WiFi disconnected[0m
+[0;32mI (19877) WIFI: Retrying WiFi... (8)[0m
+[0;32mI (20077) Main: Waiting for wifi ...[0m
+[0;32mI (20577) Main: Waiting for wifi ...[0m
+[0;32mI (21077) Main: Waiting for wifi ...[0m
+[0;32mI (21577) Main: Waiting for wifi ...[0m
+[0;32mI (22077) Main: Waiting for wifi ...[0m
+[0;33mW (22287) WIFI: WiFi disconnected[0m
+[0;32mI (22287) WIFI: Retrying WiFi... (9)[0m
+[0;32mI (22577) Main: Waiting for wifi ...[0m
+[0;32mI (23077) Main: Waiting for wifi ...[0m
+[0;32mI (23577) Main: Waiting for wifi ...[0m
+[0;32mI (24077) Main: Waiting for wifi ...[0m
+[0;32mI (24577) Main: Waiting for wifi ...[0m
+[0;33mW (24697) WIFI: WiFi disconnected[0m
+[0;32mI (24697) WIFI: Retrying WiFi... (10)[0m
+[0;32mI (25077) Main: Waiting for wifi ...[0m
+[0;32mI (25577) Main: Waiting for wifi ...[0m
+[0;32mI (26077) Main: Waiting for wifi ...[0m
+[0;32mI (26577) Main: Waiting for wifi ...[0m
+[0;32mI (27077) Main: Waiting for wifi ...[0m
+[0;33mW (27107) WIFI: WiFi disconnected[0m
+[1;31mE (27107) WIFI: WiFi retry failed, start SmartConfig[0m
+[0;32mI (27157) smartconfig: SC version: V3.0.3[0m
+[0;32mI (27577) Main: Waiting for wifi ...[0m
+[0;32mI (28077) Main: Waiting for wifi ...[0m
+[0;32mI (28577) Main: Waiting for wifi ...[0m
+[0;32mI (29077) Main: Waiting for wifi ...[0m
+[0;32mI (29577) Main: Waiting for wifi ...[0m
+[0;32mI (30077) Main: Waiting for wifi ...[0m
+[0;32mI (30577) Main: Waiting for wifi ...[0m
+[0;32mI (31077) Main: Waiting for wifi ...[0m
+[0;32mI (31577) Main: Waiting for wifi ...[0m
+[0;32mI (31977) wifi:ic_enable_sniffer[0m
+[0;32mI (31977) smartconfig: Start to find channel...[0m
+[0;32mI (31977) WIFI: SC scan done[0m
+[0;32mI (32077) Main: Waiting for wifi ...[0m
+[0;32mI (32577) Main: Waiting for wifi ...[0m
+[0;32mI (33077) Main: Waiting for wifi ...[0m
+[0;32mI (33577) Main: Waiting for wifi ...[0m
+[0;32mI (34077) Main: Waiting for wifi ...[0m
+[0;32mI (34577) Main: Waiting for wifi ...[0m
+[0;32mI (35077) Main: Waiting for wifi ...[0m
+[0;32mI (35577) Main: Waiting for wifi ...[0m
+[0;32mI (36077) Main: Waiting for wifi ...[0m
+[0;32mI (36577) Main: Waiting for wifi ...[0m
+[0;32mI (37077) Main: Waiting for wifi ...[0m
+[0;32mI (37577) Main: Waiting for wifi ...[0m
+[0;32mI (38077) Main: Waiting for wifi ...[0m
+[0;32mI (38577) Main: Waiting for wifi ...[0m
+[0;32mI (39077) Main: Waiting for wifi ...[0m
+[0;32mI (39577) Main: Waiting for wifi ...[0m
+[0;32mI (40077) Main: Waiting for wifi ...[0m
+[0;32mI (40577) Main: Waiting for wifi ...[0m
+[0;32mI (41077) Main: Waiting for wifi ...[0m
+[0;32mI (41577) Main: Waiting for wifi ...[0m
+[0;32mI (42077) Main: Waiting for wifi ...[0m
+[0;32mI (42577) Main: Waiting for wifi ...[0m
+[0;32mI (43077) Main: Waiting for wifi ...[0m
+[0;32mI (43577) Main: Waiting for wifi ...[0m
+[0;32mI (44077) Main: Waiting for wifi ...[0m
+[0;32mI (44577) Main: Waiting for wifi ...[0m
+[0;32mI (45077) Main: Waiting for wifi ...[0m
+[0;32mI (45577) Main: Waiting for wifi ...[0m
+[0;32mI (46077) Main: Waiting for wifi ...[0m
+[0;32mI (46577) Main: Waiting for wifi ...[0m
+[0;32mI (47077) Main: Waiting for wifi ...[0m
+[0;32mI (47577) Main: Waiting for wifi ...[0m
+[0;32mI (48077) Main: Waiting for wifi ...[0m
+[0;32mI (48577) Main: Waiting for wifi ...[0m
+[0;32mI (49077) Main: Waiting for wifi ...[0m
+[0;32mI (49577) Main: Waiting for wifi ...[0m
+[0;32mI (50077) Main: Waiting for wifi ...[0m
+[0;32mI (50577) Main: Waiting for wifi ...[0m
+[0;32mI (51077) Main: Waiting for wifi ...[0m
+[0;32mI (51577) Main: Waiting for wifi ...[0m
+[0;32mI (52077) Main: Waiting for wifi ...[0m
+[0;32mI (52577) Main: Waiting for wifi ...[0m
+[0;32mI (53077) Main: Waiting for wifi ...[0m
+[0;32mI (53577) Main: Waiting for wifi ...[0m
+[0;32mI (54077) Main: Waiting for wifi ...[0m
+[0;32mI (54577) Main: Waiting for wifi ...[0m
+[0;32mI (55077) Main: Waiting for wifi ...[0m
+[0;32mI (55577) Main: Waiting for wifi ...[0m
+[0;32mI (56077) Main: Waiting for wifi ...[0m
+[0;32mI (56577) Main: Waiting for wifi ...[0m
+[0;32mI (57077) Main: Waiting for wifi ...[0m
+[0;32mI (57577) Main: Waiting for wifi ...[0m
+[0;32mI (58077) Main: Waiting for wifi ...[0m
+[0;32mI (58577) Main: Waiting for wifi ...[0m
+[0;32mI (59077) Main: Waiting for wifi ...[0m
+[0;32mI (59577) Main: Waiting for wifi ...[0m
+[0;32mI (60077) Main: Waiting for wifi ...[0m
+[0;32mI (60577) Main: Waiting for wifi ...[0m
+[0;32mI (61077) Main: Waiting for wifi ...[0m
+[0;32mI (61577) Main: Waiting for wifi ...[0m
+[0;32mI (62077) Main: Waiting for wifi ...[0m
+[0;32mI (62577) Main: Waiting for wifi ...[0m
+[0;32mI (63077) Main: Waiting for wifi ...[0m
+[0;32mI (63577) Main: Waiting for wifi ...[0m
+[0;32mI (64077) Main: Waiting for wifi ...[0m
+[0;32mI (64577) Main: Waiting for wifi ...[0m
+[0;32mI (65077) Main: Waiting for wifi ...[0m
+[0;32mI (65577) Main: Waiting for wifi ...[0m
+[0;32mI (66077) Main: Waiting for wifi ...[0m
+[0;32mI (66577) Main: Waiting for wifi ...[0m
+[0;32mI (67077) Main: Waiting for wifi ...[0m
+[0;32mI (67577) Main: Waiting for wifi ...[0m
+[0;32mI (68077) Main: Waiting for wifi ...[0m
+[0;32mI (68577) Main: Waiting for wifi ...[0m
+[0;32mI (69077) Main: Waiting for wifi ...[0m
+[0;32mI (69577) Main: Waiting for wifi ...[0m
+[0;32mI (70077) Main: Waiting for wifi ...[0m
+[0;32mI (70577) Main: Waiting for wifi ...[0m
+[0;32mI (71077) Main: Waiting for wifi ...[0m
+[0;32mI (71577) Main: Waiting for wifi ...[0m
+[0;32mI (72077) Main: Waiting for wifi ...[0m
+[0;32mI (72577) Main: Waiting for wifi ...[0m
+[0;32mI (73077) Main: Waiting for wifi ...[0m
+[0;32mI (73577) Main: Waiting for wifi ...[0m
+[0;32mI (74077) Main: Waiting for wifi ...[0m
+[0;32mI (74577) Main: Waiting for wifi ...[0m
+[0;32mI (75077) Main: Waiting for wifi ...[0m
+[0;32mI (75577) Main: Waiting for wifi ...[0m
+[0;32mI (76077) Main: Waiting for wifi ...[0m
+[0;32mI (76577) Main: Waiting for wifi ...[0m
+[0;32mI (77077) Main: Waiting for wifi ...[0m
+[0;32mI (77577) Main: Waiting for wifi ...[0m
+[0;32mI (78077) Main: Waiting for wifi ...[0m
+[0;32mI (78577) Main: Waiting for wifi ...[0m
+[0;32mI (79077) Main: Waiting for wifi ...[0m
+[0;32mI (79577) Main: Waiting for wifi ...[0m
+[0;32mI (80077) Main: Waiting for wifi ...[0m
+[0;32mI (80577) Main: Waiting for wifi ...[0m
+[0;32mI (81077) Main: Waiting for wifi ...[0m
+[0;32mI (81577) Main: Waiting for wifi ...[0m
+[0;32mI (82077) Main: Waiting for wifi ...[0m
+[0;32mI (82577) Main: Waiting for wifi ...[0m
+[0;32mI (83077) Main: Waiting for wifi ...[0m
+[0;32mI (83577) Main: Waiting for wifi ...[0m
+[0;32mI (84077) Main: Waiting for wifi ...[0m
+[0;32mI (84577) Main: Waiting for wifi ...[0m
+[0;32mI (85077) Main: Waiting for wifi ...[0m
+[0;32mI (85577) Main: Waiting for wifi ...[0m
+[0;32mI (86077) Main: Waiting for wifi ...[0m
+[0;32mI (86577) Main: Waiting for wifi ...[0m
+[0;32mI (87077) Main: Waiting for wifi ...[0m
+[0;32mI (87577) Main: Waiting for wifi ...[0m
+[0;32mI (88077) Main: Waiting for wifi ...[0m
+[0;32mI (88577) Main: Waiting for wifi ...[0m
+[0;32mI (89077) Main: Waiting for wifi ...[0m
+[0;32mI (89577) Main: Waiting for wifi ...[0m
+[0;32mI (90077) Main: Waiting for wifi ...[0m
+[0;32mI (90577) Main: Waiting for wifi ...[0m
+[0;32mI (91077) Main: Waiting for wifi ...[0m
+[0;32mI (91577) Main: Waiting for wifi ...[0m
+[0;32mI (92077) Main: Waiting for wifi ...[0m
+[0;32mI (92577) Main: Waiting for wifi ...[0m
+[0;32mI (93077) Main: Waiting for wifi ...[0m
+[0;32mI (93577) Main: Waiting for wifi ...[0m
+[0;32mI (94077) Main: Waiting for wifi ...[0m
+[0;32mI (94577) Main: Waiting for wifi ...[0m
+[0;32mI (95077) Main: Waiting for wifi ...[0m
+[0;32mI (95577) Main: Waiting for wifi ...[0m
+[0;32mI (96077) Main: Waiting for wifi ...[0m
+[0;32mI (96577) Main: Waiting for wifi ...[0m
+[0;32mI (97077) Main: Waiting for wifi ...[0m
+[0;32mI (97577) Main: Waiting for wifi ...[0m
+[0;32mI (98077) Main: Waiting for wifi ...[0m
+[0;32mI (98577) Main: Waiting for wifi ...[0m
+[0;32mI (99077) Main: Waiting for wifi ...[0m
+[0;32mI (99577) Main: Waiting for wifi ...[0m
+[0;32mI (100077) Main: Waiting for wifi ...[0m
+[0;32mI (100577) Main: Waiting for wifi ...[0m
+[0;32mI (101077) Main: Waiting for wifi ...[0m
+[0;32mI (101577) Main: Waiting for wifi ...[0m
+[0;32mI (102077) Main: Waiting for wifi ...[0m
+[0;32mI (102577) Main: Waiting for wifi ...[0m
+[0;32mI (103077) Main: Waiting for wifi ...[0m
+[0;32mI (103577) Main: Waiting for wifi ...[0m
+[0;32mI (104077) Main: Waiting for wifi ...[0m
+[0;32mI (104577) Main: Waiting for wifi ...[0m
+[0;32mI (105077) Main: Waiting for wifi ...[0m
+[0;32mI (105577) Main: Waiting for wifi ...[0m
+[0;32mI (106077) Main: Waiting for wifi ...[0m
+[0;32mI (106577) Main: Waiting for wifi ...[0m
+[0;32mI (107077) Main: Waiting for wifi ...[0m
+[0;32mI (107577) Main: Waiting for wifi ...[0m
+[0;32mI (108077) Main: Waiting for wifi ...[0m
+[0;32mI (108577) Main: Waiting for wifi ...[0m
+[0;32mI (109077) Main: Waiting for wifi ...[0m
+[0;32mI (109577) Main: Waiting for wifi ...[0m
+[0;32mI (110077) Main: Waiting for wifi ...[0m
+[0;32mI (110577) Main: Waiting for wifi ...[0m
+[0;32mI (111077) Main: Waiting for wifi ...[0m
+[0;32mI (111577) Main: Waiting for wifi ...[0m
+[0;32mI (112077) Main: Waiting for wifi ...[0m
+[0;32mI (112577) Main: Waiting for wifi ...[0m
+[0;32mI (113077) Main: Waiting for wifi ...[0m
+[0;32mI (113577) Main: Waiting for wifi ...[0m
+[0;32mI (114077) Main: Waiting for wifi ...[0m
+[0;32mI (114577) Main: Waiting for wifi ...[0m
+[0;32mI (115077) Main: Waiting for wifi ...[0m
+[0;32mI (115577) Main: Waiting for wifi ...[0m
+[0;32mI (116077) Main: Waiting for wifi ...[0m
+[0;32mI (116577) Main: Waiting for wifi ...[0m
+[0;32mI (117077) Main: Waiting for wifi ...[0m
+[0;32mI (117577) Main: Waiting for wifi ...[0m
+[0;32mI (118077) Main: Waiting for wifi ...[0m
+[0;32mI (118577) Main: Waiting for wifi ...[0m
+[0;32mI (119077) Main: Waiting for wifi ...[0m
+[0;32mI (119577) Main: Waiting for wifi ...[0m
+[0;32mI (120077) Main: Waiting for wifi ...[0m
+[0;32mI (120577) Main: Waiting for wifi ...[0m
+[0;32mI (121077) Main: Waiting for wifi ...[0m
+[0;32mI (121577) Main: Waiting for wifi ...[0m
+[0;32mI (122077) Main: Waiting for wifi ...[0m
+[0;32mI (122577) Main: Waiting for wifi ...[0m
+[0;32mI (123077) Main: Waiting for wifi ...[0m
+[0;32mI (123577) Main: Waiting for wifi ...[0m
+[0;32mI (124077) Main: Waiting for wifi ...[0m
+[0;32mI (124577) Main: Waiting for wifi ...[0m
+[0;32mI (125077) Main: Waiting for wifi ...[0m
+[0;32mI (125577) Main: Waiting for wifi ...[0m
+[0;32mI (126077) Main: Waiting for wifi ...[0m
+[0;32mI (126577) Main: Waiting for wifi ...[0m
+[0;32mI (127077) Main: Waiting for wifi ...[0m
+[0;32mI (127577) Main: Waiting for wifi ...[0m
+[0;32mI (128077) Main: Waiting for wifi ...[0m
+[0;32mI (128577) Main: Waiting for wifi ...[0m
+[0;32mI (129077) Main: Waiting for wifi ...[0m
+[0;32mI (129577) Main: Waiting for wifi ...[0m
+[0;32mI (130077) Main: Waiting for wifi ...[0m
+[0;32mI (130577) Main: Waiting for wifi ...[0m
+[0;32mI (131077) Main: Waiting for wifi ...[0m
+[0;32mI (131577) Main: Waiting for wifi ...[0m
+[0;32mI (132077) Main: Waiting for wifi ...[0m
+[0;32mI (132577) Main: Waiting for wifi ...[0m
+[0;32mI (133077) Main: Waiting for wifi ...[0m
+[0;32mI (133577) Main: Waiting for wifi ...[0m
+[0;32mI (134077) Main: Waiting for wifi ...[0m
+[0;32mI (134577) Main: Waiting for wifi ...[0m
+[0;32mI (135077) Main: Waiting for wifi ...[0m
+[0;32mI (135577) Main: Waiting for wifi ...[0m
+[0;32mI (136077) Main: Waiting for wifi ...[0m
+[0;32mI (136577) Main: Waiting for wifi ...[0m
+[0;32mI (137077) Main: Waiting for wifi ...[0m
+[0;32mI (137577) Main: Waiting for wifi ...[0m
+[0;32mI (138077) Main: Waiting for wifi ...[0m
+[0;32mI (138577) Main: Waiting for wifi ...[0m
+[0;32mI (139077) Main: Waiting for wifi ...[0m
+[0;32mI (139577) Main: Waiting for wifi ...[0m
+[0;32mI (140077) Main: Waiting for wifi ...[0m
+[0;32mI (140577) Main: Waiting for wifi ...[0m
+[0;32mI (141077) Main: Waiting for wifi ...[0m
+[0;32mI (141577) Main: Waiting for wifi ...[0m
+[0;32mI (142077) Main: Waiting for wifi ...[0m
+[0;32mI (142577) Main: Waiting for wifi ...[0m
+[0;32mI (143077) Main: Waiting for wifi ...[0m
+[0;32mI (143577) Main: Waiting for wifi ...[0m
+[0;32mI (144077) Main: Waiting for wifi ...[0m
+[0;32mI (144577) Main: Waiting for wifi ...[0m
+[0;32mI (145077) Main: Waiting for wifi ...[0m
+[0;32mI (145577) Main: Waiting for wifi ...[0m
+[0;32mI (146077) Main: Waiting for wifi ...[0m
+[0;32mI (146577) Main: Waiting for wifi ...[0m
+[0;32mI (147077) Main: Waiting for wifi ...[0m
+[0;32mI (147577) Main: Waiting for wifi ...[0m
+[0;32mI (148077) Main: Waiting for wifi ...[0m
+[0;32mI (148577) Main: Waiting for wifi ...[0m
+[0;32mI (149077) Main: Waiting for wifi ...[0m
+[0;32mI (149577) Main: Waiting for wifi ...[0m
+[0;32mI (150077) Main: Waiting for wifi ...[0m
+[0;32mI (150577) Main: Waiting for wifi ...[0m
+[0;32mI (151077) Main: Waiting for wifi ...[0m
+[0;32mI (151577) Main: Waiting for wifi ...[0m
+[0;32mI (152077) Main: Waiting for wifi ...[0m
+[0;32mI (152577) Main: Waiting for wifi ...[0m
+[0;32mI (153077) Main: Waiting for wifi ...[0m
+[0;32mI (153577) Main: Waiting for wifi ...[0m
+[0;32mI (154077) Main: Waiting for wifi ...[0m
+[0;32mI (154577) Main: Waiting for wifi ...[0m
+[0;32mI (155077) Main: Waiting for wifi ...[0m
+[0;32mI (155577) Main: Waiting for wifi ...[0m
+[0;32mI (156077) Main: Waiting for wifi ...[0m
+[0;32mI (156577) Main: Waiting for wifi ...[0m
+[0;32mI (157077) Main: Waiting for wifi ...[0m
+[0;32mI (157577) Main: Waiting for wifi ...[0m
+[0;32mI (158077) Main: Waiting for wifi ...[0m
+[0;32mI (158577) Main: Waiting for wifi ...[0m
+[0;32mI (159077) Main: Waiting for wifi ...[0m
+[0;32mI (159577) Main: Waiting for wifi ...[0m
+[0;32mI (160077) Main: Waiting for wifi ...[0m
+[0;32mI (160577) Main: Waiting for wifi ...[0m
+[0;32mI (161077) Main: Waiting for wifi ...[0m
+[0;32mI (161577) Main: Waiting for wifi ...[0m
+[0;32mI (162077) Main: Waiting for wifi ...[0m
+[0;32mI (162577) Main: Waiting for wifi ...[0m
+[0;32mI (163077) Main: Waiting for wifi ...[0m
+[0;32mI (163577) Main: Waiting for wifi ...[0m
+[0;32mI (164077) Main: Waiting for wifi ...[0m
+[0;32mI (164577) Main: Waiting for wifi ...[0m
+[0;32mI (165077) Main: Waiting for wifi ...[0m
+[0;32mI (165577) Main: Waiting for wifi ...[0m
+[0;32mI (166077) Main: Waiting for wifi ...[0m
+[0;32mI (166577) Main: Waiting for wifi ...[0m
+[0;32mI (167077) Main: Waiting for wifi ...[0m
+[0;32mI (167577) Main: Waiting for wifi ...[0m
+[0;32mI (168077) Main: Waiting for wifi ...[0m
+[0;32mI (168577) Main: Waiting for wifi ...[0m
+[0;32mI (169077) Main: Waiting for wifi ...[0m
+[0;32mI (169577) Main: Waiting for wifi ...[0m
+[0;32mI (170077) Main: Waiting for wifi ...[0m
+[0;32mI (170577) Main: Waiting for wifi ...[0m
+[0;32mI (171077) Main: Waiting for wifi ...[0m
+[0;32mI (171577) Main: Waiting for wifi ...[0m
+[0;32mI (172077) Main: Waiting for wifi ...[0m
+[0;32mI (172577) Main: Waiting for wifi ...[0m
+[0;32mI (173077) Main: Waiting for wifi ...[0m
+[0;32mI (173577) Main: Waiting for wifi ...[0m
+[0;32mI (174077) Main: Waiting for wifi ...[0m
+[0;32mI (174577) Main: Waiting for wifi ...[0m
+[0;32mI (175077) Main: Waiting for wifi ...[0m
+[0;32mI (175577) Main: Waiting for wifi ...[0m
+[0;32mI (176077) Main: Waiting for wifi ...[0m
+[0;32mI (176577) Main: Waiting for wifi ...[0m
+[0;32mI (177077) Main: Waiting for wifi ...[0m
+[0;32mI (177577) Main: Waiting for wifi ...[0m
+[0;32mI (178077) Main: Waiting for wifi ...[0m
+[0;32mI (178577) Main: Waiting for wifi ...[0m
+[0;32mI (179077) Main: Waiting for wifi ...[0m
+[0;32mI (179577) Main: Waiting for wifi ...[0m
+[0;32mI (180077) Main: Waiting for wifi ...[0m
+[0;32mI (180577) Main: Waiting for wifi ...[0m
+[0;32mI (181077) Main: Waiting for wifi ...[0m
+[0;32mI (181577) Main: Waiting for wifi ...[0m
+[0;32mI (182077) Main: Waiting for wifi ...[0m
+[0;32mI (182577) Main: Waiting for wifi ...[0m
+[0;32mI (183077) Main: Waiting for wifi ...[0m
+[0;32mI (183577) Main: Waiting for wifi ...[0m
+[0;32mI (184077) Main: Waiting for wifi ...[0m
+[0;32mI (184577) Main: Waiting for wifi ...[0m
+[0;32mI (185077) Main: Waiting for wifi ...[0m
+[0;32mI (185577) Main: Waiting for wifi ...[0m
+[0;32mI (186077) Main: Waiting for wifi ...[0m
+[0;32mI (186577) Main: Waiting for wifi ...[0m
+[0;32mI (187077) Main: Waiting for wifi ...[0m
+[0;32mI (187577) Main: Waiting for wifi ...[0m
+[0;32mI (188077) Main: Waiting for wifi ...[0m
+[0;32mI (188577) Main: Waiting for wifi ...[0m
+[0;32mI (189077) Main: Waiting for wifi ...[0m
+[0;32mI (189577) Main: Waiting for wifi ...[0m
+[0;32mI (190077) Main: Waiting for wifi ...[0m
+[0;32mI (190577) Main: Waiting for wifi ...[0m
+[0;32mI (191077) Main: Waiting for wifi ...[0m
+[0;32mI (191577) Main: Waiting for wifi ...[0m
+[0;32mI (192077) Main: Waiting for wifi ...[0m
+[0;32mI (192577) Main: Waiting for wifi ...[0m
+[0;32mI (193077) Main: Waiting for wifi ...[0m
+[0;32mI (193577) Main: Waiting for wifi ...[0m
+[0;32mI (194077) Main: Waiting for wifi ...[0m
+[0;32mI (194577) Main: Waiting for wifi ...[0m
+[0;32mI (195077) Main: Waiting for wifi ...[0m
+[0;32mI (195577) Main: Waiting for wifi ...[0m
+[0;32mI (196077) Main: Waiting for wifi ...[0m
+[0;32mI (196577) Main: Waiting for wifi ...[0m
+[0;32mI (197077) Main: Waiting for wifi ...[0m
+[0;32mI (197577) Main: Waiting for wifi ...[0m
+[0;32mI (198077) Main: Waiting for wifi ...[0m
+[0;32mI (198577) Main: Waiting for wifi ...[0m
+[0;32mI (199077) Main: Waiting for wifi ...[0m
+[0;32mI (199577) Main: Waiting for wifi ...[0m
+[0;32mI (200077) Main: Waiting for wifi ...[0m
+[0;32mI (200577) Main: Waiting for wifi ...[0m
+[0;32mI (201077) Main: Waiting for wifi ...[0m
+[0;32mI (201577) Main: Waiting for wifi ...[0m
+[0;32mI (202077) Main: Waiting for wifi ...[0m
+[0;32mI (202577) Main: Waiting for wifi ...[0m
+[0;32mI (203077) Main: Waiting for wifi ...[0m
+[0;32mI (203577) Main: Waiting for wifi ...[0m
+[0;32mI (204077) Main: Waiting for wifi ...[0m
+[0;32mI (204577) Main: Waiting for wifi ...[0m
+[0;32mI (205077) Main: Waiting for wifi ...[0m
+[0;32mI (205577) Main: Waiting for wifi ...[0m
+[0;32mI (206077) Main: Waiting for wifi ...[0m
+[0;32mI (206577) Main: Waiting for wifi ...[0m
+[0;32mI (207077) Main: Waiting for wifi ...[0m
+[0;32mI (207577) Main: Waiting for wifi ...[0m
+[0;32mI (208077) Main: Waiting for wifi ...[0m
+[0;32mI (208577) Main: Waiting for wifi ...[0m
+[0;32mI (209077) Main: Waiting for wifi ...[0m

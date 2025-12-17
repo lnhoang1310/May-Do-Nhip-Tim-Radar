@@ -365,11 +365,10 @@ static void buzzer_task(void *arg)
             else
                 continue;
 
-            // 🔁 3 ĐỢT / PHÚT
             for (int round = 0; round < 3; round++)
             {
                 buzzer_beep(beep_count);
-                vTaskDelay(pdMS_TO_TICKS(20000)); // cách nhau ~20s
+                vTaskDelay(pdMS_TO_TICKS(20000));
             }
         }
     }

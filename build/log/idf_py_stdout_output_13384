@@ -1,0 +1,310 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\Project_Anh_Sao\build\Project_Anh_Sao.elf D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 16 2025 19:32:10[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2331ch (144156) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=00033344 vaddr=3fc9cb00 size=04b58h ( 19288) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00037ea4 vaddr=40374000 size=08174h ( 33140) load[0m
+[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=afe34h (720436) map[0m
+[0;32mI (251) esp_image: segment 4: paddr=000efe5c vaddr=4037c174 size=1093ch ( 67900) load[0m
+[0;32mI (266) esp_image: segment 5: paddr=001007a0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (276) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (276) boot: Disabling RNG early entropy source...[0m
+[0;32mI (286) cpu_start: Multicore app[0m
+[0;32mI (295) cpu_start: Pro cpu start user code[0m
+[0;32mI (295) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (295) app_init: Application information:[0m
+[0;32mI (295) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (300) app_init: App version:      1[0m
+[0;32mI (303) app_init: Compile time:     Dec 16 2025 19:30:56[0m
+[0;32mI (308) app_init: ELF file SHA256:  c95afdcb8...[0m
+[0;32mI (313) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (320) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (324) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (328) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (334) heap_init: At 3FCA5DA8 len 00043968 (270 KiB): RAM[0m
+[0;32mI (339) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (345) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (350) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (356) spi_flash: detected chip: boya[0m
+[0;32mI (359) spi_flash: flash io: dio[0m
+[0;33mW (362) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (374) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (380) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (387) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (437) pp: pp rom version: e7ae62f[0m
+[0;32mI (437) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (447) wifi:wifi driver task: 3fcaab98, prio:23, stack:6656, core=0[0m
+[0;32mI (457) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (457) wifi:wifi certification version: v7.0[0m
+[0;32mI (457) wifi:config NVS flash: enabled[0m
+[0;32mI (457) wifi:config nano formatting: disabled[0m
+[0;32mI (467) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (467) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (467) wifi:Init management short buffer num: 32[0m
+[0;32mI (477) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (477) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (487) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (487) wifi:Init static rx buffer num: 10[0m
+[0;32mI (487) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (497) wifi_init: rx ba win: 6[0m
+[0;32mI (497) wifi_init: accept mbox: 6[0m
+[0;32mI (497) wifi_init: tcpip mbox: 32[0m
+[0;32mI (507) wifi_init: udp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp mbox: 6[0m
+[0;32mI (507) wifi_init: tcp tx win: 5760[0m
+[0;32mI (517) wifi_init: tcp rx win: 5760[0m
+[0;32mI (517) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (567) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (567) wifi:enable tsf[0m
+[0;32mI (577) WIFI: Found saved WiFi: Lâm Hoàng[0m
+[0;32mI (577) WIFI: WiFi STA started[0m
+[1;31mE (577) wifi:sta is connecting, return error[0m
+[0;32mI (617) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (617) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (627) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (637) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (667) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = b6:82:cb:11:42:fd[0m
+[0;32mI (667) wifi:security: WPA2-PSK, phy: bgn, rssi: -29[0m
+[0;32mI (677) wifi:pm start, type: 1[0m
+
+[0;32mI (677) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (687) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (727) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1717) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1717) WIFI: Got IP: 172.20.10.3[0m
+[0;32mI (2077) Main: Wifi Connected[0m
+[0;32mI (2077) MQTT_Service: MQTT Started[0m
+[0;32mI (2077) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2077) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;33mW (2087) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;32mI (2087) wifi:<ba-add>idx:0 (ifx:0, b6:82:cb:11:42:fd), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2097) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2107) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x42010273
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2137) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2147) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2157) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2167) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2167) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2177) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2187) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2187) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2197) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2207) bgt60tr13c-driver: Transaction verified. Successful write to register 13[0m
+[0;32mI (2217) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2217) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2227) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2237) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2237) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2247) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2257) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2267) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2267) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2277) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2287) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2287) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2297) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2307) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2317) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2317) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2327) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2337) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2337) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2347) bgt60tr13c-driver: Transaction verified. Successful write to register 54[0m
+[0;32mI (2357) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2367) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2367) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2377) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2387) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2397) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2397) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2407) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2417) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2417) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2427) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2437) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2447) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2447) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2457) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2467) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2467) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2477) bgt60tr13c-driver: Transaction verified. Successful write to register 13[0m
+[0;32mI (2487) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2497) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2497) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2507) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2517) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2517) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2527) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2537) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2547) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2547) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2557) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2567) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2567) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2577) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2587) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2597) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2597) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2607) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2617) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2627) bgt60tr13c-driver: Transaction verified. Successful write to register 54[0m
+[0;32mI (2627) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2637) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2647) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2647) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2657) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2667) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2677) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (2677) radar-vital: Original CCR2 value: 0x0003F000[0m
+[0;32mI (2677) MQTT_Service: MQTT Connected[0m
+[0;32mI (2687) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x0003F000[0m
+[0;32mI (2697) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2697) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2707) radar-vital: New CCR2 value read back: 0x0003F000[0m
+[0;32mI (2707) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2717) main_task: Returned from app_main()[0m
+[1;31mE (5447) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (5447) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (5447) MQTT_Service: MQTT Error[0m
+[1;31mE (5457) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (5467) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (16097) MQTT_Service: MQTT Connected[0m
+[1;31mE (18457) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (18457) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (18457) MQTT_Service: MQTT Error[0m
+[1;31mE (18457) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (18467) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (34527) MQTT_Service: MQTT Connected[0m
+[1;31mE (38027) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (38027) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (38037) MQTT_Service: MQTT Error[0m
+[1;31mE (38037) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (38047) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (56337) MQTT_Service: MQTT Connected[0m
+[1;31mE (58287) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (58287) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (58287) MQTT_Service: MQTT Error[0m
+[1;31mE (58297) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (58307) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (68947) MQTT_Service: MQTT Connected[0m
+[1;31mE (71707) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (71707) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (71707) MQTT_Service: MQTT Error[0m
+[1;31mE (71707) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (71717) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (87577) MQTT_Service: MQTT Connected[0m
+[1;31mE (91467) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (91467) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (91467) MQTT_Service: MQTT Error[0m
+[1;31mE (91477) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (91487) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (107237) MQTT_Service: MQTT Connected[0m
+[1;31mE (110407) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (110407) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (110417) MQTT_Service: MQTT Error[0m
+[1;31mE (110417) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (110427) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (126177) MQTT_Service: MQTT Connected[0m
+[1;31mE (129667) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (129667) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (129667) MQTT_Service: MQTT Error[0m
+[1;31mE (129667) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (129677) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (150347) MQTT_Service: MQTT Connected[0m
+[1;31mE (153317) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (153317) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (153327) MQTT_Service: MQTT Error[0m
+[1;31mE (153327) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (153337) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (169087) MQTT_Service: MQTT Connected[0m
+[1;31mE (176357) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (176357) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (176367) MQTT_Service: MQTT Error[0m
+[1;31mE (176367) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (176377) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (192127) MQTT_Service: MQTT Connected[0m
+[1;31mE (193977) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (193977) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (193977) MQTT_Service: MQTT Error[0m
+[1;31mE (193977) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (193987) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (209947) MQTT_Service: MQTT Connected[0m
+[1;31mE (216707) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (216707) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (216707) MQTT_Service: MQTT Error[0m
+[1;31mE (216717) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (216727) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (232477) MQTT_Service: MQTT Connected[0m
+[1;31mE (237187) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (237187) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (237187) MQTT_Service: MQTT Error[0m
+[1;31mE (237197) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (237207) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (252957) MQTT_Service: MQTT Connected[0m
+[1;31mE (254287) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (254287) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (254297) MQTT_Service: MQTT Error[0m
+[1;31mE (254297) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (254307) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (270157) MQTT_Service: MQTT Connected[0m
+[1;31mE (274457) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (274467) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (274467) MQTT_Service: MQTT Error[0m
+[1;31mE (274467) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (274477) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (290437) MQTT_Service: MQTT Connected[0m
+[1;31mE (293917) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (293917) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (293927) MQTT_Service: MQTT Error[0m
+[1;31mE (293927) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (293937) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (309687) MQTT_Service: MQTT Connected[0m
+[1;31mE (311227) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (311227) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (311227) MQTT_Service: MQTT Error[0m
+[1;31mE (311237) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (311237) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (323407) MQTT_Service: MQTT Connected[0m
+[1;31mE (326587) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (326587) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (326587) MQTT_Service: MQTT Error[0m
+[1;31mE (326597) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (326597) MQTT_Service: MQTT Disconnected[0m
+[0;32mI (341637) MQTT_Service: MQTT Connected[0m
+[1;31mE (343887) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (343897) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (343897) MQTT_Service: MQTT Error[0m
+[1;31mE (343897) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (343907) MQTT_Service: MQTT Disconnected[0m
