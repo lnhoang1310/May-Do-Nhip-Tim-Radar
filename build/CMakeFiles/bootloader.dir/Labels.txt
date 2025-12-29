@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-D:/Code/ESPIDF/Project_Anh_Sao/build/CMakeFiles/bootloader
-D:/Code/ESPIDF/Project_Anh_Sao/build/CMakeFiles/bootloader.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/CMakeFiles/bootloader-complete.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/CMakeFiles/bootloader
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/CMakeFiles/bootloader.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/CMakeFiles/bootloader-complete.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

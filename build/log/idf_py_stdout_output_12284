@@ -1,0 +1,1398 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21ac0h (137920) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031ae8 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036618 vaddr=40374000 size=09a00h ( 39424) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a65dch (681436) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6604 vaddr=4037da00 size=0f0b0h ( 61616) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f56bc vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  cc8fb0680...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA5D78 len 00043998 (270 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (590) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (920) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (920) wifi:security: WPA2-PSK, phy: bgn, rssi: -35[0m
+[0;32mI (920) wifi:pm start, type: 1[0m
+
+[0;32mI (920) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (930) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (980) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2410) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2410) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2570) Main: Wifi Connected[0m
+[0;32mI (2570) MQTT_Service: MQTT Started[0m
+[0;32mI (2570) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2570) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2570) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2600) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x42010123
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2630) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2640) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2670) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2690) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2700) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2720) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2740) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2750) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2770) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2790) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2800) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2820) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2840) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2840) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2850) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2870) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2880) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2900) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2920) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2930) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2950) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2970) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2980) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (3000) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (3020) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (3030) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (3050) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (3070) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (3080) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (3100) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (3110) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (3130) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (3140) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (3140) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (3150) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (3150) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3160) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (3170) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (3170) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (3180) radar-vital: Measuring STARTED by MQTT[0m
+[0;33mW (3990) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (4630) radar-vital: HR rejected (snr=0.14 mag=3.3)[0m
+[0;32mI (5090) MQTT_Service: MQTT Connected[0m
+[0;33mW (5260) radar-vital: HR rejected (snr=0.06 mag=1.0)[0m
+[0;33mW (5900) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (6540) radar-vital: HR rejected (snr=0.03 mag=0.1)[0m
+[0;33mW (7180) radar-vital: HR rejected (snr=0.09 mag=0.4)[0m
+[0;33mW (7820) radar-vital: HR rejected (snr=0.15 mag=2.3)[0m
+[0;33mW (8460) radar-vital: HR rejected (snr=0.03 mag=0.5)[0m
+[0;33mW (9100) radar-vital: HR rejected (snr=0.89 mag=20.2)[0m
+[0;33mW (9750) radar-vital: HR rejected (snr=0.11 mag=72.6)[0m
+[0;33mW (10390) radar-vital: HR rejected (snr=1.17 mag=32.7)[0m
+[0;33mW (11860) radar-vital: HR rejected (snr=1.97 mag=41341.5)[0m
+[0;33mW (12500) radar-vital: HR rejected (snr=0.08 mag=132.4)[0m
+[0;33mW (13250) radar-vital: HR rejected (snr=1.86 mag=11821.7)[0m
+[0;33mW (14240) radar-vital: HR rejected (snr=0.35 mag=385.2)[0m
+[0;33mW (14880) radar-vital: HR rejected (snr=2.47 mag=254.0)[0m
+[0;33mW (15520) radar-vital: HR rejected (snr=0.29 mag=6.4)[0m
+[0;33mW (16170) radar-vital: HR rejected (snr=0.69 mag=5.5)[0m
+[0;33mW (17420) radar-vital: HR rejected (snr=0.47 mag=13.6)[0m
+[0;33mW (18060) radar-vital: HR rejected (snr=0.34 mag=24.8)[0m
+[0;33mW (22520) radar-vital: HR rejected (snr=0.01 mag=5.6)[0m
+[0;33mW (23160) radar-vital: HR rejected (snr=0.45 mag=11.2)[0m
+[0;33mW (23800) radar-vital: HR rejected (snr=0.07 mag=16.3)[0m
+[0;33mW (24440) radar-vital: HR rejected (snr=0.12 mag=6.0)[0m
+[0;33mW (25080) radar-vital: HR rejected (snr=3.54 mag=74.4)[0m
+[0;33mW (25720) radar-vital: HR rejected (snr=0.11 mag=1.4)[0m
+[0;33mW (26360) radar-vital: HR rejected (snr=0.24 mag=3.0)[0m
+[0;33mW (27010) radar-vital: HR rejected (snr=1.65 mag=27.3)[0m
+[0;33mW (27650) radar-vital: HR rejected (snr=0.07 mag=1.2)[0m
+[0;33mW (28290) radar-vital: HR rejected (snr=1.67 mag=47.4)[0m
+[0;33mW (28930) radar-vital: HR rejected (snr=0.34 mag=4.3)[0m
+[0;33mW (29570) radar-vital: HR rejected (snr=1.60 mag=27.9)[0m
+[0;33mW (30210) radar-vital: HR rejected (snr=0.93 mag=14.0)[0m
+[0;33mW (36340) radar-vital: HR rejected (snr=0.97 mag=19.9)[0m
+[1;31mE (36830) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (36830) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (36840) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (40380) radar-vital: HR rejected (snr=0.23 mag=7.2)[0m
+[0;33mW (41020) radar-vital: HR rejected (snr=0.38 mag=13.3)[0m
+[0;33mW (43110) radar-vital: HR rejected (snr=2.01 mag=474.6)[0m
+[0;33mW (44420) radar-vital: HR rejected (snr=1.09 mag=470.8)[0m
+[0;33mW (46040) radar-vital: HR rejected (snr=0.90 mag=22.8)[0m
+[0;33mW (47160) radar-vital: HR rejected (snr=1.64 mag=57.3)[0m
+[0;33mW (47800) radar-vital: HR rejected (snr=0.34 mag=140.8)[0m
+[0;33mW (49360) radar-vital: HR rejected (snr=1.46 mag=859.8)[0m
+[0;33mW (50000) radar-vital: HR rejected (snr=2.59 mag=83.1)[0m
+[0;33mW (50640) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (51280) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (51930) radar-vital: HR rejected (snr=0.11 mag=2.0)[0m
+[0;33mW (52570) radar-vital: HR rejected (snr=1.80 mag=624.3)[0m
+[0;33mW (53200) radar-vital: HR rejected (snr=1.68 mag=203.6)[0m
+[0;33mW (53850) radar-vital: HR rejected (snr=0.06 mag=58.8)[0m
+[0;33mW (54490) radar-vital: HR rejected (snr=0.01 mag=2.1)[0m
+[0;33mW (56060) radar-vital: HR rejected (snr=0.09 mag=3.0)[0m
+[0;32mI (57110) MQTT_Service: MQTT Connected[0m
+[0;33mW (57260) radar-vital: HR rejected (snr=0.67 mag=202.7)[0m
+[0;33mW (57900) radar-vital: HR rejected (snr=0.00 mag=1.0)[0m
+[0;33mW (58540) radar-vital: HR rejected (snr=0.75 mag=11.8)[0m
+[0;33mW (60770) radar-vital: HR rejected (snr=0.03 mag=5.4)[0m
+[0;33mW (61410) radar-vital: HR rejected (snr=0.02 mag=2.5)[0m
+[0;33mW (62050) radar-vital: HR rejected (snr=0.02 mag=0.5)[0m
+[0;33mW (62700) radar-vital: HR rejected (snr=0.29 mag=558.8)[0m
+[0;33mW (63340) radar-vital: HR rejected (snr=0.11 mag=100.3)[0m
+[0;33mW (63980) radar-vital: HR rejected (snr=0.98 mag=29.9)[0m
+[0;33mW (65250) radar-vital: HR rejected (snr=0.14 mag=4.6)[0m
+[0;33mW (66280) radar-vital: HR rejected (snr=0.02 mag=0.7)[0m
+[0;33mW (66920) radar-vital: HR rejected (snr=0.05 mag=69.4)[0m
+[0;33mW (68160) radar-vital: HR rejected (snr=2.03 mag=6959.3)[0m
+[0;33mW (68810) radar-vital: HR rejected (snr=0.04 mag=18.8)[0m
+[0;33mW (72980) radar-vital: HR rejected (snr=0.58 mag=140.4)[0m
+[0;33mW (73630) radar-vital: HR rejected (snr=0.57 mag=266.9)[0m
+[0;33mW (74270) radar-vital: HR rejected (snr=0.04 mag=102.0)[0m
+[0;33mW (74910) radar-vital: HR rejected (snr=2.41 mag=137.6)[0m
+[0;33mW (75550) radar-vital: HR rejected (snr=0.09 mag=48.7)[0m
+[0;33mW (76190) radar-vital: HR rejected (snr=0.82 mag=416.2)[0m
+[0;33mW (78090) radar-vital: HR rejected (snr=1.40 mag=15150.5)[0m
+[0;33mW (79190) radar-vital: HR rejected (snr=0.69 mag=248.9)[0m
+[0;33mW (80660) radar-vital: HR rejected (snr=0.12 mag=10.7)[0m
+[0;33mW (81310) radar-vital: HR rejected (snr=0.64 mag=244.1)[0m
+[0;33mW (82390) radar-vital: HR rejected (snr=2.81 mag=558.1)[0m
+[0;33mW (97170) radar-vital: HR rejected (snr=0.29 mag=80.7)[0m
+[0;33mW (97810) radar-vital: HR rejected (snr=0.23 mag=9.4)[0m
+[0;33mW (101290) radar-vital: HR rejected (snr=0.06 mag=4.5)[0m
+[0;33mW (101930) radar-vital: HR rejected (snr=0.07 mag=3.0)[0m
+[0;33mW (103500) radar-vital: HR rejected (snr=0.06 mag=1.1)[0m
+[0;33mW (105910) radar-vital: HR rejected (snr=0.10 mag=7.7)[0m
+[0;33mW (110610) radar-vital: HR rejected (snr=2.05 mag=85.5)[0m
+[0;33mW (112490) radar-vital: HR rejected (snr=1.00 mag=50.2)[0m
+[0;33mW (113130) radar-vital: HR rejected (snr=1.02 mag=695.9)[0m
+[0;33mW (114550) radar-vital: HR rejected (snr=0.35 mag=5.5)[0m
+[0;33mW (115440) radar-vital: HR rejected (snr=2.12 mag=80.3)[0m
+[0;33mW (116080) radar-vital: HR rejected (snr=2.61 mag=17.2)[0m
+[0;33mW (116730) radar-vital: HR rejected (snr=0.05 mag=0.6)[0m
+[0;33mW (117970) radar-vital: HR rejected (snr=0.75 mag=13.1)[0m
+[0;33mW (119030) radar-vital: HR rejected (snr=0.75 mag=8.8)[0m
+[0;33mW (119670) radar-vital: HR rejected (snr=0.17 mag=1.4)[0m
+[0;33mW (120310) radar-vital: HR rejected (snr=0.06 mag=2.2)[0m
+[0;33mW (121400) radar-vital: HR rejected (snr=1.78 mag=47.7)[0m
+[0;33mW (122970) radar-vital: HR rejected (snr=1.25 mag=1110.9)[0m
+[0;33mW (125250) radar-vital: HR rejected (snr=1.18 mag=1601.1)[0m
+[0;33mW (125890) radar-vital: HR rejected (snr=0.39 mag=2078.0)[0m
+[0;33mW (127020) radar-vital: HR rejected (snr=0.26 mag=5.0)[0m
+[0;33mW (127660) radar-vital: HR rejected (snr=0.01 mag=3.3)[0m
+[0;33mW (128310) radar-vital: HR rejected (snr=0.42 mag=851.6)[0m
+[0;33mW (130350) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (133790) radar-vital: HR rejected (snr=0.03 mag=73.1)[0m
+[0;33mW (137210) radar-vital: HR rejected (snr=0.02 mag=103.3)[0m
+[0;33mW (137850) radar-vital: HR rejected (snr=0.05 mag=196.0)[0m
+[0;33mW (145960) radar-vital: HR rejected (snr=0.28 mag=6.6)[0m
+[0;33mW (151880) radar-vital: HR rejected (snr=0.40 mag=7.5)[0m
+[0;33mW (160360) radar-vital: HR rejected (snr=0.11 mag=3.1)[0m
+[0;33mW (161360) radar-vital: HR rejected (snr=0.49 mag=12.8)[0m
+[0;33mW (162910) radar-vital: HR rejected (snr=0.05 mag=0.7)[0m
+[0;33mW (174970) radar-vital: HR rejected (snr=0.34 mag=7.3)[0m
+[0;33mW (176030) radar-vital: HR rejected (snr=0.02 mag=0.6)[0m
+[0;33mW (176670) radar-vital: HR rejected (snr=0.38 mag=4.9)[0m
+[0;33mW (179030) radar-vital: HR rejected (snr=0.09 mag=17.0)[0m
+[0;33mW (184390) radar-vital: HR rejected (snr=0.01 mag=0.4)[0m
+[0;33mW (186360) radar-vital: HR rejected (snr=0.04 mag=5.5)[0m
+[0;33mW (188610) radar-vital: HR rejected (snr=0.08 mag=17.3)[0m
+[0;33mW (190470) radar-vital: HR rejected (snr=0.25 mag=5.1)[0m
+[0;33mW (191110) radar-vital: HR rejected (snr=0.05 mag=5.7)[0m
+[0;33mW (191750) radar-vital: HR rejected (snr=0.19 mag=10.9)[0m
+[0;33mW (192390) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (193040) radar-vital: HR rejected (snr=0.02 mag=0.4)[0m
+[0;33mW (195470) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (196110) radar-vital: HR rejected (snr=0.29 mag=2.6)[0m
+[0;33mW (196750) radar-vital: HR rejected (snr=0.11 mag=2.7)[0m
+[0;33mW (198180) radar-vital: HR rejected (snr=0.76 mag=1302.9)[0m
+[0;33mW (199920) radar-vital: HR rejected (snr=0.21 mag=13.9)[0m
+[0;33mW (201980) radar-vital: HR rejected (snr=0.90 mag=1844.0)[0m
+[0;33mW (205920) radar-vital: HR rejected (snr=0.12 mag=5.2)[0m
+[0;33mW (206560) radar-vital: HR rejected (snr=0.57 mag=8.1)[0m
+[0;33mW (207200) radar-vital: HR rejected (snr=0.06 mag=3.2)[0m
+[0;33mW (210770) radar-vital: HR rejected (snr=1.08 mag=39.8)[0m
+[0;33mW (212410) radar-vital: HR rejected (snr=0.31 mag=25.6)[0m
+[0;33mW (213050) radar-vital: HR rejected (snr=0.84 mag=23.9)[0m
+[0;33mW (216790) radar-vital: HR rejected (snr=0.35 mag=23.6)[0m
+[0;33mW (218710) radar-vital: HR rejected (snr=0.22 mag=6.1)[0m
+[0;33mW (220290) radar-vital: HR rejected (snr=0.00 mag=0.2)[0m
+[0;33mW (220930) radar-vital: HR rejected (snr=0.11 mag=83.2)[0m
+[0;33mW (223830) radar-vital: HR rejected (snr=0.06 mag=3.8)[0m
+[0;33mW (224690) radar-vital: HR rejected (snr=0.50 mag=18.4)[0m
+[0;33mW (226110) radar-vital: HR rejected (snr=0.02 mag=20.6)[0m
+[0;33mW (227120) radar-vital: HR rejected (snr=0.26 mag=7.0)[0m
+[0;33mW (227760) radar-vital: HR rejected (snr=0.93 mag=16.6)[0m
+[0;33mW (228400) radar-vital: HR rejected (snr=0.56 mag=11.5)[0m
+[0;33mW (229040) radar-vital: HR rejected (snr=1.60 mag=32.9)[0m
+[0;33mW (229690) radar-vital: HR rejected (snr=0.94 mag=40.4)[0m
+[0;33mW (230330) radar-vital: HR rejected (snr=0.46 mag=13.7)[0m
+[0;33mW (230970) radar-vital: HR rejected (snr=0.54 mag=104.8)[0m
+[0;33mW (231610) radar-vital: HR rejected (snr=0.48 mag=4.7)[0m
+[0;33mW (232250) radar-vital: HR rejected (snr=0.27 mag=2.1)[0m
+[0;33mW (232890) radar-vital: HR rejected (snr=1.75 mag=33.4)[0m
+[0;33mW (234170) radar-vital: HR rejected (snr=2.13 mag=32.6)[0m
+[0;33mW (234810) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (235450) radar-vital: HR rejected (snr=0.04 mag=0.2)[0m
+[0;33mW (236090) radar-vital: HR rejected (snr=1.03 mag=8.1)[0m
+[0;33mW (237770) radar-vital: HR rejected (snr=0.56 mag=18.4)[0m
+[0;33mW (238410) radar-vital: HR rejected (snr=0.74 mag=6.3)[0m
+[0;33mW (239050) radar-vital: HR rejected (snr=0.04 mag=0.4)[0m
+[0;33mW (239690) radar-vital: HR rejected (snr=0.50 mag=5.4)[0m
+[0;33mW (240340) radar-vital: HR rejected (snr=0.59 mag=6.8)[0m
+[0;33mW (240970) radar-vital: HR rejected (snr=1.31 mag=16.9)[0m
+[0;33mW (241620) radar-vital: HR rejected (snr=0.20 mag=0.9)[0m
+[0;33mW (242260) radar-vital: HR rejected (snr=0.44 mag=2.4)[0m
+[0;33mW (242900) radar-vital: HR rejected (snr=0.41 mag=3.9)[0m
+[0;33mW (244400) radar-vital: HR rejected (snr=4.18 mag=62.9)[0m
+[0;33mW (245040) radar-vital: HR rejected (snr=0.63 mag=10.6)[0m
+[0;33mW (245680) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (246320) radar-vital: HR rejected (snr=0.36 mag=5.3)[0m
+[0;33mW (246960) radar-vital: HR rejected (snr=2.30 mag=41.3)[0m
+[0;33mW (247610) radar-vital: HR rejected (snr=0.32 mag=4.8)[0m
+[0;33mW (248250) radar-vital: HR rejected (snr=0.81 mag=8.5)[0m
+[0;33mW (248890) radar-vital: HR rejected (snr=0.62 mag=13.6)[0m
+[0;33mW (249530) radar-vital: HR rejected (snr=0.08 mag=0.7)[0m
+[0;33mW (250170) radar-vital: HR rejected (snr=0.52 mag=5.6)[0m
+[0;33mW (250810) radar-vital: HR rejected (snr=0.89 mag=26.1)[0m
+[0;33mW (251450) radar-vital: HR rejected (snr=0.45 mag=964.0)[0m
+[0;33mW (252090) radar-vital: HR rejected (snr=1.24 mag=19.1)[0m
+[0;33mW (252730) radar-vital: HR rejected (snr=0.09 mag=0.5)[0m
+[0;33mW (253370) radar-vital: HR rejected (snr=0.94 mag=26.9)[0m
+[0;33mW (254010) radar-vital: HR rejected (snr=0.92 mag=9.5)[0m
+[0;33mW (254650) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (255290) radar-vital: HR rejected (snr=0.15 mag=1.6)[0m
+[0;33mW (255930) radar-vital: HR rejected (snr=0.14 mag=2.2)[0m
+[0;33mW (262840) radar-vital: HR rejected (snr=0.33 mag=601.6)[0m
+[0;33mW (263480) radar-vital: HR rejected (snr=0.73 mag=294.0)[0m
+[0;33mW (264130) radar-vital: HR rejected (snr=0.02 mag=42.9)[0m
+[0;33mW (264770) radar-vital: HR rejected (snr=2.22 mag=266.3)[0m
+[0;33mW (265410) radar-vital: HR rejected (snr=1.15 mag=18.9)[0m
+[0;33mW (266050) radar-vital: HR rejected (snr=0.13 mag=187.7)[0m
+[0;33mW (267290) radar-vital: HR rejected (snr=0.03 mag=67.8)[0m
+[0;33mW (267930) radar-vital: HR rejected (snr=0.01 mag=19.7)[0m
+[0;33mW (268570) radar-vital: HR rejected (snr=0.17 mag=539.9)[0m
+[0;33mW (269210) radar-vital: HR rejected (snr=1.69 mag=36.9)[0m
+[0;33mW (269850) radar-vital: HR rejected (snr=0.44 mag=4.7)[0m
+[0;33mW (270490) radar-vital: HR rejected (snr=0.42 mag=318.4)[0m
+[0;33mW (271130) radar-vital: HR rejected (snr=0.78 mag=224.7)[0m
+[0;33mW (271770) radar-vital: HR rejected (snr=1.10 mag=16146.8)[0m
+[0;33mW (272410) radar-vital: HR rejected (snr=0.05 mag=27.8)[0m
+[0;33mW (273050) radar-vital: HR rejected (snr=0.16 mag=649.7)[0m
+[0;33mW (273690) radar-vital: HR rejected (snr=0.12 mag=479.8)[0m
+[0;33mW (274330) radar-vital: HR rejected (snr=0.29 mag=429.9)[0m
+[0;33mW (274970) radar-vital: HR rejected (snr=0.46 mag=335.0)[0m
+[0;33mW (275610) radar-vital: HR rejected (snr=0.02 mag=0.9)[0m
+[0;33mW (276260) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (276900) radar-vital: HR rejected (snr=0.76 mag=5.9)[0m
+[0;33mW (277540) radar-vital: HR rejected (snr=0.36 mag=4.0)[0m
+[0;33mW (278700) radar-vital: HR rejected (snr=0.21 mag=465.3)[0m
+[0;33mW (279340) radar-vital: HR rejected (snr=1.56 mag=494.1)[0m
+[0;33mW (279980) radar-vital: HR rejected (snr=0.11 mag=345.1)[0m
+[0;33mW (280620) radar-vital: HR rejected (snr=0.00 mag=1.4)[0m
+[0;33mW (281260) radar-vital: HR rejected (snr=0.35 mag=269.1)[0m
+[0;33mW (281910) radar-vital: HR rejected (snr=1.93 mag=11268.5)[0m
+[0;33mW (284350) radar-vital: HR rejected (snr=0.79 mag=235.4)[0m
+[0;33mW (284990) radar-vital: HR rejected (snr=0.40 mag=41.6)[0m
+[0;33mW (286440) radar-vital: HR rejected (snr=7.68 mag=2457.2)[0m
+[0;33mW (287610) radar-vital: HR rejected (snr=1.57 mag=170.4)[0m
+[0;33mW (288260) radar-vital: HR rejected (snr=0.09 mag=1.1)[0m
+[0;33mW (289000) radar-vital: HR rejected (snr=0.30 mag=54.1)[0m
+[0;33mW (289640) radar-vital: HR rejected (snr=0.50 mag=2.7)[0m
+[0;33mW (292390) radar-vital: HR rejected (snr=3.53 mag=135.6)[0m
+[0;33mW (293030) radar-vital: HR rejected (snr=0.42 mag=2.6)[0m
+[0;33mW (294180) radar-vital: HR rejected (snr=0.46 mag=5.9)[0m
+[0;33mW (294830) radar-vital: HR rejected (snr=0.33 mag=3.9)[0m
+[0;33mW (296200) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (296840) radar-vital: HR rejected (snr=0.07 mag=0.6)[0m
+[0;33mW (297480) radar-vital: HR rejected (snr=0.31 mag=3.4)[0m
+[0;33mW (300610) radar-vital: HR rejected (snr=0.30 mag=464.6)[0m
+[0;33mW (301240) radar-vital: HR rejected (snr=0.14 mag=119.7)[0m
+[0;33mW (301880) radar-vital: HR rejected (snr=0.01 mag=6.5)[0m
+[0;33mW (302520) radar-vital: HR rejected (snr=0.70 mag=108.4)[0m
+[0;33mW (303160) radar-vital: HR rejected (snr=0.01 mag=13.3)[0m
+[0;33mW (304460) radar-vital: HR rejected (snr=0.96 mag=16226.1)[0m
+[0;33mW (305890) radar-vital: HR rejected (snr=0.89 mag=7853.9)[0m
+[0;33mW (306530) radar-vital: HR rejected (snr=1.02 mag=849.0)[0m
+[0;33mW (307160) radar-vital: HR rejected (snr=1.47 mag=765.5)[0m
+[0;33mW (307800) radar-vital: HR rejected (snr=2.64 mag=538.6)[0m
+[0;33mW (308440) radar-vital: HR rejected (snr=0.22 mag=27.5)[0m
+[0;33mW (309080) radar-vital: HR rejected (snr=1.23 mag=18.0)[0m
+[0;33mW (309720) radar-vital: HR rejected (snr=0.53 mag=308.3)[0m
+[0;33mW (310360) radar-vital: HR rejected (snr=0.65 mag=507.6)[0m
+[0;33mW (311360) radar-vital: HR rejected (snr=0.14 mag=86.1)[0m
+[0;33mW (312000) radar-vital: HR rejected (snr=0.03 mag=157.8)[0m
+[0;33mW (312640) radar-vital: HR rejected (snr=0.02 mag=94.0)[0m
+[0;33mW (313290) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (313930) radar-vital: HR rejected (snr=0.21 mag=79.3)[0m
+[0;33mW (314570) radar-vital: HR rejected (snr=0.32 mag=9.3)[0m
+[0;33mW (315210) radar-vital: HR rejected (snr=0.03 mag=12.3)[0m
+[0;33mW (315850) radar-vital: HR rejected (snr=1.07 mag=493.1)[0m
+[0;33mW (316490) radar-vital: HR rejected (snr=0.43 mag=60.3)[0m
+[0;33mW (317130) radar-vital: HR rejected (snr=0.07 mag=45.3)[0m
+[0;33mW (317780) radar-vital: HR rejected (snr=0.14 mag=330.0)[0m
+[0;33mW (318410) radar-vital: HR rejected (snr=0.25 mag=348.8)[0m
+[0;33mW (319040) radar-vital: HR rejected (snr=0.15 mag=36.9)[0m
+[0;33mW (319690) radar-vital: HR rejected (snr=1.02 mag=80.4)[0m
+[0;33mW (320330) radar-vital: HR rejected (snr=0.05 mag=9.6)[0m
+[0;33mW (320970) radar-vital: HR rejected (snr=0.37 mag=4.3)[0m
+[0;33mW (321610) radar-vital: HR rejected (snr=0.17 mag=4.1)[0m
+[0;33mW (322250) radar-vital: HR rejected (snr=0.98 mag=12.9)[0m
+[0;33mW (322890) radar-vital: HR rejected (snr=1.34 mag=14.8)[0m
+[0;33mW (323530) radar-vital: HR rejected (snr=1.54 mag=20.2)[0m
+[0;33mW (324180) radar-vital: HR rejected (snr=0.11 mag=11.8)[0m
+[0;33mW (324820) radar-vital: HR rejected (snr=0.55 mag=357.3)[0m
+[0;33mW (325740) radar-vital: HR rejected (snr=0.15 mag=318.9)[0m
+[0;33mW (326380) radar-vital: HR rejected (snr=1.25 mag=13970.9)[0m
+[0;33mW (327020) radar-vital: HR rejected (snr=0.01 mag=4.0)[0m
+[0;33mW (327660) radar-vital: HR rejected (snr=0.40 mag=421.7)[0m
+[0;33mW (328300) radar-vital: HR rejected (snr=0.43 mag=1061.3)[0m
+[0;33mW (328940) radar-vital: HR rejected (snr=3.64 mag=191348.5)[0m
+[0;33mW (330060) radar-vital: HR rejected (snr=0.02 mag=18.6)[0m
+[0;33mW (331660) radar-vital: HR rejected (snr=2.23 mag=16014.7)[0m
+[0;33mW (332300) radar-vital: HR rejected (snr=0.71 mag=815.0)[0m
+[0;33mW (332940) radar-vital: HR rejected (snr=0.58 mag=101.1)[0m
+[0;33mW (333580) radar-vital: HR rejected (snr=1.95 mag=29.5)[0m
+[0;33mW (334220) radar-vital: HR rejected (snr=0.09 mag=0.7)[0m
+[0;33mW (334860) radar-vital: HR rejected (snr=0.05 mag=27.6)[0m
+[0;33mW (335510) radar-vital: HR rejected (snr=0.15 mag=17.4)[0m
+[1;31mE (335950) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (335950) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (335960) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (336150) radar-vital: HR rejected (snr=0.07 mag=75.3)[0m
+[0;33mW (336790) radar-vital: HR rejected (snr=2.25 mag=8218.5)[0m
+[0;33mW (337430) radar-vital: HR rejected (snr=0.15 mag=19.3)[0m
+[0;33mW (338070) radar-vital: HR rejected (snr=0.01 mag=2.9)[0m
+[0;33mW (338710) radar-vital: HR rejected (snr=0.01 mag=2.0)[0m
+[0;33mW (339350) radar-vital: HR rejected (snr=0.19 mag=337.4)[0m
+[0;33mW (339990) radar-vital: HR rejected (snr=0.05 mag=1.2)[0m
+[0;33mW (340630) radar-vital: HR rejected (snr=0.48 mag=6.3)[0m
+[0;33mW (341270) radar-vital: HR rejected (snr=0.16 mag=1.4)[0m
+[0;33mW (341920) radar-vital: HR rejected (snr=0.04 mag=0.3)[0m
+[0;33mW (342550) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (343190) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (343830) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (344470) radar-vital: HR rejected (snr=0.01 mag=0.4)[0m
+[0;33mW (345110) radar-vital: HR rejected (snr=0.06 mag=0.4)[0m
+[0;33mW (345750) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (346390) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (347040) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;32mI (347110) MQTT_Service: MQTT Connected[0m
+[0;33mW (347670) radar-vital: HR rejected (snr=0.12 mag=1.3)[0m
+[0;33mW (348320) radar-vital: HR rejected (snr=0.10 mag=0.5)[0m
+[0;33mW (348960) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (349600) radar-vital: HR rejected (snr=0.06 mag=0.6)[0m
+[0;33mW (350240) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (350880) radar-vital: HR rejected (snr=0.07 mag=1.0)[0m
+[0;33mW (351520) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (352160) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (352800) radar-vital: HR rejected (snr=0.01 mag=5.6)[0m
+[0;33mW (353450) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (354080) radar-vital: HR rejected (snr=0.09 mag=0.6)[0m
+[0;33mW (354720) radar-vital: HR rejected (snr=0.05 mag=0.7)[0m
+[0;33mW (355360) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (356000) radar-vital: HR rejected (snr=0.22 mag=1.6)[0m
+[0;33mW (356640) radar-vital: HR rejected (snr=0.06 mag=0.7)[0m
+[0;33mW (357280) radar-vital: HR rejected (snr=0.04 mag=0.3)[0m
+[0;33mW (357920) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (358560) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (359210) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (359840) radar-vital: HR rejected (snr=0.05 mag=2.1)[0m
+[0;33mW (360490) radar-vital: HR rejected (snr=0.14 mag=1.0)[0m
+[0;33mW (361130) radar-vital: HR rejected (snr=0.15 mag=1.1)[0m
+[0;33mW (361770) radar-vital: HR rejected (snr=0.17 mag=1.4)[0m
+[0;33mW (362410) radar-vital: HR rejected (snr=0.08 mag=0.7)[0m
+[0;33mW (363050) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (363690) radar-vital: HR rejected (snr=0.26 mag=5.5)[0m
+[0;33mW (364330) radar-vital: HR rejected (snr=2.89 mag=49954.3)[0m
+[0;33mW (364970) radar-vital: HR rejected (snr=0.61 mag=14515.7)[0m
+[0;33mW (365610) radar-vital: HR rejected (snr=1.18 mag=57324.4)[0m
+[0;33mW (366250) radar-vital: HR rejected (snr=1.07 mag=10763.7)[0m
+[0;33mW (369860) radar-vital: HR rejected (snr=0.61 mag=4503.0)[0m
+[0;33mW (372290) radar-vital: HR rejected (snr=0.14 mag=78.6)[0m
+[0;33mW (383350) radar-vital: HR rejected (snr=0.16 mag=3.3)[0m
+[0;33mW (384400) radar-vital: HR rejected (snr=0.05 mag=11.4)[0m
+[0;33mW (385040) radar-vital: HR rejected (snr=0.02 mag=5.0)[0m
+[0;33mW (385680) radar-vital: HR rejected (snr=0.00 mag=3.5)[0m
+[0;33mW (386320) radar-vital: HR rejected (snr=0.09 mag=54.9)[0m
+[0;33mW (386960) radar-vital: HR rejected (snr=0.11 mag=142.5)[0m
+[0;33mW (387600) radar-vital: HR rejected (snr=0.09 mag=119.0)[0m
+[0;33mW (388240) radar-vital: HR rejected (snr=0.01 mag=4.0)[0m
+[0;33mW (388880) radar-vital: HR rejected (snr=0.00 mag=2.1)[0m
+[0;33mW (389520) radar-vital: HR rejected (snr=0.01 mag=0.7)[0m
+[0;33mW (390170) radar-vital: HR rejected (snr=0.04 mag=72.0)[0m
+[0;33mW (390810) radar-vital: HR rejected (snr=0.00 mag=7.6)[0m
+[0;33mW (391450) radar-vital: HR rejected (snr=0.06 mag=79.7)[0m
+[0;33mW (392090) radar-vital: HR rejected (snr=0.04 mag=0.6)[0m
+[0;33mW (392730) radar-vital: HR rejected (snr=0.01 mag=0.2)[0m
+[0;33mW (397150) radar-vital: HR rejected (snr=0.25 mag=73.2)[0m
+[0;33mW (397790) radar-vital: HR rejected (snr=1.33 mag=17537.7)[0m
+[0;33mW (399040) radar-vital: HR rejected (snr=1.01 mag=8517.0)[0m
+[0;33mW (399680) radar-vital: HR rejected (snr=2.85 mag=5038.3)[0m
+[0;33mW (400320) radar-vital: HR rejected (snr=1.54 mag=32.9)[0m
+[0;33mW (401840) radar-vital: HR rejected (snr=0.02 mag=24.4)[0m
+[0;33mW (402660) radar-vital: HR rejected (snr=0.37 mag=396.4)[0m
+[0;33mW (403300) radar-vital: HR rejected (snr=0.11 mag=186.7)[0m
+[0;33mW (404300) radar-vital: HR rejected (snr=0.03 mag=45.1)[0m
+[0;33mW (404940) radar-vital: HR rejected (snr=0.12 mag=208.4)[0m
+[0;33mW (405580) radar-vital: HR rejected (snr=0.29 mag=211.7)[0m
+[0;33mW (406220) radar-vital: HR rejected (snr=0.27 mag=1262.0)[0m
+[0;33mW (406860) radar-vital: HR rejected (snr=1.12 mag=11160.9)[0m
+[0;33mW (407510) radar-vital: HR rejected (snr=1.22 mag=477.6)[0m
+[0;33mW (408150) radar-vital: HR rejected (snr=0.60 mag=4.4)[0m
+[0;33mW (408790) radar-vital: HR rejected (snr=0.04 mag=0.1)[0m
+[0;33mW (409430) radar-vital: HR rejected (snr=0.46 mag=3.0)[0m
+[0;33mW (410490) radar-vital: HR rejected (snr=1.08 mag=17.9)[0m
+[0;33mW (411130) radar-vital: HR rejected (snr=0.35 mag=51.1)[0m
+[0;33mW (411770) radar-vital: HR rejected (snr=0.14 mag=72.1)[0m
+[0;33mW (412410) radar-vital: HR rejected (snr=0.25 mag=0.7)[0m
+[0;33mW (413050) radar-vital: HR rejected (snr=0.37 mag=2.0)[0m
+[0;33mW (414700) radar-vital: HR rejected (snr=0.56 mag=180.7)[0m
+[0;33mW (415340) radar-vital: HR rejected (snr=1.24 mag=169.8)[0m
+[0;33mW (415980) radar-vital: HR rejected (snr=0.15 mag=1.3)[0m
+[0;33mW (416620) radar-vital: HR rejected (snr=1.23 mag=57.9)[0m
+[0;33mW (418120) radar-vital: HR rejected (snr=0.62 mag=92.6)[0m
+[0;33mW (418760) radar-vital: HR rejected (snr=0.83 mag=80.9)[0m
+[0;33mW (422710) radar-vital: HR rejected (snr=1.89 mag=9991.3)[0m
+[0;33mW (425990) radar-vital: HR rejected (snr=0.15 mag=204.9)[0m
+[0;33mW (426630) radar-vital: HR rejected (snr=0.11 mag=146.3)[0m
+[0;33mW (427780) radar-vital: HR rejected (snr=0.06 mag=20.0)[0m
+[0;33mW (428760) radar-vital: HR rejected (snr=0.12 mag=33.8)[0m
+[0;33mW (429400) radar-vital: HR rejected (snr=0.86 mag=270.3)[0m
+[0;33mW (430050) radar-vital: HR rejected (snr=0.75 mag=294.8)[0m
+[0;33mW (430690) radar-vital: HR rejected (snr=0.50 mag=545.2)[0m
+[0;33mW (432030) radar-vital: HR rejected (snr=0.12 mag=169.2)[0m
+[0;33mW (432670) radar-vital: HR rejected (snr=0.08 mag=53.2)[0m
+[0;33mW (436580) radar-vital: HR rejected (snr=0.34 mag=1102.9)[0m
+[0;33mW (437210) radar-vital: HR rejected (snr=0.23 mag=269.3)[0m
+[0;33mW (438950) radar-vital: HR rejected (snr=0.00 mag=3.4)[0m
+[0;33mW (439590) radar-vital: HR rejected (snr=0.00 mag=1.7)[0m
+[0;33mW (440800) radar-vital: HR rejected (snr=0.25 mag=341.3)[0m
+[0;33mW (441610) radar-vital: HR rejected (snr=0.29 mag=49.9)[0m
+[0;33mW (443000) radar-vital: HR rejected (snr=0.18 mag=8.0)[0m
+[0;33mW (445320) radar-vital: HR rejected (snr=0.51 mag=94.4)[0m
+[0;33mW (447690) radar-vital: HR rejected (snr=0.84 mag=91.7)[0m
+[0;33mW (451030) radar-vital: HR rejected (snr=0.81 mag=432.2)[0m
+[0;33mW (452690) radar-vital: HR rejected (snr=1.08 mag=224.7)[0m
+[0;33mW (454070) radar-vital: HR rejected (snr=0.56 mag=152.9)[0m
+[0;33mW (454710) radar-vital: HR rejected (snr=0.15 mag=15.2)[0m
+[0;33mW (455340) radar-vital: HR rejected (snr=1.04 mag=227.0)[0m
+[0;33mW (455990) radar-vital: HR rejected (snr=0.22 mag=7.1)[0m
+[0;33mW (460820) radar-vital: HR rejected (snr=0.26 mag=6.2)[0m
+[0;33mW (462450) radar-vital: HR rejected (snr=0.08 mag=13.2)[0m
+[0;33mW (464380) radar-vital: HR rejected (snr=0.78 mag=81.2)[0m
+[0;33mW (465020) radar-vital: HR rejected (snr=1.35 mag=102.0)[0m
+[0;33mW (466950) radar-vital: HR rejected (snr=0.64 mag=84.8)[0m
+[0;33mW (468480) radar-vital: HR rejected (snr=0.95 mag=15.6)[0m
+[0;33mW (471160) radar-vital: HR rejected (snr=0.42 mag=16.9)[0m
+[0;33mW (479380) radar-vital: HR rejected (snr=0.23 mag=5.6)[0m
+[0;33mW (480020) radar-vital: HR rejected (snr=0.30 mag=6.3)[0m
+[0;33mW (480660) radar-vital: HR rejected (snr=0.20 mag=20.6)[0m
+[0;33mW (482370) radar-vital: HR rejected (snr=0.02 mag=1.5)[0m
+[0;33mW (483010) radar-vital: HR rejected (snr=0.26 mag=28.0)[0m
+[0;33mW (484300) radar-vital: HR rejected (snr=0.20 mag=10.4)[0m
+[0;33mW (485090) radar-vital: HR rejected (snr=0.42 mag=7.6)[0m
+[0;33mW (489670) radar-vital: HR rejected (snr=0.16 mag=4.6)[0m
+[0;33mW (490310) radar-vital: HR rejected (snr=2.85 mag=340.2)[0m
+[0;33mW (492470) radar-vital: HR rejected (snr=0.15 mag=5.4)[0m
+[0;33mW (493110) radar-vital: HR rejected (snr=0.86 mag=38.5)[0m
+[0;33mW (493750) radar-vital: HR rejected (snr=2.09 mag=16.9)[0m
+[0;33mW (494390) radar-vital: HR rejected (snr=1.32 mag=28.1)[0m
+[0;33mW (495030) radar-vital: HR rejected (snr=0.85 mag=31.4)[0m
+[0;33mW (495670) radar-vital: HR rejected (snr=1.55 mag=35.7)[0m
+[0;33mW (496310) radar-vital: HR rejected (snr=5.39 mag=104.1)[0m
+[0;33mW (496960) radar-vital: HR rejected (snr=1.01 mag=33.9)[0m
+[0;33mW (497600) radar-vital: HR rejected (snr=8.47 mag=175.9)[0m
+[0;33mW (498720) radar-vital: HR rejected (snr=0.19 mag=4.0)[0m
+[0;33mW (500990) radar-vital: HR rejected (snr=3.26 mag=63.7)[0m
+[0;33mW (503910) radar-vital: HR rejected (snr=4.78 mag=734.1)[0m
+[0;33mW (505170) radar-vital: HR rejected (snr=0.06 mag=8.3)[0m
+[0;33mW (511070) radar-vital: HR rejected (snr=0.31 mag=7.6)[0m
+[0;33mW (514170) radar-vital: HR rejected (snr=0.32 mag=5.0)[0m
+[0;33mW (516220) radar-vital: HR rejected (snr=0.26 mag=16.7)[0m
+[0;33mW (516860) radar-vital: HR rejected (snr=0.68 mag=16.0)[0m
+[0;33mW (519270) radar-vital: HR rejected (snr=0.05 mag=2.8)[0m
+[0;33mW (520210) radar-vital: HR rejected (snr=1.25 mag=16.6)[0m
+[0;33mW (523400) radar-vital: HR rejected (snr=0.73 mag=13.7)[0m
+[0;33mW (527130) radar-vital: HR rejected (snr=0.67 mag=15.8)[0m
+[0;33mW (528990) radar-vital: HR rejected (snr=2.22 mag=202.9)[0m
+[0;33mW (530940) radar-vital: HR rejected (snr=0.37 mag=6.5)[0m
+[0;33mW (533060) radar-vital: HR rejected (snr=0.15 mag=18.1)[0m
+[0;33mW (534020) radar-vital: HR rejected (snr=0.44 mag=24.6)[0m
+[0;33mW (535220) radar-vital: HR rejected (snr=0.28 mag=38.4)[0m
+[0;33mW (535860) radar-vital: HR rejected (snr=0.47 mag=59.4)[0m
+[0;33mW (537970) radar-vital: HR rejected (snr=0.81 mag=32.7)[0m
+[0;33mW (538940) radar-vital: HR rejected (snr=0.10 mag=36.7)[0m
+[0;33mW (539580) radar-vital: HR rejected (snr=0.09 mag=5.2)[0m
+[0;33mW (542060) radar-vital: HR rejected (snr=0.86 mag=39.9)[0m
+[0;33mW (544340) radar-vital: HR rejected (snr=1.07 mag=84.7)[0m
+[0;33mW (545450) radar-vital: HR rejected (snr=0.38 mag=2.7)[0m
+[0;33mW (546090) radar-vital: HR rejected (snr=0.29 mag=2.2)[0m
+[0;33mW (546730) radar-vital: HR rejected (snr=0.08 mag=4.2)[0m
+[0;33mW (548630) radar-vital: HR rejected (snr=0.43 mag=12.3)[0m
+[0;33mW (550910) radar-vital: HR rejected (snr=0.29 mag=11.9)[0m
+[0;33mW (551980) radar-vital: HR rejected (snr=0.19 mag=4.9)[0m
+[0;33mW (552620) radar-vital: HR rejected (snr=0.16 mag=2.1)[0m
+[0;33mW (553260) radar-vital: HR rejected (snr=0.07 mag=2.3)[0m
+[0;33mW (553900) radar-vital: HR rejected (snr=0.10 mag=3.0)[0m
+[0;33mW (555310) radar-vital: HR rejected (snr=0.04 mag=2.7)[0m
+[0;33mW (557740) radar-vital: HR rejected (snr=0.17 mag=4.5)[0m
+[0;33mW (558570) radar-vital: HR rejected (snr=2.03 mag=206.6)[0m
+[0;33mW (560150) radar-vital: HR rejected (snr=0.16 mag=19.4)[0m
+[0;33mW (560950) radar-vital: HR rejected (snr=1.76 mag=298.7)[0m
+[0;33mW (562710) radar-vital: HR rejected (snr=0.03 mag=1.1)[0m
+[0;33mW (565300) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (566410) radar-vital: HR rejected (snr=0.05 mag=42.6)[0m
+[0;33mW (575790) radar-vital: HR rejected (snr=0.37 mag=16.4)[0m
+[0;33mW (576430) radar-vital: HR rejected (snr=0.58 mag=9.6)[0m
+[0;33mW (580190) radar-vital: HR rejected (snr=0.91 mag=13.6)[0m
+[0;33mW (581570) radar-vital: HR rejected (snr=0.12 mag=2.3)[0m
+[0;33mW (582210) radar-vital: HR rejected (snr=0.06 mag=0.9)[0m
+[0;33mW (582850) radar-vital: HR rejected (snr=0.57 mag=11.6)[0m
+[0;33mW (584250) radar-vital: HR rejected (snr=0.72 mag=9.4)[0m
+[0;33mW (588590) radar-vital: HR rejected (snr=0.57 mag=21.6)[0m
+[0;33mW (590540) radar-vital: HR rejected (snr=0.66 mag=32.2)[0m
+[0;33mW (600850) radar-vital: HR rejected (snr=0.04 mag=1.6)[0m
+[0;33mW (601490) radar-vital: HR rejected (snr=0.71 mag=45.4)[0m
+[0;33mW (602560) radar-vital: HR rejected (snr=1.36 mag=10.3)[0m
+[0;33mW (603360) radar-vital: HR rejected (snr=0.18 mag=1.5)[0m
+[0;33mW (604000) radar-vital: HR rejected (snr=0.21 mag=1.3)[0m
+[0;33mW (604890) radar-vital: HR rejected (snr=0.12 mag=0.5)[0m
+[0;33mW (607550) radar-vital: HR rejected (snr=0.76 mag=22.5)[0m
+[0;33mW (608190) radar-vital: HR rejected (snr=2.98 mag=106.4)[0m
+[0;33mW (608840) radar-vital: HR rejected (snr=0.15 mag=1.8)[0m
+[0;33mW (609470) radar-vital: HR rejected (snr=0.02 mag=0.4)[0m
+[0;33mW (610120) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (610760) radar-vital: HR rejected (snr=1.40 mag=29.0)[0m
+[0;33mW (618210) radar-vital: HR rejected (snr=2.07 mag=30.9)[0m
+[0;33mW (622060) radar-vital: HR rejected (snr=0.18 mag=10.2)[0m
+[0;33mW (637850) radar-vital: HR rejected (snr=0.52 mag=29.4)[0m
+[1;31mE (638250) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (638250) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (638250) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (645370) radar-vital: HR rejected (snr=0.08 mag=7.2)[0m
+[0;33mW (656070) radar-vital: HR rejected (snr=0.15 mag=10.5)[0m
+[0;33mW (656710) radar-vital: HR rejected (snr=1.14 mag=56.8)[0m
+[0;32mI (656890) MQTT_Service: MQTT Connected[0m
+[0;33mW (657790) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (665920) radar-vital: HR rejected (snr=0.30 mag=6.3)[0m
+[0;33mW (666730) radar-vital: HR rejected (snr=0.48 mag=5.3)[0m
+[0;33mW (669640) radar-vital: HR rejected (snr=0.08 mag=1.7)[0m
+[0;33mW (670280) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (670920) radar-vital: HR rejected (snr=0.02 mag=0.6)[0m
+[0;33mW (671560) radar-vital: HR rejected (snr=0.04 mag=2.9)[0m
+[0;33mW (672200) radar-vital: HR rejected (snr=0.06 mag=4.3)[0m
+[0;33mW (672840) radar-vital: HR rejected (snr=0.03 mag=1.0)[0m
+[0;33mW (673480) radar-vital: HR rejected (snr=0.56 mag=10.4)[0m
+[0;33mW (675510) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (676150) radar-vital: HR rejected (snr=0.09 mag=1.3)[0m
+[0;33mW (690780) radar-vital: HR rejected (snr=0.12 mag=1.3)[0m
+[0;33mW (699930) radar-vital: HR rejected (snr=0.23 mag=8.1)[0m
+[0;33mW (704220) radar-vital: HR rejected (snr=0.39 mag=11.8)[0m
+[0;33mW (704860) radar-vital: HR rejected (snr=0.03 mag=1.1)[0m
+[0;33mW (716570) radar-vital: HR rejected (snr=0.14 mag=671.0)[0m
+[0;33mW (717780) radar-vital: HR rejected (snr=0.49 mag=82.4)[0m
+[0;33mW (718560) radar-vital: HR rejected (snr=0.08 mag=63.6)[0m
+[0;33mW (725060) radar-vital: HR rejected (snr=0.24 mag=13.9)[0m
+[0;33mW (726430) radar-vital: HR rejected (snr=0.28 mag=3.6)[0m
+[0;33mW (727080) radar-vital: HR rejected (snr=0.23 mag=1.8)[0m
+[0;33mW (727710) radar-vital: HR rejected (snr=0.07 mag=0.6)[0m
+[0;33mW (728350) radar-vital: HR rejected (snr=1.53 mag=94.9)[0m
+[0;33mW (728990) radar-vital: HR rejected (snr=0.55 mag=6.6)[0m
+[0;33mW (729630) radar-vital: HR rejected (snr=0.13 mag=11.8)[0m
+[0;33mW (730270) radar-vital: HR rejected (snr=0.12 mag=1.4)[0m
+[0;33mW (730910) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (731550) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (732190) radar-vital: HR rejected (snr=0.11 mag=1.8)[0m
+[0;33mW (732830) radar-vital: HR rejected (snr=0.12 mag=1.4)[0m
+[0;33mW (733470) radar-vital: HR rejected (snr=0.11 mag=1.0)[0m
+[0;33mW (734120) radar-vital: HR rejected (snr=0.03 mag=0.4)[0m
+[0;33mW (736670) radar-vital: HR rejected (snr=0.20 mag=384.7)[0m
+[0;33mW (737810) radar-vital: HR rejected (snr=2.46 mag=114.4)[0m
+[0;33mW (738450) radar-vital: HR rejected (snr=1.41 mag=27.3)[0m
+[0;33mW (739190) radar-vital: HR rejected (snr=1.53 mag=35.5)[0m
+[0;33mW (739840) radar-vital: HR rejected (snr=1.19 mag=5161.9)[0m
+[0;33mW (740480) radar-vital: HR rejected (snr=0.40 mag=7.5)[0m
+[0;33mW (741880) radar-vital: HR rejected (snr=1.61 mag=69.9)[0m
+[0;33mW (742520) radar-vital: HR rejected (snr=0.37 mag=8.0)[0m
+[0;33mW (743800) radar-vital: HR rejected (snr=2.71 mag=17432.6)[0m
+[0;33mW (744450) radar-vital: HR rejected (snr=0.03 mag=46.0)[0m
+[0;33mW (746000) radar-vital: HR rejected (snr=0.07 mag=25.6)[0m
+[0;33mW (746640) radar-vital: HR rejected (snr=0.59 mag=104.1)[0m
+[0;33mW (747280) radar-vital: HR rejected (snr=0.02 mag=0.8)[0m
+[0;33mW (747920) radar-vital: HR rejected (snr=0.00 mag=3.5)[0m
+[0;33mW (748560) radar-vital: HR rejected (snr=0.15 mag=416.6)[0m
+[0;33mW (749200) radar-vital: HR rejected (snr=1.56 mag=24.9)[0m
+[0;33mW (749840) radar-vital: HR rejected (snr=0.13 mag=96.6)[0m
+[0;33mW (751710) radar-vital: HR rejected (snr=0.07 mag=20.9)[0m
+[0;33mW (752820) radar-vital: HR rejected (snr=0.29 mag=1590.6)[0m
+[0;33mW (753720) radar-vital: HR rejected (snr=0.65 mag=48.9)[0m
+[0;33mW (754550) radar-vital: HR rejected (snr=1.39 mag=76.2)[0m
+[0;33mW (755190) radar-vital: HR rejected (snr=0.29 mag=809.1)[0m
+[0;33mW (755830) radar-vital: HR rejected (snr=0.59 mag=2554.5)[0m
+[0;33mW (756470) radar-vital: HR rejected (snr=1.14 mag=2778.2)[0m
+[0;33mW (757120) radar-vital: HR rejected (snr=0.82 mag=1760.4)[0m
+[0;33mW (757760) radar-vital: HR rejected (snr=0.96 mag=4093.6)[0m
+[0;33mW (758400) radar-vital: HR rejected (snr=0.08 mag=1.5)[0m
+[0;33mW (759550) radar-vital: HR rejected (snr=0.05 mag=188.7)[0m
+[0;33mW (760620) radar-vital: HR rejected (snr=0.04 mag=180.3)[0m
+[0;33mW (761260) radar-vital: HR rejected (snr=0.03 mag=5.8)[0m
+[0;33mW (761900) radar-vital: HR rejected (snr=0.03 mag=7.0)[0m
+[0;33mW (763170) radar-vital: HR rejected (snr=0.63 mag=1814.0)[0m
+[0;33mW (764610) radar-vital: HR rejected (snr=0.06 mag=32.7)[0m
+[0;33mW (765250) radar-vital: HR rejected (snr=0.02 mag=89.0)[0m
+[0;33mW (765890) radar-vital: HR rejected (snr=0.03 mag=147.4)[0m
+[0;33mW (769070) radar-vital: HR rejected (snr=0.77 mag=1965.0)[0m
+[0;33mW (772390) radar-vital: HR rejected (snr=0.12 mag=65.0)[0m
+[0;33mW (773060) radar-vital: HR rejected (snr=1.19 mag=2054.7)[0m
+[0;33mW (776750) radar-vital: HR rejected (snr=0.74 mag=17.7)[0m
+[0;33mW (778080) radar-vital: HR rejected (snr=0.44 mag=12.9)[0m
+[0;33mW (780750) radar-vital: HR rejected (snr=0.44 mag=44.6)[0m
+[0;33mW (784010) radar-vital: HR rejected (snr=0.89 mag=131.7)[0m
+[0;33mW (785950) radar-vital: HR rejected (snr=0.48 mag=89.3)[0m
+[0;33mW (787510) radar-vital: HR rejected (snr=0.25 mag=4.0)[0m
+[0;33mW (789560) radar-vital: HR rejected (snr=0.17 mag=4.4)[0m
+[0;33mW (790200) radar-vital: HR rejected (snr=0.22 mag=7.7)[0m
+[0;33mW (790840) radar-vital: HR rejected (snr=0.74 mag=20.4)[0m
+[0;33mW (800850) radar-vital: HR rejected (snr=0.01 mag=7.4)[0m
+[0;33mW (801490) radar-vital: HR rejected (snr=0.47 mag=4.2)[0m
+[0;33mW (802810) radar-vital: HR rejected (snr=0.16 mag=24.5)[0m
+[0;33mW (804150) radar-vital: HR rejected (snr=0.84 mag=21.0)[0m
+[0;33mW (806040) radar-vital: HR rejected (snr=0.49 mag=5.1)[0m
+[0;33mW (806680) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (809860) radar-vital: HR rejected (snr=0.20 mag=5.8)[0m
+[0;33mW (812100) radar-vital: HR rejected (snr=0.09 mag=0.8)[0m
+[0;33mW (812740) radar-vital: HR rejected (snr=0.14 mag=5.0)[0m
+[0;33mW (813380) radar-vital: HR rejected (snr=0.04 mag=2.9)[0m
+[0;33mW (814440) radar-vital: HR rejected (snr=0.14 mag=2.6)[0m
+[0;33mW (816810) radar-vital: HR rejected (snr=0.01 mag=13.3)[0m
+[0;33mW (818250) radar-vital: HR rejected (snr=0.53 mag=3.5)[0m
+[0;33mW (819460) radar-vital: HR rejected (snr=0.01 mag=4.2)[0m
+[0;33mW (820730) radar-vital: HR rejected (snr=0.25 mag=1.9)[0m
+[0;33mW (822790) radar-vital: HR rejected (snr=0.19 mag=24.3)[0m
+[0;33mW (824680) radar-vital: HR rejected (snr=0.50 mag=23.6)[0m
+[0;33mW (826870) radar-vital: HR rejected (snr=0.01 mag=18.5)[0m
+[0;33mW (830200) radar-vital: HR rejected (snr=0.02 mag=3.1)[0m
+[0;33mW (832050) radar-vital: HR rejected (snr=0.61 mag=179.2)[0m
+[0;33mW (833330) radar-vital: HR rejected (snr=0.09 mag=39.3)[0m
+[0;33mW (836790) radar-vital: HR rejected (snr=0.64 mag=60.7)[0m
+[0;33mW (844610) radar-vital: HR rejected (snr=0.62 mag=35.0)[0m
+[0;33mW (847750) radar-vital: HR rejected (snr=0.23 mag=12.7)[0m
+[0;33mW (850130) radar-vital: HR rejected (snr=0.09 mag=94.0)[0m
+[0;33mW (852430) radar-vital: HR rejected (snr=0.13 mag=4.5)[0m
+[0;33mW (854090) radar-vital: HR rejected (snr=0.22 mag=3.8)[0m
+[0;33mW (857750) radar-vital: HR rejected (snr=0.21 mag=47.7)[0m
+[0;33mW (858390) radar-vital: HR rejected (snr=0.15 mag=30.1)[0m
+[0;33mW (868980) radar-vital: HR rejected (snr=0.06 mag=3.5)[0m
+[0;33mW (872090) radar-vital: HR rejected (snr=0.32 mag=1194.8)[0m
+[0;33mW (872910) radar-vital: HR rejected (snr=0.82 mag=2199.8)[0m
+[0;33mW (873550) radar-vital: HR rejected (snr=2.03 mag=740.0)[0m
+[0;33mW (874210) radar-vital: HR rejected (snr=5.04 mag=810.7)[0m
+[0;33mW (874850) radar-vital: HR rejected (snr=0.11 mag=0.3)[0m
+[0;33mW (875670) radar-vital: HR rejected (snr=1.44 mag=51.1)[0m
+[0;33mW (876340) radar-vital: HR rejected (snr=2.73 mag=14.2)[0m
+[0;33mW (876980) radar-vital: HR rejected (snr=0.15 mag=1.1)[0m
+[0;33mW (877620) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (878260) radar-vital: HR rejected (snr=0.68 mag=7.7)[0m
+[0;33mW (879700) radar-vital: HR rejected (snr=0.95 mag=19.8)[0m
+[0;33mW (880340) radar-vital: HR rejected (snr=2.13 mag=11.4)[0m
+[0;33mW (881620) radar-vital: HR rejected (snr=0.07 mag=3.9)[0m
+[0;33mW (882520) radar-vital: HR rejected (snr=2.55 mag=60.2)[0m
+[0;33mW (885380) radar-vital: HR rejected (snr=0.25 mag=20.7)[0m
+[0;33mW (886730) radar-vital: HR rejected (snr=1.75 mag=66.9)[0m
+[0;33mW (887490) radar-vital: HR rejected (snr=0.25 mag=115.7)[0m
+[0;33mW (888580) radar-vital: HR rejected (snr=0.81 mag=18.1)[0m
+[0;33mW (889220) radar-vital: HR rejected (snr=0.09 mag=2.4)[0m
+[0;33mW (890960) radar-vital: HR rejected (snr=1.12 mag=79.6)[0m
+[0;33mW (892950) radar-vital: HR rejected (snr=0.13 mag=3.7)[0m
+[0;33mW (893590) radar-vital: HR rejected (snr=0.06 mag=2.4)[0m
+[0;33mW (899060) radar-vital: HR rejected (snr=0.51 mag=264.2)[0m
+[0;33mW (899710) radar-vital: HR rejected (snr=0.16 mag=66.1)[0m
+[0;33mW (900350) radar-vital: HR rejected (snr=0.18 mag=190.7)[0m
+[0;33mW (900990) radar-vital: HR rejected (snr=1.57 mag=2152.6)[0m
+[0;33mW (901900) radar-vital: HR rejected (snr=0.04 mag=42.9)[0m
+[0;33mW (904200) radar-vital: HR rejected (snr=0.15 mag=128.9)[0m
+[0;33mW (905290) radar-vital: HR rejected (snr=0.11 mag=16.4)[0m
+[0;33mW (905920) radar-vital: HR rejected (snr=0.60 mag=19.1)[0m
+[0;33mW (906560) radar-vital: HR rejected (snr=0.10 mag=4.9)[0m
+[0;33mW (907200) radar-vital: HR rejected (snr=0.66 mag=147.1)[0m
+[0;33mW (907840) radar-vital: HR rejected (snr=0.06 mag=5.2)[0m
+[0;33mW (908480) radar-vital: HR rejected (snr=0.06 mag=4.5)[0m
+[0;33mW (909120) radar-vital: HR rejected (snr=0.09 mag=3.4)[0m
+[0;33mW (909760) radar-vital: HR rejected (snr=0.09 mag=1.8)[0m
+[0;33mW (910410) radar-vital: HR rejected (snr=0.01 mag=0.0)[0m
+[0;33mW (911040) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (911690) radar-vital: HR rejected (snr=0.06 mag=0.4)[0m
+[0;33mW (912330) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (912970) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (913610) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (914250) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (914890) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (915530) radar-vital: HR rejected (snr=0.04 mag=1.6)[0m
+[0;33mW (916180) radar-vital: HR rejected (snr=0.51 mag=11.1)[0m
+[0;33mW (916810) radar-vital: HR rejected (snr=0.04 mag=0.6)[0m
+[0;33mW (917450) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (918090) radar-vital: HR rejected (snr=0.01 mag=0.6)[0m
+[0;33mW (918730) radar-vital: HR rejected (snr=0.02 mag=0.8)[0m
+[0;33mW (919370) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (920010) radar-vital: HR rejected (snr=0.20 mag=1.4)[0m
+[0;33mW (920650) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (921290) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (921930) radar-vital: HR rejected (snr=0.08 mag=0.6)[0m
+[0;33mW (922570) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (923220) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (923860) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (924500) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (925140) radar-vital: HR rejected (snr=0.16 mag=1.2)[0m
+[0;33mW (925780) radar-vital: HR rejected (snr=0.09 mag=0.7)[0m
+[0;33mW (926420) radar-vital: HR rejected (snr=0.00 mag=0.2)[0m
+[0;33mW (927060) radar-vital: HR rejected (snr=0.01 mag=0.2)[0m
+[0;33mW (927700) radar-vital: HR rejected (snr=0.04 mag=1.9)[0m
+[0;33mW (928340) radar-vital: HR rejected (snr=0.04 mag=1.5)[0m
+[0;33mW (928980) radar-vital: HR rejected (snr=0.14 mag=7.9)[0m
+[0;33mW (929620) radar-vital: HR rejected (snr=0.48 mag=31.0)[0m
+[0;33mW (930260) radar-vital: HR rejected (snr=0.33 mag=3.8)[0m
+[0;33mW (930900) radar-vital: HR rejected (snr=0.55 mag=40.4)[0m
+[0;33mW (931540) radar-vital: HR rejected (snr=0.04 mag=0.6)[0m
+[0;33mW (932180) radar-vital: HR rejected (snr=0.03 mag=1.6)[0m
+[0;33mW (932820) radar-vital: HR rejected (snr=0.04 mag=2.8)[0m
+[0;33mW (933460) radar-vital: HR rejected (snr=0.01 mag=0.8)[0m
+[0;33mW (934100) radar-vital: HR rejected (snr=0.74 mag=78.5)[0m
+[0;33mW (934750) radar-vital: HR rejected (snr=0.12 mag=16.5)[0m
+[0;33mW (935390) radar-vital: HR rejected (snr=0.11 mag=51.8)[0m
+[1;31mE (935940) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (935940) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (935940) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (936030) radar-vital: HR rejected (snr=0.55 mag=350.1)[0m
+[0;33mW (936670) radar-vital: HR rejected (snr=0.95 mag=28.4)[0m
+[0;33mW (937310) radar-vital: HR rejected (snr=0.07 mag=21.1)[0m
+[0;33mW (937950) radar-vital: HR rejected (snr=0.41 mag=24.0)[0m
+[0;33mW (938590) radar-vital: HR rejected (snr=0.07 mag=24.9)[0m
+[0;33mW (939230) radar-vital: HR rejected (snr=0.00 mag=0.3)[0m
+[0;33mW (939880) radar-vital: HR rejected (snr=0.04 mag=9.4)[0m
+[0;33mW (940510) radar-vital: HR rejected (snr=0.01 mag=1.5)[0m
+[0;33mW (941150) radar-vital: HR rejected (snr=0.01 mag=2.2)[0m
+[0;33mW (941790) radar-vital: HR rejected (snr=0.10 mag=17.5)[0m
+[0;33mW (942430) radar-vital: HR rejected (snr=0.07 mag=23.4)[0m
+[0;33mW (943070) radar-vital: HR rejected (snr=0.01 mag=2.9)[0m
+[0;33mW (943710) radar-vital: HR rejected (snr=0.04 mag=9.9)[0m
+[0;33mW (944350) radar-vital: HR rejected (snr=0.01 mag=3.1)[0m
+[0;33mW (944990) radar-vital: HR rejected (snr=0.12 mag=14.1)[0m
+[0;33mW (945630) radar-vital: HR rejected (snr=0.08 mag=17.2)[0m
+[0;33mW (946270) radar-vital: HR rejected (snr=0.10 mag=14.7)[0m
+[0;33mW (946920) radar-vital: HR rejected (snr=0.01 mag=1.8)[0m
+[0;33mW (947560) radar-vital: HR rejected (snr=0.02 mag=4.5)[0m
+[0;33mW (948200) radar-vital: HR rejected (snr=0.41 mag=115.3)[0m
+[0;33mW (948840) radar-vital: HR rejected (snr=0.19 mag=4.7)[0m
+[0;33mW (949480) radar-vital: HR rejected (snr=0.92 mag=159.9)[0m
+[0;33mW (950120) radar-vital: HR rejected (snr=0.05 mag=5.1)[0m
+[0;33mW (950760) radar-vital: HR rejected (snr=0.09 mag=31.7)[0m
+[0;33mW (951400) radar-vital: HR rejected (snr=0.07 mag=7.6)[0m
+[0;32mI (952010) MQTT_Service: MQTT Connected[0m
+[0;33mW (952050) radar-vital: HR rejected (snr=0.20 mag=25.5)[0m
+[0;33mW (952680) radar-vital: HR rejected (snr=0.33 mag=4.6)[0m
+[0;33mW (953320) radar-vital: HR rejected (snr=0.18 mag=2.6)[0m
+[0;33mW (953960) radar-vital: HR rejected (snr=0.18 mag=3.1)[0m
+[0;33mW (954600) radar-vital: HR rejected (snr=0.04 mag=0.7)[0m
+[0;33mW (955240) radar-vital: HR rejected (snr=0.03 mag=1.5)[0m
+[0;33mW (955880) radar-vital: HR rejected (snr=0.06 mag=1.6)[0m
+[0;33mW (956520) radar-vital: HR rejected (snr=0.16 mag=3.1)[0m
+[0;33mW (957160) radar-vital: HR rejected (snr=0.11 mag=13.5)[0m
+[0;33mW (957810) radar-vital: HR rejected (snr=0.10 mag=10.3)[0m
+[0;33mW (958440) radar-vital: HR rejected (snr=0.16 mag=7.6)[0m
+[0;33mW (959090) radar-vital: HR rejected (snr=0.04 mag=4.1)[0m
+[0;33mW (959730) radar-vital: HR rejected (snr=0.01 mag=0.2)[0m
+[0;33mW (960370) radar-vital: HR rejected (snr=0.01 mag=0.5)[0m
+[0;33mW (961010) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (961650) radar-vital: HR rejected (snr=0.06 mag=2.8)[0m
+[0;33mW (962290) radar-vital: HR rejected (snr=0.09 mag=24.5)[0m
+[0;33mW (962930) radar-vital: HR rejected (snr=0.23 mag=24.6)[0m
+[0;33mW (963570) radar-vital: HR rejected (snr=0.06 mag=1.3)[0m
+[0;33mW (964210) radar-vital: HR rejected (snr=0.08 mag=1.7)[0m
+[0;33mW (964850) radar-vital: HR rejected (snr=0.03 mag=2.6)[0m
+[0;33mW (965490) radar-vital: HR rejected (snr=0.12 mag=8.7)[0m
+[0;33mW (966130) radar-vital: HR rejected (snr=0.80 mag=83.4)[0m
+[0;33mW (966770) radar-vital: HR rejected (snr=0.09 mag=0.9)[0m
+[0;33mW (967410) radar-vital: HR rejected (snr=0.01 mag=0.2)[0m
+[0;33mW (968050) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (968690) radar-vital: HR rejected (snr=0.04 mag=0.7)[0m
+[0;33mW (969330) radar-vital: HR rejected (snr=0.11 mag=1.9)[0m
+[0;33mW (969970) radar-vital: HR rejected (snr=0.10 mag=1.4)[0m
+[0;33mW (970620) radar-vital: HR rejected (snr=0.05 mag=0.6)[0m
+[0;33mW (971260) radar-vital: HR rejected (snr=0.11 mag=1.6)[0m
+[0;33mW (971900) radar-vital: HR rejected (snr=0.43 mag=9.5)[0m
+[0;33mW (972540) radar-vital: HR rejected (snr=0.27 mag=20.4)[0m
+[0;33mW (973180) radar-vital: HR rejected (snr=0.46 mag=32.7)[0m
+[0;33mW (973820) radar-vital: HR rejected (snr=0.02 mag=6.5)[0m
+[0;33mW (974460) radar-vital: HR rejected (snr=0.13 mag=43.2)[0m
+[0;33mW (975100) radar-vital: HR rejected (snr=0.16 mag=45.1)[0m
+[0;33mW (975740) radar-vital: HR rejected (snr=0.07 mag=3.7)[0m
+[0;33mW (976380) radar-vital: HR rejected (snr=0.25 mag=26.9)[0m
+[0;33mW (977020) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (977660) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (978300) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (978940) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (979580) radar-vital: HR rejected (snr=0.03 mag=0.6)[0m
+[0;33mW (980220) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (980860) radar-vital: HR rejected (snr=0.00 mag=0.4)[0m
+[0;33mW (981500) radar-vital: HR rejected (snr=0.01 mag=0.6)[0m
+[0;33mW (982150) radar-vital: HR rejected (snr=0.03 mag=1.2)[0m
+[0;33mW (982790) radar-vital: HR rejected (snr=0.01 mag=0.2)[0m
+[0;33mW (983430) radar-vital: HR rejected (snr=0.05 mag=2.3)[0m
+[0;33mW (984070) radar-vital: HR rejected (snr=0.02 mag=2.6)[0m
+[0;33mW (984710) radar-vital: HR rejected (snr=0.04 mag=5.3)[0m
+[0;33mW (985350) radar-vital: HR rejected (snr=0.00 mag=0.3)[0m
+[0;33mW (985990) radar-vital: HR rejected (snr=0.05 mag=4.5)[0m
+[0;33mW (986630) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (987270) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (987910) radar-vital: HR rejected (snr=0.05 mag=1.8)[0m
+[0;33mW (988550) radar-vital: HR rejected (snr=0.03 mag=3.1)[0m
+[0;33mW (989190) radar-vital: HR rejected (snr=0.02 mag=2.5)[0m
+[0;33mW (989830) radar-vital: HR rejected (snr=0.11 mag=1.4)[0m
+[0;33mW (990470) radar-vital: HR rejected (snr=0.12 mag=0.8)[0m
+[0;33mW (991110) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (991750) radar-vital: HR rejected (snr=0.08 mag=5.6)[0m
+[0;33mW (992390) radar-vital: HR rejected (snr=0.09 mag=1.6)[0m
+[0;33mW (993030) radar-vital: HR rejected (snr=0.11 mag=6.0)[0m
+[0;33mW (993680) radar-vital: HR rejected (snr=0.05 mag=0.8)[0m
+[0;33mW (994320) radar-vital: HR rejected (snr=0.04 mag=0.4)[0m
+[0;33mW (994960) radar-vital: HR rejected (snr=0.10 mag=6.0)[0m
+[0;33mW (995600) radar-vital: HR rejected (snr=0.01 mag=1.0)[0m
+[0;33mW (996240) radar-vital: HR rejected (snr=0.05 mag=12.0)[0m
+[0;33mW (996880) radar-vital: HR rejected (snr=0.09 mag=17.7)[0m
+[0;33mW (997520) radar-vital: HR rejected (snr=0.02 mag=1.9)[0m
+[0;33mW (998160) radar-vital: HR rejected (snr=0.08 mag=14.9)[0m
+[0;33mW (998800) radar-vital: HR rejected (snr=0.05 mag=0.8)[0m
+[0;33mW (999440) radar-vital: HR rejected (snr=0.03 mag=0.6)[0m
+[0;33mW (1000090) radar-vital: HR rejected (snr=0.02 mag=0.7)[0m
+[0;33mW (1000720) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1001360) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1002000) radar-vital: HR rejected (snr=0.03 mag=0.5)[0m
+[0;33mW (1002640) radar-vital: HR rejected (snr=0.03 mag=0.4)[0m
+[0;33mW (1003280) radar-vital: HR rejected (snr=0.12 mag=1.7)[0m
+[0;33mW (1003920) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (1004560) radar-vital: HR rejected (snr=0.03 mag=1.1)[0m
+[0;33mW (1005210) radar-vital: HR rejected (snr=0.12 mag=7.5)[0m
+[0;33mW (1005850) radar-vital: HR rejected (snr=0.03 mag=1.3)[0m
+[0;33mW (1006490) radar-vital: HR rejected (snr=0.53 mag=40.9)[0m
+[0;33mW (1007130) radar-vital: HR rejected (snr=0.25 mag=5.0)[0m
+[0;33mW (1007770) radar-vital: HR rejected (snr=0.17 mag=44.6)[0m
+[0;33mW (1008410) radar-vital: HR rejected (snr=0.02 mag=0.9)[0m
+[0;33mW (1009050) radar-vital: HR rejected (snr=0.45 mag=16.9)[0m
+[0;33mW (1009690) radar-vital: HR rejected (snr=0.15 mag=1.2)[0m
+[0;33mW (1010330) radar-vital: HR rejected (snr=0.21 mag=1.8)[0m
+[0;33mW (1010970) radar-vital: HR rejected (snr=0.07 mag=0.8)[0m
+[0;33mW (1011620) radar-vital: HR rejected (snr=0.06 mag=0.6)[0m
+[0;33mW (1012250) radar-vital: HR rejected (snr=0.34 mag=4.2)[0m
+[0;33mW (1012890) radar-vital: HR rejected (snr=0.20 mag=4.7)[0m
+[0;33mW (1013530) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1014170) radar-vital: HR rejected (snr=0.14 mag=1.1)[0m
+[0;33mW (1014810) radar-vital: HR rejected (snr=0.11 mag=1.4)[0m
+[0;33mW (1015450) radar-vital: HR rejected (snr=0.03 mag=0.5)[0m
+[0;33mW (1016090) radar-vital: HR rejected (snr=0.06 mag=0.5)[0m
+[0;33mW (1016730) radar-vital: HR rejected (snr=0.09 mag=0.8)[0m
+[0;33mW (1017380) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1018020) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (1018660) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (1019300) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1019940) radar-vital: HR rejected (snr=0.29 mag=4.1)[0m
+[0;33mW (1020580) radar-vital: HR rejected (snr=0.12 mag=1.1)[0m
+[0;33mW (1021220) radar-vital: HR rejected (snr=0.05 mag=0.4)[0m
+[0;33mW (1021860) radar-vital: HR rejected (snr=0.15 mag=1.1)[0m
+[0;33mW (1022500) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1023150) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1023790) radar-vital: HR rejected (snr=0.12 mag=1.3)[0m
+[0;33mW (1024420) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (1025060) radar-vital: HR rejected (snr=0.02 mag=0.1)[0m
+[0;33mW (1025700) radar-vital: HR rejected (snr=0.07 mag=0.9)[0m
+[0;33mW (1026340) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1026980) radar-vital: HR rejected (snr=0.08 mag=0.8)[0m
+[0;33mW (1027620) radar-vital: HR rejected (snr=0.26 mag=1.3)[0m
+[0;33mW (1028260) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1028900) radar-vital: HR rejected (snr=0.17 mag=1.0)[0m
+[0;33mW (1029540) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1030180) radar-vital: HR rejected (snr=0.39 mag=3.8)[0m
+[0;33mW (1030830) radar-vital: HR rejected (snr=0.05 mag=0.5)[0m
+[0;33mW (1031470) radar-vital: HR rejected (snr=0.06 mag=0.5)[0m
+[0;33mW (1032110) radar-vital: HR rejected (snr=0.05 mag=0.8)[0m
+[0;33mW (1032750) radar-vital: HR rejected (snr=0.13 mag=1.6)[0m
+[0;33mW (1033390) radar-vital: HR rejected (snr=0.05 mag=0.4)[0m
+[0;33mW (1034030) radar-vital: HR rejected (snr=0.14 mag=1.2)[0m
+[0;33mW (1034670) radar-vital: HR rejected (snr=0.05 mag=0.4)[0m
+[0;33mW (1035320) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1035950) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1036590) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1037230) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1037870) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1038510) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (1039150) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1039790) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (1040430) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1041070) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1041720) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1042360) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (1043000) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1043640) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1044280) radar-vital: HR rejected (snr=0.01 mag=0.0)[0m
+[0;33mW (1044920) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1045560) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1046200) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (1046850) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1047480) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1048120) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1048760) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1049400) radar-vital: HR rejected (snr=0.31 mag=2.5)[0m
+[0;33mW (1050040) radar-vital: HR rejected (snr=0.16 mag=11.6)[0m
+[0;33mW (1050680) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1051320) radar-vital: HR rejected (snr=0.19 mag=43.3)[0m
+[0;33mW (1051960) radar-vital: HR rejected (snr=0.42 mag=31.0)[0m
+[0;33mW (1052610) radar-vital: HR rejected (snr=0.05 mag=7.5)[0m
+[0;33mW (1053240) radar-vital: HR rejected (snr=0.16 mag=8.4)[0m
+[0;33mW (1053890) radar-vital: HR rejected (snr=0.00 mag=0.5)[0m
+[0;33mW (1054530) radar-vital: HR rejected (snr=0.37 mag=12.0)[0m
+[0;33mW (1055170) radar-vital: HR rejected (snr=0.21 mag=42.7)[0m
+[0;33mW (1055810) radar-vital: HR rejected (snr=0.21 mag=8.3)[0m
+[0;33mW (1056450) radar-vital: HR rejected (snr=0.10 mag=1.3)[0m
+[0;33mW (1057090) radar-vital: HR rejected (snr=0.02 mag=0.5)[0m
+[0;33mW (1057730) radar-vital: HR rejected (snr=0.14 mag=2.1)[0m
+[0;33mW (1058370) radar-vital: HR rejected (snr=0.06 mag=2.6)[0m
+[0;33mW (1059010) radar-vital: HR rejected (snr=0.06 mag=2.6)[0m
+[0;33mW (1059650) radar-vital: HR rejected (snr=0.41 mag=9.6)[0m
+[0;33mW (1060290) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1060930) radar-vital: HR rejected (snr=0.09 mag=2.2)[0m
+[0;33mW (1061570) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1062210) radar-vital: HR rejected (snr=0.10 mag=1.9)[0m
+[0;33mW (1062850) radar-vital: HR rejected (snr=0.17 mag=2.8)[0m
+[0;33mW (1063490) radar-vital: HR rejected (snr=0.02 mag=0.3)[0m
+[0;33mW (1064130) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1064780) radar-vital: HR rejected (snr=0.03 mag=0.8)[0m
+[0;33mW (1065410) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1066060) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (1066700) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1067340) radar-vital: HR rejected (snr=0.08 mag=1.1)[0m
+[0;33mW (1067980) radar-vital: HR rejected (snr=0.02 mag=0.4)[0m
+[0;33mW (1068620) radar-vital: HR rejected (snr=0.02 mag=0.3)[0m
+[0;33mW (1069260) radar-vital: HR rejected (snr=0.05 mag=2.2)[0m
+[0;33mW (1069900) radar-vital: HR rejected (snr=0.66 mag=85.1)[0m
+[0;33mW (1070540) radar-vital: HR rejected (snr=0.61 mag=6.2)[0m
+[0;33mW (1071180) radar-vital: HR rejected (snr=0.04 mag=0.3)[0m
+[0;33mW (1071820) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1072460) radar-vital: HR rejected (snr=0.14 mag=32.6)[0m
+[0;33mW (1073100) radar-vital: HR rejected (snr=0.05 mag=2.6)[0m
+[0;33mW (1073740) radar-vital: HR rejected (snr=0.11 mag=3.4)[0m
+[0;33mW (1074380) radar-vital: HR rejected (snr=0.11 mag=5.9)[0m
+[0;33mW (1075020) radar-vital: HR rejected (snr=0.07 mag=0.7)[0m
+[0;33mW (1075660) radar-vital: HR rejected (snr=0.05 mag=3.6)[0m
+[0;33mW (1076310) radar-vital: HR rejected (snr=0.02 mag=1.2)[0m
+[0;33mW (1076940) radar-vital: HR rejected (snr=0.07 mag=1.3)[0m
+[0;33mW (1077590) radar-vital: HR rejected (snr=0.03 mag=2.7)[0m
+[0;33mW (1078230) radar-vital: HR rejected (snr=0.12 mag=5.3)[0m
+[0;33mW (1078870) radar-vital: HR rejected (snr=0.04 mag=3.0)[0m
+[0;33mW (1079510) radar-vital: HR rejected (snr=0.02 mag=0.8)[0m
+[0;33mW (1080150) radar-vital: HR rejected (snr=0.06 mag=2.2)[0m
+[0;33mW (1080790) radar-vital: HR rejected (snr=0.07 mag=2.8)[0m
+[0;33mW (1081430) radar-vital: HR rejected (snr=0.05 mag=2.8)[0m
+[0;33mW (1082070) radar-vital: HR rejected (snr=0.07 mag=1.8)[0m
+[0;33mW (1082710) radar-vital: HR rejected (snr=0.30 mag=5.3)[0m
+[0;33mW (1083350) radar-vital: HR rejected (snr=0.08 mag=4.7)[0m
+[0;33mW (1083990) radar-vital: HR rejected (snr=0.05 mag=2.0)[0m
+[0;33mW (1084630) radar-vital: HR rejected (snr=0.05 mag=1.3)[0m
+[0;33mW (1085270) radar-vital: HR rejected (snr=0.05 mag=1.5)[0m
+[0;33mW (1085910) radar-vital: HR rejected (snr=0.19 mag=5.2)[0m
+[0;33mW (1086550) radar-vital: HR rejected (snr=0.47 mag=11.3)[0m
+[0;33mW (1087190) radar-vital: HR rejected (snr=0.12 mag=1.7)[0m
+[0;33mW (1087830) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (1088470) radar-vital: HR rejected (snr=0.01 mag=0.8)[0m
+[0;33mW (1089120) radar-vital: HR rejected (snr=0.01 mag=1.7)[0m
+[0;33mW (1089760) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1090400) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1091040) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1091680) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (1092320) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1092960) radar-vital: HR rejected (snr=0.04 mag=2.2)[0m
+[0;33mW (1093600) radar-vital: HR rejected (snr=0.16 mag=19.4)[0m
+[0;33mW (1094240) radar-vital: HR rejected (snr=0.20 mag=8.6)[0m
+[0;33mW (1094880) radar-vital: HR rejected (snr=0.02 mag=2.1)[0m
+[0;33mW (1095520) radar-vital: HR rejected (snr=0.47 mag=60.2)[0m
+[0;33mW (1096160) radar-vital: HR rejected (snr=0.22 mag=25.8)[0m
+[0;33mW (1096800) radar-vital: HR rejected (snr=0.04 mag=0.8)[0m
+[0;33mW (1097440) radar-vital: HR rejected (snr=0.36 mag=7.1)[0m
+[0;33mW (1098080) radar-vital: HR rejected (snr=0.04 mag=0.3)[0m
+[0;33mW (1098720) radar-vital: HR rejected (snr=0.05 mag=2.5)[0m
+[0;33mW (1099360) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (1100000) radar-vital: HR rejected (snr=0.02 mag=0.5)[0m
+[0;33mW (1100650) radar-vital: HR rejected (snr=0.21 mag=2.4)[0m
+[0;33mW (1101290) radar-vital: HR rejected (snr=0.09 mag=4.1)[0m
+[0;33mW (1101930) radar-vital: HR rejected (snr=0.13 mag=4.1)[0m
+[0;33mW (1102570) radar-vital: HR rejected (snr=0.36 mag=4.8)[0m
+[0;33mW (1103210) radar-vital: HR rejected (snr=0.05 mag=1.4)[0m
+[0;33mW (1103850) radar-vital: HR rejected (snr=0.18 mag=3.0)[0m
+[0;33mW (1104490) radar-vital: HR rejected (snr=0.38 mag=7.7)[0m
+[0;33mW (1105130) radar-vital: HR rejected (snr=0.10 mag=1.3)[0m
+[0;33mW (1105770) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1106410) radar-vital: HR rejected (snr=0.02 mag=0.4)[0m
+[0;33mW (1107050) radar-vital: HR rejected (snr=0.19 mag=1.8)[0m
+[0;33mW (1107690) radar-vital: HR rejected (snr=0.17 mag=1.6)[0m
+[0;33mW (1108330) radar-vital: HR rejected (snr=0.29 mag=26.0)[0m
+[0;33mW (1108970) radar-vital: HR rejected (snr=0.18 mag=3.4)[0m
+[0;33mW (1109610) radar-vital: HR rejected (snr=0.01 mag=0.9)[0m
+[0;33mW (1110250) radar-vital: HR rejected (snr=0.18 mag=3.4)[0m
+[0;33mW (1110890) radar-vital: HR rejected (snr=0.26 mag=29.2)[0m
+[0;33mW (1111530) radar-vital: HR rejected (snr=0.07 mag=1.9)[0m
+[0;33mW (1112180) radar-vital: HR rejected (snr=0.11 mag=10.5)[0m
+[0;33mW (1112810) radar-vital: HR rejected (snr=0.06 mag=10.5)[0m
+[0;33mW (1113460) radar-vital: HR rejected (snr=0.25 mag=10.5)[0m
+[0;33mW (1114100) radar-vital: HR rejected (snr=0.26 mag=21.6)[0m
+[0;33mW (1114740) radar-vital: HR rejected (snr=0.08 mag=3.9)[0m
+[0;33mW (1115380) radar-vital: HR rejected (snr=0.27 mag=6.8)[0m
+[0;33mW (1116020) radar-vital: HR rejected (snr=0.07 mag=7.6)[0m
+[0;33mW (1116660) radar-vital: HR rejected (snr=0.00 mag=0.4)[0m
+[0;33mW (1117300) radar-vital: HR rejected (snr=0.02 mag=6.0)[0m
+[0;33mW (1117950) radar-vital: HR rejected (snr=0.00 mag=0.5)[0m
+[0;33mW (1118590) radar-vital: HR rejected (snr=0.01 mag=1.7)[0m
+[0;33mW (1119220) radar-vital: HR rejected (snr=0.02 mag=6.4)[0m
+[0;33mW (1119860) radar-vital: HR rejected (snr=0.10 mag=25.9)[0m
+[0;33mW (1120500) radar-vital: HR rejected (snr=0.01 mag=1.3)[0m
+[0;33mW (1121140) radar-vital: HR rejected (snr=0.02 mag=3.0)[0m
+[0;33mW (1121780) radar-vital: HR rejected (snr=0.00 mag=0.2)[0m
+[0;33mW (1122420) radar-vital: HR rejected (snr=0.04 mag=2.1)[0m
+[0;33mW (1123060) radar-vital: HR rejected (snr=0.40 mag=37.9)[0m
+[0;33mW (1123710) radar-vital: HR rejected (snr=0.08 mag=8.4)[0m
+[0;33mW (1124340) radar-vital: HR rejected (snr=0.03 mag=1.4)[0m
+[0;33mW (1124990) radar-vital: HR rejected (snr=0.11 mag=11.9)[0m
+[0;33mW (1125630) radar-vital: HR rejected (snr=0.02 mag=0.9)[0m
+[0;33mW (1126270) radar-vital: HR rejected (snr=0.00 mag=0.3)[0m
+[0;33mW (1126910) radar-vital: HR rejected (snr=0.06 mag=7.9)[0m
+[0;33mW (1127550) radar-vital: HR rejected (snr=0.04 mag=2.0)[0m
+[0;33mW (1128190) radar-vital: HR rejected (snr=0.04 mag=2.3)[0m
+[0;33mW (1128830) radar-vital: HR rejected (snr=0.03 mag=1.0)[0m
+[0;33mW (1129470) radar-vital: HR rejected (snr=0.37 mag=4.7)[0m
+[0;33mW (1130120) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1130750) radar-vital: HR rejected (snr=0.13 mag=2.7)[0m
+[0;33mW (1131390) radar-vital: HR rejected (snr=0.39 mag=30.3)[0m
+[0;33mW (1132030) radar-vital: HR rejected (snr=0.02 mag=2.4)[0m
+[0;33mW (1132670) radar-vital: HR rejected (snr=0.18 mag=2.8)[0m
+[0;33mW (1133310) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1133950) radar-vital: HR rejected (snr=0.06 mag=0.9)[0m
+[0;33mW (1134590) radar-vital: HR rejected (snr=0.11 mag=0.7)[0m
+[0;33mW (1135230) radar-vital: HR rejected (snr=0.00 mag=0.1)[0m
+[0;33mW (1135870) radar-vital: HR rejected (snr=0.33 mag=32.8)[0m
+[0;33mW (1136510) radar-vital: HR rejected (snr=0.05 mag=6.8)[0m
+[0;33mW (1137160) radar-vital: HR rejected (snr=0.08 mag=0.7)[0m
+[0;33mW (1137800) radar-vital: HR rejected (snr=0.34 mag=22.6)[0m
+[0;33mW (1138440) radar-vital: HR rejected (snr=0.20 mag=2.0)[0m
+[0;33mW (1139080) radar-vital: HR rejected (snr=0.15 mag=18.5)[0m
+[0;33mW (1139720) radar-vital: HR rejected (snr=0.06 mag=3.0)[0m
+[0;33mW (1140360) radar-vital: HR rejected (snr=0.04 mag=6.7)[0m
+[0;33mW (1141000) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1141650) radar-vital: HR rejected (snr=0.09 mag=4.0)[0m
+[0;33mW (1142290) radar-vital: HR rejected (snr=0.26 mag=3.8)[0m
+[0;33mW (1142920) radar-vital: HR rejected (snr=0.48 mag=12.4)[0m
+[0;33mW (1143560) radar-vital: HR rejected (snr=0.05 mag=13.1)[0m
+[0;33mW (1144200) radar-vital: HR rejected (snr=0.06 mag=4.0)[0m
+[0;33mW (1144840) radar-vital: HR rejected (snr=0.25 mag=7.8)[0m
+[0;33mW (1145480) radar-vital: HR rejected (snr=0.03 mag=3.9)[0m
+[0;33mW (1146120) radar-vital: HR rejected (snr=0.09 mag=4.5)[0m
+[0;33mW (1146760) radar-vital: HR rejected (snr=1.54 mag=6769.8)[0m
+[0;33mW (1147410) radar-vital: HR rejected (snr=1.11 mag=14420.2)[0m
+[0;33mW (1148040) radar-vital: HR rejected (snr=0.18 mag=32.4)[0m
+[0;33mW (1148690) radar-vital: HR rejected (snr=0.17 mag=50.6)[0m
+[0;33mW (1149330) radar-vital: HR rejected (snr=0.33 mag=30.7)[0m
+[0;33mW (1149970) radar-vital: HR rejected (snr=0.82 mag=1331.2)[0m
+[0;33mW (1150610) radar-vital: HR rejected (snr=0.04 mag=5.4)[0m
+[0;33mW (1151250) radar-vital: HR rejected (snr=0.02 mag=4.9)[0m
+[0;33mW (1151890) radar-vital: HR rejected (snr=0.01 mag=2.2)[0m
+[0;33mW (1152530) radar-vital: HR rejected (snr=0.00 mag=0.2)[0m
+[0;33mW (1153170) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1153820) radar-vital: HR rejected (snr=0.06 mag=21.7)[0m
+[0;33mW (1154450) radar-vital: HR rejected (snr=0.23 mag=60.8)[0m
+[0;33mW (1155090) radar-vital: HR rejected (snr=0.09 mag=7.9)[0m
+[0;33mW (1155730) radar-vital: HR rejected (snr=0.02 mag=2.0)[0m
+[0;33mW (1156370) radar-vital: HR rejected (snr=0.03 mag=1.6)[0m
+[0;33mW (1157010) radar-vital: HR rejected (snr=0.00 mag=0.2)[0m
+[0;33mW (1157650) radar-vital: HR rejected (snr=0.04 mag=9.9)[0m
+[0;33mW (1158290) radar-vital: HR rejected (snr=0.05 mag=8.0)[0m
+[0;33mW (1158930) radar-vital: HR rejected (snr=0.02 mag=3.4)[0m
+[0;33mW (1159960) radar-vital: HR rejected (snr=0.06 mag=76.1)[0m
+[0;33mW (1160600) radar-vital: HR rejected (snr=0.48 mag=451.2)[0m
+[0;33mW (1161240) radar-vital: HR rejected (snr=0.32 mag=321.1)[0m
+[0;33mW (1161880) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1162520) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1163160) radar-vital: HR rejected (snr=0.56 mag=401.3)[0m
+[0;33mW (1163800) radar-vital: HR rejected (snr=0.18 mag=132.5)[0m
+[0;33mW (1164440) radar-vital: HR rejected (snr=0.14 mag=61.4)[0m
+[0;33mW (1165080) radar-vital: HR rejected (snr=0.06 mag=3.9)[0m
+[0;33mW (1165730) radar-vital: HR rejected (snr=0.23 mag=37.7)[0m
+[0;33mW (1166360) radar-vital: HR rejected (snr=0.09 mag=21.9)[0m
+[0;33mW (1167000) radar-vital: HR rejected (snr=0.04 mag=8.3)[0m
+[0;33mW (1167640) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1168280) radar-vital: HR rejected (snr=0.02 mag=0.8)[0m
+[0;33mW (1168920) radar-vital: HR rejected (snr=0.45 mag=25.7)[0m
+[0;33mW (1169560) radar-vital: HR rejected (snr=0.01 mag=3.9)[0m
+[0;33mW (1170200) radar-vital: HR rejected (snr=0.02 mag=2.1)[0m
+[0;33mW (1170840) radar-vital: HR rejected (snr=0.18 mag=17.3)[0m
+[0;33mW (1171490) radar-vital: HR rejected (snr=0.47 mag=14.6)[0m
+[0;33mW (1172130) radar-vital: HR rejected (snr=0.01 mag=0.4)[0m
+[0;33mW (1172770) radar-vital: HR rejected (snr=0.02 mag=3.8)[0m
+[0;33mW (1173410) radar-vital: HR rejected (snr=0.06 mag=33.2)[0m
+[0;33mW (1174050) radar-vital: HR rejected (snr=0.14 mag=65.2)[0m
+[0;33mW (1174690) radar-vital: HR rejected (snr=0.17 mag=33.7)[0m
+[0;33mW (1175330) radar-vital: HR rejected (snr=0.29 mag=97.5)[0m
+[0;33mW (1175970) radar-vital: HR rejected (snr=0.14 mag=124.6)[0m
+[0;33mW (1176610) radar-vital: HR rejected (snr=0.00 mag=0.4)[0m
+[0;33mW (1177250) radar-vital: HR rejected (snr=0.51 mag=44.8)[0m
+[0;33mW (1177900) radar-vital: HR rejected (snr=0.09 mag=41.7)[0m
+[0;33mW (1178530) radar-vital: HR rejected (snr=0.03 mag=1.9)[0m
+[0;33mW (1179630) radar-vital: HR rejected (snr=0.00 mag=0.4)[0m
+[0;33mW (1180270) radar-vital: HR rejected (snr=0.10 mag=76.6)[0m
+[0;33mW (1180910) radar-vital: HR rejected (snr=0.02 mag=16.0)[0m
+[0;33mW (1181550) radar-vital: HR rejected (snr=0.06 mag=14.0)[0m
+[0;33mW (1182670) radar-vital: HR rejected (snr=0.03 mag=22.0)[0m
+[0;33mW (1183310) radar-vital: HR rejected (snr=0.03 mag=11.3)[0m
+[0;33mW (1183960) radar-vital: HR rejected (snr=0.05 mag=18.2)[0m
+[0;33mW (1184600) radar-vital: HR rejected (snr=0.04 mag=17.9)[0m
+[0;33mW (1185240) radar-vital: HR rejected (snr=0.10 mag=57.0)[0m
+[0;33mW (1185880) radar-vital: HR rejected (snr=0.03 mag=21.7)[0m
+[0;33mW (1186520) radar-vital: HR rejected (snr=0.02 mag=23.6)[0m
+[0;33mW (1187160) radar-vital: HR rejected (snr=0.04 mag=25.6)[0m
+[0;33mW (1187800) radar-vital: HR rejected (snr=0.03 mag=15.4)[0m
+[0;33mW (1188440) radar-vital: HR rejected (snr=0.05 mag=13.3)[0m
+[0;33mW (1189600) radar-vital: HR rejected (snr=0.08 mag=49.9)[0m
+[0;33mW (1190240) radar-vital: HR rejected (snr=0.08 mag=52.5)[0m
+[0;33mW (1190880) radar-vital: HR rejected (snr=0.08 mag=73.8)[0m
+[0;33mW (1191520) radar-vital: HR rejected (snr=0.05 mag=50.4)[0m
+[0;33mW (1192160) radar-vital: HR rejected (snr=0.04 mag=13.9)[0m
+[0;33mW (1192800) radar-vital: HR rejected (snr=0.13 mag=62.1)[0m
+[0;33mW (1193440) radar-vital: HR rejected (snr=0.04 mag=15.5)[0m
+[0;33mW (1194080) radar-vital: HR rejected (snr=0.86 mag=418.3)[0m
+[0;33mW (1194720) radar-vital: HR rejected (snr=0.26 mag=312.2)[0m
+[0;33mW (1195360) radar-vital: HR rejected (snr=0.20 mag=170.0)[0m
+[0;33mW (1196000) radar-vital: HR rejected (snr=0.03 mag=18.7)[0m
+[0;33mW (1196640) radar-vital: HR rejected (snr=0.35 mag=170.9)[0m
+[0;33mW (1197280) radar-vital: HR rejected (snr=0.01 mag=1.0)[0m
+[0;33mW (1197920) radar-vital: HR rejected (snr=0.01 mag=5.0)[0m
+[0;33mW (1198560) radar-vital: HR rejected (snr=0.06 mag=16.0)[0m
+[0;33mW (1199200) radar-vital: HR rejected (snr=0.01 mag=1.4)[0m
+[0;33mW (1199840) radar-vital: HR rejected (snr=0.12 mag=46.6)[0m
+[0;33mW (1200480) radar-vital: HR rejected (snr=0.01 mag=5.4)[0m
+[0;33mW (1201130) radar-vital: HR rejected (snr=0.06 mag=26.7)[0m
+[0;33mW (1201760) radar-vital: HR rejected (snr=0.07 mag=23.7)[0m
+[0;33mW (1202410) radar-vital: HR rejected (snr=0.05 mag=17.7)[0m
+[0;33mW (1203050) radar-vital: HR rejected (snr=0.05 mag=19.6)[0m
+[0;33mW (1203690) radar-vital: HR rejected (snr=0.02 mag=4.1)[0m
+[0;33mW (1204330) radar-vital: HR rejected (snr=0.03 mag=10.6)[0m
+[0;33mW (1204970) radar-vital: HR rejected (snr=0.05 mag=22.6)[0m
+[0;33mW (1205610) radar-vital: HR rejected (snr=0.08 mag=20.6)[0m
+[0;33mW (1206250) radar-vital: HR rejected (snr=0.08 mag=1.2)[0m
+[0;33mW (1206880) radar-vital: HR rejected (snr=0.05 mag=4.0)[0m
+[0;33mW (1207540) radar-vital: HR rejected (snr=0.06 mag=16.5)[0m
+[0;33mW (1208170) radar-vital: HR rejected (snr=0.04 mag=18.7)[0m
+[0;33mW (1208810) radar-vital: HR rejected (snr=0.09 mag=35.2)[0m
+[0;33mW (1209450) radar-vital: HR rejected (snr=0.00 mag=0.8)[0m
+[0;33mW (1210090) radar-vital: HR rejected (snr=0.13 mag=43.5)[0m
+[0;33mW (1210730) radar-vital: HR rejected (snr=0.17 mag=57.5)[0m
+[0;33mW (1211370) radar-vital: HR rejected (snr=0.03 mag=13.4)[0m
+[0;33mW (1212010) radar-vital: HR rejected (snr=0.00 mag=2.0)[0m
+[0;33mW (1212660) radar-vital: HR rejected (snr=0.00 mag=2.6)[0m
+[0;33mW (1213300) radar-vital: HR rejected (snr=0.00 mag=0.5)[0m
+[0;33mW (1213940) radar-vital: HR rejected (snr=0.00 mag=1.6)[0m
+[0;33mW (1214580) radar-vital: HR rejected (snr=0.00 mag=1.7)[0m
+[0;33mW (1215220) radar-vital: HR rejected (snr=0.02 mag=7.2)[0m
+[0;33mW (1215860) radar-vital: HR rejected (snr=0.02 mag=7.5)[0m
+[0;33mW (1216500) radar-vital: HR rejected (snr=0.03 mag=10.3)[0m
+[0;33mW (1217140) radar-vital: HR rejected (snr=0.10 mag=16.5)[0m
+[0;33mW (1217780) radar-vital: HR rejected (snr=0.04 mag=2.8)[0m
+[0;33mW (1218420) radar-vital: HR rejected (snr=0.10 mag=8.9)[0m
+[0;33mW (1219070) radar-vital: HR rejected (snr=0.66 mag=532.9)[0m
+[0;33mW (1219710) radar-vital: HR rejected (snr=0.41 mag=19.7)[0m
+[0;33mW (1220340) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1220980) radar-vital: HR rejected (snr=0.00 mag=0.6)[0m
+[0;33mW (1221620) radar-vital: HR rejected (snr=0.05 mag=6.2)[0m
+[0;33mW (1222260) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1222900) radar-vital: HR rejected (snr=0.03 mag=2.5)[0m
+[0;33mW (1223540) radar-vital: HR rejected (snr=0.34 mag=620.3)[0m
+[0;33mW (1224180) radar-vital: HR rejected (snr=1.24 mag=166.3)[0m
+[0;33mW (1224820) radar-vital: HR rejected (snr=0.22 mag=11.7)[0m
+[0;33mW (1225460) radar-vital: HR rejected (snr=0.03 mag=10.3)[0m
+[0;33mW (1226110) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1226750) radar-vital: HR rejected (snr=0.05 mag=12.2)[0m
+[0;33mW (1227390) radar-vital: HR rejected (snr=0.01 mag=2.5)[0m
+[0;33mW (1228030) radar-vital: HR rejected (snr=0.02 mag=1.5)[0m
+[0;33mW (1228670) radar-vital: HR rejected (snr=0.09 mag=19.2)[0m
+[0;33mW (1229310) radar-vital: HR rejected (snr=0.00 mag=0.7)[0m
+[0;33mW (1229950) radar-vital: HR rejected (snr=0.06 mag=8.1)[0m
+[0;33mW (1230600) radar-vital: HR rejected (snr=0.02 mag=3.1)[0m
+[0;33mW (1231240) radar-vital: HR rejected (snr=0.01 mag=0.6)[0m
+[0;33mW (1231870) radar-vital: HR rejected (snr=0.08 mag=18.4)[0m
+[0;33mW (1232510) radar-vital: HR rejected (snr=0.08 mag=10.2)[0m
+[0;33mW (1233150) radar-vital: HR rejected (snr=0.00 mag=0.8)[0m
+[0;33mW (1233790) radar-vital: HR rejected (snr=0.02 mag=4.5)[0m
+[0;33mW (1234430) radar-vital: HR rejected (snr=0.00 mag=0.6)[0m
+[0;33mW (1235070) radar-vital: HR rejected (snr=0.15 mag=26.6)[0m
+[0;33mW (1235710) radar-vital: HR rejected (snr=0.01 mag=2.4)[0m
+[0;33mW (1236350) radar-vital: HR rejected (snr=0.00 mag=0.9)[0m
+[0;33mW (1236990) radar-vital: HR rejected (snr=0.01 mag=3.0)[0m
+[0;33mW (1237640) radar-vital: HR rejected (snr=0.07 mag=5.5)[0m
+[0;33mW (1238280) radar-vital: HR rejected (snr=0.10 mag=9.9)[0m
+[0;33mW (1238920) radar-vital: HR rejected (snr=0.03 mag=6.6)[0m
+[0;33mW (1239560) radar-vital: HR rejected (snr=0.11 mag=19.0)[0m
+[1;31mE (1240180) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (1240180) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (1240180) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (1240200) radar-vital: HR rejected (snr=0.02 mag=2.0)[0m
+[0;33mW (1240840) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1241480) radar-vital: HR rejected (snr=0.06 mag=0.7)[0m
+[0;33mW (1242120) radar-vital: HR rejected (snr=0.01 mag=1.6)[0m
+[0;33mW (1242760) radar-vital: HR rejected (snr=0.05 mag=13.4)[0m
+[0;33mW (1243400) radar-vital: HR rejected (snr=0.05 mag=7.0)[0m
+[0;33mW (1244040) radar-vital: HR rejected (snr=0.00 mag=0.6)[0m
+[0;33mW (1244680) radar-vital: HR rejected (snr=0.01 mag=4.5)[0m
+[0;33mW (1245320) radar-vital: HR rejected (snr=0.02 mag=3.0)[0m
+[0;33mW (1245960) radar-vital: HR rejected (snr=0.02 mag=4.7)[0m
+[0;33mW (1246600) radar-vital: HR rejected (snr=0.03 mag=7.3)[0m
+[0;33mW (1247240) radar-vital: HR rejected (snr=0.01 mag=0.4)[0m
+[0;33mW (1247880) radar-vital: HR rejected (snr=0.02 mag=0.7)[0m
+[0;33mW (1248520) radar-vital: HR rejected (snr=0.01 mag=1.8)[0m
+[0;33mW (1249170) radar-vital: HR rejected (snr=0.02 mag=0.5)[0m
+[0;33mW (1249810) radar-vital: HR rejected (snr=0.02 mag=3.0)[0m
+[0;33mW (1250450) radar-vital: HR rejected (snr=0.15 mag=48.7)[0m
+[0;33mW (1251090) radar-vital: HR rejected (snr=0.26 mag=225.3)[0m
+[0;33mW (1251730) radar-vital: HR rejected (snr=0.27 mag=27.1)[0m
+[0;33mW (1252370) radar-vital: HR rejected (snr=0.58 mag=5.4)[0m
+[0;33mW (1253010) radar-vital: HR rejected (snr=0.17 mag=1.0)[0m
+[0;33mW (1253650) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1254290) radar-vital: HR rejected (snr=0.18 mag=1.8)[0m
+[0;33mW (1254930) radar-vital: HR rejected (snr=0.12 mag=1.1)[0m
+[0;33mW (1255570) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;32mI (1256050) MQTT_Service: MQTT Connected[0m
+[0;33mW (1256210) radar-vital: HR rejected (snr=0.03 mag=0.2)[0m
+[0;33mW (1256850) radar-vital: HR rejected (snr=0.02 mag=0.2)[0m
+[0;33mW (1257490) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1258130) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1258770) radar-vital: HR rejected (snr=0.05 mag=0.3)[0m
+[0;33mW (1259410) radar-vital: HR rejected (snr=0.03 mag=0.3)[0m
+[0;33mW (1260060) radar-vital: HR rejected (snr=0.11 mag=1.3)[0m
+[0;33mW (1260690) radar-vital: HR rejected (snr=0.12 mag=1.4)[0m
+[0;33mW (1261340) radar-vital: HR rejected (snr=0.00 mag=0.0)[0m
+[0;33mW (1261980) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1262620) radar-vital: HR rejected (snr=0.01 mag=0.1)[0m
+[0;33mW (1263260) radar-vital: HR rejected (snr=0.08 mag=0.5)[0m
+[0;33mW (1263900) radar-vital: HR rejected (snr=0.12 mag=3.5)[0m
+[0;33mW (1264540) radar-vital: HR rejected (snr=0.02 mag=0.3)[0m
+[0;33mW (1265180) radar-vital: HR rejected (snr=0.09 mag=1.1)[0m
+[0;33mW (1265820) radar-vital: HR rejected (snr=0.03 mag=0.8)[0m
+[0;33mW (1266460) radar-vital: HR rejected (snr=0.01 mag=0.3)[0m
+[0;33mW (1267100) radar-vital: HR rejected (snr=1.18 mag=83.8)[0m

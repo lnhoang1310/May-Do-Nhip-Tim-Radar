@@ -1,0 +1,58 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 2�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a458h ( 42072) map[0m
+[0;32mI (94) esp_image: segment 1: paddr=0001a480 vaddr=3fc92500 size=02ae8h ( 10984) load[0m
+[0;32mI (96) esp_image: segment 2: paddr=0001cf70 vaddr=40374000 size=030a8h ( 12456) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17a1ch ( 96796) map[0m
+[0;32mI (126) esp_image: segment 4: paddr=00037a44 vaddr=403770a8 size=0b3c0h ( 46016) load[0m
+[0;32mI (136) esp_image: segment 5: paddr=00042e0c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (142) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (142) boot: Disabling RNG early entropy source...[0m
+[0;32mI (154) cpu_start: Multicore app[0m
+[0;32mI (163) cpu_start: Pro cpu start user code[0m
+[0;32mI (163) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (163) app_init: Application information:[0m
+[0;32mI (163) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (168) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (172) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (177) app_init: ELF file SHA256:  49a6b4946...[0m
+[0;32mI (181) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (185) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (189) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (193) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (197) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (203) heap_init: At 3FC958B8 len 00053E58 (335 KiB): RAM[0m
+[0;32mI (208) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (213) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (219) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (225) spi_flash: detected chip: mxic[0m
+[0;32mI (227) spi_flash: flash io: dio[0m
+[0;33mW (230) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (243) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (249) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (256) main_task: Started on CPU0[0m
+[0;32mI (276) main_task: Calling app_main()[0m

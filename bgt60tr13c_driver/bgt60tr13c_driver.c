@@ -44,7 +44,7 @@ esp_err_t xensiv_bgt60tr13c_init(spi_host_device_t spi_host, spi_device_interfac
     uint32_t chip_id_rf = (chip_id & XENSIV_BGT60TR13C_REG_CHIP_ID_RF_ID_MSK) >>
                           XENSIV_BGT60TR13C_REG_CHIP_ID_RF_ID_POS;
 
-    if ((chip_id_digital == 6U) && (chip_id_rf == 6U))
+    if ((chip_id_digital == 6U || chip_id_digital == 3U) && (chip_id_rf == 6U || chip_id_rf == 3U))
     {
         ESP_LOGI(TAG, "BGT60TR13C Verified. Digital Chip ID: %lu RF Chip ID: %lu", chip_id_digital, chip_id_rf);
     }

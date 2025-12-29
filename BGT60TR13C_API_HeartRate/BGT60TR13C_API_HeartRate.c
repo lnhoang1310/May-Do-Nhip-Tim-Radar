@@ -10,19 +10,28 @@
 #include "esp_log.h"
 #include "esp_timer.h"
 
-static const char *TAG = "radar-vital";
-
-#define MIN_HEART_RATE 60
-#define MAX_HEART_RATE 100
+#define TAG "radar-hr"
 
 #define NUM_SAMPLES_PER_CHIRP 128
-#define NUM_CHIRPS_PER_FRAME 64
-#define NUM_RX 1
-#define FRAME_RATE_HZ 25
+#define NUM_CHIRPS_PER_FRAME 1
+#define FRAME_RATE_HZ 200.0f // 1 / 0.005s
 
-#define HR_BUFFER_LEN 128
+#define HR_BUFFER_LEN  1024// ~2.56s window
 #define RANGE_BIN_START 10
 #define RANGE_BIN_END 50
+
+#define MIN_HEART_RATE 60.0f
+#define MAX_HEART_RATE 100.0f
+
+#define RANGE_ENERGY_THRESHOLD 4e6f
+#define PHASE_VAR_HUMAN_MIN 0.05f
+#define PHASE_VAR_HUMAN_MAX 2.0f
+#define HUMAN_SCORE_MAX 100
+#define HUMAN_SCORE_TH 5
+#define HUMAN_SCORE_DECAY 1
+
+#define PHASE_WINDOW 64         // 320 ms @200Hz
+
 
 #define SPI_HOST SPI2_HOST
 #define SPI_CLK_SPEED 20
@@ -32,22 +41,9 @@ static const char *TAG = "radar-vital";
 #define SPI_MOSI_PIN GPIO_NUM_40
 #define SPI_MISO_PIN GPIO_NUM_39
 #define RADAR_IRQ_PIN GPIO_NUM_6
-#define RADAR_RESET_PIN GPIO_NUM_4
-
 #define BUZZER_PIN GPIO_NUM_7
 
-SemaphoreHandle_t xSemaphore = NULL;
-static float phase_buffer[HR_BUFFER_LEN];
-static uint32_t phase_idx = 0;
-static float prev_phase = 0.0f;
-static bool is_measuring = false;
-
-static uint64_t measure_start_time = 0;
-static uint64_t last_publish_time = 0;
-static float minute_sum = 0.0f;
-static uint32_t minute_count = 0;
-static float current_minute_average = 0.0f;
-
+/* ================= TYPES ================= */
 typedef enum
 {
     BUZZER_NONE = 0,
@@ -62,18 +58,38 @@ typedef struct
     float im;
 } complex_t;
 
+/* ================= GLOBAL ================= */
+
+static SemaphoreHandle_t radar_sem;
+
+static float phase_buffer[HR_BUFFER_LEN];
+static uint32_t phase_idx = 0;
+
+static bool is_measuring = false;
+static bool human_present = false;
+static uint64_t measure_start_time = 0;
+static uint64_t last_publish_time = 0;
+static float minute_sum = 0.0f;
+static uint32_t minute_count = 0;
+static float current_minute_average = 0.0f;
+uint16_t measure_count = 0;
+float last_hr_average = 0.0f;
+
+/* ================= ISR ================= */
+
 void IRAM_ATTR gpio_radar_isr_handler(void *arg)
 {
-    xSemaphoreGiveFromISR(xSemaphore, NULL);
+    xSemaphoreGiveFromISR(radar_sem, NULL);
 }
+
+/* ================= FFT ================= */
 
 static uint32_t bit_reverse(uint32_t x, uint32_t log2n)
 {
     uint32_t n = 0;
     for (uint32_t i = 0; i < log2n; i++)
     {
-        n <<= 1;
-        n |= (x & 1);
+        n = (n << 1) | (x & 1);
         x >>= 1;
     }
     return n;
@@ -111,6 +127,7 @@ static void fft_complex(complex_t *buf, uint32_t n)
                 complex_t t = {
                     w.re * buf[k + j + m2].re - w.im * buf[k + j + m2].im,
                     w.re * buf[k + j + m2].im + w.im * buf[k + j + m2].re};
+
                 complex_t u = buf[k + j];
 
                 buf[k + j].re = u.re + t.re;
@@ -126,109 +143,192 @@ static void fft_complex(complex_t *buf, uint32_t n)
     }
 }
 
-static void range_fft(int16_t *input, complex_t *output, int n)
+/* ================= RANGE FFT ================= */
+
+static void range_fft(int16_t *input, complex_t *output)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < NUM_SAMPLES_PER_CHIRP; i++)
     {
         output[i].re = (float)input[i];
         output[i].im = 0.0f;
     }
-    fft_complex(output, n);
+    fft_complex(output, NUM_SAMPLES_PER_CHIRP);
 }
 
-static int find_target_bin(complex_t *range_profile)
+static int find_target_bin(complex_t *range)
 {
     float max_mag = 0.0f;
     int max_bin = RANGE_BIN_START;
-    for (int bin = RANGE_BIN_START; bin < RANGE_BIN_END && bin < NUM_SAMPLES_PER_CHIRP; bin++)
+
+    for (int i = RANGE_BIN_START; i < RANGE_BIN_END; i++)
     {
-        float mag = range_profile[bin].re * range_profile[bin].re + range_profile[bin].im * range_profile[bin].im;
+        float mag = range[i].re * range[i].re +
+                    range[i].im * range[i].im;
         if (mag > max_mag)
         {
             max_mag = mag;
-            max_bin = bin;
+            max_bin = i;
         }
     }
     return max_bin;
 }
 
-float diff;
-static float unwrap_phase(float current_phase)
+/*================== DETECT HUMAN================*/
+static bool detect_human(
+    complex_t *range,
+    int target_bin,
+    float current_phase)
 {
-    diff = current_phase - prev_phase;
+    static float phase_hist[PHASE_WINDOW];
+    static uint16_t phase_idx = 0;
+    static float stable_bin = -1;      // Dùng float để trung bình
+    static float bin_history[5] = {0}; // Lưu 5 frame gần nhất để smooth bin
+    static int human_score = 0;
 
-    while (diff > M_PI)
-        diff -= 2.0f * M_PI;
-    while (diff < -M_PI)
-        diff += 2.0f * M_PI;
+    /* ===== Energy gate ===== */
+    float energy = range[target_bin].re * range[target_bin].re +
+                   range[target_bin].im * range[target_bin].im;
 
-    prev_phase += diff;
-    return prev_phase;
+    if (energy < RANGE_ENERGY_THRESHOLD)
+    {
+        human_score -= 1; // giảm nhẹ hơn
+        if (human_score < 0)
+            human_score = 0;
+        stable_bin = -1;
+        //return false;
+    }
+
+    /* ===== Bin smoothing ===== */
+    for (int i = 4; i > 0; i--)
+        bin_history[i] = bin_history[i - 1];
+    bin_history[0] = (float)target_bin;
+
+    float avg_bin = 0;
+    for (int i = 0; i < 5; i++)
+        avg_bin += bin_history[i];
+    avg_bin /= 5.0f;
+
+    if (stable_bin < 0)
+        stable_bin = avg_bin;
+
+    if (fabs(avg_bin - stable_bin) > 2.0f)
+    {
+        stable_bin = avg_bin;
+        human_score -= 1; // giảm nhẹ hơn
+        if (human_score < 0)
+            human_score = 0;
+        //return false;
+    }
+
+    /* ===== Phase variance ===== */
+    phase_hist[phase_idx++] = current_phase;
+    if (phase_idx >= PHASE_WINDOW)
+        phase_idx = 0;
+
+    float mean = 0.0f;
+    for (int i = 0; i < PHASE_WINDOW; i++)
+        mean += phase_hist[i];
+    mean /= PHASE_WINDOW;
+
+    float var = 0.0f;
+    for (int i = 0; i < PHASE_WINDOW; i++)
+    {
+        float d = phase_hist[i] - mean;
+        var += d * d;
+    }
+    var /= PHASE_WINDOW;
+
+    /* ===== Scoring logic ===== */
+    if (var > PHASE_VAR_HUMAN_MIN && var < PHASE_VAR_HUMAN_MAX)
+    {
+        // Khi phase variance hợp lý, tăng score mượt theo biên sin
+        human_score += 1;
+        if (human_score > HUMAN_SCORE_MAX)
+            human_score = HUMAN_SCORE_MAX;
+    }
+    else if (var < PHASE_VAR_HUMAN_MIN)
+    {
+        // Không có người, giữ score gần 0, chỉ nhích 0-1 do nhiễu
+        human_score -= 1;
+        if (human_score < 0)
+            human_score = 0;
+    }
+    else
+    {
+        // Phase variance quá lớn (nhiễu mạnh), giảm mạnh
+        human_score -= 2;
+        if (human_score < 0)
+            human_score = 0;
+    }
+
+    return (human_score >= HUMAN_SCORE_TH);
 }
 
-static float smoothed_bpm = 0.0f;
-static float previous_bpm = 70.0f;
-void calculate_heart_rate(void)
-{
+/* ================= HEART RATE ================= */
 
-    float spectrum[HR_BUFFER_LEN / 2];
-    complex_t buf[HR_BUFFER_LEN];
+static void calculate_heart_rate(void)
+{
+    static float bpm_smooth = 0.0f;
+    const float fs = FRAME_RATE_HZ;
+
+    /* Remove DC */
+    float mean = 0.0f;
+    for (int i = 0; i < HR_BUFFER_LEN; i++)
+        mean += phase_buffer[i];
+    mean /= HR_BUFFER_LEN;
+
+    complex_t fft_buf[HR_BUFFER_LEN];
 
     for (int i = 0; i < HR_BUFFER_LEN; i++)
     {
-        buf[i].re = phase_buffer[i];
-        buf[i].im = 0.0f;
-    }
-    fft_complex(buf, HR_BUFFER_LEN);
-
-    for (int i = 0; i < HR_BUFFER_LEN / 2; i++)
-    {
-        spectrum[i] = sqrtf(buf[i].re * buf[i].re + buf[i].im * buf[i].im);
+        float x = phase_buffer[i] - mean;
+        float w = 0.5f * (1.0f - cosf(2 * M_PI * i / (HR_BUFFER_LEN - 1)));
+        fft_buf[i].re = x * w;
+        fft_buf[i].im = 0.0f;
     }
 
-    float max_val = 0.0f;
-    int max_bin = 0;
-    for (int i = 2; i < HR_BUFFER_LEN / 2; i++)
+    fft_complex(fft_buf, HR_BUFFER_LEN);
+
+    float max_mag = 0.0f;
+    int max_bin = -1;
+
+    for (int i = 1; i < HR_BUFFER_LEN / 2; i++)
     {
-        float freq = (float)i * FRAME_RATE_HZ / HR_BUFFER_LEN;
-        if (freq >= 0.8f && freq <= 2.5f)
+        float freq = fs * i / HR_BUFFER_LEN;
+        if (freq < 0.8f || freq > 2.2f)
+            continue;
+
+        float mag = fft_buf[i].re * fft_buf[i].re +
+                    fft_buf[i].im * fft_buf[i].im;
+
+        if (mag > max_mag)
         {
-            if (spectrum[i] > max_val)
-            {
-                max_val = spectrum[i];
-                max_bin = i;
-            }
+            max_mag = mag;
+            max_bin = i;
         }
     }
-
-    float raw_bpm = (float)max_bin * FRAME_RATE_HZ * 60.0f / HR_BUFFER_LEN;
-    float raw_freq = (float)max_bin * FRAME_RATE_HZ / HR_BUFFER_LEN;
-    float limited_bpm = raw_bpm;
-
-    if (smoothed_bpm == 0.0f)
-    {
-        limited_bpm = raw_bpm;
+    
+    if (max_bin < 0 || max_mag < 1e-3f){
+        return;
     }
-    else
-    {
-        float diff = raw_bpm - previous_bpm;
-        if (diff > 40.0f)
-            limited_bpm = previous_bpm;
+    ESP_LOGW(TAG, "max_bin = %d, max_mag = %.2e", max_bin, max_mag);
+    float bpm = (fs * max_bin / HR_BUFFER_LEN) * 60.0f;
+    if(bpm_smooth == 0.0f){
+        bpm_smooth = bpm;
     }
+    bpm_smooth = 0.3*bpm + 0.7*bpm_smooth;
 
-    previous_bpm = limited_bpm;
-    if (smoothed_bpm == 0.0f)
-        smoothed_bpm = limited_bpm;
-    else
-        smoothed_bpm = 0.8f * smoothed_bpm + 0.2f * limited_bpm;
     uint64_t current_time = esp_timer_get_time() / 1000;
-    minute_sum += smoothed_bpm;
+    minute_sum += bpm_smooth;
     minute_count++;
     if (current_time - last_publish_time >= 60000)
     {
         if (minute_count > 0)
         {
             current_minute_average = minute_sum / minute_count;
+            current_minute_average = (last_hr_average * measure_count + current_minute_average) / (measure_count + 1);
+            measure_count++;
+            last_hr_average = current_minute_average;
             MQTT_Publish((current_minute_average < MIN_HEART_RATE) ? "L" : ((current_minute_average > MAX_HEART_RATE) ? "H" : "M"), current_minute_average);
             buzzer_cmd_t cmd = BUZZER_NONE;
 
@@ -248,27 +348,23 @@ void calculate_heart_rate(void)
         minute_count = 0;
         last_publish_time = current_time;
     }
-    ESP_LOGI(TAG, "Nhịp tim: %.1f BPM (tức thì: %.1f BPM | peak: %.2f Hz)",
-             smoothed_bpm, limited_bpm, raw_freq);
 }
 
-void radar_task(void *arg)
+/* ================= RADAR TASK ================= */
+
+static void radar_task(void *arg)
 {
-    uint8_t *fifo_raw = malloc(16384);
-    if (!fifo_raw)
-    {
-        ESP_LOGE(TAG, "Malloc fifo_raw failed");
-        vTaskDelete(NULL);
-    }
+    uint8_t *fifo = malloc(16384);
+    int16_t adc[NUM_SAMPLES_PER_CHIRP];
+    complex_t range[NUM_SAMPLES_PER_CHIRP];
 
-    int16_t adc_samples[NUM_SAMPLES_PER_CHIRP];
-    complex_t range_profile[NUM_SAMPLES_PER_CHIRP];
-
-    uint32_t frame_count = 0;
+    static float prev_phase = 0.0f;
+    static float phase_acc = 0.0f;
 
     while (1)
     {
-        xSemaphoreTake(xSemaphore, portMAX_DELAY);
+        xSemaphoreTake(radar_sem, portMAX_DELAY);
+
         if (!is_measuring)
         {
             xensiv_bgt60tr13c_soft_reset(XENSIV_BGT60TR13C_RESET_FIFO);
@@ -276,56 +372,63 @@ void radar_task(void *arg)
             vTaskDelay(pdMS_TO_TICKS(10));
             continue;
         }
-        frame_count++;
-        uint32_t full_fifo_bytes = (NUM_SAMPLES_PER_CHIRP * NUM_CHIRPS_PER_FRAME * 3) / 2;
-        esp_err_t ret = xensiv_bgt60tr13c_fifo_read(fifo_raw, full_fifo_bytes, 1);
 
-        if (ret != ESP_OK)
-            ESP_LOGW(TAG, "FIFO read failed this frame, continuing...");
+        uint32_t bytes = (NUM_SAMPLES_PER_CHIRP * 3) / 2;
+        xensiv_bgt60tr13c_fifo_read(fifo, bytes, 1);
 
-        uint32_t sample_idx = 0;
-        for (uint32_t i = 0; i < full_fifo_bytes && sample_idx < NUM_SAMPLES_PER_CHIRP; i += 3)
+        uint32_t i = 0, s = 0;
+        while (i + 2 < bytes && s < NUM_SAMPLES_PER_CHIRP)
         {
-            uint16_t s0 = (fifo_raw[i] << 4) | (fifo_raw[i + 1] >> 4);
-            uint16_t s1 = ((fifo_raw[i + 1] & 0x0F) << 8) | fifo_raw[i + 2];
+            uint16_t a = (fifo[i] << 4) | (fifo[i + 1] >> 4);
+            uint16_t b = ((fifo[i + 1] & 0x0F) << 8) | fifo[i + 2];
+            i += 3;
 
-            if (sample_idx < NUM_SAMPLES_PER_CHIRP)
-                adc_samples[sample_idx++] = (int16_t)s0 - 2048;
-
-            if (sample_idx < NUM_SAMPLES_PER_CHIRP)
-                adc_samples[sample_idx++] = (int16_t)s1 - 2048;
+            adc[s++] = (int16_t)a - 2048;
+            if (s < NUM_SAMPLES_PER_CHIRP)
+                adc[s++] = (int16_t)b - 2048;
         }
 
-        range_fft(adc_samples, range_profile, NUM_SAMPLES_PER_CHIRP);
-        int target_bin = find_target_bin(range_profile);
+        range_fft(adc, range);
+        int bin = find_target_bin(range);
 
-        float max_mag = 0.0f;
-        for (int b = RANGE_BIN_START; b < RANGE_BIN_END && b < NUM_SAMPLES_PER_CHIRP; b++)
+        float re = range[bin].re;
+        float im = range[bin].im;
+
+        float phase = atan2f(im, re);
+        float dphi = phase - prev_phase;
+        if (dphi > M_PI)
+            dphi -= 2 * M_PI;
+        if (dphi < -M_PI)
+            dphi += 2 * M_PI;
+        prev_phase = phase;
+
+        /* ===== Human detection ===== */
+        human_present = detect_human(range, bin, phase);
+
+        /* ===== Only accumulate phase if human ===== */
+        if (human_present)
         {
-            float mag = range_profile[b].re * range_profile[b].re + range_profile[b].im * range_profile[b].im;
-            if (mag > max_mag)
-                max_mag = mag;
-        }
+            phase_acc += dphi;
+            phase_buffer[phase_idx++] = phase_acc;
 
-        if (target_bin >= RANGE_BIN_START && max_mag > 1e6)
-        {
-            float phase = atan2f(range_profile[target_bin].im, range_profile[target_bin].re);
-            unwrap_phase(phase);
-
-            phase_buffer[phase_idx++] = diff;
             if (phase_idx >= HR_BUFFER_LEN)
             {
                 phase_idx = 0;
                 calculate_heart_rate();
-                prev_phase = 0.0f;
             }
         }
+        else
+        {
+            prev_phase = phase;
+        }
+
         xensiv_bgt60tr13c_start_frame_capture();
     }
-
-    free(fifo_raw);
+    free(fifo);
     vTaskDelete(NULL);
 }
+
+/* ================= INIT ================= */
 
 static void buzzer_beep(uint8_t count)
 {
@@ -436,12 +539,14 @@ void BGT60TR13C_Init(spi_host_device_t spi)
         .intr_type = GPIO_INTR_POSEDGE};
     gpio_config(&io_conf);
 
-    xSemaphore = xSemaphoreCreateBinary();
+    radar_sem = xSemaphoreCreateBinary();
     gpio_install_isr_service(0);
     gpio_isr_handler_add(RADAR_IRQ_PIN, gpio_radar_isr_handler, NULL);
 
     xTaskCreate(radar_task, "radar_task", 16384, NULL, 5, NULL);
     xTaskCreate(buzzer_task, "buzzer_task", 2048, NULL, 3, NULL);
+    // buzzer_cmd_t cmd = BUZZER_HIGH_HR;
+    // xQueueSend(buzzer_queue, &cmd, 0);
 }
 void Start_Measuring(void)
 {
@@ -466,6 +571,8 @@ void Stop_Measuring(void)
     if (is_measuring)
     {
         is_measuring = false;
+        measure_count = 0;
+        last_hr_average = 0.0f;
         ESP_LOGI(TAG, "Measuring STOPPED by MQTT");
         xensiv_bgt60tr13c_start_frame_capture();
     }

@@ -1,17 +1,0 @@
-Command: ninja flash
-[1/10] Building C object esp-idf/BGT60TR13C_API_HeartRate/CMakeFiles/__idf_BGT60TR13C_API_HeartRate.dir/BGT60TR13C_API_HeartRate.c.obj
-[2/10] Linking C static library esp-idf\BGT60TR13C_API_HeartRate\libBGT60TR13C_API_HeartRate.a
-[3/10] Performing build step for 'bootloader'
-[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/bootloader.bin"
-Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
-[4/10] No install step for 'bootloader'
-[5/10] Completed 'bootloader'
-[6/10] Generating esp-idf/esp_system/ld/sections.ld
-[7/10] Linking CXX executable Project_Anh_Sao.elf
-FAILED: Project_Anh_Sao.elf 
-C:\WINDOWS\system32\cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 -Wl,--Map=D:/Code/ESPIDF/Project_Anh_Sao/build/Project_Anh_Sao.map -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.wdt.ld -T esp32s3.rom.version.ld -T esp32s3.rom.ble_master.ld -T esp32s3.rom.ble_50.ld -T esp32s3.rom.ble_smp.ld -T esp32s3.rom.ble_dtm.ld -T esp32s3.rom.ble_test.ld -T esp32s3.rom.ble_scan.ld -T esp32s3.rom.libc.ld -T esp32s3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\Project_Anh_Sao.elf.rsp -o Project_Anh_Sao.elf && cd ."
-C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(Project_Anh_Sao.c.obj):(.literal.app_main+0xc): undefined reference to `Wifi_Init'
-C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/main/libmain.a(Project_Anh_Sao.c.obj): in function `app_main':
-D:/Code/ESPIDF/Project_Anh_Sao/main/Project_Anh_Sao.c:10:(.text.app_main+0xb): undefined reference to `Wifi_Init'
-collect2.exe: error: ld returned 1 exit status
-ninja: build stopped: subcommand failed.

@@ -1,0 +1,65 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM16 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4201124b: [0;33mxensiv_bgt60tr13c_get_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m253[0m
+[0m--- 0x42013fc6: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x420143e0: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x403791a4: [0;33mspi_device_polling_end[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1480[0m
+[0m--- 0x403791f5: [0;33mspi_device_polling_transmit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1502[0m
+[0m--- 0x420112b0: [0;33mxensiv_bgt60tr13c_set_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m214[0m
+[0m--- 0x42011377: [0;33mxensiv_bgt60tr13c_start_frame_capture[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m93[0m
+[0m--- 0x4200c28b: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m382[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42013fc6: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x420143e0: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x400559dd: [0;33m_xtos_set_intlevel[0m[0m in [0;32mROM[0m
+[0m--- 0x4037e582: [0;33mvPortClearInterruptMaskFromISR[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m560[0m
+[0m--- (inlined by) [0;33mvPortExitCritical[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m514[0m
+[0m--- 0x4037b4e6: [0;33mvPortExitCriticalSafe[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h[0m[0m:[1;31m596[0m
+[0m--- (inlined by) [0;33mgdma_start[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/dma/gdma.c[0m[0m:[1;31m541[0m
+[0m--- 0x40378c0b: [0;33ms_spi_dma_prepare_data[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m742[0m
+[0m--- 0x40378c55: [0;33ms_spi_prepare_data[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m767[0m
+[0m--- 0x40378cd5: [0;33mspi_new_trans[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m833[0m
+[0m--- 0x4037911f: [0;33mspi_device_polling_start[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1442[0m
+[0m--- 0x403791ea: [0;33mspi_device_polling_transmit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1497[0m
+[0m--- 0x420112b0: [0;33mxensiv_bgt60tr13c_set_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m214[0m
+[0m--- 0x42011377: [0;33mxensiv_bgt60tr13c_start_frame_capture[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m93[0m
+[0m--- 0x4200c28b: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m382[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42013fc6: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x420143e0: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x40383c44: [0;33mspi_hal_usr_is_done[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/spi_hal_iram.c[0m[0m:[1;31m234[0m
+[0m--- 0x40379195: [0;33mspi_device_polling_end[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1456[0m
+[0m--- 0x403791f5: [0;33mspi_device_polling_transmit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1502[0m
+[0m--- 0x420112b0: [0;33mxensiv_bgt60tr13c_set_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m214[0m
+[0m--- 0x42011377: [0;33mxensiv_bgt60tr13c_start_frame_capture[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m93[0m
+[0m--- 0x4200c28b: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m382[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42013fc6: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x420143e0: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x40383c41: [0;33mspi_ll_get_intr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32s3/include/hal/spi_ll.h[0m[0m:[1;31m1155[0m
+[0m--- 0x403791f5: [0;33mspi_device_polling_transmit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1502[0m
+[0m--- 0x420112b0: [0;33mxensiv_bgt60tr13c_set_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m214[0m
+[0m--- 0x42011377: [0;33mxensiv_bgt60tr13c_start_frame_capture[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m93[0m
+[0m--- 0x4200c28b: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m382[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42013fc6: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x420143e0: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4037852b: [0;33mcheck_trans_valid[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1083[0m
+[0m--- 0x40379063: [0;33mspi_device_polling_start[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1404[0m
+[0m--- 0x403791ea: [0;33mspi_device_polling_transmit[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_spi/src/gpspi/spi_master.c[0m[0m:[1;31m1497[0m
+[0m--- 0x420112b0: [0;33mxensiv_bgt60tr13c_set_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m214[0m
+[0m--- 0x42011377: [0;33mxensiv_bgt60tr13c_start_frame_capture[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m93[0m
+[0m--- 0x4200c28b: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m382[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x42011231: [0;33mxensiv_bgt60tr13c_get_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m251[0m
+[0m

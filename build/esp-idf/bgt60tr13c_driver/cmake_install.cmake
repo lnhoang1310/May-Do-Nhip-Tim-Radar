@@ -1,4 +1,4 @@
-# Install script for directory: D:/Code/ESPIDF/Project_Anh_Sao/bgt60tr13c_driver
+# Install script for directory: D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

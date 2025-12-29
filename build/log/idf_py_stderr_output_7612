@@ -1,0 +1,32 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM16 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42010073: [0;33mxensiv_bgt60tr13c_get_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m253[0m
+[0m--- 0x42012d32: [0;33mtask_wdt_timeout_handling[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m436[0m
+[0m--- 0x4201314c: [0;33mtask_wdt_isr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/task_wdt/task_wdt.c[0m[0m:[1;31m509[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x42007c1e: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/hal/esp32s3/include/hal/uart_ll.h[0m[0m:[1;31m422[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x42008b65: [0;33muart_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m245[0m
+[0m--- 0x4200a89a: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4208ef5e: [0;33mwrite[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c[0m[0m:[1;31m11[0m
+[0m--- 0x42009d85: [0;33mconsole_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_vfs_console/vfs_console.c[0m[0m:[1;31m83[0m
+[0m--- 0x4200a89a: [0;33mesp_vfs_write[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/vfs/vfs.c[0m[0m:[1;31m982[0m
+[0m--- 0x4208e5f6: [0;33m__swrite[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c[0m[0m:[1;31m94[0m
+[0m--- 0x4208db89: [0;33m__sflush_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c[0m[0m:[1;31m224[0m
+[0m--- 0x4208dbda: [0;33m_fflush_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c[0m[0m:[1;31m278[0m
+[0m--- 0x4208e1d9: [0;33m__sfvwrite_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c[0m[0m:[1;31m251[0m
+[0m--- 0x4209684b: [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m429[0m
+[0m--- (inlined by) [0;33m__sprint_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m399[0m
+[0m--- 0x42096252: [0;33m_vfprintf_r[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c[0m[0m:[1;31m1774[0m
+[0m--- 0x4208e66d: [0;33mvprintf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c[0m[0m:[1;31m34[0m
+[0m--- 0x403854f3: [0;33mesp_log_va[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log.c[0m[0m:[1;31m43[0m
+[0m--- (inlined by) [0;33mesp_log[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/log/src/log.c[0m[0m:[1;31m88[0m
+[0m--- 0x4200bb21: [0;33mdetect_human[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m244[0m
+[0m--- 0x4200bfb9: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m357[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m

@@ -1,0 +1,1630 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+low threshold: 3.22e+06 < 9.00e+06
+[0;33mW (40830) radar-hr: Energy �ESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21a90h (137872) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031ab8 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000365e8 vaddr=40374000 size=09a30h ( 39472) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6388h (680840) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e63b0 vaddr=4037da30 size=0f080h ( 61568) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5438 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  3720e3988...[0m
+[0;32mI (305) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA6250 len 000434C0 (269 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (354) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (580) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (660) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = d6:3e:aa:4c:2f:b2[0m
+[0;32mI (660) wifi:security: WPA2-PSK, phy: bgn, rssi: -26[0m
+[0;32mI (670) wifi:pm start, type: 1[0m
+
+[0;32mI (670) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (680) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (740) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1710) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1710) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2070) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2080) wifi:<ba-add>idx:0 (ifx:0, d6:3e:aa:4c:2f:b2), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2080) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2100) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4200ff8b
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2130) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2640) radar-hr: Setting CCR2 for endless frames.[0m
+[0;32mI (2640) radar-hr: Original CCR2 value: 0x00000000[0m
+[0;32mI (2650) radar-hr: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2660) radar-hr: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2670) radar-hr: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2670) radar-hr: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (3040) radar-hr: Human detected! Phase Variance = 3.407e-01, valid frame = 41[0m
+[0;32mI (3050) radar-hr: Human detected! Phase Variance = 3.327e-01, valid frame = 42[0m
+[0;32mI (3050) radar-hr: Human detected! Phase Variance = 3.238e-01, valid frame = 43[0m
+[0;32mI (3060) radar-hr: Human detected! Phase Variance = 3.141e-01, valid frame = 44[0m
+[0;32mI (3060) radar-hr: Human detected! Phase Variance = 3.040e-01, valid frame = 45[0m
+[0;32mI (3070) radar-hr: Human detected! Phase Variance = 2.933e-01, valid frame = 46[0m
+[0;32mI (3070) radar-hr: Human detected! Phase Variance = 2.815e-01, valid frame = 47[0m
+[0;32mI (3080) radar-hr: Human detected! Phase Variance = 2.690e-01, valid frame = 48[0m
+[0;32mI (3080) radar-hr: Human detected! Phase Variance = 2.555e-01, valid frame = 49[0m
+[0;32mI (3090) radar-hr: Human detected! Phase Variance = 2.414e-01, valid frame = 50[0m
+[0;32mI (3100) radar-hr: Human detected! Phase Variance = 2.271e-01, valid frame = 51[0m
+[0;32mI (3110) radar-hr: Human detected! Phase Variance = 2.120e-01, valid frame = 52[0m
+[0;32mI (3110) radar-hr: Human detected! Phase Variance = 1.961e-01, valid frame = 53[0m
+[0;32mI (3120) radar-hr: Human detected! Phase Variance = 1.796e-01, valid frame = 54[0m
+[0;32mI (3130) radar-hr: Human detected! Phase Variance = 1.625e-01, valid frame = 55[0m
+[0;32mI (3130) radar-hr: Human detected! Phase Variance = 1.449e-01, valid frame = 56[0m
+[0;32mI (3140) radar-hr: Human detected! Phase Variance = 1.266e-01, valid frame = 57[0m
+[0;32mI (3150) radar-hr: Human detected! Phase Variance = 1.075e-01, valid frame = 58[0m
+[0;32mI (3160) radar-hr: Human detected! Phase Variance = 8.784e-02, valid frame = 59[0m
+[0;32mI (3160) radar-hr: Human detected! Phase Variance = 6.761e-02, valid frame = 60[0m
+[0;33mW (3670) radar-hr: Energy below threshold: 6.70e+06 < 9.00e+06[0m
+[0;33mW (3670) radar-hr: Energy below threshold: 7.73e+06 < 9.00e+06[0m
+[0;33mW (3670) radar-hr: Energy below threshold: 7.07e+06 < 9.00e+06[0m
+[0;33mW (3690) radar-hr: Energy below threshold: 7.25e+06 < 9.00e+06[0m
+[0;33mW (3690) radar-hr: Energy below threshold: 7.84e+06 < 9.00e+06[0m
+[0;33mW (3690) radar-hr: Energy below threshold: 7.41e+06 < 9.00e+06[0m
+[0;33mW (3700) radar-hr: Energy below threshold: 6.59e+06 < 9.00e+06[0m
+[0;33mW (3700) radar-hr: Energy below threshold: 7.26e+06 < 9.00e+06[0m
+[0;33mW (3710) radar-hr: Energy below threshold: 6.88e+06 < 9.00e+06[0m
+[0;33mW (3710) radar-hr: Energy below threshold: 4.66e+06 < 9.00e+06[0m
+[0;33mW (3720) radar-hr: Energy below threshold: 5.76e+06 < 9.00e+06[0m
+[0;33mW (3720) radar-hr: Energy below threshold: 7.27e+06 < 9.00e+06[0m
+[0;33mW (3730) radar-hr: Energy below threshold: 7.39e+06 < 9.00e+06[0m
+[0;33mW (3730) radar-hr: Energy below threshold: 8.07e+06 < 9.00e+06[0m
+[0;33mW (3740) radar-hr: Energy below threshold: 8.31e+06 < 9.00e+06[0m
+[0;33mW (3740) radar-hr: Energy below threshold: 8.02e+06 < 9.00e+06[0m
+[0;33mW (3770) radar-hr: Energy below threshold: 8.31e+06 < 9.00e+06[0m
+[0;33mW (3790) radar-hr: Energy below threshold: 7.80e+06 < 9.00e+06[0m
+[0;33mW (3830) radar-hr: Energy below threshold: 5.69e+06 < 9.00e+06[0m
+[0;33mW (3830) radar-hr: Energy below threshold: 7.65e+06 < 9.00e+06[0m
+[0;33mW (3830) radar-hr: Energy below threshold: 7.62e+06 < 9.00e+06[0m
+[0;33mW (3830) radar-hr: Energy below threshold: 5.77e+06 < 9.00e+06[0m
+[0;33mW (3840) radar-hr: Energy below threshold: 6.71e+06 < 9.00e+06[0m
+[0;33mW (3840) radar-hr: Energy below threshold: 6.65e+06 < 9.00e+06[0m
+[0;33mW (3850) radar-hr: Energy below threshold: 7.46e+06 < 9.00e+06[0m
+[0;33mW (3850) radar-hr: Energy below threshold: 8.38e+06 < 9.00e+06[0m
+[0;33mW (3860) radar-hr: Energy below threshold: 8.92e+06 < 9.00e+06[0m
+[0;33mW (3870) radar-hr: Energy below threshold: 7.63e+06 < 9.00e+06[0m
+[0;33mW (3870) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (3880) radar-hr: Energy below threshold: 7.64e+06 < 9.00e+06[0m
+[0;33mW (3880) radar-hr: Energy below threshold: 6.82e+06 < 9.00e+06[0m
+[0;33mW (3890) radar-hr: Energy below threshold: 8.15e+06 < 9.00e+06[0m
+[0;33mW (3890) radar-hr: Energy below threshold: 8.01e+06 < 9.00e+06[0m
+[0;33mW (3900) radar-hr: Energy below threshold: 7.68e+06 < 9.00e+06[0m
+[0;33mW (3910) radar-hr: Energy below threshold: 7.38e+06 < 9.00e+06[0m
+[0;33mW (3910) radar-hr: Energy below threshold: 5.93e+06 < 9.00e+06[0m
+[0;33mW (3930) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (3930) radar-hr: Energy below threshold: 6.03e+06 < 9.00e+06[0m
+[0;33mW (3930) radar-hr: Energy below threshold: 5.42e+06 < 9.00e+06[0m
+[0;33mW (3930) radar-hr: Energy below threshold: 8.39e+06 < 9.00e+06[0m
+[0;33mW (3940) radar-hr: Energy below threshold: 5.36e+06 < 9.00e+06[0m
+[0;33mW (3940) radar-hr: Energy below threshold: 6.12e+06 < 9.00e+06[0m
+[0;33mW (3950) radar-hr: Energy below threshold: 5.52e+06 < 9.00e+06[0m
+[0;33mW (3970) radar-hr: Energy below threshold: 7.86e+06 < 9.00e+06[0m
+[0;33mW (3970) radar-hr: Energy below threshold: 6.82e+06 < 9.00e+06[0m
+[0;33mW (3970) radar-hr: Energy below threshold: 7.75e+06 < 9.00e+06[0m
+[0;33mW (3970) radar-hr: Energy below threshold: 7.05e+06 < 9.00e+06[0m
+[0;33mW (3980) radar-hr: Energy below threshold: 6.34e+06 < 9.00e+06[0m
+[0;33mW (3980) radar-hr: Energy below threshold: 5.93e+06 < 9.00e+06[0m
+[0;33mW (3990) radar-hr: Energy below threshold: 6.79e+06 < 9.00e+06[0m
+[0;33mW (3990) radar-hr: Energy below threshold: 4.84e+06 < 9.00e+06[0m
+[0;33mW (4000) radar-hr: Energy below threshold: 6.06e+06 < 9.00e+06[0m
+[0;33mW (4010) radar-hr: Energy below threshold: 6.13e+06 < 9.00e+06[0m
+[0;33mW (4010) radar-hr: Energy below threshold: 6.85e+06 < 9.00e+06[0m
+[0;33mW (4020) radar-hr: Energy below threshold: 8.26e+06 < 9.00e+06[0m
+[0;33mW (4020) radar-hr: Energy below threshold: 6.89e+06 < 9.00e+06[0m
+[0;33mW (4030) radar-hr: Energy below threshold: 5.03e+06 < 9.00e+06[0m
+[0;33mW (4030) radar-hr: Energy below threshold: 6.33e+06 < 9.00e+06[0m
+[0;33mW (4040) radar-hr: Energy below threshold: 5.50e+06 < 9.00e+06[0m
+[0;33mW (4040) radar-hr: Energy below threshold: 5.10e+06 < 9.00e+06[0m
+[0;33mW (4050) radar-hr: Energy below threshold: 6.66e+06 < 9.00e+06[0m
+[0;33mW (4060) radar-hr: Energy below threshold: 5.11e+06 < 9.00e+06[0m
+[0;33mW (4060) radar-hr: Energy below threshold: 6.48e+06 < 9.00e+06[0m
+[0;33mW (4070) radar-hr: Energy below threshold: 8.61e+06 < 9.00e+06[0m
+[0;33mW (4070) radar-hr: Energy below threshold: 5.86e+06 < 9.00e+06[0m
+[0;33mW (4080) radar-hr: Energy below threshold: 4.58e+06 < 9.00e+06[0m
+[0;33mW (4080) radar-hr: Energy below threshold: 6.08e+06 < 9.00e+06[0m
+[0;33mW (4090) radar-hr: Energy below threshold: 8.01e+06 < 9.00e+06[0m
+[0;33mW (4090) radar-hr: Energy below threshold: 7.01e+06 < 9.00e+06[0m
+[0;33mW (4110) radar-hr: Energy below threshold: 8.18e+06 < 9.00e+06[0m
+[0;33mW (4110) radar-hr: Energy below threshold: 6.99e+06 < 9.00e+06[0m
+[0;33mW (4150) radar-hr: Energy below threshold: 7.66e+06 < 9.00e+06[0m
+[0;33mW (4170) radar-hr: Energy below threshold: 8.21e+06 < 9.00e+06[0m
+[0;33mW (4190) radar-hr: Energy below threshold: 8.26e+06 < 9.00e+06[0m
+[0;33mW (4210) radar-hr: Energy below threshold: 8.27e+06 < 9.00e+06[0m
+[0;33mW (4690) radar-hr: Energy below threshold: 8.69e+06 < 9.00e+06[0m
+[0;33mW (4730) radar-hr: Energy below threshold: 8.35e+06 < 9.00e+06[0m
+[0;33mW (4820) radar-hr: Energy below threshold: 8.95e+06 < 9.00e+06[0m
+[0;33mW (4920) radar-hr: Energy below threshold: 7.31e+06 < 9.00e+06[0m
+[0;33mW (4930) radar-hr: Energy below threshold: 7.24e+06 < 9.00e+06[0m
+[0;33mW (4930) radar-hr: Energy below threshold: 5.54e+06 < 9.00e+06[0m
+[0;33mW (4930) radar-hr: Energy below threshold: 6.41e+06 < 9.00e+06[0m
+[0;33mW (4930) radar-hr: Energy below threshold: 8.09e+06 < 9.00e+06[0m
+[0;33mW (4950) radar-hr: Energy below threshold: 5.98e+06 < 9.00e+06[0m
+[0;33mW (4950) radar-hr: Energy below threshold: 6.76e+06 < 9.00e+06[0m
+[0;33mW (4950) radar-hr: Energy below threshold: 6.49e+06 < 9.00e+06[0m
+[0;33mW (4970) radar-hr: Energy below threshold: 7.48e+06 < 9.00e+06[0m
+[0;33mW (4970) radar-hr: Energy below threshold: 8.65e+06 < 9.00e+06[0m
+[0;33mW (4970) radar-hr: Energy below threshold: 7.86e+06 < 9.00e+06[0m
+[0;33mW (4970) radar-hr: Energy below threshold: 6.33e+06 < 9.00e+06[0m
+[0;33mW (4980) radar-hr: Energy below threshold: 6.35e+06 < 9.00e+06[0m
+[0;33mW (4980) radar-hr: Energy below threshold: 6.72e+06 < 9.00e+06[0m
+[0;33mW (4990) radar-hr: Energy below threshold: 8.93e+06 < 9.00e+06[0m
+[0;33mW (4990) radar-hr: Energy below threshold: 4.66e+06 < 9.00e+06[0m
+[0;33mW (5000) radar-hr: Energy below threshold: 5.81e+06 < 9.00e+06[0m
+[0;33mW (5010) radar-hr: Energy below threshold: 6.75e+06 < 9.00e+06[0m
+[0;33mW (5010) radar-hr: Energy below threshold: 8.02e+06 < 9.00e+06[0m
+[0;33mW (5020) radar-hr: Energy below threshold: 5.79e+06 < 9.00e+06[0m
+[0;33mW (5020) radar-hr: Energy below threshold: 7.33e+06 < 9.00e+06[0m
+[0;33mW (5030) radar-hr: Energy below threshold: 6.98e+06 < 9.00e+06[0m
+[0;33mW (5030) radar-hr: Energy below threshold: 6.08e+06 < 9.00e+06[0m
+[0;33mW (5040) radar-hr: Energy below threshold: 8.14e+06 < 9.00e+06[0m
+[0;33mW (5040) radar-hr: Energy below threshold: 5.95e+06 < 9.00e+06[0m
+[0;33mW (5050) radar-hr: Energy below threshold: 7.81e+06 < 9.00e+06[0m
+[0;33mW (5060) radar-hr: Energy below threshold: 6.57e+06 < 9.00e+06[0m
+[0;33mW (5060) radar-hr: Energy below threshold: 5.68e+06 < 9.00e+06[0m
+[0;33mW (5070) radar-hr: Energy below threshold: 8.28e+06 < 9.00e+06[0m
+[0;33mW (5070) radar-hr: Energy below threshold: 8.59e+06 < 9.00e+06[0m
+[0;33mW (5080) radar-hr: Energy below threshold: 7.56e+06 < 9.00e+06[0m
+[0;33mW (5080) radar-hr: Energy below threshold: 7.25e+06 < 9.00e+06[0m
+[0;33mW (5090) radar-hr: Energy below threshold: 6.95e+06 < 9.00e+06[0m
+[0;33mW (5090) radar-hr: Energy below threshold: 8.20e+06 < 9.00e+06[0m
+[0;33mW (5100) radar-hr: Energy below threshold: 6.77e+06 < 9.00e+06[0m
+[0;33mW (5110) radar-hr: Energy below threshold: 8.12e+06 < 9.00e+06[0m
+[0;33mW (5110) radar-hr: Energy below threshold: 7.99e+06 < 9.00e+06[0m
+[0;33mW (5120) radar-hr: Energy below threshold: 7.95e+06 < 9.00e+06[0m
+[0;33mW (5120) radar-hr: Energy below threshold: 6.80e+06 < 9.00e+06[0m
+[0;33mW (5130) radar-hr: Energy below threshold: 8.03e+06 < 9.00e+06[0m
+[0;33mW (5130) radar-hr: Energy below threshold: 8.30e+06 < 9.00e+06[0m
+[0;33mW (5140) radar-hr: Energy below threshold: 6.26e+06 < 9.00e+06[0m
+[0;33mW (5160) radar-hr: Energy below threshold: 8.16e+06 < 9.00e+06[0m
+[0;33mW (5160) radar-hr: Energy below threshold: 8.18e+06 < 9.00e+06[0m
+[0;33mW (5180) radar-hr: Energy below threshold: 8.94e+06 < 9.00e+06[0m
+[0;33mW (5180) radar-hr: Energy below threshold: 6.41e+06 < 9.00e+06[0m
+[0;33mW (5180) radar-hr: Energy below threshold: 7.07e+06 < 9.00e+06[0m
+[0;33mW (5200) radar-hr: Energy below threshold: 6.41e+06 < 9.00e+06[0m
+[0;33mW (5200) radar-hr: Energy below threshold: 8.11e+06 < 9.00e+06[0m
+[0;33mW (5200) radar-hr: Energy below threshold: 8.34e+06 < 9.00e+06[0m
+[0;33mW (5200) radar-hr: Energy below threshold: 6.71e+06 < 9.00e+06[0m
+[0;33mW (5210) radar-hr: Energy below threshold: 6.28e+06 < 9.00e+06[0m
+[0;33mW (5210) radar-hr: Energy below threshold: 8.17e+06 < 9.00e+06[0m
+[0;33mW (5220) radar-hr: Energy below threshold: 7.73e+06 < 9.00e+06[0m
+[0;33mW (5220) radar-hr: Energy below threshold: 8.52e+06 < 9.00e+06[0m
+[0;33mW (5230) radar-hr: Energy below threshold: 6.63e+06 < 9.00e+06[0m
+[0;33mW (5240) radar-hr: Energy below threshold: 6.81e+06 < 9.00e+06[0m
+[0;33mW (5260) radar-hr: Energy below threshold: 8.82e+06 < 9.00e+06[0m
+[0;33mW (5260) radar-hr: Energy below threshold: 6.68e+06 < 9.00e+06[0m
+[0;33mW (5260) radar-hr: Energy below threshold: 7.10e+06 < 9.00e+06[0m
+[0;33mW (5280) radar-hr: Energy below threshold: 8.88e+06 < 9.00e+06[0m
+[0;33mW (5280) radar-hr: Energy below threshold: 8.39e+06 < 9.00e+06[0m
+[0;33mW (5280) radar-hr: Energy below threshold: 8.41e+06 < 9.00e+06[0m
+[0;33mW (5280) radar-hr: Energy below threshold: 7.88e+06 < 9.00e+06[0m
+[0;33mW (5290) radar-hr: Energy below threshold: 7.51e+06 < 9.00e+06[0m
+[0;33mW (5290) radar-hr: Energy below threshold: 8.95e+06 < 9.00e+06[0m
+[0;33mW (5300) radar-hr: Energy below threshold: 8.05e+06 < 9.00e+06[0m
+[0;33mW (5300) radar-hr: Energy below threshold: 8.82e+06 < 9.00e+06[0m
+[0;33mW (5310) radar-hr: Energy below threshold: 8.13e+06 < 9.00e+06[0m
+[0;33mW (5330) radar-hr: Energy below threshold: 8.75e+06 < 9.00e+06[0m
+[0;33mW (5330) radar-hr: Energy below threshold: 8.72e+06 < 9.00e+06[0m
+[0;33mW (5330) radar-hr: Energy below threshold: 8.50e+06 < 9.00e+06[0m
+[0;33mW (5340) radar-hr: Energy below threshold: 8.04e+06 < 9.00e+06[0m
+[0;33mW (5340) radar-hr: Energy below threshold: 7.78e+06 < 9.00e+06[0m
+[0;33mW (5360) radar-hr: Energy below threshold: 5.76e+06 < 9.00e+06[0m
+[0;33mW (5370) radar-hr: Energy below threshold: 8.75e+06 < 9.00e+06[0m
+[0;33mW (5380) radar-hr: Energy below threshold: 8.21e+06 < 9.00e+06[0m
+[0;33mW (5380) radar-hr: Energy below threshold: 8.35e+06 < 9.00e+06[0m
+[0;33mW (5390) radar-hr: Energy below threshold: 7.44e+06 < 9.00e+06[0m
+[0;33mW (5390) radar-hr: Energy below threshold: 7.39e+06 < 9.00e+06[0m
+[0;33mW (5400) radar-hr: Energy below threshold: 8.73e+06 < 9.00e+06[0m
+[0;33mW (5410) radar-hr: Energy below threshold: 7.39e+06 < 9.00e+06[0m
+[0;33mW (5420) radar-hr: Energy below threshold: 6.68e+06 < 9.00e+06[0m
+[0;33mW (5420) radar-hr: Energy below threshold: 8.67e+06 < 9.00e+06[0m
+[0;33mW (5430) radar-hr: Energy below threshold: 8.51e+06 < 9.00e+06[0m
+[0;33mW (5440) radar-hr: Energy below threshold: 6.82e+06 < 9.00e+06[0m
+[0;33mW (5440) radar-hr: Energy below threshold: 5.46e+06 < 9.00e+06[0m
+[0;33mW (5450) radar-hr: Energy below threshold: 7.06e+06 < 9.00e+06[0m
+[0;33mW (5460) radar-hr: Energy below threshold: 8.73e+06 < 9.00e+06[0m
+[0;33mW (5470) radar-hr: Energy below threshold: 7.94e+06 < 9.00e+06[0m
+[0;33mW (5480) radar-hr: Energy below threshold: 7.77e+06 < 9.00e+06[0m
+[0;33mW (5490) radar-hr: Energy below threshold: 8.90e+06 < 9.00e+06[0m
+[0;33mW (5490) radar-hr: Energy below threshold: 8.02e+06 < 9.00e+06[0m
+[0;33mW (5500) radar-hr: Energy below threshold: 8.21e+06 < 9.00e+06[0m
+[0;33mW (5500) radar-hr: Energy below threshold: 8.85e+06 < 9.00e+06[0m
+[0;33mW (5520) radar-hr: Energy below threshold: 6.65e+06 < 9.00e+06[0m
+[0;33mW (5530) radar-hr: Energy below threshold: 8.70e+06 < 9.00e+06[0m
+[0;33mW (5550) radar-hr: Energy below threshold: 8.84e+06 < 9.00e+06[0m
+[0;33mW (5670) radar-hr: Energy below threshold: 8.33e+06 < 9.00e+06[0m
+[0;33mW (5680) radar-hr: Energy below threshold: 6.77e+06 < 9.00e+06[0m
+[0;33mW (5680) radar-hr: Energy below threshold: 7.66e+06 < 9.00e+06[0m
+[0;33mW (5690) radar-hr: Energy below threshold: 7.10e+06 < 9.00e+06[0m
+[0;33mW (5690) radar-hr: Energy below threshold: 6.21e+06 < 9.00e+06[0m
+[0;33mW (5700) radar-hr: Energy below threshold: 6.55e+06 < 9.00e+06[0m
+[0;33mW (5700) radar-hr: Energy below threshold: 5.78e+06 < 9.00e+06[0m
+[0;33mW (5710) radar-hr: Energy below threshold: 7.36e+06 < 9.00e+06[0m
+[0;33mW (5710) radar-hr: Energy below threshold: 7.05e+06 < 9.00e+06[0m
+[0;33mW (5720) radar-hr: Energy below threshold: 8.75e+06 < 9.00e+06[0m
+[0;33mW (5720) radar-hr: Energy below threshold: 7.30e+06 < 9.00e+06[0m
+[0;33mW (5730) radar-hr: Energy below threshold: 6.76e+06 < 9.00e+06[0m
+[0;33mW (5730) radar-hr: Energy below threshold: 8.82e+06 < 9.00e+06[0m
+[0;33mW (5740) radar-hr: Energy below threshold: 8.98e+06 < 9.00e+06[0m
+[0;33mW (5750) radar-hr: Energy below threshold: 7.68e+06 < 9.00e+06[0m
+[0;33mW (5750) radar-hr: Energy below threshold: 7.62e+06 < 9.00e+06[0m
+[0;33mW (5760) radar-hr: Energy below threshold: 8.65e+06 < 9.00e+06[0m
+[0;33mW (5780) radar-hr: Energy below threshold: 8.63e+06 < 9.00e+06[0m
+[0;33mW (5790) radar-hr: Energy below threshold: 8.37e+06 < 9.00e+06[0m
+[0;33mW (5800) radar-hr: Energy below threshold: 7.47e+06 < 9.00e+06[0m
+[0;33mW (5810) radar-hr: Energy below threshold: 8.95e+06 < 9.00e+06[0m
+[0;33mW (5820) radar-hr: Energy below threshold: 8.44e+06 < 9.00e+06[0m
+[0;33mW (5820) radar-hr: Energy below threshold: 7.15e+06 < 9.00e+06[0m
+[0;33mW (5830) radar-hr: Energy below threshold: 7.41e+06 < 9.00e+06[0m
+[0;33mW (5830) radar-hr: Energy below threshold: 7.02e+06 < 9.00e+06[0m
+[0;33mW (5840) radar-hr: Energy below threshold: 6.96e+06 < 9.00e+06[0m
+[0;33mW (5840) radar-hr: Energy below threshold: 7.73e+06 < 9.00e+06[0m
+[0;33mW (5850) radar-hr: Energy below threshold: 5.97e+06 < 9.00e+06[0m
+[0;33mW (5850) radar-hr: Energy below threshold: 7.59e+06 < 9.00e+06[0m
+[0;33mW (5860) radar-hr: Energy below threshold: 6.99e+06 < 9.00e+06[0m
+[0;33mW (5870) radar-hr: Energy below threshold: 7.19e+06 < 9.00e+06[0m
+[0;33mW (5880) radar-hr: Energy below threshold: 7.31e+06 < 9.00e+06[0m
+[0;33mW (5880) radar-hr: Energy below threshold: 4.86e+06 < 9.00e+06[0m
+[0;33mW (5890) radar-hr: Energy below threshold: 5.09e+06 < 9.00e+06[0m
+[0;33mW (5900) radar-hr: Energy below threshold: 6.85e+06 < 9.00e+06[0m
+[0;33mW (5900) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (5910) radar-hr: Energy below threshold: 5.93e+06 < 9.00e+06[0m
+[0;33mW (5910) radar-hr: Energy below threshold: 5.83e+06 < 9.00e+06[0m
+[0;33mW (5920) radar-hr: Energy below threshold: 6.99e+06 < 9.00e+06[0m
+[0;33mW (5920) radar-hr: Energy below threshold: 6.38e+06 < 9.00e+06[0m
+[0;33mW (5930) radar-hr: Energy below threshold: 4.62e+06 < 9.00e+06[0m
+[0;33mW (5930) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (5940) radar-hr: Energy below threshold: 2.80e+06 < 9.00e+06[0m
+[0;33mW (5940) radar-hr: Energy below threshold: 2.04e+06 < 9.00e+06[0m
+[0;33mW (5950) radar-hr: Energy below threshold: 2.70e+06 < 9.00e+06[0m
+[0;33mW (5950) radar-hr: Energy below threshold: 2.71e+06 < 9.00e+06[0m
+[0;33mW (5960) radar-hr: Energy below threshold: 1.79e+06 < 9.00e+06[0m
+[0;33mW (5960) radar-hr: Energy below threshold: 1.80e+06 < 9.00e+06[0m
+[0;33mW (5960) radar-hr: Energy below threshold: 2.29e+06 < 9.00e+06[0m
+[0;33mW (5970) radar-hr: Energy below threshold: 2.82e+06 < 9.00e+06[0m
+[0;33mW (5970) radar-hr: Energy below threshold: 1.99e+06 < 9.00e+06[0m
+[0;33mW (5980) radar-hr: Energy below threshold: 1.76e+06 < 9.00e+06[0m
+[0;33mW (5990) radar-hr: Energy below threshold: 2.04e+06 < 9.00e+06[0m
+[0;33mW (5990) radar-hr: Energy below threshold: 2.08e+06 < 9.00e+06[0m
+[0;33mW (6000) radar-hr: Energy below threshold: 2.69e+06 < 9.00e+06[0m
+[0;33mW (6000) radar-hr: Energy below threshold: 2.33e+06 < 9.00e+06[0m
+[0;33mW (6010) radar-hr: Energy below threshold: 1.88e+06 < 9.00e+06[0m
+[0;33mW (6010) radar-hr: Energy below threshold: 2.38e+06 < 9.00e+06[0m
+[0;33mW (6020) radar-hr: Energy below threshold: 2.22e+06 < 9.00e+06[0m
+[0;33mW (6020) radar-hr: Energy below threshold: 2.56e+06 < 9.00e+06[0m
+[0;33mW (6030) radar-hr: Energy below threshold: 3.07e+06 < 9.00e+06[0m
+[0;33mW (6040) radar-hr: Energy below threshold: 1.90e+06 < 9.00e+06[0m
+[0;33mW (6040) radar-hr: Energy below threshold: 1.43e+06 < 9.00e+06[0m
+[0;33mW (6050) radar-hr: Energy below threshold: 1.72e+06 < 9.00e+06[0m
+[0;33mW (6050) radar-hr: Energy below threshold: 2.14e+06 < 9.00e+06[0m
+[0;33mW (6060) radar-hr: Energy below threshold: 2.41e+06 < 9.00e+06[0m
+[0;33mW (6060) radar-hr: Energy below threshold: 2.16e+06 < 9.00e+06[0m
+[0;33mW (6070) radar-hr: Energy below threshold: 1.83e+06 < 9.00e+06[0m
+[0;33mW (6070) radar-hr: Energy below threshold: 2.45e+06 < 9.00e+06[0m
+[0;33mW (6080) radar-hr: Energy below threshold: 2.29e+06 < 9.00e+06[0m
+[0;33mW (6090) radar-hr: Energy below threshold: 2.41e+06 < 9.00e+06[0m
+[0;33mW (6090) radar-hr: Energy below threshold: 2.19e+06 < 9.00e+06[0m
+[0;33mW (6100) radar-hr: Energy below threshold: 2.19e+06 < 9.00e+06[0m
+[0;33mW (6100) radar-hr: Energy below threshold: 2.50e+06 < 9.00e+06[0m
+[0;33mW (6110) radar-hr: Energy below threshold: 3.57e+06 < 9.00e+06[0m
+[0;33mW (6110) radar-hr: Energy below threshold: 3.93e+06 < 9.00e+06[0m
+[0;33mW (6120) radar-hr: Energy below threshold: 5.00e+06 < 9.00e+06[0m
+[0;33mW (6120) radar-hr: Energy below threshold: 3.48e+06 < 9.00e+06[0m
+[0;33mW (6130) radar-hr: Energy below threshold: 3.38e+06 < 9.00e+06[0m
+[0;33mW (6140) radar-hr: Energy below threshold: 5.83e+06 < 9.00e+06[0m
+[0;33mW (6140) radar-hr: Energy below threshold: 5.66e+06 < 9.00e+06[0m
+[0;33mW (6150) radar-hr: Energy below threshold: 5.36e+06 < 9.00e+06[0m
+[0;33mW (6150) radar-hr: Energy below threshold: 3.46e+06 < 9.00e+06[0m
+[0;33mW (6160) radar-hr: Energy below threshold: 3.92e+06 < 9.00e+06[0m
+[0;33mW (6160) radar-hr: Energy below threshold: 4.23e+06 < 9.00e+06[0m
+[0;33mW (6170) radar-hr: Energy below threshold: 5.43e+06 < 9.00e+06[0m
+[0;33mW (6170) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (6180) radar-hr: Energy below threshold: 4.72e+06 < 9.00e+06[0m
+[0;33mW (6190) radar-hr: Energy below threshold: 3.23e+06 < 9.00e+06[0m
+[0;33mW (6190) radar-hr: Energy below threshold: 4.53e+06 < 9.00e+06[0m
+[0;33mW (6200) radar-hr: Energy below threshold: 7.34e+06 < 9.00e+06[0m
+[0;33mW (6200) radar-hr: Energy below threshold: 4.16e+06 < 9.00e+06[0m
+[0;33mW (6210) radar-hr: Energy below threshold: 5.43e+06 < 9.00e+06[0m
+[0;33mW (6210) radar-hr: Energy below threshold: 3.37e+06 < 9.00e+06[0m
+[0;33mW (6220) radar-hr: Energy below threshold: 5.14e+06 < 9.00e+06[0m
+[0;33mW (6220) radar-hr: Energy below threshold: 3.11e+06 < 9.00e+06[0m
+[0;33mW (6230) radar-hr: Energy below threshold: 5.35e+06 < 9.00e+06[0m
+[0;33mW (6240) radar-hr: Energy below threshold: 4.62e+06 < 9.00e+06[0m
+[0;33mW (6240) radar-hr: Energy below threshold: 5.02e+06 < 9.00e+06[0m
+[0;33mW (6250) radar-hr: Energy below threshold: 6.02e+06 < 9.00e+06[0m
+[0;33mW (6250) radar-hr: Energy below threshold: 4.51e+06 < 9.00e+06[0m
+[0;33mW (6260) radar-hr: Energy below threshold: 5.53e+06 < 9.00e+06[0m
+[0;33mW (6260) radar-hr: Energy below threshold: 5.27e+06 < 9.00e+06[0m
+[0;33mW (6270) radar-hr: Energy below threshold: 4.82e+06 < 9.00e+06[0m
+[0;33mW (6270) radar-hr: Energy below threshold: 5.34e+06 < 9.00e+06[0m
+[0;33mW (6280) radar-hr: Energy below threshold: 6.23e+06 < 9.00e+06[0m
+[0;33mW (6290) radar-hr: Energy below threshold: 6.47e+06 < 9.00e+06[0m
+[0;33mW (6290) radar-hr: Energy below threshold: 5.33e+06 < 9.00e+06[0m
+[0;33mW (6300) radar-hr: Energy below threshold: 3.87e+06 < 9.00e+06[0m
+[0;33mW (6300) radar-hr: Energy below threshold: 6.31e+06 < 9.00e+06[0m
+[0;33mW (6310) radar-hr: Energy below threshold: 6.79e+06 < 9.00e+06[0m
+[0;33mW (6310) radar-hr: Energy below threshold: 6.67e+06 < 9.00e+06[0m
+[0;33mW (6320) radar-hr: Energy below threshold: 7.98e+06 < 9.00e+06[0m
+[0;33mW (6320) radar-hr: Energy below threshold: 4.02e+06 < 9.00e+06[0m
+[0;33mW (6330) radar-hr: Energy below threshold: 4.34e+06 < 9.00e+06[0m
+[0;33mW (6340) radar-hr: Energy below threshold: 5.38e+06 < 9.00e+06[0m
+[0;33mW (6340) radar-hr: Energy below threshold: 3.49e+06 < 9.00e+06[0m
+[0;33mW (6350) radar-hr: Energy below threshold: 6.00e+06 < 9.00e+06[0m
+[0;33mW (6350) radar-hr: Energy below threshold: 4.55e+06 < 9.00e+06[0m
+[0;33mW (6360) radar-hr: Energy below threshold: 5.24e+06 < 9.00e+06[0m
+[0;33mW (6360) radar-hr: Energy below threshold: 5.66e+06 < 9.00e+06[0m
+[0;33mW (6370) radar-hr: Energy below threshold: 6.47e+06 < 9.00e+06[0m
+[0;33mW (6370) radar-hr: Energy below threshold: 6.81e+06 < 9.00e+06[0m
+[0;33mW (6380) radar-hr: Energy below threshold: 5.68e+06 < 9.00e+06[0m
+[0;33mW (6390) radar-hr: Energy below threshold: 7.20e+06 < 9.00e+06[0m
+[0;33mW (6390) radar-hr: Energy below threshold: 5.75e+06 < 9.00e+06[0m
+[0;33mW (6400) radar-hr: Energy below threshold: 8.68e+06 < 9.00e+06[0m
+[0;33mW (6400) radar-hr: Energy below threshold: 8.26e+06 < 9.00e+06[0m
+[0;33mW (6410) radar-hr: Energy below threshold: 8.53e+06 < 9.00e+06[0m
+[0;33mW (6920) radar-hr: Energy below threshold: 7.24e+06 < 9.00e+06[0m
+[0;33mW (6930) radar-hr: Energy below threshold: 8.93e+06 < 9.00e+06[0m
+[0;33mW (6940) radar-hr: Energy below threshold: 6.17e+06 < 9.00e+06[0m
+[0;33mW (6940) radar-hr: Energy below threshold: 6.68e+06 < 9.00e+06[0m
+[0;33mW (6950) radar-hr: Energy below threshold: 7.14e+06 < 9.00e+06[0m
+[0;33mW (6950) radar-hr: Energy below threshold: 7.26e+06 < 9.00e+06[0m
+[0;33mW (6960) radar-hr: Energy below threshold: 7.73e+06 < 9.00e+06[0m
+[0;33mW (6960) radar-hr: Energy below threshold: 5.80e+06 < 9.00e+06[0m
+[0;33mW (6970) radar-hr: Energy below threshold: 6.96e+06 < 9.00e+06[0m
+[0;33mW (6970) radar-hr: Energy below threshold: 8.78e+06 < 9.00e+06[0m
+[0;33mW (6980) radar-hr: Energy below threshold: 7.05e+06 < 9.00e+06[0m
+[0;33mW (6980) radar-hr: Energy below threshold: 7.66e+06 < 9.00e+06[0m
+[0;33mW (6990) radar-hr: Energy below threshold: 5.91e+06 < 9.00e+06[0m
+[0;33mW (6990) radar-hr: Energy below threshold: 6.43e+06 < 9.00e+06[0m
+[0;33mW (7000) radar-hr: Energy below threshold: 6.45e+06 < 9.00e+06[0m
+[0;33mW (7000) radar-hr: Energy below threshold: 7.56e+06 < 9.00e+06[0m
+[0;33mW (7010) radar-hr: Energy below threshold: 7.24e+06 < 9.00e+06[0m
+[0;33mW (7010) radar-hr: Energy below threshold: 6.58e+06 < 9.00e+06[0m
+[0;33mW (7010) radar-hr: Energy below threshold: 7.21e+06 < 9.00e+06[0m
+[0;33mW (7020) radar-hr: Energy below threshold: 7.86e+06 < 9.00e+06[0m
+[0;33mW (7030) radar-hr: Energy below threshold: 6.79e+06 < 9.00e+06[0m
+[0;33mW (7030) radar-hr: Energy below threshold: 8.00e+06 < 9.00e+06[0m
+[0;33mW (7050) radar-hr: Energy below threshold: 6.84e+06 < 9.00e+06[0m
+[0;33mW (7050) radar-hr: Energy below threshold: 8.56e+06 < 9.00e+06[0m
+[0;33mW (7060) radar-hr: Energy below threshold: 8.23e+06 < 9.00e+06[0m
+[0;33mW (7070) radar-hr: Energy below threshold: 8.34e+06 < 9.00e+06[0m
+[0;33mW (7250) radar-hr: Energy below threshold: 8.10e+06 < 9.00e+06[0m
+[0;33mW (7410) radar-hr: Energy below threshold: 8.84e+06 < 9.00e+06[0m
+[0;33mW (7620) radar-hr: Energy below threshold: 8.98e+06 < 9.00e+06[0m
+[0;33mW (7640) radar-hr: Energy below threshold: 7.64e+06 < 9.00e+06[0m
+[0;33mW (7660) radar-hr: Energy below threshold: 8.10e+06 < 9.00e+06[0m
+[0;33mW (7660) radar-hr: Energy below threshold: 7.67e+06 < 9.00e+06[0m
+[0;33mW (7740) radar-hr: Energy below threshold: 8.60e+06 < 9.00e+06[0m
+[0;33mW (7790) radar-hr: Energy below threshold: 8.66e+06 < 9.00e+06[0m
+[0;33mW (7790) radar-hr: Energy below threshold: 8.50e+06 < 9.00e+06[0m
+[0;33mW (7800) radar-hr: Energy below threshold: 7.80e+06 < 9.00e+06[0m
+[0;33mW (7800) radar-hr: Energy below threshold: 7.88e+06 < 9.00e+06[0m
+[0;33mW (7810) radar-hr: Energy below threshold: 8.73e+06 < 9.00e+06[0m
+[0;33mW (7810) radar-hr: Energy below threshold: 7.57e+06 < 9.00e+06[0m
+[0;33mW (7820) radar-hr: Energy below threshold: 6.11e+06 < 9.00e+06[0m
+[0;33mW (7820) radar-hr: Energy below threshold: 6.43e+06 < 9.00e+06[0m
+[0;33mW (7830) radar-hr: Energy below threshold: 6.50e+06 < 9.00e+06[0m
+[0;33mW (7830) radar-hr: Energy below threshold: 6.55e+06 < 9.00e+06[0m
+[0;33mW (7840) radar-hr: Energy below threshold: 3.56e+06 < 9.00e+06[0m
+[0;33mW (7840) radar-hr: Energy below threshold: 5.51e+06 < 9.00e+06[0m
+[0;33mW (7850) radar-hr: Energy below threshold: 7.15e+06 < 9.00e+06[0m
+[0;33mW (7850) radar-hr: Energy below threshold: 6.99e+06 < 9.00e+06[0m
+[0;33mW (7860) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (7860) radar-hr: Energy below threshold: 6.66e+06 < 9.00e+06[0m
+[0;33mW (7860) radar-hr: Energy below threshold: 6.57e+06 < 9.00e+06[0m
+[0;33mW (7870) radar-hr: Energy below threshold: 4.73e+06 < 9.00e+06[0m
+[0;33mW (7880) radar-hr: Energy below threshold: 6.71e+06 < 9.00e+06[0m
+[0;33mW (7880) radar-hr: Energy below threshold: 7.34e+06 < 9.00e+06[0m
+[0;33mW (7890) radar-hr: Energy below threshold: 5.50e+06 < 9.00e+06[0m
+[0;33mW (7890) radar-hr: Energy below threshold: 3.57e+06 < 9.00e+06[0m
+[0;33mW (7900) radar-hr: Energy below threshold: 3.49e+06 < 9.00e+06[0m
+[0;33mW (7900) radar-hr: Energy below threshold: 4.38e+06 < 9.00e+06[0m
+[0;33mW (7910) radar-hr: Energy below threshold: 6.05e+06 < 9.00e+06[0m
+[0;33mW (7910) radar-hr: Energy below threshold: 3.52e+06 < 9.00e+06[0m
+[0;33mW (7920) radar-hr: Energy below threshold: 4.97e+06 < 9.00e+06[0m
+[0;33mW (7930) radar-hr: Energy below threshold: 3.52e+06 < 9.00e+06[0m
+[0;33mW (7930) radar-hr: Energy below threshold: 5.78e+06 < 9.00e+06[0m
+[0;33mW (7940) radar-hr: Energy below threshold: 5.29e+06 < 9.00e+06[0m
+[0;33mW (7940) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (7950) radar-hr: Energy below threshold: 4.47e+06 < 9.00e+06[0m
+[0;33mW (7950) radar-hr: Energy below threshold: 4.06e+06 < 9.00e+06[0m
+[0;33mW (7960) radar-hr: Energy below threshold: 3.45e+06 < 9.00e+06[0m
+[0;33mW (7960) radar-hr: Energy below threshold: 4.16e+06 < 9.00e+06[0m
+[0;33mW (7970) radar-hr: Energy below threshold: 5.29e+06 < 9.00e+06[0m
+[0;33mW (7980) radar-hr: Energy below threshold: 4.28e+06 < 9.00e+06[0m
+[0;33mW (7980) radar-hr: Energy below threshold: 4.15e+06 < 9.00e+06[0m
+[0;33mW (7990) radar-hr: Energy below threshold: 3.62e+06 < 9.00e+06[0m
+[0;33mW (7990) radar-hr: Energy below threshold: 5.01e+06 < 9.00e+06[0m
+[0;33mW (8000) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (8000) radar-hr: Energy below threshold: 3.58e+06 < 9.00e+06[0m
+[0;33mW (8010) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (8010) radar-hr: Energy below threshold: 4.24e+06 < 9.00e+06[0m
+[0;33mW (8020) radar-hr: Energy below threshold: 3.61e+06 < 9.00e+06[0m
+[0;33mW (8030) radar-hr: Energy below threshold: 3.69e+06 < 9.00e+06[0m
+[0;33mW (8030) radar-hr: Energy below threshold: 4.03e+06 < 9.00e+06[0m
+[0;33mW (8040) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (8040) radar-hr: Energy below threshold: 2.49e+06 < 9.00e+06[0m
+[0;33mW (8050) radar-hr: Energy below threshold: 3.41e+06 < 9.00e+06[0m
+[0;33mW (8050) radar-hr: Energy below threshold: 3.76e+06 < 9.00e+06[0m
+[0;33mW (8060) radar-hr: Energy below threshold: 3.05e+06 < 9.00e+06[0m
+[0;33mW (8060) radar-hr: Energy below threshold: 2.84e+06 < 9.00e+06[0m
+[0;33mW (8070) radar-hr: Energy below threshold: 3.07e+06 < 9.00e+06[0m
+[0;33mW (8080) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (8080) radar-hr: Energy below threshold: 4.73e+06 < 9.00e+06[0m
+[0;33mW (8090) radar-hr: Energy below threshold: 4.14e+06 < 9.00e+06[0m
+[0;33mW (8090) radar-hr: Energy below threshold: 3.57e+06 < 9.00e+06[0m
+[0;33mW (8100) radar-hr: Energy below threshold: 3.21e+06 < 9.00e+06[0m
+[0;33mW (8100) radar-hr: Energy below threshold: 5.03e+06 < 9.00e+06[0m
+[0;33mW (8110) radar-hr: Energy below threshold: 5.98e+06 < 9.00e+06[0m
+[0;33mW (8110) radar-hr: Energy below threshold: 5.28e+06 < 9.00e+06[0m
+[0;33mW (8120) radar-hr: Energy below threshold: 5.11e+06 < 9.00e+06[0m
+[0;33mW (8130) radar-hr: Energy below threshold: 4.64e+06 < 9.00e+06[0m
+[0;33mW (8130) radar-hr: Energy below threshold: 5.88e+06 < 9.00e+06[0m
+[0;33mW (8140) radar-hr: Energy below threshold: 3.97e+06 < 9.00e+06[0m
+[0;33mW (8140) radar-hr: Energy below threshold: 5.18e+06 < 9.00e+06[0m
+[0;33mW (8150) radar-hr: Energy below threshold: 5.88e+06 < 9.00e+06[0m
+[0;33mW (8150) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (8160) radar-hr: Energy below threshold: 5.21e+06 < 9.00e+06[0m
+[0;33mW (8160) radar-hr: Energy below threshold: 4.33e+06 < 9.00e+06[0m
+[0;33mW (8170) radar-hr: Energy below threshold: 5.79e+06 < 9.00e+06[0m
+[0;33mW (8180) radar-hr: Energy below threshold: 5.79e+06 < 9.00e+06[0m
+[0;33mW (8180) radar-hr: Energy below threshold: 5.28e+06 < 9.00e+06[0m
+[0;33mW (8190) radar-hr: Energy below threshold: 5.85e+06 < 9.00e+06[0m
+[0;33mW (8190) radar-hr: Energy below threshold: 6.35e+06 < 9.00e+06[0m
+[0;33mW (8200) radar-hr: Energy below threshold: 4.36e+06 < 9.00e+06[0m
+[0;33mW (8200) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (8210) radar-hr: Energy below threshold: 4.36e+06 < 9.00e+06[0m
+[0;33mW (8210) radar-hr: Energy below threshold: 4.97e+06 < 9.00e+06[0m
+[0;33mW (8220) radar-hr: Energy below threshold: 5.80e+06 < 9.00e+06[0m
+[0;33mW (8230) radar-hr: Energy below threshold: 4.83e+06 < 9.00e+06[0m
+[0;33mW (8230) radar-hr: Energy below threshold: 5.49e+06 < 9.00e+06[0m
+[0;33mW (8240) radar-hr: Energy below threshold: 4.99e+06 < 9.00e+06[0m
+[0;33mW (8240) radar-hr: Energy below threshold: 5.22e+06 < 9.00e+06[0m
+[0;33mW (8250) radar-hr: Energy below threshold: 6.32e+06 < 9.00e+06[0m
+[0;33mW (8250) radar-hr: Energy below threshold: 4.87e+06 < 9.00e+06[0m
+[0;33mW (8260) radar-hr: Energy below threshold: 6.65e+06 < 9.00e+06[0m
+[0;33mW (8260) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (8270) radar-hr: Energy below threshold: 4.71e+06 < 9.00e+06[0m
+[0;33mW (8280) radar-hr: Energy below threshold: 4.62e+06 < 9.00e+06[0m
+[0;33mW (8280) radar-hr: Energy below threshold: 6.59e+06 < 9.00e+06[0m
+[0;33mW (8290) radar-hr: Energy below threshold: 5.64e+06 < 9.00e+06[0m
+[0;33mW (8290) radar-hr: Energy below threshold: 4.61e+06 < 9.00e+06[0m
+[0;33mW (8300) radar-hr: Energy below threshold: 3.96e+06 < 9.00e+06[0m
+[0;33mW (8300) radar-hr: Energy below threshold: 3.71e+06 < 9.00e+06[0m
+[0;33mW (8310) radar-hr: Energy below threshold: 3.99e+06 < 9.00e+06[0m
+[0;33mW (8310) radar-hr: Energy below threshold: 3.36e+06 < 9.00e+06[0m
+[0;33mW (8320) radar-hr: Energy below threshold: 4.63e+06 < 9.00e+06[0m
+[0;33mW (8330) radar-hr: Energy below threshold: 4.43e+06 < 9.00e+06[0m
+[0;33mW (8330) radar-hr: Energy below threshold: 5.44e+06 < 9.00e+06[0m
+[0;33mW (8340) radar-hr: Energy below threshold: 4.41e+06 < 9.00e+06[0m
+[0;33mW (8340) radar-hr: Energy below threshold: 4.86e+06 < 9.00e+06[0m
+[0;33mW (8350) radar-hr: Energy below threshold: 3.37e+06 < 9.00e+06[0m
+[0;33mW (8350) radar-hr: Energy below threshold: 3.65e+06 < 9.00e+06[0m
+[0;33mW (8360) radar-hr: Energy below threshold: 3.55e+06 < 9.00e+06[0m
+[0;33mW (8360) radar-hr: Energy below threshold: 4.26e+06 < 9.00e+06[0m
+[0;33mW (8370) radar-hr: Energy below threshold: 8.52e+06 < 9.00e+06[0m
+[0;33mW (8380) radar-hr: Energy below threshold: 4.22e+06 < 9.00e+06[0m
+[0;33mW (8380) radar-hr: Energy below threshold: 4.46e+06 < 9.00e+06[0m
+[0;33mW (8390) radar-hr: Energy below threshold: 5.96e+06 < 9.00e+06[0m
+[0;33mW (8390) radar-hr: Energy below threshold: 3.68e+06 < 9.00e+06[0m
+[0;33mW (8400) radar-hr: Energy below threshold: 4.97e+06 < 9.00e+06[0m
+[0;33mW (8400) radar-hr: Energy below threshold: 5.16e+06 < 9.00e+06[0m
+[0;33mW (8410) radar-hr: Energy below threshold: 4.20e+06 < 9.00e+06[0m
+[0;33mW (8410) radar-hr: Energy below threshold: 3.42e+06 < 9.00e+06[0m
+[0;33mW (8420) radar-hr: Energy below threshold: 5.48e+06 < 9.00e+06[0m
+[0;33mW (8430) radar-hr: Energy below threshold: 4.80e+06 < 9.00e+06[0m
+[0;33mW (8430) radar-hr: Energy below threshold: 5.53e+06 < 9.00e+06[0m
+[0;33mW (8440) radar-hr: Energy below threshold: 3.33e+06 < 9.00e+06[0m
+[0;33mW (8440) radar-hr: Energy below threshold: 4.23e+06 < 9.00e+06[0m
+[0;33mW (8450) radar-hr: Energy below threshold: 6.97e+06 < 9.00e+06[0m
+[0;33mW (8450) radar-hr: Energy below threshold: 5.56e+06 < 9.00e+06[0m
+[0;33mW (8460) radar-hr: Energy below threshold: 4.15e+06 < 9.00e+06[0m
+[0;33mW (8460) radar-hr: Energy below threshold: 5.47e+06 < 9.00e+06[0m
+[0;33mW (8470) radar-hr: Energy below threshold: 4.90e+06 < 9.00e+06[0m
+[0;33mW (8480) radar-hr: Energy below threshold: 5.62e+06 < 9.00e+06[0m
+[0;33mW (8480) radar-hr: Energy below threshold: 6.74e+06 < 9.00e+06[0m
+[0;33mW (8490) radar-hr: Energy below threshold: 4.34e+06 < 9.00e+06[0m
+[0;33mW (8490) radar-hr: Energy below threshold: 4.92e+06 < 9.00e+06[0m
+[0;33mW (8500) radar-hr: Energy below threshold: 5.36e+06 < 9.00e+06[0m
+[0;33mW (8500) radar-hr: Energy below threshold: 6.29e+06 < 9.00e+06[0m
+[0;33mW (8510) radar-hr: Energy below threshold: 7.38e+06 < 9.00e+06[0m
+[0;33mW (8510) radar-hr: Energy below threshold: 7.12e+06 < 9.00e+06[0m
+[0;33mW (8520) radar-hr: Energy below threshold: 7.40e+06 < 9.00e+06[0m
+[0;33mW (8530) radar-hr: Energy below threshold: 7.29e+06 < 9.00e+06[0m
+[0;33mW (8530) radar-hr: Energy below threshold: 7.92e+06 < 9.00e+06[0m
+[0;33mW (8540) radar-hr: Energy below threshold: 5.82e+06 < 9.00e+06[0m
+[0;33mW (8540) radar-hr: Energy below threshold: 8.02e+06 < 9.00e+06[0m
+[0;33mW (8550) radar-hr: Energy below threshold: 8.03e+06 < 9.00e+06[0m
+[0;33mW (8550) radar-hr: Energy below threshold: 5.67e+06 < 9.00e+06[0m
+[0;33mW (8560) radar-hr: Energy below threshold: 8.43e+06 < 9.00e+06[0m
+[0;33mW (8560) radar-hr: Energy below threshold: 6.69e+06 < 9.00e+06[0m
+[0;33mW (8570) radar-hr: Energy below threshold: 8.35e+06 < 9.00e+06[0m
+[0;33mW (8580) radar-hr: Energy below threshold: 7.18e+06 < 9.00e+06[0m
+[0;33mW (8580) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (8590) radar-hr: Energy below threshold: 5.75e+06 < 9.00e+06[0m
+[0;33mW (8590) radar-hr: Energy below threshold: 6.00e+06 < 9.00e+06[0m
+[0;33mW (8600) radar-hr: Energy below threshold: 6.62e+06 < 9.00e+06[0m
+[0;33mW (8600) radar-hr: Energy below threshold: 6.73e+06 < 9.00e+06[0m
+[0;33mW (8610) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (8610) radar-hr: Energy below threshold: 7.23e+06 < 9.00e+06[0m
+[0;33mW (8620) radar-hr: Energy below threshold: 6.61e+06 < 9.00e+06[0m
+[0;33mW (8630) radar-hr: Energy below threshold: 6.63e+06 < 9.00e+06[0m
+[0;33mW (8630) radar-hr: Energy below threshold: 5.69e+06 < 9.00e+06[0m
+[0;33mW (8640) radar-hr: Energy below threshold: 7.69e+06 < 9.00e+06[0m
+[0;33mW (8640) radar-hr: Energy below threshold: 8.88e+06 < 9.00e+06[0m
+[0;33mW (8650) radar-hr: Energy below threshold: 4.42e+06 < 9.00e+06[0m
+[0;33mW (8650) radar-hr: Energy below threshold: 6.89e+06 < 9.00e+06[0m
+[0;33mW (8660) radar-hr: Energy below threshold: 6.62e+06 < 9.00e+06[0m
+[0;33mW (8660) radar-hr: Energy below threshold: 3.59e+06 < 9.00e+06[0m
+[0;33mW (8670) radar-hr: Energy below threshold: 4.54e+06 < 9.00e+06[0m
+[0;33mW (8680) radar-hr: Energy below threshold: 6.17e+06 < 9.00e+06[0m
+[0;33mW (8680) radar-hr: Energy below threshold: 5.57e+06 < 9.00e+06[0m
+[0;33mW (8690) radar-hr: Energy below threshold: 6.27e+06 < 9.00e+06[0m
+[0;33mW (8690) radar-hr: Energy below threshold: 7.73e+06 < 9.00e+06[0m
+[0;33mW (8700) radar-hr: Energy below threshold: 5.39e+06 < 9.00e+06[0m
+[0;33mW (8700) radar-hr: Energy below threshold: 6.68e+06 < 9.00e+06[0m
+[0;33mW (8710) radar-hr: Energy below threshold: 5.22e+06 < 9.00e+06[0m
+[0;33mW (8710) radar-hr: Energy below threshold: 5.57e+06 < 9.00e+06[0m
+[0;33mW (8720) radar-hr: Energy below threshold: 6.01e+06 < 9.00e+06[0m
+[0;33mW (8730) radar-hr: Energy below threshold: 3.43e+06 < 9.00e+06[0m
+[0;33mW (8730) radar-hr: Energy below threshold: 5.42e+06 < 9.00e+06[0m
+[0;33mW (8740) radar-hr: Energy below threshold: 3.95e+06 < 9.00e+06[0m
+[0;33mW (8740) radar-hr: Energy below threshold: 5.82e+06 < 9.00e+06[0m
+[0;33mW (8750) radar-hr: Energy below threshold: 3.95e+06 < 9.00e+06[0m
+[0;33mW (8750) radar-hr: Energy below threshold: 4.86e+06 < 9.00e+06[0m
+[0;33mW (8760) radar-hr: Energy below threshold: 6.09e+06 < 9.00e+06[0m
+[0;33mW (8760) radar-hr: Energy below threshold: 4.71e+06 < 9.00e+06[0m
+[0;33mW (8770) radar-hr: Energy below threshold: 4.02e+06 < 9.00e+06[0m
+[0;33mW (8780) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (8780) radar-hr: Energy below threshold: 2.61e+06 < 9.00e+06[0m
+[0;33mW (8790) radar-hr: Energy below threshold: 4.62e+06 < 9.00e+06[0m
+[0;33mW (8790) radar-hr: Energy below threshold: 4.58e+06 < 9.00e+06[0m
+[0;33mW (8800) radar-hr: Energy below threshold: 5.76e+06 < 9.00e+06[0m
+[0;33mW (8800) radar-hr: Energy below threshold: 4.60e+06 < 9.00e+06[0m
+[0;33mW (8810) radar-hr: Energy below threshold: 3.69e+06 < 9.00e+06[0m
+[0;33mW (8810) radar-hr: Energy below threshold: 6.51e+06 < 9.00e+06[0m
+[0;33mW (8820) radar-hr: Energy below threshold: 5.30e+06 < 9.00e+06[0m
+[0;33mW (8830) radar-hr: Energy below threshold: 7.64e+06 < 9.00e+06[0m
+[0;33mW (8830) radar-hr: Energy below threshold: 6.72e+06 < 9.00e+06[0m
+[0;33mW (8840) radar-hr: Energy below threshold: 4.92e+06 < 9.00e+06[0m
+[0;33mW (8840) radar-hr: Energy below threshold: 5.97e+06 < 9.00e+06[0m
+[0;33mW (8850) radar-hr: Energy below threshold: 5.60e+06 < 9.00e+06[0m
+[0;33mW (8850) radar-hr: Energy below threshold: 4.89e+06 < 9.00e+06[0m
+[0;33mW (8860) radar-hr: Energy below threshold: 4.75e+06 < 9.00e+06[0m
+[0;33mW (8860) radar-hr: Energy below threshold: 4.21e+06 < 9.00e+06[0m
+[0;33mW (8870) radar-hr: Energy below threshold: 3.44e+06 < 9.00e+06[0m
+[0;33mW (8880) radar-hr: Energy below threshold: 4.37e+06 < 9.00e+06[0m
+[0;33mW (8880) radar-hr: Energy below threshold: 4.81e+06 < 9.00e+06[0m
+[0;33mW (8890) radar-hr: Energy below threshold: 3.75e+06 < 9.00e+06[0m
+[0;33mW (8890) radar-hr: Energy below threshold: 3.94e+06 < 9.00e+06[0m
+[0;33mW (8900) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (8900) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (8910) radar-hr: Energy below threshold: 4.39e+06 < 9.00e+06[0m
+[0;33mW (8910) radar-hr: Energy below threshold: 5.77e+06 < 9.00e+06[0m
+[0;33mW (8920) radar-hr: Energy below threshold: 5.36e+06 < 9.00e+06[0m
+[0;33mW (8930) radar-hr: Energy below threshold: 3.25e+06 < 9.00e+06[0m
+[0;33mW (8930) radar-hr: Energy below threshold: 5.85e+06 < 9.00e+06[0m
+[0;33mW (8940) radar-hr: Energy below threshold: 4.66e+06 < 9.00e+06[0m
+[0;33mW (8940) radar-hr: Energy below threshold: 4.63e+06 < 9.00e+06[0m
+[0;33mW (8950) radar-hr: Energy below threshold: 1.97e+06 < 9.00e+06[0m
+[0;33mW (8950) radar-hr: Energy below threshold: 2.93e+06 < 9.00e+06[0m
+[0;33mW (8960) radar-hr: Energy below threshold: 2.06e+06 < 9.00e+06[0m
+[0;33mW (8960) radar-hr: Energy below threshold: 2.82e+06 < 9.00e+06[0m
+[0;33mW (8970) radar-hr: Energy below threshold: 2.77e+06 < 9.00e+06[0m
+[0;33mW (8980) radar-hr: Energy below threshold: 2.09e+06 < 9.00e+06[0m
+[0;33mW (8980) radar-hr: Energy below threshold: 1.44e+06 < 9.00e+06[0m
+[0;33mW (8990) radar-hr: Energy below threshold: 1.87e+06 < 9.00e+06[0m
+[0;33mW (8990) radar-hr: Energy below threshold: 2.09e+06 < 9.00e+06[0m
+[0;33mW (9000) radar-hr: Energy below threshold: 2.58e+06 < 9.00e+06[0m
+[0;33mW (9000) radar-hr: Energy below threshold: 2.81e+06 < 9.00e+06[0m
+[0;33mW (9010) radar-hr: Energy below threshold: 2.89e+06 < 9.00e+06[0m
+[0;33mW (9010) radar-hr: Energy below threshold: 3.18e+06 < 9.00e+06[0m
+[0;33mW (9020) radar-hr: Energy below threshold: 1.66e+06 < 9.00e+06[0m
+[0;33mW (9030) radar-hr: Energy below threshold: 3.42e+06 < 9.00e+06[0m
+[0;33mW (9030) radar-hr: Energy below threshold: 3.53e+06 < 9.00e+06[0m
+[0;33mW (9040) radar-hr: Energy below threshold: 3.30e+06 < 9.00e+06[0m
+[0;33mW (9040) radar-hr: Energy below threshold: 3.03e+06 < 9.00e+06[0m
+[0;33mW (9050) radar-hr: Energy below threshold: 1.86e+06 < 9.00e+06[0m
+[0;33mW (9050) radar-hr: Energy below threshold: 3.09e+06 < 9.00e+06[0m
+[0;33mW (9060) radar-hr: Energy below threshold: 3.52e+06 < 9.00e+06[0m
+[0;33mW (9060) radar-hr: Energy below threshold: 2.17e+06 < 9.00e+06[0m
+[0;33mW (9070) radar-hr: Energy below threshold: 2.13e+06 < 9.00e+06[0m
+[0;33mW (9080) radar-hr: Energy below threshold: 1.53e+06 < 9.00e+06[0m
+[0;33mW (9080) radar-hr: Energy below threshold: 2.35e+06 < 9.00e+06[0m
+[0;33mW (9090) radar-hr: Energy below threshold: 2.65e+06 < 9.00e+06[0m
+[0;33mW (9090) radar-hr: Energy below threshold: 1.89e+06 < 9.00e+06[0m
+[0;33mW (9100) radar-hr: Energy below threshold: 1.67e+06 < 9.00e+06[0m
+[0;33mW (9100) radar-hr: Energy below threshold: 1.10e+06 < 9.00e+06[0m
+[0;33mW (9110) radar-hr: Energy below threshold: 2.06e+06 < 9.00e+06[0m
+[0;33mW (9110) radar-hr: Energy below threshold: 2.32e+06 < 9.00e+06[0m
+[0;33mW (9120) radar-hr: Energy below threshold: 8.59e+05 < 9.00e+06[0m
+[0;33mW (9130) radar-hr: Energy below threshold: 1.09e+06 < 9.00e+06[0m
+[0;33mW (9130) radar-hr: Energy below threshold: 1.36e+06 < 9.00e+06[0m
+[0;33mW (9140) radar-hr: Energy below threshold: 1.68e+06 < 9.00e+06[0m
+[0;33mW (9140) radar-hr: Energy below threshold: 1.68e+06 < 9.00e+06[0m
+[0;33mW (9150) radar-hr: Energy below threshold: 1.52e+06 < 9.00e+06[0m
+[0;33mW (9150) radar-hr: Energy below threshold: 1.54e+06 < 9.00e+06[0m
+[0;33mW (9160) radar-hr: Energy below threshold: 1.70e+06 < 9.00e+06[0m
+[0;33mW (9160) radar-hr: Energy below threshold: 1.70e+06 < 9.00e+06[0m
+[0;33mW (9170) radar-hr: Energy below threshold: 1.98e+06 < 9.00e+06[0m
+[0;33mW (9180) radar-hr: Energy below threshold: 2.21e+06 < 9.00e+06[0m
+[0;33mW (9180) radar-hr: Energy below threshold: 1.45e+06 < 9.00e+06[0m
+[0;33mW (9190) radar-hr: Energy below threshold: 1.74e+06 < 9.00e+06[0m
+[0;33mW (9190) radar-hr: Energy below threshold: 1.86e+06 < 9.00e+06[0m
+[0;33mW (9200) radar-hr: Energy below threshold: 2.68e+06 < 9.00e+06[0m
+[0;33mW (9200) radar-hr: Energy below threshold: 2.01e+06 < 9.00e+06[0m
+[0;33mW (9210) radar-hr: Energy below threshold: 1.78e+06 < 9.00e+06[0m
+[0;33mW (9210) radar-hr: Energy below threshold: 1.73e+06 < 9.00e+06[0m
+[0;33mW (9220) radar-hr: Energy below threshold: 2.52e+06 < 9.00e+06[0m
+[0;33mW (9230) radar-hr: Energy below threshold: 2.24e+06 < 9.00e+06[0m
+[0;33mW (9230) radar-hr: Energy below threshold: 2.64e+06 < 9.00e+06[0m
+[0;33mW (9240) radar-hr: Energy below threshold: 2.38e+06 < 9.00e+06[0m
+[0;33mW (9240) radar-hr: Energy below threshold: 1.88e+06 < 9.00e+06[0m
+[0;33mW (9250) radar-hr: Energy below threshold: 2.05e+06 < 9.00e+06[0m
+[0;33mW (9250) radar-hr: Energy below threshold: 2.89e+06 < 9.00e+06[0m
+[0;33mW (9260) radar-hr: Energy below threshold: 3.06e+06 < 9.00e+06[0m
+[0;33mW (9260) radar-hr: Energy below threshold: 2.13e+06 < 9.00e+06[0m
+[0;33mW (9270) radar-hr: Energy below threshold: 2.32e+06 < 9.00e+06[0m
+[0;33mW (9280) radar-hr: Energy below threshold: 2.43e+06 < 9.00e+06[0m
+[0;33mW (9280) radar-hr: Energy below threshold: 3.04e+06 < 9.00e+06[0m
+[0;33mW (9290) radar-hr: Energy below threshold: 3.81e+06 < 9.00e+06[0m
+[0;33mW (9290) radar-hr: Energy below threshold: 2.18e+06 < 9.00e+06[0m
+[0;33mW (9300) radar-hr: Energy below threshold: 2.30e+06 < 9.00e+06[0m
+[0;33mW (9300) radar-hr: Energy below threshold: 1.87e+06 < 9.00e+06[0m
+[0;33mW (9310) radar-hr: Energy below threshold: 2.71e+06 < 9.00e+06[0m
+[0;33mW (9310) radar-hr: Energy below threshold: 2.69e+06 < 9.00e+06[0m
+[0;33mW (9320) radar-hr: Energy below threshold: 2.24e+06 < 9.00e+06[0m
+[0;33mW (9330) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (9330) radar-hr: Energy below threshold: 1.65e+06 < 9.00e+06[0m
+[0;33mW (9340) radar-hr: Energy below threshold: 3.23e+06 < 9.00e+06[0m
+[0;33mW (9340) radar-hr: Energy below threshold: 2.37e+06 < 9.00e+06[0m
+[0;33mW (9350) radar-hr: Energy below threshold: 4.81e+06 < 9.00e+06[0m
+[0;33mW (9350) radar-hr: Energy below threshold: 3.21e+06 < 9.00e+06[0m
+[0;33mW (9360) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (9360) radar-hr: Energy below threshold: 4.44e+06 < 9.00e+06[0m
+[0;33mW (9370) radar-hr: Energy below threshold: 4.46e+06 < 9.00e+06[0m
+[0;33mW (9380) radar-hr: Energy below threshold: 4.17e+06 < 9.00e+06[0m
+[0;33mW (9380) radar-hr: Energy below threshold: 4.24e+06 < 9.00e+06[0m
+[0;33mW (9390) radar-hr: Energy below threshold: 3.38e+06 < 9.00e+06[0m
+[0;33mW (9390) radar-hr: Energy below threshold: 3.63e+06 < 9.00e+06[0m
+[0;33mW (9400) radar-hr: Energy below threshold: 5.48e+06 < 9.00e+06[0m
+[0;33mW (9400) radar-hr: Energy below threshold: 3.99e+06 < 9.00e+06[0m
+[0;33mW (9410) radar-hr: Energy below threshold: 3.56e+06 < 9.00e+06[0m
+[0;33mW (9410) radar-hr: Energy below threshold: 3.38e+06 < 9.00e+06[0m
+[0;33mW (9420) radar-hr: Energy below threshold: 2.91e+06 < 9.00e+06[0m
+[0;33mW (9430) radar-hr: Energy below threshold: 3.75e+06 < 9.00e+06[0m
+[0;33mW (9430) radar-hr: Energy below threshold: 3.58e+06 < 9.00e+06[0m
+[0;33mW (9440) radar-hr: Energy below threshold: 3.30e+06 < 9.00e+06[0m
+[0;33mW (9440) radar-hr: Energy below threshold: 4.12e+06 < 9.00e+06[0m
+[0;33mW (9450) radar-hr: Energy below threshold: 5.00e+06 < 9.00e+06[0m
+[0;33mW (9450) radar-hr: Energy below threshold: 4.48e+06 < 9.00e+06[0m
+[0;33mW (9460) radar-hr: Energy below threshold: 5.31e+06 < 9.00e+06[0m
+[0;33mW (9460) radar-hr: Energy below threshold: 3.13e+06 < 9.00e+06[0m
+[0;33mW (9470) radar-hr: Energy below threshold: 5.59e+06 < 9.00e+06[0m
+[0;33mW (9480) radar-hr: Energy below threshold: 4.58e+06 < 9.00e+06[0m
+[0;33mW (9480) radar-hr: Energy below threshold: 3.64e+06 < 9.00e+06[0m
+[0;33mW (9490) radar-hr: Energy below threshold: 5.41e+06 < 9.00e+06[0m
+[0;33mW (9490) radar-hr: Energy below threshold: 4.56e+06 < 9.00e+06[0m
+[0;33mW (9500) radar-hr: Energy below threshold: 4.53e+06 < 9.00e+06[0m
+[0;33mW (9500) radar-hr: Energy below threshold: 3.81e+06 < 9.00e+06[0m
+[0;33mW (9510) radar-hr: Energy below threshold: 5.30e+06 < 9.00e+06[0m
+[0;33mW (9510) radar-hr: Energy below threshold: 6.09e+06 < 9.00e+06[0m
+[0;33mW (9520) radar-hr: Energy below threshold: 2.92e+06 < 9.00e+06[0m
+[0;33mW (9530) radar-hr: Energy below threshold: 3.18e+06 < 9.00e+06[0m
+[0;33mW (9530) radar-hr: Energy below threshold: 3.70e+06 < 9.00e+06[0m
+[0;33mW (9540) radar-hr: Energy below threshold: 4.27e+06 < 9.00e+06[0m
+[0;33mW (9540) radar-hr: Energy below threshold: 5.20e+06 < 9.00e+06[0m
+[0;33mW (9550) radar-hr: Energy below threshold: 4.20e+06 < 9.00e+06[0m
+[0;33mW (9550) radar-hr: Energy below threshold: 4.82e+06 < 9.00e+06[0m
+[0;33mW (9560) radar-hr: Energy below threshold: 3.41e+06 < 9.00e+06[0m
+[0;33mW (9560) radar-hr: Energy below threshold: 5.08e+06 < 9.00e+06[0m
+[0;33mW (9570) radar-hr: Energy below threshold: 4.51e+06 < 9.00e+06[0m
+[0;33mW (9580) radar-hr: Energy below threshold: 5.35e+06 < 9.00e+06[0m
+[0;33mW (9580) radar-hr: Energy below threshold: 3.53e+06 < 9.00e+06[0m
+[0;33mW (9590) radar-hr: Energy below threshold: 3.75e+06 < 9.00e+06[0m
+[0;33mW (9590) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (9600) radar-hr: Energy below threshold: 5.65e+06 < 9.00e+06[0m
+[0;33mW (9600) radar-hr: Energy below threshold: 5.25e+06 < 9.00e+06[0m
+[0;33mW (9610) radar-hr: Energy below threshold: 5.10e+06 < 9.00e+06[0m
+[0;33mW (9610) radar-hr: Energy below threshold: 3.49e+06 < 9.00e+06[0m
+[0;33mW (9620) radar-hr: Energy below threshold: 5.16e+06 < 9.00e+06[0m
+[0;33mW (9630) radar-hr: Energy below threshold: 5.31e+06 < 9.00e+06[0m
+[0;33mW (9630) radar-hr: Energy below threshold: 5.47e+06 < 9.00e+06[0m
+[0;33mW (9640) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (9640) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (9650) radar-hr: Energy below threshold: 4.76e+06 < 9.00e+06[0m
+[0;33mW (9650) radar-hr: Energy below threshold: 4.87e+06 < 9.00e+06[0m
+[0;33mW (9660) radar-hr: Energy below threshold: 5.15e+06 < 9.00e+06[0m
+[0;33mW (9660) radar-hr: Energy below threshold: 7.47e+06 < 9.00e+06[0m
+[0;33mW (9670) radar-hr: Energy below threshold: 3.99e+06 < 9.00e+06[0m
+[0;33mW (9680) radar-hr: Energy below threshold: 4.53e+06 < 9.00e+06[0m
+[0;33mW (9680) radar-hr: Energy below threshold: 4.75e+06 < 9.00e+06[0m
+[0;33mW (9690) radar-hr: Energy below threshold: 5.35e+06 < 9.00e+06[0m
+[0;33mW (9690) radar-hr: Energy below threshold: 4.55e+06 < 9.00e+06[0m
+[0;33mW (9700) radar-hr: Energy below threshold: 5.18e+06 < 9.00e+06[0m
+[0;33mW (9700) radar-hr: Energy below threshold: 3.48e+06 < 9.00e+06[0m
+[0;33mW (9710) radar-hr: Energy below threshold: 4.61e+06 < 9.00e+06[0m
+[0;33mW (9710) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (9720) radar-hr: Energy below threshold: 5.84e+06 < 9.00e+06[0m
+[0;33mW (9730) radar-hr: Energy below threshold: 3.98e+06 < 9.00e+06[0m
+[0;33mW (9730) radar-hr: Energy below threshold: 5.18e+06 < 9.00e+06[0m
+[0;33mW (9740) radar-hr: Energy below threshold: 3.31e+06 < 9.00e+06[0m
+[0;33mW (9740) radar-hr: Energy below threshold: 3.00e+06 < 9.00e+06[0m
+[0;33mW (9750) radar-hr: Energy below threshold: 3.67e+06 < 9.00e+06[0m
+[0;33mW (9750) radar-hr: Energy below threshold: 3.49e+06 < 9.00e+06[0m
+[0;32mI (9760) MQTT_Service: MQTT Connected[0m
+[0;33mW (9760) radar-hr: Energy below threshold: 2.39e+06 < 9.00e+06[0m
+[0;33mW (9770) radar-hr: Energy below threshold: 3.27e+06 < 9.00e+06[0m
+[0;33mW (9770) radar-hr: Energy below threshold: 3.20e+06 < 9.00e+06[0m
+[0;33mW (9780) radar-hr: Energy below threshold: 2.94e+06 < 9.00e+06[0m
+[0;33mW (9780) radar-hr: Energy below threshold: 4.52e+06 < 9.00e+06[0m
+[0;33mW (9790) radar-hr: Energy below threshold: 3.58e+06 < 9.00e+06[0m
+[0;33mW (9800) radar-hr: Energy below threshold: 2.30e+06 < 9.00e+06[0m
+[0;33mW (9800) radar-hr: Energy below threshold: 4.73e+06 < 9.00e+06[0m
+[0;33mW (9810) radar-hr: Energy below threshold: 4.15e+06 < 9.00e+06[0m
+[0;33mW (9810) radar-hr: Energy below threshold: 3.14e+06 < 9.00e+06[0m
+[0;33mW (9820) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (9820) radar-hr: Energy below threshold: 3.50e+06 < 9.00e+06[0m
+[0;33mW (9830) radar-hr: Energy below threshold: 3.84e+06 < 9.00e+06[0m
+[0;33mW (9830) radar-hr: Energy below threshold: 5.16e+06 < 9.00e+06[0m
+[0;33mW (9840) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (9850) radar-hr: Energy below threshold: 2.98e+06 < 9.00e+06[0m
+[0;33mW (9850) radar-hr: Energy below threshold: 3.71e+06 < 9.00e+06[0m
+[0;33mW (9860) radar-hr: Energy below threshold: 3.33e+06 < 9.00e+06[0m
+[0;33mW (9860) radar-hr: Energy below threshold: 2.97e+06 < 9.00e+06[0m
+[0;33mW (9870) radar-hr: Energy below threshold: 3.06e+06 < 9.00e+06[0m
+[0;33mW (9870) radar-hr: Energy below threshold: 2.34e+06 < 9.00e+06[0m
+[0;33mW (9880) radar-hr: Energy below threshold: 3.81e+06 < 9.00e+06[0m
+[0;33mW (9880) radar-hr: Energy below threshold: 4.11e+06 < 9.00e+06[0m
+[0;33mW (9890) radar-hr: Energy below threshold: 3.58e+06 < 9.00e+06[0m
+[0;33mW (9900) radar-hr: Energy below threshold: 5.28e+06 < 9.00e+06[0m
+[0;33mW (9900) radar-hr: Energy below threshold: 4.02e+06 < 9.00e+06[0m
+[0;33mW (9910) radar-hr: Energy below threshold: 4.14e+06 < 9.00e+06[0m
+[0;33mW (9910) radar-hr: Energy below threshold: 3.84e+06 < 9.00e+06[0m
+[0;33mW (9920) radar-hr: Energy below threshold: 3.45e+06 < 9.00e+06[0m
+[0;33mW (9920) radar-hr: Energy below threshold: 4.83e+06 < 9.00e+06[0m
+[0;33mW (9930) radar-hr: Energy below threshold: 4.51e+06 < 9.00e+06[0m
+[0;33mW (9930) radar-hr: Energy below threshold: 5.21e+06 < 9.00e+06[0m
+[0;33mW (9940) radar-hr: Energy below threshold: 5.28e+06 < 9.00e+06[0m
+[0;33mW (9950) radar-hr: Energy below threshold: 5.29e+06 < 9.00e+06[0m
+[0;33mW (9950) radar-hr: Energy below threshold: 4.89e+06 < 9.00e+06[0m
+[0;33mW (9960) radar-hr: Energy below threshold: 4.82e+06 < 9.00e+06[0m
+[0;33mW (9960) radar-hr: Energy below threshold: 5.03e+06 < 9.00e+06[0m
+[0;33mW (9970) radar-hr: Energy below threshold: 3.93e+06 < 9.00e+06[0m
+[0;33mW (9970) radar-hr: Energy below threshold: 3.96e+06 < 9.00e+06[0m
+[0;33mW (9980) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (9980) radar-hr: Energy below threshold: 4.36e+06 < 9.00e+06[0m
+[0;33mW (9990) radar-hr: Energy below threshold: 4.61e+06 < 9.00e+06[0m
+[0;33mW (10000) radar-hr: Energy below threshold: 3.84e+06 < 9.00e+06[0m
+[0;33mW (10000) radar-hr: Energy below threshold: 4.45e+06 < 9.00e+06[0m
+[0;33mW (10010) radar-hr: Energy below threshold: 4.19e+06 < 9.00e+06[0m
+[0;33mW (10010) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (10020) radar-hr: Energy below threshold: 3.72e+06 < 9.00e+06[0m
+[0;33mW (10020) radar-hr: Energy below threshold: 4.31e+06 < 9.00e+06[0m
+[0;33mW (10030) radar-hr: Energy below threshold: 4.97e+06 < 9.00e+06[0m
+[0;33mW (10030) radar-hr: Energy below threshold: 4.56e+06 < 9.00e+06[0m
+[0;33mW (10040) radar-hr: Energy below threshold: 5.01e+06 < 9.00e+06[0m
+[0;33mW (10050) radar-hr: Energy below threshold: 2.74e+06 < 9.00e+06[0m
+[0;33mW (10050) radar-hr: Energy below threshold: 4.29e+06 < 9.00e+06[0m
+[0;33mW (10060) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (10060) radar-hr: Energy below threshold: 2.76e+06 < 9.00e+06[0m
+[0;33mW (10070) radar-hr: Energy below threshold: 3.02e+06 < 9.00e+06[0m
+[0;33mW (10070) radar-hr: Energy below threshold: 2.63e+06 < 9.00e+06[0m
+[0;33mW (10080) radar-hr: Energy below threshold: 3.93e+06 < 9.00e+06[0m
+[0;33mW (10090) radar-hr: Energy below threshold: 2.46e+06 < 9.00e+06[0m
+[0;33mW (10090) radar-hr: Energy below threshold: 2.94e+06 < 9.00e+06[0m
+[0;33mW (10100) radar-hr: Energy below threshold: 3.68e+06 < 9.00e+06[0m
+[0;33mW (10100) radar-hr: Energy below threshold: 2.84e+06 < 9.00e+06[0m
+[0;33mW (10110) radar-hr: Energy below threshold: 2.05e+06 < 9.00e+06[0m
+[0;33mW (10110) radar-hr: Energy below threshold: 2.48e+06 < 9.00e+06[0m
+[0;33mW (10120) radar-hr: Energy below threshold: 3.00e+06 < 9.00e+06[0m
+[0;33mW (10130) radar-hr: Energy below threshold: 2.83e+06 < 9.00e+06[0m
+[0;33mW (10130) radar-hr: Energy below threshold: 2.33e+06 < 9.00e+06[0m
+[0;33mW (10140) radar-hr: Energy below threshold: 3.40e+06 < 9.00e+06[0m
+[0;33mW (10140) radar-hr: Energy below threshold: 2.42e+06 < 9.00e+06[0m
+[0;33mW (10150) radar-hr: Energy below threshold: 2.94e+06 < 9.00e+06[0m
+[0;33mW (10150) radar-hr: Energy below threshold: 3.05e+06 < 9.00e+06[0m
+[0;33mW (10160) radar-hr: Energy below threshold: 3.13e+06 < 9.00e+06[0m
+[0;33mW (10170) radar-hr: Energy below threshold: 3.46e+06 < 9.00e+06[0m
+[0;33mW (10170) radar-hr: Energy below threshold: 3.36e+06 < 9.00e+06[0m
+[0;33mW (10180) radar-hr: Energy below threshold: 2.71e+06 < 9.00e+06[0m
+[0;33mW (10180) radar-hr: Energy below threshold: 2.75e+06 < 9.00e+06[0m
+[0;33mW (10190) radar-hr: Energy below threshold: 2.39e+06 < 9.00e+06[0m
+[0;33mW (10190) radar-hr: Energy below threshold: 2.30e+06 < 9.00e+06[0m
+[0;33mW (10200) radar-hr: Energy below threshold: 2.25e+06 < 9.00e+06[0m
+[0;33mW (10200) radar-hr: Energy below threshold: 2.36e+06 < 9.00e+06[0m
+[0;33mW (10210) radar-hr: Energy below threshold: 5.04e+06 < 9.00e+06[0m
+[0;33mW (10220) radar-hr: Energy below threshold: 2.13e+06 < 9.00e+06[0m
+[0;33mW (10220) radar-hr: Energy below threshold: 2.86e+06 < 9.00e+06[0m
+[0;33mW (10230) radar-hr: Energy below threshold: 2.06e+06 < 9.00e+06[0m
+[0;33mW (10230) radar-hr: Energy below threshold: 3.29e+06 < 9.00e+06[0m
+[0;33mW (10240) radar-hr: Energy below threshold: 3.68e+06 < 9.00e+06[0m
+[0;33mW (10240) radar-hr: Energy below threshold: 3.85e+06 < 9.00e+06[0m
+[0;33mW (10250) radar-hr: Energy below threshold: 3.71e+06 < 9.00e+06[0m
+[0;33mW (10250) radar-hr: Energy below threshold: 2.90e+06 < 9.00e+06[0m
+[0;33mW (10260) radar-hr: Energy below threshold: 3.64e+06 < 9.00e+06[0m
+[0;33mW (10270) radar-hr: Energy below threshold: 4.68e+06 < 9.00e+06[0m
+[0;33mW (10270) radar-hr: Energy below threshold: 4.37e+06 < 9.00e+06[0m
+[0;33mW (10280) radar-hr: Energy below threshold: 3.15e+06 < 9.00e+06[0m
+[0;33mW (10280) radar-hr: Energy below threshold: 4.16e+06 < 9.00e+06[0m
+[0;33mW (10290) radar-hr: Energy below threshold: 3.78e+06 < 9.00e+06[0m
+[0;33mW (10290) radar-hr: Energy below threshold: 4.94e+06 < 9.00e+06[0m
+[0;33mW (10300) radar-hr: Energy below threshold: 6.58e+06 < 9.00e+06[0m
+[0;33mW (10310) radar-hr: Energy below threshold: 4.57e+06 < 9.00e+06[0m
+[0;33mW (10310) radar-hr: Energy below threshold: 4.26e+06 < 9.00e+06[0m
+[0;33mW (10320) radar-hr: Energy below threshold: 4.08e+06 < 9.00e+06[0m
+[0;33mW (10320) radar-hr: Energy below threshold: 4.06e+06 < 9.00e+06[0m
+[0;33mW (10330) radar-hr: Energy below threshold: 4.05e+06 < 9.00e+06[0m
+[0;33mW (10330) radar-hr: Energy below threshold: 4.54e+06 < 9.00e+06[0m
+[0;33mW (10340) radar-hr: Energy below threshold: 4.01e+06 < 9.00e+06[0m
+[0;33mW (10350) radar-hr: Energy below threshold: 3.25e+06 < 9.00e+06[0m
+[0;33mW (10350) radar-hr: Energy below threshold: 4.25e+06 < 9.00e+06[0m
+[0;33mW (10360) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (10360) radar-hr: Energy below threshold: 4.29e+06 < 9.00e+06[0m
+[0;33mW (10370) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (10370) radar-hr: Energy below threshold: 4.92e+06 < 9.00e+06[0m
+[0;33mW (10380) radar-hr: Energy below threshold: 4.71e+06 < 9.00e+06[0m
+[0;33mW (10380) radar-hr: Energy below threshold: 3.82e+06 < 9.00e+06[0m
+[0;33mW (10390) radar-hr: Energy below threshold: 3.74e+06 < 9.00e+06[0m
+[0;33mW (10400) radar-hr: Energy below threshold: 4.44e+06 < 9.00e+06[0m
+[0;33mW (10400) radar-hr: Energy below threshold: 4.32e+06 < 9.00e+06[0m
+[0;33mW (10410) radar-hr: Energy below threshold: 4.20e+06 < 9.00e+06[0m
+[0;33mW (10410) radar-hr: Energy below threshold: 5.49e+06 < 9.00e+06[0m
+[0;33mW (10420) radar-hr: Energy below threshold: 4.48e+06 < 9.00e+06[0m
+[0;33mW (10420) radar-hr: Energy below threshold: 4.10e+06 < 9.00e+06[0m
+[0;33mW (10430) radar-hr: Energy below threshold: 5.67e+06 < 9.00e+06[0m
+[0;33mW (10440) radar-hr: Energy below threshold: 5.15e+06 < 9.00e+06[0m
+[0;33mW (10440) radar-hr: Energy below threshold: 5.83e+06 < 9.00e+06[0m
+[0;33mW (10450) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (10450) radar-hr: Energy below threshold: 4.23e+06 < 9.00e+06[0m
+[0;33mW (10460) radar-hr: Energy below threshold: 5.50e+06 < 9.00e+06[0m
+[0;33mW (10460) radar-hr: Energy below threshold: 6.78e+06 < 9.00e+06[0m
+[0;33mW (10470) radar-hr: Energy below threshold: 5.25e+06 < 9.00e+06[0m
+[0;33mW (10470) radar-hr: Energy below threshold: 6.64e+06 < 9.00e+06[0m
+[0;33mW (10480) radar-hr: Energy below threshold: 7.34e+06 < 9.00e+06[0m
+[0;33mW (10490) radar-hr: Energy below threshold: 5.84e+06 < 9.00e+06[0m
+[0;33mW (10490) radar-hr: Energy below threshold: 5.41e+06 < 9.00e+06[0m
+[0;33mW (10500) radar-hr: Energy below threshold: 3.67e+06 < 9.00e+06[0m
+[0;33mW (10500) radar-hr: Energy below threshold: 4.32e+06 < 9.00e+06[0m
+[0;33mW (10510) radar-hr: Energy below threshold: 5.15e+06 < 9.00e+06[0m
+[0;33mW (10510) radar-hr: Energy below threshold: 4.15e+06 < 9.00e+06[0m
+[0;33mW (10520) radar-hr: Energy below threshold: 5.47e+06 < 9.00e+06[0m
+[0;33mW (10530) radar-hr: Energy below threshold: 3.85e+06 < 9.00e+06[0m
+[0;33mW (10530) radar-hr: Energy below threshold: 3.32e+06 < 9.00e+06[0m
+[0;33mW (10540) radar-hr: Energy below threshold: 3.93e+06 < 9.00e+06[0m
+[0;33mW (10540) radar-hr: Energy below threshold: 3.22e+06 < 9.00e+06[0m
+[0;33mW (10550) radar-hr: Energy below threshold: 2.61e+06 < 9.00e+06[0m
+[0;33mW (10550) radar-hr: Energy below threshold: 2.69e+06 < 9.00e+06[0m
+[0;33mW (10560) radar-hr: Energy below threshold: 3.33e+06 < 9.00e+06[0m
+[0;33mW (10570) radar-hr: Energy below threshold: 3.04e+06 < 9.00e+06[0m
+[0;33mW (10570) radar-hr: Energy below threshold: 4.15e+06 < 9.00e+06[0m
+[0;33mW (10580) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (10580) radar-hr: Energy below threshold: 3.25e+06 < 9.00e+06[0m
+[0;33mW (10590) radar-hr: Energy below threshold: 4.41e+06 < 9.00e+06[0m
+[0;33mW (10590) radar-hr: Energy below threshold: 4.21e+06 < 9.00e+06[0m
+[0;33mW (10600) radar-hr: Energy below threshold: 3.52e+06 < 9.00e+06[0m
+[0;33mW (10600) radar-hr: Energy below threshold: 3.12e+06 < 9.00e+06[0m
+[0;33mW (10610) radar-hr: Energy below threshold: 4.32e+06 < 9.00e+06[0m
+[0;33mW (10620) radar-hr: Energy below threshold: 2.98e+06 < 9.00e+06[0m
+[0;33mW (10620) radar-hr: Energy below threshold: 3.18e+06 < 9.00e+06[0m
+[0;33mW (10630) radar-hr: Energy below threshold: 4.37e+06 < 9.00e+06[0m
+[0;33mW (10630) radar-hr: Energy below threshold: 4.98e+06 < 9.00e+06[0m
+[0;33mW (10640) radar-hr: Energy below threshold: 5.30e+06 < 9.00e+06[0m
+[0;33mW (10640) radar-hr: Energy below threshold: 3.32e+06 < 9.00e+06[0m
+[0;33mW (10650) radar-hr: Energy below threshold: 3.97e+06 < 9.00e+06[0m
+[0;33mW (10660) radar-hr: Energy below threshold: 4.21e+06 < 9.00e+06[0m
+[0;33mW (10660) radar-hr: Energy below threshold: 4.34e+06 < 9.00e+06[0m
+[0;33mW (10670) radar-hr: Energy below threshold: 3.58e+06 < 9.00e+06[0m
+[0;33mW (10670) radar-hr: Energy below threshold: 5.26e+06 < 9.00e+06[0m
+[0;33mW (10680) radar-hr: Energy below threshold: 4.89e+06 < 9.00e+06[0m
+[0;33mW (10680) radar-hr: Energy below threshold: 3.93e+06 < 9.00e+06[0m
+[0;33mW (10690) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (10690) radar-hr: Energy below threshold: 3.68e+06 < 9.00e+06[0m
+[0;33mW (10700) radar-hr: Energy below threshold: 3.27e+06 < 9.00e+06[0m
+[0;33mW (10710) radar-hr: Energy below threshold: 3.38e+06 < 9.00e+06[0m
+[0;33mW (10710) radar-hr: Energy below threshold: 3.29e+06 < 9.00e+06[0m
+[0;33mW (10720) radar-hr: Energy below threshold: 2.77e+06 < 9.00e+06[0m
+[0;33mW (10720) radar-hr: Energy below threshold: 3.95e+06 < 9.00e+06[0m
+[0;33mW (10730) radar-hr: Energy below threshold: 4.03e+06 < 9.00e+06[0m
+[0;33mW (10730) radar-hr: Energy below threshold: 3.60e+06 < 9.00e+06[0m
+[0;33mW (10740) radar-hr: Energy below threshold: 5.56e+06 < 9.00e+06[0m
+[0;33mW (10750) radar-hr: Energy below threshold: 4.48e+06 < 9.00e+06[0m
+[0;33mW (10750) radar-hr: Energy below threshold: 3.36e+06 < 9.00e+06[0m
+[0;33mW (10760) radar-hr: Energy below threshold: 4.34e+06 < 9.00e+06[0m
+[0;33mW (10760) radar-hr: Energy below threshold: 5.48e+06 < 9.00e+06[0m
+[0;33mW (10770) radar-hr: Energy below threshold: 4.30e+06 < 9.00e+06[0m
+[0;33mW (10770) radar-hr: Energy below threshold: 6.74e+06 < 9.00e+06[0m
+[0;33mW (10780) radar-hr: Energy below threshold: 4.26e+06 < 9.00e+06[0m
+[0;33mW (10790) radar-hr: Energy below threshold: 4.17e+06 < 9.00e+06[0m
+[0;33mW (10790) radar-hr: Energy below threshold: 4.17e+06 < 9.00e+06[0m
+[0;33mW (10800) radar-hr: Energy below threshold: 5.07e+06 < 9.00e+06[0m
+[0;33mW (10800) radar-hr: Energy below threshold: 5.89e+06 < 9.00e+06[0m
+[0;33mW (10810) radar-hr: Energy below threshold: 5.42e+06 < 9.00e+06[0m
+[0;33mW (10810) radar-hr: Energy below threshold: 4.59e+06 < 9.00e+06[0m
+[0;33mW (10820) radar-hr: Energy below threshold: 6.61e+06 < 9.00e+06[0m
+[0;33mW (10820) radar-hr: Energy below threshold: 5.85e+06 < 9.00e+06[0m
+[0;33mW (10830) radar-hr: Energy below threshold: 4.82e+06 < 9.00e+06[0m
+[0;33mW (10840) radar-hr: Energy below threshold: 6.11e+06 < 9.00e+06[0m
+[0;33mW (10840) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (10850) radar-hr: Energy below threshold: 4.92e+06 < 9.00e+06[0m
+[0;33mW (10850) radar-hr: Energy below threshold: 4.11e+06 < 9.00e+06[0m
+[0;33mW (10860) radar-hr: Energy below threshold: 6.29e+06 < 9.00e+06[0m
+[0;33mW (10860) radar-hr: Energy below threshold: 5.94e+06 < 9.00e+06[0m
+[0;33mW (10870) radar-hr: Energy below threshold: 4.91e+06 < 9.00e+06[0m
+[0;33mW (10880) radar-hr: Energy below threshold: 5.79e+06 < 9.00e+06[0m
+[0;33mW (10880) radar-hr: Energy below threshold: 5.43e+06 < 9.00e+06[0m
+[0;33mW (10890) radar-hr: Energy below threshold: 6.75e+06 < 9.00e+06[0m
+[0;33mW (10890) radar-hr: Energy below threshold: 6.12e+06 < 9.00e+06[0m
+[0;33mW (10900) radar-hr: Energy below threshold: 5.73e+06 < 9.00e+06[0m
+[0;33mW (10900) radar-hr: Energy below threshold: 6.66e+06 < 9.00e+06[0m
+[0;33mW (10910) radar-hr: Energy below threshold: 6.91e+06 < 9.00e+06[0m
+[0;33mW (10910) radar-hr: Energy below threshold: 6.14e+06 < 9.00e+06[0m
+[0;33mW (10920) radar-hr: Energy below threshold: 7.28e+06 < 9.00e+06[0m
+[0;33mW (10930) radar-hr: Energy below threshold: 8.04e+06 < 9.00e+06[0m
+[0;33mW (10930) radar-hr: Energy below threshold: 8.44e+06 < 9.00e+06[0m
+[0;33mW (10940) radar-hr: Energy below threshold: 8.10e+06 < 9.00e+06[0m
+[0;33mW (10940) radar-hr: Energy below threshold: 8.34e+06 < 9.00e+06[0m
+[0;33mW (10950) radar-hr: Energy below threshold: 9.00e+06 < 9.00e+06[0m
+[0;33mW (10960) radar-hr: Energy below threshold: 7.90e+06 < 9.00e+06[0m
+[0;33mW (10960) radar-hr: Energy below threshold: 7.88e+06 < 9.00e+06[0m
+[0;33mW (10970) radar-hr: Energy below threshold: 8.95e+06 < 9.00e+06[0m
+[0;33mW (10970) radar-hr: Energy below threshold: 8.09e+06 < 9.00e+06[0m
+[0;33mW (10980) radar-hr: Energy below threshold: 8.06e+06 < 9.00e+06[0m
+[0;33mW (10980) radar-hr: Energy below threshold: 7.22e+06 < 9.00e+06[0m
+[0;33mW (10990) radar-hr: Energy below threshold: 7.93e+06 < 9.00e+06[0m
+[0;33mW (10990) radar-hr: Energy below threshold: 7.14e+06 < 9.00e+06[0m
+[0;33mW (11000) radar-hr: Energy below threshold: 6.66e+06 < 9.00e+06[0m
+[0;33mW (11010) radar-hr: Energy below threshold: 7.79e+06 < 9.00e+06[0m
+[0;33mW (11010) radar-hr: Energy below threshold: 6.64e+06 < 9.00e+06[0m
+[0;33mW (11020) radar-hr: Energy below threshold: 7.00e+06 < 9.00e+06[0m
+[0;33mW (11020) radar-hr: Energy below threshold: 6.78e+06 < 9.00e+06[0m
+[0;33mW (11030) radar-hr: Energy below threshold: 7.23e+06 < 9.00e+06[0m
+[0;33mW (11030) radar-hr: Energy below threshold: 6.44e+06 < 9.00e+06[0m
+[0;33mW (11040) radar-hr: Energy below threshold: 6.10e+06 < 9.00e+06[0m
+[0;33mW (11040) radar-hr: Energy below threshold: 6.92e+06 < 9.00e+06[0m
+[0;33mW (11050) radar-hr: Energy below threshold: 5.89e+06 < 9.00e+06[0m
+[0;33mW (11060) radar-hr: Energy below threshold: 5.75e+06 < 9.00e+06[0m
+[0;33mW (11060) radar-hr: Energy below threshold: 7.10e+06 < 9.00e+06[0m
+[0;33mW (11070) radar-hr: Energy below threshold: 5.78e+06 < 9.00e+06[0m
+[0;33mW (11070) radar-hr: Energy below threshold: 6.42e+06 < 9.00e+06[0m
+[0;33mW (11080) radar-hr: Energy below threshold: 5.41e+06 < 9.00e+06[0m
+[0;33mW (11080) radar-hr: Energy below threshold: 5.16e+06 < 9.00e+06[0m
+[0;33mW (11090) radar-hr: Energy below threshold: 4.49e+06 < 9.00e+06[0m
+[0;33mW (11100) radar-hr: Energy below threshold: 4.28e+06 < 9.00e+06[0m
+[0;33mW (11100) radar-hr: Energy below threshold: 3.50e+06 < 9.00e+06[0m
+[0;33mW (11110) radar-hr: Energy below threshold: 3.08e+06 < 9.00e+06[0m
+[0;33mW (11110) radar-hr: Energy below threshold: 4.49e+06 < 9.00e+06[0m
+[0;33mW (11120) radar-hr: Energy below threshold: 4.49e+06 < 9.00e+06[0m
+[0;33mW (11120) radar-hr: Energy below threshold: 3.50e+06 < 9.00e+06[0m
+[0;33mW (11130) radar-hr: Energy below threshold: 3.27e+06 < 9.00e+06[0m
+[0;33mW (11130) radar-hr: Energy below threshold: 3.44e+06 < 9.00e+06[0m
+[0;33mW (11140) radar-hr: Energy below threshold: 3.63e+06 < 9.00e+06[0m
+[0;33mW (11150) radar-hr: Energy below threshold: 3.10e+06 < 9.00e+06[0m
+[0;33mW (11150) radar-hr: Energy below threshold: 3.57e+06 < 9.00e+06[0m
+[0;33mW (11160) radar-hr: Energy below threshold: 2.83e+06 < 9.00e+06[0m
+[0;33mW (11160) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (11170) radar-hr: Energy below threshold: 3.76e+06 < 9.00e+06[0m
+[0;33mW (11170) radar-hr: Energy below threshold: 3.32e+06 < 9.00e+06[0m
+[0;33mW (11180) radar-hr: Energy below threshold: 3.28e+06 < 9.00e+06[0m
+[0;33mW (11190) radar-hr: Energy below threshold: 3.13e+06 < 9.00e+06[0m
+[0;33mW (11190) radar-hr: Energy below threshold: 4.92e+06 < 9.00e+06[0m
+[0;33mW (11200) radar-hr: Energy below threshold: 2.81e+06 < 9.00e+06[0m
+[0;33mW (11200) radar-hr: Energy below threshold: 3.49e+06 < 9.00e+06[0m
+[0;33mW (11210) radar-hr: Energy below threshold: 3.57e+06 < 9.00e+06[0m
+[0;33mW (11210) radar-hr: Energy below threshold: 4.18e+06 < 9.00e+06[0m
+[0;33mW (11220) radar-hr: Energy below threshold: 2.52e+06 < 9.00e+06[0m
+[0;33mW (11230) radar-hr: Energy below threshold: 3.00e+06 < 9.00e+06[0m
+[0;33mW (11230) radar-hr: Energy below threshold: 2.63e+06 < 9.00e+06[0m
+[0;33mW (11240) radar-hr: Energy below threshold: 2.20e+06 < 9.00e+06[0m
+[0;33mW (11240) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (11250) radar-hr: Energy below threshold: 3.42e+06 < 9.00e+06[0m
+[0;33mW (11250) radar-hr: Energy below threshold: 2.57e+06 < 9.00e+06[0m
+[0;33mW (11260) radar-hr: Energy below threshold: 3.22e+06 < 9.00e+06[0m
+[0;33mW (11260) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (11270) radar-hr: Energy below threshold: 3.41e+06 < 9.00e+06[0m
+[0;33mW (11280) radar-hr: Energy below threshold: 3.53e+06 < 9.00e+06[0m
+[0;33mW (11280) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (11290) radar-hr: Energy below threshold: 3.46e+06 < 9.00e+06[0m
+[0;33mW (11290) radar-hr: Energy below threshold: 3.09e+06 < 9.00e+06[0m
+[0;33mW (11300) radar-hr: Energy below threshold: 5.55e+06 < 9.00e+06[0m
+[0;33mW (11300) radar-hr: Energy below threshold: 3.27e+06 < 9.00e+06[0m
+[0;33mW (11310) radar-hr: Energy below threshold: 3.95e+06 < 9.00e+06[0m
+[0;33mW (11320) radar-hr: Energy below threshold: 3.94e+06 < 9.00e+06[0m
+[0;33mW (11320) radar-hr: Energy below threshold: 4.06e+06 < 9.00e+06[0m
+[0;33mW (11330) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (11330) radar-hr: Energy below threshold: 4.72e+06 < 9.00e+06[0m
+[0;33mW (11340) radar-hr: Energy below threshold: 4.04e+06 < 9.00e+06[0m
+[0;33mW (11340) radar-hr: Energy below threshold: 4.26e+06 < 9.00e+06[0m
+[0;33mW (11350) radar-hr: Energy below threshold: 3.55e+06 < 9.00e+06[0m
+[0;33mW (11360) radar-hr: Energy below threshold: 5.28e+06 < 9.00e+06[0m
+[0;33mW (11360) radar-hr: Energy below threshold: 4.02e+06 < 9.00e+06[0m
+[0;33mW (11370) radar-hr: Energy below threshold: 5.06e+06 < 9.00e+06[0m
+[0;33mW (11370) radar-hr: Energy below threshold: 4.60e+06 < 9.00e+06[0m
+[0;33mW (11380) radar-hr: Energy below threshold: 5.60e+06 < 9.00e+06[0m
+[0;33mW (11380) radar-hr: Energy below threshold: 6.18e+06 < 9.00e+06[0m
+[0;33mW (11390) radar-hr: Energy below threshold: 5.27e+06 < 9.00e+06[0m
+[0;33mW (11390) radar-hr: Energy below threshold: 5.74e+06 < 9.00e+06[0m
+[0;33mW (11400) radar-hr: Energy below threshold: 5.29e+06 < 9.00e+06[0m
+[0;33mW (11410) radar-hr: Energy below threshold: 6.05e+06 < 9.00e+06[0m
+[0;33mW (11410) radar-hr: Energy below threshold: 4.77e+06 < 9.00e+06[0m
+[0;33mW (11420) radar-hr: Energy below threshold: 4.75e+06 < 9.00e+06[0m
+[0;33mW (11420) radar-hr: Energy below threshold: 4.39e+06 < 9.00e+06[0m
+[0;33mW (11430) radar-hr: Energy below threshold: 4.78e+06 < 9.00e+06[0m
+[0;33mW (11430) radar-hr: Energy below threshold: 5.93e+06 < 9.00e+06[0m
+[0;33mW (11440) radar-hr: Energy below threshold: 4.89e+06 < 9.00e+06[0m
+[0;33mW (11450) radar-hr: Energy below threshold: 4.28e+06 < 9.00e+06[0m
+[0;33mW (11450) radar-hr: Energy below threshold: 4.68e+06 < 9.00e+06[0m
+[0;33mW (11460) radar-hr: Energy below threshold: 5.55e+06 < 9.00e+06[0m
+[0;33mW (11460) radar-hr: Energy below threshold: 5.91e+06 < 9.00e+06[0m
+[0;33mW (11470) radar-hr: Energy below threshold: 4.74e+06 < 9.00e+06[0m
+[0;33mW (11470) radar-hr: Energy below threshold: 5.32e+06 < 9.00e+06[0m
+[0;33mW (11480) radar-hr: Energy below threshold: 5.54e+06 < 9.00e+06[0m
+[0;33mW (11480) radar-hr: Energy below threshold: 3.66e+06 < 9.00e+06[0m
+[0;33mW (11490) radar-hr: Energy below threshold: 3.72e+06 < 9.00e+06[0m
+[0;33mW (11500) radar-hr: Energy below threshold: 3.97e+06 < 9.00e+06[0m
+[0;33mW (11500) radar-hr: Energy below threshold: 4.20e+06 < 9.00e+06[0m
+[0;33mW (11510) radar-hr: Energy below threshold: 5.33e+06 < 9.00e+06[0m
+[0;33mW (11510) radar-hr: Energy below threshold: 4.09e+06 < 9.00e+06[0m
+[0;33mW (11520) radar-hr: Energy below threshold: 4.32e+06 < 9.00e+06[0m
+[0;33mW (11520) radar-hr: Energy below threshold: 2.97e+06 < 9.00e+06[0m
+[0;33mW (11530) radar-hr: Energy below threshold: 3.28e+06 < 9.00e+06[0m
+[0;33mW (11540) radar-hr: Energy below threshold: 3.55e+06 < 9.00e+06[0m
+[0;33mW (11540) radar-hr: Energy below threshold: 3.92e+06 < 9.00e+06[0m
+[0;33mW (11550) radar-hr: Energy below threshold: 3.32e+06 < 9.00e+06[0m
+[0;33mW (11550) radar-hr: Energy below threshold: 2.58e+06 < 9.00e+06[0m
+[0;33mW (11560) radar-hr: Energy below threshold: 2.72e+06 < 9.00e+06[0m
+[0;33mW (11560) radar-hr: Energy below threshold: 3.35e+06 < 9.00e+06[0m
+[0;33mW (11570) radar-hr: Energy below threshold: 2.45e+06 < 9.00e+06[0m
+[0;33mW (11580) radar-hr: Energy below threshold: 1.94e+06 < 9.00e+06[0m
+[0;33mW (11580) radar-hr: Energy below threshold: 1.91e+06 < 9.00e+06[0m
+[0;33mW (11590) radar-hr: Energy below threshold: 2.27e+06 < 9.00e+06[0m
+[0;33mW (11590) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (11600) radar-hr: Energy below threshold: 1.78e+06 < 9.00e+06[0m
+[0;33mW (11600) radar-hr: Energy below threshold: 3.06e+06 < 9.00e+06[0m
+[0;33mW (11610) radar-hr: Energy below threshold: 4.47e+06 < 9.00e+06[0m
+[0;33mW (11610) radar-hr: Energy below threshold: 5.62e+06 < 9.00e+06[0m
+[0;33mW (11620) radar-hr: Energy below threshold: 6.37e+06 < 9.00e+06[0m
+[0;33mW (11630) radar-hr: Energy below threshold: 7.37e+06 < 9.00e+06[0m
+[0;33mW (11630) radar-hr: Energy below threshold: 8.63e+06 < 9.00e+06[0m
+[0;33mW (11640) radar-hr: Energy below threshold: 8.33e+06 < 9.00e+06[0m
+[0;33mW (11640) radar-hr: Energy below threshold: 6.26e+06 < 9.00e+06[0m
+[0;33mW (11650) radar-hr: Energy below threshold: 8.49e+06 < 9.00e+06[0m
+[0;33mW (11660) radar-hr: Energy below threshold: 8.45e+06 < 9.00e+06[0m
+[0;33mW (11660) radar-hr: Energy below threshold: 7.72e+06 < 9.00e+06[0m
+[0;33mW (11670) radar-hr: Energy below threshold: 7.71e+06 < 9.00e+06[0m
+[0;33mW (11670) radar-hr: Energy below threshold: 8.32e+06 < 9.00e+06[0m
+[0;33mW (11680) radar-hr: Energy below threshold: 6.99e+06 < 9.00e+06[0m
+[0;33mW (11680) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (11690) radar-hr: Energy below threshold: 7.46e+06 < 9.00e+06[0m
+[0;33mW (11690) radar-hr: Energy below threshold: 4.81e+06 < 9.00e+06[0m
+[0;33mW (11700) radar-hr: Energy below threshold: 6.20e+06 < 9.00e+06[0m
+[0;33mW (11700) radar-hr: Energy below threshold: 4.55e+06 < 9.00e+06[0m
+[0;33mW (11710) radar-hr: Energy below threshold: 5.03e+06 < 9.00e+06[0m
+[0;33mW (11720) radar-hr: Energy below threshold: 6.76e+06 < 9.00e+06[0m
+[0;33mW (11720) radar-hr: Energy below threshold: 6.94e+06 < 9.00e+06[0m
+[0;33mW (11730) radar-hr: Energy below threshold: 8.12e+06 < 9.00e+06[0m
+[0;33mW (11730) radar-hr: Energy below threshold: 6.15e+06 < 9.00e+06[0m
+[0;33mW (11740) radar-hr: Energy below threshold: 6.72e+06 < 9.00e+06[0m
+[0;33mW (11740) radar-hr: Energy below threshold: 8.27e+06 < 9.00e+06[0m
+[0;33mW (11750) radar-hr: Energy below threshold: 7.36e+06 < 9.00e+06[0m
+[0;33mW (11760) radar-hr: Energy below threshold: 6.39e+06 < 9.00e+06[0m
+[0;33mW (11760) radar-hr: Energy below threshold: 7.96e+06 < 9.00e+06[0m
+[0;33mW (11770) radar-hr: Energy below threshold: 8.43e+06 < 9.00e+06[0m
+[0;33mW (11770) radar-hr: Energy below threshold: 6.77e+06 < 9.00e+06[0m
+[0;33mW (11780) radar-hr: Energy below threshold: 8.02e+06 < 9.00e+06[0m
+[0;33mW (11780) radar-hr: Energy below threshold: 7.00e+06 < 9.00e+06[0m
+[0;33mW (11790) radar-hr: Energy below threshold: 6.37e+06 < 9.00e+06[0m
+[0;33mW (11800) radar-hr: Energy below threshold: 7.93e+06 < 9.00e+06[0m
+[0;33mW (11800) radar-hr: Energy below threshold: 6.15e+06 < 9.00e+06[0m
+[0;33mW (11810) radar-hr: Energy below threshold: 4.73e+06 < 9.00e+06[0m
+[0;33mW (11810) radar-hr: Energy below threshold: 4.01e+06 < 9.00e+06[0m
+[0;33mW (11820) radar-hr: Energy below threshold: 3.29e+06 < 9.00e+06[0m
+[0;33mW (11820) radar-hr: Energy below threshold: 3.42e+06 < 9.00e+06[0m
+[0;33mW (11830) radar-hr: Energy below threshold: 3.21e+06 < 9.00e+06[0m
+[0;33mW (11830) radar-hr: Energy below threshold: 2.36e+06 < 9.00e+06[0m
+[0;33mW (11840) radar-hr: Energy below threshold: 2.50e+06 < 9.00e+06[0m
+[0;33mW (11850) radar-hr: Energy below threshold: 1.91e+06 < 9.00e+06[0m
+[0;33mW (11850) radar-hr: Energy below threshold: 1.12e+06 < 9.00e+06[0m
+[0;33mW (11860) radar-hr: Energy below threshold: 2.18e+06 < 9.00e+06[0m
+[0;33mW (11860) radar-hr: Energy below threshold: 2.65e+06 < 9.00e+06[0m
+[0;33mW (11870) radar-hr: Energy below threshold: 1.37e+06 < 9.00e+06[0m
+[0;33mW (11870) radar-hr: Energy below threshold: 1.43e+06 < 9.00e+06[0m
+[0;33mW (11880) radar-hr: Energy below threshold: 2.38e+06 < 9.00e+06[0m
+[0;33mW (11890) radar-hr: Energy below threshold: 2.15e+06 < 9.00e+06[0m
+[0;33mW (11890) radar-hr: Energy below threshold: 2.56e+06 < 9.00e+06[0m
+[0;33mW (11900) radar-hr: Energy below threshold: 1.59e+06 < 9.00e+06[0m
+[0;33mW (11900) radar-hr: Energy below threshold: 1.97e+06 < 9.00e+06[0m
+[0;33mW (11910) radar-hr: Energy below threshold: 2.08e+06 < 9.00e+06[0m
+[0;33mW (11910) radar-hr: Energy below threshold: 2.66e+06 < 9.00e+06[0m
+[0;33mW (11920) radar-hr: Energy below threshold: 2.38e+06 < 9.00e+06[0m
+[0;33mW (11920) radar-hr: Energy below threshold: 2.03e+06 < 9.00e+06[0m
+[0;33mW (11930) radar-hr: Energy below threshold: 3.55e+06 < 9.00e+06[0m
+[0;33mW (11940) radar-hr: Energy below threshold: 2.13e+06 < 9.00e+06[0m
+[0;33mW (11940) radar-hr: Energy below threshold: 2.09e+06 < 9.00e+06[0m
+[0;33mW (11950) radar-hr: Energy below threshold: 2.74e+06 < 9.00e+06[0m
+[0;33mW (11950) radar-hr: Energy below threshold: 2.48e+06 < 9.00e+06[0m
+[0;33mW (11960) radar-hr: Energy below threshold: 3.25e+06 < 9.00e+06[0m
+[0;33mW (11960) radar-hr: Energy below threshold: 2.14e+06 < 9.00e+06[0m
+[0;33mW (11970) radar-hr: Energy below threshold: 2.02e+06 < 9.00e+06[0m
+[0;33mW (11980) radar-hr: Energy below threshold: 1.85e+06 < 9.00e+06[0m
+[0;33mW (11980) radar-hr: Energy below threshold: 1.66e+06 < 9.00e+06[0m
+[0;33mW (11990) radar-hr: Energy below threshold: 1.88e+06 < 9.00e+06[0m
+[0;33mW (11990) radar-hr: Energy below threshold: 1.66e+06 < 9.00e+06[0m
+[0;33mW (12000) radar-hr: Energy below threshold: 1.85e+06 < 9.00e+06[0m
+[0;33mW (12000) radar-hr: Energy below threshold: 3.86e+06 < 9.00e+06[0m
+[0;33mW (12010) radar-hr: Energy below threshold: 2.79e+06 < 9.00e+06[0m
+[0;33mW (12020) radar-hr: Energy below threshold: 2.45e+06 < 9.00e+06[0m
+[0;33mW (12020) radar-hr: Energy below threshold: 3.36e+06 < 9.00e+06[0m
+[0;33mW (12030) radar-hr: Energy below threshold: 2.97e+06 < 9.00e+06[0m
+[0;33mW (12030) radar-hr: Energy below threshold: 2.79e+06 < 9.00e+06[0m
+[0;33mW (12040) radar-hr: Energy below threshold: 5.15e+06 < 9.00e+06[0m
+[0;33mW (12040) radar-hr: Energy below threshold: 4.11e+06 < 9.00e+06[0m
+[0;33mW (12050) radar-hr: Energy below threshold: 2.64e+06 < 9.00e+06[0m
+[0;33mW (12050) radar-hr: Energy below threshold: 3.98e+06 < 9.00e+06[0m
+[0;33mW (12060) radar-hr: Energy below threshold: 3.67e+06 < 9.00e+06[0m
+[0;33mW (12070) radar-hr: Energy below threshold: 7.35e+06 < 9.00e+06[0m
+[0;33mW (12070) radar-hr: Energy below threshold: 5.10e+06 < 9.00e+06[0m
+[0;33mW (12080) radar-hr: Energy below threshold: 4.13e+06 < 9.00e+06[0m
+[0;33mW (12080) radar-hr: Energy below threshold: 3.64e+06 < 9.00e+06[0m
+[0;33mW (12090) radar-hr: Energy below threshold: 3.68e+06 < 9.00e+06[0m
+[0;33mW (12090) radar-hr: Energy below threshold: 5.05e+06 < 9.00e+06[0m
+[0;33mW (12100) radar-hr: Energy below threshold: 6.87e+06 < 9.00e+06[0m
+[0;33mW (12110) radar-hr: Energy below threshold: 5.34e+06 < 9.00e+06[0m
+[0;33mW (12110) radar-hr: Energy below threshold: 5.10e+06 < 9.00e+06[0m
+[0;33mW (12120) radar-hr: Energy below threshold: 5.50e+06 < 9.00e+06[0m
+[0;33mW (12120) radar-hr: Energy below threshold: 7.72e+06 < 9.00e+06[0m
+[0;33mW (12130) radar-hr: Energy below threshold: 8.35e+06 < 9.00e+06[0m
+[0;33mW (12140) radar-hr: Energy below threshold: 8.73e+06 < 9.00e+06[0m
+[0;33mW (12160) radar-hr: Energy below threshold: 8.42e+06 < 9.00e+06[0m
+[0;33mW (12170) radar-hr: Energy below threshold: 8.76e+06 < 9.00e+06[0m
+[0;33mW (12190) radar-hr: Energy below threshold: 8.17e+06 < 9.00e+06[0m
+[0;33mW (12200) radar-hr: Energy below threshold: 7.79e+06 < 9.00e+06[0m
+[0;33mW (12220) radar-hr: Energy below threshold: 8.45e+06 < 9.00e+06[0m
+[0;33mW (12220) radar-hr: Energy below threshold: 7.03e+06 < 9.00e+06[0m
+[0;33mW (12230) radar-hr: Energy below threshold: 8.83e+06 < 9.00e+06[0m
+[0;33mW (12230) radar-hr: Energy below threshold: 6.90e+06 < 9.00e+06[0m
+[0;33mW (12240) radar-hr: Energy below threshold: 8.63e+06 < 9.00e+06[0m
+[0;33mW (12250) radar-hr: Energy below threshold: 7.83e+06 < 9.00e+06[0m
+[0;33mW (12260) radar-hr: Energy below threshold: 8.13e+06 < 9.00e+06[0m
+[0;33mW (12260) radar-hr: Energy below threshold: 5.35e+06 < 9.00e+06[0m
+[0;33mW (12270) radar-hr: Energy below threshold: 7.92e+06 < 9.00e+06[0m
+[0;33mW (12270) radar-hr: Energy below threshold: 8.49e+06 < 9.00e+06[0m
+[0;33mW (12280) radar-hr: Energy below threshold: 8.38e+06 < 9.00e+06[0m
+[0;33mW (12280) radar-hr: Energy below threshold: 7.30e+06 < 9.00e+06[0m
+[0;33mW (12290) radar-hr: Energy below threshold: 4.68e+06 < 9.00e+06[0m
+[0;33mW (12290) radar-hr: Energy below threshold: 8.55e+06 < 9.00e+06[0m
+[0;33mW (12310) radar-hr: Energy below threshold: 6.48e+06 < 9.00e+06[0m
+[0;33mW (12310) radar-hr: Energy below threshold: 7.60e+06 < 9.00e+06[0m
+[0;33mW (12360) radar-hr: Energy below threshold: 7.47e+06 < 9.00e+06[0m
+[0;33mW (12390) radar-hr: Energy below threshold: 7.16e+06 < 9.00e+06[0m
+[0;33mW (12390) radar-hr: Energy below threshold: 8.19e+06 < 9.00e+06[0m
+[0;33mW (12410) radar-hr: Energy below threshold: 7.82e+06 < 9.00e+06[0m
+[0;33mW (12410) radar-hr: Energy below threshold: 8.17e+06 < 9.00e+06[0m
+[0;33mW (12430) radar-hr: Energy below threshold: 8.61e+06 < 9.00e+06[0m
+[0;33mW (12430) radar-hr: Energy below threshold: 7.40e+06 < 9.00e+06[0m
+[0;33mW (12440) radar-hr: Energy below threshold: 6.50e+06 < 9.00e+06[0m
+[0;33mW (12440) radar-hr: Energy below threshold: 4.96e+06 < 9.00e+06[0m
+[0;33mW (12450) radar-hr: Energy below threshold: 6.22e+06 < 9.00e+06[0m
+[0;33mW (12450) radar-hr: Energy below threshold: 5.01e+06 < 9.00e+06[0m
+[0;33mW (12460) radar-hr: Energy below threshold: 3.61e+06 < 9.00e+06[0m
+[0;33mW (12460) radar-hr: Energy below threshold: 3.26e+06 < 9.00e+06[0m
+[0;33mW (12470) radar-hr: Energy below threshold: 1.83e+06 < 9.00e+06[0m
+[0;33mW (12470) radar-hr: Energy below threshold: 2.55e+06 < 9.00e+06[0m
+[0;33mW (12480) radar-hr: Energy below threshold: 4.02e+06 < 9.00e+06[0m
+[0;33mW (12480) radar-hr: Energy below threshold: 3.94e+06 < 9.00e+06[0m
+[0;33mW (12480) radar-hr: Energy below threshold: 2.32e+06 < 9.00e+06[0m
+[0;33mW (12490) radar-hr: Energy below threshold: 2.46e+06 < 9.00e+06[0m
+[0;33mW (12490) radar-hr: Energy below threshold: 2.09e+06 < 9.00e+06[0m
+[0;33mW (12500) radar-hr: Energy below threshold: 1.84e+06 < 9.00e+06[0m
+[0;33mW (12510) radar-hr: Energy below threshold: 2.13e+06 < 9.00e+06[0m
+[0;33mW (12510) radar-hr: Energy below threshold: 2.40e+06 < 9.00e+06[0m
+[0;33mW (12520) radar-hr: Energy below threshold: 2.12e+06 < 9.00e+06[0m
+[0;33mW (12520) radar-hr: Energy below threshold: 2.58e+06 < 9.00e+06[0m
+[0;33mW (12530) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (12530) radar-hr: Energy below threshold: 4.03e+06 < 9.00e+06[0m
+[0;33mW (12540) radar-hr: Energy below threshold: 5.49e+06 < 9.00e+06[0m
+[0;33mW (12550) radar-hr: Energy below threshold: 6.81e+06 < 9.00e+06[0m
+[0;33mW (12640) radar-hr: Energy below threshold: 8.82e+06 < 9.00e+06[0m
+[0;33mW (12640) radar-hr: Energy below threshold: 6.50e+06 < 9.00e+06[0m
+[0;33mW (12650) radar-hr: Energy below threshold: 4.14e+06 < 9.00e+06[0m
+[0;33mW (12650) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (12660) radar-hr: Energy below threshold: 6.73e+06 < 9.00e+06[0m
+[0;33mW (12660) radar-hr: Energy below threshold: 4.27e+06 < 9.00e+06[0m
+[0;33mW (12670) radar-hr: Energy below threshold: 5.96e+06 < 9.00e+06[0m
+[0;33mW (12670) radar-hr: Energy below threshold: 3.98e+06 < 9.00e+06[0m
+[0;33mW (12680) radar-hr: Energy below threshold: 5.06e+06 < 9.00e+06[0m
+[0;33mW (12680) radar-hr: Energy below threshold: 3.07e+06 < 9.00e+06[0m
+[0;33mW (12690) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (12690) radar-hr: Energy below threshold: 4.86e+06 < 9.00e+06[0m
+[0;33mW (12690) radar-hr: Energy below threshold: 3.44e+06 < 9.00e+06[0m
+[0;33mW (12700) radar-hr: Energy below threshold: 3.00e+06 < 9.00e+06[0m
+[0;33mW (12700) radar-hr: Energy below threshold: 3.50e+06 < 9.00e+06[0m
+[0;33mW (12710) radar-hr: Energy below threshold: 3.23e+06 < 9.00e+06[0m
+[0;33mW (12720) radar-hr: Energy below threshold: 2.78e+06 < 9.00e+06[0m
+[0;33mW (12720) radar-hr: Energy below threshold: 3.77e+06 < 9.00e+06[0m
+[0;33mW (12730) radar-hr: Energy below threshold: 1.92e+06 < 9.00e+06[0m
+[0;33mW (12730) radar-hr: Energy below threshold: 2.81e+06 < 9.00e+06[0m
+[0;33mW (12740) radar-hr: Energy below threshold: 1.75e+06 < 9.00e+06[0m
+[0;33mW (12740) radar-hr: Energy below threshold: 1.52e+06 < 9.00e+06[0m
+[0;33mW (12750) radar-hr: Energy below threshold: 1.65e+06 < 9.00e+06[0m
+[0;33mW (12760) radar-hr: Energy below threshold: 1.95e+06 < 9.00e+06[0m
+[0;33mW (12760) radar-hr: Energy below threshold: 1.14e+06 < 9.00e+06[0m
+[0;33mW (12770) radar-hr: Energy below threshold: 1.77e+06 < 9.00e+06[0m
+[0;33mW (12770) radar-hr: Energy below threshold: 1.25e+06 < 9.00e+06[0m
+[0;33mW (12780) radar-hr: Energy below threshold: 1.96e+06 < 9.00e+06[0m
+[0;33mW (12780) radar-hr: Energy below threshold: 1.91e+06 < 9.00e+06[0m
+[0;33mW (12790) radar-hr: Energy below threshold: 1.81e+06 < 9.00e+06[0m
+[0;33mW (12790) radar-hr: Energy below threshold: 1.07e+06 < 9.00e+06[0m
+[0;33mW (12800) radar-hr: Energy below threshold: 1.22e+06 < 9.00e+06[0m
+[0;33mW (12810) radar-hr: Energy below threshold: 2.06e+06 < 9.00e+06[0m
+[0;33mW (12810) radar-hr: Energy below threshold: 1.69e+06 < 9.00e+06[0m
+[0;33mW (12820) radar-hr: Energy below threshold: 1.27e+06 < 9.00e+06[0m
+[0;33mW (12820) radar-hr: Energy below threshold: 1.89e+06 < 9.00e+06[0m
+[0;33mW (12830) radar-hr: Energy below threshold: 2.09e+06 < 9.00e+06[0m
+[0;33mW (12830) radar-hr: Energy below threshold: 1.57e+06 < 9.00e+06[0m
+[0;33mW (12840) radar-hr: Energy below threshold: 1.49e+06 < 9.00e+06[0m
+[0;33mW (12850) radar-hr: Energy below threshold: 1.33e+06 < 9.00e+06[0m
+[0;33mW (12850) radar-hr: Energy below threshold: 1.76e+06 < 9.00e+06[0m
+[0;33mW (12860) radar-hr: Energy below threshold: 1.46e+06 < 9.00e+06[0m
+[0;33mW (12860) radar-hr: Energy below threshold: 1.68e+06 < 9.00e+06[0m
+[0;33mW (12870) radar-hr: Energy below threshold: 1.44e+06 < 9.00e+06[0m
+[0;33mW (12870) radar-hr: Energy below threshold: 2.15e+06 < 9.00e+06[0m
+[0;33mW (12880) radar-hr: Energy below threshold: 3.29e+06 < 9.00e+06[0m
+[0;33mW (12890) radar-hr: Energy below threshold: 3.51e+06 < 9.00e+06[0m
+[0;33mW (12890) radar-hr: Energy below threshold: 3.18e+06 < 9.00e+06[0m
+[0;33mW (12900) radar-hr: Energy below threshold: 5.45e+06 < 9.00e+06[0m
+[0;33mW (12900) radar-hr: Energy below threshold: 3.95e+06 < 9.00e+06[0m
+[0;33mW (12910) radar-hr: Energy below threshold: 4.19e+06 < 9.00e+06[0m
+[0;33mW (12910) radar-hr: Energy below threshold: 3.62e+06 < 9.00e+06[0m
+[0;33mW (12920) radar-hr: Energy below threshold: 7.17e+06 < 9.00e+06[0m
+[0;33mW (12920) radar-hr: Energy below threshold: 3.96e+06 < 9.00e+06[0m
+[0;33mW (12930) radar-hr: Energy below threshold: 4.95e+06 < 9.00e+06[0m
+[0;33mW (12940) radar-hr: Energy below threshold: 4.66e+06 < 9.00e+06[0m
+[0;33mW (12940) radar-hr: Energy below threshold: 5.14e+06 < 9.00e+06[0m
+[0;33mW (12950) radar-hr: Energy below threshold: 6.32e+06 < 9.00e+06[0m
+[0;33mW (12950) radar-hr: Energy below threshold: 5.18e+06 < 9.00e+06[0m
+[0;33mW (12960) radar-hr: Energy below threshold: 6.65e+06 < 9.00e+06[0m
+[0;33mW (12960) radar-hr: Energy below threshold: 7.53e+06 < 9.00e+06[0m
+[0;33mW (12970) radar-hr: Energy below threshold: 7.00e+06 < 9.00e+06[0m
+[0;33mW (12980) radar-hr: Energy below threshold: 8.22e+06 < 9.00e+06[0m
+[0;33mW (12980) radar-hr: Energy below threshold: 8.28e+06 < 9.00e+06[0m
+[0;33mW (13000) radar-hr: Energy below threshold: 7.59e+06 < 9.00e+06[0m
+[0;33mW (13010) radar-hr: Energy below threshold: 8.73e+06 < 9.00e+06[0m
+[0;33mW (13030) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (13050) radar-hr: Energy below threshold: 8.89e+06 < 9.00e+06[0m
+[0;33mW (13070) radar-hr: Energy below threshold: 8.69e+06 < 9.00e+06[0m
+[0;33mW (13120) radar-hr: Energy below threshold: 7.51e+06 < 9.00e+06[0m
+[0;33mW (13140) radar-hr: Energy below threshold: 8.76e+06 < 9.00e+06[0m
+[0;33mW (13240) radar-hr: Energy below threshold: 8.23e+06 < 9.00e+06[0m
+[0;33mW (13260) radar-hr: Energy below threshold: 7.69e+06 < 9.00e+06[0m
+[0;33mW (13260) radar-hr: Energy below threshold: 5.80e+06 < 9.00e+06[0m
+[0;33mW (13270) radar-hr: Energy below threshold: 6.10e+06 < 9.00e+06[0m
+[0;33mW (13290) radar-hr: Energy below threshold: 8.68e+06 < 9.00e+06[0m
+[0;33mW (13310) radar-hr: Energy below threshold: 6.88e+06 < 9.00e+06[0m
+[0;33mW (13320) radar-hr: Energy below threshold: 7.91e+06 < 9.00e+06[0m
+[0;33mW (13330) radar-hr: Energy below threshold: 7.77e+06 < 9.00e+06[0m
+[0;33mW (13350) radar-hr: Energy below threshold: 7.91e+06 < 9.00e+06[0m
+[0;33mW (13350) radar-hr: Energy below threshold: 8.08e+06 < 9.00e+06[0m
+[0;33mW (13360) radar-hr: Energy below threshold: 8.18e+06 < 9.00e+06[0m
+[0;33mW (13360) radar-hr: Energy below threshold: 7.13e+06 < 9.00e+06[0m
+[0;33mW (13370) radar-hr: Energy below threshold: 6.02e+06 < 9.00e+06[0m
+[0;33mW (13370) radar-hr: Energy below threshold: 6.61e+06 < 9.00e+06[0m
+[0;33mW (13380) radar-hr: Energy below threshold: 8.20e+06 < 9.00e+06[0m
+[0;33mW (13380) radar-hr: Energy below threshold: 6.97e+06 < 9.00e+06[0m
+[0;33mW (13390) radar-hr: Energy below threshold: 7.96e+06 < 9.00e+06[0m
+[0;33mW (13390) radar-hr: Energy below threshold: 8.26e+06 < 9.00e+06[0m
+[0;33mW (13400) radar-hr: Energy below threshold: 7.74e+06 < 9.00e+06[0m
+[0;33mW (13410) radar-hr: Energy below threshold: 8.99e+06 < 9.00e+06[0m
+[0;33mW (13410) radar-hr: Energy below threshold: 8.24e+06 < 9.00e+06[0m
+[0;33mW (13420) radar-hr: Energy below threshold: 7.81e+06 < 9.00e+06[0m
+[0;33mW (13420) radar-hr: Energy below threshold: 7.17e+06 < 9.00e+06[0m
+[0;33mW (13430) radar-hr: Energy below threshold: 8.54e+06 < 9.00e+06[0m
+[0;33mW (13450) radar-hr: Energy below threshold: 7.45e+06 < 9.00e+06[0m
+[0;33mW (13460) radar-hr: Energy below threshold: 8.75e+06 < 9.00e+06[0m
+[0;33mW (13570) radar-hr: Energy below threshold: 8.09e+06 < 9.00e+06[0m
+[0;33mW (13590) radar-hr: Energy below threshold: 8.49e+06 < 9.00e+06[0m
+[0;33mW (13600) radar-hr: Energy below threshold: 8.92e+06 < 9.00e+06[0m
+[0;33mW (13660) radar-hr: Energy below threshold: 8.87e+06 < 9.00e+06[0m
+[0;33mW (13730) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (13730) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (13900) radar-hr: Energy below threshold: 7.59e+06 < 9.00e+06[0m
+[0;33mW (13930) radar-hr: Energy below threshold: 8.53e+06 < 9.00e+06[0m
+[0;33mW (13930) radar-hr: Energy below threshold: 7.83e+06 < 9.00e+06[0m
+[0;33mW (13940) radar-hr: Energy below threshold: 6.97e+06 < 9.00e+06[0m
+[0;33mW (13940) radar-hr: Energy below threshold: 8.19e+06 < 9.00e+06[0m
+[0;33mW (13950) radar-hr: Energy below threshold: 7.67e+06 < 9.00e+06[0m
+[0;33mW (13950) radar-hr: Energy below threshold: 7.62e+06 < 9.00e+06[0m
+[0;33mW (13960) radar-hr: Energy below threshold: 6.19e+06 < 9.00e+06[0m
+[0;33mW (13960) radar-hr: Energy below threshold: 7.43e+06 < 9.00e+06[0m
+[0;33mW (13970) radar-hr: Energy below threshold: 6.92e+06 < 9.00e+06[0m
+[0;33mW (13970) radar-hr: Energy below threshold: 7.28e+06 < 9.00e+06[0m
+[0;33mW (13980) radar-hr: Energy below threshold: 8.59e+06 < 9.00e+06[0m
+[0;33mW (13980) radar-hr: Energy below threshold: 7.20e+06 < 9.00e+06[0m
+[0;33mW (13990) radar-hr: Energy below threshold: 7.28e+06 < 9.00e+06[0m
+[0;33mW (13990) radar-hr: Energy below threshold: 6.47e+06 < 9.00e+06[0m
+[0;33mW (13990) radar-hr: Energy below threshold: 7.99e+06 < 9.00e+06[0m
+[0;33mW (14000) radar-hr: Energy below threshold: 7.69e+06 < 9.00e+06[0m
+[0;33mW (14010) radar-hr: Energy below threshold: 8.47e+06 < 9.00e+06[0m
+[0;33mW (14020) radar-hr: Energy below threshold: 6.84e+06 < 9.00e+06[0m
+[0;33mW (14020) radar-hr: Energy below threshold: 8.92e+06 < 9.00e+06[0m
+[0;33mW (14030) radar-hr: Energy below threshold: 7.53e+06 < 9.00e+06[0m
+[0;33mW (14050) radar-hr: Energy below threshold: 7.34e+06 < 9.00e+06[0m
+[0;33mW (14060) radar-hr: Energy below threshold: 7.57e+06 < 9.00e+06[0m
+[0;33mW (14060) radar-hr: Energy below threshold: 8.59e+06 < 9.00e+06[0m
+[0;33mW (14070) radar-hr: Energy below threshold: 6.64e+06 < 9.00e+06[0m
+[0;33mW (14080) radar-hr: Energy below threshold: 6.56e+06 < 9.00e+06[0m
+[0;33mW (14080) radar-hr: Energy below threshold: 8.20e+06 < 9.00e+06[0m
+[0;33mW (14090) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (14090) radar-hr: Energy below threshold: 7.36e+06 < 9.00e+06[0m
+[0;33mW (14100) radar-hr: Energy below threshold: 6.55e+06 < 9.00e+06[0m
+[0;33mW (14110) radar-hr: Energy below threshold: 8.46e+06 < 9.00e+06[0m
+[0;33mW (14110) radar-hr: Energy below threshold: 7.13e+06 < 9.00e+06[0m
+[0;33mW (14120) radar-hr: Energy below threshold: 8.09e+06 < 9.00e+06[0m
+[0;33mW (14120) radar-hr: Energy below threshold: 7.27e+06 < 9.00e+06[0m
+[0;33mW (14130) radar-hr: Energy below threshold: 5.46e+06 < 9.00e+06[0m
+[0;33mW (14130) radar-hr: Energy below threshold: 7.62e+06 < 9.00e+06[0m
+[0;33mW (14140) radar-hr: Energy below threshold: 6.48e+06 < 9.00e+06[0m
+[0;33mW (14140) radar-hr: Energy below threshold: 4.84e+06 < 9.00e+06[0m
+[0;33mW (14150) radar-hr: Energy below threshold: 6.17e+06 < 9.00e+06[0m
+[0;33mW (14150) radar-hr: Energy below threshold: 7.85e+06 < 9.00e+06[0m
+[0;33mW (14150) radar-hr: Energy below threshold: 5.17e+06 < 9.00e+06[0m
+[0;33mW (14160) radar-hr: Energy below threshold: 5.67e+06 < 9.00e+06[0m
+[0;33mW (14170) radar-hr: Energy below threshold: 6.36e+06 < 9.00e+06[0m
+[0;33mW (14170) radar-hr: Energy below threshold: 5.96e+06 < 9.00e+06[0m
+[0;33mW (14180) radar-hr: Energy below threshold: 5.24e+06 < 9.00e+06[0m
+[0;33mW (14180) radar-hr: Energy below threshold: 6.53e+06 < 9.00e+06[0m
+[0;33mW (14190) radar-hr: Energy below threshold: 5.32e+06 < 9.00e+06[0m
+[0;33mW (14190) radar-hr: Energy below threshold: 7.69e+06 < 9.00e+06[0m
+[0;33mW (14200) radar-hr: Energy below threshold: 4.45e+06 < 9.00e+06[0m
+[0;33mW (14200) radar-hr: Energy below threshold: 5.60e+06 < 9.00e+06[0m
+[0;33mW (14210) radar-hr: Energy below threshold: 5.79e+06 < 9.00e+06[0m
+[0;33mW (14210) radar-hr: Energy below threshold: 4.69e+06 < 9.00e+06[0m
+[0;33mW (14220) radar-hr: Energy below threshold: 4.80e+06 < 9.00e+06[0m
+[0;33mW (14230) radar-hr: Energy below threshold: 4.89e+06 < 9.00e+06[0m
+[0;33mW (14230) radar-hr: Energy below threshold: 8.34e+06 < 9.00e+06[0m
+[0;33mW (14240) radar-hr: Energy below threshold: 7.19e+06 < 9.00e+06[0m
+[0;33mW (14240) radar-hr: Energy below threshold: 4.73e+06 < 9.00e+06[0m
+[0;33mW (14250) radar-hr: Energy below threshold: 4.27e+06 < 9.00e+06[0m
+[0;33mW (14250) radar-hr: Energy below threshold: 5.45e+06 < 9.00e+06[0m
+[0;33mW (14260) radar-hr: Energy below threshold: 5.84e+06 < 9.00e+06[0m
+[0;33mW (14260) radar-hr: Energy below threshold: 6.48e+06 < 9.00e+06[0m
+[0;33mW (14270) radar-hr: Energy below threshold: 5.89e+06 < 9.00e+06[0m
+[0;33mW (14280) radar-hr: Energy below threshold: 6.10e+06 < 9.00e+06[0m
+[0;33mW (14280) radar-hr: Energy below threshold: 5.55e+06 < 9.00e+06[0m
+[0;33mW (14290) radar-hr: Energy below threshold: 5.18e+06 < 9.00e+06[0m
+[0;33mW (14290) radar-hr: Energy below threshold: 5.75e+06 < 9.00e+06[0m
+[0;33mW (14300) radar-hr: Energy below threshold: 5.72e+06 < 9.00e+06[0m
+[0;33mW (14300) radar-hr: Energy below threshold: 5.87e+06 < 9.00e+06[0m
+[0;33mW (14310) radar-hr: Energy below threshold: 5.51e+06 < 9.00e+06[0m
+[0;33mW (14320) radar-hr: Energy below threshold: 5.13e+06 < 9.00e+06[0m
+[0;33mW (14320) radar-hr: Energy below threshold: 6.97e+06 < 9.00e+06[0m
+[0;33mW (14330) radar-hr: Energy below threshold: 7.67e+06 < 9.00e+06[0m
+[0;33mW (14330) radar-hr: Energy below threshold: 8.12e+06 < 9.00e+06[0m
+[0;33mW (14340) radar-hr: Energy below threshold: 5.03e+06 < 9.00e+06[0m
+[0;33mW (14340) radar-hr: Energy below threshold: 5.46e+06 < 9.00e+06[0m
+[0;33mW (14350) radar-hr: Energy below threshold: 7.43e+06 < 9.00e+06[0m
+[0;33mW (14360) radar-hr: Energy below threshold: 6.33e+06 < 9.00e+06[0m
+[0;33mW (14360) radar-hr: Energy below threshold: 6.85e+06 < 9.00e+06[0m
+[0;33mW (14370) radar-hr: Energy below threshold: 7.42e+06 < 9.00e+06[0m
+[0;33mW (14370) radar-hr: Energy below threshold: 5.41e+06 < 9.00e+06[0m
+[0;33mW (14380) radar-hr: Energy below threshold: 7.32e+06 < 9.00e+06[0m
+[0;33mW (14380) radar-hr: Energy below threshold: 5.51e+06 < 9.00e+06[0m
+[0;33mW (14390) radar-hr: Energy below threshold: 6.00e+06 < 9.00e+06[0m
+[0;33mW (14390) radar-hr: Energy below threshold: 3.97e+06 < 9.00e+06[0m
+[0;33mW (14400) radar-hr: Energy below threshold: 4.46e+06 < 9.00e+06[0m
+[0;33mW (14410) radar-hr: Energy below threshold: 3.52e+06 < 9.00e+06[0m
+[0;33mW (14410) radar-hr: Energy below threshold: 3.87e+06 < 9.00e+06[0m
+[0;33mW (14420) radar-hr: Energy below threshold: 4.84e+06 < 9.00e+06[0m
+[0;33mW (14420) radar-hr: Energy below threshold: 3.69e+06 < 9.00e+06[0m
+[0;33mW (14430) radar-hr: Energy below threshold: 4.65e+06 < 9.00e+06[0m
+[0;33mW (14430) radar-hr: Energy below threshold: 4.38e+06 < 9.00e+06[0m
+[0;33mW (14440) radar-hr: Energy below threshold: 3.80e+06 < 9.00e+06[0m
+[0;33mW (14450) radar-hr: Energy below threshold: 5.21e+06 < 9.00e+06[0m
+[0;33mW (14450) radar-hr: Energy below threshold: 4.49e+06 < 9.00e+06[0m
+[0;33mW (14460) radar-hr: Energy below threshold: 4.18e+06 < 9.00e+06[0m
+[0;33mW (14460) radar-hr: Energy below threshold: 4.12e+06 < 9.00e+06[0m
+[0;33mW (14470) radar-hr: Energy below threshold: 7.20e+06 < 9.00e+06[0m
+[0;33mW (14470) radar-hr: Energy below threshold: 6.44e+06 < 9.00e+06[0m
+[0;33mW (14480) radar-hr: Energy below threshold: 3.84e+06 < 9.00e+06[0m
+[0;33mW (14480) radar-hr: Energy below threshold: 5.00e+06 < 9.00e+06[0m
+[0;33mW (14490) radar-hr: Energy below threshold: 6.72e+06 < 9.00e+06[0m
+[0;33mW (14500) radar-hr: Energy below threshold: 5.47e+06 < 9.00e+06[0m
+[0;33mW (14500) radar-hr: Energy below threshold: 7.03e+06 < 9.00e+06[0m
+[0;33mW (14510) radar-hr: Energy below threshold: 6.38e+06 < 9.00e+06[0m
+[0;33mW (14510) radar-hr: Energy below threshold: 7.83e+06 < 9.00e+06[0m
+[0;33mW (14520) radar-hr: Energy below threshold: 7.23e+06 < 9.00e+06[0m
+[0;33mW (14520) radar-hr: Energy below threshold: 7.61e+06 < 9.00e+06[0m
+[0;33mW (14530) radar-hr: Energy below threshold: 7.74e+06 < 9.00e+06[0m
+[0;33mW (14540) radar-hr: Energy below threshold: 6.90e+06 < 9.00e+06[0m
+[0;33mW (14540) radar-hr: Energy below threshold: 5.99e+06 < 9.00e+06[0m
+[0;33mW (14550) radar-hr: Energy below threshold: 7.60e+06 < 9.00e+06[0m
+[0;33mW (14550) radar-hr: Energy below threshold: 6.16e+06 < 9.00e+06[0m
+[0;33mW (14560) radar-hr: Energy below threshold: 8.59e+06 < 9.00e+06[0m
+[0;33mW (14560) radar-hr: Energy below threshold: 6.84e+06 < 9.00e+06[0m
+[0;33mW (14570) radar-hr: Energy below threshold: 7.45e+06 < 9.00e+06[0m
+[0;33mW (14580) radar-hr: Energy below threshold: 7.05e+06 < 9.00e+06[0m
+[0;33mW (14580) radar-hr: Energy below threshold: 6.47e+06 < 9.00e+06[0m
+[0;33mW (14590) radar-hr: Energy below threshold: 6.79e+06 < 9.00e+06[0m
+[0;33mW (14590) radar-hr: Energy below threshold: 6.27e+06 < 9.00e+06[0m
+[0;33mW (14600) radar-hr: Energy below threshold: 6.71e+06 < 9.00e+06[0m
+[0;33mW (14600) radar-hr: Energy below threshold: 6.77e+06 < 9.00e+06[0m
+[0;33mW (14610) radar-hr: Energy below threshold: 5.93e+06 < 9.00e+06[0m
+[0;33mW (14610) radar-hr: Energy below threshold: 6.84e+06 < 9.00e+06[0m
+[0;33mW (14620) radar-hr: Energy below threshold: 6.28e+06 < 9.00e+06[0m
+[0;33mW (14630) radar-hr: Energy below threshold: 6.14e+06 < 9.00e+06[0m
+[0;33mW (14630) radar-hr: Energy below threshold: 8.38e+06 < 9.00e+06[0m
+[0;33mW (14640) radar-hr: Energy below threshold: 8.15e+06 < 9.00e+06[0m
+[0;33mW (14640) radar-hr: Energy below threshold: 5.53e+06 < 9.00e+06[0m
+[0;33mW (14650) radar-hr: Energy below threshold: 6.79e+06 < 9.00e+06[0m
+[0;33mW (14650) radar-hr: Energy below threshold: 5.63e+06 < 9.00e+06[0m
+[0;33mW (14660) radar-hr: Energy below threshold: 5.75e+06 < 9.00e+06[0m
+[0;33mW (14670) radar-hr: Energy below threshold: 7.77e+06 < 9.00e+06[0m
+[0;33mW (14670) radar-hr: Energy below threshold: 6.36e+06 < 9.00e+06[0m
+[0;33mW (14680) radar-hr: Energy below threshold: 8.78e+06 < 9.00e+06[0m
+[0;33mW (14680) radar-hr: Energy below threshold: 5.85e+06 < 9.00e+06[0m
+[0;33mW (14690) radar-hr: Energy below threshold: 7.23e+06 < 9.00e+06[0m
+[0;33mW (14690) radar-hr: Energy below threshold: 8.66e+06 < 9.00e+06[0m
+[0;33mW (14700) radar-hr: Energy below threshold: 8.31e+06 < 9.00e+06[0m
+[0;33mW (14700) radar-hr: Energy below threshold: 7.28e+06 < 9.00e+06[0m
+[0;33mW (14710) radar-hr: Energy below threshold: 8.33e+06 < 9.00e+06[0m
+[0;33mW (14720) radar-hr: Energy below threshold: 8.40e+06 < 9.00e+06[0m
+[0;33mW (14720) radar-hr: Energy below threshold: 6.96e+06 < 9.00e+06[0m
+[0;33mW (14730) radar-hr: Energy below threshold: 6.40e+06 < 9.00e+06[0m
+[0;33mW (14730) radar-hr: Energy below threshold: 8.59e+06 < 9.00e+06[0m
+[0;33mW (14740) radar-hr: Energy below threshold: 5.70e+06 < 9.00e+06[0m
+[0;33mW (14740) radar-hr: Energy below threshold: 4.55e+06 < 9.00e+06[0m
+[0;33mW (14750) radar-hr: Energy below threshold: 6.83e+06 < 9.00e+06[0m
+[0;33mW (14760) radar-hr: Energy below threshold: 8.30e+06 < 9.00e+06[0m
+[0;33mW (14760) radar-hr: Energy below threshold: 8.81e+06 < 9.00e+06[0m
+[0;33mW (14770) radar-hr: Energy below threshold: 7.06e+06 < 9.00e+06[0m

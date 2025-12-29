@@ -17,4 +17,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/bootloader.elf
+file D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader/bootloader.elf

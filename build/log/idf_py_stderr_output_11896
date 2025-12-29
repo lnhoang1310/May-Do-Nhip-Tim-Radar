@@ -1,0 +1,55 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.8.0 on \\.\COM16 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x42010307: [0;33mxensiv_bgt60tr13c_get_reg[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/bgt60tr13c_driver/bgt60tr13c_driver.c[0m[0m:[1;31m253[0m
+[0m--- 0x40374340: [0;33m_UserExceptionVector[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m621[0m
+[0m--- 0x40054bf0: [0;33m__divdf3[0m[0m in [0;32mROM[0m
+[0m--- 0x40054c0f: [0;33m__divdf3[0m[0m in [0;32mROM[0m
+[0m--- 0x4037433d: [0;33m_KernelExceptionVector[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x4037742e: [0;33mgpio_intr_service[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_driver_gpio/src/gpio.c[0m[0m:[1;31m512[0m
+[0m--- 0x4037717d: [0;33m_xt_lowint1[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/xtensa_vectors.S[0m[0m:[1;31m1240[0m
+[0m--- 0x4208c271: [0;33m__kernel_cosf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libm/math/kf_cos.c[0m[0m:[1;31m43[0m
+[0m--- 0x4208c197: [0;33mcosf[0m[0m at [0;32m/builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libm/math/sf_cos.c[0m[0m:[1;31m44[0m
+[0m--- 0x4200bd83: [0;33mcalculate_heart_rate[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m223[0m
+[0m--- 0x4200c209: [0;33mradar_task[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m373[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037b266: [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/cpu.c[0m[0m:[1;31m64[0m
+[0m--- 0x40375b48: [0;33mipc_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_ipc.c[0m[0m:[1;31m53[0m
+[0m--- 0x4037b263: [0;33mxt_utils_wait_for_intr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/xtensa/include/xt_utils.h[0m[0m:[1;31m82[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_hw_support/cpu.c[0m[0m:[1;31m55[0m
+[0m--- 0x420a4f46: [0;33mesp_vApplicationIdleHook[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/freertos_hooks.c[0m[0m:[1;31m58[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d680: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200c2bb: [0;33mBGT60TR13C_Init[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m455[0m
+[0m--- 0x4037d4ef: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037d531: [0;33mpanic_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037d4f9: [0;33mesp_system_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403865b5: [0;33mabort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037d4ef: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4200c2bb: [0;33mBGT60TR13C_Init[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m455[0m
+[0m--- 0x4200b7b8: [0;33mapp_main[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/main/Project_Anh_Sao.c[0m[0m:[1;31m17[0m
+[0m--- 0x420a5c00: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d680: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m--- 0x4200c2bb: [0;33mBGT60TR13C_Init[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m455[0m
+[0m--- 0x4037d4ef: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4037d531: [0;33mpanic_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/panic.c[0m[0m:[1;31m469[0m
+[0m--- 0x4037d4f9: [0;33mesp_system_abort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/esp_system_chip.c[0m[0m:[1;31m87[0m
+[0m--- 0x403865b5: [0;33mabort[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/newlib/src/abort.c[0m[0m:[1;31m38[0m
+[0m--- 0x4037d4ef: [0;33m_esp_error_check_failed[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0m--- 0x4200c2bb: [0;33mBGT60TR13C_Init[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate/BGT60TR13C_API_HeartRate.c[0m[0m:[1;31m455[0m
+[0m--- 0x4200b7b8: [0;33mapp_main[0m[0m at [0;32mD:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/main/Project_Anh_Sao.c[0m[0m:[1;31m17[0m
+[0m--- 0x420a5c00: [0;33mmain_task[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/app_startup.c[0m[0m:[1;31m208[0m
+[0m--- 0x4037e221: [0;33mvPortTaskWrapper[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m139[0m
+[0m--- 0x4037d680: [0;33mesp_restart_noos[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m162[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8924: [0;33mcall_start_cpu0[0m[0m at [0;32mC:/Espressif/frameworks/esp-idf-v5.5.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m25[0m
+[0m

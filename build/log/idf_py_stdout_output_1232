@@ -1,0 +1,995 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 2ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21ae0h (137952) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031b08 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036638 vaddr=40374000 size=099e0h ( 39392) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a670ch (681740) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6734 vaddr=4037d9e0 size=0f0d0h ( 61648) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f580c vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  ad1f8a053...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA5DA8 len 00043968 (270 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced4b0, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (620) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (620) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (630) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (640) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (680) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (680) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (680) wifi:pm start, type: 1[0m
+
+[0;32mI (680) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (690) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (760) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1740) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1740) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2070) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;33mW (2080) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2080) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[0;32mI (2090) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[1;31mE (2100) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x420101c7
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2130) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2640) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (2640) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (2650) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2660) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2670) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2670) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2680) radar-vital: Measuring STARTED by MQTT[0m
+[0;32mI (2710) MQTT_Service: MQTT Connected[0m
+[0;32mI (3540) radar-vital: Nhịp tim: 91.8 BPM (tức thì: 91.8 BPM | peak: 1.53 Hz | Fs=195.9 Hz)[0m
+[0;32mI (4170) radar-vital: Nhịp tim: 92.4 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.4 Hz)[0m
+[0;32mI (4810) radar-vital: Nhịp tim: 92.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (5450) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (6090) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (6730) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (7370) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (8010) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (8650) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (9290) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (9940) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (10580) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (11220) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (11860) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (12500) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (13140) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (13780) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (14420) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (15070) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (15700) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.4 Hz)[0m
+[0;32mI (16340) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (16980) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (17620) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (18260) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (18900) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (19540) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (20180) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (20820) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (21460) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 95.2 BPM | peak: 1.59 Hz | Fs=203.0 Hz)[0m
+[0;32mI (22110) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (22750) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (23390) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (24030) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (24670) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (25310) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (25950) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (26590) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.56 Hz | Fs=199.1 Hz)[0m
+[0;32mI (27230) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (27870) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (28510) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (29150) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (29790) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (30430) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (31070) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (31710) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (32360) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.2 Hz)[0m
+[0;32mI (32990) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.2 Hz)[0m
+[0;32mI (33630) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 95.0 BPM | peak: 1.58 Hz | Fs=202.7 Hz)[0m
+[0;32mI (34280) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (34920) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (35560) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (36200) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (36840) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (37480) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (38120) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (38770) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (39400) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (40040) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (40680) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (41320) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (41960) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (42600) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (43240) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (43880) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (44520) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (45170) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (45810) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (46450) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (47090) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (47730) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (48370) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (49010) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (49650) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (50300) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (50930) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (51570) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (52210) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (52850) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (53490) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (54130) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (54770) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (55410) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (56050) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (56690) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.2 Hz)[0m
+[0;32mI (57330) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (57980) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (58620) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (59260) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (59900) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (60540) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (61180) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (61820) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (62470) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (63100) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (63730) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.9 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (64380) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (65020) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (65660) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (66300) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (66940) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (67580) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (68220) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (68870) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (69510) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (70150) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (70790) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (71430) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (72070) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (72710) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (73350) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (74000) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (74630) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (75270) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (75910) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (76550) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (77190) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (77830) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (78470) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (79110) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (79750) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (80390) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (81040) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (81680) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (82320) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (82960) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (83600) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (84240) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (84880) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (85520) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (86160) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (86800) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.7 Hz)[0m
+[0;32mI (87440) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (88080) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (88720) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (89360) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (90000) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (90640) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (91280) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (91930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (92570) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (93210) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (93850) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (94490) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (95130) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (95770) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (96410) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.3 BPM | peak: 1.56 Hz | Fs=199.1 Hz)[0m
+[0;32mI (97050) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (97690) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (98330) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (98970) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (99610) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (100250) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (100890) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (101530) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (102170) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (102810) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (103450) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (104100) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (104740) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (105380) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (106020) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (106660) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (107300) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (107940) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (108580) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (109220) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (109870) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (110500) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (111140) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (111780) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (112420) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (113060) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (113700) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (114340) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (114980) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (115630) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (116270) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (116910) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (117550) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (118190) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (118830) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (119470) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (120110) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (120750) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (121390) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (122030) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (122670) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (123310) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (123950) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (124590) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (125230) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (125870) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (126510) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (127160) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (127800) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (128440) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (129070) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.9 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (129720) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (130360) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (131000) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (131640) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (132280) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (132920) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (133570) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (134190) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 95.3 BPM | peak: 1.59 Hz | Fs=203.3 Hz)[0m
+[0;32mI (134840) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (135480) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (136120) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (136760) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (137400) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (138040) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (138680) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (139330) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (139970) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (140610) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (141250) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (141890) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (142530) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (143170) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (143810) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (144450) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (145100) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (145730) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (146370) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (147010) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.5 Hz)[0m
+[0;32mI (147650) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (148290) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (148930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (149570) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (150210) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (150860) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.2 Hz)[0m
+[0;32mI (151490) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.9 BPM | peak: 1.56 Hz | Fs=200.3 Hz)[0m
+[0;32mI (152140) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.1 BPM | peak: 1.55 Hz | Fs=198.6 Hz)[0m
+[0;32mI (152780) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (153420) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (154060) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (154700) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (155340) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (155980) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (156620) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (157270) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.4 Hz)[0m
+[0;32mI (157910) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (158540) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (159170) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (159820) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (160460) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (161100) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (161740) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (162380) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (163030) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (163660) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (164310) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (164950) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (165590) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (166230) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (166870) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (167510) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (168150) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (168800) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (169430) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (170070) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (170710) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (171350) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (171990) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (172630) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (173270) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (173910) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (174550) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (175190) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (175840) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (176480) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (177120) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (177760) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (178400) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (179040) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (179680) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (180320) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (180960) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (181600) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (182240) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.7 Hz)[0m
+[0;32mI (182880) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (183520) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (184160) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (184800) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (185440) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (186080) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (186720) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (187360) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.4 Hz)[0m
+[0;32mI (188010) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (188650) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (189290) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.3 BPM | peak: 1.56 Hz | Fs=199.1 Hz)[0m
+[0;32mI (189930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (190570) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (191210) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (191850) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (192500) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (193130) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (193770) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (194410) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (195050) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (195690) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (196330) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (196970) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (197610) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (198250) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (198890) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (199530) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.7 BPM | peak: 1.59 Hz | Fs=204.2 Hz)[0m
+[0;32mI (200180) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (200820) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (201460) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (202100) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (202740) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (203380) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (204020) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (204670) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (205300) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (205940) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (206580) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (207220) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (207860) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (208500) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (209140) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (209780) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (210420) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (211060) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.7 BPM | peak: 1.60 Hz | Fs=204.2 Hz)[0m
+[0;32mI (211710) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (212350) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (212990) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (213630) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (214270) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (214910) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (215550) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (216190) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (216830) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.6 BPM | peak: 1.54 Hz | Fs=197.6 Hz)[0m
+[0;32mI (217470) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (218110) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (218750) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (219390) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (220030) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (220670) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (221310) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (221950) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (222590) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (223240) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.7 Hz)[0m
+[0;32mI (223880) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (224520) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (225160) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (225800) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (226440) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (227080) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (227720) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (228360) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (229000) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (229640) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (230280) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (230920) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (231560) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (232200) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (232840) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (233480) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (234120) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (234770) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.1 BPM | peak: 1.57 Hz | Fs=200.7 Hz)[0m
+[0;32mI (235410) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (236050) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[1;31mE (236190) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (236190) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (236200) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (236690) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (237330) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (237970) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (238610) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (239250) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (239890) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (240530) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (241170) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (241810) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (242450) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.5 Hz)[0m
+[0;32mI (243090) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (243730) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (244370) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (245010) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (245650) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (246300) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (246930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.9 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (247580) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.5 Hz)[0m
+[0;32mI (248220) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (248860) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (249500) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (250140) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (250780) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (251420) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (252060) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.8 Hz)[0m
+[0;32mI (252070) MQTT_Service: MQTT Connected[0m
+[0;32mI (252700) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (253340) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (253980) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (254610) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.2 Hz)[0m
+[0;32mI (255260) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (255900) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (256540) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (257180) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (257830) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (258460) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (259110) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (259750) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (260390) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (261030) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (261670) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (262310) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (262950) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (263600) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (264240) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (264870) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.5 Hz)[0m
+[0;32mI (265510) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (266150) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (266790) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (267430) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (268070) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (268710) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (269350) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (269990) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (270630) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (271280) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (271920) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (272560) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (273200) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (273840) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (274480) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (275120) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (275770) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (276400) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (277040) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (277680) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (278320) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (278960) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (279600) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (280240) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (280880) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (281520) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (282160) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (282810) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (283450) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (284090) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (284730) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (285370) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (286010) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (286650) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (287290) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (287930) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.56 Hz | Fs=199.1 Hz)[0m
+[0;32mI (288570) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (289210) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (289850) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (290490) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (291130) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (291770) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (292410) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (293050) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (293690) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (294340) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (294980) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (295620) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (296260) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (296900) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (297540) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (298180) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (298820) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (299470) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 91.9 BPM | peak: 1.53 Hz | Fs=196.1 Hz)[0m
+[0;32mI (300100) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.5 Hz)[0m
+[0;32mI (300740) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (301380) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (302020) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (302660) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (303300) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (303940) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (304580) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (305220) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (305860) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.5 Hz)[0m
+[0;32mI (306500) radar-vital: Nhịp tim: 94.8 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (307150) radar-vital: Nhịp tim: 94.8 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (307790) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (308430) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (309070) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (309710) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (310350) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (311000) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (311630) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (312270) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (312910) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.5 Hz)[0m
+[0;32mI (313550) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (314190) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (314830) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (315470) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (316110) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (316750) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (317390) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=200.9 Hz)[0m
+[0;32mI (318030) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (318680) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (319320) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (319960) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (320600) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (321240) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (321880) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (322520) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (323170) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (323800) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (324440) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (325070) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (325720) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (326360) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (327000) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (327640) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (328280) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (328920) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (329560) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (330210) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.1 BPM | peak: 1.57 Hz | Fs=200.7 Hz)[0m
+[0;32mI (330850) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (331490) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (332130) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (332770) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (333410) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (334050) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (334690) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 92.4 BPM | peak: 1.54 Hz | Fs=197.2 Hz)[0m
+[0;32mI (335330) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (335970) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (336610) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (337250) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (337890) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (338530) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (339170) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (339810) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (340450) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (341090) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (341730) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.4 Hz)[0m
+[0;32mI (342370) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.4 Hz)[0m
+[0;32mI (343020) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.1 BPM | peak: 1.55 Hz | Fs=198.6 Hz)[0m
+[0;32mI (343660) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (344300) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (344940) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (345580) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (346220) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (346860) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (347500) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (348140) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (348780) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (349420) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (350060) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (350700) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (351340) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (351980) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (352620) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.2 Hz)[0m
+[0;32mI (353270) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (353910) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (354550) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (355190) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (355830) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (356470) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (357110) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (357750) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (358390) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (359040) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (359670) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (360310) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (360950) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (361590) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (362230) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (362870) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (363510) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (364150) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (364800) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (365440) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (366080) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (366720) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (367360) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (368000) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (368640) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (369280) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (369920) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (370570) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (371210) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (371840) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (372480) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (373120) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (373760) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (374400) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (375040) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (375680) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (376330) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (376960) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (377610) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (378250) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (378890) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (379530) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (380170) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.3 BPM | peak: 1.56 Hz | Fs=199.1 Hz)[0m
+[0;32mI (380810) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (381450) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (382090) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (382730) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (383370) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (384010) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (384650) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (385290) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (385930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (386570) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (387210) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (387850) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (388500) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (389130) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (389780) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (390420) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (391060) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (391700) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (392340) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (392980) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (393620) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (394260) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (394900) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (395540) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (396180) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (396820) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (397460) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (398100) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (398740) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (399380) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (400030) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.2 Hz)[0m
+[0;32mI (400670) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (401310) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (401950) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (402590) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (403230) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (403870) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (404510) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (405150) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (405790) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (406440) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (407070) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (407710) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (408350) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.5 Hz)[0m
+[0;32mI (408990) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (409630) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (410270) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (410910) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (411550) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (412190) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (412830) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (413480) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.7 Hz)[0m
+[0;32mI (414120) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (414760) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (415400) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (416040) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (416680) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (417320) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (417970) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.2 Hz)[0m
+[0;32mI (418610) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (419240) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.4 Hz)[0m
+[0;32mI (419880) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (420510) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.2 Hz)[0m
+[0;32mI (421160) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (421800) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (422440) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (423080) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (423720) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=200.9 Hz)[0m
+[0;32mI (424360) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.7 BPM | peak: 1.60 Hz | Fs=204.2 Hz)[0m
+[0;32mI (425010) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (425650) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (426290) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (426930) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (427570) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (428210) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (428850) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (429490) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (430130) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 92.4 BPM | peak: 1.54 Hz | Fs=197.0 Hz)[0m
+[0;32mI (430770) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (431410) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (432050) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (432690) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (433330) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (433970) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (434610) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (435250) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (435890) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (436530) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (437180) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (437810) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (438460) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.1 BPM | peak: 1.55 Hz | Fs=198.6 Hz)[0m
+[0;32mI (439100) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (439740) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (440380) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (441020) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (441660) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (442310) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.2 BPM | peak: 1.54 Hz | Fs=196.6 Hz)[0m
+[0;32mI (442940) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 95.1 BPM | peak: 1.58 Hz | Fs=202.8 Hz)[0m
+[0;32mI (443580) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (444220) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (444860) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (445500) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (446140) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (446780) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (447420) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (448070) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.1 BPM | peak: 1.55 Hz | Fs=198.5 Hz)[0m
+[0;32mI (448710) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (449350) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (449990) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (450630) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (451270) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (451910) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (452550) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (453190) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (453830) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (454470) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (455110) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (455750) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (456390) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (457030) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (457670) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (458310) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (458950) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (459600) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (460240) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (460880) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.7 Hz)[0m
+[0;32mI (461520) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (462160) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (462800) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (463440) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (464080) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (464720) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (465360) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (466000) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.7 Hz)[0m
+[0;32mI (466650) radar-vital: Nhịp tim: 93.4 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.5 Hz)[0m
+[0;32mI (467280) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (467920) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (468560) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.6 BPM | peak: 1.58 Hz | Fs=201.7 Hz)[0m
+[0;32mI (469200) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (469840) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (470480) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (471130) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.4 Hz)[0m
+[0;32mI (471770) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (472410) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (473050) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (473690) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (474330) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (474970) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (475610) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.2 Hz)[0m
+[0;32mI (476250) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (476890) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (477540) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.3 Hz)[0m
+[0;32mI (478170) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.2 Hz)[0m
+[0;32mI (478810) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (479450) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (480090) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (480730) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (481370) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (482010) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (482650) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (483290) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=200.9 Hz)[0m
+[0;32mI (483940) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (484580) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (485220) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (485860) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (486500) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (487140) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (487780) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (488420) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (489060) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (489700) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (490340) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (490980) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (491620) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (492260) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (492900) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (493540) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.6 Hz)[0m
+[0;32mI (494180) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (494820) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (495460) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (496110) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.1 Hz)[0m
+[0;32mI (496750) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (497390) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (498030) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (498670) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (499310) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (499950) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (500590) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (501240) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.0 BPM | peak: 1.53 Hz | Fs=196.4 Hz)[0m
+[0;32mI (501870) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (502510) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (503150) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (503790) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.6 Hz)[0m
+[0;32mI (504430) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (505070) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (505710) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (506350) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (507000) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (507630) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.7 BPM | peak: 1.58 Hz | Fs=202.1 Hz)[0m
+[0;32mI (508270) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.9 BPM | peak: 1.58 Hz | Fs=202.5 Hz)[0m
+[0;32mI (508920) radar-vital: Nhịp tim: 94.0 BPM (tức thì: 93.1 BPM | peak: 1.55 Hz | Fs=198.5 Hz)[0m
+[0;32mI (509560) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (510200) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (510840) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (511480) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.4 Hz)[0m
+[0;32mI (512120) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.4 BPM | peak: 1.56 Hz | Fs=199.3 Hz)[0m
+[0;32mI (512760) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.3 BPM | peak: 1.55 Hz | Fs=199.0 Hz)[0m
+[0;32mI (513410) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 92.2 BPM | peak: 1.54 Hz | Fs=196.6 Hz)[0m
+[0;32mI (514040) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 94.8 BPM | peak: 1.58 Hz | Fs=202.3 Hz)[0m
+[0;32mI (514680) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m

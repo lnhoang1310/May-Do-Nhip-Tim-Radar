@@ -1,0 +1,861 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21a20h (137760) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031a48 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036578 vaddr=40374000 size=09aa0h ( 39584) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6400h (680960) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6428 vaddr=4037daa0 size=0f010h ( 61456) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5440 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  c46f89661...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA6268 len 000434A8 (269 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (354) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (570) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (590) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (660) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = d6:3e:aa:4c:2f:b2[0m
+[0;32mI (660) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (660) wifi:pm start, type: 1[0m
+
+[0;32mI (660) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (670) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (680) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1870) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1870) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2070) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2070) wifi:<ba-add>idx:0 (ifx:0, d6:3e:aa:4c:2f:b2), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2100) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x42010003
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2130) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2640) radar-hr: Setting CCR2 for endless frames.[0m
+[0;32mI (2640) radar-hr: Original CCR2 value: 0x00000000[0m
+[0;32mI (2650) radar-hr: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2660) radar-hr: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2670) radar-hr: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2670) radar-hr: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2710) MQTT_Service: MQTT Connected[0m
+[0;32mI (2840) radar-hr: Energy=1.71e+07 Bin=2.2 Var=1.185e-02 Score=0[0m
+[0;32mI (2860) radar-hr: Energy=2.09e+07 Bin=11.0 Var=2.348e-02 Score=0[0m
+[0;32mI (2870) radar-hr: Energy=2.28e+07 Bin=11.0 Var=3.717e-02 Score=0[0m
+[0;32mI (2870) radar-hr: Energy=2.32e+07 Bin=11.0 Var=5.113e-02 Score=1[0m
+[0;32mI (2880) radar-hr: Energy=2.29e+07 Bin=11.0 Var=6.045e-02 Score=2[0m
+[0;32mI (2880) radar-hr: Energy=1.90e+07 Bin=11.0 Var=6.995e-02 Score=3[0m
+[0;32mI (2900) radar-hr: Energy=2.19e+07 Bin=11.0 Var=7.970e-02 Score=4[0m
+[0;32mI (2900) radar-hr: Energy=2.37e+07 Bin=11.0 Var=9.327e-02 Score=5[0m
+[0;32mI (2900) radar-hr: Energy=2.28e+07 Bin=11.0 Var=1.018e-01 Score=6[0m
+[0;32mI (2900) radar-hr: Energy=2.04e+07 Bin=11.0 Var=1.106e-01 Score=7[0m
+[0;32mI (2910) radar-hr: Energy=2.28e+07 Bin=11.0 Var=1.204e-01 Score=8[0m
+[0;32mI (2910) radar-hr: Energy=2.29e+07 Bin=11.0 Var=1.280e-01 Score=9[0m
+[0;32mI (2920) radar-hr: Energy=2.56e+07 Bin=11.0 Var=1.362e-01 Score=10[0m
+[0;32mI (2930) radar-hr: Energy=2.37e+07 Bin=11.0 Var=1.456e-01 Score=11[0m
+[0;32mI (2930) radar-hr: Energy=2.06e+07 Bin=11.0 Var=1.528e-01 Score=12[0m
+[0;32mI (2940) radar-hr: Energy=2.06e+07 Bin=11.0 Var=1.587e-01 Score=13[0m
+[0;32mI (2940) radar-hr: Energy=2.38e+07 Bin=11.0 Var=1.652e-01 Score=14[0m
+[0;32mI (2950) radar-hr: Energy=2.24e+07 Bin=11.0 Var=1.725e-01 Score=15[0m
+[0;32mI (2960) radar-hr: Energy=2.23e+07 Bin=11.0 Var=1.776e-01 Score=16[0m
+[0;32mI (2960) radar-hr: Energy=2.11e+07 Bin=11.0 Var=1.823e-01 Score=17[0m
+[0;32mI (2970) radar-hr: Energy=1.96e+07 Bin=11.0 Var=1.870e-01 Score=18[0m
+[0;32mI (2970) radar-hr: Energy=2.20e+07 Bin=11.0 Var=1.896e-01 Score=19[0m
+[0;32mI (2980) radar-hr: Energy=2.00e+07 Bin=11.0 Var=1.930e-01 Score=20[0m
+[0;32mI (2990) radar-hr: Energy=2.19e+07 Bin=11.0 Var=1.972e-01 Score=21[0m
+[0;32mI (2990) radar-hr: Energy=2.36e+07 Bin=11.0 Var=2.001e-01 Score=22[0m
+[0;32mI (3000) radar-hr: Energy=2.19e+07 Bin=11.0 Var=2.033e-01 Score=23[0m
+[0;32mI (3000) radar-hr: Energy=2.22e+07 Bin=11.0 Var=2.043e-01 Score=24[0m
+[0;32mI (3010) radar-hr: Energy=2.10e+07 Bin=11.0 Var=2.056e-01 Score=25[0m
+[0;32mI (3020) radar-hr: Energy=2.38e+07 Bin=11.0 Var=2.074e-01 Score=26[0m
+[0;32mI (3020) radar-hr: Energy=2.23e+07 Bin=11.0 Var=2.105e-01 Score=27[0m
+[0;32mI (3030) radar-hr: Energy=2.17e+07 Bin=11.0 Var=2.103e-01 Score=28[0m
+[0;32mI (3030) radar-hr: Energy=2.39e+07 Bin=11.0 Var=2.104e-01 Score=29[0m
+[0;32mI (3040) radar-hr: Energy=1.73e+07 Bin=11.0 Var=2.102e-01 Score=30[0m
+[0;32mI (3040) radar-hr: Energy=1.97e+07 Bin=11.0 Var=2.095e-01 Score=31[0m
+[0;32mI (3050) radar-hr: Energy=2.39e+07 Bin=11.0 Var=2.082e-01 Score=32[0m
+[0;32mI (3060) radar-hr: Energy=2.30e+07 Bin=11.0 Var=2.065e-01 Score=33[0m
+[0;32mI (3060) radar-hr: Energy=1.95e+07 Bin=11.0 Var=2.040e-01 Score=34[0m
+[0;32mI (3070) radar-hr: Energy=2.00e+07 Bin=11.0 Var=2.026e-01 Score=35[0m
+[0;32mI (3070) radar-hr: Energy=2.27e+07 Bin=11.0 Var=2.002e-01 Score=36[0m
+[0;32mI (3080) radar-hr: Energy=2.39e+07 Bin=11.0 Var=1.976e-01 Score=37[0m
+[0;32mI (3090) radar-hr: Energy=1.80e+07 Bin=11.0 Var=1.947e-01 Score=38[0m
+[0;32mI (3090) radar-hr: Energy=2.24e+07 Bin=11.0 Var=1.904e-01 Score=39[0m
+[0;32mI (3100) radar-hr: Energy=2.12e+07 Bin=11.0 Var=1.857e-01 Score=40[0m
+[0;32mI (3100) radar-hr: Energy=2.03e+07 Bin=11.0 Var=1.810e-01 Score=41[0m
+[0;32mI (3110) radar-hr: Energy=2.50e+07 Bin=11.0 Var=1.756e-01 Score=42[0m
+[0;32mI (3120) radar-hr: Energy=2.39e+07 Bin=11.0 Var=1.695e-01 Score=43[0m
+[0;32mI (3120) radar-hr: Energy=2.22e+07 Bin=11.0 Var=1.638e-01 Score=44[0m
+[0;32mI (3130) radar-hr: Energy=2.11e+07 Bin=11.0 Var=1.579e-01 Score=45[0m
+[0;32mI (3130) radar-hr: Energy=1.87e+07 Bin=11.0 Var=1.513e-01 Score=46[0m
+[0;32mI (3140) radar-hr: Energy=2.07e+07 Bin=11.0 Var=1.441e-01 Score=47[0m
+[0;32mI (3150) radar-hr: Energy=1.69e+07 Bin=11.0 Var=1.362e-01 Score=48[0m
+[0;32mI (3150) radar-hr: Energy=2.31e+07 Bin=11.0 Var=1.280e-01 Score=49[0m
+[0;32mI (3160) radar-hr: Energy=1.89e+07 Bin=11.0 Var=1.198e-01 Score=50[0m
+[0;32mI (3160) radar-hr: Energy=2.39e+07 Bin=11.0 Var=1.109e-01 Score=51[0m
+[0;32mI (3170) radar-hr: Energy=2.22e+07 Bin=11.0 Var=1.017e-01 Score=52[0m
+[0;32mI (3170) radar-hr: Energy=1.84e+07 Bin=11.0 Var=9.209e-02 Score=53[0m
+[0;32mI (3180) radar-hr: Energy=2.48e+07 Bin=11.0 Var=8.218e-02 Score=54[0m
+[0;32mI (3190) radar-hr: Energy=2.26e+07 Bin=11.0 Var=7.194e-02 Score=55[0m
+[0;32mI (3190) radar-hr: Energy=2.27e+07 Bin=11.0 Var=6.142e-02 Score=56[0m
+[0;32mI (3200) radar-hr: Energy=1.82e+07 Bin=11.0 Var=5.050e-02 Score=57[0m
+[0;32mI (3200) radar-hr: Energy=2.35e+07 Bin=11.0 Var=3.918e-02 Score=56[0m
+[0;32mI (3210) radar-hr: Energy=2.07e+07 Bin=11.0 Var=2.771e-02 Score=55[0m
+[0;32mI (3220) radar-hr: Energy=2.03e+07 Bin=11.0 Var=1.571e-02 Score=54[0m
+[0;32mI (3220) radar-hr: Energy=1.92e+07 Bin=11.0 Var=3.391e-03 Score=53[0m
+[0;32mI (3230) radar-hr: Energy=2.12e+07 Bin=11.0 Var=3.430e-03 Score=52[0m
+[0;32mI (3230) radar-hr: Energy=2.34e+07 Bin=11.0 Var=3.470e-03 Score=51[0m
+[0;32mI (3240) radar-hr: Energy=2.24e+07 Bin=11.0 Var=3.483e-03 Score=50[0m
+[0;32mI (3250) radar-hr: Energy=2.39e+07 Bin=11.0 Var=3.331e-03 Score=49[0m
+[0;32mI (3250) radar-hr: Energy=1.72e+07 Bin=11.0 Var=3.299e-03 Score=48[0m
+[0;32mI (3260) radar-hr: Energy=2.20e+07 Bin=11.0 Var=3.495e-03 Score=47[0m
+[0;32mI (3260) radar-hr: Energy=2.27e+07 Bin=11.0 Var=3.494e-03 Score=46[0m
+[0;32mI (3270) radar-hr: Energy=2.19e+07 Bin=11.0 Var=3.349e-03 Score=45[0m
+[0;32mI (3270) radar-hr: Energy=2.02e+07 Bin=11.0 Var=3.411e-03 Score=44[0m
+[0;32mI (3280) radar-hr: Energy=2.15e+07 Bin=11.0 Var=3.463e-03 Score=43[0m
+[0;32mI (3290) radar-hr: Energy=2.01e+07 Bin=11.0 Var=3.402e-03 Score=42[0m
+[0;32mI (3290) radar-hr: Energy=1.93e+07 Bin=11.0 Var=3.457e-03 Score=41[0m
+[0;32mI (3300) radar-hr: Energy=1.86e+07 Bin=11.0 Var=3.436e-03 Score=40[0m
+[0;32mI (3300) radar-hr: Energy=1.78e+07 Bin=11.0 Var=3.379e-03 Score=39[0m
+[0;32mI (3310) radar-hr: Energy=2.09e+07 Bin=11.0 Var=3.398e-03 Score=38[0m
+[0;32mI (3320) radar-hr: Energy=2.24e+07 Bin=11.0 Var=3.397e-03 Score=37[0m
+[0;32mI (3320) radar-hr: Energy=2.30e+07 Bin=11.0 Var=3.501e-03 Score=36[0m
+[0;32mI (3330) radar-hr: Energy=2.15e+07 Bin=11.0 Var=3.369e-03 Score=35[0m
+[0;32mI (3330) radar-hr: Energy=2.00e+07 Bin=11.0 Var=3.439e-03 Score=34[0m
+[0;32mI (3340) radar-hr: Energy=1.95e+07 Bin=11.0 Var=3.477e-03 Score=33[0m
+[0;32mI (3350) radar-hr: Energy=1.76e+07 Bin=11.0 Var=3.522e-03 Score=32[0m
+[0;32mI (3350) radar-hr: Energy=1.91e+07 Bin=11.0 Var=3.480e-03 Score=31[0m
+[0;32mI (3360) radar-hr: Energy=1.88e+07 Bin=11.0 Var=3.606e-03 Score=30[0m
+[0;32mI (3360) radar-hr: Energy=1.81e+07 Bin=11.0 Var=3.649e-03 Score=29[0m
+[0;32mI (3370) radar-hr: Energy=2.19e+07 Bin=11.0 Var=3.677e-03 Score=28[0m
+[0;32mI (3380) radar-hr: Energy=2.12e+07 Bin=11.0 Var=3.707e-03 Score=27[0m
+[0;32mI (3380) radar-hr: Energy=1.61e+07 Bin=11.0 Var=3.698e-03 Score=26[0m
+[0;32mI (3390) radar-hr: Energy=2.20e+07 Bin=11.0 Var=3.743e-03 Score=25[0m
+[0;32mI (3390) radar-hr: Energy=2.14e+07 Bin=11.0 Var=4.023e-03 Score=24[0m
+[0;32mI (3400) radar-hr: Energy=1.75e+07 Bin=11.0 Var=3.613e-03 Score=23[0m
+[0;32mI (3400) radar-hr: Energy=2.12e+07 Bin=11.0 Var=3.621e-03 Score=22[0m
+[0;32mI (3410) radar-hr: Energy=2.11e+07 Bin=11.0 Var=3.626e-03 Score=21[0m
+[0;32mI (3420) radar-hr: Energy=2.49e+07 Bin=11.0 Var=4.208e-03 Score=20[0m
+[0;32mI (3420) radar-hr: Energy=2.22e+07 Bin=11.0 Var=4.177e-03 Score=19[0m
+[0;32mI (3430) radar-hr: Energy=2.01e+07 Bin=11.0 Var=4.237e-03 Score=18[0m
+[0;32mI (3430) radar-hr: Energy=1.87e+07 Bin=11.0 Var=4.392e-03 Score=17[0m
+[0;32mI (3440) radar-hr: Energy=1.80e+07 Bin=11.0 Var=4.688e-03 Score=16[0m
+[0;32mI (3450) radar-hr: Energy=2.00e+07 Bin=11.0 Var=4.532e-03 Score=15[0m
+[0;32mI (3450) radar-hr: Energy=2.20e+07 Bin=11.0 Var=4.626e-03 Score=14[0m
+[0;32mI (3460) radar-hr: Energy=2.36e+07 Bin=11.0 Var=4.476e-03 Score=13[0m
+[0;32mI (3460) radar-hr: Energy=2.24e+07 Bin=11.0 Var=4.438e-03 Score=12[0m
+[0;32mI (3470) radar-hr: Energy=2.51e+07 Bin=11.0 Var=4.457e-03 Score=11[0m
+[0;32mI (3480) radar-hr: Energy=2.43e+07 Bin=11.0 Var=4.447e-03 Score=10[0m
+[0;32mI (3480) radar-hr: Energy=1.80e+07 Bin=11.0 Var=4.498e-03 Score=9[0m
+[0;32mI (3490) radar-hr: Energy=2.04e+07 Bin=11.0 Var=4.606e-03 Score=8[0m
+[0;32mI (3490) radar-hr: Energy=2.09e+07 Bin=11.0 Var=4.710e-03 Score=7[0m
+[0;32mI (3500) radar-hr: Energy=2.25e+07 Bin=11.0 Var=4.664e-03 Score=6[0m
+[0;32mI (3500) radar-hr: Energy=2.22e+07 Bin=11.0 Var=4.569e-03 Score=5[0m
+[0;32mI (3510) radar-hr: Energy=1.82e+07 Bin=11.0 Var=4.441e-03 Score=4[0m
+[0;32mI (3520) radar-hr: Energy=2.04e+07 Bin=11.0 Var=4.490e-03 Score=3[0m
+[0;32mI (3520) radar-hr: Energy=2.12e+07 Bin=11.0 Var=4.632e-03 Score=2[0m
+[0;32mI (3530) radar-hr: Energy=1.84e+07 Bin=11.0 Var=4.715e-03 Score=1[0m
+[0;32mI (3530) radar-hr: Energy=2.05e+07 Bin=11.0 Var=4.707e-03 Score=0[0m
+[0;32mI (3540) radar-hr: Energy=2.03e+07 Bin=11.0 Var=4.886e-03 Score=0[0m
+[0;32mI (3550) radar-hr: Energy=2.16e+07 Bin=11.0 Var=4.920e-03 Score=0[0m
+[0;32mI (3550) radar-hr: Energy=1.85e+07 Bin=11.0 Var=4.897e-03 Score=0[0m
+[0;32mI (3560) radar-hr: Energy=2.16e+07 Bin=11.0 Var=4.911e-03 Score=0[0m
+[0;32mI (3560) radar-hr: Energy=2.45e+07 Bin=11.0 Var=5.057e-03 Score=0[0m
+[0;32mI (3570) radar-hr: Energy=2.30e+07 Bin=11.0 Var=5.039e-03 Score=0[0m
+[0;32mI (3570) radar-hr: Energy=2.20e+07 Bin=11.0 Var=5.192e-03 Score=0[0m
+[0;32mI (3580) radar-hr: Energy=2.13e+07 Bin=11.0 Var=5.329e-03 Score=0[0m
+[0;32mI (3590) radar-hr: Energy=2.20e+07 Bin=11.0 Var=5.256e-03 Score=0[0m
+[0;32mI (3590) radar-hr: Energy=2.10e+07 Bin=11.0 Var=5.304e-03 Score=0[0m
+[0;32mI (3600) radar-hr: Energy=1.66e+07 Bin=11.0 Var=5.338e-03 Score=0[0m
+[0;32mI (3600) radar-hr: Energy=2.16e+07 Bin=11.0 Var=5.090e-03 Score=0[0m
+[0;32mI (3610) radar-hr: Energy=2.06e+07 Bin=11.0 Var=4.817e-03 Score=0[0m
+[0;32mI (3620) radar-hr: Energy=2.00e+07 Bin=11.0 Var=4.842e-03 Score=0[0m
+[0;32mI (3620) radar-hr: Energy=1.85e+07 Bin=11.0 Var=4.867e-03 Score=0[0m
+[0;32mI (3630) radar-hr: Energy=1.94e+07 Bin=11.0 Var=4.814e-03 Score=0[0m
+[0;32mI (3630) radar-hr: Energy=2.10e+07 Bin=11.0 Var=4.929e-03 Score=0[0m
+[0;32mI (3640) radar-hr: Energy=2.10e+07 Bin=11.0 Var=4.887e-03 Score=0[0m
+[0;32mI (3640) radar-hr: Energy=1.96e+07 Bin=11.0 Var=4.921e-03 Score=0[0m
+[0;32mI (3650) radar-hr: Energy=1.40e+07 Bin=11.0 Var=5.193e-03 Score=0[0m
+[0;32mI (3660) radar-hr: Energy=1.91e+07 Bin=11.0 Var=5.191e-03 Score=0[0m
+[0;32mI (3660) radar-hr: Energy=2.03e+07 Bin=11.0 Var=5.348e-03 Score=0[0m
+[0;32mI (3670) radar-hr: Energy=1.85e+07 Bin=11.0 Var=5.349e-03 Score=0[0m
+[0;32mI (3670) radar-hr: Energy=2.24e+07 Bin=11.0 Var=5.257e-03 Score=0[0m
+[0;32mI (3680) radar-hr: Energy=1.73e+07 Bin=11.0 Var=5.255e-03 Score=0[0m
+[0;32mI (3680) radar-hr: Energy=1.89e+07 Bin=11.0 Var=5.018e-03 Score=0[0m
+[0;32mI (3690) radar-hr: Energy=2.27e+07 Bin=11.0 Var=4.986e-03 Score=0[0m
+[0;32mI (3700) radar-hr: Energy=2.16e+07 Bin=11.0 Var=4.631e-03 Score=0[0m
+[0;32mI (3700) radar-hr: Energy=1.93e+07 Bin=11.0 Var=4.605e-03 Score=0[0m
+[0;32mI (3710) radar-hr: Energy=2.01e+07 Bin=11.0 Var=4.626e-03 Score=0[0m
+[0;32mI (3710) radar-hr: Energy=2.01e+07 Bin=11.0 Var=4.689e-03 Score=0[0m
+[0;32mI (3720) radar-hr: Energy=1.75e+07 Bin=11.0 Var=4.412e-03 Score=0[0m
+[0;32mI (3730) radar-hr: Energy=1.85e+07 Bin=11.0 Var=4.255e-03 Score=0[0m
+[0;32mI (3730) radar-hr: Energy=2.26e+07 Bin=11.0 Var=4.331e-03 Score=0[0m
+[0;32mI (3740) radar-hr: Energy=2.02e+07 Bin=11.0 Var=4.350e-03 Score=0[0m
+[0;32mI (3740) radar-hr: Energy=2.21e+07 Bin=11.0 Var=4.177e-03 Score=0[0m
+[0;32mI (3750) radar-hr: Energy=1.90e+07 Bin=11.0 Var=4.176e-03 Score=0[0m
+[0;32mI (3750) radar-hr: Energy=1.92e+07 Bin=11.0 Var=4.179e-03 Score=0[0m
+[0;32mI (3760) radar-hr: Energy=1.97e+07 Bin=11.0 Var=4.185e-03 Score=0[0m
+[0;32mI (3770) radar-hr: Energy=1.75e+07 Bin=11.0 Var=4.640e-03 Score=0[0m
+[0;32mI (3770) radar-hr: Energy=1.83e+07 Bin=11.0 Var=4.643e-03 Score=0[0m
+[0;32mI (3780) radar-hr: Energy=2.31e+07 Bin=11.0 Var=4.942e-03 Score=0[0m
+[0;32mI (3780) radar-hr: Energy=2.14e+07 Bin=11.0 Var=4.822e-03 Score=0[0m
+[0;32mI (3790) radar-hr: Energy=2.37e+07 Bin=11.0 Var=4.631e-03 Score=0[0m
+[0;32mI (3800) radar-hr: Energy=1.98e+07 Bin=11.0 Var=4.706e-03 Score=0[0m
+[0;32mI (3800) radar-hr: Energy=2.31e+07 Bin=11.0 Var=4.697e-03 Score=0[0m
+[0;32mI (3810) radar-hr: Energy=2.19e+07 Bin=11.0 Var=5.096e-03 Score=0[0m
+[0;32mI (3810) radar-hr: Energy=1.96e+07 Bin=11.0 Var=4.938e-03 Score=0[0m
+[0;32mI (3820) radar-hr: Energy=1.86e+07 Bin=11.0 Var=4.962e-03 Score=0[0m
+[0;32mI (3820) radar-hr: Energy=2.20e+07 Bin=11.0 Var=4.884e-03 Score=0[0m
+[0;32mI (3830) radar-hr: Energy=1.99e+07 Bin=11.0 Var=5.650e-03 Score=0[0m
+[0;32mI (3840) radar-hr: Energy=1.95e+07 Bin=11.0 Var=6.011e-03 Score=0[0m
+[0;32mI (3840) radar-hr: Energy=2.06e+07 Bin=11.0 Var=6.215e-03 Score=0[0m
+[0;32mI (3850) radar-hr: Energy=1.94e+07 Bin=11.0 Var=6.235e-03 Score=0[0m
+[0;32mI (3850) radar-hr: Energy=1.77e+07 Bin=11.0 Var=6.231e-03 Score=0[0m
+[0;32mI (3860) radar-hr: Energy=2.33e+07 Bin=11.0 Var=6.219e-03 Score=0[0m
+[0;32mI (3870) radar-hr: Energy=2.00e+07 Bin=11.0 Var=6.737e-03 Score=0[0m
+[0;32mI (3870) radar-hr: Energy=1.89e+07 Bin=11.0 Var=6.668e-03 Score=0[0m
+[0;32mI (3880) radar-hr: Energy=2.05e+07 Bin=11.0 Var=6.633e-03 Score=0[0m
+[0;32mI (3880) radar-hr: Energy=2.18e+07 Bin=11.0 Var=6.737e-03 Score=0[0m
+[0;32mI (3890) radar-hr: Energy=2.42e+07 Bin=11.0 Var=7.324e-03 Score=0[0m
+[0;32mI (3890) radar-hr: Energy=2.40e+07 Bin=11.0 Var=7.127e-03 Score=0[0m
+[0;32mI (3900) radar-hr: Energy=1.88e+07 Bin=11.0 Var=7.105e-03 Score=0[0m
+[0;32mI (3910) radar-hr: Energy=2.02e+07 Bin=11.0 Var=6.986e-03 Score=0[0m
+[0;32mI (3910) radar-hr: Energy=1.98e+07 Bin=11.0 Var=6.788e-03 Score=0[0m
+[0;32mI (3920) radar-hr: Energy=1.90e+07 Bin=11.0 Var=6.778e-03 Score=0[0m
+[0;32mI (3920) radar-hr: Energy=2.15e+07 Bin=11.0 Var=6.715e-03 Score=0[0m
+[0;32mI (3930) radar-hr: Energy=1.99e+07 Bin=11.0 Var=6.655e-03 Score=0[0m
+[0;32mI (3930) radar-hr: Energy=1.75e+07 Bin=11.0 Var=6.394e-03 Score=0[0m
+[0;32mI (3940) radar-hr: Energy=2.12e+07 Bin=11.0 Var=6.263e-03 Score=0[0m
+[0;32mI (3950) radar-hr: Energy=2.31e+07 Bin=11.0 Var=5.840e-03 Score=0[0m
+[0;32mI (3950) radar-hr: Energy=1.96e+07 Bin=11.0 Var=5.454e-03 Score=0[0m
+[0;32mI (3960) radar-hr: Energy=2.12e+07 Bin=11.0 Var=5.366e-03 Score=0[0m
+[0;32mI (3960) radar-hr: Energy=1.94e+07 Bin=11.0 Var=5.379e-03 Score=0[0m
+[0;32mI (3970) radar-hr: Energy=1.81e+07 Bin=11.0 Var=5.223e-03 Score=0[0m
+[0;32mI (3980) radar-hr: Energy=2.25e+07 Bin=11.0 Var=5.220e-03 Score=0[0m
+[0;32mI (3980) radar-hr: Energy=1.96e+07 Bin=11.0 Var=5.199e-03 Score=0[0m
+[0;32mI (3990) radar-hr: Energy=1.86e+07 Bin=11.0 Var=5.036e-03 Score=0[0m
+[0;32mI (3990) radar-hr: Energy=2.03e+07 Bin=11.0 Var=5.051e-03 Score=0[0m
+[0;32mI (4000) radar-hr: Energy=2.01e+07 Bin=11.0 Var=4.649e-03 Score=0[0m
+[0;32mI (4000) radar-hr: Energy=1.87e+07 Bin=11.0 Var=4.873e-03 Score=0[0m
+[0;32mI (4010) radar-hr: Energy=1.80e+07 Bin=11.0 Var=4.588e-03 Score=0[0m
+[0;32mI (4020) radar-hr: Energy=2.10e+07 Bin=11.0 Var=4.727e-03 Score=0[0m
+[0;32mI (4020) radar-hr: Energy=1.77e+07 Bin=11.0 Var=4.690e-03 Score=0[0m
+[0;32mI (4030) radar-hr: Energy=1.89e+07 Bin=11.0 Var=4.650e-03 Score=0[0m
+[0;32mI (4030) radar-hr: Energy=2.25e+07 Bin=11.0 Var=4.164e-03 Score=0[0m
+[0;32mI (4040) radar-hr: Energy=2.13e+07 Bin=11.0 Var=4.356e-03 Score=0[0m
+[0;32mI (4050) radar-hr: Energy=2.22e+07 Bin=11.0 Var=4.284e-03 Score=0[0m
+[0;32mI (4050) radar-hr: Energy=2.22e+07 Bin=11.0 Var=4.241e-03 Score=0[0m
+[0;32mI (4060) radar-hr: Energy=2.00e+07 Bin=11.0 Var=4.185e-03 Score=0[0m
+[0;32mI (4060) radar-hr: Energy=1.95e+07 Bin=11.0 Var=4.169e-03 Score=0[0m
+[0;32mI (4070) radar-hr: Energy=1.96e+07 Bin=11.0 Var=4.163e-03 Score=0[0m
+[0;32mI (4070) radar-hr: Energy=1.85e+07 Bin=11.0 Var=4.091e-03 Score=0[0m
+[0;32mI (4080) radar-hr: Energy=2.35e+07 Bin=11.0 Var=4.157e-03 Score=0[0m
+[0;32mI (4090) radar-hr: Energy=1.91e+07 Bin=11.0 Var=4.148e-03 Score=0[0m
+[0;32mI (4090) radar-hr: Energy=2.24e+07 Bin=11.0 Var=4.418e-03 Score=0[0m
+[0;32mI (4100) radar-hr: Energy=2.13e+07 Bin=11.0 Var=4.389e-03 Score=0[0m
+[0;32mI (4100) radar-hr: Energy=2.17e+07 Bin=11.0 Var=4.424e-03 Score=0[0m
+[0;32mI (4110) radar-hr: Energy=2.19e+07 Bin=11.0 Var=4.448e-03 Score=0[0m
+[0;32mI (4120) radar-hr: Energy=1.94e+07 Bin=11.0 Var=4.864e-03 Score=0[0m
+[0;32mI (4120) radar-hr: Energy=2.08e+07 Bin=11.0 Var=4.914e-03 Score=0[0m
+[0;32mI (4130) radar-hr: Energy=1.99e+07 Bin=11.0 Var=4.868e-03 Score=0[0m
+[0;32mI (4130) radar-hr: Energy=2.05e+07 Bin=11.0 Var=4.789e-03 Score=0[0m
+[0;32mI (4140) radar-hr: Energy=1.91e+07 Bin=11.0 Var=4.954e-03 Score=0[0m
+[0;32mI (4140) radar-hr: Energy=2.42e+07 Bin=11.0 Var=4.895e-03 Score=0[0m
+[0;32mI (4150) radar-hr: Energy=1.97e+07 Bin=11.0 Var=5.563e-03 Score=0[0m
+[0;32mI (4160) radar-hr: Energy=2.21e+07 Bin=11.0 Var=5.363e-03 Score=0[0m
+[0;32mI (4160) radar-hr: Energy=1.47e+07 Bin=11.0 Var=5.378e-03 Score=0[0m
+[0;32mI (4170) radar-hr: Energy=2.10e+07 Bin=11.0 Var=5.620e-03 Score=0[0m
+[0;32mI (4170) radar-hr: Energy=2.24e+07 Bin=11.0 Var=5.720e-03 Score=0[0m
+[0;32mI (4180) radar-hr: Energy=2.12e+07 Bin=11.0 Var=6.347e-03 Score=0[0m
+[0;32mI (4190) radar-hr: Energy=1.88e+07 Bin=11.0 Var=6.294e-03 Score=0[0m
+[0;32mI (4190) radar-hr: Energy=2.11e+07 Bin=11.0 Var=6.491e-03 Score=0[0m
+[0;32mI (4200) radar-hr: Energy=1.82e+07 Bin=11.0 Var=6.645e-03 Score=0[0m
+[0;32mI (4200) radar-hr: Energy=1.76e+07 Bin=11.0 Var=6.368e-03 Score=0[0m
+[0;32mI (4210) radar-hr: Energy=2.07e+07 Bin=11.0 Var=6.146e-03 Score=0[0m
+[0;32mI (4210) radar-hr: Energy=1.83e+07 Bin=11.0 Var=6.442e-03 Score=0[0m
+[0;32mI (4220) radar-hr: Energy=1.71e+07 Bin=11.0 Var=6.514e-03 Score=0[0m
+[0;32mI (4230) radar-hr: Energy=2.21e+07 Bin=11.0 Var=6.532e-03 Score=0[0m
+[0;32mI (4230) radar-hr: Energy=1.97e+07 Bin=11.0 Var=6.890e-03 Score=0[0m
+[0;32mI (4240) radar-hr: Energy=1.93e+07 Bin=11.0 Var=6.736e-03 Score=0[0m
+[0;32mI (4240) radar-hr: Energy=1.98e+07 Bin=11.0 Var=7.366e-03 Score=0[0m
+[0;32mI (4250) radar-hr: Energy=1.98e+07 Bin=11.0 Var=7.494e-03 Score=0[0m
+[0;32mI (4250) radar-hr: Energy=1.80e+07 Bin=11.0 Var=7.467e-03 Score=0[0m
+[0;32mI (4260) radar-hr: Energy=2.25e+07 Bin=11.0 Var=6.910e-03 Score=0[0m
+[0;32mI (4270) radar-hr: Energy=1.99e+07 Bin=11.0 Var=6.943e-03 Score=0[0m
+[0;32mI (4270) radar-hr: Energy=1.65e+07 Bin=11.0 Var=7.366e-03 Score=0[0m
+[0;32mI (4280) radar-hr: Energy=2.13e+07 Bin=11.0 Var=7.409e-03 Score=0[0m
+[0;32mI (4280) radar-hr: Energy=1.91e+07 Bin=11.0 Var=7.327e-03 Score=0[0m
+[0;32mI (4290) radar-hr: Energy=2.15e+07 Bin=11.0 Var=7.559e-03 Score=0[0m
+[0;32mI (4300) radar-hr: Energy=1.74e+07 Bin=11.0 Var=7.561e-03 Score=0[0m
+[0;32mI (4300) radar-hr: Energy=1.84e+07 Bin=11.0 Var=7.698e-03 Score=0[0m
+[0;32mI (4310) radar-hr: Energy=1.78e+07 Bin=11.0 Var=7.857e-03 Score=0[0m
+[0;32mI (4310) radar-hr: Energy=2.01e+07 Bin=11.0 Var=7.783e-03 Score=0[0m
+[0;32mI (4320) radar-hr: Energy=2.06e+07 Bin=11.0 Var=7.973e-03 Score=0[0m
+[0;32mI (4320) radar-hr: Energy=1.86e+07 Bin=11.0 Var=8.303e-03 Score=0[0m
+[0;32mI (4330) radar-hr: Energy=1.97e+07 Bin=11.0 Var=8.396e-03 Score=0[0m
+[0;32mI (4340) radar-hr: Energy=1.79e+07 Bin=11.0 Var=8.323e-03 Score=0[0m
+[0;32mI (4340) radar-hr: Energy=1.68e+07 Bin=11.0 Var=8.305e-03 Score=0[0m
+[0;32mI (4350) radar-hr: Energy=1.71e+07 Bin=11.0 Var=8.117e-03 Score=0[0m
+[0;32mI (4350) radar-hr: Energy=1.93e+07 Bin=11.0 Var=8.542e-03 Score=0[0m
+[0;32mI (4360) radar-hr: Energy=1.75e+07 Bin=11.0 Var=8.822e-03 Score=0[0m
+[0;32mI (4370) radar-hr: Energy=1.71e+07 Bin=11.0 Var=8.836e-03 Score=0[0m
+[0;32mI (4370) radar-hr: Energy=2.21e+07 Bin=11.0 Var=8.848e-03 Score=0[0m
+[0;32mI (4380) radar-hr: Energy=1.87e+07 Bin=11.0 Var=8.253e-03 Score=0[0m
+[0;32mI (4380) radar-hr: Energy=1.60e+07 Bin=11.0 Var=8.213e-03 Score=0[0m
+[0;32mI (4390) radar-hr: Energy=1.73e+07 Bin=11.0 Var=7.801e-03 Score=0[0m
+[0;32mI (4390) radar-hr: Energy=1.98e+07 Bin=11.0 Var=7.778e-03 Score=0[0m
+[0;32mI (4400) radar-hr: Energy=2.14e+07 Bin=11.0 Var=7.994e-03 Score=0[0m
+[0;32mI (4410) radar-hr: Energy=2.10e+07 Bin=11.0 Var=8.001e-03 Score=0[0m
+[0;32mI (4410) radar-hr: Energy=1.82e+07 Bin=11.0 Var=7.059e-03 Score=0[0m
+[0;32mI (4420) radar-hr: Energy=2.10e+07 Bin=11.0 Var=6.938e-03 Score=0[0m
+[0;32mI (4420) radar-hr: Energy=1.85e+07 Bin=11.0 Var=6.369e-03 Score=0[0m
+[0;32mI (4430) radar-hr: Energy=1.83e+07 Bin=11.0 Var=5.923e-03 Score=0[0m
+[0;32mI (4440) radar-hr: Energy=2.05e+07 Bin=11.0 Var=5.791e-03 Score=0[0m
+[0;32mI (4440) radar-hr: Energy=1.97e+07 Bin=11.0 Var=5.446e-03 Score=0[0m
+[0;32mI (4450) radar-hr: Energy=1.83e+07 Bin=11.0 Var=5.265e-03 Score=0[0m
+[0;32mI (4450) radar-hr: Energy=1.69e+07 Bin=11.0 Var=5.227e-03 Score=0[0m
+[0;32mI (4460) radar-hr: Energy=2.11e+07 Bin=11.0 Var=5.003e-03 Score=0[0m
+[0;32mI (4460) radar-hr: Energy=1.69e+07 Bin=11.0 Var=5.209e-03 Score=0[0m
+[0;32mI (4470) radar-hr: Energy=1.98e+07 Bin=11.0 Var=4.960e-03 Score=0[0m
+[0;32mI (4480) radar-hr: Energy=2.13e+07 Bin=11.0 Var=4.350e-03 Score=0[0m
+[0;32mI (4480) radar-hr: Energy=1.69e+07 Bin=11.0 Var=4.448e-03 Score=0[0m
+[0;32mI (4490) radar-hr: Energy=2.09e+07 Bin=11.0 Var=4.468e-03 Score=0[0m
+[0;32mI (4490) radar-hr: Energy=1.74e+07 Bin=11.0 Var=4.459e-03 Score=0[0m
+[0;32mI (4500) radar-hr: Energy=1.73e+07 Bin=11.0 Var=4.237e-03 Score=0[0m
+[0;32mI (4500) radar-hr: Energy=2.33e+07 Bin=11.0 Var=3.931e-03 Score=0[0m
+[0;32mI (4510) radar-hr: Energy=2.22e+07 Bin=11.0 Var=3.943e-03 Score=0[0m
+[0;32mI (4520) radar-hr: Energy=1.89e+07 Bin=11.0 Var=3.753e-03 Score=0[0m
+[0;32mI (4520) radar-hr: Energy=2.06e+07 Bin=11.0 Var=3.710e-03 Score=0[0m
+[0;32mI (4530) radar-hr: Energy=1.74e+07 Bin=11.0 Var=3.543e-03 Score=0[0m
+[0;32mI (4530) radar-hr: Energy=1.99e+07 Bin=11.0 Var=3.332e-03 Score=0[0m
+[0;32mI (4540) radar-hr: Energy=1.94e+07 Bin=11.0 Var=3.434e-03 Score=0[0m
+[0;32mI (4550) radar-hr: Energy=2.23e+07 Bin=11.0 Var=3.411e-03 Score=0[0m
+[0;32mI (4550) radar-hr: Energy=1.98e+07 Bin=11.0 Var=3.622e-03 Score=0[0m
+[0;32mI (4560) radar-hr: Energy=1.48e+07 Bin=11.0 Var=3.336e-03 Score=0[0m
+[0;32mI (4560) radar-hr: Energy=1.97e+07 Bin=11.0 Var=3.336e-03 Score=0[0m
+[0;32mI (4570) radar-hr: Energy=2.07e+07 Bin=11.0 Var=3.325e-03 Score=0[0m
+[0;32mI (4570) radar-hr: Energy=1.54e+07 Bin=11.0 Var=3.315e-03 Score=0[0m
+[0;32mI (4580) radar-hr: Energy=2.23e+07 Bin=11.0 Var=3.175e-03 Score=0[0m
+[0;32mI (4590) radar-hr: Energy=2.00e+07 Bin=11.0 Var=3.171e-03 Score=0[0m
+[0;32mI (4590) radar-hr: Energy=2.15e+07 Bin=11.0 Var=3.154e-03 Score=0[0m
+[0;32mI (4600) radar-hr: Energy=2.35e+07 Bin=11.0 Var=3.047e-03 Score=0[0m
+[0;32mI (4600) radar-hr: Energy=2.07e+07 Bin=11.0 Var=3.118e-03 Score=0[0m
+[0;32mI (4610) radar-hr: Energy=2.13e+07 Bin=11.0 Var=3.726e-03 Score=0[0m
+[0;32mI (4620) radar-hr: Energy=1.85e+07 Bin=11.0 Var=3.645e-03 Score=0[0m
+[0;32mI (4620) radar-hr: Energy=1.90e+07 Bin=11.0 Var=3.655e-03 Score=0[0m
+[0;32mI (4630) radar-hr: Energy=1.88e+07 Bin=11.0 Var=3.601e-03 Score=0[0m
+[0;32mI (4630) radar-hr: Energy=2.09e+07 Bin=11.0 Var=3.657e-03 Score=0[0m
+[0;32mI (4640) radar-hr: Energy=2.17e+07 Bin=11.0 Var=3.684e-03 Score=0[0m
+[0;32mI (4640) radar-hr: Energy=1.71e+07 Bin=11.0 Var=3.664e-03 Score=0[0m
+[0;32mI (4650) radar-hr: Energy=2.22e+07 Bin=11.0 Var=3.726e-03 Score=0[0m
+[0;32mI (4660) radar-hr: Energy=1.95e+07 Bin=11.0 Var=3.639e-03 Score=0[0m
+[0;32mI (4660) radar-hr: Energy=2.02e+07 Bin=11.0 Var=3.619e-03 Score=0[0m
+[0;32mI (4670) radar-hr: Energy=1.86e+07 Bin=11.0 Var=3.735e-03 Score=0[0m
+[0;32mI (4670) radar-hr: Energy=1.94e+07 Bin=11.0 Var=3.755e-03 Score=0[0m
+[0;32mI (4680) radar-hr: Energy=1.82e+07 Bin=11.0 Var=3.700e-03 Score=0[0m
+[0;32mI (4690) radar-hr: Energy=1.87e+07 Bin=11.0 Var=3.642e-03 Score=0[0m
+[0;32mI (4690) radar-hr: Energy=1.77e+07 Bin=11.0 Var=3.710e-03 Score=0[0m
+[0;32mI (4700) radar-hr: Energy=1.90e+07 Bin=11.0 Var=3.669e-03 Score=0[0m
+[0;32mI (4700) radar-hr: Energy=1.61e+07 Bin=11.0 Var=4.342e-03 Score=0[0m
+[0;32mI (4710) radar-hr: Energy=2.08e+07 Bin=11.0 Var=4.324e-03 Score=0[0m
+[0;32mI (4710) radar-hr: Energy=1.80e+07 Bin=11.0 Var=4.291e-03 Score=0[0m
+[0;32mI (4720) radar-hr: Energy=2.13e+07 Bin=11.0 Var=4.382e-03 Score=0[0m
+[0;32mI (4730) radar-hr: Energy=2.28e+07 Bin=11.0 Var=4.120e-03 Score=0[0m
+[0;32mI (4730) radar-hr: Energy=1.99e+07 Bin=11.0 Var=3.953e-03 Score=0[0m
+[0;32mI (4740) radar-hr: Energy=2.09e+07 Bin=11.0 Var=3.965e-03 Score=0[0m
+[0;32mI (4740) radar-hr: Energy=1.99e+07 Bin=11.0 Var=3.965e-03 Score=0[0m
+[0;32mI (4750) radar-hr: Energy=2.24e+07 Bin=11.0 Var=4.256e-03 Score=0[0m
+[0;32mI (4750) radar-hr: Energy=2.12e+07 Bin=11.0 Var=4.340e-03 Score=0[0m
+[0;32mI (4760) radar-hr: Energy=2.07e+07 Bin=11.0 Var=4.630e-03 Score=0[0m
+[0;32mI (4770) radar-hr: Energy=1.54e+07 Bin=11.0 Var=4.573e-03 Score=0[0m
+[0;32mI (4770) radar-hr: Energy=1.83e+07 Bin=11.0 Var=4.275e-03 Score=0[0m
+[0;32mI (4780) radar-hr: Energy=1.77e+07 Bin=11.0 Var=4.308e-03 Score=0[0m
+[0;32mI (4780) radar-hr: Energy=1.69e+07 Bin=11.0 Var=4.472e-03 Score=0[0m
+[0;32mI (4790) radar-hr: Energy=2.23e+07 Bin=11.0 Var=4.518e-03 Score=0[0m
+[0;32mI (4800) radar-hr: Energy=1.94e+07 Bin=11.0 Var=4.474e-03 Score=0[0m
+[0;32mI (4800) radar-hr: Energy=2.12e+07 Bin=11.0 Var=4.419e-03 Score=0[0m
+[0;32mI (4810) radar-hr: Energy=1.71e+07 Bin=11.0 Var=4.705e-03 Score=0[0m
+[0;32mI (4810) radar-hr: Energy=1.94e+07 Bin=11.0 Var=4.781e-03 Score=0[0m
+[0;32mI (4820) radar-hr: Energy=2.06e+07 Bin=11.0 Var=4.793e-03 Score=0[0m
+[0;32mI (4820) radar-hr: Energy=2.10e+07 Bin=11.0 Var=4.922e-03 Score=0[0m
+[0;32mI (4830) radar-hr: Energy=2.09e+07 Bin=11.0 Var=4.922e-03 Score=0[0m
+[0;32mI (4840) radar-hr: Energy=2.25e+07 Bin=11.0 Var=4.848e-03 Score=0[0m
+[0;32mI (4840) radar-hr: Energy=1.71e+07 Bin=11.0 Var=4.901e-03 Score=0[0m
+[0;32mI (4850) radar-hr: Energy=1.58e+07 Bin=11.0 Var=4.986e-03 Score=0[0m
+[0;32mI (4850) radar-hr: Energy=1.52e+07 Bin=11.0 Var=4.932e-03 Score=0[0m
+[0;32mI (4860) radar-hr: Energy=1.51e+07 Bin=11.0 Var=5.201e-03 Score=0[0m
+[0;32mI (4870) radar-hr: Energy=1.55e+07 Bin=11.0 Var=5.471e-03 Score=0[0m
+[0;32mI (4870) radar-hr: Energy=1.74e+07 Bin=11.0 Var=5.574e-03 Score=0[0m
+[0;32mI (4880) radar-hr: Energy=1.87e+07 Bin=11.0 Var=5.569e-03 Score=0[0m
+[0;32mI (4880) radar-hr: Energy=1.91e+07 Bin=11.0 Var=5.755e-03 Score=0[0m
+[0;32mI (4890) radar-hr: Energy=1.62e+07 Bin=11.0 Var=7.341e-03 Score=0[0m
+[0;32mI (4890) radar-hr: Energy=1.68e+07 Bin=11.0 Var=7.438e-03 Score=0[0m
+[0;32mI (4900) radar-hr: Energy=1.79e+07 Bin=11.0 Var=7.704e-03 Score=0[0m
+[0;32mI (4910) radar-hr: Energy=1.80e+07 Bin=11.0 Var=7.879e-03 Score=0[0m
+[0;32mI (4910) radar-hr: Energy=1.70e+07 Bin=11.0 Var=7.777e-03 Score=0[0m
+[0;32mI (4920) radar-hr: Energy=1.76e+07 Bin=11.0 Var=7.833e-03 Score=0[0m
+[0;32mI (4920) radar-hr: Energy=1.74e+07 Bin=11.0 Var=8.066e-03 Score=0[0m
+[0;32mI (4930) radar-hr: Energy=1.87e+07 Bin=11.0 Var=8.200e-03 Score=0[0m
+[0;32mI (4940) radar-hr: Energy=1.33e+07 Bin=11.0 Var=8.448e-03 Score=0[0m
+[0;32mI (4940) radar-hr: Energy=1.73e+07 Bin=11.0 Var=8.625e-03 Score=0[0m
+[0;32mI (4950) radar-hr: Energy=1.60e+07 Bin=11.0 Var=8.762e-03 Score=0[0m
+[0;32mI (4950) radar-hr: Energy=1.53e+07 Bin=11.0 Var=8.762e-03 Score=0[0m
+[0;32mI (4960) radar-hr: Energy=1.81e+07 Bin=11.0 Var=8.919e-03 Score=0[0m
+[0;32mI (4960) radar-hr: Energy=1.59e+07 Bin=11.0 Var=8.881e-03 Score=0[0m
+[0;32mI (4970) radar-hr: Energy=1.63e+07 Bin=11.0 Var=8.856e-03 Score=0[0m
+[0;32mI (4980) radar-hr: Energy=1.73e+07 Bin=11.0 Var=8.903e-03 Score=0[0m
+[0;32mI (4980) radar-hr: Energy=1.57e+07 Bin=11.0 Var=8.313e-03 Score=0[0m
+[0;32mI (4990) radar-hr: Energy=1.51e+07 Bin=11.0 Var=8.339e-03 Score=0[0m
+[0;32mI (4990) radar-hr: Energy=1.66e+07 Bin=11.0 Var=8.350e-03 Score=0[0m
+[0;32mI (5000) radar-hr: Energy=1.95e+07 Bin=11.0 Var=8.387e-03 Score=0[0m
+[0;32mI (5000) radar-hr: Energy=1.62e+07 Bin=11.0 Var=8.255e-03 Score=0[0m
+[0;32mI (5010) radar-hr: Energy=1.30e+07 Bin=11.0 Var=8.125e-03 Score=0[0m
+[0;32mI (5020) radar-hr: Energy=1.91e+07 Bin=11.0 Var=8.088e-03 Score=0[0m
+[0;32mI (5020) radar-hr: Energy=2.01e+07 Bin=11.0 Var=7.918e-03 Score=0[0m
+[0;32mI (5030) radar-hr: Energy=1.57e+07 Bin=11.0 Var=8.077e-03 Score=0[0m
+[0;32mI (5030) radar-hr: Energy=1.42e+07 Bin=11.0 Var=8.144e-03 Score=0[0m
+[0;32mI (5040) radar-hr: Energy=2.06e+07 Bin=11.0 Var=8.025e-03 Score=0[0m
+[0;32mI (5050) radar-hr: Energy=1.67e+07 Bin=11.0 Var=7.952e-03 Score=0[0m
+[0;32mI (5050) radar-hr: Energy=1.40e+07 Bin=11.0 Var=7.949e-03 Score=0[0m
+[0;32mI (5060) radar-hr: Energy=1.26e+07 Bin=11.0 Var=8.154e-03 Score=0[0m
+[0;32mI (5060) radar-hr: Energy=1.75e+07 Bin=11.0 Var=8.330e-03 Score=0[0m
+[0;32mI (5070) radar-hr: Energy=1.75e+07 Bin=11.0 Var=8.445e-03 Score=0[0m
+[0;32mI (5070) radar-hr: Energy=1.63e+07 Bin=11.0 Var=7.621e-03 Score=0[0m
+[0;32mI (5080) radar-hr: Energy=1.68e+07 Bin=11.0 Var=7.693e-03 Score=0[0m
+[0;32mI (5090) radar-hr: Energy=2.05e+07 Bin=11.0 Var=7.937e-03 Score=0[0m
+[0;32mI (5090) radar-hr: Energy=1.86e+07 Bin=11.0 Var=7.965e-03 Score=0[0m
+[0;32mI (5100) radar-hr: Energy=1.73e+07 Bin=11.0 Var=8.089e-03 Score=0[0m
+[0;32mI (5100) radar-hr: Energy=1.79e+07 Bin=11.0 Var=8.061e-03 Score=0[0m
+[0;32mI (5110) radar-hr: Energy=2.12e+07 Bin=11.0 Var=8.069e-03 Score=0[0m
+[0;32mI (5120) radar-hr: Energy=2.02e+07 Bin=11.0 Var=8.504e-03 Score=0[0m
+[0;32mI (5120) radar-hr: Energy=2.17e+07 Bin=11.0 Var=8.384e-03 Score=0[0m
+[0;32mI (5130) radar-hr: Energy=2.25e+07 Bin=11.0 Var=8.200e-03 Score=0[0m
+[0;32mI (5130) radar-hr: Energy=1.63e+07 Bin=11.0 Var=7.731e-03 Score=0[0m
+[0;32mI (5140) radar-hr: Energy=1.89e+07 Bin=11.0 Var=7.596e-03 Score=0[0m
+[0;32mI (5140) radar-hr: Energy=1.73e+07 Bin=11.0 Var=7.541e-03 Score=0[0m
+[0;32mI (5150) radar-hr: Energy=1.52e+07 Bin=11.0 Var=7.494e-03 Score=0[0m
+[0;32mI (5160) radar-hr: Energy=1.80e+07 Bin=11.0 Var=7.811e-03 Score=0[0m
+[0;32mI (5160) radar-hr: Energy=1.53e+07 Bin=11.0 Var=7.369e-03 Score=0[0m
+[0;32mI (5170) radar-hr: Energy=1.81e+07 Bin=11.0 Var=7.310e-03 Score=0[0m
+[0;32mI (5170) radar-hr: Energy=1.96e+07 Bin=11.0 Var=7.382e-03 Score=0[0m
+[0;32mI (5180) radar-hr: Energy=1.75e+07 Bin=11.0 Var=7.472e-03 Score=0[0m
+[0;32mI (5190) radar-hr: Energy=1.67e+07 Bin=11.0 Var=7.293e-03 Score=0[0m
+[0;32mI (5190) radar-hr: Energy=1.49e+07 Bin=11.0 Var=7.313e-03 Score=0[0m
+[0;32mI (5200) radar-hr: Energy=1.90e+07 Bin=11.0 Var=7.649e-03 Score=0[0m
+[0;32mI (5200) radar-hr: Energy=1.97e+07 Bin=11.0 Var=7.826e-03 Score=0[0m
+[0;32mI (5210) radar-hr: Energy=1.85e+07 Bin=11.0 Var=7.963e-03 Score=0[0m
+[0;32mI (5210) radar-hr: Energy=1.65e+07 Bin=11.0 Var=8.271e-03 Score=0[0m
+[0;32mI (5220) radar-hr: Energy=1.59e+07 Bin=11.0 Var=8.735e-03 Score=0[0m
+[0;32mI (5230) radar-hr: Energy=1.56e+07 Bin=11.0 Var=8.827e-03 Score=0[0m
+[0;32mI (5230) radar-hr: Energy=2.00e+07 Bin=11.0 Var=8.965e-03 Score=0[0m
+[0;32mI (5240) radar-hr: Energy=1.70e+07 Bin=11.0 Var=9.013e-03 Score=0[0m
+[0;32mI (5240) radar-hr: Energy=1.90e+07 Bin=11.0 Var=9.294e-03 Score=0[0m
+[0;32mI (5250) radar-hr: Energy=1.75e+07 Bin=11.0 Var=9.441e-03 Score=0[0m
+[0;32mI (5260) radar-hr: Energy=1.62e+07 Bin=11.0 Var=9.307e-03 Score=0[0m
+[0;32mI (5260) radar-hr: Energy=1.89e+07 Bin=11.0 Var=7.993e-03 Score=0[0m
+[0;32mI (5270) radar-hr: Energy=1.89e+07 Bin=11.0 Var=8.236e-03 Score=0[0m
+[0;32mI (5270) radar-hr: Energy=1.73e+07 Bin=11.0 Var=8.216e-03 Score=0[0m
+[0;32mI (5280) radar-hr: Energy=1.71e+07 Bin=11.0 Var=8.078e-03 Score=0[0m
+[0;32mI (5280) radar-hr: Energy=2.07e+07 Bin=11.0 Var=8.205e-03 Score=0[0m
+[0;32mI (5290) radar-hr: Energy=1.80e+07 Bin=11.0 Var=8.093e-03 Score=0[0m
+[0;32mI (5300) radar-hr: Energy=1.83e+07 Bin=11.0 Var=7.468e-03 Score=0[0m
+[0;32mI (5300) radar-hr: Energy=1.68e+07 Bin=11.0 Var=7.373e-03 Score=0[0m
+[0;32mI (5310) radar-hr: Energy=2.16e+07 Bin=11.0 Var=6.908e-03 Score=0[0m
+[0;32mI (5310) radar-hr: Energy=1.49e+07 Bin=11.0 Var=6.596e-03 Score=0[0m
+[0;32mI (5320) radar-hr: Energy=2.00e+07 Bin=11.0 Var=6.267e-03 Score=0[0m
+[0;32mI (5320) radar-hr: Energy=1.93e+07 Bin=11.0 Var=6.118e-03 Score=0[0m
+[0;32mI (5330) radar-hr: Energy=2.02e+07 Bin=11.0 Var=5.731e-03 Score=0[0m
+[0;32mI (5340) radar-hr: Energy=1.69e+07 Bin=11.0 Var=5.707e-03 Score=0[0m
+[0;32mI (5340) radar-hr: Energy=1.72e+07 Bin=11.0 Var=5.732e-03 Score=0[0m
+[0;32mI (5350) radar-hr: Energy=1.78e+07 Bin=11.0 Var=5.330e-03 Score=0[0m
+[0;32mI (5350) radar-hr: Energy=2.04e+07 Bin=11.0 Var=4.918e-03 Score=0[0m
+[0;32mI (5360) radar-hr: Energy=1.62e+07 Bin=11.0 Var=4.809e-03 Score=0[0m
+[0;32mI (5370) radar-hr: Energy=1.74e+07 Bin=11.0 Var=4.521e-03 Score=0[0m
+[0;32mI (5370) radar-hr: Energy=1.56e+07 Bin=11.0 Var=4.366e-03 Score=0[0m
+[0;32mI (5380) radar-hr: Energy=1.91e+07 Bin=11.0 Var=4.515e-03 Score=0[0m
+[0;32mI (5380) radar-hr: Energy=1.92e+07 Bin=11.0 Var=4.497e-03 Score=0[0m
+[0;32mI (5390) radar-hr: Energy=1.80e+07 Bin=11.0 Var=4.256e-03 Score=0[0m
+[0;32mI (5390) radar-hr: Energy=1.92e+07 Bin=11.0 Var=4.356e-03 Score=0[0m
+[0;32mI (5400) radar-hr: Energy=1.92e+07 Bin=11.0 Var=4.369e-03 Score=0[0m
+[0;32mI (5410) radar-hr: Energy=1.72e+07 Bin=11.0 Var=4.727e-03 Score=0[0m
+[0;32mI (5410) radar-hr: Energy=1.32e+07 Bin=11.0 Var=4.737e-03 Score=0[0m
+[0;32mI (5420) radar-hr: Energy=2.02e+07 Bin=11.0 Var=4.761e-03 Score=0[0m
+[0;32mI (5420) radar-hr: Energy=1.65e+07 Bin=11.0 Var=4.618e-03 Score=0[0m
+[0;32mI (5430) radar-hr: Energy=1.92e+07 Bin=11.0 Var=4.615e-03 Score=0[0m
+[0;32mI (5440) radar-hr: Energy=1.53e+07 Bin=11.0 Var=4.608e-03 Score=0[0m
+[0;32mI (5440) radar-hr: Energy=2.04e+07 Bin=11.0 Var=4.820e-03 Score=0[0m
+[0;32mI (5450) radar-hr: Energy=2.18e+07 Bin=11.0 Var=4.820e-03 Score=0[0m
+[0;32mI (5450) radar-hr: Energy=1.60e+07 Bin=11.0 Var=4.860e-03 Score=0[0m
+[0;32mI (5460) radar-hr: Energy=1.86e+07 Bin=11.0 Var=4.848e-03 Score=0[0m
+[0;32mI (5460) radar-hr: Energy=1.90e+07 Bin=11.0 Var=5.115e-03 Score=0[0m
+[0;32mI (5470) radar-hr: Energy=1.56e+07 Bin=11.0 Var=5.776e-03 Score=0[0m
+[0;32mI (5480) radar-hr: Energy=1.71e+07 Bin=11.0 Var=5.753e-03 Score=0[0m
+[0;32mI (5480) radar-hr: Energy=1.52e+07 Bin=11.0 Var=5.614e-03 Score=0[0m
+[0;32mI (5490) radar-hr: Energy=1.86e+07 Bin=11.0 Var=6.296e-03 Score=0[0m
+[0;32mI (5490) radar-hr: Energy=1.59e+07 Bin=11.0 Var=6.921e-03 Score=0[0m
+[0;32mI (5500) radar-hr: Energy=1.68e+07 Bin=11.0 Var=7.629e-03 Score=0[0m
+[0;32mI (5510) radar-hr: Energy=1.35e+07 Bin=11.0 Var=7.978e-03 Score=0[0m
+[0;32mI (5510) radar-hr: Energy=1.90e+07 Bin=11.0 Var=7.969e-03 Score=0[0m
+[0;32mI (5520) radar-hr: Energy=1.88e+07 Bin=11.0 Var=7.873e-03 Score=0[0m
+[0;32mI (5520) radar-hr: Energy=1.56e+07 Bin=11.0 Var=8.667e-03 Score=0[0m
+[0;32mI (5530) radar-hr: Energy=1.68e+07 Bin=11.0 Var=8.897e-03 Score=0[0m
+[0;32mI (5530) radar-hr: Energy=1.71e+07 Bin=11.0 Var=8.922e-03 Score=0[0m
+[0;32mI (5540) radar-hr: Energy=2.00e+07 Bin=11.0 Var=8.962e-03 Score=0[0m
+[0;32mI (5550) radar-hr: Energy=1.71e+07 Bin=11.0 Var=8.961e-03 Score=0[0m
+[0;32mI (5550) radar-hr: Energy=1.66e+07 Bin=11.0 Var=9.234e-03 Score=0[0m
+[0;32mI (5560) radar-hr: Energy=2.08e+07 Bin=11.0 Var=9.252e-03 Score=0[0m
+[0;32mI (5560) radar-hr: Energy=1.69e+07 Bin=11.0 Var=9.358e-03 Score=0[0m
+[0;32mI (5570) radar-hr: Energy=1.54e+07 Bin=11.0 Var=9.255e-03 Score=0[0m
+[0;32mI (5570) radar-hr: Energy=1.50e+07 Bin=11.0 Var=9.292e-03 Score=0[0m
+[0;32mI (5580) radar-hr: Energy=1.55e+07 Bin=11.0 Var=1.003e-02 Score=0[0m
+[0;32mI (5590) radar-hr: Energy=1.66e+07 Bin=11.0 Var=1.015e-02 Score=0[0m
+[0;32mI (5590) radar-hr: Energy=1.53e+07 Bin=11.0 Var=1.025e-02 Score=0[0m
+[0;32mI (5600) radar-hr: Energy=1.94e+07 Bin=11.0 Var=1.024e-02 Score=0[0m
+[0;32mI (5600) radar-hr: Energy=1.68e+07 Bin=11.0 Var=9.976e-03 Score=0[0m
+[0;32mI (5610) radar-hr: Energy=1.50e+07 Bin=11.0 Var=1.007e-02 Score=0[0m
+[0;32mI (5620) radar-hr: Energy=1.78e+07 Bin=11.0 Var=9.776e-03 Score=0[0m
+[0;32mI (5620) radar-hr: Energy=1.61e+07 Bin=11.0 Var=9.613e-03 Score=0[0m
+[0;32mI (5630) radar-hr: Energy=1.57e+07 Bin=11.0 Var=9.740e-03 Score=0[0m
+[0;32mI (5630) radar-hr: Energy=1.71e+07 Bin=11.0 Var=9.174e-03 Score=0[0m
+[0;32mI (5640) radar-hr: Energy=1.41e+07 Bin=11.0 Var=8.620e-03 Score=0[0m
+[0;32mI (5640) radar-hr: Energy=1.74e+07 Bin=11.0 Var=8.727e-03 Score=0[0m
+[0;32mI (5650) radar-hr: Energy=1.74e+07 Bin=11.0 Var=8.661e-03 Score=0[0m
+[0;32mI (5660) radar-hr: Energy=1.74e+07 Bin=11.0 Var=8.269e-03 Score=0[0m
+[0;32mI (5660) radar-hr: Energy=1.06e+07 Bin=11.0 Var=8.287e-03 Score=0[0m
+[0;32mI (5670) radar-hr: Energy=2.40e+07 Bin=11.0 Var=7.900e-03 Score=0[0m
+[0;32mI (5670) radar-hr: Energy=1.56e+07 Bin=11.0 Var=7.998e-03 Score=0[0m
+[0;32mI (5680) radar-hr: Energy=1.78e+07 Bin=11.0 Var=7.929e-03 Score=0[0m
+[0;32mI (5690) radar-hr: Energy=1.34e+07 Bin=11.0 Var=7.977e-03 Score=0[0m
+[0;32mI (5690) radar-hr: Energy=1.34e+07 Bin=11.0 Var=7.689e-03 Score=0[0m
+[0;32mI (5700) radar-hr: Energy=1.55e+07 Bin=11.0 Var=7.825e-03 Score=0[0m
+[0;32mI (5700) radar-hr: Energy=1.41e+07 Bin=11.0 Var=7.586e-03 Score=0[0m
+[0;32mI (5710) radar-hr: Energy=1.56e+07 Bin=11.0 Var=7.778e-03 Score=0[0m
+[0;32mI (5710) radar-hr: Energy=1.48e+07 Bin=11.0 Var=7.748e-03 Score=0[0m
+[0;32mI (5720) radar-hr: Energy=1.31e+07 Bin=11.0 Var=7.643e-03 Score=0[0m
+[0;32mI (5730) radar-hr: Energy=1.56e+07 Bin=11.0 Var=7.538e-03 Score=0[0m
+[0;32mI (5730) radar-hr: Energy=1.32e+07 Bin=11.0 Var=7.904e-03 Score=0[0m
+[0;32mI (5740) radar-hr: Energy=1.64e+07 Bin=11.0 Var=7.530e-03 Score=0[0m
+[0;32mI (5740) radar-hr: Energy=1.17e+07 Bin=11.0 Var=7.504e-03 Score=0[0m
+[0;32mI (5750) radar-hr: Energy=1.29e+07 Bin=11.0 Var=7.839e-03 Score=0[0m
+[0;32mI (5760) radar-hr: Energy=1.00e+07 Bin=11.0 Var=7.472e-03 Score=0[0m
+[0;32mI (5760) radar-hr: Energy=1.23e+07 Bin=11.0 Var=7.465e-03 Score=0[0m
+[0;32mI (5770) radar-hr: Energy=1.23e+07 Bin=11.0 Var=7.439e-03 Score=0[0m
+[0;32mI (5770) radar-hr: Energy=1.48e+07 Bin=11.0 Var=7.469e-03 Score=0[0m
+[0;32mI (5780) radar-hr: Energy=1.38e+07 Bin=11.0 Var=7.762e-03 Score=0[0m
+[0;32mI (5780) radar-hr: Energy=1.22e+07 Bin=11.0 Var=7.617e-03 Score=0[0m
+[0;32mI (5790) radar-hr: Energy=1.63e+07 Bin=11.0 Var=8.155e-03 Score=0[0m
+[0;32mI (5800) radar-hr: Energy=1.29e+07 Bin=11.0 Var=8.504e-03 Score=0[0m
+[0;32mI (5800) radar-hr: Energy=1.57e+07 Bin=11.0 Var=8.394e-03 Score=0[0m
+[0;32mI (5810) radar-hr: Energy=1.07e+07 Bin=11.0 Var=8.221e-03 Score=0[0m
+[0;32mI (5810) radar-hr: Energy=1.19e+07 Bin=11.0 Var=8.432e-03 Score=0[0m
+[0;32mI (5820) radar-hr: Energy=1.01e+07 Bin=11.0 Var=8.313e-03 Score=0[0m
+[0;32mI (5820) radar-hr: Energy=1.19e+07 Bin=11.0 Var=7.684e-03 Score=0[0m
+[0;32mI (5830) radar-hr: Energy=1.27e+07 Bin=11.0 Var=7.526e-03 Score=0[0m
+[0;32mI (5840) radar-hr: Energy=1.11e+07 Bin=11.0 Var=7.519e-03 Score=0[0m
+[0;32mI (5840) radar-hr: Energy=1.30e+07 Bin=11.0 Var=7.665e-03 Score=0[0m
+[0;32mI (5850) radar-hr: Energy=1.02e+07 Bin=11.0 Var=7.600e-03 Score=0[0m
+[0;32mI (5850) radar-hr: Energy=1.27e+07 Bin=11.0 Var=7.177e-03 Score=0[0m
+[0;32mI (5860) radar-hr: Energy=1.13e+07 Bin=11.0 Var=7.097e-03 Score=0[0m
+[0;32mI (5870) radar-hr: Energy=1.18e+07 Bin=11.0 Var=7.105e-03 Score=0[0m
+[0;32mI (5870) radar-hr: Energy=1.20e+07 Bin=11.0 Var=7.709e-03 Score=0[0m
+[0;32mI (5880) radar-hr: Energy=8.73e+06 Bin=11.0 Var=7.908e-03 Score=0[0m
+[0;32mI (5880) radar-hr: Energy=1.24e+07 Bin=11.0 Var=7.563e-03 Score=0[0m
+[0;32mI (5890) radar-hr: Energy=1.10e+07 Bin=11.0 Var=7.638e-03 Score=0[0m
+[0;32mI (5890) radar-hr: Energy=1.30e+07 Bin=11.0 Var=7.535e-03 Score=0[0m
+[0;32mI (5900) radar-hr: Energy=1.35e+07 Bin=11.0 Var=7.636e-03 Score=0[0m
+[0;32mI (5910) radar-hr: Energy=1.12e+07 Bin=11.0 Var=7.609e-03 Score=0[0m
+[0;32mI (5910) radar-hr: Energy=1.44e+07 Bin=11.0 Var=7.676e-03 Score=0[0m
+[0;32mI (5920) radar-hr: Energy=1.50e+07 Bin=11.0 Var=7.257e-03 Score=0[0m
+[0;32mI (5920) radar-hr: Energy=1.43e+07 Bin=11.0 Var=7.379e-03 Score=0[0m
+[0;32mI (5930) radar-hr: Energy=1.16e+07 Bin=11.0 Var=7.137e-03 Score=0[0m
+[0;32mI (5940) radar-hr: Energy=1.07e+07 Bin=11.0 Var=7.395e-03 Score=0[0m
+[0;32mI (5940) radar-hr: Energy=9.57e+06 Bin=11.0 Var=7.437e-03 Score=0[0m
+[0;32mI (5950) radar-hr: Energy=1.25e+07 Bin=11.0 Var=7.439e-03 Score=0[0m
+[0;32mI (5950) radar-hr: Energy=1.33e+07 Bin=11.0 Var=7.829e-03 Score=0[0m
+[0;32mI (5960) radar-hr: Energy=1.40e+07 Bin=11.0 Var=8.541e-03 Score=0[0m
+[0;32mI (5960) radar-hr: Energy=1.25e+07 Bin=11.0 Var=8.485e-03 Score=0[0m
+[0;32mI (5970) radar-hr: Energy=1.20e+07 Bin=11.0 Var=8.529e-03 Score=0[0m
+[0;32mI (5980) radar-hr: Energy=1.48e+07 Bin=11.0 Var=8.505e-03 Score=0[0m
+[0;32mI (5980) radar-hr: Energy=8.83e+06 Bin=11.0 Var=8.526e-03 Score=0[0m
+[0;32mI (5990) radar-hr: Energy=1.12e+07 Bin=11.0 Var=8.667e-03 Score=0[0m
+[0;32mI (5990) radar-hr: Energy=1.04e+07 Bin=11.0 Var=8.833e-03 Score=0[0m
+[0;32mI (6000) radar-hr: Energy=8.61e+06 Bin=11.0 Var=8.974e-03 Score=0[0m
+[0;32mI (6010) radar-hr: Energy=1.37e+07 Bin=11.0 Var=8.846e-03 Score=0[0m
+[0;32mI (6010) radar-hr: Energy=9.32e+06 Bin=11.0 Var=9.044e-03 Score=0[0m
+[0;32mI (6020) radar-hr: Energy=9.84e+06 Bin=11.0 Var=8.759e-03 Score=0[0m
+[0;32mI (6020) radar-hr: Energy=9.23e+06 Bin=10.8 Var=3.867e-02 Score=0[0m
+[0;32mI (6030) radar-hr: Energy=9.17e+06 Bin=10.8 Var=3.872e-02 Score=0[0m
+[0;32mI (6030) radar-hr: Energy=1.20e+07 Bin=10.8 Var=3.875e-02 Score=0[0m
+[0;32mI (6040) radar-hr: Energy=8.48e+06 Bin=10.8 Var=3.874e-02 Score=0[0m
+[0;32mI (6050) radar-hr: Energy=1.25e+07 Bin=10.8 Var=3.824e-02 Score=0[0m
+[0;32mI (6050) radar-hr: Energy=1.24e+07 Bin=10.8 Var=6.471e-02 Score=1[0m
+[0;32mI (6060) radar-hr: Energy=9.00e+06 Bin=10.6 Var=9.612e-02 Score=2[0m
+[0;32mI (6060) radar-hr: Energy=1.17e+07 Bin=10.4 Var=1.237e-01 Score=3[0m
+[0;32mI (6070) radar-hr: Energy=8.50e+06 Bin=10.2 Var=1.431e-01 Score=4[0m
+[0;32mI (6080) radar-hr: Energy=1.21e+07 Bin=10.0 Var=1.660e-01 Score=5[0m
+[0;32mI (6080) radar-hr: Energy=1.79e+07 Bin=10.0 Var=1.861e-01 Score=6[0m
+[0;32mI (6090) radar-hr: Energy=1.23e+07 Bin=10.0 Var=2.011e-01 Score=7[0m
+[0;32mI (6090) radar-hr: Energy=1.45e+07 Bin=10.0 Var=2.199e-01 Score=8[0m
+[0;32mI (6100) radar-hr: Energy=1.17e+07 Bin=10.0 Var=2.358e-01 Score=9[0m
+[0;32mI (6100) radar-hr: Energy=1.01e+07 Bin=10.0 Var=2.542e-01 Score=10[0m
+[0;32mI (6110) radar-hr: Energy=1.52e+07 Bin=10.0 Var=2.699e-01 Score=11[0m
+[0;32mI (6120) radar-hr: Energy=1.15e+07 Bin=10.0 Var=2.845e-01 Score=12[0m
+[0;32mI (6120) radar-hr: Energy=8.18e+06 Bin=10.0 Var=2.933e-01 Score=13[0m
+[0;32mI (6130) radar-hr: Energy=1.10e+07 Bin=10.0 Var=2.996e-01 Score=14[0m
+[0;32mI (6130) radar-hr: Energy=1.29e+07 Bin=10.0 Var=3.059e-01 Score=15[0m
+[0;32mI (6140) radar-hr: Energy=1.36e+07 Bin=10.0 Var=3.147e-01 Score=16[0m
+[0;32mI (6150) radar-hr: Energy=1.36e+07 Bin=10.0 Var=3.213e-01 Score=17[0m
+[0;32mI (6150) radar-hr: Energy=1.06e+07 Bin=10.0 Var=3.263e-01 Score=18[0m
+[0;32mI (6160) radar-hr: Energy=1.18e+07 Bin=10.0 Var=3.293e-01 Score=19[0m
+[0;32mI (6160) radar-hr: Energy=1.02e+07 Bin=10.0 Var=3.296e-01 Score=20[0m
+[0;32mI (6170) radar-hr: Energy=1.35e+07 Bin=10.0 Var=3.304e-01 Score=21[0m
+[0;32mI (6170) radar-hr: Energy=1.60e+07 Bin=10.0 Var=3.323e-01 Score=22[0m
+[0;32mI (6180) radar-hr: Energy=1.15e+07 Bin=10.0 Var=3.376e-01 Score=23[0m
+[0;32mI (6190) radar-hr: Energy=9.30e+06 Bin=10.0 Var=3.387e-01 Score=24[0m
+[0;32mI (6190) radar-hr: Energy=1.40e+07 Bin=10.0 Var=3.369e-01 Score=25[0m
+[0;32mI (6200) radar-hr: Energy=1.15e+07 Bin=10.0 Var=3.341e-01 Score=26[0m
+[0;32mI (6200) radar-hr: Energy=1.30e+07 Bin=10.0 Var=3.326e-01 Score=27[0m
+[0;32mI (6210) radar-hr: Energy=1.08e+07 Bin=10.0 Var=3.309e-01 Score=28[0m
+[0;32mI (6220) radar-hr: Energy=1.01e+07 Bin=10.0 Var=3.290e-01 Score=29[0m
+[0;32mI (6220) radar-hr: Energy=1.27e+07 Bin=10.0 Var=3.269e-01 Score=30[0m
+[0;32mI (6230) radar-hr: Energy=1.03e+07 Bin=10.2 Var=3.295e-01 Score=31[0m
+[0;32mI (6230) radar-hr: Energy=9.74e+06 Bin=10.2 Var=3.237e-01 Score=32[0m
+[0;32mI (6240) radar-hr: Energy=1.10e+07 Bin=10.4 Var=3.254e-01 Score=33[0m
+[0;32mI (6250) radar-hr: Energy=1.01e+07 Bin=10.6 Var=3.298e-01 Score=34[0m
+[0;32mI (6250) radar-hr: Energy=1.48e+07 Bin=10.8 Var=3.320e-01 Score=35[0m
+[0;32mI (6260) radar-hr: Energy=1.21e+07 Bin=10.8 Var=3.338e-01 Score=36[0m
+[0;32mI (6260) radar-hr: Energy=1.73e+07 Bin=11.0 Var=3.310e-01 Score=37[0m
+[0;32mI (6270) radar-hr: Energy=1.37e+07 Bin=11.0 Var=3.313e-01 Score=38[0m
+[0;32mI (6280) radar-hr: Energy=1.45e+07 Bin=11.0 Var=3.329e-01 Score=39[0m
+[0;32mI (6280) radar-hr: Energy=1.31e+07 Bin=11.0 Var=3.307e-01 Score=40[0m
+[0;32mI (6290) radar-hr: Energy=1.67e+07 Bin=11.0 Var=3.343e-01 Score=41[0m
+[0;32mI (6290) radar-hr: Energy=1.72e+07 Bin=11.0 Var=3.365e-01 Score=42[0m
+[0;32mI (6300) radar-hr: Energy=1.35e+07 Bin=11.0 Var=3.381e-01 Score=43[0m
+[0;32mI (6300) radar-hr: Energy=1.69e+07 Bin=11.0 Var=3.415e-01 Score=44[0m
+[0;32mI (6310) radar-hr: Energy=1.59e+07 Bin=11.0 Var=3.462e-01 Score=45[0m
+[0;32mI (6320) radar-hr: Energy=2.14e+07 Bin=11.0 Var=3.499e-01 Score=46[0m
+[0;32mI (6320) radar-hr: Energy=2.45e+07 Bin=11.0 Var=3.490e-01 Score=47[0m
+[0;32mI (6330) radar-hr: Energy=2.37e+07 Bin=11.0 Var=3.538e-01 Score=48[0m
+[0;32mI (6330) radar-hr: Energy=2.16e+07 Bin=11.0 Var=3.589e-01 Score=49[0m
+[0;32mI (6340) radar-hr: Energy=2.51e+07 Bin=11.0 Var=3.646e-01 Score=50[0m
+[0;32mI (6350) radar-hr: Energy=2.11e+07 Bin=11.0 Var=3.650e-01 Score=51[0m
+[0;32mI (6350) radar-hr: Energy=2.32e+07 Bin=11.0 Var=3.675e-01 Score=52[0m
+[0;32mI (6360) radar-hr: Energy=2.23e+07 Bin=11.0 Var=3.687e-01 Score=53[0m
+[0;32mI (6360) radar-hr: Energy=2.22e+07 Bin=11.0 Var=3.727e-01 Score=54[0m
+[0;32mI (6370) radar-hr: Energy=2.66e+07 Bin=11.0 Var=3.780e-01 Score=55[0m
+[0;32mI (6380) radar-hr: Energy=2.07e+07 Bin=11.0 Var=3.845e-01 Score=56[0m
+[0;32mI (6380) radar-hr: Energy=2.68e+07 Bin=11.0 Var=3.881e-01 Score=57[0m
+[0;32mI (6390) radar-hr: Energy=2.42e+07 Bin=11.0 Var=3.930e-01 Score=58[0m
+[0;32mI (6390) radar-hr: Energy=2.51e+07 Bin=11.0 Var=3.979e-01 Score=59[0m
+[0;32mI (6400) radar-hr: Energy=2.14e+07 Bin=11.0 Var=3.928e-01 Score=60[0m
+[0;32mI (6410) radar-hr: Energy=2.43e+07 Bin=11.0 Var=3.981e-01 Score=60[0m
+[0;32mI (6410) radar-hr: Energy=2.61e+07 Bin=11.0 Var=4.039e-01 Score=60[0m
+[0;32mI (6420) radar-hr: Energy=2.57e+07 Bin=11.0 Var=4.093e-01 Score=60[0m
+[0;32mI (6420) radar-hr: Energy=2.54e+07 Bin=11.0 Var=4.136e-01 Score=60[0m
+[0;32mI (6430) radar-hr: Energy=2.14e+07 Bin=11.0 Var=4.135e-01 Score=60[0m
+[0;32mI (6430) radar-hr: Energy=2.31e+07 Bin=11.0 Var=4.056e-01 Score=60[0m
+[0;32mI (6440) radar-hr: Energy=2.00e+07 Bin=11.0 Var=3.998e-01 Score=60[0m
+[0;32mI (6450) radar-hr: Energy=2.11e+07 Bin=11.0 Var=3.992e-01 Score=60[0m
+[0;32mI (6450) radar-hr: Energy=1.73e+07 Bin=11.0 Var=3.947e-01 Score=60[0m
+[0;32mI (6460) radar-hr: Energy=1.78e+07 Bin=11.0 Var=3.909e-01 Score=60[0m
+[0;32mI (6460) radar-hr: Energy=1.76e+07 Bin=11.0 Var=3.904e-01 Score=60[0m
+[0;32mI (6470) radar-hr: Energy=1.80e+07 Bin=11.0 Var=3.843e-01 Score=60[0m
+[0;32mI (6480) radar-hr: Energy=1.25e+07 Bin=11.0 Var=3.789e-01 Score=60[0m
+[0;32mI (6480) radar-hr: Energy=1.28e+07 Bin=11.0 Var=3.675e-01 Score=60[0m
+[0;32mI (6490) radar-hr: Energy=1.38e+07 Bin=11.0 Var=3.594e-01 Score=60[0m
+[0;32mI (6490) radar-hr: Energy=1.15e+07 Bin=11.0 Var=3.482e-01 Score=60[0m
+[0;32mI (6500) radar-hr: Energy=1.56e+07 Bin=11.0 Var=3.417e-01 Score=60[0m
+[0;32mI (6510) radar-hr: Energy=1.46e+07 Bin=11.0 Var=3.367e-01 Score=60[0m
+[0;32mI (6510) radar-hr: Energy=1.07e+07 Bin=11.0 Var=3.284e-01 Score=60[0m
+[0;32mI (6520) radar-hr: Energy=1.25e+07 Bin=11.0 Var=3.203e-01 Score=60[0m
+[0;32mI (6520) radar-hr: Energy=1.17e+07 Bin=11.0 Var=3.069e-01 Score=60[0m
+[0;32mI (6530) radar-hr: Energy=9.08e+06 Bin=11.0 Var=2.923e-01 Score=60[0m
+[0;32mI (6530) radar-hr: Energy=1.07e+07 Bin=11.0 Var=2.794e-01 Score=60[0m
+[0;32mI (6540) radar-hr: Energy=6.82e+06 Bin=11.0 Var=2.645e-01 Score=60[0m
+[0;32mI (6550) radar-hr: Energy=5.83e+06 Bin=10.8 Var=2.843e-01 Score=60[0m
+[0;32mI (6550) radar-hr: Energy=6.60e+06 Bin=10.6 Var=3.027e-01 Score=60[0m
+[0;32mI (6560) radar-hr: Energy=6.22e+06 Bin=10.4 Var=3.083e-01 Score=60[0m
+[0;32mI (6560) radar-hr: Energy=5.24e+06 Bin=10.4 Var=2.886e-01 Score=60[0m
+[0;32mI (6570) radar-hr: Energy=5.50e+06 Bin=10.4 Var=2.649e-01 Score=60[0m
+[0;32mI (6580) radar-hr: Energy=6.64e+06 Bin=10.4 Var=2.795e-01 Score=60[0m
+[0;32mI (6580) radar-hr: Energy=5.32e+06 Bin=10.4 Var=2.943e-01 Score=60[0m
+[0;32mI (6590) radar-hr: Energy=6.71e+06 Bin=10.4 Var=3.053e-01 Score=60[0m
+[0;32mI (6590) radar-hr: Energy=4.87e+06 Bin=10.2 Var=3.234e-01 Score=60[0m
+[0;32mI (6600) radar-hr: Energy=5.69e+06 Bin=10.0 Var=3.301e-01 Score=60[0m
+[0;32mI (6610) radar-hr: Energy=4.99e+06 Bin=10.0 Var=3.775e-01 Score=60[0m
+[0;32mI (6610) radar-hr: Energy=4.84e+06 Bin=10.0 Var=3.963e-01 Score=60[0m
+[0;32mI (6620) radar-hr: Energy=4.63e+06 Bin=10.0 Var=4.328e-01 Score=60[0m
+[0;32mI (6620) radar-hr: Energy=4.37e+06 Bin=10.0 Var=4.636e-01 Score=60[0m
+[0;32mI (6630) radar-hr: Energy=4.36e+06 Bin=10.0 Var=5.010e-01 Score=60[0m
+[0;32mI (6640) radar-hr: Energy=4.74e+06 Bin=10.0 Var=5.242e-01 Score=60[0m
+[0;32mI (6640) radar-hr: Energy=5.20e+06 Bin=10.0 Var=5.504e-01 Score=60[0m
+[0;32mI (6650) radar-hr: Energy=5.34e+06 Bin=10.8 Var=5.437e-01 Score=60[0m
+[0;32mI (6650) radar-hr: Energy=5.85e+06 Bin=10.8 Var=5.639e-01 Score=59[0m
+[0;32mI (6660) radar-hr: Energy=4.29e+06 Bin=11.6 Var=5.549e-01 Score=58[0m
+[0;32mI (6670) radar-hr: Energy=5.92e+06 Bin=11.6 Var=5.812e-01 Score=58[0m
+[0;32mI (6670) radar-hr: Energy=4.07e+06 Bin=12.4 Var=5.754e-01 Score=59[0m
+[0;32mI (6680) radar-hr: Energy=4.27e+06 Bin=11.6 Var=5.864e-01 Score=60[0m
+[0;32mI (6680) radar-hr: Energy=4.18e+06 Bin=11.8 Var=5.929e-01 Score=60[0m
+[0;32mI (6690) radar-hr: Energy=4.97e+06 Bin=11.0 Var=6.128e-01 Score=59[0m
+[0;32mI (6700) radar-hr: Energy=4.29e+06 Bin=11.2 Var=6.136e-01 Score=59[0m
+[0;32mI (6700) radar-hr: Energy=4.30e+06 Bin=10.4 Var=6.232e-01 Score=59[0m
+[0;32mI (6710) radar-hr: Energy=4.37e+06 Bin=15.2 Var=6.239e-01 Score=58[0m
+[0;32mI (6710) radar-hr: Energy=4.96e+06 Bin=15.2 Var=6.210e-01 Score=57[0m
+[0;32mI (6720) radar-hr: Energy=4.36e+06 Bin=15.4 Var=6.209e-01 Score=58[0m
+[0;32mI (6720) radar-hr: Energy=4.08e+06 Bin=13.4 Var=6.195e-01 Score=59[0m
+[0;32mI (6730) radar-hr: Energy=6.23e+06 Bin=11.0 Var=6.197e-01 Score=58[0m
+[0;32mI (6740) radar-hr: Energy=6.61e+06 Bin=13.2 Var=6.182e-01 Score=58[0m
+[0;32mI (6740) radar-hr: Energy=4.84e+06 Bin=13.2 Var=6.186e-01 Score=59[0m
+[0;32mI (6750) radar-hr: Energy=5.58e+06 Bin=13.2 Var=6.142e-01 Score=60[0m
+[0;32mI (6750) radar-hr: Energy=5.65e+06 Bin=13.2 Var=6.130e-01 Score=60[0m
+[0;32mI (6760) radar-hr: Energy=5.07e+06 Bin=13.2 Var=6.111e-01 Score=59[0m

@@ -1,0 +1,373 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21ae0h (137952) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031b08 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036638 vaddr=40374000 size=099e0h ( 39392) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6644h (681540) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e666c vaddr=4037d9e0 size=0f0d0h ( 61648) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5744 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  c2a97fa93...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA5D80 len 00043990 (270 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (580) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (620) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (620) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (630) wifi:pm start, type: 1[0m
+
+[0;32mI (630) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (640) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (700) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2030) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2030) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2070) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2070) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2080) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2100) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4201018b
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2130) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2640) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (2640) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (2650) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2660) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2670) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2670) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2680) radar-vital: Measuring STARTED by MQTT[0m
+[0;32mI (2960) MQTT_Service: MQTT Connected[0m
+[0;33mW (3480) radar-vital: HR rejected (low mag=2.3)[0m
+[0;33mW (4120) radar-vital: HR rejected (low mag=0.1)[0m
+[0;33mW (4760) radar-vital: HR rejected (low mag=0.3)[0m
+[0;33mW (5400) radar-vital: HR rejected (low mag=0.2)[0m
+[0;33mW (6040) radar-vital: HR rejected (low mag=0.1)[0m
+[0;33mW (6680) radar-vital: HR rejected (low mag=0.4)[0m
+[0;33mW (7320) radar-vital: HR rejected (low mag=1.4)[0m
+[0;33mW (7960) radar-vital: HR rejected (low mag=2.1)[0m
+[0;33mW (8600) radar-vital: HR rejected (low mag=0.8)[0m
+[0;33mW (9240) radar-vital: HR rejected (low mag=3.2)[0m
+[0;33mW (9880) radar-vital: HR rejected (low mag=5.3)[0m
+[0;33mW (10530) radar-vital: HR rejected (low mag=3.6)[0m
+[0;33mW (11170) radar-vital: HR rejected (low mag=0.2)[0m
+[0;33mW (11810) radar-vital: HR rejected (low mag=1.8)[0m
+[0;33mW (12450) radar-vital: HR rejected (low mag=0.8)[0m
+[0;33mW (13090) radar-vital: HR rejected (low mag=0.5)[0m
+[0;33mW (13730) radar-vital: HR rejected (low mag=0.8)[0m
+[0;33mW (18460) radar-vital: HR rejected (low mag=12.1)[0m
+[0;33mW (19340) radar-vital: HR unstable (bpm=93.1 mag=48.1)[0m
+[0;33mW (20220) radar-vital: HR rejected (low mag=1.9)[0m
+[0;33mW (20870) radar-vital: HR unstable (bpm=92.0 mag=46.7)[0m
+[0;33mW (22090) radar-vital: HR rejected (low mag=13.3)[0m
+[0;33mW (24800) radar-vital: HR rejected (low mag=10.8)[0m
+[0;33mW (28240) radar-vital: HR rejected (low mag=2.2)[0m
+[0;33mW (29470) radar-vital: HR rejected (low mag=4.4)[0m
+[0;33mW (30110) radar-vital: HR rejected (low mag=3.9)[0m
+[0;33mW (30750) radar-vital: HR rejected (low mag=4.3)[0m
+[0;33mW (31390) radar-vital: HR rejected (low mag=17.6)[0m
+[0;33mW (32030) radar-vital: HR rejected (low mag=2.9)[0m
+[0;33mW (32670) radar-vital: HR rejected (low mag=3.1)[0m
+[0;33mW (34060) radar-vital: HR unstable (bpm=93.1 mag=299.8)[0m
+[0;32mI (34700) radar-vital: HR: 93.5 BPM | peak=1.56 Hz | Fs=199.5 | mag=60.8[0m
+[0;32mI (35740) radar-vital: HR: 93.5 BPM | peak=1.55 Hz | Fs=198.6 | mag=73.5[0m
+[0;32mI (36380) radar-vital: HR: 93.5 BPM | peak=1.56 Hz | Fs=199.3 | mag=157.8[0m
+[0;32mI (37020) radar-vital: HR: 93.5 BPM | peak=1.56 Hz | Fs=199.3 | mag=20.3[0m
+[0;32mI (38730) radar-vital: HR: 93.4 BPM | peak=1.55 Hz | Fs=197.8 | mag=25.7[0m
+[0;32mI (40850) radar-vital: HR: 93.5 BPM | peak=1.57 Hz | Fs=201.2 | mag=526.0[0m
+[0;32mI (42510) radar-vital: HR: 93.6 BPM | peak=1.57 Hz | Fs=201.4 | mag=51.6[0m
+[0;33mW (48000) radar-vital: HR rejected (low mag=12.0)[0m
+[0;33mW (48640) radar-vital: HR rejected (low mag=10.8)[0m
+[0;33mW (49280) radar-vital: HR rejected (low mag=10.2)[0m
+[0;33mW (49920) radar-vital: HR rejected (low mag=6.9)[0m
+[0;33mW (50770) radar-vital: HR rejected (low mag=16.7)[0m
+[0;33mW (51390) radar-vital: HR rejected (low mag=10.0)[0m
+[0;33mW (52040) radar-vital: HR rejected (low mag=10.1)[0m
+[0;32mI (60960) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=23.0[0m
+[0;32mI (62020) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=20.1[0m
+[0;33mW (62660) radar-vital: HR rejected (low mag=6.1)[0m
+[0;32mI (65020) radar-vital: HR: 93.8 BPM | peak=1.57 Hz | Fs=201.4 | mag=23.0[0m
+[0;33mW (74330) radar-vital: HR rejected (low mag=4.2)[0m
+[0;32mI (78010) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=198.6 | mag=20.2[0m
+[0;32mI (78720) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=198.6 | mag=473.4[0m
+[0;32mI (80860) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=232.9[0m
+[0;33mW (82600) radar-vital: HR rejected (low mag=2.5)[0m
+[0;32mI (85940) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=198.3 | mag=54.7[0m
+[0;32mI (87180) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.8 | mag=186.6[0m
+[0;33mW (87820) radar-vital: HR rejected (low mag=1.6)[0m
+[0;32mI (88690) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=200.6 | mag=128.2[0m
+[0;32mI (89330) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.5 | mag=55.5[0m
+[0;32mI (90550) radar-vital: HR: 93.8 BPM | peak=1.57 Hz | Fs=201.4 | mag=363.9[0m
+[0;32mI (91190) radar-vital: HR: 93.9 BPM | peak=1.57 Hz | Fs=201.5 | mag=470.2[0m
+[0;32mI (91840) radar-vital: HR: 93.8 BPM | peak=1.55 Hz | Fs=198.2 | mag=537.4[0m
+[0;33mW (92470) radar-vital: HR rejected (low mag=3.5)[0m
+[0;32mI (93120) radar-vital: HR: 93.8 BPM | peak=1.58 Hz | Fs=201.6 | mag=90.8[0m
+[0;32mI (94270) radar-vital: HR: 93.8 BPM | peak=1.55 Hz | Fs=198.6 | mag=106.0[0m
+[0;32mI (94910) radar-vital: HR: 93.7 BPM | peak=1.56 Hz | Fs=199.3 | mag=525.8[0m
+[0;32mI (96210) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=198.6 | mag=23.5[0m
+[0;33mW (97400) radar-vital: HR rejected (low mag=3.7)[0m
+[0;32mI (98050) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.3 | mag=78.8[0m
+[0;32mI (98690) radar-vital: HR: 93.6 BPM | peak=1.56 Hz | Fs=199.5 | mag=40.1[0m
+[0;33mW (99330) radar-vital: HR rejected (low mag=7.7)[0m
+[0;33mW (99970) radar-vital: HR rejected (low mag=3.2)[0m
+[0;33mW (101030) radar-vital: HR rejected (low mag=4.6)[0m
+[0;33mW (101670) radar-vital: HR rejected (low mag=6.2)[0m
+[0;32mI (102310) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.5 | mag=558.6[0m
+[0;33mW (103390) radar-vital: HR rejected (low mag=7.7)[0m
+[0;32mI (104730) radar-vital: HR: 93.9 BPM | peak=1.60 Hz | Fs=204.3 | mag=48.9[0m
+[0;32mI (105380) radar-vital: HR: 93.8 BPM | peak=1.56 Hz | Fs=199.5 | mag=42.3[0m
+[0;32mI (106410) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=197.8 | mag=472.7[0m
+[0;32mI (107050) radar-vital: HR: 93.7 BPM | peak=1.56 Hz | Fs=199.3 | mag=38.8[0m
+[0;33mW (108240) radar-vital: HR rejected (low mag=6.7)[0m
+[0;32mI (108880) radar-vital: HR: 93.7 BPM | peak=1.56 Hz | Fs=199.3 | mag=68.0[0m
+[0;32mI (109530) radar-vital: HR: 93.5 BPM | peak=1.53 Hz | Fs=196.2 | mag=185.5[0m
+[0;33mW (110160) radar-vital: HR rejected (low mag=7.7)[0m
+[0;32mI (110800) radar-vital: HR: 93.5 BPM | peak=1.56 Hz | Fs=199.3 | mag=26.1[0m
+[0;33mW (111440) radar-vital: HR rejected (low mag=0.7)[0m
+[0;33mW (112820) radar-vital: HR rejected (low mag=3.9)[0m
+[0;32mI (113950) radar-vital: HR: 93.6 BPM | peak=1.57 Hz | Fs=201.4 | mag=27.2[0m
+[0;33mW (114590) radar-vital: HR rejected (low mag=3.7)[0m
+[0;33mW (115230) radar-vital: HR rejected (low mag=9.0)[0m
+[0;33mW (115880) radar-vital: HR rejected (low mag=1.7)[0m
+[0;32mI (116920) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.6 | mag=25.9[0m
+[0;32mI (117560) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.2 | mag=199.8[0m
+[0;32mI (118200) radar-vital: HR: 93.8 BPM | peak=1.57 Hz | Fs=201.4 | mag=28.6[0m
+[0;33mW (118840) radar-vital: HR rejected (low mag=8.7)[0m
+[0;32mI (121610) radar-vital: HR: 93.6 BPM | peak=1.53 Hz | Fs=195.6 | mag=73.3[0m
+[0;32mI (126850) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=23.5[0m
+[0;33mW (127930) radar-vital: HR rejected (low mag=3.7)[0m
+[0;32mI (128580) radar-vital: HR: 93.5 BPM | peak=1.54 Hz | Fs=196.6 | mag=23.2[0m
+[0;33mW (129930) radar-vital: HR rejected (low mag=0.7)[0m
+[0;33mW (130570) radar-vital: HR rejected (low mag=0.1)[0m
+[0;33mW (131210) radar-vital: HR rejected (low mag=12.1)[0m
+[0;33mW (131850) radar-vital: HR rejected (low mag=2.4)[0m
+[0;33mW (132490) radar-vital: HR rejected (low mag=0.9)[0m
+[0;33mW (133820) radar-vital: HR rejected (low mag=18.5)[0m
+[0;33mW (134470) radar-vital: HR rejected (low mag=0.8)[0m
+[0;32mI (135390) radar-vital: HR: 93.4 BPM | peak=1.55 Hz | Fs=197.8 | mag=1064.5[0m
+[0;33mW (136030) radar-vital: HR rejected (low mag=1.9)[0m
+[0;33mW (136670) radar-vital: HR rejected (low mag=13.9)[0m
+[0;33mW (137310) radar-vital: HR rejected (low mag=0.4)[0m
+[0;32mI (139450) radar-vital: HR: 93.3 BPM | peak=1.53 Hz | Fs=196.2 | mag=31.1[0m
+[0;32mI (140550) radar-vital: HR: 93.4 BPM | peak=1.57 Hz | Fs=201.6 | mag=68.8[0m
+[0;33mW (141190) radar-vital: HR rejected (low mag=3.1)[0m
+[0;32mI (142430) radar-vital: HR: 93.5 BPM | peak=1.58 Hz | Fs=202.1 | mag=674.5[0m
+[0;32mI (144980) radar-vital: HR: 93.6 BPM | peak=1.57 Hz | Fs=201.4 | mag=99.1[0m
+[0;33mW (146340) radar-vital: HR rejected (low mag=7.9)[0m
+[0;32mI (146980) radar-vital: HR: 93.6 BPM | peak=1.56 Hz | Fs=199.3 | mag=117.8[0m
+[0;32mI (150440) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=228.0[0m
+[0;32mI (153470) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=66.6[0m
+[0;32mI (154100) radar-vital: HR: 93.6 BPM | peak=1.56 Hz | Fs=200.0 | mag=356.3[0m
+[0;33mW (156870) radar-vital: HR rejected (low mag=9.3)[0m
+[0;32mI (158440) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=22.4[0m
+[0;32mI (159270) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=27.5[0m
+[0;33mW (178240) radar-vital: HR rejected (low mag=10.8)[0m
+[0;32mI (179550) radar-vital: HR: 93.7 BPM | peak=1.57 Hz | Fs=201.4 | mag=96.5[0m
+[0;33mW (183690) radar-vital: HR rejected (low mag=3.8)[0m
+[0;32mI (201770) radar-vital: HR: 93.7 BPM | peak=1.55 Hz | Fs=198.6 | mag=42.6[0m
+[0;32mI (204080) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=20.4[0m
+[0;32mI (205300) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=77.2[0m
+[0;32mI (206800) radar-vital: HR: 93.5 BPM | peak=1.55 Hz | Fs=198.6 | mag=29.6[0m
+[0;33mW (207440) radar-vital: HR rejected (low mag=4.4)[0m
+[0;32mI (210110) radar-vital: HR: 93.6 BPM | peak=1.57 Hz | Fs=201.4 | mag=23.6[0m
+[0;33mW (215630) radar-vital: HR rejected (low mag=6.1)[0m
+[1;31mE (216990) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (216990) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (216990) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (223070) radar-vital: HR rejected (low mag=0.2)[0m
+[0;33mW (223710) radar-vital: HR rejected (low mag=1.2)[0m
+[0;33mW (224350) radar-vital: HR rejected (low mag=0.9)[0m
+[0;33mW (226710) radar-vital: HR rejected (low mag=1.4)[0m
+[0;33mW (227350) radar-vital: HR rejected (low mag=1.0)[0m
+[0;33mW (227990) radar-vital: HR rejected (low mag=1.5)[0m
+[0;33mW (228630) radar-vital: HR rejected (low mag=8.8)[0m
+[0;33mW (229270) radar-vital: HR rejected (low mag=5.4)[0m
+[0;33mW (229910) radar-vital: HR rejected (low mag=0.1)[0m
+[0;33mW (230550) radar-vital: HR rejected (low mag=1.1)[0m
+[0;32mI (232590) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=54.3[0m
+[0;32mI (232760) MQTT_Service: MQTT Connected[0m
+[0;32mI (233230) radar-vital: HR: 93.5 BPM | peak=1.56 Hz | Fs=199.3 | mag=201.9[0m
+[0;33mW (237810) radar-vital: HR rejected (low mag=16.6)[0m
+[0;33mW (239760) radar-vital: HR rejected (low mag=9.4)[0m
+[0;33mW (243310) radar-vital: HR rejected (low mag=2.8)[0m
+[0;33mW (244800) radar-vital: HR rejected (low mag=3.1)[0m
+[0;33mW (246160) radar-vital: HR rejected (low mag=3.9)[0m
+[0;33mW (250430) radar-vital: HR rejected (low mag=14.5)[0m
+[0;33mW (253380) radar-vital: HR rejected (low mag=0.3)[0m
+[0;33mW (254930) radar-vital: HR rejected (low mag=1.8)[0m
+[0;33mW (255570) radar-vital: HR rejected (low mag=3.9)[0m
+[0;33mW (257660) radar-vital: HR rejected (low mag=12.5)[0m
+[0;33mW (259500) radar-vital: HR rejected (low mag=2.0)[0m
+[0;33mW (260140) radar-vital: HR rejected (low mag=3.6)[0m
+[0;33mW (261570) radar-vital: HR rejected (low mag=8.0)[0m
+[0;33mW (263080) radar-vital: HR rejected (low mag=0.0)[0m
+[0;33mW (263730) radar-vital: HR rejected (low mag=0.0)[0m
+[0;33mW (265390) radar-vital: HR rejected (low mag=0.2)[0m
+[0;33mW (266680) radar-vital: HR rejected (low mag=3.2)[0m
+[0;33mW (267320) radar-vital: HR rejected (low mag=4.0)[0m
+[0;33mW (270600) radar-vital: HR rejected (low mag=18.1)[0m
+[0;33mW (271240) radar-vital: HR rejected (low mag=2.5)[0m
+[0;33mW (281360) radar-vital: HR rejected (low mag=15.9)[0m
+[0;32mI (284290) radar-vital: HR: 93.6 BPM | peak=1.57 Hz | Fs=201.4 | mag=24.3[0m
+[0;33mW (295720) radar-vital: HR rejected (low mag=4.7)[0m
+[0;33mW (297710) radar-vital: HR rejected (low mag=4.1)[0m
+[0;33mW (324490) radar-vital: HR rejected (low mag=9.4)[0m
+[0;33mW (328600) radar-vital: HR rejected (low mag=1.2)[0m
+[0;33mW (341500) radar-vital: HR rejected (low mag=11.1)[0m
+[0;33mW (342290) radar-vital: HR rejected (low mag=9.2)[0m
+[0;33mW (342930) radar-vital: HR rejected (low mag=8.4)[0m
+[0;32mI (350520) radar-vital: HR: 93.6 BPM | peak=1.55 Hz | Fs=198.6 | mag=27.8[0m
+[0;33mW (359300) radar-vital: HR rejected (low mag=15.5)[0m
+[0;33mW (360510) radar-vital: HR rejected (low mag=15.2)[0m

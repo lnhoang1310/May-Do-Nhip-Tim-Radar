@@ -1,4 +1,4 @@
-# Install script for directory: D:/Code/ESPIDF/Project_Anh_Sao/BGT60TR13C_API_HeartRate
+# Install script for directory: D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/BGT60TR13C_API_HeartRate
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

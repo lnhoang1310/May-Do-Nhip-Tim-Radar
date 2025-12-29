@@ -1,0 +1,452 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21b28h (138024) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031b50 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036680 vaddr=40374000 size=09998h ( 39320) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6b60h (682848) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6b88 vaddr=4037d998 size=0f118h ( 61720) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5ca8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  e08a2b7b6...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (310) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 3FCA5DA8 len 00043968 (270 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (600) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (600) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (610) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (610) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (640) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (640) wifi:security: WPA2-PSK, phy: bgn, rssi: -42[0m
+[0;32mI (650) wifi:pm start, type: 1[0m
+
+[0;32mI (650) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (660) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (690) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2180) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2180) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2570) Main: Wifi Connected[0m
+[0;32mI (2570) MQTT_Service: MQTT Started[0m
+[0;32mI (2570) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2570) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2570) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2600) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x42010303
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2630) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2640) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2670) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2690) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2700) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2720) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+I (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 18
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2740) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2750) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2770) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2790) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2800) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2820) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2840) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2850) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2870) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2880) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2900) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2920) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2930) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2950) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2970) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2980) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (3000) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (3020) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (3030) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (3050) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (3070) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (3080) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (3100) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (3110) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (3130) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (3140) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (3140) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (3150) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (3150) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3160) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (3170) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (3170) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (3180) radar-vital: Measuring STARTED by MQTT[0m
+[0;32mI (3990) radar-vital: Max bin: 1, max_val: 1278.6[0m
+[0;32mI (3990) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 93.2 BPM | peak: 1.55 Hz | Fs=198.9 Hz)[0m
+[0;32mI (4440) MQTT_Service: MQTT Connected[0m
+[0;32mI (4630) radar-vital: Max bin: 1, max_val: 5393.3[0m
+[0;32mI (4630) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (5270) radar-vital: Max bin: 1, max_val: 4249.6[0m
+[0;32mI (5270) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (5910) radar-vital: Max bin: 1, max_val: 7266.6[0m
+[0;32mI (5910) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (6550) radar-vital: Max bin: 1, max_val: 3362.5[0m
+[0;32mI (6550) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=200.0 Hz)[0m
+[0;32mI (7190) radar-vital: Max bin: 1, max_val: 3812.9[0m
+[0;32mI (7190) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (7830) radar-vital: Max bin: 1, max_val: 4276.7[0m
+[0;32mI (7830) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (8470) radar-vital: Max bin: 1, max_val: 8400.5[0m
+[0;32mI (8470) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (9110) radar-vital: Max bin: 1, max_val: 6832.6[0m
+[0;32mI (9110) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=200.0 Hz)[0m
+[0;32mI (9760) radar-vital: Max bin: 1, max_val: 6853.7[0m
+[0;32mI (9760) radar-vital: Nhịp tim: 92.5 BPM (tức thì: 92.2 BPM | peak: 1.54 Hz | Fs=196.8 Hz)[0m
+[0;32mI (10390) radar-vital: Max bin: 1, max_val: 2096.8[0m
+[0;32mI (10390) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.1 BPM | peak: 1.58 Hz | Fs=202.9 Hz)[0m
+[0;32mI (11030) radar-vital: Max bin: 1, max_val: 2917.4[0m
+[0;32mI (11030) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (11670) radar-vital: Max bin: 1, max_val: 2617.2[0m
+[0;32mI (11670) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (12310) radar-vital: Max bin: 1, max_val: 2829.3[0m
+[0;32mI (12310) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (12950) radar-vital: Max bin: 1, max_val: 8179.4[0m
+[0;32mI (12950) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (13590) radar-vital: Max bin: 1, max_val: 8406.2[0m
+[0;32mI (13590) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (14230) radar-vital: Max bin: 1, max_val: 8466.8[0m
+[0;32mI (14230) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (14870) radar-vital: Max bin: 1, max_val: 9242.3[0m
+[0;32mI (14870) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (15520) radar-vital: Max bin: 1, max_val: 4618.4[0m
+[0;32mI (15520) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (16160) radar-vital: Max bin: 1, max_val: 5237.6[0m
+[0;32mI (16160) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.9 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (16800) radar-vital: Max bin: 1, max_val: 5897.8[0m
+[0;32mI (16800) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.6 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (17440) radar-vital: Max bin: 1, max_val: 3544.2[0m
+[0;32mI (17440) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (18080) radar-vital: Max bin: 1, max_val: 5353.5[0m
+[0;32mI (18080) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (18720) radar-vital: Max bin: 1, max_val: 7765.7[0m
+[0;32mI (18720) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (19360) radar-vital: Max bin: 1, max_val: 7449.8[0m
+[0;32mI (19360) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (20000) radar-vital: Max bin: 1, max_val: 6067.7[0m
+[0;32mI (20000) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (20640) radar-vital: Max bin: 1, max_val: 7153.2[0m
+[0;32mI (20640) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (21290) radar-vital: Max bin: 1, max_val: 5415.2[0m
+[0;32mI (21290) radar-vital: Nhịp tim: 92.5 BPM (tức thì: 92.2 BPM | peak: 1.54 Hz | Fs=196.8 Hz)[0m
+[0;32mI (21930) radar-vital: Max bin: 1, max_val: 5207.5[0m
+[0;32mI (21930) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (22560) radar-vital: Max bin: 1, max_val: 6636.6[0m
+[0;32mI (22560) radar-vital: Nhịp tim: 94.8 BPM (tức thì: 95.1 BPM | peak: 1.59 Hz | Fs=202.9 Hz)[0m
+[0;32mI (23200) radar-vital: Max bin: 1, max_val: 7973.5[0m
+[0;32mI (23200) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (23840) radar-vital: Max bin: 1, max_val: 7801.0[0m
+[0;32mI (23840) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (24480) radar-vital: Max bin: 1, max_val: 4107.3[0m
+[0;32mI (24480) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (25120) radar-vital: Max bin: 1, max_val: 4607.7[0m
+[0;32mI (25120) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (25760) radar-vital: Max bin: 1, max_val: 3377.1[0m
+[0;32mI (25760) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (26400) radar-vital: Max bin: 1, max_val: 4617.0[0m
+[0;32mI (26400) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.1 Hz)[0m
+[0;32mI (27050) radar-vital: Max bin: 1, max_val: 8291.2[0m
+[0;32mI (27050) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 92.9 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (27680) radar-vital: Max bin: 1, max_val: 4352.4[0m
+[0;32mI (27680) radar-vital: Nhịp tim: 94.7 BPM (tức thì: 95.0 BPM | peak: 1.58 Hz | Fs=202.7 Hz)[0m
+[0;32mI (28330) radar-vital: Max bin: 1, max_val: 4190.7[0m
+[0;32mI (28330) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.58 Hz | Fs=201.6 Hz)[0m
+[0;32mI (28970) radar-vital: Max bin: 1, max_val: 4423.6[0m
+[0;32mI (28970) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (29610) radar-vital: Max bin: 1, max_val: 5412.8[0m
+[0;32mI (29610) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (30250) radar-vital: Max bin: 1, max_val: 3192.1[0m
+[0;32mI (30250) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (30890) radar-vital: Max bin: 1, max_val: 6362.5[0m
+[0;32mI (30890) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (31530) radar-vital: Max bin: 1, max_val: 3200.1[0m
+[0;32mI (31530) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (32170) radar-vital: Max bin: 1, max_val: 5945.5[0m
+[0;32mI (32170) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (32810) radar-vital: Max bin: 1, max_val: 7406.0[0m
+[0;32mI (32810) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (33450) radar-vital: Max bin: 1, max_val: 6709.0[0m
+[0;32mI (33450) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (34090) radar-vital: Max bin: 1, max_val: 3727.2[0m
+[0;32mI (34090) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (34730) radar-vital: Max bin: 1, max_val: 8604.9[0m
+[0;32mI (34730) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (35370) radar-vital: Max bin: 1, max_val: 8380.5[0m
+[0;32mI (35370) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (36010) radar-vital: Max bin: 1, max_val: 6842.0[0m
+[0;32mI (36010) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (36650) radar-vital: Max bin: 1, max_val: 5392.8[0m
+[0;32mI (36650) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (37290) radar-vital: Max bin: 1, max_val: 7653.2[0m
+[0;32mI (37290) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (37930) radar-vital: Max bin: 1, max_val: 6950.1[0m
+[0;32mI (37930) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (38570) radar-vital: Max bin: 1, max_val: 6661.5[0m
+[0;32mI (38570) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (39220) radar-vital: Max bin: 1, max_val: 7765.6[0m
+[0;32mI (39220) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (39860) radar-vital: Max bin: 1, max_val: 8167.6[0m
+[0;32mI (39860) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (40500) radar-vital: Max bin: 1, max_val: 7596.8[0m
+[0;32mI (40500) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (41140) radar-vital: Max bin: 1, max_val: 8108.7[0m
+[0;32mI (41140) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.9 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (41780) radar-vital: Max bin: 1, max_val: 7730.2[0m
+[0;32mI (41780) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (42420) radar-vital: Max bin: 1, max_val: 6938.0[0m
+[0;32mI (42420) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (43060) radar-vital: Max bin: 1, max_val: 7279.6[0m
+[0;32mI (43060) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (43700) radar-vital: Max bin: 1, max_val: 6563.9[0m
+[0;32mI (43700) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (44340) radar-vital: Max bin: 1, max_val: 6280.0[0m
+[0;32mI (44340) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (44990) radar-vital: Max bin: 1, max_val: 6259.7[0m
+[0;32mI (44990) radar-vital: Nhịp tim: 92.5 BPM (tức thì: 92.3 BPM | peak: 1.54 Hz | Fs=196.8 Hz)[0m
+[0;32mI (45630) radar-vital: Max bin: 1, max_val: 6251.6[0m
+[0;32mI (45630) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (46260) radar-vital: Max bin: 1, max_val: 6243.7[0m
+[0;32mI (46260) radar-vital: Nhịp tim: 94.9 BPM (tức thì: 95.3 BPM | peak: 1.59 Hz | Fs=203.3 Hz)[0m
+[0;32mI (46900) radar-vital: Max bin: 1, max_val: 4617.4[0m
+[0;32mI (46900) radar-vital: Nhịp tim: 94.2 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.5 Hz)[0m
+[0;32mI (47540) radar-vital: Max bin: 1, max_val: 3588.9[0m
+[0;32mI (47540) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (48180) radar-vital: Max bin: 1, max_val: 5551.7[0m
+[0;32mI (48180) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (48820) radar-vital: Max bin: 1, max_val: 3048.1[0m
+[0;32mI (48820) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 94.6 BPM | peak: 1.58 Hz | Fs=201.8 Hz)[0m
+[0;32mI (49460) radar-vital: Max bin: 1, max_val: 3983.0[0m
+[0;32mI (49460) radar-vital: Nhịp tim: 94.5 BPM (tức thì: 94.5 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (50100) radar-vital: Max bin: 1, max_val: 2048.9[0m
+[0;32mI (50100) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (50750) radar-vital: Max bin: 1, max_val: 279.1[0m
+[0;32mI (50750) radar-vital: Nhịp tim: 93.2 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (51390) radar-vital: Max bin: 1, max_val: 3902.8[0m
+[0;32mI (51390) radar-vital: Nhịp tim: 93.5 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.6 Hz)[0m
+[0;32mI (52030) radar-vital: Max bin: 1, max_val: 5467.1[0m
+[0;32mI (52030) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 94.0 BPM | peak: 1.57 Hz | Fs=200.4 Hz)[0m
+[0;32mI (52670) radar-vital: Max bin: 1, max_val: 4879.4[0m
+[0;32mI (52670) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (53310) radar-vital: Max bin: 1, max_val: 2579.9[0m
+[0;32mI (53310) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (53950) radar-vital: Max bin: 1, max_val: 2587.5[0m
+[0;32mI (53950) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (54590) radar-vital: Max bin: 1, max_val: 3232.4[0m
+[0;32mI (54590) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (55230) radar-vital: Max bin: 1, max_val: 4153.8[0m
+[0;32mI (55230) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (55870) radar-vital: Max bin: 1, max_val: 4336.3[0m
+[0;32mI (55870) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (56510) radar-vital: Max bin: 1, max_val: 3909.8[0m
+[0;32mI (56510) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (57160) radar-vital: Max bin: 1, max_val: 2067.0[0m
+[0;32mI (57160) radar-vital: Nhịp tim: 92.5 BPM (tức thì: 92.3 BPM | peak: 1.54 Hz | Fs=196.8 Hz)[0m
+[0;32mI (57790) radar-vital: Max bin: 1, max_val: 3261.2[0m
+[0;32mI (57790) radar-vital: Nhịp tim: 94.6 BPM (tức thì: 95.1 BPM | peak: 1.59 Hz | Fs=202.9 Hz)[0m
+[0;32mI (58430) radar-vital: Max bin: 1, max_val: 1721.9[0m
+[0;32mI (58430) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (59070) radar-vital: Max bin: 1, max_val: 3230.8[0m
+[0;32mI (59070) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (59710) radar-vital: Max bin: 1, max_val: 1104.3[0m
+[0;32mI (59710) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (60350) radar-vital: Max bin: 1, max_val: 2723.9[0m
+[0;32mI (60350) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (60990) radar-vital: Max bin: 1, max_val: 5448.9[0m
+[0;32mI (60990) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.5 Hz)[0m
+[0;32mI (61630) radar-vital: Max bin: 1, max_val: 3597.5[0m
+[0;32mI (61630) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (62270) radar-vital: Max bin: 1, max_val: 6178.9[0m
+[0;32mI (62270) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (62910) radar-vital: Max bin: 1, max_val: 4368.3[0m
+[0;32mI (62910) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.2 BPM | peak: 1.57 Hz | Fs=201.0 Hz)[0m
+[0;32mI (63560) radar-vital: Max bin: 1, max_val: 5365.7[0m
+[0;32mI (63560) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (64200) radar-vital: Max bin: 1, max_val: 5686.0[0m
+[0;32mI (64200) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (64840) radar-vital: Max bin: 1, max_val: 5805.7[0m
+[0;32mI (64840) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (65480) radar-vital: Max bin: 1, max_val: 4929.2[0m
+[0;32mI (65480) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (66120) radar-vital: Max bin: 1, max_val: 3041.6[0m
+[0;32mI (66120) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (66760) radar-vital: Max bin: 1, max_val: 5235.3[0m
+[0;32mI (66760) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.1 Hz)[0m
+[0;32mI (67400) radar-vital: Max bin: 1, max_val: 4796.8[0m
+[0;32mI (67400) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (68040) radar-vital: Max bin: 1, max_val: 5023.1[0m
+[0;32mI (68040) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (68680) radar-vital: Max bin: 1, max_val: 6869.0[0m
+[0;32mI (68680) radar-vital: Nhịp tim: 93.1 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.3 Hz)[0m
+[0;32mI (69320) radar-vital: Max bin: 1, max_val: 7717.2[0m
+[0;32mI (69320) radar-vital: Nhịp tim: 94.1 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.3 Hz)[0m
+[0;32mI (69960) radar-vital: Max bin: 1, max_val: 6499.4[0m
+[0;32mI (69960) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (70600) radar-vital: Max bin: 1, max_val: 8455.3[0m
+[0;32mI (70600) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (71240) radar-vital: Max bin: 1, max_val: 7689.9[0m
+[0;32mI (71240) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (71880) radar-vital: Max bin: 1, max_val: 8065.3[0m
+[0;32mI (71880) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (72520) radar-vital: Max bin: 1, max_val: 7220.9[0m
+[0;32mI (72520) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (73160) radar-vital: Max bin: 1, max_val: 9233.4[0m
+[0;32mI (73160) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (73800) radar-vital: Max bin: 1, max_val: 2697.4[0m
+[0;32mI (73800) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (74440) radar-vital: Max bin: 1, max_val: 6394.4[0m
+[0;32mI (74440) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.3 BPM | peak: 1.57 Hz | Fs=201.2 Hz)[0m
+[0;32mI (75080) radar-vital: Max bin: 1, max_val: 6843.2[0m
+[0;32mI (75080) radar-vital: Nhịp tim: 95.5 BPM (tức thì: 95.8 BPM | peak: 1.60 Hz | Fs=204.3 Hz)[0m
+[0;32mI (75730) radar-vital: Max bin: 1, max_val: 8182.0[0m
+[0;32mI (75730) radar-vital: Nhịp tim: 94.7 BPM (tức thì: 94.6 BPM | peak: 1.58 Hz | Fs=201.7 Hz)[0m
+[0;32mI (76370) radar-vital: Max bin: 1, max_val: 4202.4[0m
+[0;32mI (76370) radar-vital: Nhịp tim: 93.9 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (77010) radar-vital: Max bin: 1, max_val: 9221.0[0m
+[0;32mI (77010) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.0 Hz)[0m
+[0;32mI (77650) radar-vital: Max bin: 1, max_val: 8662.3[0m
+[0;32mI (77650) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (78290) radar-vital: Max bin: 1, max_val: 9959.6[0m
+[0;32mI (78290) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (78930) radar-vital: Max bin: 1, max_val: 9261.8[0m
+[0;32mI (78930) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (79570) radar-vital: Max bin: 1, max_val: 9517.1[0m
+[0;32mI (79570) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=199.9 Hz)[0m
+[0;32mI (80210) radar-vital: Max bin: 1, max_val: 5095.3[0m
+[0;32mI (80210) radar-vital: Nhịp tim: 93.7 BPM (tức thì: 93.7 BPM | peak: 1.56 Hz | Fs=200.0 Hz)[0m
+[0;32mI (80850) radar-vital: Max bin: 1, max_val: 2634.1[0m
+[0;32mI (80850) radar-vital: Nhịp tim: 93.6 BPM (tức thì: 93.5 BPM | peak: 1.56 Hz | Fs=199.5 Hz)[0m
+[0;32mI (81490) radar-vital: Max bin: 1, max_val: 6016.5[0m
+[0;32mI (81490) radar-vital: Nhịp tim: 93.8 BPM (tức thì: 93.8 BPM | peak: 1.56 Hz | Fs=200.2 Hz)[0m
+[0;32mI (82130) radar-vital: Max bin: 1, max_val: 2739.0[0m
+[0;32mI (82130) radar-vital: Nhịp tim: 94.3 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (82770) radar-vital: Max bin: 1, max_val: 6804.5[0m
+[0;32mI (82770) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (83410) radar-vital: Max bin: 1, max_val: 6617.0[0m
+[0;32mI (83410) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (84050) radar-vital: Max bin: 1, max_val: 5819.2[0m
+[0;32mI (84050) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (84690) radar-vital: Max bin: 1, max_val: 7296.2[0m
+[0;32mI (84690) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (85330) radar-vital: Max bin: 1, max_val: 3404.1[0m
+[0;32mI (85330) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (85970) radar-vital: Max bin: 1, max_val: 2140.7[0m
+[0;32mI (85970) radar-vital: Nhịp tim: 94.4 BPM (tức thì: 94.4 BPM | peak: 1.57 Hz | Fs=201.4 Hz)[0m
+[0;32mI (86620) radar-vital: Max bin: 1, max_val: 6126.6[0m
+[0;32mI (86620) radar-vital: Nhịp tim: 93.3 BPM (tức thì: 93.0 BPM | peak: 1.55 Hz | Fs=198.5 Hz)[0m

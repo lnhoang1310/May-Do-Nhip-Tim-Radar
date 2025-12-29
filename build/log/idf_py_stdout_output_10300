@@ -1,197 +1,87 @@
-Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\Project_Anh_Sao\build\Project_Anh_Sao.elf D:\Code\ESPIDF\Project_Anh_Sao\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
-ESP-ROM:esp32s3-20210327
-Build:Mar 27 �ESP-ROM:esp32s3-20210327
-Build:Mar 27 2021
-rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
-SPIWP:0xee
-mode:DIO, clock div:1
-load:0x3fce2820,len:0x158c
-load:0x403c8700,len:0xd24
-load:0x403cb700,len:0x2f34
-entry 0x403c8924
-[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
-[0;32mI (25) boot: compile time Dec 16 2025 19:32:10[0m
-[0;32mI (25) boot: Multicore bootloader[0m
-[0;32mI (25) boot: chip revision: v0.2[0m
-[0;32mI (28) boot: efuse block revision: v1.3[0m
-[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
-[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
-[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
-[0;32mI (43) boot: Enabling RNG early entropy source...[0m
-[0;32mI (47) boot: Partition Table:[0m
-[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
-[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
-[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
-[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
-[0;32mI (76) boot: End of partition table[0m
-[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=237e4h (145380) map[0m
-[0;32mI (112) esp_image: segment 1: paddr=0003380c vaddr=3fc9cb00 size=04b58h ( 19288) load[0m
-[0;32mI (116) esp_image: segment 2: paddr=0003836c vaddr=40374000 size=07cach ( 31916) load[0m
-[0;32mI (123) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b581ch (743452) map[0m
-[0;32mI (255) esp_image: segment 4: paddr=000f5844 vaddr=4037bcac size=10e04h ( 69124) load[0m
-[0;32mI (270) esp_image: segment 5: paddr=00106650 vaddr=50000000 size=00020h (    32) load[0m
-[0;32mI (280) boot: Loaded app from partition at offset 0x10000[0m
-[0;32mI (280) boot: Disabling RNG early entropy source...[0m
-[0;32mI (290) cpu_start: Multicore app[0m
-[0;32mI (299) cpu_start: Pro cpu start user code[0m
-[0;32mI (299) cpu_start: cpu freq: 160000000 Hz[0m
-[0;32mI (299) app_init: Application information:[0m
-[0;32mI (300) app_init: Project name:     Project_Anh_Sao[0m
-[0;32mI (304) app_init: App version:      1[0m
-[0;32mI (307) app_init: Compile time:     Dec 16 2025 19:30:56[0m
-[0;32mI (312) app_init: ELF file SHA256:  0ad244518...[0m
-[0;32mI (317) app_init: ESP-IDF:          v5.5.1[0m
-[0;32mI (321) efuse_init: Min chip rev:     v0.0[0m
-[0;32mI (324) efuse_init: Max chip rev:     v0.99 [0m
-[0;32mI (328) efuse_init: Chip rev:         v0.2[0m
-[0;32mI (332) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (339) heap_init: At 3FCA5DA0 len 00043970 (270 KiB): RAM[0m
-[0;32mI (344) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
-[0;32mI (349) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
-[0;32mI (354) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
-[0;32mI (360) spi_flash: detected chip: boya[0m
-[0;32mI (363) spi_flash: flash io: dio[0m
-[0;33mW (366) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
-[0;32mI (378) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
-[0;32mI (384) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
-[0;32mI (391) main_task: Started on CPU0[0m
-[0;32mI (411) main_task: Calling app_main()[0m
-[0;32mI (441) pp: pp rom version: e7ae62f[0m
-[0;32mI (441) net80211: net80211 rom version: e7ae62f[0m
-[0;32mI (451) wifi:wifi driver task: 3fcaab90, prio:23, stack:6656, core=0[0m
-[0;32mI (461) wifi:wifi firmware version: 14da9b7[0m
-[0;32mI (461) wifi:wifi certification version: v7.0[0m
-[0;32mI (461) wifi:config NVS flash: enabled[0m
-[0;32mI (461) wifi:config nano formatting: disabled[0m
-[0;32mI (471) wifi:Init data frame dynamic rx buffer num: 32[0m
-[0;32mI (471) wifi:Init static rx mgmt buffer num: 5[0m
-[0;32mI (471) wifi:Init management short buffer num: 32[0m
-[0;32mI (481) wifi:Init dynamic tx buffer num: 32[0m
-[0;32mI (481) wifi:Init static tx FG buffer num: 2[0m
-[0;32mI (491) wifi:Init static rx buffer size: 1600[0m
-[0;32mI (491) wifi:Init static rx buffer num: 10[0m
-[0;32mI (491) wifi:Init dynamic rx buffer num: 32[0m
-[0;32mI (501) wifi_init: rx ba win: 6[0m
-[0;32mI (501) wifi_init: accept mbox: 6[0m
-[0;32mI (501) wifi_init: tcpip mbox: 32[0m
-[0;32mI (511) wifi_init: udp mbox: 6[0m
-[0;32mI (511) wifi_init: tcp mbox: 6[0m
-[0;32mI (511) wifi_init: tcp tx win: 5760[0m
-[0;32mI (521) wifi_init: tcp rx win: 5760[0m
-[0;32mI (521) wifi_init: tcp mss: 1440[0m
-[0;32mI (521) wifi_init: WiFi IRAM OP enabled[0m
-[0;32mI (531) wifi_init: WiFi RX IRAM OP enabled[0m
-[0;32mI (531) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
-[0;32mI (581) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
-[0;32mI (581) wifi:enable tsf[0m
-[0;32mI (581) WIFI: Found saved WiFi: Lâm Hoàng[0m
-[0;32mI (581) WIFI: WiFi STA started[0m
-[1;31mE (581) wifi:sta is connecting, return error[0m
-[0;32mI (591) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
-[0;32mI (591) wifi:state: init -> auth (0xb0)[0m
-[0;32mI (601) wifi:state: auth -> assoc (0x0)[0m
-[0;32mI (611) wifi:state: assoc -> run (0x10)[0m
-[0;32mI (671) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = b6:82:cb:11:42:fd[0m
-[0;32mI (671) wifi:security: WPA2-PSK, phy: bgn, rssi: -39[0m
-[0;32mI (671) wifi:pm start, type: 1[0m
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/BGT60TR13C_API_HeartRate/CMakeFiles/__idf_BGT60TR13C_API_HeartRate.dir/BGT60TR13C_API_HeartRate.c.obj
+[5/10] Linking C static library esp-idf\BGT60TR13C_API_HeartRate\libBGT60TR13C_API_HeartRate.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+[7/10] Linking CXX executable Project_Anh_Sao.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/Project_Anh_Sao.bin
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/partition_table/partition-table.bin D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/Project_Anh_Sao.bin"
+Project_Anh_Sao.bin binary size 0xe5490 bytes. Smallest app partition is 0x100000 bytes. 0x1ab70 bytes (10%) free.
+[9/10] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.5.1\components\esptool_py && C:\Espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.5.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.5_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/esptool/esptool.py;--chip;esp32s3 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build -P C:/Espressif/frameworks/esp-idf-v5.5.1/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32s3 -p COM16 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 Project_Anh_Sao.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.0
+Serial port COM16
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 3c:dc:75:63:ed:7c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000f5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21056 bytes to 13388...
+Writing at 0x00000000... (100 %)
+Wrote 21056 bytes (13388 compressed) at 0x00000000 in 0.6 seconds (effective 275.9 kbit/s)...
+Hash of data verified.
+Compressed 939152 bytes to 580031...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001d49b... (5 %)
+Writing at 0x000280a2... (8 %)
+Writing at 0x000319f1... (11 %)
+Writing at 0x0003a610... (13 %)
+Writing at 0x000404f8... (16 %)
+Writing at 0x0004694f... (19 %)
+Writing at 0x0004cd68... (22 %)
+Writing at 0x00053271... (25 %)
+Writing at 0x00059441... (27 %)
+Writing at 0x0005f66f... (30 %)
+Writing at 0x00065150... (33 %)
+Writing at 0x0006b061... (36 %)
+Writing at 0x000711c1... (38 %)
+Writing at 0x000771b2... (41 %)
+Writing at 0x0007c5b5... (44 %)
+Writing at 0x000815c8... (47 %)
+Writing at 0x00086dda... (50 %)
+Writing at 0x0008c563... (52 %)
+Writing at 0x00091a22... (55 %)
+Writing at 0x00096fb1... (58 %)
+Writing at 0x0009c82e... (61 %)
+Writing at 0x000a2827... (63 %)
+Writing at 0x000a8129... (66 %)
+Writing at 0x000addf5... (69 %)
+Writing at 0x000b3af2... (72 %)
+Writing at 0x000b9388... (75 %)
+Writing at 0x000befe8... (77 %)
+Writing at 0x000c4d28... (80 %)
+Writing at 0x000ca405... (83 %)
+Writing at 0x000cf9d1... (86 %)
+Writing at 0x000d9960... (88 %)
+Writing at 0x000e0c4b... (91 %)
+Writing at 0x000e6d9b... (94 %)
+Writing at 0x000ed7fc... (97 %)
+Writing at 0x000f27ed... (100 %)
+Wrote 939152 bytes (580031 compressed) at 0x00010000 in 13.5 seconds (effective 555.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 405.2 kbit/s)...
+Hash of data verified.
 
-[0;32mI (671) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
-[0;32mI (681) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
-[0;32mI (731) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
-[0;32mI (1711) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
-[0;32mI (1711) WIFI: Got IP: 172.20.10.3[0m
-[0;32mI (2081) Main: Wifi Connected[0m
-[0;32mI (2081) MQTT_Service: MQTT Started[0m
-[0;32mI (2081) bgt60tr13c-driver: ID = 0x606[0m
-[0;32mI (2081) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
-[0;32mI (2081) wifi:<ba-add>idx:0 (ifx:0, b6:82:cb:11:42:fd), tid:0, ssn:2, winSize:64[0m
-[0;33mW (2091) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
-[0;33mW (2101) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
-[1;31mE (2111) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
-ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4201109b
-file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
-func: xensiv_bgt60tr13c_get_reg
-expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
-[0;33mW (2141) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
-[0;33mW (2151) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
-[0;32mI (2161) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
-[0;32mI (2171) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
-[0;32mI (2171) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
-[0;32mI (2181) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
-[0;32mI (2191) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
-[0;32mI (2191) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
-[0;32mI (2201) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
-[0;32mI (2211) bgt60tr13c-driver: Transaction verified. Successful write to register 13[0m
-[0;32mI (2221) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
-[0;32mI (2221) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
-[0;32mI (2231) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
-[0;32mI (2241) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
-[0;32mI (2241) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
-[0;32mI (2251) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
-[0;32mI (2261) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
-[0;32mI (2271) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
-[0;32mI (2271) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
-[0;32mI (2281) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
-[0;32mI (2291) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
-[0;32mI (2291) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
-[0;32mI (2301) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
-[0;32mI (2311) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
-[0;32mI (2321) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
-[0;32mI (2321) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
-[0;32mI (2331) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
-[0;32mI (2341) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
-[0;32mI (2341) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
-[0;32mI (2351) bgt60tr13c-driver: Transaction verified. Successful write to register 54[0m
-[0;32mI (2361) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
-[0;32mI (2371) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
-[0;32mI (2371) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
-[0;32mI (2381) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
-[0;32mI (2391) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
-[0;32mI (2401) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
-[0;32mI (2401) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
-[0;32mI (2411) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
-[0;32mI (2421) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
-[0;32mI (2421) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
-[0;32mI (2431) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
-[0;32mI (2441) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
-[0;32mI (2451) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
-[0;32mI (2451) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
-[0;32mI (2461) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
-[0;32mI (2471) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
-[0;32mI (2471) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
-[0;32mI (2481) bgt60tr13c-driver: Transaction verified. Successful write to register 13[0m
-[0;32mI (2491) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
-[0;32mI (2501) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
-[0;32mI (2501) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
-[0;32mI (2511) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
-[0;32mI (2521) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
-[0;32mI (2521) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
-[0;32mI (2531) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
-[0;32mI (2541) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
-[0;32mI (2551) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
-[0;32mI (2551) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
-[0;32mI (2561) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
-[0;32mI (2571) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
-[0;32mI (2571) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
-[0;32mI (2581) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
-[0;32mI (2591) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
-[0;32mI (2601) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
-[0;32mI (2601) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
-[0;32mI (2611) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
-[0;32mI (2621) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
-[0;32mI (2631) bgt60tr13c-driver: Transaction verified. Successful write to register 54[0m
-[0;32mI (2631) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
-[0;32mI (2641) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
-[0;32mI (2651) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
-[0;32mI (2651) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
-[0;32mI (2661) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
-[0;32mI (2671) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
-[0;32mI (2681) radar-vital: Setting CCR2 for endless frames.[0m
-[0;32mI (2681) radar-vital: Original CCR2 value: 0x0003F000[0m
-[0;32mI (2691) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x0003F000[0m
-[0;32mI (2691) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
-[0;32mI (2701) radar-vital: Successfully set CCR2 for endless frames.[0m
-[0;32mI (2711) radar-vital: New CCR2 value read back: 0x0003F000[0m
-[0;32mI (2711) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
-[0;32mI (2721) main_task: Returned from app_main()[0m
-[0;32mI (6171) MQTT_Service: MQTT Connected[0m
+Leaving...
+Hard resetting via RTS pin...

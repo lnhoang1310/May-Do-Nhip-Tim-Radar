@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file D:/Code/ESPIDF/Project_Anh_Sao/build/bootloader/bootloader.elf
+    add-symbol-file D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file D:/Code/ESPIDF/Project_Anh_Sao/build/Project_Anh_Sao.elf
+file D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/Project_Anh_Sao.elf

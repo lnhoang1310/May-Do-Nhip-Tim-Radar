@@ -1,4 +1,4 @@
-# Install script for directory: D:/Code/ESPIDF/Project_Anh_Sao
+# Install script for directory: D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/Code/ESPIDF/Project_Anh_Sao/build/esp-idf/cmake_install.cmake")
+  include("D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/Code/ESPIDF/Project_Anh_Sao/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

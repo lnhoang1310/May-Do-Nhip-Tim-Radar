@@ -1,0 +1,645 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21ae0h (137952) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031b08 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036638 vaddr=40374000 size=099e0h ( 39392) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a62f8h (680696) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6320 vaddr=4037d9e0 size=0f0d0h ( 61648) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f53f8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  d5959e3c6...[0m
+[0;32mI (305) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA5B60 len 00043BB0 (270 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (354) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced4b0, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (580) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (630) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (630) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (640) wifi:pm start, type: 1[0m
+
+[0;32mI (640) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (650) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (710) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1930) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (1930) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2070) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2070) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2090) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2100) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4200fe43
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2130) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2150) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2640) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (2640) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (2650) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2660) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2670) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2670) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2680) radar-vital: Measuring STARTED by MQTT[0m
+[0;32mI (2850) radar-vital: Target bin: 11[0m
+[0;32mI (2850) radar-vital: Max magnitude in range bins: 22484382.00[0m
+[0;32mI (2850) radar-vital: Target bin: 11[0m
+[0;32mI (2850) radar-vital: Max magnitude in range bins: 31267154.00[0m
+[0;32mI (2850) radar-vital: Target bin: 11[0m
+[0;32mI (2860) radar-vital: Max magnitude in range bins: 30872172.00[0m
+[0;32mI (2860) radar-vital: Target bin: 11[0m
+[0;32mI (2870) radar-vital: Max magnitude in range bins: 23145052.00[0m
+[0;32mI (2870) MQTT_Service: MQTT Connected[0m
+[0;32mI (2870) radar-vital: Target bin: 11[0m
+[0;32mI (2880) radar-vital: Max magnitude in range bins: 23144276.00[0m
+[0;32mI (2880) radar-vital: Target bin: 11[0m
+[0;32mI (2890) radar-vital: Max magnitude in range bins: 23529416.00[0m
+[0;32mI (2890) radar-vital: Target bin: 11[0m
+[0;32mI (2890) radar-vital: Max magnitude in range bins: 29839628.00[0m
+[0;32mI (2900) radar-vital: Target bin: 11[0m
+[0;32mI (2900) radar-vital: Max magnitude in range bins: 24054756.00[0m
+[0;32mI (2910) radar-vital: Target bin: 11[0m
+[0;32mI (2910) radar-vital: Max magnitude in range bins: 25186932.00[0m
+[0;32mI (2920) radar-vital: Target bin: 11[0m
+[0;32mI (2920) radar-vital: Max magnitude in range bins: 24856236.00[0m
+[0;32mI (2930) radar-vital: Target bin: 11[0m
+[0;32mI (2930) radar-vital: Max magnitude in range bins: 29025372.00[0m
+[0;32mI (2940) radar-vital: Target bin: 11[0m
+[0;32mI (2940) radar-vital: Max magnitude in range bins: 23966924.00[0m
+[0;32mI (2950) radar-vital: Target bin: 11[0m
+[0;32mI (2950) radar-vital: Max magnitude in range bins: 25399462.00[0m
+[0;32mI (2950) radar-vital: Target bin: 11[0m
+[0;32mI (2960) radar-vital: Max magnitude in range bins: 24087752.00[0m
+[0;32mI (2960) radar-vital: Target bin: 11[0m
+[0;32mI (2970) radar-vital: Max magnitude in range bins: 26398818.00[0m
+[0;32mI (2970) radar-vital: Target bin: 11[0m
+[0;32mI (2970) radar-vital: Max magnitude in range bins: 18602788.00[0m
+[0;32mI (2980) radar-vital: Target bin: 11[0m
+[0;32mI (2980) radar-vital: Max magnitude in range bins: 24475188.00[0m
+[0;32mI (2990) radar-vital: Target bin: 11[0m
+[0;32mI (2990) radar-vital: Max magnitude in range bins: 21762224.00[0m
+[0;32mI (3000) radar-vital: Target bin: 11[0m
+[0;32mI (3000) radar-vital: Max magnitude in range bins: 25403164.00[0m
+[0;32mI (3010) radar-vital: Target bin: 11[0m
+[0;32mI (3010) radar-vital: Max magnitude in range bins: 23395920.00[0m
+[0;32mI (3020) radar-vital: Target bin: 11[0m
+[0;32mI (3020) radar-vital: Max magnitude in range bins: 20025776.00[0m
+[0;32mI (3020) radar-vital: Target bin: 11[0m
+[0;32mI (3030) radar-vital: Max magnitude in range bins: 25133588.00[0m
+[0;32mI (3030) radar-vital: Target bin: 11[0m
+[0;32mI (3040) radar-vital: Max magnitude in range bins: 26782336.00[0m
+[0;32mI (3040) radar-vital: Target bin: 11[0m
+[0;32mI (3050) radar-vital: Max magnitude in range bins: 20316560.00[0m
+[0;32mI (3050) radar-vital: Target bin: 11[0m
+[0;32mI (3050) radar-vital: Max magnitude in range bins: 18726138.00[0m
+[0;32mI (3060) radar-vital: Target bin: 11[0m
+[0;32mI (3060) radar-vital: Max magnitude in range bins: 22317088.00[0m
+[0;32mI (3070) radar-vital: Target bin: 11[0m
+[0;32mI (3070) radar-vital: Max magnitude in range bins: 23776722.00[0m
+[0;32mI (3080) radar-vital: Target bin: 11[0m
+[0;32mI (3080) radar-vital: Max magnitude in range bins: 20314008.00[0m
+[0;32mI (3090) radar-vital: Target bin: 11[0m
+[0;32mI (3090) radar-vital: Max magnitude in range bins: 13532262.00[0m
+[0;32mI (3100) radar-vital: Target bin: 11[0m
+[0;32mI (3100) radar-vital: Max magnitude in range bins: 18669752.00[0m
+[0;32mI (3100) radar-vital: Target bin: 11[0m
+[0;32mI (3110) radar-vital: Max magnitude in range bins: 16766974.00[0m
+[0;32mI (3110) radar-vital: Target bin: 11[0m
+[0;32mI (3120) radar-vital: Max magnitude in range bins: 21097622.00[0m
+[0;32mI (3120) radar-vital: Target bin: 11[0m
+[0;32mI (3120) radar-vital: Max magnitude in range bins: 17999774.00[0m
+[0;32mI (3130) radar-vital: Target bin: 10[0m
+[0;32mI (3130) radar-vital: Max magnitude in range bins: 17268878.00[0m
+[0;32mI (3140) radar-vital: Target bin: 11[0m
+[0;32mI (3140) radar-vital: Max magnitude in range bins: 15889096.00[0m
+[0;32mI (3150) radar-vital: Target bin: 11[0m
+[0;32mI (3150) radar-vital: Max magnitude in range bins: 19441280.00[0m
+[0;32mI (3160) radar-vital: Target bin: 11[0m
+[0;32mI (3160) radar-vital: Max magnitude in range bins: 15786806.00[0m
+[0;32mI (3170) radar-vital: Target bin: 10[0m
+[0;32mI (3170) radar-vital: Max magnitude in range bins: 15090559.00[0m
+[0;32mI (3180) radar-vital: Target bin: 10[0m
+[0;32mI (3180) radar-vital: Max magnitude in range bins: 18058770.00[0m
+[0;32mI (3180) radar-vital: Target bin: 10[0m
+[0;32mI (3190) radar-vital: Max magnitude in range bins: 17751232.00[0m
+[0;32mI (3190) radar-vital: Target bin: 11[0m
+[0;32mI (3200) radar-vital: Max magnitude in range bins: 18096216.00[0m
+[0;32mI (3200) radar-vital: Target bin: 11[0m
+[0;32mI (3200) radar-vital: Max magnitude in range bins: 17804340.00[0m
+[0;32mI (3210) radar-vital: Target bin: 11[0m
+[0;32mI (3210) radar-vital: Max magnitude in range bins: 19213912.00[0m
+[0;32mI (3220) radar-vital: Target bin: 11[0m
+[0;32mI (3220) radar-vital: Max magnitude in range bins: 16377426.00[0m
+[0;32mI (3230) radar-vital: Target bin: 11[0m
+[0;32mI (3230) radar-vital: Max magnitude in range bins: 18395494.00[0m
+[0;32mI (3240) radar-vital: Target bin: 11[0m
+[0;32mI (3240) radar-vital: Max magnitude in range bins: 17090296.00[0m
+[0;32mI (3250) radar-vital: Target bin: 11[0m
+[0;32mI (3250) radar-vital: Max magnitude in range bins: 17538592.00[0m
+[0;32mI (3260) radar-vital: Target bin: 11[0m
+[0;32mI (3260) radar-vital: Max magnitude in range bins: 17801354.00[0m
+[0;32mI (3260) radar-vital: Target bin: 11[0m
+[0;32mI (3270) radar-vital: Max magnitude in range bins: 21846966.00[0m
+[0;32mI (3270) radar-vital: Target bin: 11[0m
+[0;32mI (3280) radar-vital: Max magnitude in range bins: 18047566.00[0m
+[0;32mI (3280) radar-vital: Target bin: 11[0m
+[0;32mI (3280) radar-vital: Max magnitude in range bins: 18111098.00[0m
+[0;32mI (3290) radar-vital: Target bin: 11[0m
+[0;32mI (3290) radar-vital: Max magnitude in range bins: 17928030.00[0m
+[0;32mI (3300) radar-vital: Target bin: 11[0m
+[0;32mI (3300) radar-vital: Max magnitude in range bins: 20012268.00[0m
+[0;32mI (3310) radar-vital: Target bin: 11[0m
+[0;32mI (3310) radar-vital: Max magnitude in range bins: 19652052.00[0m
+[0;32mI (3320) radar-vital: Target bin: 11[0m
+[0;32mI (3320) radar-vital: Max magnitude in range bins: 19176776.00[0m
+[0;32mI (3330) radar-vital: Target bin: 11[0m
+[0;32mI (3330) radar-vital: Max magnitude in range bins: 17808136.00[0m
+[0;32mI (3330) radar-vital: Target bin: 11[0m
+[0;32mI (3340) radar-vital: Max magnitude in range bins: 22182922.00[0m
+[0;32mI (3340) radar-vital: Target bin: 11[0m
+[0;32mI (3350) radar-vital: Max magnitude in range bins: 21043590.00[0m
+[0;32mI (3350) radar-vital: Target bin: 11[0m
+[0;32mI (3360) radar-vital: Max magnitude in range bins: 18260130.00[0m
+[0;32mI (3360) radar-vital: Target bin: 11[0m
+[0;32mI (3360) radar-vital: Max magnitude in range bins: 19648416.00[0m
+[0;32mI (3370) radar-vital: Target bin: 11[0m
+[0;32mI (3370) radar-vital: Max magnitude in range bins: 18193386.00[0m
+[0;32mI (3380) radar-vital: Target bin: 13[0m
+[0;32mI (3380) radar-vital: Max magnitude in range bins: 13190492.00[0m
+[0;32mI (3390) radar-vital: Target bin: 11[0m
+[0;32mI (3390) radar-vital: Max magnitude in range bins: 20364578.00[0m
+[0;32mI (3400) radar-vital: Target bin: 11[0m
+[0;32mI (3400) radar-vital: Max magnitude in range bins: 19478496.00[0m
+[0;32mI (3410) radar-vital: Target bin: 11[0m
+[0;32mI (3410) radar-vital: Max magnitude in range bins: 19138904.00[0m
+[0;32mI (3410) radar-vital: Target bin: 11[0m
+[0;32mI (3420) radar-vital: Max magnitude in range bins: 15221846.00[0m
+[0;32mI (3420) radar-vital: Target bin: 11[0m
+[0;32mI (3430) radar-vital: Max magnitude in range bins: 19246548.00[0m
+[0;32mI (3430) radar-vital: Target bin: 11[0m
+[0;32mI (3430) radar-vital: Max magnitude in range bins: 23996014.00[0m
+[0;32mI (3440) radar-vital: Target bin: 11[0m
+[0;32mI (3440) radar-vital: Max magnitude in range bins: 23428782.00[0m
+[0;32mI (3450) radar-vital: Target bin: 11[0m
+[0;32mI (3450) radar-vital: Max magnitude in range bins: 20796066.00[0m
+[0;32mI (3460) radar-vital: Target bin: 11[0m
+[0;32mI (3460) radar-vital: Max magnitude in range bins: 18681246.00[0m
+[0;32mI (3470) radar-vital: Target bin: 11[0m
+[0;32mI (3470) radar-vital: Max magnitude in range bins: 20834352.00[0m
+[0;32mI (3480) radar-vital: Target bin: 11[0m
+[0;32mI (3480) radar-vital: Max magnitude in range bins: 25399746.00[0m
+[0;32mI (3490) radar-vital: Target bin: 11[0m
+[0;32mI (3490) radar-vital: Max magnitude in range bins: 22550788.00[0m
+[0;32mI (3490) radar-vital: Target bin: 11[0m
+[0;32mI (3500) radar-vital: Max magnitude in range bins: 18630154.00[0m
+[0;32mI (3500) radar-vital: Target bin: 11[0m
+[0;32mI (3510) radar-vital: Max magnitude in range bins: 19004340.00[0m
+[0;32mI (3510) radar-vital: Target bin: 11[0m
+[0;32mI (3510) radar-vital: Max magnitude in range bins: 18301062.00[0m
+[0;32mI (3520) radar-vital: Target bin: 11[0m
+[0;32mI (3520) radar-vital: Max magnitude in range bins: 21881524.00[0m
+[0;32mI (3530) radar-vital: Target bin: 11[0m
+[0;32mI (3530) radar-vital: Max magnitude in range bins: 18088694.00[0m
+[0;32mI (3540) radar-vital: Target bin: 11[0m
+[0;32mI (3540) radar-vital: Max magnitude in range bins: 19679786.00[0m
+[0;32mI (3550) radar-vital: Target bin: 11[0m
+[0;32mI (3550) radar-vital: Max magnitude in range bins: 17406592.00[0m
+[0;32mI (3560) radar-vital: Target bin: 11[0m
+[0;32mI (3560) radar-vital: Max magnitude in range bins: 21426264.00[0m
+[0;32mI (3570) radar-vital: Target bin: 11[0m
+[0;32mI (3570) radar-vital: Max magnitude in range bins: 19385850.00[0m
+[0;32mI (3570) radar-vital: Target bin: 11[0m
+[0;32mI (3580) radar-vital: Max magnitude in range bins: 16942794.00[0m
+[0;32mI (3580) radar-vital: Target bin: 11[0m
+[0;32mI (3590) radar-vital: Max magnitude in range bins: 21308324.00[0m
+[0;32mI (3590) radar-vital: Target bin: 11[0m
+[0;32mI (3590) radar-vital: Max magnitude in range bins: 16844570.00[0m
+[0;32mI (3600) radar-vital: Target bin: 11[0m
+[0;32mI (3600) radar-vital: Max magnitude in range bins: 17120618.00[0m
+[0;32mI (3610) radar-vital: Target bin: 11[0m
+[0;32mI (3610) radar-vital: Max magnitude in range bins: 16494868.00[0m
+[0;32mI (3620) radar-vital: Target bin: 11[0m
+[0;32mI (3620) radar-vital: Max magnitude in range bins: 19084228.00[0m
+[0;32mI (3630) radar-vital: Target bin: 11[0m
+[0;32mI (3630) radar-vital: Max magnitude in range bins: 20207196.00[0m
+[0;32mI (3640) radar-vital: Target bin: 11[0m
+[0;32mI (3640) radar-vital: Max magnitude in range bins: 20302618.00[0m
+[0;32mI (3640) radar-vital: Target bin: 11[0m
+[0;32mI (3650) radar-vital: Max magnitude in range bins: 15941617.00[0m
+[0;32mI (3650) radar-vital: Target bin: 11[0m
+[0;32mI (3660) radar-vital: Max magnitude in range bins: 19224894.00[0m
+[0;32mI (3660) radar-vital: Target bin: 11[0m
+[0;32mI (3660) radar-vital: Max magnitude in range bins: 18985246.00[0m
+[0;32mI (3670) radar-vital: Target bin: 11[0m
+[0;32mI (3670) radar-vital: Max magnitude in range bins: 19075872.00[0m
+[0;32mI (3680) radar-vital: Target bin: 11[0m
+[0;32mI (3680) radar-vital: Max magnitude in range bins: 21840546.00[0m
+[0;32mI (3690) radar-vital: Target bin: 11[0m
+[0;32mI (3690) radar-vital: Max magnitude in range bins: 17246262.00[0m
+[0;32mI (3700) radar-vital: Target bin: 11[0m
+[0;32mI (3700) radar-vital: Max magnitude in range bins: 18277532.00[0m
+[0;32mI (3710) radar-vital: Target bin: 11[0m
+[0;32mI (3710) radar-vital: Max magnitude in range bins: 18892038.00[0m
+[0;32mI (3720) radar-vital: Target bin: 11[0m
+[0;32mI (3720) radar-vital: Max magnitude in range bins: 18892910.00[0m
+[0;32mI (3720) radar-vital: Target bin: 11[0m
+[0;32mI (3730) radar-vital: Max magnitude in range bins: 21067158.00[0m
+[0;32mI (3730) radar-vital: Target bin: 11[0m
+[0;32mI (3740) radar-vital: Max magnitude in range bins: 18259450.00[0m
+[0;32mI (3740) radar-vital: Target bin: 11[0m
+[0;32mI (3740) radar-vital: Max magnitude in range bins: 18567112.00[0m
+[0;32mI (3750) radar-vital: Target bin: 11[0m
+[0;32mI (3750) radar-vital: Max magnitude in range bins: 18797584.00[0m
+[0;32mI (3760) radar-vital: Target bin: 11[0m
+[0;32mI (3760) radar-vital: Max magnitude in range bins: 21633548.00[0m
+[0;32mI (3770) radar-vital: Target bin: 11[0m
+[0;32mI (3770) radar-vital: Max magnitude in range bins: 17575344.00[0m
+[0;32mI (3780) radar-vital: Target bin: 11[0m
+[0;32mI (3780) radar-vital: Max magnitude in range bins: 22339156.00[0m
+[0;32mI (3790) radar-vital: Target bin: 11[0m
+[0;32mI (3790) radar-vital: Max magnitude in range bins: 13893998.00[0m
+[0;32mI (3800) radar-vital: Target bin: 11[0m
+[0;32mI (3800) radar-vital: Max magnitude in range bins: 16729806.00[0m
+[0;32mI (3800) radar-vital: Target bin: 11[0m
+[0;32mI (3810) radar-vital: Max magnitude in range bins: 16552004.00[0m
+[0;32mI (3810) radar-vital: Target bin: 11[0m
+[0;32mI (3820) radar-vital: Max magnitude in range bins: 18225344.00[0m
+[0;32mI (3820) radar-vital: Target bin: 11[0m
+[0;32mI (3820) radar-vital: Max magnitude in range bins: 17717686.00[0m
+[0;32mI (3830) radar-vital: Target bin: 11[0m
+[0;32mI (3830) radar-vital: Max magnitude in range bins: 18752336.00[0m
+[0;32mI (3840) radar-vital: Target bin: 11[0m
+[0;32mI (3840) radar-vital: Max magnitude in range bins: 19720164.00[0m
+[0;32mI (3850) radar-vital: Target bin: 11[0m
+[0;32mI (3850) radar-vital: Max magnitude in range bins: 19647032.00[0m
+[0;32mI (3860) radar-vital: Target bin: 11[0m
+[0;32mI (3860) radar-vital: Max magnitude in range bins: 18264696.00[0m
+[0;32mI (3870) radar-vital: Target bin: 11[0m
+[0;32mI (3870) radar-vital: Max magnitude in range bins: 20563952.00[0m
+[0;32mI (3870) radar-vital: Target bin: 11[0m
+[0;32mI (3880) radar-vital: Max magnitude in range bins: 20460162.00[0m
+[0;32mI (3880) radar-vital: Target bin: 11[0m
+[0;32mI (3890) radar-vital: Max magnitude in range bins: 18846082.00[0m
+[0;32mI (3890) radar-vital: Target bin: 11[0m
+[0;32mI (3900) radar-vital: Max magnitude in range bins: 19913242.00[0m
+[0;32mI (3900) radar-vital: Target bin: 11[0m
+[0;32mI (3900) radar-vital: Max magnitude in range bins: 18479780.00[0m
+[0;32mI (3910) radar-vital: Target bin: 11[0m
+[0;32mI (3910) radar-vital: Max magnitude in range bins: 18053928.00[0m
+[0;32mI (3920) radar-vital: Target bin: 11[0m
+[0;32mI (3920) radar-vital: Max magnitude in range bins: 16061051.00[0m
+[0;32mI (3930) radar-vital: Target bin: 11[0m
+[0;32mI (3930) radar-vital: Max magnitude in range bins: 16433415.00[0m
+[0;32mI (3940) radar-vital: Target bin: 11[0m
+[0;32mI (3940) radar-vital: Max magnitude in range bins: 15469594.00[0m
+[0;32mI (3950) radar-vital: Target bin: 11[0m
+[0;32mI (3950) radar-vital: Max magnitude in range bins: 17271738.00[0m
+[0;32mI (3950) radar-vital: Target bin: 11[0m
+[0;32mI (3960) radar-vital: Max magnitude in range bins: 19231030.00[0m
+[0;32mI (3960) radar-vital: Target bin: 11[0m
+[0;32mI (3970) radar-vital: Max magnitude in range bins: 17475616.00[0m
+[0;32mI (3970) radar-vital: Target bin: 11[0m
+[0;32mI (3970) radar-vital: Max magnitude in range bins: 14877905.00[0m
+[0;32mI (3980) radar-vital: Target bin: 11[0m
+[0;32mI (3980) radar-vital: Max magnitude in range bins: 18145258.00[0m
+[0;32mI (3990) radar-vital: Target bin: 11[0m
+[0;32mI (3990) radar-vital: Max magnitude in range bins: 15436989.00[0m
+[0;32mI (4000) radar-vital: Target bin: 11[0m
+[0;32mI (4000) radar-vital: Max magnitude in range bins: 13508419.00[0m
+[0;32mI (4010) radar-vital: Target bin: 11[0m
+[0;32mI (4010) radar-vital: Max magnitude in range bins: 13528829.00[0m
+[0;32mI (4020) radar-vital: Target bin: 11[0m
+[0;32mI (4020) radar-vital: Max magnitude in range bins: 16289963.00[0m
+[0;32mI (4030) radar-vital: Target bin: 11[0m
+[0;32mI (4030) radar-vital: Max magnitude in range bins: 13234582.00[0m
+[0;32mI (4030) radar-vital: Target bin: 11[0m
+[0;32mI (4040) radar-vital: Max magnitude in range bins: 19257042.00[0m
+[0;32mI (4040) radar-vital: Target bin: 11[0m
+[0;32mI (4050) radar-vital: Max magnitude in range bins: 17533060.00[0m
+[0;32mI (4050) radar-vital: Target bin: 11[0m
+[0;32mI (4050) radar-vital: Max magnitude in range bins: 14757095.00[0m
+[0;32mI (4060) radar-vital: Target bin: 11[0m
+[0;32mI (4060) radar-vital: Max magnitude in range bins: 19657954.00[0m
+[0;32mI (4070) radar-vital: Target bin: 11[0m
+[0;32mI (4070) radar-vital: Max magnitude in range bins: 18515704.00[0m
+[0;32mI (4080) radar-vital: Target bin: 11[0m
+[0;32mI (4080) radar-vital: Max magnitude in range bins: 14213907.00[0m
+[0;32mI (4090) radar-vital: Target bin: 11[0m
+[0;32mI (4090) radar-vital: Max magnitude in range bins: 19721184.00[0m
+[0;32mI (4100) radar-vital: Target bin: 11[0m
+[0;32mI (4100) radar-vital: Max magnitude in range bins: 19753290.00[0m
+[0;32mI (4100) radar-vital: Target bin: 11[0m
+[0;32mI (4110) radar-vital: Max magnitude in range bins: 16736038.00[0m
+[0;32mI (4110) radar-vital: Target bin: 11[0m
+[0;32mI (4120) radar-vital: Max magnitude in range bins: 17035122.00[0m
+[0;32mI (4120) radar-vital: Target bin: 11[0m
+[0;32mI (4130) radar-vital: Max magnitude in range bins: 17956360.00[0m
+[0;32mI (4130) radar-vital: Target bin: 11[0m
+[0;32mI (4130) radar-vital: Max magnitude in range bins: 18468948.00[0m
+[0;32mI (4140) radar-vital: Target bin: 11[0m
+[0;32mI (4140) radar-vital: Max magnitude in range bins: 14470977.00[0m
+[0;32mI (4150) radar-vital: Target bin: 11[0m
+[0;32mI (4150) radar-vital: Max magnitude in range bins: 16490146.00[0m
+[0;32mI (4160) radar-vital: Target bin: 11[0m
+[0;32mI (4160) radar-vital: Max magnitude in range bins: 16635197.00[0m
+[0;32mI (4170) radar-vital: Target bin: 11[0m
+[0;32mI (4170) radar-vital: Max magnitude in range bins: 12453475.00[0m
+[0;32mI (4180) radar-vital: Target bin: 11[0m
+[0;32mI (4180) radar-vital: Max magnitude in range bins: 12421894.00[0m
+[0;32mI (4180) radar-vital: Target bin: 11[0m
+[0;32mI (4190) radar-vital: Max magnitude in range bins: 16244265.00[0m
+[0;32mI (4190) radar-vital: Target bin: 11[0m
+[0;32mI (4200) radar-vital: Max magnitude in range bins: 15423363.00[0m
+[0;32mI (4200) radar-vital: Target bin: 11[0m
+[0;32mI (4200) radar-vital: Max magnitude in range bins: 10711511.00[0m
+[0;32mI (4210) radar-vital: Target bin: 11[0m
+[0;32mI (4210) radar-vital: Max magnitude in range bins: 13556544.00[0m
+[0;32mI (4220) radar-vital: Target bin: 11[0m
+[0;32mI (4220) radar-vital: Max magnitude in range bins: 17353586.00[0m
+[0;32mI (4230) radar-vital: Target bin: 11[0m
+[0;32mI (4230) radar-vital: Max magnitude in range bins: 14412195.00[0m
+[0;32mI (4240) radar-vital: Target bin: 11[0m
+[0;32mI (4240) radar-vital: Max magnitude in range bins: 16220771.00[0m
+[0;32mI (4250) radar-vital: Target bin: 11[0m
+[0;32mI (4250) radar-vital: Max magnitude in range bins: 13999123.00[0m
+[0;32mI (4260) radar-vital: Target bin: 11[0m
+[0;32mI (4260) radar-vital: Max magnitude in range bins: 11704176.00[0m
+[0;32mI (4260) radar-vital: Target bin: 11[0m
+[0;32mI (4270) radar-vital: Max magnitude in range bins: 13464443.00[0m
+[0;32mI (4270) radar-vital: Target bin: 11[0m
+[0;32mI (4280) radar-vital: Max magnitude in range bins: 15860519.00[0m
+[0;32mI (4280) radar-vital: Target bin: 11[0m
+[0;32mI (4290) radar-vital: Max magnitude in range bins: 15764184.00[0m
+[0;32mI (4290) radar-vital: Target bin: 11[0m
+[0;32mI (4290) radar-vital: Max magnitude in range bins: 17719198.00[0m
+[0;32mI (4300) radar-vital: Target bin: 11[0m
+[0;32mI (4300) radar-vital: Max magnitude in range bins: 18717026.00[0m
+[0;32mI (4310) radar-vital: Target bin: 11[0m
+[0;32mI (4310) radar-vital: Max magnitude in range bins: 19188738.00[0m
+[0;32mI (4320) radar-vital: Target bin: 11[0m
+[0;32mI (4320) radar-vital: Max magnitude in range bins: 15912821.00[0m
+[0;32mI (4330) radar-vital: Target bin: 11[0m
+[0;32mI (4330) radar-vital: Max magnitude in range bins: 19706398.00[0m
+[0;32mI (4340) radar-vital: Target bin: 11[0m
+[0;32mI (4340) radar-vital: Max magnitude in range bins: 19254984.00[0m
+[0;32mI (4340) radar-vital: Target bin: 11[0m
+[0;32mI (4350) radar-vital: Max magnitude in range bins: 16467762.00[0m
+[0;32mI (4350) radar-vital: Target bin: 11[0m
+[0;32mI (4360) radar-vital: Max magnitude in range bins: 17034380.00[0m
+[0;32mI (4360) radar-vital: Target bin: 11[0m
+[0;32mI (4360) radar-vital: Max magnitude in range bins: 15681208.00[0m
+[0;32mI (4370) radar-vital: Target bin: 11[0m
+[0;32mI (4370) radar-vital: Max magnitude in range bins: 17409432.00[0m
+[0;32mI (4380) radar-vital: Target bin: 11[0m
+[0;32mI (4380) radar-vital: Max magnitude in range bins: 18155190.00[0m
+[0;32mI (4390) radar-vital: Target bin: 11[0m
+[0;32mI (4390) radar-vital: Max magnitude in range bins: 22380688.00[0m
+[0;32mI (4400) radar-vital: Target bin: 11[0m
+[0;32mI (4400) radar-vital: Max magnitude in range bins: 14794887.00[0m
+[0;32mI (4410) radar-vital: Target bin: 11[0m
+[0;32mI (4410) radar-vital: Max magnitude in range bins: 19665382.00[0m
+[0;32mI (4410) radar-vital: Target bin: 11[0m
+[0;32mI (4420) radar-vital: Max magnitude in range bins: 14421709.00[0m
+[0;32mI (4420) radar-vital: Target bin: 11[0m
+[0;32mI (4430) radar-vital: Max magnitude in range bins: 18286586.00[0m
+[0;32mI (4430) radar-vital: Target bin: 11[0m
+[0;32mI (4440) radar-vital: Max magnitude in range bins: 16210619.00[0m
+[0;32mI (4440) radar-vital: Target bin: 11[0m
+[0;32mI (4440) radar-vital: Max magnitude in range bins: 16047610.00[0m
+[0;32mI (4450) radar-vital: Target bin: 11[0m
+[0;32mI (4450) radar-vital: Max magnitude in range bins: 19658624.00[0m
+[0;32mI (4460) radar-vital: Target bin: 11[0m
+[0;32mI (4460) radar-vital: Max magnitude in range bins: 14841812.00[0m
+[0;32mI (4470) radar-vital: Target bin: 11[0m
+[0;32mI (4470) radar-vital: Max magnitude in range bins: 14846507.00[0m
+[0;32mI (4480) radar-vital: Target bin: 11[0m
+[0;32mI (4480) radar-vital: Max magnitude in range bins: 13999900.00[0m
+[0;32mI (4490) radar-vital: Target bin: 11[0m
+[0;32mI (4490) radar-vital: Max magnitude in range bins: 13962938.00[0m
+[0;32mI (4490) radar-vital: Target bin: 11[0m
+[0;32mI (4500) radar-vital: Max magnitude in range bins: 14639680.00[0m
+[0;32mI (4500) radar-vital: Target bin: 11[0m
+[0;32mI (4510) radar-vital: Max magnitude in range bins: 13859587.00[0m
+[0;32mI (4510) radar-vital: Target bin: 11[0m
+[0;32mI (4510) radar-vital: Max magnitude in range bins: 13932827.00[0m
+[0;32mI (4520) radar-vital: Target bin: 11[0m
+[0;32mI (4520) radar-vital: Max magnitude in range bins: 13200052.00[0m
+[0;32mI (4530) radar-vital: Target bin: 11[0m
+[0;32mI (4530) radar-vital: Max magnitude in range bins: 15400446.00[0m
+[0;32mI (4540) radar-vital: Target bin: 11[0m
+[0;32mI (4540) radar-vital: Max magnitude in range bins: 15305388.00[0m
+[0;32mI (4550) radar-vital: Target bin: 11[0m
+[0;32mI (4550) radar-vital: Max magnitude in range bins: 16026631.00[0m
+[0;32mI (4560) radar-vital: Target bin: 11[0m
+[0;32mI (4560) radar-vital: Max magnitude in range bins: 14369926.00[0m
+[0;32mI (4570) radar-vital: Target bin: 11[0m
+[0;32mI (4570) radar-vital: Max magnitude in range bins: 15005600.00[0m
+[0;32mI (4570) radar-vital: Target bin: 11[0m
+[0;32mI (4580) radar-vital: Max magnitude in range bins: 12683694.00[0m
+[0;32mI (4580) radar-vital: Target bin: 11[0m
+[0;32mI (4590) radar-vital: Max magnitude in range bins: 18068018.00[0m
+[0;32mI (4590) radar-vital: Target bin: 11[0m
+[0;32mI (4590) radar-vital: Max magnitude in range bins: 15498256.00[0m
+[0;32mI (4600) radar-vital: Target bin: 11[0m
+[0;32mI (4600) radar-vital: Max magnitude in range bins: 14379933.00[0m
+[0;32mI (4610) radar-vital: Target bin: 11[0m
+[0;32mI (4610) radar-vital: Max magnitude in range bins: 12495820.00[0m
+[0;32mI (4620) radar-vital: Target bin: 11[0m
+[0;32mI (4620) radar-vital: Max magnitude in range bins: 15537298.00[0m
+[0;32mI (4630) radar-vital: Target bin: 11[0m
+[0;32mI (4630) radar-vital: Max magnitude in range bins: 12887119.00[0m
+[0;32mI (4640) radar-vital: Target bin: 11[0m
+[0;32mI (4640) radar-vital: Max magnitude in range bins: 17474768.00[0m
+[0;32mI (4650) radar-vital: Target bin: 11[0m
+[0;32mI (4650) radar-vital: Max magnitude in range bins: 20460214.00[0m
+[0;32mI (4650) radar-vital: Target bin: 11[0m
+[0;32mI (4660) radar-vital: Max magnitude in range bins: 15028894.00[0m
+[0;32mI (4660) radar-vital: Target bin: 11[0m
+[0;32mI (4670) radar-vital: Max magnitude in range bins: 19165204.00[0m
+[0;32mI (4670) radar-vital: Target bin: 11[0m
+[0;32mI (4670) radar-vital: Max magnitude in range bins: 18593644.00[0m
+[0;32mI (4680) radar-vital: Target bin: 11[0m
+[0;32mI (4680) radar-vital: Max magnitude in range bins: 16026884.00[0m
+[0;32mI (4690) radar-vital: Target bin: 11[0m
+[0;32mI (4690) radar-vital: Max magnitude in range bins: 17460590.00[0m
+[0;32mI (4700) radar-vital: Target bin: 11[0m
+[0;32mI (4700) radar-vital: Max magnitude in range bins: 16873818.00[0m
+[0;32mI (4710) radar-vital: Target bin: 11[0m
+[0;32mI (4710) radar-vital: Max magnitude in range bins: 16940294.00[0m
+[0;32mI (4720) radar-vital: Target bin: 11[0m
+[0;32mI (4720) radar-vital: Max magnitude in range bins: 19630868.00[0m
+[0;32mI (4720) radar-vital: Target bin: 11[0m
+[0;32mI (4730) radar-vital: Max magnitude in range bins: 14845742.00[0m
+[0;32mI (4730) radar-vital: Target bin: 11[0m
+[0;32mI (4740) radar-vital: Max magnitude in range bins: 20160356.00[0m
+[0;32mI (4740) radar-vital: Target bin: 11[0m
+[0;32mI (4750) radar-vital: Max magnitude in range bins: 17769480.00[0m
+[0;32mI (4750) radar-vital: Target bin: 11[0m
+[0;32mI (4750) radar-vital: Max magnitude in range bins: 19224270.00[0m
+[0;32mI (4760) radar-vital: Target bin: 11[0m
+[0;32mI (4760) radar-vital: Max magnitude in range bins: 16065530.00[0m
+[0;32mI (4770) radar-vital: Target bin: 11[0m
+[0;32mI (4770) radar-vital: Max magnitude in range bins: 18338832.00[0m
+[0;32mI (4780) radar-vital: Target bin: 11[0m
+[0;32mI (4780) radar-vital: Max magnitude in range bins: 14188455.00[0m
+[0;32mI (4790) radar-vital: Target bin: 11[0m
+[0;32mI (4790) radar-vital: Max magnitude in range bins: 13568348.00[0m
+[0;32mI (4800) radar-vital: Target bin: 11[0m
+[0;32mI (4800) radar-vital: Max magnitude in range bins: 16004787.00[0m
+[0;32mI (4800) radar-vital: Target bin: 11[0m
+[0;32mI (4810) radar-vital: Max magnitude in range bins: 13189391.00[0m
+[0;32mI (4810) radar-vital: Target bin: 11[0m
+[0;32mI (4820) radar-vital: Max magnitude in range bins: 18075310.00[0m
+[0;32mI (4820) radar-vital: Target bin: 11[0m
+[0;32mI (4820) radar-vital: Max magnitude in range bins: 15329360.00[0m
+[1;31mE (91960) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (91960) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (91960) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (111210) MQTT_Service: MQTT Connected[0m

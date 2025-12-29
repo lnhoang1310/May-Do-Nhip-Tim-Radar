@@ -1,0 +1,1977 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 2ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21a90h (137872) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031ab8 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000365e8 vaddr=40374000 size=09a30h ( 39472) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6388h (680840) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e63b0 vaddr=4037da30 size=0f080h ( 61568) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5438 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  118e1cbf6...[0m
+[0;32mI (305) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA6250 len 000434C0 (269 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (354) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (580) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (670) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = d6:3e:aa:4c:2f:b2[0m
+[0;32mI (670) wifi:security: WPA2-PSK, phy: bgn, rssi: -27[0m
+[0;32mI (670) wifi:pm start, type: 1[0m
+
+[0;32mI (670) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (680) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (700) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2200) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2200) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2570) Main: Wifi Connected[0m
+[0;32mI (2570) MQTT_Service: MQTT Started[0m
+[0;32mI (2570) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2570) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;33mW (2580) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;32mI (2580) wifi:<ba-add>idx:0 (ifx:0, d6:3e:aa:4c:2f:b2), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2600) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4200ff8b
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2630) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2640) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2670) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2690) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2700) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2720) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2740) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2750) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2770) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2790) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2800) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2820) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2840) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2850) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2870) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2880) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2900) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2920) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2930) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2930) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2950) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2970) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2980) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (3000) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (3020) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (3030) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (3050) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (3070) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (3080) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (3100) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (3110) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (3130) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (3140) radar-hr: Setting CCR2 for endless frames.[0m
+[0;32mI (3140) radar-hr: Original CCR2 value: 0x00000000[0m
+[0;32mI (3150) radar-hr: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (3150) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3160) radar-hr: Successfully set CCR2 for endless frames.[0m
+[0;32mI (3170) radar-hr: New CCR2 value read back: 0x00000000[0m
+[0;32mI (3170) radar-hr: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (3370) MQTT_Service: MQTT Connected[0m
+[0;32mI (3440) radar-hr: Human detected! Phase Variance = 1.940e+00, valid frame = 21[0m
+[0;32mI (3440) radar-hr: Human detected! Phase Variance = 1.987e+00, valid frame = 22[0m
+[0;32mI (3640) radar-hr: Human detected! Phase Variance = 2.742e-01, valid frame = 21[0m
+[0;32mI (3660) radar-hr: Human detected! Phase Variance = 1.416e-01, valid frame = 22[0m
+[0;32mI (4060) radar-hr: Human detected! Phase Variance = 1.438e-01, valid frame = 21[0m
+[0;32mI (4060) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 22[0m
+[0;32mI (4060) radar-hr: Human detected! Phase Variance = 1.438e-01, valid frame = 23[0m
+[0;32mI (4070) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 24[0m
+[0;32mI (4070) radar-hr: Human detected! Phase Variance = 1.438e-01, valid frame = 25[0m
+[0;32mI (4080) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 26[0m
+[0;32mI (4090) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 27[0m
+[0;32mI (4100) radar-hr: Human detected! Phase Variance = 1.443e-01, valid frame = 28[0m
+[0;32mI (4100) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 29[0m
+[0;32mI (4110) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 30[0m
+[0;32mI (4120) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 31[0m
+[0;32mI (4120) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 32[0m
+[0;32mI (4130) radar-hr: Human detected! Phase Variance = 1.443e-01, valid frame = 33[0m
+[0;32mI (4140) radar-hr: Human detected! Phase Variance = 1.443e-01, valid frame = 34[0m
+[0;32mI (4140) radar-hr: Human detected! Phase Variance = 1.443e-01, valid frame = 35[0m
+[0;32mI (4150) radar-hr: Human detected! Phase Variance = 1.444e-01, valid frame = 36[0m
+[0;32mI (4160) radar-hr: Human detected! Phase Variance = 1.444e-01, valid frame = 37[0m
+[0;32mI (4170) radar-hr: Human detected! Phase Variance = 1.444e-01, valid frame = 38[0m
+[0;32mI (4170) radar-hr: Human detected! Phase Variance = 1.445e-01, valid frame = 39[0m
+[0;32mI (4180) radar-hr: Human detected! Phase Variance = 1.446e-01, valid frame = 40[0m
+[0;32mI (4190) radar-hr: Human detected! Phase Variance = 1.445e-01, valid frame = 41[0m
+[0;32mI (4190) radar-hr: Human detected! Phase Variance = 1.447e-01, valid frame = 42[0m
+[0;32mI (4200) radar-hr: Human detected! Phase Variance = 1.446e-01, valid frame = 43[0m
+[0;32mI (4210) radar-hr: Human detected! Phase Variance = 1.446e-01, valid frame = 44[0m
+[0;32mI (4220) radar-hr: Human detected! Phase Variance = 1.446e-01, valid frame = 45[0m
+[0;32mI (4220) radar-hr: Human detected! Phase Variance = 1.445e-01, valid frame = 46[0m
+[0;32mI (4230) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 47[0m
+[0;32mI (4240) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 48[0m
+[0;32mI (4240) radar-hr: Human detected! Phase Variance = 1.437e-01, valid frame = 49[0m
+[0;32mI (4250) radar-hr: Human detected! Phase Variance = 1.438e-01, valid frame = 50[0m
+[0;32mI (4260) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 51[0m
+[0;32mI (4260) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 52[0m
+[0;32mI (4270) radar-hr: Human detected! Phase Variance = 1.442e-01, valid frame = 53[0m
+[0;32mI (4280) radar-hr: Human detected! Phase Variance = 1.441e-01, valid frame = 54[0m
+[0;32mI (4290) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 55[0m
+[0;32mI (4290) radar-hr: Human detected! Phase Variance = 1.434e-01, valid frame = 56[0m
+[0;32mI (4300) radar-hr: Human detected! Phase Variance = 1.433e-01, valid frame = 57[0m
+[0;32mI (4310) radar-hr: Human detected! Phase Variance = 1.431e-01, valid frame = 58[0m
+[0;32mI (4310) radar-hr: Human detected! Phase Variance = 1.433e-01, valid frame = 59[0m
+[0;32mI (4320) radar-hr: Human detected! Phase Variance = 1.436e-01, valid frame = 60[0m
+[0;32mI (4330) radar-hr: Human detected! Phase Variance = 1.436e-01, valid frame = 61[0m
+[0;32mI (4330) radar-hr: Human detected! Phase Variance = 1.438e-01, valid frame = 62[0m
+[0;32mI (4340) radar-hr: Human detected! Phase Variance = 1.439e-01, valid frame = 63[0m
+[0;32mI (4350) radar-hr: Human detected! Phase Variance = 1.443e-01, valid frame = 64[0m
+[0;32mI (4390) radar-hr: Human detected! Phase Variance = 1.452e-01, valid frame = 21[0m
+[0;32mI (4390) radar-hr: Human detected! Phase Variance = 1.453e-01, valid frame = 22[0m
+[0;32mI (4410) radar-hr: Human detected! Phase Variance = 1.450e-01, valid frame = 23[0m
+[0;32mI (4410) radar-hr: Human detected! Phase Variance = 1.450e-01, valid frame = 24[0m
+[0;32mI (4410) radar-hr: Human detected! Phase Variance = 1.450e-01, valid frame = 25[0m
+[0;32mI (4420) radar-hr: Human detected! Phase Variance = 1.450e-01, valid frame = 26[0m
+[0;32mI (4420) radar-hr: Human detected! Phase Variance = 1.450e-01, valid frame = 27[0m
+[0;32mI (4430) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 28[0m
+[0;32mI (4440) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 29[0m
+[0;32mI (4440) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 30[0m
+[0;32mI (4450) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 31[0m
+[0;32mI (4460) radar-hr: Human detected! Phase Variance = 1.453e-01, valid frame = 32[0m
+[0;32mI (4470) radar-hr: Human detected! Phase Variance = 1.452e-01, valid frame = 33[0m
+[0;32mI (4470) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 34[0m
+[0;32mI (4480) radar-hr: Human detected! Phase Variance = 1.452e-01, valid frame = 35[0m
+[0;32mI (4490) radar-hr: Human detected! Phase Variance = 1.454e-01, valid frame = 36[0m
+[0;32mI (4490) radar-hr: Human detected! Phase Variance = 1.453e-01, valid frame = 37[0m
+[0;32mI (4500) radar-hr: Human detected! Phase Variance = 1.452e-01, valid frame = 38[0m
+[0;32mI (4510) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 39[0m
+[0;32mI (4520) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 40[0m
+[0;32mI (4520) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 41[0m
+[0;32mI (4530) radar-hr: Human detected! Phase Variance = 1.451e-01, valid frame = 42[0m
+[0;32mI (4540) radar-hr: Human detected! Phase Variance = 2.797e-01, valid frame = 43[0m
+[0;32mI (4540) radar-hr: Human detected! Phase Variance = 2.797e-01, valid frame = 44[0m
+[0;32mI (4550) radar-hr: Human detected! Phase Variance = 2.796e-01, valid frame = 45[0m
+[0;32mI (4560) radar-hr: Human detected! Phase Variance = 2.797e-01, valid frame = 46[0m
+[0;32mI (4560) radar-hr: Human detected! Phase Variance = 2.793e-01, valid frame = 47[0m
+[0;32mI (4570) radar-hr: Human detected! Phase Variance = 2.789e-01, valid frame = 48[0m
+[0;32mI (4580) radar-hr: Human detected! Phase Variance = 2.788e-01, valid frame = 49[0m
+[0;32mI (4590) radar-hr: Human detected! Phase Variance = 2.782e-01, valid frame = 50[0m
+[0;32mI (4590) radar-hr: Human detected! Phase Variance = 2.781e-01, valid frame = 51[0m
+[0;32mI (4600) radar-hr: Human detected! Phase Variance = 2.780e-01, valid frame = 52[0m
+[0;32mI (4610) radar-hr: Human detected! Phase Variance = 2.788e-01, valid frame = 53[0m
+[0;32mI (4610) radar-hr: Human detected! Phase Variance = 2.785e-01, valid frame = 54[0m
+[0;32mI (4620) radar-hr: Human detected! Phase Variance = 2.786e-01, valid frame = 55[0m
+[0;32mI (4630) radar-hr: Human detected! Phase Variance = 2.782e-01, valid frame = 56[0m
+[0;32mI (4630) radar-hr: Human detected! Phase Variance = 2.781e-01, valid frame = 57[0m
+[0;32mI (4640) radar-hr: Human detected! Phase Variance = 2.783e-01, valid frame = 58[0m
+[0;32mI (4650) radar-hr: Human detected! Phase Variance = 4.162e-01, valid frame = 59[0m
+[0;32mI (4660) radar-hr: Human detected! Phase Variance = 4.155e-01, valid frame = 60[0m
+[0;32mI (4660) radar-hr: Human detected! Phase Variance = 4.144e-01, valid frame = 61[0m
+[0;32mI (4670) radar-hr: Human detected! Phase Variance = 4.142e-01, valid frame = 62[0m
+[0;32mI (4680) radar-hr: Human detected! Phase Variance = 4.152e-01, valid frame = 63[0m
+[0;32mI (4680) radar-hr: Human detected! Phase Variance = 4.156e-01, valid frame = 64[0m
+[0;32mI (4690) radar-hr: Human detected! Phase Variance = 2.849e-01, valid frame = 65[0m
+[0;32mI (4700) radar-hr: Human detected! Phase Variance = 2.849e-01, valid frame = 66[0m
+[0;32mI (4710) radar-hr: Human detected! Phase Variance = 2.849e-01, valid frame = 67[0m
+[0;32mI (4710) radar-hr: Human detected! Phase Variance = 4.051e-01, valid frame = 68[0m
+[0;32mI (4720) radar-hr: Human detected! Phase Variance = 4.057e-01, valid frame = 69[0m
+[0;32mI (4730) radar-hr: Human detected! Phase Variance = 4.051e-01, valid frame = 70[0m
+[0;32mI (4730) radar-hr: Human detected! Phase Variance = 4.051e-01, valid frame = 71[0m
+[0;32mI (4740) radar-hr: Human detected! Phase Variance = 4.048e-01, valid frame = 72[0m
+[0;32mI (4750) radar-hr: Human detected! Phase Variance = 4.042e-01, valid frame = 73[0m
+[0;32mI (4750) radar-hr: Human detected! Phase Variance = 4.037e-01, valid frame = 74[0m
+[0;32mI (4760) radar-hr: Human detected! Phase Variance = 4.037e-01, valid frame = 75[0m
+[0;32mI (4770) radar-hr: Human detected! Phase Variance = 4.036e-01, valid frame = 76[0m
+[0;32mI (4780) radar-hr: Human detected! Phase Variance = 4.035e-01, valid frame = 77[0m
+[0;32mI (4780) radar-hr: Human detected! Phase Variance = 4.037e-01, valid frame = 78[0m
+[0;32mI (4790) radar-hr: Human detected! Phase Variance = 4.037e-01, valid frame = 79[0m
+[0;32mI (4800) radar-hr: Human detected! Phase Variance = 4.035e-01, valid frame = 80[0m
+[0;32mI (4800) radar-hr: Human detected! Phase Variance = 4.040e-01, valid frame = 81[0m
+[0;32mI (4810) radar-hr: Human detected! Phase Variance = 4.043e-01, valid frame = 82[0m
+[0;32mI (4820) radar-hr: Human detected! Phase Variance = 4.042e-01, valid frame = 83[0m
+[0;32mI (4820) radar-hr: Human detected! Phase Variance = 4.041e-01, valid frame = 84[0m
+[0;32mI (4830) radar-hr: Human detected! Phase Variance = 4.043e-01, valid frame = 85[0m
+[0;32mI (4840) radar-hr: Human detected! Phase Variance = 4.040e-01, valid frame = 86[0m
+[0;32mI (4850) radar-hr: Human detected! Phase Variance = 4.038e-01, valid frame = 87[0m
+[0;32mI (4850) radar-hr: Human detected! Phase Variance = 4.046e-01, valid frame = 88[0m
+[0;32mI (4860) radar-hr: Human detected! Phase Variance = 4.049e-01, valid frame = 89[0m
+[0;32mI (4870) radar-hr: Human detected! Phase Variance = 4.044e-01, valid frame = 90[0m
+[0;32mI (4870) radar-hr: Human detected! Phase Variance = 4.041e-01, valid frame = 91[0m
+[0;32mI (4880) radar-hr: Human detected! Phase Variance = 4.049e-01, valid frame = 92[0m
+[0;32mI (4890) radar-hr: Human detected! Phase Variance = 4.053e-01, valid frame = 93[0m
+[0;32mI (4890) radar-hr: Human detected! Phase Variance = 4.056e-01, valid frame = 94[0m
+[0;32mI (4900) radar-hr: Human detected! Phase Variance = 4.055e-01, valid frame = 95[0m
+[0;32mI (4910) radar-hr: Human detected! Phase Variance = 4.060e-01, valid frame = 96[0m
+[0;32mI (4920) radar-hr: Human detected! Phase Variance = 4.066e-01, valid frame = 97[0m
+[0;32mI (4920) radar-hr: Human detected! Phase Variance = 4.065e-01, valid frame = 98[0m
+[0;32mI (4930) radar-hr: Human detected! Phase Variance = 5.375e-01, valid frame = 99[0m
+[0;32mI (4940) radar-hr: Human detected! Phase Variance = 5.372e-01, valid frame = 100[0m
+[0;32mI (4940) radar-hr: Human detected! Phase Variance = 1.066e+00, valid frame = 101[0m
+[0;32mI (4950) radar-hr: Human detected! Phase Variance = 1.068e+00, valid frame = 102[0m
+[0;32mI (4960) radar-hr: Human detected! Phase Variance = 1.069e+00, valid frame = 103[0m
+[0;32mI (4970) radar-hr: Human detected! Phase Variance = 1.070e+00, valid frame = 104[0m
+[0;32mI (4970) radar-hr: Human detected! Phase Variance = 1.070e+00, valid frame = 105[0m
+[0;32mI (4980) radar-hr: Human detected! Phase Variance = 1.072e+00, valid frame = 106[0m
+[0;32mI (4990) radar-hr: Human detected! Phase Variance = 9.561e-01, valid frame = 107[0m
+[0;32mI (4990) radar-hr: Human detected! Phase Variance = 9.579e-01, valid frame = 108[0m
+[0;32mI (5000) radar-hr: Human detected! Phase Variance = 9.593e-01, valid frame = 109[0m
+[0;32mI (5010) radar-hr: Human detected! Phase Variance = 9.590e-01, valid frame = 110[0m
+[0;32mI (5020) radar-hr: Human detected! Phase Variance = 9.593e-01, valid frame = 111[0m
+[0;32mI (5020) radar-hr: Human detected! Phase Variance = 9.606e-01, valid frame = 112[0m
+[0;32mI (5030) radar-hr: Human detected! Phase Variance = 9.624e-01, valid frame = 113[0m
+[0;32mI (5040) radar-hr: Human detected! Phase Variance = 9.630e-01, valid frame = 114[0m
+[0;32mI (5040) radar-hr: Human detected! Phase Variance = 9.637e-01, valid frame = 115[0m
+[0;32mI (5050) radar-hr: Human detected! Phase Variance = 9.636e-01, valid frame = 116[0m
+[0;32mI (5060) radar-hr: Human detected! Phase Variance = 9.621e-01, valid frame = 117[0m
+[0;32mI (5070) radar-hr: Human detected! Phase Variance = 9.620e-01, valid frame = 118[0m
+[0;32mI (5070) radar-hr: Human detected! Phase Variance = 9.618e-01, valid frame = 119[0m
+[0;32mI (5080) radar-hr: Human detected! Phase Variance = 9.624e-01, valid frame = 120[0m
+[0;32mI (5090) radar-hr: Human detected! Phase Variance = 9.608e-01, valid frame = 121[0m
+[0;32mI (5090) radar-hr: Human detected! Phase Variance = 9.601e-01, valid frame = 122[0m
+[0;32mI (5100) radar-hr: Human detected! Phase Variance = 8.289e-01, valid frame = 123[0m
+[0;32mI (5110) radar-hr: Human detected! Phase Variance = 8.291e-01, valid frame = 124[0m
+[0;32mI (5110) radar-hr: Human detected! Phase Variance = 8.298e-01, valid frame = 125[0m
+[0;32mI (5120) radar-hr: Human detected! Phase Variance = 8.307e-01, valid frame = 126[0m
+[0;32mI (5130) radar-hr: Human detected! Phase Variance = 8.300e-01, valid frame = 127[0m
+[0;32mI (5140) radar-hr: Human detected! Phase Variance = 8.301e-01, valid frame = 128[0m
+[0;32mI (5140) radar-hr: Human detected! Phase Variance = 8.307e-01, valid frame = 129[0m
+[0;32mI (5150) radar-hr: Human detected! Phase Variance = 8.302e-01, valid frame = 130[0m
+[0;32mI (5160) radar-hr: Human detected! Phase Variance = 8.302e-01, valid frame = 131[0m
+[0;32mI (5160) radar-hr: Human detected! Phase Variance = 7.122e-01, valid frame = 132[0m
+[0;32mI (5170) radar-hr: Human detected! Phase Variance = 7.118e-01, valid frame = 133[0m
+[0;32mI (5180) radar-hr: Human detected! Phase Variance = 7.119e-01, valid frame = 134[0m
+[0;32mI (5190) radar-hr: Human detected! Phase Variance = 7.116e-01, valid frame = 135[0m
+[0;32mI (5190) radar-hr: Human detected! Phase Variance = 7.120e-01, valid frame = 136[0m
+[0;32mI (5200) radar-hr: Human detected! Phase Variance = 7.124e-01, valid frame = 137[0m
+[0;32mI (5210) radar-hr: Human detected! Phase Variance = 7.136e-01, valid frame = 138[0m
+[0;32mI (5210) radar-hr: Human detected! Phase Variance = 7.135e-01, valid frame = 139[0m
+[0;32mI (5220) radar-hr: Human detected! Phase Variance = 7.136e-01, valid frame = 140[0m
+[0;32mI (5230) radar-hr: Human detected! Phase Variance = 7.133e-01, valid frame = 141[0m
+[0;32mI (5240) radar-hr: Human detected! Phase Variance = 7.131e-01, valid frame = 142[0m
+[0;32mI (5240) radar-hr: Human detected! Phase Variance = 7.132e-01, valid frame = 143[0m
+[0;32mI (5250) radar-hr: Human detected! Phase Variance = 7.132e-01, valid frame = 144[0m
+[0;32mI (5260) radar-hr: Human detected! Phase Variance = 7.122e-01, valid frame = 145[0m
+[0;32mI (5260) radar-hr: Human detected! Phase Variance = 7.116e-01, valid frame = 146[0m
+[0;32mI (5270) radar-hr: Human detected! Phase Variance = 7.117e-01, valid frame = 147[0m
+[0;32mI (5280) radar-hr: Human detected! Phase Variance = 7.117e-01, valid frame = 148[0m
+[0;32mI (5290) radar-hr: Human detected! Phase Variance = 7.114e-01, valid frame = 149[0m
+[0;32mI (5290) radar-hr: Human detected! Phase Variance = 7.117e-01, valid frame = 150[0m
+[0;32mI (5300) radar-hr: Human detected! Phase Variance = 7.113e-01, valid frame = 151[0m
+[0;32mI (5310) radar-hr: Human detected! Phase Variance = 7.106e-01, valid frame = 152[0m
+[0;32mI (5310) radar-hr: Human detected! Phase Variance = 7.102e-01, valid frame = 153[0m
+[0;32mI (5320) radar-hr: Human detected! Phase Variance = 7.106e-01, valid frame = 154[0m
+[0;32mI (5330) radar-hr: Human detected! Phase Variance = 7.104e-01, valid frame = 155[0m
+[0;32mI (5340) radar-hr: Human detected! Phase Variance = 7.093e-01, valid frame = 156[0m
+[0;32mI (5340) radar-hr: Human detected! Phase Variance = 7.092e-01, valid frame = 157[0m
+[0;32mI (5350) radar-hr: Human detected! Phase Variance = 7.093e-01, valid frame = 158[0m
+[0;32mI (5360) radar-hr: Human detected! Phase Variance = 7.094e-01, valid frame = 159[0m
+[0;32mI (5360) radar-hr: Human detected! Phase Variance = 7.090e-01, valid frame = 160[0m
+[0;32mI (5370) radar-hr: Human detected! Phase Variance = 7.084e-01, valid frame = 161[0m
+[0;32mI (5380) radar-hr: Human detected! Phase Variance = 7.085e-01, valid frame = 162[0m
+[0;32mI (5390) radar-hr: Human detected! Phase Variance = 5.714e-01, valid frame = 163[0m
+[0;32mI (5390) radar-hr: Human detected! Phase Variance = 5.714e-01, valid frame = 164[0m
+[0;32mI (5410) radar-hr: Human detected! Phase Variance = 1.425e-01, valid frame = 21[0m
+[0;32mI (5410) radar-hr: Human detected! Phase Variance = 1.426e-01, valid frame = 22[0m
+[0;32mI (5420) radar-hr: Human detected! Phase Variance = 1.426e-01, valid frame = 23[0m
+[0;32mI (5420) radar-hr: Human detected! Phase Variance = 1.424e-01, valid frame = 24[0m
+[0;32mI (5430) radar-hr: Human detected! Phase Variance = 1.424e-01, valid frame = 25[0m
+[0;32mI (5440) radar-hr: Human detected! Phase Variance = 1.422e-01, valid frame = 26[0m
+[0;32mI (5450) radar-hr: Human detected! Phase Variance = 1.422e-01, valid frame = 27[0m
+[0;32mI (5450) radar-hr: Human detected! Phase Variance = 1.419e-01, valid frame = 28[0m
+[0;32mI (5460) radar-hr: Human detected! Phase Variance = 1.419e-01, valid frame = 29[0m
+[0;32mI (5470) radar-hr: Human detected! Phase Variance = 1.418e-01, valid frame = 30[0m
+[0;32mI (5470) radar-hr: Human detected! Phase Variance = 1.416e-01, valid frame = 31[0m
+[0;32mI (5480) radar-hr: Human detected! Phase Variance = 1.413e-01, valid frame = 32[0m
+[0;32mI (5490) radar-hr: Human detected! Phase Variance = 1.413e-01, valid frame = 33[0m
+[0;32mI (5490) radar-hr: Human detected! Phase Variance = 1.413e-01, valid frame = 34[0m
+[0;32mI (5500) radar-hr: Human detected! Phase Variance = 1.410e-01, valid frame = 35[0m
+[0;32mI (5510) radar-hr: Human detected! Phase Variance = 1.410e-01, valid frame = 36[0m
+[0;32mI (5520) radar-hr: Human detected! Phase Variance = 1.404e-01, valid frame = 37[0m
+[0;32mI (5520) radar-hr: Human detected! Phase Variance = 1.406e-01, valid frame = 38[0m
+[0;32mI (5530) radar-hr: Human detected! Phase Variance = 1.404e-01, valid frame = 39[0m
+[0;32mI (5540) radar-hr: Human detected! Phase Variance = 1.404e-01, valid frame = 40[0m
+[0;32mI (5540) radar-hr: Human detected! Phase Variance = 1.404e-01, valid frame = 41[0m
+[0;32mI (5550) radar-hr: Human detected! Phase Variance = 1.402e-01, valid frame = 42[0m
+[0;32mI (5560) radar-hr: Human detected! Phase Variance = 1.402e-01, valid frame = 43[0m
+[0;32mI (5560) radar-hr: Human detected! Phase Variance = 1.402e-01, valid frame = 44[0m
+[0;32mI (5570) radar-hr: Human detected! Phase Variance = 1.404e-01, valid frame = 45[0m
+[0;32mI (5580) radar-hr: Human detected! Phase Variance = 1.405e-01, valid frame = 46[0m
+[0;32mI (5590) radar-hr: Human detected! Phase Variance = 1.405e-01, valid frame = 47[0m
+[0;32mI (5590) radar-hr: Human detected! Phase Variance = 1.408e-01, valid frame = 48[0m
+[0;32mI (5600) radar-hr: Human detected! Phase Variance = 1.407e-01, valid frame = 49[0m
+[0;32mI (5610) radar-hr: Human detected! Phase Variance = 1.407e-01, valid frame = 50[0m
+[0;32mI (5610) radar-hr: Human detected! Phase Variance = 1.408e-01, valid frame = 51[0m
+[0;32mI (5620) radar-hr: Human detected! Phase Variance = 1.416e-01, valid frame = 52[0m
+[0;32mI (5630) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 53[0m
+[0;32mI (5630) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 54[0m
+[0;32mI (5640) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 55[0m
+[0;32mI (5650) radar-hr: Human detected! Phase Variance = 1.419e-01, valid frame = 56[0m
+[0;32mI (5660) radar-hr: Human detected! Phase Variance = 1.418e-01, valid frame = 57[0m
+[0;32mI (5660) radar-hr: Human detected! Phase Variance = 1.416e-01, valid frame = 58[0m
+[0;32mI (5670) radar-hr: Human detected! Phase Variance = 1.416e-01, valid frame = 59[0m
+[0;32mI (5680) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 60[0m
+[0;32mI (5680) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 61[0m
+[0;32mI (5690) radar-hr: Human detected! Phase Variance = 1.419e-01, valid frame = 62[0m
+[0;32mI (5700) radar-hr: Human detected! Phase Variance = 1.423e-01, valid frame = 63[0m
+[0;32mI (5710) radar-hr: Human detected! Phase Variance = 1.426e-01, valid frame = 64[0m
+[0;32mI (5730) radar-hr: Human detected! Phase Variance = 5.759e-01, valid frame = 21[0m
+[0;32mI (5730) radar-hr: Human detected! Phase Variance = 5.764e-01, valid frame = 22[0m
+[0;32mI (5730) radar-hr: Human detected! Phase Variance = 5.767e-01, valid frame = 23[0m
+[0;32mI (5740) radar-hr: Human detected! Phase Variance = 5.769e-01, valid frame = 24[0m
+[0;32mI (5750) radar-hr: Human detected! Phase Variance = 5.766e-01, valid frame = 25[0m
+[0;32mI (5760) radar-hr: Human detected! Phase Variance = 1.128e+00, valid frame = 26[0m
+[0;32mI (5760) radar-hr: Human detected! Phase Variance = 1.129e+00, valid frame = 27[0m
+[0;32mI (5770) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 28[0m
+[0;32mI (5780) radar-hr: Human detected! Phase Variance = 1.129e+00, valid frame = 29[0m
+[0;32mI (5780) radar-hr: Human detected! Phase Variance = 1.129e+00, valid frame = 30[0m
+[0;32mI (5790) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 31[0m
+[0;32mI (5800) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 32[0m
+[0;32mI (5800) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 33[0m
+[0;32mI (5810) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 34[0m
+[0;32mI (5820) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 35[0m
+[0;32mI (5830) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 36[0m
+[0;32mI (5830) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 37[0m
+[0;32mI (5840) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 38[0m
+[0;32mI (5850) radar-hr: Human detected! Phase Variance = 1.131e+00, valid frame = 39[0m
+[0;32mI (5850) radar-hr: Human detected! Phase Variance = 1.131e+00, valid frame = 40[0m
+[0;32mI (5860) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 41[0m
+[0;32mI (5870) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 42[0m
+[0;32mI (5880) radar-hr: Human detected! Phase Variance = 1.131e+00, valid frame = 43[0m
+[0;32mI (5880) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 44[0m
+[0;32mI (5890) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 45[0m
+[0;32mI (5900) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 46[0m
+[0;32mI (5900) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 47[0m
+[0;32mI (5910) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 48[0m
+[0;32mI (5920) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 49[0m
+[0;32mI (5920) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 50[0m
+[0;32mI (5930) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 51[0m
+[0;32mI (5940) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 52[0m
+[0;32mI (5950) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 53[0m
+[0;32mI (5950) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 54[0m
+[0;32mI (5960) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 55[0m
+[0;32mI (5970) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 56[0m
+[0;32mI (5970) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 57[0m
+[0;32mI (5980) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 58[0m
+[0;32mI (5990) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 59[0m
+[0;32mI (5990) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 60[0m
+[0;32mI (6000) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 61[0m
+[0;32mI (6010) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 62[0m
+[0;32mI (6020) radar-hr: Human detected! Phase Variance = 1.654e+00, valid frame = 63[0m
+[0;32mI (6020) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 64[0m
+[0;32mI (6030) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 65[0m
+[0;32mI (6040) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 66[0m
+[0;32mI (6040) radar-hr: Human detected! Phase Variance = 1.123e+00, valid frame = 67[0m
+[0;32mI (6050) radar-hr: Human detected! Phase Variance = 1.123e+00, valid frame = 68[0m
+[0;32mI (6060) radar-hr: Human detected! Phase Variance = 1.123e+00, valid frame = 69[0m
+[0;32mI (6070) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 70[0m
+[0;32mI (6070) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 71[0m
+[0;32mI (6080) radar-hr: Human detected! Phase Variance = 1.124e+00, valid frame = 72[0m
+[0;32mI (6090) radar-hr: Human detected! Phase Variance = 1.124e+00, valid frame = 73[0m
+[0;32mI (6090) radar-hr: Human detected! Phase Variance = 1.123e+00, valid frame = 74[0m
+[0;32mI (6100) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 75[0m
+[0;32mI (6110) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 76[0m
+[0;32mI (6110) radar-hr: Human detected! Phase Variance = 1.121e+00, valid frame = 77[0m
+[0;32mI (6120) radar-hr: Human detected! Phase Variance = 1.119e+00, valid frame = 78[0m
+[0;32mI (6130) radar-hr: Human detected! Phase Variance = 1.119e+00, valid frame = 79[0m
+[0;32mI (6140) radar-hr: Human detected! Phase Variance = 1.120e+00, valid frame = 80[0m
+[0;32mI (6140) radar-hr: Human detected! Phase Variance = 1.121e+00, valid frame = 81[0m
+[0;32mI (6150) radar-hr: Human detected! Phase Variance = 1.121e+00, valid frame = 82[0m
+[0;32mI (6160) radar-hr: Human detected! Phase Variance = 1.121e+00, valid frame = 83[0m
+[0;32mI (6160) radar-hr: Human detected! Phase Variance = 1.120e+00, valid frame = 84[0m
+[0;32mI (6170) radar-hr: Human detected! Phase Variance = 1.118e+00, valid frame = 85[0m
+[0;32mI (6180) radar-hr: Human detected! Phase Variance = 1.117e+00, valid frame = 86[0m
+[0;32mI (6180) radar-hr: Human detected! Phase Variance = 1.116e+00, valid frame = 87[0m
+[0;32mI (6190) radar-hr: Human detected! Phase Variance = 1.116e+00, valid frame = 88[0m
+[0;32mI (6200) radar-hr: Human detected! Phase Variance = 1.640e+00, valid frame = 89[0m
+[0;32mI (6210) radar-hr: Human detected! Phase Variance = 1.109e+00, valid frame = 90[0m
+[0;32mI (6210) radar-hr: Human detected! Phase Variance = 1.109e+00, valid frame = 91[0m
+[0;32mI (6220) radar-hr: Human detected! Phase Variance = 1.110e+00, valid frame = 92[0m
+[0;32mI (6230) radar-hr: Human detected! Phase Variance = 1.110e+00, valid frame = 93[0m
+[0;32mI (6230) radar-hr: Human detected! Phase Variance = 1.111e+00, valid frame = 94[0m
+[0;32mI (6240) radar-hr: Human detected! Phase Variance = 1.640e+00, valid frame = 95[0m
+[0;32mI (6250) radar-hr: Human detected! Phase Variance = 1.639e+00, valid frame = 96[0m
+[0;32mI (6250) radar-hr: Human detected! Phase Variance = 1.640e+00, valid frame = 97[0m
+[0;33mW (7550) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (7560) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11300) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11300) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11340) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11350) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11370) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11380) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11450) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11460) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11520) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11530) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11550) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11550) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11550) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11570) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11600) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11600) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (11630) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (11640) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11680) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11680) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (11730) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (11740) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11760) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11760) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11880) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (11890) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (11980) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (11990) radar-hr: Target bin unstable: 16 -> 12[0m
+[0;33mW (12090) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (12090) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (12400) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (12400) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (12580) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (12580) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (12990) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13000) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (13120) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13130) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (13140) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13160) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (13280) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13290) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (13710) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13720) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (13720) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (13730) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (14130) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (14140) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (14200) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (14210) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (14280) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (14280) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (14300) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (14310) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (14620) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (14620) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (15690) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (15710) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (15710) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (15710) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;32mI (16510) radar-hr: Human detected! Phase Variance = 1.151e+00, valid frame = 21[0m
+[0;32mI (16510) radar-hr: Human detected! Phase Variance = 1.150e+00, valid frame = 22[0m
+[0;32mI (16510) radar-hr: Human detected! Phase Variance = 1.150e+00, valid frame = 23[0m
+[0;32mI (16520) radar-hr: Human detected! Phase Variance = 5.889e-01, valid frame = 24[0m
+[0;32mI (16520) radar-hr: Human detected! Phase Variance = 5.888e-01, valid frame = 25[0m
+[0;33mW (17330) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (17340) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (17350) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (17360) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (17410) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (17420) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;32mI (17780) radar-hr: Human detected! Phase Variance = 2.545e-01, valid frame = 21[0m
+[0;32mI (17790) radar-hr: Human detected! Phase Variance = 2.542e-01, valid frame = 22[0m
+[0;32mI (17790) radar-hr: Human detected! Phase Variance = 2.531e-01, valid frame = 23[0m
+[0;32mI (17800) radar-hr: Human detected! Phase Variance = 2.519e-01, valid frame = 24[0m
+[0;33mW (17800) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (17810) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (17850) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (17850) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19520) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19530) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19620) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19630) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19760) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19770) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19780) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19790) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19840) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19840) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (19860) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (19870) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (20740) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (20750) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (20990) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (21000) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (21310) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (21310) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;32mI (22060) radar-hr: Human detected! Phase Variance = 1.621e+00, valid frame = 21[0m
+[0;32mI (22060) radar-hr: Human detected! Phase Variance = 1.622e+00, valid frame = 22[0m
+[0;32mI (22060) radar-hr: Human detected! Phase Variance = 1.621e+00, valid frame = 23[0m
+[0;32mI (22070) radar-hr: Human detected! Phase Variance = 1.622e+00, valid frame = 24[0m
+[0;32mI (22070) radar-hr: Human detected! Phase Variance = 1.622e+00, valid frame = 25[0m
+[0;32mI (22080) radar-hr: Human detected! Phase Variance = 1.621e+00, valid frame = 26[0m
+[0;32mI (22090) radar-hr: Human detected! Phase Variance = 1.619e+00, valid frame = 27[0m
+[0;32mI (22100) radar-hr: Human detected! Phase Variance = 1.617e+00, valid frame = 28[0m
+[0;32mI (22100) radar-hr: Human detected! Phase Variance = 1.092e+00, valid frame = 29[0m
+[0;32mI (22110) radar-hr: Human detected! Phase Variance = 5.627e-01, valid frame = 30[0m
+[0;32mI (22120) radar-hr: Human detected! Phase Variance = 5.623e-01, valid frame = 31[0m
+[0;32mI (22120) radar-hr: Human detected! Phase Variance = 5.615e-01, valid frame = 32[0m
+[0;32mI (22230) radar-hr: Human detected! Phase Variance = 1.109e+00, valid frame = 21[0m
+[0;32mI (22230) radar-hr: Human detected! Phase Variance = 1.110e+00, valid frame = 22[0m
+[0;32mI (22230) radar-hr: Human detected! Phase Variance = 1.112e+00, valid frame = 23[0m
+[0;32mI (22240) radar-hr: Human detected! Phase Variance = 1.113e+00, valid frame = 24[0m
+[0;32mI (22240) radar-hr: Human detected! Phase Variance = 1.115e+00, valid frame = 25[0m
+[0;32mI (22250) radar-hr: Human detected! Phase Variance = 1.116e+00, valid frame = 26[0m
+[0;32mI (22260) radar-hr: Human detected! Phase Variance = 1.117e+00, valid frame = 27[0m
+[0;32mI (22270) radar-hr: Human detected! Phase Variance = 1.118e+00, valid frame = 28[0m
+[0;32mI (22270) radar-hr: Human detected! Phase Variance = 1.119e+00, valid frame = 29[0m
+[0;32mI (22280) radar-hr: Human detected! Phase Variance = 1.119e+00, valid frame = 30[0m
+[0;32mI (22290) radar-hr: Human detected! Phase Variance = 1.119e+00, valid frame = 31[0m
+[0;32mI (22290) radar-hr: Human detected! Phase Variance = 1.120e+00, valid frame = 32[0m
+[0;32mI (22300) radar-hr: Human detected! Phase Variance = 1.120e+00, valid frame = 33[0m
+[0;32mI (22310) radar-hr: Human detected! Phase Variance = 1.121e+00, valid frame = 34[0m
+[0;32mI (22320) radar-hr: Human detected! Phase Variance = 1.122e+00, valid frame = 35[0m
+[0;32mI (22320) radar-hr: Human detected! Phase Variance = 1.123e+00, valid frame = 36[0m
+[0;32mI (22330) radar-hr: Human detected! Phase Variance = 1.124e+00, valid frame = 37[0m
+[0;32mI (22340) radar-hr: Human detected! Phase Variance = 1.124e+00, valid frame = 38[0m
+[0;32mI (22340) radar-hr: Human detected! Phase Variance = 1.125e+00, valid frame = 39[0m
+[0;32mI (22350) radar-hr: Human detected! Phase Variance = 1.125e+00, valid frame = 40[0m
+[0;32mI (22360) radar-hr: Human detected! Phase Variance = 1.126e+00, valid frame = 41[0m
+[0;32mI (22370) radar-hr: Human detected! Phase Variance = 1.126e+00, valid frame = 42[0m
+[0;32mI (22370) radar-hr: Human detected! Phase Variance = 1.126e+00, valid frame = 43[0m
+[0;32mI (22380) radar-hr: Human detected! Phase Variance = 1.127e+00, valid frame = 44[0m
+[0;32mI (22390) radar-hr: Human detected! Phase Variance = 1.127e+00, valid frame = 45[0m
+[0;32mI (22390) radar-hr: Human detected! Phase Variance = 1.128e+00, valid frame = 46[0m
+[0;32mI (22400) radar-hr: Human detected! Phase Variance = 1.129e+00, valid frame = 47[0m
+[0;32mI (22410) radar-hr: Human detected! Phase Variance = 1.130e+00, valid frame = 48[0m
+[0;32mI (22420) radar-hr: Human detected! Phase Variance = 1.131e+00, valid frame = 49[0m
+[0;32mI (22420) radar-hr: Human detected! Phase Variance = 1.131e+00, valid frame = 50[0m
+[0;32mI (22430) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 51[0m
+[0;32mI (22440) radar-hr: Human detected! Phase Variance = 1.132e+00, valid frame = 52[0m
+[0;32mI (22440) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 53[0m
+[0;32mI (22450) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 54[0m
+[0;32mI (22460) radar-hr: Human detected! Phase Variance = 1.133e+00, valid frame = 55[0m
+[0;32mI (22460) radar-hr: Human detected! Phase Variance = 1.134e+00, valid frame = 56[0m
+[0;32mI (22470) radar-hr: Human detected! Phase Variance = 1.134e+00, valid frame = 57[0m
+[0;32mI (22480) radar-hr: Human detected! Phase Variance = 1.134e+00, valid frame = 58[0m
+[0;32mI (22490) radar-hr: Human detected! Phase Variance = 1.135e+00, valid frame = 59[0m
+[0;32mI (22490) radar-hr: Human detected! Phase Variance = 1.135e+00, valid frame = 60[0m
+[0;32mI (22500) radar-hr: Human detected! Phase Variance = 1.136e+00, valid frame = 61[0m
+[0;32mI (22510) radar-hr: Human detected! Phase Variance = 1.136e+00, valid frame = 62[0m
+[0;32mI (22510) radar-hr: Human detected! Phase Variance = 1.136e+00, valid frame = 63[0m
+[0;32mI (22520) radar-hr: Human detected! Phase Variance = 1.137e+00, valid frame = 64[0m
+[0;32mI (22530) radar-hr: Human detected! Phase Variance = 5.759e-01, valid frame = 65[0m
+[0;32mI (22540) radar-hr: Human detected! Phase Variance = 5.754e-01, valid frame = 66[0m
+[0;32mI (22540) radar-hr: Human detected! Phase Variance = 5.747e-01, valid frame = 67[0m
+[0;32mI (22590) radar-hr: Human detected! Phase Variance = 1.662e+00, valid frame = 21[0m
+[0;33mW (22660) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (22660) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;32mI (23460) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 21[0m
+[0;32mI (23460) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 22[0m
+[0;32mI (23470) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 23[0m
+[0;32mI (23470) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 24[0m
+[0;32mI (23470) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 25[0m
+[0;32mI (23480) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 26[0m
+[0;32mI (23490) radar-hr: Human detected! Phase Variance = 1.660e+00, valid frame = 27[0m
+[0;32mI (23500) radar-hr: Human detected! Phase Variance = 1.114e+00, valid frame = 28[0m
+[0;32mI (23500) radar-hr: Human detected! Phase Variance = 1.115e+00, valid frame = 29[0m
+[0;32mI (23510) radar-hr: Human detected! Phase Variance = 1.114e+00, valid frame = 30[0m
+[0;32mI (23520) radar-hr: Human detected! Phase Variance = 1.114e+00, valid frame = 31[0m
+[0;32mI (23520) radar-hr: Human detected! Phase Variance = 1.113e+00, valid frame = 32[0m
+[0;32mI (23530) radar-hr: Human detected! Phase Variance = 1.113e+00, valid frame = 33[0m
+[0;32mI (23540) radar-hr: Human detected! Phase Variance = 1.112e+00, valid frame = 34[0m
+[0;32mI (23550) radar-hr: Human detected! Phase Variance = 1.112e+00, valid frame = 35[0m
+[0;32mI (23550) radar-hr: Human detected! Phase Variance = 1.112e+00, valid frame = 36[0m
+[0;32mI (23560) radar-hr: Human detected! Phase Variance = 1.111e+00, valid frame = 37[0m
+[0;32mI (23570) radar-hr: Human detected! Phase Variance = 1.110e+00, valid frame = 38[0m
+[0;32mI (23570) radar-hr: Human detected! Phase Variance = 1.111e+00, valid frame = 39[0m
+[0;32mI (23580) radar-hr: Human detected! Phase Variance = 1.654e+00, valid frame = 40[0m
+[0;32mI (23590) radar-hr: Human detected! Phase Variance = 1.654e+00, valid frame = 41[0m
+[0;32mI (23600) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 42[0m
+[0;32mI (23600) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 43[0m
+[0;32mI (23610) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 44[0m
+[0;32mI (23620) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 45[0m
+[0;32mI (23620) radar-hr: Human detected! Phase Variance = 1.659e+00, valid frame = 46[0m
+[0;32mI (23630) radar-hr: Human detected! Phase Variance = 1.659e+00, valid frame = 47[0m
+[0;32mI (23640) radar-hr: Human detected! Phase Variance = 1.659e+00, valid frame = 48[0m
+[0;32mI (23650) radar-hr: Human detected! Phase Variance = 1.659e+00, valid frame = 49[0m
+[0;32mI (23650) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 50[0m
+[0;32mI (23660) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 51[0m
+[0;32mI (23670) radar-hr: Human detected! Phase Variance = 1.653e+00, valid frame = 52[0m
+[0;32mI (23670) radar-hr: Human detected! Phase Variance = 1.652e+00, valid frame = 53[0m
+[0;32mI (23680) radar-hr: Human detected! Phase Variance = 1.116e+00, valid frame = 54[0m
+[0;32mI (23690) radar-hr: Human detected! Phase Variance = 1.116e+00, valid frame = 55[0m
+[0;32mI (23690) radar-hr: Human detected! Phase Variance = 1.115e+00, valid frame = 56[0m
+[0;32mI (23700) radar-hr: Human detected! Phase Variance = 1.115e+00, valid frame = 57[0m
+[0;32mI (23710) radar-hr: Human detected! Phase Variance = 1.657e+00, valid frame = 58[0m
+[0;32mI (23720) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 59[0m
+[0;32mI (23720) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 60[0m
+[0;32mI (23730) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 61[0m
+[0;32mI (23740) radar-hr: Human detected! Phase Variance = 1.658e+00, valid frame = 62[0m
+[0;32mI (23750) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 63[0m
+[0;32mI (23750) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 64[0m
+[0;32mI (23760) radar-hr: Human detected! Phase Variance = 1.655e+00, valid frame = 65[0m
+[0;32mI (23770) radar-hr: Human detected! Phase Variance = 1.656e+00, valid frame = 66[0m
+[0;32mI (23770) radar-hr: Human detected! Phase Variance = 1.654e+00, valid frame = 67[0m
+[0;32mI (23780) radar-hr: Human detected! Phase Variance = 1.653e+00, valid frame = 68[0m
+[0;32mI (23790) radar-hr: Human detected! Phase Variance = 1.652e+00, valid frame = 69[0m
+[0;32mI (23790) radar-hr: Human detected! Phase Variance = 1.652e+00, valid frame = 70[0m
+[0;32mI (23800) radar-hr: Human detected! Phase Variance = 1.652e+00, valid frame = 71[0m
+[0;33mW (24010) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24020) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24040) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (24050) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (24230) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24240) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24280) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24280) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24350) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24370) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24380) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24380) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24480) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24490) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24500) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24500) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24520) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24530) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24540) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24550) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24560) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24570) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24580) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24600) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24610) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24620) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24690) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24710) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (24710) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (24740) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24740) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (24750) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24760) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24760) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24770) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24770) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24780) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24790) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24790) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24810) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24820) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24830) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24840) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (24860) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (24870) radar-hr: Target bin unstable: 10 -> 16[0m
+[0;33mW (24880) radar-hr: Energy below threshold: 2.85e+06 < 5.00e+06[0m
+[0;33mW (24920) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (24950) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (24960) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (24960) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (24970) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (24970) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (24970) radar-hr: Target bin unstable: 16 -> 11[0m
+[0;33mW (25000) radar-hr: Target bin unstable: 11 -> 14[0m
+[0;33mW (25010) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (25010) radar-hr: Target bin unstable: 11 -> 14[0m
+[0;33mW (25030) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (25080) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (25090) radar-hr: Target bin unstable: 16 -> 10[0m
+[0;33mW (25190) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25210) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25250) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25280) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25340) radar-hr: Energy below threshold: 4.74e+06 < 5.00e+06[0m
+[0;33mW (25360) radar-hr: Energy below threshold: 4.84e+06 < 5.00e+06[0m
+[0;33mW (25380) radar-hr: Energy below threshold: 4.97e+06 < 5.00e+06[0m
+[0;33mW (25410) radar-hr: Energy below threshold: 3.26e+06 < 5.00e+06[0m
+[0;33mW (25500) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25520) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25530) radar-hr: Energy below threshold: 3.73e+06 < 5.00e+06[0m
+[0;33mW (25600) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25610) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25630) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25640) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25740) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25740) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25750) radar-hr: Target bin unstable: 10 -> 14[0m
+[0;33mW (25760) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (25760) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (25770) radar-hr: Energy below threshold: 3.34e+06 < 5.00e+06[0m
+[0;33mW (25780) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25850) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (25940) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25950) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (25990) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (25990) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26080) radar-hr: Target bin unstable: 10 -> 14[0m
+[0;33mW (26080) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (26090) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (26090) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (26110) radar-hr: Energy below threshold: 3.25e+06 < 5.00e+06[0m
+[0;33mW (26120) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (26130) radar-hr: Energy below threshold: 4.48e+06 < 5.00e+06[0m
+[0;33mW (26140) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26140) radar-hr: Energy below threshold: 3.90e+06 < 5.00e+06[0m
+[0;33mW (26190) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (26210) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (26220) radar-hr: Energy below threshold: 4.28e+06 < 5.00e+06[0m
+[0;33mW (26230) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (26240) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (26240) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (26260) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26270) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26280) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26280) radar-hr: Energy below threshold: 4.23e+06 < 5.00e+06[0m
+[0;33mW (26320) radar-hr: Energy below threshold: 4.82e+06 < 5.00e+06[0m
+[0;33mW (26370) radar-hr: Energy below threshold: 2.89e+06 < 5.00e+06[0m
+[0;33mW (26410) radar-hr: Energy below threshold: 2.65e+06 < 5.00e+06[0m
+[0;33mW (26410) radar-hr: Energy below threshold: 4.99e+06 < 5.00e+06[0m
+[0;33mW (26450) radar-hr: Energy below threshold: 3.79e+06 < 5.00e+06[0m
+[0;33mW (26460) radar-hr: Energy below threshold: 4.67e+06 < 5.00e+06[0m
+[0;33mW (26470) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26470) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (26480) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (26500) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26510) radar-hr: Energy below threshold: 4.88e+06 < 5.00e+06[0m
+[0;33mW (26520) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (26620) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (26670) radar-hr: Energy below threshold: 4.16e+06 < 5.00e+06[0m
+[0;33mW (26670) radar-hr: Energy below threshold: 4.45e+06 < 5.00e+06[0m
+[0;32mI (26780) radar-hr: Human detected! Phase Variance = 2.713e-01, valid frame = 21[0m
+[0;32mI (26780) radar-hr: Human detected! Phase Variance = 2.714e-01, valid frame = 22[0m
+[0;32mI (26790) radar-hr: Human detected! Phase Variance = 2.710e-01, valid frame = 23[0m
+[0;32mI (26790) radar-hr: Human detected! Phase Variance = 2.694e-01, valid frame = 24[0m
+[0;33mW (26800) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26810) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26820) radar-hr: Energy below threshold: 4.13e+06 < 5.00e+06[0m
+[0;33mW (26840) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26850) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (26860) radar-hr: Energy below threshold: 4.67e+06 < 5.00e+06[0m
+[0;33mW (26870) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (26870) radar-hr: Energy below threshold: 3.43e+06 < 5.00e+06[0m
+[0;33mW (26890) radar-hr: Energy below threshold: 4.04e+06 < 5.00e+06[0m
+[0;33mW (26900) radar-hr: Energy below threshold: 2.35e+06 < 5.00e+06[0m
+[0;33mW (26920) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (26920) radar-hr: Energy below threshold: 4.83e+06 < 5.00e+06[0m
+[0;33mW (26960) radar-hr: Energy below threshold: 4.45e+06 < 5.00e+06[0m
+[0;33mW (26970) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (26970) radar-hr: Energy below threshold: 4.38e+06 < 5.00e+06[0m
+[0;33mW (26980) radar-hr: Energy below threshold: 3.58e+06 < 5.00e+06[0m
+[0;33mW (26980) radar-hr: Energy below threshold: 3.57e+06 < 5.00e+06[0m
+[0;33mW (26990) radar-hr: Energy below threshold: 4.92e+06 < 5.00e+06[0m
+[0;33mW (27000) radar-hr: Target bin unstable: 14 -> 10[0m
+[0;33mW (27020) radar-hr: Target bin unstable: 10 -> 14[0m
+[0;33mW (27020) radar-hr: Energy below threshold: 2.24e+06 < 5.00e+06[0m
+[0;33mW (27040) radar-hr: Energy below threshold: 3.14e+06 < 5.00e+06[0m
+[0;33mW (27050) radar-hr: Energy below threshold: 3.13e+06 < 5.00e+06[0m
+[0;33mW (27060) radar-hr: Energy below threshold: 4.53e+06 < 5.00e+06[0m
+[0;33mW (27060) radar-hr: Energy below threshold: 2.73e+06 < 5.00e+06[0m
+[0;33mW (27070) radar-hr: Energy below threshold: 1.84e+06 < 5.00e+06[0m
+[0;33mW (27080) radar-hr: Energy below threshold: 3.55e+06 < 5.00e+06[0m
+[0;33mW (27090) radar-hr: Energy below threshold: 2.87e+06 < 5.00e+06[0m
+[0;33mW (27100) radar-hr: Energy below threshold: 2.84e+06 < 5.00e+06[0m
+[0;33mW (27110) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (27110) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (27120) radar-hr: Energy below threshold: 3.92e+06 < 5.00e+06[0m
+[0;33mW (27130) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (27140) radar-hr: Energy below threshold: 3.09e+06 < 5.00e+06[0m
+[0;33mW (27150) radar-hr: Energy below threshold: 2.95e+06 < 5.00e+06[0m
+[0;33mW (27160) radar-hr: Energy below threshold: 4.34e+06 < 5.00e+06[0m
+[0;33mW (27160) radar-hr: Energy below threshold: 3.11e+06 < 5.00e+06[0m
+[0;33mW (27170) radar-hr: Energy below threshold: 2.82e+06 < 5.00e+06[0m
+[0;33mW (27190) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (27200) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (27210) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (27210) radar-hr: Energy below threshold: 4.72e+06 < 5.00e+06[0m
+[0;33mW (27230) radar-hr: Energy below threshold: 2.88e+06 < 5.00e+06[0m
+[0;33mW (27230) radar-hr: Energy below threshold: 3.21e+06 < 5.00e+06[0m
+[0;33mW (27260) radar-hr: Energy below threshold: 2.40e+06 < 5.00e+06[0m
+[0;33mW (27260) radar-hr: Energy below threshold: 3.34e+06 < 5.00e+06[0m
+[0;33mW (27280) radar-hr: Energy below threshold: 4.41e+06 < 5.00e+06[0m
+[0;33mW (27290) radar-hr: Energy below threshold: 4.38e+06 < 5.00e+06[0m
+[0;33mW (27310) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (27320) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (27350) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (27370) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (27390) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (27390) radar-hr: Energy below threshold: 2.54e+06 < 5.00e+06[0m
+[0;33mW (27390) radar-hr: Energy below threshold: 3.64e+06 < 5.00e+06[0m
+[0;33mW (27390) radar-hr: Energy below threshold: 2.83e+06 < 5.00e+06[0m
+[0;33mW (27400) radar-hr: Energy below threshold: 4.83e+06 < 5.00e+06[0m
+[0;33mW (27400) radar-hr: Energy below threshold: 4.60e+06 < 5.00e+06[0m
+[0;33mW (27410) radar-hr: Energy below threshold: 2.72e+06 < 5.00e+06[0m
+[0;33mW (27430) radar-hr: Energy below threshold: 3.91e+06 < 5.00e+06[0m
+[0;33mW (27430) radar-hr: Energy below threshold: 4.27e+06 < 5.00e+06[0m
+[0;33mW (27430) radar-hr: Energy below threshold: 4.76e+06 < 5.00e+06[0m
+[0;33mW (27430) radar-hr: Energy below threshold: 4.39e+06 < 5.00e+06[0m
+[0;33mW (27440) radar-hr: Energy below threshold: 3.35e+06 < 5.00e+06[0m
+[0;33mW (27440) radar-hr: Energy below threshold: 3.40e+06 < 5.00e+06[0m
+[0;33mW (27450) radar-hr: Energy below threshold: 4.45e+06 < 5.00e+06[0m
+[0;33mW (27530) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (27530) radar-hr: Energy below threshold: 4.90e+06 < 5.00e+06[0m
+[0;33mW (27530) radar-hr: Energy below threshold: 3.29e+06 < 5.00e+06[0m
+[0;33mW (27550) radar-hr: Energy below threshold: 3.23e+06 < 5.00e+06[0m
+[0;33mW (27550) radar-hr: Energy below threshold: 2.06e+06 < 5.00e+06[0m
+[0;33mW (27550) radar-hr: Energy below threshold: 4.58e+06 < 5.00e+06[0m
+[0;33mW (27550) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (27590) radar-hr: Energy below threshold: 3.23e+06 < 5.00e+06[0m
+[0;33mW (27610) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (27610) radar-hr: Energy below threshold: 4.65e+06 < 5.00e+06[0m
+[0;33mW (27630) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (27630) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (27630) radar-hr: Energy below threshold: 3.77e+06 < 5.00e+06[0m
+[0;33mW (27660) radar-hr: Energy below threshold: 1.87e+06 < 5.00e+06[0m
+[0;33mW (27660) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (27660) radar-hr: Energy below threshold: 2.48e+06 < 5.00e+06[0m
+[0;33mW (27680) radar-hr: Energy below threshold: 2.20e+06 < 5.00e+06[0m
+[0;33mW (27700) radar-hr: Energy below threshold: 4.25e+06 < 5.00e+06[0m
+[0;33mW (27700) radar-hr: Energy below threshold: 3.95e+06 < 5.00e+06[0m
+[0;33mW (27700) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[0;33mW (27720) radar-hr: Energy below threshold: 3.67e+06 < 5.00e+06[0m
+[0;33mW (27720) radar-hr: Energy below threshold: 1.98e+06 < 5.00e+06[0m
+[0;33mW (27730) radar-hr: Energy below threshold: 4.82e+06 < 5.00e+06[0m
+[0;33mW (27730) radar-hr: Energy below threshold: 3.76e+06 < 5.00e+06[0m
+[0;33mW (27750) radar-hr: Energy below threshold: 4.46e+06 < 5.00e+06[0m
+[0;33mW (27750) radar-hr: Energy below threshold: 1.24e+06 < 5.00e+06[0m
+[0;33mW (27770) radar-hr: Energy below threshold: 2.15e+06 < 5.00e+06[0m
+[0;33mW (27770) radar-hr: Energy below threshold: 1.76e+06 < 5.00e+06[0m
+[0;33mW (27790) radar-hr: Energy below threshold: 4.32e+06 < 5.00e+06[0m
+[0;33mW (27790) radar-hr: Energy below threshold: 2.72e+06 < 5.00e+06[0m
+[0;33mW (27810) radar-hr: Energy below threshold: 4.31e+06 < 5.00e+06[0m
+[0;33mW (27810) radar-hr: Energy below threshold: 2.90e+06 < 5.00e+06[0m
+[0;33mW (27830) radar-hr: Energy below threshold: 4.54e+06 < 5.00e+06[0m
+[0;33mW (27830) radar-hr: Energy below threshold: 4.95e+06 < 5.00e+06[0m
+[0;33mW (27830) radar-hr: Energy below threshold: 4.35e+06 < 5.00e+06[0m
+[0;33mW (27840) radar-hr: Energy below threshold: 1.97e+06 < 5.00e+06[0m
+[0;33mW (27860) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (27880) radar-hr: Energy below threshold: 3.54e+06 < 5.00e+06[0m
+[0;33mW (27880) radar-hr: Energy below threshold: 3.33e+06 < 5.00e+06[0m
+[0;33mW (27900) radar-hr: Energy below threshold: 4.16e+06 < 5.00e+06[0m
+[0;33mW (27900) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (27940) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (27960) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (27960) radar-hr: Energy below threshold: 4.28e+06 < 5.00e+06[0m
+[0;33mW (27960) radar-hr: Energy below threshold: 1.97e+06 < 5.00e+06[0m
+[0;33mW (27980) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (27980) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (27980) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (28000) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28000) radar-hr: Target bin unstable: 13 -> 16[0m
+[0;33mW (28000) radar-hr: Target bin unstable: 16 -> 13[0m
+[0;33mW (28000) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28020) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28020) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28020) radar-hr: Energy below threshold: 4.07e+06 < 5.00e+06[0m
+[0;33mW (28050) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (28070) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (28110) radar-hr: Target bin unstable: 11 -> 16[0m
+[0;33mW (28110) radar-hr: Target bin unstable: 16 -> 13[0m
+[0;33mW (28110) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28130) radar-hr: Energy below threshold: 2.70e+06 < 5.00e+06[0m
+[0;33mW (28130) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (28160) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28170) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28190) radar-hr: Energy below threshold: 4.44e+06 < 5.00e+06[0m
+[0;33mW (28190) radar-hr: Energy below threshold: 4.80e+06 < 5.00e+06[0m
+[0;33mW (28290) radar-hr: Energy below threshold: 4.62e+06 < 5.00e+06[0m
+[0;33mW (28290) radar-hr: Energy below threshold: 4.20e+06 < 5.00e+06[0m
+[0;33mW (28290) radar-hr: Energy below threshold: 4.93e+06 < 5.00e+06[0m
+[0;33mW (28370) radar-hr: Energy below threshold: 3.44e+06 < 5.00e+06[0m
+[0;33mW (28370) radar-hr: Energy below threshold: 2.91e+06 < 5.00e+06[0m
+[0;33mW (28390) radar-hr: Energy below threshold: 3.75e+06 < 5.00e+06[0m
+[0;33mW (28430) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (28430) radar-hr: Energy below threshold: 2.03e+06 < 5.00e+06[0m
+[0;33mW (28450) radar-hr: Energy below threshold: 1.95e+06 < 5.00e+06[0m
+[0;33mW (28470) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (28490) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (28490) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (28510) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (28530) radar-hr: Energy below threshold: 2.62e+06 < 5.00e+06[0m
+[0;33mW (28530) radar-hr: Energy below threshold: 4.49e+06 < 5.00e+06[0m
+[0;33mW (28550) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28550) radar-hr: Energy below threshold: 4.67e+06 < 5.00e+06[0m
+[0;33mW (28570) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (28570) radar-hr: Energy below threshold: 4.51e+06 < 5.00e+06[0m
+[0;33mW (28610) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (28610) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (28700) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (28720) radar-hr: Energy below threshold: 4.88e+06 < 5.00e+06[0m
+[0;33mW (28740) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28760) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28820) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28840) radar-hr: Energy below threshold: 3.60e+06 < 5.00e+06[0m
+[0;33mW (28860) radar-hr: Target bin unstable: 14 -> 10[0m
+[0;33mW (28870) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28870) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (28880) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (28930) radar-hr: Energy below threshold: 4.08e+06 < 5.00e+06[0m
+[0;33mW (28930) radar-hr: Energy below threshold: 4.79e+06 < 5.00e+06[0m
+[0;33mW (29010) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (29040) radar-hr: Energy below threshold: 4.93e+06 < 5.00e+06[0m
+[0;33mW (29090) radar-hr: Energy below threshold: 4.87e+06 < 5.00e+06[0m
+[0;33mW (29140) radar-hr: Target bin unstable: 15 -> 11[0m
+[0;33mW (29160) radar-hr: Target bin unstable: 11 -> 15[0m
+[0;33mW (29170) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;32mI (29280) radar-hr: Human detected! Phase Variance = 5.218e-01, valid frame = 21[0m
+[0;32mI (29280) radar-hr: Human detected! Phase Variance = 5.222e-01, valid frame = 22[0m
+[0;32mI (29290) radar-hr: Human detected! Phase Variance = 4.598e-01, valid frame = 23[0m
+[0;32mI (29290) radar-hr: Human detected! Phase Variance = 3.902e-01, valid frame = 24[0m
+[0;32mI (29290) radar-hr: Human detected! Phase Variance = 3.074e-01, valid frame = 25[0m
+[0;32mI (29300) radar-hr: Human detected! Phase Variance = 2.424e-01, valid frame = 26[0m
+[0;32mI (29310) radar-hr: Human detected! Phase Variance = 1.751e-01, valid frame = 27[0m
+[0;32mI (29320) radar-hr: Human detected! Phase Variance = 1.107e-01, valid frame = 28[0m
+[0;32mI (29320) radar-hr: Human detected! Phase Variance = 1.129e-01, valid frame = 29[0m
+[0;32mI (29330) radar-hr: Human detected! Phase Variance = 1.165e-01, valid frame = 30[0m
+[0;32mI (29340) radar-hr: Human detected! Phase Variance = 1.223e-01, valid frame = 31[0m
+[0;32mI (29340) radar-hr: Human detected! Phase Variance = 1.224e-01, valid frame = 32[0m
+[0;32mI (29350) radar-hr: Human detected! Phase Variance = 1.167e-01, valid frame = 33[0m
+[0;32mI (29360) radar-hr: Human detected! Phase Variance = 1.158e-01, valid frame = 34[0m
+[0;32mI (29360) radar-hr: Human detected! Phase Variance = 1.144e-01, valid frame = 35[0m
+[0;32mI (29370) radar-hr: Human detected! Phase Variance = 1.098e-01, valid frame = 36[0m
+[0;32mI (29380) radar-hr: Human detected! Phase Variance = 1.017e-01, valid frame = 37[0m
+[0;32mI (29390) radar-hr: Human detected! Phase Variance = 1.031e-01, valid frame = 38[0m
+[0;32mI (29390) radar-hr: Human detected! Phase Variance = 1.060e-01, valid frame = 39[0m
+[0;32mI (29400) radar-hr: Human detected! Phase Variance = 1.106e-01, valid frame = 40[0m
+[0;32mI (29410) radar-hr: Human detected! Phase Variance = 1.149e-01, valid frame = 41[0m
+[0;32mI (29410) radar-hr: Human detected! Phase Variance = 1.165e-01, valid frame = 42[0m
+[0;32mI (29420) radar-hr: Human detected! Phase Variance = 1.176e-01, valid frame = 43[0m
+[0;32mI (29430) radar-hr: Human detected! Phase Variance = 1.200e-01, valid frame = 44[0m
+[0;32mI (29440) radar-hr: Human detected! Phase Variance = 1.210e-01, valid frame = 45[0m
+[0;32mI (29440) radar-hr: Human detected! Phase Variance = 1.230e-01, valid frame = 46[0m
+[0;32mI (29450) radar-hr: Human detected! Phase Variance = 1.249e-01, valid frame = 47[0m
+[0;32mI (29460) radar-hr: Human detected! Phase Variance = 1.266e-01, valid frame = 48[0m
+[0;32mI (29460) radar-hr: Human detected! Phase Variance = 1.277e-01, valid frame = 49[0m
+[0;32mI (29470) radar-hr: Human detected! Phase Variance = 1.289e-01, valid frame = 50[0m
+[0;32mI (29480) radar-hr: Human detected! Phase Variance = 1.294e-01, valid frame = 51[0m
+[0;32mI (29490) radar-hr: Human detected! Phase Variance = 1.296e-01, valid frame = 52[0m
+[0;32mI (29490) radar-hr: Human detected! Phase Variance = 1.297e-01, valid frame = 53[0m
+[0;32mI (29500) radar-hr: Human detected! Phase Variance = 1.301e-01, valid frame = 54[0m
+[0;32mI (29510) radar-hr: Human detected! Phase Variance = 1.298e-01, valid frame = 55[0m
+[0;32mI (29510) radar-hr: Human detected! Phase Variance = 1.274e-01, valid frame = 56[0m
+[0;32mI (29520) radar-hr: Human detected! Phase Variance = 1.269e-01, valid frame = 57[0m
+[0;32mI (29530) radar-hr: Human detected! Phase Variance = 1.238e-01, valid frame = 58[0m
+[0;32mI (29540) radar-hr: Human detected! Phase Variance = 1.209e-01, valid frame = 59[0m
+[0;32mI (29540) radar-hr: Human detected! Phase Variance = 9.211e-02, valid frame = 60[0m
+[0;32mI (29550) radar-hr: Human detected! Phase Variance = 6.466e-02, valid frame = 61[0m
+[0;32mI (29560) radar-hr: Human detected! Phase Variance = 6.112e-02, valid frame = 62[0m
+[0;32mI (29560) radar-hr: Human detected! Phase Variance = 5.964e-02, valid frame = 63[0m
+[0;32mI (29570) radar-hr: Human detected! Phase Variance = 5.869e-02, valid frame = 64[0m
+[0;32mI (29580) radar-hr: Human detected! Phase Variance = 5.492e-02, valid frame = 65[0m
+[0;32mI (29590) radar-hr: Human detected! Phase Variance = 5.103e-02, valid frame = 66[0m
+[0;32mI (29730) radar-hr: Human detected! Phase Variance = 1.018e-01, valid frame = 21[0m
+[0;32mI (29730) radar-hr: Human detected! Phase Variance = 1.071e-01, valid frame = 22[0m
+[0;32mI (29740) radar-hr: Human detected! Phase Variance = 1.038e-01, valid frame = 23[0m
+[0;32mI (29740) radar-hr: Human detected! Phase Variance = 1.028e-01, valid frame = 24[0m
+[0;32mI (29740) radar-hr: Human detected! Phase Variance = 1.054e-01, valid frame = 25[0m
+[0;32mI (29750) radar-hr: Human detected! Phase Variance = 1.042e-01, valid frame = 26[0m
+[0;32mI (29760) radar-hr: Human detected! Phase Variance = 1.097e-01, valid frame = 27[0m
+[0;32mI (29770) radar-hr: Human detected! Phase Variance = 1.083e-01, valid frame = 28[0m
+[0;32mI (29770) radar-hr: Human detected! Phase Variance = 1.056e-01, valid frame = 29[0m
+[0;32mI (29780) radar-hr: Human detected! Phase Variance = 1.068e-01, valid frame = 30[0m
+[0;32mI (29790) radar-hr: Human detected! Phase Variance = 1.087e-01, valid frame = 31[0m
+[0;32mI (29790) radar-hr: Human detected! Phase Variance = 1.106e-01, valid frame = 32[0m
+[0;32mI (29800) radar-hr: Human detected! Phase Variance = 1.128e-01, valid frame = 33[0m
+[0;32mI (29810) radar-hr: Human detected! Phase Variance = 1.128e-01, valid frame = 34[0m
+[0;32mI (29820) radar-hr: Human detected! Phase Variance = 1.162e-01, valid frame = 35[0m
+[0;32mI (29820) radar-hr: Human detected! Phase Variance = 1.129e-01, valid frame = 36[0m
+[0;32mI (29830) radar-hr: Human detected! Phase Variance = 1.133e-01, valid frame = 37[0m
+[0;32mI (29840) radar-hr: Human detected! Phase Variance = 1.137e-01, valid frame = 38[0m
+[0;32mI (29840) radar-hr: Human detected! Phase Variance = 1.145e-01, valid frame = 39[0m
+[0;32mI (29850) radar-hr: Human detected! Phase Variance = 1.108e-01, valid frame = 40[0m
+[0;32mI (29860) radar-hr: Human detected! Phase Variance = 1.110e-01, valid frame = 41[0m
+[0;32mI (29870) radar-hr: Human detected! Phase Variance = 1.102e-01, valid frame = 42[0m
+[0;32mI (29870) radar-hr: Human detected! Phase Variance = 1.109e-01, valid frame = 43[0m
+[0;32mI (29880) radar-hr: Human detected! Phase Variance = 1.091e-01, valid frame = 44[0m
+[0;32mI (29890) radar-hr: Human detected! Phase Variance = 1.087e-01, valid frame = 45[0m
+[0;32mI (29890) radar-hr: Human detected! Phase Variance = 1.074e-01, valid frame = 46[0m
+[0;32mI (29900) radar-hr: Human detected! Phase Variance = 1.061e-01, valid frame = 47[0m
+[0;32mI (29910) radar-hr: Human detected! Phase Variance = 1.014e-01, valid frame = 48[0m
+[0;32mI (29910) radar-hr: Human detected! Phase Variance = 9.838e-02, valid frame = 49[0m
+[0;32mI (29920) radar-hr: Human detected! Phase Variance = 9.536e-02, valid frame = 50[0m
+[0;32mI (29930) radar-hr: Human detected! Phase Variance = 9.365e-02, valid frame = 51[0m
+[0;32mI (29940) radar-hr: Human detected! Phase Variance = 9.614e-02, valid frame = 52[0m
+[0;32mI (29940) radar-hr: Human detected! Phase Variance = 9.647e-02, valid frame = 53[0m
+[0;32mI (29950) radar-hr: Human detected! Phase Variance = 9.638e-02, valid frame = 54[0m
+[0;32mI (29960) radar-hr: Human detected! Phase Variance = 9.182e-02, valid frame = 55[0m
+[0;32mI (29960) radar-hr: Human detected! Phase Variance = 9.291e-02, valid frame = 56[0m
+[0;32mI (29970) radar-hr: Human detected! Phase Variance = 9.458e-02, valid frame = 57[0m
+[0;32mI (29980) radar-hr: Human detected! Phase Variance = 9.824e-02, valid frame = 58[0m
+[0;32mI (29990) radar-hr: Human detected! Phase Variance = 1.014e-01, valid frame = 59[0m
+[0;32mI (29990) radar-hr: Human detected! Phase Variance = 1.034e-01, valid frame = 60[0m
+[0;32mI (30000) radar-hr: Human detected! Phase Variance = 1.071e-01, valid frame = 61[0m
+[0;32mI (30010) radar-hr: Human detected! Phase Variance = 1.080e-01, valid frame = 62[0m
+[0;32mI (30010) radar-hr: Human detected! Phase Variance = 1.075e-01, valid frame = 63[0m
+[0;32mI (30020) radar-hr: Human detected! Phase Variance = 1.070e-01, valid frame = 64[0m
+[0;32mI (30030) radar-hr: Human detected! Phase Variance = 1.093e-01, valid frame = 65[0m
+[0;32mI (30040) radar-hr: Human detected! Phase Variance = 1.093e-01, valid frame = 66[0m
+[0;32mI (30040) radar-hr: Human detected! Phase Variance = 1.098e-01, valid frame = 67[0m
+[0;32mI (30050) radar-hr: Human detected! Phase Variance = 1.129e-01, valid frame = 68[0m
+[0;32mI (30060) radar-hr: Human detected! Phase Variance = 1.154e-01, valid frame = 69[0m
+[0;32mI (30060) radar-hr: Human detected! Phase Variance = 1.232e-01, valid frame = 70[0m
+[0;32mI (30070) radar-hr: Human detected! Phase Variance = 1.305e-01, valid frame = 71[0m
+[0;32mI (30080) radar-hr: Human detected! Phase Variance = 1.385e-01, valid frame = 72[0m
+[0;32mI (30090) radar-hr: Human detected! Phase Variance = 1.389e-01, valid frame = 73[0m
+[0;32mI (30090) radar-hr: Human detected! Phase Variance = 1.432e-01, valid frame = 74[0m
+[0;32mI (30100) radar-hr: Human detected! Phase Variance = 1.497e-01, valid frame = 75[0m
+[0;32mI (30110) radar-hr: Human detected! Phase Variance = 1.497e-01, valid frame = 76[0m
+[0;32mI (30110) radar-hr: Human detected! Phase Variance = 1.496e-01, valid frame = 77[0m
+[0;32mI (30120) radar-hr: Human detected! Phase Variance = 1.534e-01, valid frame = 78[0m
+[0;32mI (30130) radar-hr: Human detected! Phase Variance = 1.550e-01, valid frame = 79[0m
+[0;32mI (30140) radar-hr: Human detected! Phase Variance = 1.563e-01, valid frame = 80[0m
+[0;32mI (30140) radar-hr: Human detected! Phase Variance = 1.568e-01, valid frame = 81[0m
+[0;32mI (30150) radar-hr: Human detected! Phase Variance = 1.578e-01, valid frame = 82[0m
+[0;32mI (30160) radar-hr: Human detected! Phase Variance = 1.589e-01, valid frame = 83[0m
+[0;32mI (30160) radar-hr: Human detected! Phase Variance = 1.588e-01, valid frame = 84[0m
+[0;32mI (30170) radar-hr: Human detected! Phase Variance = 1.608e-01, valid frame = 85[0m
+[0;32mI (30180) radar-hr: Human detected! Phase Variance = 1.587e-01, valid frame = 86[0m
+[0;32mI (30190) radar-hr: Human detected! Phase Variance = 1.596e-01, valid frame = 87[0m
+[0;32mI (30190) radar-hr: Human detected! Phase Variance = 1.606e-01, valid frame = 88[0m
+[0;32mI (30200) radar-hr: Human detected! Phase Variance = 1.587e-01, valid frame = 89[0m
+[0;32mI (30210) radar-hr: Human detected! Phase Variance = 1.613e-01, valid frame = 90[0m
+[0;32mI (30210) radar-hr: Human detected! Phase Variance = 1.578e-01, valid frame = 91[0m
+[0;32mI (30220) radar-hr: Human detected! Phase Variance = 1.633e-01, valid frame = 92[0m
+[0;32mI (30230) radar-hr: Human detected! Phase Variance = 1.662e-01, valid frame = 93[0m
+[0;32mI (30240) radar-hr: Human detected! Phase Variance = 1.662e-01, valid frame = 94[0m
+[0;32mI (30240) radar-hr: Human detected! Phase Variance = 1.655e-01, valid frame = 95[0m
+[0;32mI (30250) radar-hr: Human detected! Phase Variance = 1.627e-01, valid frame = 96[0m
+[0;32mI (30260) radar-hr: Human detected! Phase Variance = 1.580e-01, valid frame = 97[0m
+[0;32mI (30260) radar-hr: Human detected! Phase Variance = 1.596e-01, valid frame = 98[0m
+[0;32mI (30270) radar-hr: Human detected! Phase Variance = 1.547e-01, valid frame = 99[0m
+[0;32mI (30280) radar-hr: Human detected! Phase Variance = 1.568e-01, valid frame = 100[0m
+[0;32mI (30290) radar-hr: Human detected! Phase Variance = 1.526e-01, valid frame = 101[0m
+[0;32mI (30290) radar-hr: Human detected! Phase Variance = 1.480e-01, valid frame = 102[0m
+[0;32mI (30300) radar-hr: Human detected! Phase Variance = 1.417e-01, valid frame = 103[0m
+[0;32mI (30310) radar-hr: Human detected! Phase Variance = 1.410e-01, valid frame = 104[0m
+[0;32mI (30310) radar-hr: Human detected! Phase Variance = 1.348e-01, valid frame = 105[0m
+[0;32mI (30320) radar-hr: Human detected! Phase Variance = 1.295e-01, valid frame = 106[0m
+[0;32mI (30330) radar-hr: Human detected! Phase Variance = 1.219e-01, valid frame = 107[0m
+[0;32mI (30340) radar-hr: Human detected! Phase Variance = 1.136e-01, valid frame = 108[0m
+[0;32mI (30340) radar-hr: Human detected! Phase Variance = 1.025e-01, valid frame = 109[0m
+[0;32mI (30350) radar-hr: Human detected! Phase Variance = 9.027e-02, valid frame = 110[0m
+[0;32mI (30360) radar-hr: Human detected! Phase Variance = 7.996e-02, valid frame = 111[0m
+[0;32mI (30360) radar-hr: Human detected! Phase Variance = 7.609e-02, valid frame = 112[0m
+[0;32mI (30370) radar-hr: Human detected! Phase Variance = 6.881e-02, valid frame = 113[0m
+[0;32mI (30380) radar-hr: Human detected! Phase Variance = 5.875e-02, valid frame = 114[0m
+[0;32mI (30850) radar-hr: Human detected! Phase Variance = 7.294e-02, valid frame = 21[0m
+[0;32mI (30850) radar-hr: Human detected! Phase Variance = 7.308e-02, valid frame = 22[0m
+[0;32mI (30860) radar-hr: Human detected! Phase Variance = 7.361e-02, valid frame = 23[0m
+[0;32mI (30860) radar-hr: Human detected! Phase Variance = 7.378e-02, valid frame = 24[0m
+[0;32mI (30860) radar-hr: Human detected! Phase Variance = 7.344e-02, valid frame = 25[0m
+[0;32mI (30870) radar-hr: Human detected! Phase Variance = 7.336e-02, valid frame = 26[0m
+[0;32mI (30880) radar-hr: Human detected! Phase Variance = 7.325e-02, valid frame = 27[0m
+[0;32mI (30890) radar-hr: Human detected! Phase Variance = 7.323e-02, valid frame = 28[0m
+[0;32mI (30890) radar-hr: Human detected! Phase Variance = 7.331e-02, valid frame = 29[0m
+[0;32mI (30900) radar-hr: Human detected! Phase Variance = 7.333e-02, valid frame = 30[0m
+[0;32mI (30910) radar-hr: Human detected! Phase Variance = 7.304e-02, valid frame = 31[0m
+[0;32mI (30910) radar-hr: Human detected! Phase Variance = 7.362e-02, valid frame = 32[0m
+[0;32mI (30920) radar-hr: Human detected! Phase Variance = 7.359e-02, valid frame = 33[0m
+[0;32mI (30930) radar-hr: Human detected! Phase Variance = 7.307e-02, valid frame = 34[0m
+[0;32mI (30940) radar-hr: Human detected! Phase Variance = 7.332e-02, valid frame = 35[0m
+[0;32mI (30940) radar-hr: Human detected! Phase Variance = 7.315e-02, valid frame = 36[0m
+[0;32mI (30950) radar-hr: Human detected! Phase Variance = 7.314e-02, valid frame = 37[0m
+[0;32mI (30960) radar-hr: Human detected! Phase Variance = 7.366e-02, valid frame = 38[0m
+[0;32mI (30960) radar-hr: Human detected! Phase Variance = 7.378e-02, valid frame = 39[0m
+[0;32mI (30970) radar-hr: Human detected! Phase Variance = 7.354e-02, valid frame = 40[0m
+[0;32mI (30980) radar-hr: Human detected! Phase Variance = 7.341e-02, valid frame = 41[0m
+[0;32mI (30990) radar-hr: Human detected! Phase Variance = 7.393e-02, valid frame = 42[0m
+[0;32mI (30990) radar-hr: Human detected! Phase Variance = 7.377e-02, valid frame = 43[0m
+[0;32mI (31000) radar-hr: Human detected! Phase Variance = 7.389e-02, valid frame = 44[0m
+[0;32mI (31010) radar-hr: Human detected! Phase Variance = 7.390e-02, valid frame = 45[0m
+[0;32mI (31010) radar-hr: Human detected! Phase Variance = 7.417e-02, valid frame = 46[0m
+[0;32mI (31020) radar-hr: Human detected! Phase Variance = 7.478e-02, valid frame = 47[0m
+[0;32mI (31030) radar-hr: Human detected! Phase Variance = 7.444e-02, valid frame = 48[0m
+[0;32mI (31040) radar-hr: Human detected! Phase Variance = 7.229e-02, valid frame = 49[0m
+[0;32mI (31040) radar-hr: Human detected! Phase Variance = 7.238e-02, valid frame = 50[0m
+[0;32mI (31050) radar-hr: Human detected! Phase Variance = 6.996e-02, valid frame = 51[0m
+[0;32mI (31060) radar-hr: Human detected! Phase Variance = 6.935e-02, valid frame = 52[0m
+[0;32mI (31060) radar-hr: Human detected! Phase Variance = 6.952e-02, valid frame = 53[0m
+[0;32mI (31070) radar-hr: Human detected! Phase Variance = 6.958e-02, valid frame = 54[0m
+[0;32mI (31080) radar-hr: Human detected! Phase Variance = 6.685e-02, valid frame = 55[0m
+[0;32mI (31080) radar-hr: Human detected! Phase Variance = 6.509e-02, valid frame = 56[0m
+[0;32mI (31090) radar-hr: Human detected! Phase Variance = 6.551e-02, valid frame = 57[0m
+[0;32mI (31100) radar-hr: Human detected! Phase Variance = 6.370e-02, valid frame = 58[0m
+[0;32mI (31110) radar-hr: Human detected! Phase Variance = 6.325e-02, valid frame = 59[0m
+[0;32mI (31110) radar-hr: Human detected! Phase Variance = 5.176e-02, valid frame = 60[0m
+[0;32mI (31120) radar-hr: Human detected! Phase Variance = 5.049e-02, valid frame = 61[0m
+[0;33mW (31580) radar-hr: Energy below threshold: 4.19e+06 < 5.00e+06[0m
+[0;33mW (31610) radar-hr: Energy below threshold: 4.94e+06 < 5.00e+06[0m
+[0;33mW (31610) radar-hr: Energy below threshold: 4.96e+06 < 5.00e+06[0m
+[0;33mW (31620) radar-hr: Energy below threshold: 4.03e+06 < 5.00e+06[0m
+[0;33mW (31640) radar-hr: Energy below threshold: 4.20e+06 < 5.00e+06[0m
+[0;33mW (31650) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (31660) radar-hr: Energy below threshold: 4.07e+06 < 5.00e+06[0m
+[0;33mW (31660) radar-hr: Energy below threshold: 4.89e+06 < 5.00e+06[0m
+[0;33mW (31670) radar-hr: Energy below threshold: 3.29e+06 < 5.00e+06[0m
+[0;33mW (31670) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (31680) radar-hr: Energy below threshold: 4.90e+06 < 5.00e+06[0m
+[0;33mW (31690) radar-hr: Energy below threshold: 4.93e+06 < 5.00e+06[0m
+[0;33mW (31700) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (31710) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (31720) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31730) radar-hr: Energy below threshold: 4.61e+06 < 5.00e+06[0m
+[0;33mW (31760) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31760) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31770) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31770) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31790) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31790) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31800) radar-hr: Energy below threshold: 4.86e+06 < 5.00e+06[0m
+[0;33mW (31820) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31830) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31900) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31900) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31910) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31910) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31940) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31950) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (31970) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (31970) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (32000) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (32010) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (32020) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (32030) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (32060) radar-hr: Energy below threshold: 4.51e+06 < 5.00e+06[0m
+[0;33mW (32060) radar-hr: Energy below threshold: 3.97e+06 < 5.00e+06[0m
+[0;33mW (32080) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (32080) radar-hr: Energy below threshold: 3.95e+06 < 5.00e+06[0m
+[0;33mW (32090) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;32mI (32190) radar-hr: Human detected! Phase Variance = 8.738e-02, valid frame = 21[0m
+[0;33mW (32200) radar-hr: Target bin unstable: 12 -> 18[0m
+[0;33mW (32200) radar-hr: Target bin unstable: 18 -> 12[0m
+[0;33mW (32210) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (32210) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (32220) radar-hr: Energy below threshold: 3.41e+06 < 5.00e+06[0m
+[0;33mW (32230) radar-hr: Energy below threshold: 4.60e+06 < 5.00e+06[0m
+[0;33mW (32240) radar-hr: Energy below threshold: 4.55e+06 < 5.00e+06[0m
+[0;33mW (32280) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (32290) radar-hr: Energy below threshold: 4.29e+06 < 5.00e+06[0m
+[0;33mW (32290) radar-hr: Energy below threshold: 4.26e+06 < 5.00e+06[0m
+[0;33mW (32300) radar-hr: Energy below threshold: 4.97e+06 < 5.00e+06[0m
+[0;33mW (32300) radar-hr: Energy below threshold: 4.96e+06 < 5.00e+06[0m
+[0;33mW (32310) radar-hr: Energy below threshold: 4.79e+06 < 5.00e+06[0m
+[0;33mW (32320) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (32320) radar-hr: Energy below threshold: 3.93e+06 < 5.00e+06[0m
+[0;33mW (32330) radar-hr: Energy below threshold: 3.31e+06 < 5.00e+06[0m
+[0;33mW (32330) radar-hr: Energy below threshold: 3.21e+06 < 5.00e+06[0m
+[0;33mW (32340) radar-hr: Energy below threshold: 3.59e+06 < 5.00e+06[0m
+[0;33mW (32360) radar-hr: Energy below threshold: 4.84e+06 < 5.00e+06[0m
+[0;33mW (32360) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (32370) radar-hr: Energy below threshold: 4.86e+06 < 5.00e+06[0m
+[0;33mW (32380) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (32380) radar-hr: Energy below threshold: 4.32e+06 < 5.00e+06[0m
+[0;33mW (32390) radar-hr: Energy below threshold: 4.89e+06 < 5.00e+06[0m
+[0;33mW (32390) radar-hr: Energy below threshold: 3.33e+06 < 5.00e+06[0m
+[0;33mW (32400) radar-hr: Energy below threshold: 4.63e+06 < 5.00e+06[0m
+[0;33mW (32410) radar-hr: Energy below threshold: 4.48e+06 < 5.00e+06[0m
+[0;33mW (32420) radar-hr: Energy below threshold: 4.65e+06 < 5.00e+06[0m
+[0;33mW (32420) radar-hr: Energy below threshold: 4.11e+06 < 5.00e+06[0m
+[0;33mW (32430) radar-hr: Energy below threshold: 4.21e+06 < 5.00e+06[0m
+[0;33mW (32430) radar-hr: Energy below threshold: 3.87e+06 < 5.00e+06[0m
+[0;33mW (32440) radar-hr: Energy below threshold: 4.09e+06 < 5.00e+06[0m
+[0;33mW (32450) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (32450) radar-hr: Target bin unstable: 15 -> 10[0m
+[0;33mW (32460) radar-hr: Energy below threshold: 4.36e+06 < 5.00e+06[0m
+[0;33mW (32460) radar-hr: Energy below threshold: 4.75e+06 < 5.00e+06[0m
+[0;33mW (32470) radar-hr: Energy below threshold: 4.74e+06 < 5.00e+06[0m
+[0;33mW (32470) radar-hr: Energy below threshold: 4.12e+06 < 5.00e+06[0m
+[0;33mW (32480) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (32490) radar-hr: Energy below threshold: 3.60e+06 < 5.00e+06[0m
+[0;33mW (32490) radar-hr: Energy below threshold: 4.23e+06 < 5.00e+06[0m
+[0;33mW (32500) radar-hr: Energy below threshold: 4.10e+06 < 5.00e+06[0m
+[0;33mW (32510) radar-hr: Energy below threshold: 3.69e+06 < 5.00e+06[0m
+[0;33mW (32520) radar-hr: Energy below threshold: 4.32e+06 < 5.00e+06[0m
+[0;33mW (32520) radar-hr: Energy below threshold: 3.71e+06 < 5.00e+06[0m
+[0;33mW (32530) radar-hr: Energy below threshold: 3.77e+06 < 5.00e+06[0m
+[0;33mW (32530) radar-hr: Energy below threshold: 3.28e+06 < 5.00e+06[0m
+[0;33mW (32540) radar-hr: Energy below threshold: 3.23e+06 < 5.00e+06[0m
+[0;33mW (32540) radar-hr: Energy below threshold: 3.05e+06 < 5.00e+06[0m
+[0;33mW (32550) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (32550) radar-hr: Energy below threshold: 3.85e+06 < 5.00e+06[0m
+[0;33mW (32560) radar-hr: Energy below threshold: 3.22e+06 < 5.00e+06[0m
+[0;33mW (32560) radar-hr: Energy below threshold: 2.98e+06 < 5.00e+06[0m
+[0;33mW (32570) radar-hr: Energy below threshold: 3.85e+06 < 5.00e+06[0m
+[0;33mW (32570) radar-hr: Energy below threshold: 4.10e+06 < 5.00e+06[0m
+[0;33mW (32580) radar-hr: Energy below threshold: 3.76e+06 < 5.00e+06[0m
+[0;33mW (32580) radar-hr: Energy below threshold: 2.85e+06 < 5.00e+06[0m
+[0;33mW (32590) radar-hr: Energy below threshold: 4.05e+06 < 5.00e+06[0m
+[0;33mW (32590) radar-hr: Energy below threshold: 4.77e+06 < 5.00e+06[0m
+[0;33mW (32610) radar-hr: Energy below threshold: 4.05e+06 < 5.00e+06[0m
+[0;33mW (32610) radar-hr: Energy below threshold: 4.03e+06 < 5.00e+06[0m
+[0;33mW (32610) radar-hr: Energy below threshold: 3.46e+06 < 5.00e+06[0m
+[0;33mW (32620) radar-hr: Energy below threshold: 2.87e+06 < 5.00e+06[0m
+[0;33mW (32640) radar-hr: Energy below threshold: 3.96e+06 < 5.00e+06[0m
+[0;33mW (32640) radar-hr: Energy below threshold: 3.16e+06 < 5.00e+06[0m
+[0;33mW (32650) radar-hr: Energy below threshold: 3.95e+06 < 5.00e+06[0m
+[0;33mW (32650) radar-hr: Energy below threshold: 2.87e+06 < 5.00e+06[0m
+[0;33mW (32660) radar-hr: Energy below threshold: 4.05e+06 < 5.00e+06[0m
+[0;33mW (32660) radar-hr: Energy below threshold: 3.12e+06 < 5.00e+06[0m
+[0;33mW (32670) radar-hr: Energy below threshold: 3.35e+06 < 5.00e+06[0m
+[0;33mW (32670) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (32680) radar-hr: Energy below threshold: 4.58e+06 < 5.00e+06[0m
+[0;33mW (32680) radar-hr: Energy below threshold: 3.66e+06 < 5.00e+06[0m
+[0;33mW (32690) radar-hr: Energy below threshold: 4.08e+06 < 5.00e+06[0m
+[0;33mW (32690) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (32700) radar-hr: Energy below threshold: 3.36e+06 < 5.00e+06[0m
+[0;33mW (32700) radar-hr: Energy below threshold: 4.87e+06 < 5.00e+06[0m
+[0;33mW (32710) radar-hr: Energy below threshold: 3.02e+06 < 5.00e+06[0m
+[0;33mW (32710) radar-hr: Energy below threshold: 4.51e+06 < 5.00e+06[0m
+[0;33mW (32720) radar-hr: Energy below threshold: 4.04e+06 < 5.00e+06[0m
+[0;33mW (32740) radar-hr: Energy below threshold: 4.31e+06 < 5.00e+06[0m
+[0;33mW (32770) radar-hr: Energy below threshold: 4.91e+06 < 5.00e+06[0m
+[0;33mW (32780) radar-hr: Energy below threshold: 3.61e+06 < 5.00e+06[0m
+[0;33mW (32790) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (32790) radar-hr: Energy below threshold: 3.30e+06 < 5.00e+06[0m
+[0;33mW (32800) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (32800) radar-hr: Energy below threshold: 4.59e+06 < 5.00e+06[0m
+[0;33mW (32810) radar-hr: Energy below threshold: 4.12e+06 < 5.00e+06[0m
+[0;33mW (32810) radar-hr: Energy below threshold: 3.02e+06 < 5.00e+06[0m
+[0;33mW (32820) radar-hr: Energy below threshold: 4.61e+06 < 5.00e+06[0m
+[0;33mW (32820) radar-hr: Energy below threshold: 4.35e+06 < 5.00e+06[0m
+[0;33mW (32830) radar-hr: Energy below threshold: 3.95e+06 < 5.00e+06[0m
+[0;33mW (32830) radar-hr: Energy below threshold: 4.48e+06 < 5.00e+06[0m
+[0;33mW (32840) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (32840) radar-hr: Energy below threshold: 3.52e+06 < 5.00e+06[0m
+[0;33mW (32850) radar-hr: Energy below threshold: 4.67e+06 < 5.00e+06[0m
+[0;33mW (32850) radar-hr: Energy below threshold: 3.37e+06 < 5.00e+06[0m
+[0;33mW (32860) radar-hr: Energy below threshold: 2.87e+06 < 5.00e+06[0m
+[0;33mW (32860) radar-hr: Energy below threshold: 2.47e+06 < 5.00e+06[0m
+[0;33mW (32870) radar-hr: Energy below threshold: 3.94e+06 < 5.00e+06[0m
+[0;33mW (32870) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (32890) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;32mI (32990) radar-hr: Human detected! Phase Variance = 1.273e+00, valid frame = 21[0m
+[0;32mI (32990) radar-hr: Human detected! Phase Variance = 1.272e+00, valid frame = 22[0m
+[0;32mI (33000) radar-hr: Human detected! Phase Variance = 1.272e+00, valid frame = 23[0m
+[0;32mI (33000) radar-hr: Human detected! Phase Variance = 1.269e+00, valid frame = 24[0m
+[0;32mI (33010) radar-hr: Human detected! Phase Variance = 1.274e+00, valid frame = 25[0m
+[0;32mI (33010) radar-hr: Human detected! Phase Variance = 1.270e+00, valid frame = 26[0m
+[0;32mI (33020) radar-hr: Human detected! Phase Variance = 1.275e+00, valid frame = 27[0m
+[0;32mI (33030) radar-hr: Human detected! Phase Variance = 1.271e+00, valid frame = 28[0m
+[0;32mI (33030) radar-hr: Human detected! Phase Variance = 1.271e+00, valid frame = 29[0m
+[0;32mI (33040) radar-hr: Human detected! Phase Variance = 1.270e+00, valid frame = 30[0m
+[0;32mI (33050) radar-hr: Human detected! Phase Variance = 1.267e+00, valid frame = 31[0m
+[0;32mI (33050) radar-hr: Human detected! Phase Variance = 1.266e+00, valid frame = 32[0m
+[0;32mI (33060) radar-hr: Human detected! Phase Variance = 1.263e+00, valid frame = 33[0m
+[0;32mI (33070) radar-hr: Human detected! Phase Variance = 1.264e+00, valid frame = 34[0m
+[0;32mI (33080) radar-hr: Human detected! Phase Variance = 1.265e+00, valid frame = 35[0m
+[0;32mI (33080) radar-hr: Human detected! Phase Variance = 1.265e+00, valid frame = 36[0m
+[0;32mI (33090) radar-hr: Human detected! Phase Variance = 1.264e+00, valid frame = 37[0m
+[0;32mI (33100) radar-hr: Human detected! Phase Variance = 1.262e+00, valid frame = 38[0m
+[0;32mI (33100) radar-hr: Human detected! Phase Variance = 1.263e+00, valid frame = 39[0m
+[0;32mI (33110) radar-hr: Human detected! Phase Variance = 1.264e+00, valid frame = 40[0m
+[0;32mI (33120) radar-hr: Human detected! Phase Variance = 1.266e+00, valid frame = 41[0m
+[0;32mI (33130) radar-hr: Human detected! Phase Variance = 1.267e+00, valid frame = 42[0m
+[0;32mI (33130) radar-hr: Human detected! Phase Variance = 1.246e+00, valid frame = 43[0m
+[0;32mI (33140) radar-hr: Human detected! Phase Variance = 1.225e+00, valid frame = 44[0m
+[0;32mI (33150) radar-hr: Human detected! Phase Variance = 1.227e+00, valid frame = 45[0m
+[0;32mI (33150) radar-hr: Human detected! Phase Variance = 1.187e+00, valid frame = 46[0m
+[0;32mI (33160) radar-hr: Human detected! Phase Variance = 1.151e+00, valid frame = 47[0m
+[0;32mI (33170) radar-hr: Human detected! Phase Variance = 1.118e+00, valid frame = 48[0m
+[0;32mI (33180) radar-hr: Human detected! Phase Variance = 1.095e+00, valid frame = 49[0m
+[0;32mI (33180) radar-hr: Human detected! Phase Variance = 1.097e+00, valid frame = 50[0m
+[0;32mI (33190) radar-hr: Human detected! Phase Variance = 1.047e+00, valid frame = 51[0m
+[0;32mI (33200) radar-hr: Human detected! Phase Variance = 9.874e-01, valid frame = 52[0m
+[0;32mI (33200) radar-hr: Human detected! Phase Variance = 9.257e-01, valid frame = 53[0m
+[0;32mI (33210) radar-hr: Human detected! Phase Variance = 8.566e-01, valid frame = 54[0m
+[0;32mI (33220) radar-hr: Human detected! Phase Variance = 7.737e-01, valid frame = 55[0m
+[0;32mI (33220) radar-hr: Human detected! Phase Variance = 7.020e-01, valid frame = 56[0m
+[0;32mI (33230) radar-hr: Human detected! Phase Variance = 6.186e-01, valid frame = 57[0m
+[0;32mI (33240) radar-hr: Human detected! Phase Variance = 5.403e-01, valid frame = 58[0m
+[0;32mI (33250) radar-hr: Human detected! Phase Variance = 4.526e-01, valid frame = 59[0m
+[0;32mI (33250) radar-hr: Human detected! Phase Variance = 3.616e-01, valid frame = 60[0m
+[0;32mI (33260) radar-hr: Human detected! Phase Variance = 2.623e-01, valid frame = 61[0m
+[0;32mI (33270) radar-hr: Human detected! Phase Variance = 1.661e-01, valid frame = 62[0m
+[0;33mW (33270) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;32mI (33310) radar-hr: Human detected! Phase Variance = 3.303e-01, valid frame = 21[0m
+[0;32mI (33310) radar-hr: Human detected! Phase Variance = 3.309e-01, valid frame = 22[0m
+[0;32mI (33310) radar-hr: Human detected! Phase Variance = 3.443e-01, valid frame = 23[0m
+[0;32mI (33320) radar-hr: Human detected! Phase Variance = 3.442e-01, valid frame = 24[0m
+[0;32mI (33320) radar-hr: Human detected! Phase Variance = 3.611e-01, valid frame = 25[0m
+[0;32mI (33330) radar-hr: Human detected! Phase Variance = 3.790e-01, valid frame = 26[0m
+[0;32mI (33340) radar-hr: Human detected! Phase Variance = 3.860e-01, valid frame = 27[0m
+[0;32mI (33350) radar-hr: Human detected! Phase Variance = 3.852e-01, valid frame = 28[0m
+[0;32mI (33350) radar-hr: Human detected! Phase Variance = 3.891e-01, valid frame = 29[0m
+[0;32mI (33360) radar-hr: Human detected! Phase Variance = 3.992e-01, valid frame = 30[0m
+[0;32mI (33370) radar-hr: Human detected! Phase Variance = 4.114e-01, valid frame = 31[0m
+[0;32mI (33370) radar-hr: Human detected! Phase Variance = 4.180e-01, valid frame = 32[0m
+[0;32mI (33380) radar-hr: Human detected! Phase Variance = 4.161e-01, valid frame = 33[0m
+[0;32mI (33390) radar-hr: Human detected! Phase Variance = 4.138e-01, valid frame = 34[0m
+[0;33mW (33400) radar-hr: Energy below threshold: 4.57e+06 < 5.00e+06[0m
+[0;32mI (33490) radar-hr: Human detected! Phase Variance = 5.099e-01, valid frame = 21[0m
+[0;32mI (33490) radar-hr: Human detected! Phase Variance = 5.077e-01, valid frame = 22[0m
+[0;32mI (33490) radar-hr: Human detected! Phase Variance = 5.107e-01, valid frame = 23[0m
+[0;32mI (33500) radar-hr: Human detected! Phase Variance = 5.102e-01, valid frame = 24[0m
+[0;32mI (33500) radar-hr: Human detected! Phase Variance = 5.112e-01, valid frame = 25[0m
+[0;32mI (33510) radar-hr: Human detected! Phase Variance = 5.130e-01, valid frame = 26[0m
+[0;32mI (33520) radar-hr: Human detected! Phase Variance = 5.088e-01, valid frame = 27[0m
+[0;32mI (33530) radar-hr: Human detected! Phase Variance = 5.073e-01, valid frame = 28[0m
+[0;32mI (33530) radar-hr: Human detected! Phase Variance = 4.955e-01, valid frame = 29[0m
+[0;32mI (33540) radar-hr: Human detected! Phase Variance = 4.863e-01, valid frame = 30[0m
+[0;32mI (33550) radar-hr: Human detected! Phase Variance = 4.697e-01, valid frame = 31[0m
+[0;32mI (33550) radar-hr: Human detected! Phase Variance = 4.531e-01, valid frame = 32[0m
+[0;32mI (33560) radar-hr: Human detected! Phase Variance = 4.329e-01, valid frame = 33[0m
+[0;32mI (33570) radar-hr: Human detected! Phase Variance = 4.280e-01, valid frame = 34[0m
+[0;32mI (33580) radar-hr: Human detected! Phase Variance = 4.053e-01, valid frame = 35[0m
+[0;32mI (33580) radar-hr: Human detected! Phase Variance = 4.067e-01, valid frame = 36[0m
+[0;32mI (33590) radar-hr: Human detected! Phase Variance = 3.817e-01, valid frame = 37[0m
+[0;32mI (33600) radar-hr: Human detected! Phase Variance = 3.615e-01, valid frame = 38[0m
+[0;32mI (33600) radar-hr: Human detected! Phase Variance = 3.615e-01, valid frame = 39[0m
+[0;32mI (33610) radar-hr: Human detected! Phase Variance = 3.612e-01, valid frame = 40[0m
+[0;32mI (33620) radar-hr: Human detected! Phase Variance = 3.618e-01, valid frame = 41[0m
+[0;32mI (33630) radar-hr: Human detected! Phase Variance = 3.610e-01, valid frame = 42[0m
+[0;32mI (33630) radar-hr: Human detected! Phase Variance = 3.335e-01, valid frame = 43[0m
+[0;32mI (33640) radar-hr: Human detected! Phase Variance = 3.347e-01, valid frame = 44[0m
+[0;33mW (33650) radar-hr: Energy below threshold: 4.82e+06 < 5.00e+06[0m
+[0;33mW (33650) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (33660) radar-hr: Energy below threshold: 3.74e+06 < 5.00e+06[0m
+[0;33mW (33660) radar-hr: Energy below threshold: 4.40e+06 < 5.00e+06[0m
+[0;33mW (33670) radar-hr: Energy below threshold: 4.73e+06 < 5.00e+06[0m
+[0;33mW (33680) radar-hr: Energy below threshold: 4.41e+06 < 5.00e+06[0m
+[0;33mW (33680) radar-hr: Energy below threshold: 4.32e+06 < 5.00e+06[0m
+[0;33mW (33690) radar-hr: Energy below threshold: 4.86e+06 < 5.00e+06[0m
+[0;33mW (33690) radar-hr: Energy below threshold: 4.83e+06 < 5.00e+06[0m
+[0;33mW (33700) radar-hr: Energy below threshold: 4.76e+06 < 5.00e+06[0m
+[0;33mW (33700) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (33710) radar-hr: Energy below threshold: 4.35e+06 < 5.00e+06[0m
+[0;33mW (33710) radar-hr: Energy below threshold: 4.53e+06 < 5.00e+06[0m
+[0;33mW (33720) radar-hr: Energy below threshold: 4.91e+06 < 5.00e+06[0m
+[0;33mW (33730) radar-hr: Energy below threshold: 4.07e+06 < 5.00e+06[0m
+[0;33mW (33730) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (33740) radar-hr: Energy below threshold: 3.67e+06 < 5.00e+06[0m
+[0;33mW (33740) radar-hr: Energy below threshold: 4.34e+06 < 5.00e+06[0m
+[0;33mW (33750) radar-hr: Energy below threshold: 4.27e+06 < 5.00e+06[0m
+[0;33mW (33750) radar-hr: Energy below threshold: 3.98e+06 < 5.00e+06[0m
+[0;33mW (33760) radar-hr: Energy below threshold: 4.69e+06 < 5.00e+06[0m
+[0;33mW (33770) radar-hr: Energy below threshold: 4.82e+06 < 5.00e+06[0m
+[0;33mW (33770) radar-hr: Energy below threshold: 4.76e+06 < 5.00e+06[0m
+[0;33mW (33780) radar-hr: Energy below threshold: 4.84e+06 < 5.00e+06[0m
+[0;33mW (33780) radar-hr: Energy below threshold: 3.64e+06 < 5.00e+06[0m
+[0;33mW (33790) radar-hr: Energy below threshold: 4.66e+06 < 5.00e+06[0m
+[0;33mW (33790) radar-hr: Energy below threshold: 3.88e+06 < 5.00e+06[0m
+[0;33mW (33800) radar-hr: Energy below threshold: 3.05e+06 < 5.00e+06[0m
+[0;33mW (33800) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (33810) radar-hr: Energy below threshold: 4.04e+06 < 5.00e+06[0m
+[0;33mW (33820) radar-hr: Energy below threshold: 3.97e+06 < 5.00e+06[0m
+[0;33mW (33820) radar-hr: Energy below threshold: 4.00e+06 < 5.00e+06[0m
+[0;33mW (33830) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[0;33mW (33830) radar-hr: Energy below threshold: 3.93e+06 < 5.00e+06[0m
+[0;33mW (33840) radar-hr: Energy below threshold: 3.28e+06 < 5.00e+06[0m
+[0;33mW (33840) radar-hr: Energy below threshold: 4.60e+06 < 5.00e+06[0m
+[0;33mW (33850) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (33860) radar-hr: Energy below threshold: 4.11e+06 < 5.00e+06[0m
+[0;33mW (33860) radar-hr: Energy below threshold: 3.61e+06 < 5.00e+06[0m
+[0;33mW (33920) radar-hr: Energy below threshold: 3.50e+06 < 5.00e+06[0m
+[0;33mW (33920) radar-hr: Energy below threshold: 4.28e+06 < 5.00e+06[0m
+[0;32mI (34040) radar-hr: Human detected! Phase Variance = 6.179e-02, valid frame = 21[0m
+[0;32mI (34040) radar-hr: Human detected! Phase Variance = 6.194e-02, valid frame = 22[0m
+[0;32mI (34040) radar-hr: Human detected! Phase Variance = 6.249e-02, valid frame = 23[0m
+[0;32mI (34050) radar-hr: Human detected! Phase Variance = 6.218e-02, valid frame = 24[0m
+[0;32mI (34050) radar-hr: Human detected! Phase Variance = 6.133e-02, valid frame = 25[0m
+[0;32mI (34060) radar-hr: Human detected! Phase Variance = 6.034e-02, valid frame = 26[0m
+[0;32mI (34070) radar-hr: Human detected! Phase Variance = 6.228e-02, valid frame = 27[0m
+[0;32mI (34080) radar-hr: Human detected! Phase Variance = 6.138e-02, valid frame = 28[0m
+[0;32mI (34080) radar-hr: Human detected! Phase Variance = 5.988e-02, valid frame = 29[0m
+[0;32mI (34090) radar-hr: Human detected! Phase Variance = 5.757e-02, valid frame = 30[0m
+[0;32mI (34100) radar-hr: Human detected! Phase Variance = 5.684e-02, valid frame = 31[0m
+[0;32mI (34100) radar-hr: Human detected! Phase Variance = 5.478e-02, valid frame = 32[0m
+[0;32mI (34110) radar-hr: Human detected! Phase Variance = 5.232e-02, valid frame = 33[0m
+[0;32mI (34120) radar-hr: Human detected! Phase Variance = 5.014e-02, valid frame = 34[0m
+[0;33mW (34150) radar-hr: Energy below threshold: 4.75e+06 < 5.00e+06[0m
+[0;33mW (34170) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (34170) radar-hr: Energy below threshold: 4.38e+06 < 5.00e+06[0m
+[0;33mW (34170) radar-hr: Energy below threshold: 4.51e+06 < 5.00e+06[0m
+[0;33mW (34320) radar-hr: Energy below threshold: 4.87e+06 < 5.00e+06[0m
+[0;33mW (34330) radar-hr: Energy below threshold: 4.86e+06 < 5.00e+06[0m
+[0;33mW (34340) radar-hr: Energy below threshold: 3.73e+06 < 5.00e+06[0m
+[0;33mW (34340) radar-hr: Energy below threshold: 4.69e+06 < 5.00e+06[0m
+[0;33mW (34340) radar-hr: Energy below threshold: 3.63e+06 < 5.00e+06[0m
+[0;33mW (34360) radar-hr: Energy below threshold: 3.75e+06 < 5.00e+06[0m
+[0;33mW (34360) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[0;33mW (34360) radar-hr: Energy below threshold: 4.43e+06 < 5.00e+06[0m
+[0;33mW (34360) radar-hr: Energy below threshold: 3.36e+06 < 5.00e+06[0m
+[0;33mW (34380) radar-hr: Energy below threshold: 3.72e+06 < 5.00e+06[0m
+[0;33mW (34380) radar-hr: Energy below threshold: 4.46e+06 < 5.00e+06[0m
+[0;33mW (34390) radar-hr: Energy below threshold: 4.38e+06 < 5.00e+06[0m
+[0;33mW (34410) radar-hr: Energy below threshold: 3.48e+06 < 5.00e+06[0m
+[0;33mW (34410) radar-hr: Energy below threshold: 2.70e+06 < 5.00e+06[0m
+[0;33mW (34410) radar-hr: Energy below threshold: 3.63e+06 < 5.00e+06[0m
+[0;33mW (34410) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (34420) radar-hr: Energy below threshold: 3.65e+06 < 5.00e+06[0m
+[0;33mW (34420) radar-hr: Energy below threshold: 3.37e+06 < 5.00e+06[0m
+[0;33mW (34430) radar-hr: Energy below threshold: 3.28e+06 < 5.00e+06[0m
+[0;33mW (34440) radar-hr: Energy below threshold: 3.41e+06 < 5.00e+06[0m
+[0;33mW (34440) radar-hr: Energy below threshold: 2.88e+06 < 5.00e+06[0m
+[0;33mW (34450) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (34450) radar-hr: Energy below threshold: 3.52e+06 < 5.00e+06[0m
+[0;33mW (34460) radar-hr: Energy below threshold: 4.06e+06 < 5.00e+06[0m
+[0;33mW (34460) radar-hr: Energy below threshold: 3.35e+06 < 5.00e+06[0m
+[0;33mW (34470) radar-hr: Energy below threshold: 3.15e+06 < 5.00e+06[0m
+[0;33mW (34470) radar-hr: Energy below threshold: 4.02e+06 < 5.00e+06[0m
+[0;33mW (34480) radar-hr: Energy below threshold: 3.25e+06 < 5.00e+06[0m
+[0;33mW (34490) radar-hr: Energy below threshold: 2.92e+06 < 5.00e+06[0m
+[0;33mW (34490) radar-hr: Energy below threshold: 4.39e+06 < 5.00e+06[0m
+[0;33mW (34500) radar-hr: Energy below threshold: 3.86e+06 < 5.00e+06[0m
+[0;33mW (34500) radar-hr: Energy below threshold: 2.94e+06 < 5.00e+06[0m
+[0;33mW (34510) radar-hr: Energy below threshold: 3.80e+06 < 5.00e+06[0m
+[0;33mW (34510) radar-hr: Energy below threshold: 3.20e+06 < 5.00e+06[0m
+[0;33mW (34520) radar-hr: Energy below threshold: 3.85e+06 < 5.00e+06[0m
+[0;33mW (34530) radar-hr: Energy below threshold: 4.16e+06 < 5.00e+06[0m
+[0;33mW (34530) radar-hr: Energy below threshold: 3.90e+06 < 5.00e+06[0m
+[0;33mW (34540) radar-hr: Energy below threshold: 4.95e+06 < 5.00e+06[0m
+[0;33mW (34540) radar-hr: Energy below threshold: 4.20e+06 < 5.00e+06[0m
+[0;33mW (34550) radar-hr: Energy below threshold: 4.50e+06 < 5.00e+06[0m
+[0;33mW (34800) radar-hr: Energy below threshold: 4.54e+06 < 5.00e+06[0m
+[0;33mW (34810) radar-hr: Energy below threshold: 4.85e+06 < 5.00e+06[0m
+[0;33mW (34820) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[0;33mW (34820) radar-hr: Energy below threshold: 2.66e+06 < 5.00e+06[0m
+[0;33mW (34830) radar-hr: Energy below threshold: 3.44e+06 < 5.00e+06[0m
+[0;33mW (34830) radar-hr: Energy below threshold: 3.82e+06 < 5.00e+06[0m
+[0;33mW (34840) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (34840) radar-hr: Energy below threshold: 2.91e+06 < 5.00e+06[0m
+[0;33mW (34850) radar-hr: Energy below threshold: 2.06e+06 < 5.00e+06[0m
+[0;33mW (34850) radar-hr: Energy below threshold: 4.39e+06 < 5.00e+06[0m
+[0;33mW (34860) radar-hr: Energy below threshold: 3.76e+06 < 5.00e+06[0m
+[0;33mW (34860) radar-hr: Energy below threshold: 2.81e+06 < 5.00e+06[0m
+[0;33mW (34860) radar-hr: Energy below threshold: 2.73e+06 < 5.00e+06[0m
+[0;33mW (34870) radar-hr: Energy below threshold: 2.54e+06 < 5.00e+06[0m
+[0;33mW (34870) radar-hr: Energy below threshold: 3.27e+06 < 5.00e+06[0m
+[0;33mW (34880) radar-hr: Energy below threshold: 2.53e+06 < 5.00e+06[0m
+[0;33mW (34890) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (34890) radar-hr: Energy below threshold: 2.82e+06 < 5.00e+06[0m
+[0;33mW (34900) radar-hr: Energy below threshold: 3.66e+06 < 5.00e+06[0m
+[0;33mW (34900) radar-hr: Energy below threshold: 3.49e+06 < 5.00e+06[0m
+[0;33mW (34910) radar-hr: Energy below threshold: 4.62e+06 < 5.00e+06[0m
+[0;33mW (34910) radar-hr: Energy below threshold: 3.91e+06 < 5.00e+06[0m
+[0;33mW (34920) radar-hr: Energy below threshold: 4.09e+06 < 5.00e+06[0m
+[0;33mW (34920) radar-hr: Energy below threshold: 3.94e+06 < 5.00e+06[0m
+[0;33mW (34930) radar-hr: Energy below threshold: 3.09e+06 < 5.00e+06[0m
+[0;33mW (34940) radar-hr: Energy below threshold: 3.40e+06 < 5.00e+06[0m
+[0;33mW (34940) radar-hr: Energy below threshold: 3.05e+06 < 5.00e+06[0m
+[0;33mW (34950) radar-hr: Energy below threshold: 3.41e+06 < 5.00e+06[0m
+[0;33mW (34950) radar-hr: Energy below threshold: 3.19e+06 < 5.00e+06[0m
+[0;33mW (34960) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (34960) radar-hr: Energy below threshold: 2.97e+06 < 5.00e+06[0m
+[0;33mW (34970) radar-hr: Energy below threshold: 2.99e+06 < 5.00e+06[0m
+[0;33mW (34980) radar-hr: Energy below threshold: 2.96e+06 < 5.00e+06[0m
+[0;33mW (34980) radar-hr: Energy below threshold: 3.71e+06 < 5.00e+06[0m
+[0;33mW (34990) radar-hr: Energy below threshold: 4.26e+06 < 5.00e+06[0m
+[0;33mW (34990) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (35000) radar-hr: Energy below threshold: 4.78e+06 < 5.00e+06[0m
+[0;33mW (35000) radar-hr: Energy below threshold: 4.46e+06 < 5.00e+06[0m
+[0;33mW (35010) radar-hr: Energy below threshold: 4.74e+06 < 5.00e+06[0m
+[0;33mW (35040) radar-hr: Energy below threshold: 4.17e+06 < 5.00e+06[0m
+[0;33mW (35040) radar-hr: Energy below threshold: 4.37e+06 < 5.00e+06[0m
+[0;33mW (35050) radar-hr: Energy below threshold: 4.03e+06 < 5.00e+06[0m
+[0;33mW (35060) radar-hr: Energy below threshold: 4.07e+06 < 5.00e+06[0m
+[0;33mW (35060) radar-hr: Energy below threshold: 2.76e+06 < 5.00e+06[0m
+[0;33mW (35070) radar-hr: Energy below threshold: 3.43e+06 < 5.00e+06[0m
+[0;33mW (35070) radar-hr: Energy below threshold: 3.92e+06 < 5.00e+06[0m
+[0;33mW (35080) radar-hr: Energy below threshold: 2.70e+06 < 5.00e+06[0m
+[0;33mW (35080) radar-hr: Energy below threshold: 3.20e+06 < 5.00e+06[0m
+[0;33mW (35090) radar-hr: Energy below threshold: 2.62e+06 < 5.00e+06[0m
+[0;33mW (35090) radar-hr: Energy below threshold: 3.40e+06 < 5.00e+06[0m
+[0;33mW (35100) radar-hr: Energy below threshold: 3.43e+06 < 5.00e+06[0m
+[0;33mW (35100) radar-hr: Energy below threshold: 3.35e+06 < 5.00e+06[0m
+[0;33mW (35110) radar-hr: Energy below threshold: 3.52e+06 < 5.00e+06[0m
+[0;33mW (35110) radar-hr: Energy below threshold: 3.77e+06 < 5.00e+06[0m
+[0;33mW (35110) radar-hr: Energy below threshold: 2.89e+06 < 5.00e+06[0m
+[0;33mW (35130) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[0;33mW (35130) radar-hr: Energy below threshold: 3.77e+06 < 5.00e+06[0m
+[0;33mW (35140) radar-hr: Energy below threshold: 3.87e+06 < 5.00e+06[0m
+[0;33mW (35140) radar-hr: Energy below threshold: 4.36e+06 < 5.00e+06[0m
+[0;33mW (35150) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (35150) radar-hr: Energy below threshold: 3.91e+06 < 5.00e+06[0m
+[0;33mW (35150) radar-hr: Energy below threshold: 3.42e+06 < 5.00e+06[0m
+[0;33mW (35160) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (35160) radar-hr: Energy below threshold: 3.64e+06 < 5.00e+06[0m
+[0;33mW (35170) radar-hr: Energy below threshold: 4.17e+06 < 5.00e+06[0m
+[0;33mW (35180) radar-hr: Energy below threshold: 3.60e+06 < 5.00e+06[0m
+[0;33mW (35180) radar-hr: Energy below threshold: 4.12e+06 < 5.00e+06[0m
+[0;33mW (35190) radar-hr: Energy below threshold: 3.42e+06 < 5.00e+06[0m
+[0;33mW (35200) radar-hr: Energy below threshold: 4.95e+06 < 5.00e+06[0m
+[0;33mW (35200) radar-hr: Energy below threshold: 4.39e+06 < 5.00e+06[0m
+[0;33mW (35200) radar-hr: Energy below threshold: 4.67e+06 < 5.00e+06[0m
+[0;33mW (35210) radar-hr: Energy below threshold: 3.93e+06 < 5.00e+06[0m
+[0;33mW (35210) radar-hr: Energy below threshold: 4.15e+06 < 5.00e+06[0m
+[0;33mW (35220) radar-hr: Energy below threshold: 3.05e+06 < 5.00e+06[0m
+[0;33mW (35230) radar-hr: Energy below threshold: 3.20e+06 < 5.00e+06[0m
+[0;33mW (35230) radar-hr: Energy below threshold: 3.43e+06 < 5.00e+06[0m
+[0;33mW (35240) radar-hr: Energy below threshold: 4.05e+06 < 5.00e+06[0m
+[0;33mW (35240) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (35250) radar-hr: Energy below threshold: 3.36e+06 < 5.00e+06[0m
+[0;33mW (35250) radar-hr: Energy below threshold: 2.90e+06 < 5.00e+06[0m
+[0;33mW (35260) radar-hr: Energy below threshold: 2.76e+06 < 5.00e+06[0m
+[0;33mW (35270) radar-hr: Energy below threshold: 4.12e+06 < 5.00e+06[0m
+[0;33mW (35270) radar-hr: Energy below threshold: 3.33e+06 < 5.00e+06[0m
+[0;33mW (35280) radar-hr: Energy below threshold: 3.73e+06 < 5.00e+06[0m
+[0;33mW (35280) radar-hr: Energy below threshold: 4.09e+06 < 5.00e+06[0m
+[0;33mW (35290) radar-hr: Energy below threshold: 3.09e+06 < 5.00e+06[0m
+[0;33mW (35290) radar-hr: Energy below threshold: 4.55e+06 < 5.00e+06[0m
+[0;33mW (35300) radar-hr: Energy below threshold: 4.47e+06 < 5.00e+06[0m
+[0;33mW (35310) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;32mI (35410) radar-hr: Human detected! Phase Variance = 8.880e-01, valid frame = 21[0m
+[0;32mI (35410) radar-hr: Human detected! Phase Variance = 9.026e-01, valid frame = 22[0m
+[0;32mI (35410) radar-hr: Human detected! Phase Variance = 9.132e-01, valid frame = 23[0m
+[0;32mI (35420) radar-hr: Human detected! Phase Variance = 9.210e-01, valid frame = 24[0m
+[0;32mI (35420) radar-hr: Human detected! Phase Variance = 9.288e-01, valid frame = 25[0m
+[0;32mI (35430) radar-hr: Human detected! Phase Variance = 9.330e-01, valid frame = 26[0m
+[0;32mI (35440) radar-hr: Human detected! Phase Variance = 9.342e-01, valid frame = 27[0m
+[0;32mI (35450) radar-hr: Human detected! Phase Variance = 9.315e-01, valid frame = 28[0m
+[0;32mI (35450) radar-hr: Human detected! Phase Variance = 9.324e-01, valid frame = 29[0m
+[0;32mI (35460) radar-hr: Human detected! Phase Variance = 9.281e-01, valid frame = 30[0m
+[0;32mI (35470) radar-hr: Human detected! Phase Variance = 9.264e-01, valid frame = 31[0m
+[0;32mI (35470) radar-hr: Human detected! Phase Variance = 9.156e-01, valid frame = 32[0m
+[0;32mI (35480) radar-hr: Human detected! Phase Variance = 9.064e-01, valid frame = 33[0m
+[0;32mI (35490) radar-hr: Human detected! Phase Variance = 8.992e-01, valid frame = 34[0m
+[0;32mI (35500) radar-hr: Human detected! Phase Variance = 8.919e-01, valid frame = 35[0m
+[0;32mI (35500) radar-hr: Human detected! Phase Variance = 8.740e-01, valid frame = 36[0m
+[0;32mI (35510) radar-hr: Human detected! Phase Variance = 8.552e-01, valid frame = 37[0m
+[0;32mI (35520) radar-hr: Human detected! Phase Variance = 8.413e-01, valid frame = 38[0m
+[0;32mI (35520) radar-hr: Human detected! Phase Variance = 8.254e-01, valid frame = 39[0m
+[0;32mI (35530) radar-hr: Human detected! Phase Variance = 8.058e-01, valid frame = 40[0m
+[0;32mI (35540) radar-hr: Human detected! Phase Variance = 7.827e-01, valid frame = 41[0m
+[0;32mI (35550) radar-hr: Human detected! Phase Variance = 7.553e-01, valid frame = 42[0m
+[0;32mI (35550) radar-hr: Human detected! Phase Variance = 7.288e-01, valid frame = 43[0m
+[0;32mI (35560) radar-hr: Human detected! Phase Variance = 7.035e-01, valid frame = 44[0m
+[0;32mI (35570) radar-hr: Human detected! Phase Variance = 6.738e-01, valid frame = 45[0m
+[0;32mI (35570) radar-hr: Human detected! Phase Variance = 6.492e-01, valid frame = 46[0m
+[0;32mI (35580) radar-hr: Human detected! Phase Variance = 6.203e-01, valid frame = 47[0m
+[0;32mI (35590) radar-hr: Human detected! Phase Variance = 5.914e-01, valid frame = 48[0m
+[0;32mI (35590) radar-hr: Human detected! Phase Variance = 5.602e-01, valid frame = 49[0m
+[0;32mI (35600) radar-hr: Human detected! Phase Variance = 5.303e-01, valid frame = 50[0m
+[0;32mI (35610) radar-hr: Human detected! Phase Variance = 4.971e-01, valid frame = 51[0m
+[0;32mI (35620) radar-hr: Human detected! Phase Variance = 4.640e-01, valid frame = 52[0m
+[0;32mI (35620) radar-hr: Human detected! Phase Variance = 4.347e-01, valid frame = 53[0m
+[0;32mI (35630) radar-hr: Human detected! Phase Variance = 4.042e-01, valid frame = 54[0m
+[0;32mI (35640) radar-hr: Human detected! Phase Variance = 3.713e-01, valid frame = 55[0m
+[0;32mI (35640) radar-hr: Human detected! Phase Variance = 3.312e-01, valid frame = 56[0m
+[0;32mI (35650) radar-hr: Human detected! Phase Variance = 2.947e-01, valid frame = 57[0m
+[0;32mI (35660) radar-hr: Human detected! Phase Variance = 2.524e-01, valid frame = 58[0m
+[0;32mI (35670) radar-hr: Human detected! Phase Variance = 2.097e-01, valid frame = 59[0m
+[0;32mI (35670) radar-hr: Human detected! Phase Variance = 1.633e-01, valid frame = 60[0m
+[0;32mI (35680) radar-hr: Human detected! Phase Variance = 1.213e-01, valid frame = 61[0m
+[0;32mI (35690) radar-hr: Human detected! Phase Variance = 7.257e-02, valid frame = 62[0m
+[0;33mW (36980) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (36990) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37070) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37080) radar-hr: Target bin unstable: 17 -> 14[0m
+[0;33mW (37100) radar-hr: Target bin unstable: 14 -> 17[0m
+[0;33mW (37110) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37110) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37120) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37130) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (37130) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37140) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37150) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37150) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (37170) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37180) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37180) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37190) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37220) radar-hr: Target bin unstable: 17 -> 13[0m
+[0;33mW (37230) radar-hr: Target bin unstable: 13 -> 17[0m
+[0;33mW (37230) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37240) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (37270) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37270) radar-hr: Target bin unstable: 12 -> 16[0m
+[0;33mW (37300) radar-hr: Target bin unstable: 16 -> 12[0m
+[0;33mW (37310) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (37320) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37390) radar-hr: Target bin unstable: 12 -> 17[0m
+[0;33mW (37400) radar-hr: Target bin unstable: 17 -> 12[0m
+[0;33mW (37430) radar-hr: Target bin unstable: 12 -> 16[0m
+[0;33mW (37430) radar-hr: Target bin unstable: 16 -> 12[0m
+[0;33mW (37460) radar-hr: Target bin unstable: 12 -> 16[0m
+[0;33mW (37470) radar-hr: Target bin unstable: 16 -> 12[0m
+[0;33mW (38010) radar-hr: Target bin unstable: 12 -> 16[0m
+[0;33mW (38030) radar-hr: Target bin unstable: 16 -> 12[0m
+[0;33mW (38040) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38060) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38070) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38090) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38120) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38130) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38130) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38140) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38220) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38260) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38290) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38300) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (38320) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (38320) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;32mI (38430) radar-hr: Human detected! Phase Variance = 7.199e-02, valid frame = 21[0m
+[0;32mI (38430) radar-hr: Human detected! Phase Variance = 6.911e-02, valid frame = 22[0m
+[0;32mI (38440) radar-hr: Human detected! Phase Variance = 6.773e-02, valid frame = 23[0m
+[0;32mI (38440) radar-hr: Human detected! Phase Variance = 6.770e-02, valid frame = 24[0m
+[0;32mI (38450) radar-hr: Human detected! Phase Variance = 6.759e-02, valid frame = 25[0m
+[0;32mI (38450) radar-hr: Human detected! Phase Variance = 6.759e-02, valid frame = 26[0m
+[0;32mI (38460) radar-hr: Human detected! Phase Variance = 6.727e-02, valid frame = 27[0m
+[0;32mI (38470) radar-hr: Human detected! Phase Variance = 6.709e-02, valid frame = 28[0m
+[0;32mI (38470) radar-hr: Human detected! Phase Variance = 6.723e-02, valid frame = 29[0m
+[0;32mI (38480) radar-hr: Human detected! Phase Variance = 6.655e-02, valid frame = 30[0m
+[0;32mI (38490) radar-hr: Human detected! Phase Variance = 6.636e-02, valid frame = 31[0m
+[0;32mI (38490) radar-hr: Human detected! Phase Variance = 6.621e-02, valid frame = 32[0m
+[0;32mI (38500) radar-hr: Human detected! Phase Variance = 6.375e-02, valid frame = 33[0m
+[0;32mI (38510) radar-hr: Human detected! Phase Variance = 6.225e-02, valid frame = 34[0m
+[0;32mI (38520) radar-hr: Human detected! Phase Variance = 6.134e-02, valid frame = 35[0m
+[0;32mI (38520) radar-hr: Human detected! Phase Variance = 6.032e-02, valid frame = 36[0m
+[0;32mI (38530) radar-hr: Human detected! Phase Variance = 5.857e-02, valid frame = 37[0m
+[0;32mI (38540) radar-hr: Human detected! Phase Variance = 5.643e-02, valid frame = 38[0m
+[0;32mI (38540) radar-hr: Human detected! Phase Variance = 5.597e-02, valid frame = 39[0m
+[0;32mI (38550) radar-hr: Human detected! Phase Variance = 5.413e-02, valid frame = 40[0m
+[0;32mI (38560) radar-hr: Human detected! Phase Variance = 5.459e-02, valid frame = 41[0m
+[0;32mI (38570) radar-hr: Human detected! Phase Variance = 5.120e-02, valid frame = 42[0m
+[0;33mW (38770) radar-hr: Energy below threshold: 4.95e+06 < 5.00e+06[0m
+[0;33mW (38780) radar-hr: Energy below threshold: 4.55e+06 < 5.00e+06[0m
+[0;33mW (38790) radar-hr: Energy below threshold: 3.06e+06 < 5.00e+06[0m
+[0;33mW (38800) radar-hr: Energy below threshold: 4.58e+06 < 5.00e+06[0m
+[0;33mW (38800) radar-hr: Energy below threshold: 4.71e+06 < 5.00e+06[0m
+[0;33mW (38820) radar-hr: Energy below threshold: 3.96e+06 < 5.00e+06[0m
+[0;33mW (38830) radar-hr: Energy below threshold: 3.97e+06 < 5.00e+06[0m
+[0;33mW (38830) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (38840) radar-hr: Energy below threshold: 4.32e+06 < 5.00e+06[0m
+[0;33mW (38900) radar-hr: Energy below threshold: 4.41e+06 < 5.00e+06[0m
+[0;33mW (38900) radar-hr: Energy below threshold: 4.52e+06 < 5.00e+06[0m
+[1;31mE (38910) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (38910) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;33mW (38910) radar-hr: Energy below threshold: 4.69e+06 < 5.00e+06[0m
+[1;31mE (38910) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;33mW (38920) radar-hr: Energy below threshold: 4.33e+06 < 5.00e+06[0m
+[0;33mW (38930) radar-hr: Energy below threshold: 4.08e+06 < 5.00e+06[0m
+[0;33mW (38940) radar-hr: Energy below threshold: 3.22e+06 < 5.00e+06[0m
+[0;33mW (38940) radar-hr: Energy below threshold: 3.70e+06 < 5.00e+06[0m
+[0;33mW (38950) radar-hr: Energy below threshold: 4.63e+06 < 5.00e+06[0m
+[0;33mW (38970) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (38970) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;32mI (39080) radar-hr: Human detected! Phase Variance = 4.924e-01, valid frame = 21[0m
+[0;32mI (39080) radar-hr: Human detected! Phase Variance = 4.846e-01, valid frame = 22[0m
+[0;32mI (39090) radar-hr: Human detected! Phase Variance = 4.745e-01, valid frame = 23[0m
+[0;32mI (39090) radar-hr: Human detected! Phase Variance = 4.558e-01, valid frame = 24[0m
+[0;32mI (39100) radar-hr: Human detected! Phase Variance = 4.392e-01, valid frame = 25[0m
+[0;32mI (39100) radar-hr: Human detected! Phase Variance = 4.240e-01, valid frame = 26[0m
+[0;32mI (39110) radar-hr: Human detected! Phase Variance = 4.135e-01, valid frame = 27[0m
+[0;32mI (39120) radar-hr: Human detected! Phase Variance = 4.077e-01, valid frame = 28[0m
+[0;33mW (39120) radar-hr: Energy below threshold: 3.98e+06 < 5.00e+06[0m
+[0;33mW (39130) radar-hr: Energy below threshold: 3.21e+06 < 5.00e+06[0m
+[0;33mW (39130) radar-hr: Energy below threshold: 2.17e+06 < 5.00e+06[0m
+[0;33mW (39140) radar-hr: Energy below threshold: 2.69e+06 < 5.00e+06[0m
+[0;33mW (39150) radar-hr: Energy below threshold: 1.92e+06 < 5.00e+06[0m
+[0;33mW (39150) radar-hr: Energy below threshold: 2.80e+06 < 5.00e+06[0m
+[0;33mW (39160) radar-hr: Energy below threshold: 2.48e+06 < 5.00e+06[0m
+[0;33mW (39160) radar-hr: Energy below threshold: 3.15e+06 < 5.00e+06[0m
+[0;33mW (39170) radar-hr: Energy below threshold: 3.04e+06 < 5.00e+06[0m
+[0;33mW (39170) radar-hr: Energy below threshold: 4.43e+06 < 5.00e+06[0m
+[0;33mW (39180) radar-hr: Energy below threshold: 4.03e+06 < 5.00e+06[0m
+[0;33mW (39200) radar-hr: Energy below threshold: 4.48e+06 < 5.00e+06[0m
+[0;33mW (39200) radar-hr: Energy below threshold: 4.19e+06 < 5.00e+06[0m
+[0;33mW (39240) radar-hr: Energy below threshold: 4.61e+06 < 5.00e+06[0m
+[0;33mW (39260) radar-hr: Energy below threshold: 3.34e+06 < 5.00e+06[0m
+[0;33mW (39260) radar-hr: Energy below threshold: 2.18e+06 < 5.00e+06[0m
+[0;33mW (39260) radar-hr: Energy below threshold: 1.90e+06 < 5.00e+06[0m
+[0;33mW (39260) radar-hr: Energy below threshold: 2.31e+06 < 5.00e+06[0m
+[0;33mW (39270) radar-hr: Energy below threshold: 2.60e+06 < 5.00e+06[0m
+[0;33mW (39270) radar-hr: Energy below threshold: 2.10e+06 < 5.00e+06[0m
+[0;33mW (39280) radar-hr: Energy below threshold: 2.57e+06 < 5.00e+06[0m
+[0;33mW (39290) radar-hr: Energy below threshold: 2.43e+06 < 5.00e+06[0m
+[0;33mW (39290) radar-hr: Energy below threshold: 1.75e+06 < 5.00e+06[0m
+[0;33mW (39300) radar-hr: Energy below threshold: 2.70e+06 < 5.00e+06[0m
+[0;33mW (39300) radar-hr: Energy below threshold: 3.21e+06 < 5.00e+06[0m
+[0;33mW (39310) radar-hr: Energy below threshold: 2.81e+06 < 5.00e+06[0m
+[0;33mW (39310) radar-hr: Energy below threshold: 2.89e+06 < 5.00e+06[0m
+[0;33mW (39320) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (39320) radar-hr: Energy below threshold: 4.75e+06 < 5.00e+06[0m
+[0;33mW (39330) radar-hr: Energy below threshold: 4.25e+06 < 5.00e+06[0m
+[0;33mW (39340) radar-hr: Energy below threshold: 3.73e+06 < 5.00e+06[0m
+[0;33mW (39400) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (39410) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (39540) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (39540) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;32mI (39650) radar-hr: Human detected! Phase Variance = 4.979e-01, valid frame = 21[0m
+[0;33mW (39670) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (39670) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (39690) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (39690) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (39710) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (39710) radar-hr: Energy below threshold: 4.77e+06 < 5.00e+06[0m
+[0;33mW (39720) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (39720) radar-hr: Energy below threshold: 4.04e+06 < 5.00e+06[0m
+[0;33mW (39740) radar-hr: Energy below threshold: 3.65e+06 < 5.00e+06[0m
+[0;33mW (39760) radar-hr: Energy below threshold: 3.57e+06 < 5.00e+06[0m
+[0;33mW (39760) radar-hr: Energy below threshold: 4.59e+06 < 5.00e+06[0m
+[0;33mW (39760) radar-hr: Energy below threshold: 4.34e+06 < 5.00e+06[0m
+[0;33mW (39780) radar-hr: Energy below threshold: 4.26e+06 < 5.00e+06[0m
+[0;33mW (39780) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (39780) radar-hr: Energy below threshold: 2.28e+06 < 5.00e+06[0m
+[0;33mW (39800) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (39800) radar-hr: Energy below threshold: 4.01e+06 < 5.00e+06[0m
+[0;33mW (39800) radar-hr: Energy below threshold: 3.51e+06 < 5.00e+06[0m
+[0;33mW (39800) radar-hr: Energy below threshold: 2.39e+06 < 5.00e+06[0m
+[0;33mW (39810) radar-hr: Energy below threshold: 3.01e+06 < 5.00e+06[0m
+[0;33mW (39810) radar-hr: Energy below threshold: 3.38e+06 < 5.00e+06[0m
+[0;33mW (39820) radar-hr: Energy below threshold: 3.88e+06 < 5.00e+06[0m
+[0;33mW (39830) radar-hr: Energy below threshold: 2.44e+06 < 5.00e+06[0m
+[0;33mW (39830) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (39840) radar-hr: Energy below threshold: 2.12e+06 < 5.00e+06[0m
+[0;33mW (39840) radar-hr: Energy below threshold: 2.42e+06 < 5.00e+06[0m
+[0;33mW (39850) radar-hr: Energy below threshold: 2.24e+06 < 5.00e+06[0m
+[0;33mW (39850) radar-hr: Energy below threshold: 2.58e+06 < 5.00e+06[0m
+[0;33mW (39860) radar-hr: Energy below threshold: 2.91e+06 < 5.00e+06[0m
+[0;33mW (39860) radar-hr: Energy below threshold: 2.63e+06 < 5.00e+06[0m
+[0;33mW (39870) radar-hr: Energy below threshold: 2.81e+06 < 5.00e+06[0m
+[0;33mW (39880) radar-hr: Energy below threshold: 2.81e+06 < 5.00e+06[0m
+[0;33mW (39880) radar-hr: Energy below threshold: 3.21e+06 < 5.00e+06[0m
+[0;33mW (39890) radar-hr: Energy below threshold: 3.80e+06 < 5.00e+06[0m
+[0;33mW (39890) radar-hr: Energy below threshold: 3.76e+06 < 5.00e+06[0m
+[0;33mW (39900) radar-hr: Energy below threshold: 4.16e+06 < 5.00e+06[0m
+[0;33mW (39900) radar-hr: Energy below threshold: 3.18e+06 < 5.00e+06[0m
+[0;33mW (39910) radar-hr: Energy below threshold: 3.89e+06 < 5.00e+06[0m
+[0;33mW (39920) radar-hr: Energy below threshold: 4.38e+06 < 5.00e+06[0m
+[0;33mW (39920) radar-hr: Energy below threshold: 4.77e+06 < 5.00e+06[0m
+[0;33mW (39930) radar-hr: Energy below threshold: 4.59e+06 < 5.00e+06[0m
+[0;33mW (39930) radar-hr: Energy below threshold: 3.55e+06 < 5.00e+06[0m
+[0;33mW (39940) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (39940) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (39950) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (39960) radar-hr: Energy below threshold: 3.88e+06 < 5.00e+06[0m
+[0;33mW (39960) radar-hr: Energy below threshold: 4.74e+06 < 5.00e+06[0m
+[0;33mW (39970) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (39970) radar-hr: Energy below threshold: 4.83e+06 < 5.00e+06[0m
+[0;33mW (39980) radar-hr: Energy below threshold: 3.91e+06 < 5.00e+06[0m
+[0;33mW (39980) radar-hr: Energy below threshold: 4.42e+06 < 5.00e+06[0m
+[0;33mW (39990) radar-hr: Energy below threshold: 3.33e+06 < 5.00e+06[0m
+[0;33mW (39990) radar-hr: Energy below threshold: 4.23e+06 < 5.00e+06[0m
+[0;33mW (40000) radar-hr: Energy below threshold: 3.79e+06 < 5.00e+06[0m
+[0;33mW (40010) radar-hr: Energy below threshold: 4.62e+06 < 5.00e+06[0m
+[0;33mW (40010) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (40020) radar-hr: Energy below threshold: 4.90e+06 < 5.00e+06[0m
+[0;33mW (40020) radar-hr: Energy below threshold: 4.68e+06 < 5.00e+06[0m
+[0;33mW (40030) radar-hr: Energy below threshold: 4.31e+06 < 5.00e+06[0m
+[0;33mW (40030) radar-hr: Energy below threshold: 4.33e+06 < 5.00e+06[0m
+[0;33mW (40040) radar-hr: Energy below threshold: 4.59e+06 < 5.00e+06[0m
+[0;32mI (40150) radar-hr: Human detected! Phase Variance = 1.651e+00, valid frame = 21[0m
+[0;32mI (40150) radar-hr: Human detected! Phase Variance = 1.665e+00, valid frame = 22[0m
+[0;32mI (40170) radar-hr: Human detected! Phase Variance = 1.668e+00, valid frame = 23[0m
+[0;32mI (40170) radar-hr: Human detected! Phase Variance = 1.671e+00, valid frame = 24[0m
+[0;32mI (40170) radar-hr: Human detected! Phase Variance = 1.670e+00, valid frame = 25[0m
+[0;33mW (40180) radar-hr: Energy below threshold: 4.62e+06 < 5.00e+06[0m
+[0;33mW (40200) radar-hr: Energy below threshold: 4.51e+06 < 5.00e+06[0m
+[0;33mW (40200) radar-hr: Energy below threshold: 4.66e+06 < 5.00e+06[0m
+[0;33mW (40220) radar-hr: Energy below threshold: 4.65e+06 < 5.00e+06[0m
+[0;33mW (40230) radar-hr: Energy below threshold: 3.50e+06 < 5.00e+06[0m
+[0;33mW (40250) radar-hr: Energy below threshold: 4.66e+06 < 5.00e+06[0m
+[0;33mW (40270) radar-hr: Energy below threshold: 4.54e+06 < 5.00e+06[0m
+[0;33mW (40270) radar-hr: Energy below threshold: 4.92e+06 < 5.00e+06[0m
+[0;33mW (40310) radar-hr: Energy below threshold: 4.23e+06 < 5.00e+06[0m
+[0;32mI (40410) radar-hr: Human detected! Phase Variance = 6.617e-01, valid frame = 21[0m
+[0;32mI (40410) radar-hr: Human detected! Phase Variance = 6.641e-01, valid frame = 22[0m
+[0;32mI (40410) radar-hr: Human detected! Phase Variance = 6.776e-01, valid frame = 23[0m
+[0;32mI (40420) radar-hr: Human detected! Phase Variance = 6.861e-01, valid frame = 24[0m
+[0;32mI (40420) radar-hr: Human detected! Phase Variance = 6.941e-01, valid frame = 25[0m
+[0;32mI (40430) radar-hr: Human detected! Phase Variance = 6.884e-01, valid frame = 26[0m
+[0;32mI (40440) radar-hr: Human detected! Phase Variance = 6.901e-01, valid frame = 27[0m
+[0;32mI (40450) radar-hr: Human detected! Phase Variance = 6.873e-01, valid frame = 28[0m
+[0;32mI (40450) radar-hr: Human detected! Phase Variance = 6.853e-01, valid frame = 29[0m
+[0;32mI (40460) radar-hr: Human detected! Phase Variance = 6.794e-01, valid frame = 30[0m
+[0;32mI (40470) radar-hr: Human detected! Phase Variance = 6.721e-01, valid frame = 31[0m
+[0;32mI (40470) radar-hr: Human detected! Phase Variance = 6.681e-01, valid frame = 32[0m
+[0;32mI (40480) radar-hr: Human detected! Phase Variance = 6.637e-01, valid frame = 33[0m
+[0;33mW (40490) radar-hr: Target bin unstable: 12 -> 15[0m
+[0;33mW (40490) radar-hr: Energy below threshold: 4.50e+06 < 5.00e+06[0m
+[0;33mW (40500) radar-hr: Energy below threshold: 3.99e+06 < 5.00e+06[0m
+[0;33mW (40600) radar-hr: Energy below threshold: 4.40e+06 < 5.00e+06[0m
+[0;33mW (40610) radar-hr: Energy below threshold: 4.06e+06 < 5.00e+06[0m
+[0;33mW (40610) radar-hr: Energy below threshold: 3.17e+06 < 5.00e+06[0m
+[0;33mW (40620) radar-hr: Energy below threshold: 3.53e+06 < 5.00e+06[0m
+[0;33mW (40620) radar-hr: Energy below threshold: 4.23e+06 < 5.00e+06[0m
+[0;33mW (40630) radar-hr: Energy below threshold: 4.30e+06 < 5.00e+06[0m
+[0;33mW (40630) radar-hr: Energy below threshold: 4.91e+06 < 5.00e+06[0m
+[0;33mW (40640) radar-hr: Energy below threshold: 3.60e+06 < 5.00e+06[0m
+[0;33mW (40640) radar-hr: Energy below threshold: 4.21e+06 < 5.00e+06[0m
+[0;33mW (40640) radar-hr: Energy below threshold: 3.60e+06 < 5.00e+06[0m
+[0;33mW (40660) radar-hr: Energy below threshold: 3.03e+06 < 5.00e+06[0m
+[0;33mW (40660) radar-hr: Energy below threshold: 3.69e+06 < 5.00e+06[0m
+[0;33mW (40670) radar-hr: Energy below threshold: 3.84e+06 < 5.00e+06[0m
+[0;33mW (40710) radar-hr: Energy below threshold: 3.78e+06 < 5.00e+06[0m
+[0;33mW (40720) radar-hr: Energy below threshold: 3.61e+06 < 5.00e+06[0m
+[0;33mW (40740) radar-hr: Energy below threshold: 4.58e+06 < 5.00e+06[0m
+[0;33mW (40760) radar-hr: Energy below threshold: 4.89e+06 < 5.00e+06[0m
+[0;33mW (40770) radar-hr: Energy below threshold: 3.07e+06 < 5.00e+06[0m
+[0;33mW (40790) radar-hr: Energy below threshold: 3.61e+06 < 5.00e+06[0m
+[0;33mW (40790) radar-hr: Energy below threshold: 4.44e+06 < 5.00e+06[0m
+[0;32mI (40900) radar-hr: Human detected! Phase Variance = 9.211e-02, valid frame = 21[0m
+[0;32mI (40900) radar-hr: Human detected! Phase Variance = 9.363e-02, valid frame = 22[0m
+[0;32mI (40910) radar-hr: Human detected! Phase Variance = 9.357e-02, valid frame = 23[0m
+[0;32mI (40910) radar-hr: Human detected! Phase Variance = 9.255e-02, valid frame = 24[0m
+[0;32mI (40910) radar-hr: Human detected! Phase Variance = 9.411e-02, valid frame = 25[0m
+[0;33mW (40920) radar-hr: Energy below threshold: 4.86e+06 < 5.00e+06[0m
+[0;33mW (41020) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (41030) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (41080) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (41080) radar-hr: Target bin unstable: 10 -> 15[0m
+[0;33mW (41090) radar-hr: Target bin unstable: 15 -> 12[0m
+[0;33mW (41100) radar-hr: Energy below threshold: 4.50e+06 < 5.00e+06[0m
+[0;33mW (41220) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (41220) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (41260) radar-hr: Energy below threshold: 2.59e+06 < 5.00e+06[0m
+[0;33mW (41260) radar-hr: Energy below threshold: 4.24e+06 < 5.00e+06[0m
+[0;33mW (41320) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;32mI (41430) radar-hr: Human detected! Phase Variance = 3.835e-01, valid frame = 21[0m
+[0;32mI (41430) radar-hr: Human detected! Phase Variance = 3.824e-01, valid frame = 22[0m
+[0;32mI (41440) radar-hr: Human detected! Phase Variance = 3.816e-01, valid frame = 23[0m
+[0;32mI (41440) radar-hr: Human detected! Phase Variance = 3.808e-01, valid frame = 24[0m
+[0;32mI (41440) radar-hr: Human detected! Phase Variance = 3.814e-01, valid frame = 25[0m
+[0;32mI (41450) radar-hr: Human detected! Phase Variance = 3.809e-01, valid frame = 26[0m
+[0;32mI (41460) radar-hr: Human detected! Phase Variance = 3.790e-01, valid frame = 27[0m
+[0;32mI (41470) radar-hr: Human detected! Phase Variance = 3.789e-01, valid frame = 28[0m
+[0;32mI (41470) radar-hr: Human detected! Phase Variance = 3.660e-01, valid frame = 29[0m
+[0;33mW (41480) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (41520) radar-hr: Energy below threshold: 3.52e+06 < 5.00e+06[0m
+[0;33mW (41520) radar-hr: Energy below threshold: 3.28e+06 < 5.00e+06[0m
+[0;33mW (41530) radar-hr: Energy below threshold: 4.63e+06 < 5.00e+06[0m
+[0;32mI (41630) radar-hr: Human detected! Phase Variance = 5.068e-01, valid frame = 21[0m
+[0;32mI (41640) radar-hr: Human detected! Phase Variance = 4.794e-01, valid frame = 22[0m
+[0;32mI (41640) radar-hr: Human detected! Phase Variance = 4.542e-01, valid frame = 23[0m
+[0;32mI (41650) radar-hr: Human detected! Phase Variance = 4.403e-01, valid frame = 24[0m
+[0;32mI (41650) radar-hr: Human detected! Phase Variance = 4.102e-01, valid frame = 25[0m
+[0;32mI (41650) radar-hr: Human detected! Phase Variance = 4.112e-01, valid frame = 26[0m
+[0;32mI (41660) radar-hr: Human detected! Phase Variance = 4.116e-01, valid frame = 27[0m
+[0;32mI (41670) radar-hr: Human detected! Phase Variance = 4.180e-01, valid frame = 28[0m
+[0;32mI (41680) radar-hr: Human detected! Phase Variance = 4.172e-01, valid frame = 29[0m
+[0;32mI (41680) radar-hr: Human detected! Phase Variance = 4.176e-01, valid frame = 30[0m
+[0;32mI (41690) radar-hr: Human detected! Phase Variance = 4.175e-01, valid frame = 31[0m
+[0;32mI (41700) radar-hr: Human detected! Phase Variance = 4.188e-01, valid frame = 32[0m
+[0;32mI (41700) radar-hr: Human detected! Phase Variance = 4.190e-01, valid frame = 33[0m
+[0;33mW (41710) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (41740) radar-hr: Energy below threshold: 3.74e+06 < 5.00e+06[0m
+[0;32mI (41840) radar-hr: Human detected! Phase Variance = 6.023e-01, valid frame = 21[0m
+[0;32mI (41850) radar-hr: Human detected! Phase Variance = 5.562e-01, valid frame = 22[0m
+[0;32mI (41850) radar-hr: Human detected! Phase Variance = 5.204e-01, valid frame = 23[0m
+[0;32mI (41860) radar-hr: Human detected! Phase Variance = 4.769e-01, valid frame = 24[0m
+[0;32mI (41860) radar-hr: Human detected! Phase Variance = 4.793e-01, valid frame = 25[0m
+[0;32mI (41860) radar-hr: Human detected! Phase Variance = 4.776e-01, valid frame = 26[0m
+[0;33mW (41870) radar-hr: Energy below threshold: 4.44e+06 < 5.00e+06[0m
+[0;33mW (41880) radar-hr: Energy below threshold: 3.80e+06 < 5.00e+06[0m
+[0;33mW (41880) radar-hr: Energy below threshold: 4.11e+06 < 5.00e+06[0m
+[0;33mW (41900) radar-hr: Energy below threshold: 4.18e+06 < 5.00e+06[0m
+[0;33mW (41930) radar-hr: Target bin unstable: 14 -> 11[0m
+[0;33mW (41930) radar-hr: Target bin unstable: 11 -> 14[0m
+[0;33mW (41960) radar-hr: Energy below threshold: 4.34e+06 < 5.00e+06[0m
+[0;33mW (41960) radar-hr: Energy below threshold: 4.31e+06 < 5.00e+06[0m
+[0;33mW (42020) radar-hr: Energy below threshold: 4.56e+06 < 5.00e+06[0m
+[0;33mW (42030) radar-hr: Energy below threshold: 3.81e+06 < 5.00e+06[0m
+[0;33mW (42040) radar-hr: Energy below threshold: 4.89e+06 < 5.00e+06[0m
+[0;33mW (42040) radar-hr: Energy below threshold: 4.98e+06 < 5.00e+06[0m
+[0;33mW (42070) radar-hr: Target bin unstable: 12 -> 16[0m
+[0;33mW (42080) radar-hr: Target bin unstable: 16 -> 10[0m
+[0;33mW (42090) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (42110) radar-hr: Energy below threshold: 4.94e+06 < 5.00e+06[0m
+[0;32mI (42210) radar-hr: Human detected! Phase Variance = 6.321e-02, valid frame = 21[0m
+[0;33mW (42220) radar-hr: Energy below threshold: 4.12e+06 < 5.00e+06[0m
+[0;33mW (42220) radar-hr: Energy below threshold: 3.77e+06 < 5.00e+06[0m
+[0;33mW (42230) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (42270) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (42310) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (42320) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (42340) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (42380) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (42410) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (42420) radar-hr: Target bin unstable: 10 -> 13[0m
+[0;33mW (42430) radar-hr: Target bin unstable: 13 -> 10[0m
+[0;33mW (42460) radar-hr: Energy below threshold: 4.33e+06 < 5.00e+06[0m
+[0;33mW (42470) radar-hr: Target bin unstable: 13 -> 10[0m

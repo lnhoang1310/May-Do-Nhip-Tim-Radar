@@ -15,4 +15,7 @@ void app_main(void) {
     ESP_LOGI(TAG, "Wifi Connected");
     MQTT_Init();
     BGT60TR13C_Init(SPI2_HOST);
+    while(1){
+        vTaskDelay(pdMS_TO_TICKS(1000));
+    }
 }

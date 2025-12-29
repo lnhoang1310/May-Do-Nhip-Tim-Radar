@@ -1,4 +1,4 @@
-# Install script for directory: D:/Code/ESPIDF/Project_Anh_Sao/main
+# Install script for directory: D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,20 @@
+Command: ninja all
+[1/11] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5240 bytes. 0x2dc0 bytes (36%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/BGT60TR13C_API_HeartRate/CMakeFiles/__idf_BGT60TR13C_API_HeartRate.dir/BGT60TR13C_API_HeartRate.c.obj
+[5/11] Building C object esp-idf/bgt60tr13c_driver/CMakeFiles/__idf_bgt60tr13c_driver.dir/bgt60tr13c_driver.c.obj
+[6/11] Linking C static library esp-idf\bgt60tr13c_driver\libbgt60tr13c_driver.a
+[7/11] Linking C static library esp-idf\BGT60TR13C_API_HeartRate\libBGT60TR13C_API_HeartRate.a
+[8/11] Generating esp-idf/esp_system/ld/sections.ld
+[9/11] Linking CXX executable Project_Anh_Sao.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.10.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/Project_Anh_Sao.bin
+[11/11] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/partition_table/partition-table.bin D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/build/Project_Anh_Sao.bin"
+Project_Anh_Sao.bin binary size 0xeb790 bytes. Smallest app partition is 0x100000 bytes. 0x14870 bytes (8%) free.

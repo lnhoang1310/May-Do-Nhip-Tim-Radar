@@ -1,0 +1,1523 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+-hr: Energy = 9.28e+06
+[0;32mI (103580) radar-hr: Energy = 1.11e+07[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21a00h (137728) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031a28 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00036558 vaddr=40374000 size=09ac0h ( 39616) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6318h (680728) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6340 vaddr=4037dac0 size=0eff0h ( 61424) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5338 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (267) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  45cbb9b27...[0m
+[0;32mI (305) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (309) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (327) heap_init: At 3FCA61D0 len 00043540 (269 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (337) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (354) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced534, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (560) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (560) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (710) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (720) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (760) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = d6:3e:aa:4c:2f:b2[0m
+[0;32mI (770) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (770) wifi:pm start, type: 1[0m
+
+[0;32mI (770) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (780) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (790) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2300) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2300) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2570) Main: Wifi Connected[0m
+[0;32mI (2570) MQTT_Service: MQTT Started[0m
+[0;32mI (2570) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2570) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2570) wifi:<ba-add>idx:0 (ifx:0, d6:3e:aa:4c:2f:b2), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2590) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2600) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x4200ff1b
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2630) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2640) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2650) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2660) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2670) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2680) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2690) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2700) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2710) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2720) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2730) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2740) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2750) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2760) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2770) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2780) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2790) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2800) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2810) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2820) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2830) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2840) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2850) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2860) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2870) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2880) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2890) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2900) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2910) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2920) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2930) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2940) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2950) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2960) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2970) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2980) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2990) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (3000) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (3010) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (3020) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (3030) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3040) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (3050) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (3060) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (3070) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (3080) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (3090) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (3100) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (3110) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (3120) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (3130) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (3140) radar-hr: Setting CCR2 for endless frames.[0m
+[0;32mI (3140) radar-hr: Original CCR2 value: 0x00000000[0m
+[0;32mI (3150) radar-hr: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (3150) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (3160) radar-hr: Successfully set CCR2 for endless frames.[0m
+[0;32mI (3170) radar-hr: New CCR2 value read back: 0x00000000[0m
+[0;32mI (3170) radar-hr: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (3340) radar-hr: Energy = 3.22e+06[0m
+[0;32mI (3340) radar-hr: Energy = 5.43e+06[0m
+[0;32mI (3350) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (3350) radar-hr: Energy = 3.24e+06[0m
+[0;32mI (3360) radar-hr: Energy = 6.90e+06[0m
+[0;32mI (3360) radar-hr: Energy = 6.30e+06[0m
+[0;32mI (3370) radar-hr: Energy = 5.82e+06[0m
+[0;32mI (3370) radar-hr: Energy = 4.44e+06[0m
+[0;32mI (3380) radar-hr: Energy = 4.01e+06[0m
+[0;32mI (3380) radar-hr: Energy = 5.86e+06[0m
+[0;32mI (3400) radar-hr: Energy = 7.14e+06[0m
+[0;32mI (3400) radar-hr: Energy = 6.08e+06[0m
+[0;32mI (3400) radar-hr: Energy = 3.04e+06[0m
+[0;32mI (3400) radar-hr: Energy = 2.78e+06[0m
+[0;32mI (3420) radar-hr: Energy = 3.62e+06[0m
+[0;32mI (3420) radar-hr: Energy = 4.42e+06[0m
+[0;32mI (3420) radar-hr: Energy = 5.28e+06[0m
+[0;32mI (3420) radar-hr: Energy = 4.15e+06[0m
+[0;32mI (3430) radar-hr: Energy = 3.09e+06[0m
+[0;32mI (3430) radar-hr: Energy = 4.25e+06[0m
+[0;32mI (3440) radar-hr: Energy = 4.29e+06[0m
+[0;32mI (3440) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (3450) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (3450) radar-hr: Energy = 3.70e+06[0m
+[0;32mI (3470) radar-hr: Energy = 4.81e+06[0m
+[0;32mI (3470) radar-hr: Energy = 5.00e+06[0m
+[0;32mI (3470) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (3470) radar-hr: Energy = 7.05e+06[0m
+[0;32mI (3490) radar-hr: Energy = 3.54e+06[0m
+[0;32mI (3490) radar-hr: Energy = 5.66e+06[0m
+[0;32mI (3490) radar-hr: Energy = 6.83e+06[0m
+[0;32mI (3490) radar-hr: Energy = 6.46e+06[0m
+[0;32mI (3510) radar-hr: Energy = 4.89e+06[0m
+[0;32mI (3510) radar-hr: Energy = 3.31e+06[0m
+[0;32mI (3510) radar-hr: Energy = 4.00e+06[0m
+[0;32mI (3510) radar-hr: Energy = 6.28e+06[0m
+[0;32mI (3530) radar-hr: Energy = 4.81e+06[0m
+[0;32mI (3530) radar-hr: Energy = 4.23e+06[0m
+[0;32mI (3530) radar-hr: Energy = 3.98e+06[0m
+[0;32mI (3530) radar-hr: Energy = 4.48e+06[0m
+[0;32mI (3540) radar-hr: Energy = 4.35e+06[0m
+[0;32mI (3540) radar-hr: Energy = 5.15e+06[0m
+[0;32mI (3540) radar-hr: Energy = 4.44e+06[0m
+[0;32mI (3560) radar-hr: Energy = 2.77e+06[0m
+[0;32mI (3560) radar-hr: Energy = 3.51e+06[0m
+[0;32mI (3560) radar-hr: Energy = 5.71e+06[0m
+[0;32mI (3570) radar-hr: Energy = 5.10e+06[0m
+[0;32mI (3570) radar-hr: Energy = 5.72e+06[0m
+[0;32mI (3590) radar-hr: Energy = 3.68e+06[0m
+[0;32mI (3590) radar-hr: Energy = 5.42e+06[0m
+[0;32mI (3590) radar-hr: Energy = 6.04e+06[0m
+[0;32mI (3590) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (3610) radar-hr: Energy = 6.48e+06[0m
+[0;32mI (3610) radar-hr: Energy = 3.16e+06[0m
+[0;32mI (3610) radar-hr: Energy = 4.74e+06[0m
+[0;32mI (3610) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (3630) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (3630) radar-hr: Energy = 6.53e+06[0m
+[0;32mI (3630) radar-hr: Energy = 6.17e+06[0m
+[0;32mI (3630) radar-hr: Energy = 3.88e+06[0m
+[0;32mI (3640) radar-hr: Energy = 4.11e+06[0m
+[0;32mI (3650) radar-hr: Energy = 6.52e+06[0m
+[0;32mI (3650) radar-hr: Energy = 5.57e+06[0m
+[0;32mI (3650) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (3670) radar-hr: Energy = 4.48e+06[0m
+[0;32mI (3670) radar-hr: Energy = 4.08e+06[0m
+[0;32mI (3670) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (3670) radar-hr: Energy = 7.06e+06[0m
+[0;32mI (3690) radar-hr: Energy = 5.99e+06[0m
+[0;32mI (3690) radar-hr: Energy = 3.05e+06[0m
+[0;32mI (3690) radar-hr: Energy = 3.79e+06[0m
+[0;32mI (3690) radar-hr: Energy = 5.38e+06[0m
+[0;32mI (3710) radar-hr: Energy = 7.20e+06[0m
+[0;32mI (3710) radar-hr: Energy = 3.82e+06[0m
+[0;32mI (3710) radar-hr: Energy = 4.49e+06[0m
+[0;32mI (3710) radar-hr: Energy = 2.94e+06[0m
+[0;32mI (3730) radar-hr: Energy = 5.25e+06[0m
+[0;32mI (3730) radar-hr: Energy = 6.29e+06[0m
+[0;32mI (3730) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (3730) radar-hr: Energy = 4.21e+06[0m
+[0;32mI (3750) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (3750) radar-hr: Energy = 3.57e+06[0m
+[0;32mI (3750) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (3750) radar-hr: Energy = 6.28e+06[0m
+[0;32mI (3770) radar-hr: Energy = 4.95e+06[0m
+[0;32mI (3770) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (3770) radar-hr: Energy = 4.58e+06[0m
+[0;32mI (3770) radar-hr: Energy = 7.53e+06[0m
+[0;32mI (3790) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (3790) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (3790) radar-hr: Energy = 4.68e+06[0m
+[0;32mI (3790) radar-hr: Energy = 3.75e+06[0m
+[0;32mI (3810) radar-hr: Energy = 5.39e+06[0m
+[0;32mI (3810) radar-hr: Energy = 5.10e+06[0m
+[0;32mI (3810) radar-hr: Energy = 5.81e+06[0m
+[0;32mI (3810) radar-hr: Energy = 5.60e+06[0m
+[0;32mI (3830) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (3830) radar-hr: Energy = 6.65e+06[0m
+[0;32mI (3830) radar-hr: Energy = 6.76e+06[0m
+[0;32mI (3830) radar-hr: Energy = 5.35e+06[0m
+[0;32mI (3850) radar-hr: Energy = 4.61e+06[0m
+[0;32mI (3850) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (3850) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (3850) radar-hr: Energy = 4.36e+06[0m
+[0;32mI (3860) radar-hr: Energy = 4.23e+06[0m
+[0;32mI (3860) radar-hr: Energy = 6.09e+06[0m
+[0;32mI (3860) radar-hr: Energy = 5.12e+06[0m
+[0;32mI (3880) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (3880) radar-hr: Energy = 6.08e+06[0m
+[0;32mI (3880) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (3900) radar-hr: Energy = 4.94e+06[0m
+[0;32mI (3900) radar-hr: Energy = 3.15e+06[0m
+[0;32mI (3900) radar-hr: Energy = 5.17e+06[0m
+[0;32mI (3900) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (3920) radar-hr: Energy = 6.00e+06[0m
+[0;32mI (3920) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (3920) radar-hr: Energy = 5.12e+06[0m
+[0;32mI (3920) radar-hr: Energy = 7.79e+06[0m
+[0;32mI (3940) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (3940) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (3940) radar-hr: Energy = 2.93e+06[0m
+[0;32mI (3940) radar-hr: Energy = 3.66e+06[0m
+[0;32mI (3950) radar-hr: Energy = 4.84e+06[0m
+[0;32mI (3950) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (3950) radar-hr: Energy = 6.48e+06[0m
+[0;32mI (3970) radar-hr: Energy = 5.48e+06[0m
+[0;32mI (3970) radar-hr: Energy = 2.84e+06[0m
+[0;32mI (3970) radar-hr: Energy = 4.81e+06[0m
+[0;32mI (3990) radar-hr: Energy = 4.08e+06[0m
+[0;32mI (3990) radar-hr: Energy = 8.10e+06[0m
+[0;32mI (3990) radar-hr: Energy = 7.88e+06[0m
+[0;32mI (3990) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (4010) radar-hr: Energy = 4.03e+06[0m
+[0;32mI (4010) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (4010) radar-hr: Energy = 6.51e+06[0m
+[0;32mI (4010) radar-hr: Energy = 5.04e+06[0m
+[0;32mI (4030) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (4030) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (4030) radar-hr: Energy = 6.88e+06[0m
+[0;32mI (4030) radar-hr: Energy = 6.47e+06[0m
+[0;32mI (4050) radar-hr: Energy = 7.31e+06[0m
+[0;32mI (4050) radar-hr: Energy = 4.30e+06[0m
+[0;32mI (4050) radar-hr: Energy = 3.55e+06[0m
+[0;32mI (4050) radar-hr: Energy = 5.71e+06[0m
+[0;32mI (4060) radar-hr: Energy = 4.24e+06[0m
+[0;32mI (4060) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (4060) radar-hr: Energy = 4.50e+06[0m
+[0;32mI (4080) radar-hr: Energy = 3.65e+06[0m
+[0;32mI (4080) radar-hr: Energy = 5.14e+06[0m
+[0;32mI (4080) radar-hr: Energy = 4.36e+06[0m
+[0;32mI (4100) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (4100) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (4100) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (4100) radar-hr: Energy = 4.02e+06[0m
+[0;32mI (4120) radar-hr: Energy = 6.11e+06[0m
+[0;32mI (4120) radar-hr: Energy = 6.70e+06[0m
+[0;32mI (4120) radar-hr: Energy = 4.49e+06[0m
+[0;32mI (4120) radar-hr: Energy = 4.16e+06[0m
+[0;32mI (4140) radar-hr: Energy = 4.93e+06[0m
+[0;32mI (4140) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (4140) radar-hr: Energy = 4.89e+06[0m
+[0;32mI (4140) radar-hr: Energy = 6.02e+06[0m
+[0;32mI (4160) radar-hr: Energy = 3.25e+06[0m
+[0;32mI (4160) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (4160) radar-hr: Energy = 5.17e+06[0m
+[0;32mI (4160) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (4180) radar-hr: Energy = 5.11e+06[0m
+[0;32mI (4180) radar-hr: Energy = 3.40e+06[0m
+[0;32mI (4180) radar-hr: Energy = 6.09e+06[0m
+[0;32mI (4180) radar-hr: Energy = 4.04e+06[0m
+[0;32mI (4200) radar-hr: Energy = 5.22e+06[0m
+[0;32mI (4200) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (4200) radar-hr: Energy = 4.90e+06[0m
+[0;32mI (4200) radar-hr: Energy = 2.65e+06[0m
+[0;32mI (4220) radar-hr: Energy = 4.56e+06[0m
+[0;32mI (4220) radar-hr: Energy = 6.43e+06[0m
+[0;32mI (4220) radar-hr: Energy = 6.55e+06[0m
+[0;32mI (4220) radar-hr: Energy = 5.19e+06[0m
+[0;32mI (4240) radar-hr: Energy = 4.48e+06[0m
+[0;32mI (4240) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (4240) radar-hr: Energy = 7.15e+06[0m
+[0;32mI (4240) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (4260) radar-hr: Energy = 6.77e+06[0m
+[0;32mI (4260) radar-hr: Energy = 5.56e+06[0m
+[0;32mI (4260) radar-hr: Energy = 5.94e+06[0m
+[0;32mI (4260) radar-hr: Energy = 8.82e+06[0m
+[0;32mI (4280) radar-hr: Energy = 5.80e+06[0m
+[0;32mI (4280) radar-hr: Energy = 5.28e+06[0m
+[0;32mI (4280) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (4280) radar-hr: Energy = 6.05e+06[0m
+[0;32mI (4300) radar-hr: Energy = 6.51e+06[0m
+[0;32mI (4300) radar-hr: Energy = 8.00e+06[0m
+[0;32mI (4300) radar-hr: Energy = 5.30e+06[0m
+[0;32mI (4300) radar-hr: Energy = 4.60e+06[0m
+[0;32mI (4320) radar-hr: Energy = 7.28e+06[0m
+[0;32mI (4320) radar-hr: Energy = 5.05e+06[0m
+[0;32mI (4320) radar-hr: Energy = 7.78e+06[0m
+[0;32mI (4320) radar-hr: Energy = 6.29e+06[0m
+[0;32mI (4340) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (4340) radar-hr: Energy = 4.65e+06[0m
+[0;32mI (4340) radar-hr: Energy = 5.62e+06[0m
+[0;32mI (4340) radar-hr: Energy = 6.49e+06[0m
+[0;32mI (4360) radar-hr: Energy = 6.47e+06[0m
+[0;32mI (4360) radar-hr: Energy = 5.10e+06[0m
+[0;32mI (4360) radar-hr: Energy = 3.59e+06[0m
+[0;32mI (4360) radar-hr: Energy = 6.61e+06[0m
+[0;32mI (4370) radar-hr: Energy = 8.79e+06[0m
+[0;32mI (4370) radar-hr: Energy = 5.36e+06[0m
+[0;32mI (4390) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (4390) radar-hr: Energy = 5.55e+06[0m
+[0;32mI (4390) radar-hr: Energy = 4.89e+06[0m
+[0;32mI (4390) radar-hr: Energy = 7.26e+06[0m
+[0;32mI (4410) radar-hr: Energy = 6.85e+06[0m
+[0;32mI (4410) radar-hr: Energy = 5.43e+06[0m
+[0;32mI (4410) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (4410) radar-hr: Energy = 6.14e+06[0m
+[0;32mI (4430) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (4430) radar-hr: Energy = 6.52e+06[0m
+[0;32mI (4430) radar-hr: Energy = 5.62e+06[0m
+[0;32mI (4430) radar-hr: Energy = 5.57e+06[0m
+[0;32mI (4450) radar-hr: Energy = 2.79e+06[0m
+[0;32mI (4450) radar-hr: Energy = 5.03e+06[0m
+[0;32mI (4450) radar-hr: Energy = 6.75e+06[0m
+[0;32mI (4450) radar-hr: Energy = 4.48e+06[0m
+[0;32mI (4460) radar-hr: Energy = 3.53e+06[0m
+[0;32mI (4460) radar-hr: Energy = 5.68e+06[0m
+[0;32mI (4470) radar-hr: Energy = 4.83e+06[0m
+[0;32mI (4470) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (4470) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (4480) radar-hr: Energy = 3.99e+06[0m
+[0;32mI (4480) radar-hr: Energy = 4.62e+06[0m
+[0;32mI (4490) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (4490) radar-hr: Energy = 5.54e+06[0m
+[0;32mI (4500) radar-hr: Energy = 5.70e+06[0m
+[0;32mI (4500) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (4520) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (4520) radar-hr: Energy = 7.59e+06[0m
+[0;32mI (4520) radar-hr: Energy = 7.46e+06[0m
+[0;32mI (4540) radar-hr: Energy = 5.37e+06[0m
+[0;32mI (4540) radar-hr: Energy = 5.95e+06[0m
+[0;32mI (4540) radar-hr: Energy = 5.31e+06[0m
+[0;32mI (4540) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (4560) radar-hr: Energy = 6.66e+06[0m
+[0;32mI (4560) radar-hr: Energy = 6.36e+06[0m
+[0;32mI (4560) radar-hr: Energy = 6.17e+06[0m
+[0;32mI (4560) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (4580) radar-hr: Energy = 6.01e+06[0m
+[0;32mI (4580) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (4580) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (4580) radar-hr: Energy = 6.63e+06[0m
+[0;32mI (4600) radar-hr: Energy = 3.85e+06[0m
+[0;32mI (4600) radar-hr: Energy = 6.00e+06[0m
+[0;32mI (4600) radar-hr: Energy = 7.03e+06[0m
+[0;32mI (4600) radar-hr: Energy = 4.96e+06[0m
+[0;32mI (4620) radar-hr: Energy = 4.18e+06[0m
+[0;32mI (4620) radar-hr: Energy = 6.44e+06[0m
+[0;32mI (4620) radar-hr: Energy = 4.93e+06[0m
+[0;32mI (4620) radar-hr: Energy = 9.81e+06[0m
+[0;32mI (4640) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (4640) radar-hr: Energy = 5.94e+06[0m
+[0;32mI (4640) radar-hr: Energy = 4.16e+06[0m
+[0;32mI (4640) radar-hr: Energy = 5.27e+06[0m
+[0;32mI (4660) radar-hr: Energy = 3.93e+06[0m
+[0;32mI (4660) radar-hr: Energy = 6.92e+06[0m
+[0;32mI (4660) radar-hr: Energy = 5.57e+06[0m
+[0;32mI (4660) radar-hr: Energy = 5.73e+06[0m
+[0;32mI (4670) radar-hr: Energy = 3.49e+06[0m
+[0;32mI (4670) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (4690) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (4690) radar-hr: Energy = 4.90e+06[0m
+[0;32mI (4690) radar-hr: Energy = 4.23e+06[0m
+[0;32mI (4690) radar-hr: Energy = 3.86e+06[0m
+[0;32mI (4710) radar-hr: Energy = 6.02e+06[0m
+[0;32mI (4710) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (4710) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (4710) radar-hr: Energy = 3.97e+06[0m
+[0;32mI (4730) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (4730) radar-hr: Energy = 5.64e+06[0m
+[0;32mI (4730) radar-hr: Energy = 5.85e+06[0m
+[0;32mI (4730) radar-hr: Energy = 4.58e+06[0m
+[0;32mI (4750) radar-hr: Energy = 6.28e+06[0m
+[0;32mI (4750) radar-hr: Energy = 6.41e+06[0m
+[0;32mI (4750) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (4750) radar-hr: Energy = 6.56e+06[0m
+[0;32mI (4770) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (4770) radar-hr: Energy = 5.07e+06[0m
+[0;32mI (4770) radar-hr: Energy = 3.76e+06[0m
+[0;32mI (4770) radar-hr: Energy = 3.61e+06[0m
+[0;32mI (4780) radar-hr: Energy = 4.61e+06[0m
+[0;32mI (4780) radar-hr: Energy = 3.59e+06[0m
+[0;32mI (4800) radar-hr: Energy = 5.92e+06[0m
+[0;32mI (4800) radar-hr: Energy = 3.16e+06[0m
+[0;32mI (4800) radar-hr: Energy = 3.42e+06[0m
+[0;32mI (4800) radar-hr: Energy = 6.54e+06[0m
+[0;32mI (4820) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (4820) radar-hr: Energy = 4.19e+06[0m
+[0;32mI (4820) radar-hr: Energy = 4.94e+06[0m
+[0;32mI (4820) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (4840) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (4840) radar-hr: Energy = 5.44e+06[0m
+[0;32mI (4840) radar-hr: Energy = 7.08e+06[0m
+[0;32mI (4840) radar-hr: Energy = 3.47e+06[0m
+[0;32mI (4860) radar-hr: Energy = 4.90e+06[0m
+[0;32mI (4860) radar-hr: Energy = 5.48e+06[0m
+[0;32mI (4860) radar-hr: Energy = 4.91e+06[0m
+[0;32mI (4860) radar-hr: Energy = 4.87e+06[0m
+[0;32mI (4870) radar-hr: Energy = 4.56e+06[0m
+[0;32mI (4870) radar-hr: Energy = 5.23e+06[0m
+[0;32mI (4880) radar-hr: Energy = 6.41e+06[0m
+[0;32mI (4890) radar-hr: Energy = 6.61e+06[0m
+[0;32mI (4890) radar-hr: Energy = 6.69e+06[0m
+[0;32mI (4900) radar-hr: Energy = 5.74e+06[0m
+[0;32mI (4900) radar-hr: Energy = 4.66e+06[0m
+[0;32mI (4910) radar-hr: Energy = 4.16e+06[0m
+[0;32mI (4910) radar-hr: Energy = 4.71e+06[0m
+[0;32mI (4920) radar-hr: Energy = 4.54e+06[0m
+[0;32mI (4920) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (4930) radar-hr: Energy = 5.13e+06[0m
+[0;32mI (4930) radar-hr: Energy = 3.64e+06[0m
+[0;32mI (4940) radar-hr: Energy = 6.79e+06[0m
+[0;32mI (4940) radar-hr: Energy = 7.26e+06[0m
+[0;32mI (4950) radar-hr: Energy = 5.57e+06[0m
+[0;32mI (4950) radar-hr: Energy = 3.82e+06[0m
+[0;32mI (4960) radar-hr: Energy = 4.09e+06[0m
+[0;32mI (4960) radar-hr: Energy = 6.12e+06[0m
+[0;32mI (4970) radar-hr: Energy = 6.19e+06[0m
+[0;32mI (4970) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (4980) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (4980) radar-hr: Energy = 3.98e+06[0m
+[0;32mI (4980) radar-hr: Energy = 5.90e+06[0m
+[0;32mI (5000) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (5000) radar-hr: Energy = 3.11e+06[0m
+[0;32mI (5000) radar-hr: Energy = 3.13e+06[0m
+[0;32mI (5000) radar-hr: Energy = 4.91e+06[0m
+[0;32mI (5020) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (5020) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (5020) radar-hr: Energy = 6.62e+06[0m
+[0;32mI (5020) radar-hr: Energy = 4.74e+06[0m
+[0;32mI (5040) radar-hr: Energy = 4.99e+06[0m
+[0;32mI (5040) radar-hr: Energy = 3.40e+06[0m
+[0;32mI (5040) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (5040) radar-hr: Energy = 4.65e+06[0m
+[0;32mI (5060) radar-hr: Energy = 5.32e+06[0m
+[0;32mI (5060) radar-hr: Energy = 3.49e+06[0m
+[0;32mI (5060) radar-hr: Energy = 4.87e+06[0m
+[0;32mI (5060) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (5080) radar-hr: Energy = 6.52e+06[0m
+[0;32mI (5080) radar-hr: Energy = 4.61e+06[0m
+[0;32mI (5080) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (5080) radar-hr: Energy = 4.33e+06[0m
+[0;32mI (5100) radar-hr: Energy = 4.83e+06[0m
+[0;32mI (5100) radar-hr: Energy = 3.86e+06[0m
+[0;32mI (5100) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (5100) radar-hr: Energy = 3.90e+06[0m
+[0;32mI (5120) radar-hr: Energy = 4.95e+06[0m
+[0;32mI (5120) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (5120) radar-hr: Energy = 3.65e+06[0m
+[0;32mI (5120) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (5140) radar-hr: Energy = 2.69e+06[0m
+[0;32mI (5140) radar-hr: Energy = 2.82e+06[0m
+[0;32mI (5140) radar-hr: Energy = 5.22e+06[0m
+[0;32mI (5140) radar-hr: Energy = 3.84e+06[0m
+[0;32mI (5160) radar-hr: Energy = 3.65e+06[0m
+[0;32mI (5160) radar-hr: Energy = 3.91e+06[0m
+[0;32mI (5160) radar-hr: Energy = 3.66e+06[0m
+[0;32mI (5160) radar-hr: Energy = 5.21e+06[0m
+[0;32mI (5180) radar-hr: Energy = 4.13e+06[0m
+[0;32mI (5180) radar-hr: Energy = 4.96e+06[0m
+[0;32mI (5180) radar-hr: Energy = 4.32e+06[0m
+[0;32mI (5180) radar-hr: Energy = 2.30e+06[0m
+[0;32mI (5200) radar-hr: Energy = 3.63e+06[0m
+[0;32mI (5200) radar-hr: Energy = 4.61e+06[0m
+[0;32mI (5200) radar-hr: Energy = 6.08e+06[0m
+[0;32mI (5200) radar-hr: Energy = 3.42e+06[0m
+[0;32mI (5220) radar-hr: Energy = 4.85e+06[0m
+[0;32mI (5220) radar-hr: Energy = 4.71e+06[0m
+[0;32mI (5220) radar-hr: Energy = 5.93e+06[0m
+[0;32mI (5220) radar-hr: Energy = 6.04e+06[0m
+[0;32mI (5240) radar-hr: Energy = 4.32e+06[0m
+[0;32mI (5240) radar-hr: Energy = 3.56e+06[0m
+[0;32mI (5240) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (5240) radar-hr: Energy = 6.17e+06[0m
+[0;32mI (5260) radar-hr: Energy = 4.27e+06[0m
+[0;32mI (5260) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (5260) radar-hr: Energy = 3.92e+06[0m
+[0;32mI (5260) radar-hr: Energy = 3.54e+06[0m
+[0;32mI (5280) radar-hr: Energy = 6.25e+06[0m
+[0;32mI (5280) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (5280) radar-hr: Energy = 7.56e+06[0m
+[0;32mI (5280) radar-hr: Energy = 4.00e+06[0m
+[0;32mI (5290) radar-hr: Energy = 4.35e+06[0m
+[0;32mI (5290) radar-hr: Energy = 6.29e+06[0m
+[0;32mI (5310) radar-hr: Energy = 7.22e+06[0m
+[0;32mI (5310) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (5310) radar-hr: Energy = 5.96e+06[0m
+[0;32mI (5310) radar-hr: Energy = 5.07e+06[0m
+[0;32mI (5330) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (5330) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (5330) radar-hr: Energy = 4.52e+06[0m
+[0;32mI (5330) radar-hr: Energy = 5.54e+06[0m
+[0;32mI (5350) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (5350) radar-hr: Energy = 6.72e+06[0m
+[0;32mI (5350) radar-hr: Energy = 6.06e+06[0m
+[0;32mI (5350) radar-hr: Energy = 6.63e+06[0m
+[0;32mI (5370) radar-hr: Energy = 3.64e+06[0m
+[0;32mI (5370) radar-hr: Energy = 5.05e+06[0m
+[0;32mI (5370) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (5370) radar-hr: Energy = 6.14e+06[0m
+[0;32mI (5390) radar-hr: Energy = 4.66e+06[0m
+[0;32mI (5390) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (5390) radar-hr: Energy = 3.41e+06[0m
+[0;32mI (5390) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (5410) radar-hr: Energy = 6.61e+06[0m
+[0;32mI (5410) radar-hr: Energy = 6.08e+06[0m
+[0;32mI (5410) radar-hr: Energy = 3.92e+06[0m
+[0;32mI (5410) radar-hr: Energy = 3.81e+06[0m
+[0;32mI (5430) radar-hr: Energy = 5.40e+06[0m
+[0;32mI (5430) radar-hr: Energy = 6.16e+06[0m
+[0;32mI (5430) radar-hr: Energy = 6.78e+06[0m
+[0;32mI (5430) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (5450) radar-hr: Energy = 4.71e+06[0m
+[0;32mI (5450) radar-hr: Energy = 3.95e+06[0m
+[0;32mI (5450) radar-hr: Energy = 5.60e+06[0m
+[0;32mI (5450) radar-hr: Energy = 6.55e+06[0m
+[0;32mI (5470) radar-hr: Energy = 4.15e+06[0m
+[0;32mI (5470) radar-hr: Energy = 4.24e+06[0m
+[0;32mI (5470) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (5470) radar-hr: Energy = 6.29e+06[0m
+[0;32mI (5480) radar-hr: Energy = 6.39e+06[0m
+[0;32mI (5480) radar-hr: Energy = 4.69e+06[0m
+[0;32mI (5490) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (5490) radar-hr: Energy = 8.10e+06[0m
+[0;32mI (5510) radar-hr: Energy = 6.26e+06[0m
+[0;32mI (5510) radar-hr: Energy = 7.97e+06[0m
+[0;32mI (5510) radar-hr: Energy = 7.03e+06[0m
+[0;32mI (5510) radar-hr: Energy = 4.77e+06[0m
+[0;32mI (5530) radar-hr: Energy = 4.36e+06[0m
+[0;32mI (5530) radar-hr: Energy = 6.09e+06[0m
+[0;32mI (5530) radar-hr: Energy = 5.19e+06[0m
+[0;32mI (5530) radar-hr: Energy = 6.38e+06[0m
+[0;32mI (5550) radar-hr: Energy = 5.56e+06[0m
+[0;32mI (5550) radar-hr: Energy = 3.57e+06[0m
+[0;32mI (5550) radar-hr: Energy = 6.75e+06[0m
+[0;32mI (5550) radar-hr: Energy = 8.38e+06[0m
+[0;32mI (5570) radar-hr: Energy = 6.16e+06[0m
+[0;32mI (5570) radar-hr: Energy = 6.87e+06[0m
+[0;32mI (5570) radar-hr: Energy = 3.27e+06[0m
+[0;32mI (5570) radar-hr: Energy = 5.86e+06[0m
+[0;32mI (5590) radar-hr: Energy = 6.28e+06[0m
+[0;32mI (5590) radar-hr: Energy = 6.39e+06[0m
+[0;32mI (5590) radar-hr: Energy = 5.82e+06[0m
+[0;32mI (5590) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (5610) radar-hr: Energy = 5.43e+06[0m
+[0;32mI (5610) radar-hr: Energy = 6.73e+06[0m
+[0;32mI (5610) radar-hr: Energy = 6.68e+06[0m
+[0;32mI (5610) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (5630) radar-hr: Energy = 4.23e+06[0m
+[0;32mI (5630) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (5630) radar-hr: Energy = 6.00e+06[0m
+[0;32mI (5630) radar-hr: Energy = 5.37e+06[0m
+[0;32mI (5650) radar-hr: Energy = 8.11e+06[0m
+[0;32mI (5650) radar-hr: Energy = 6.82e+06[0m
+[0;32mI (5650) radar-hr: Energy = 4.27e+06[0m
+[0;32mI (5650) radar-hr: Energy = 6.44e+06[0m
+[0;32mI (5670) radar-hr: Energy = 7.07e+06[0m
+[0;32mI (5670) radar-hr: Energy = 6.24e+06[0m
+[0;32mI (5670) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (5670) radar-hr: Energy = 4.01e+06[0m
+[0;32mI (5690) radar-hr: Energy = 5.65e+06[0m
+[0;32mI (5690) radar-hr: Energy = 7.14e+06[0m
+[0;32mI (5690) radar-hr: Energy = 6.65e+06[0m
+[0;32mI (5690) radar-hr: Energy = 6.37e+06[0m
+[0;32mI (5700) radar-hr: Energy = 4.39e+06[0m
+[0;32mI (5700) radar-hr: Energy = 6.48e+06[0m
+[0;32mI (5720) radar-hr: Energy = 6.55e+06[0m
+[0;32mI (5720) radar-hr: Energy = 7.24e+06[0m
+[0;32mI (5720) radar-hr: Energy = 5.27e+06[0m
+[0;32mI (5720) radar-hr: Energy = 4.80e+06[0m
+[0;32mI (5740) radar-hr: Energy = 5.02e+06[0m
+[0;32mI (5740) radar-hr: Energy = 6.76e+06[0m
+[0;32mI (5740) radar-hr: Energy = 5.01e+06[0m
+[0;32mI (5740) radar-hr: Energy = 7.19e+06[0m
+[0;32mI (5760) radar-hr: Energy = 4.20e+06[0m
+[0;32mI (5760) radar-hr: Energy = 5.73e+06[0m
+[0;32mI (5760) radar-hr: Energy = 9.42e+06[0m
+[0;32mI (5770) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (5770) radar-hr: Energy = 5.32e+06[0m
+[0;32mI (5780) radar-hr: Energy = 4.84e+06[0m
+[0;32mI (5780) radar-hr: Energy = 4.70e+06[0m
+[0;32mI (5790) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (5790) radar-hr: Energy = 6.59e+06[0m
+[0;32mI (5800) radar-hr: Energy = 8.59e+06[0m
+[0;32mI (5800) radar-hr: Energy = 3.59e+06[0m
+[0;32mI (5810) radar-hr: Energy = 6.75e+06[0m
+[0;32mI (5810) radar-hr: Energy = 6.44e+06[0m
+[0;32mI (5820) radar-hr: Energy = 8.66e+06[0m
+[0;32mI (5820) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (5830) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (5830) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (5840) radar-hr: Energy = 5.82e+06[0m
+[0;32mI (5840) radar-hr: Energy = 6.16e+06[0m
+[0;32mI (5850) radar-hr: Energy = 7.13e+06[0m
+[0;32mI (5850) radar-hr: Energy = 3.82e+06[0m
+[0;32mI (5860) radar-hr: Energy = 3.66e+06[0m
+[0;32mI (5860) radar-hr: Energy = 7.56e+06[0m
+[0;32mI (5870) radar-hr: Energy = 4.85e+06[0m
+[0;32mI (5870) radar-hr: Energy = 7.56e+06[0m
+[0;32mI (5880) radar-hr: Energy = 5.39e+06[0m
+[0;32mI (5880) radar-hr: Energy = 4.81e+06[0m
+[0;32mI (5890) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (5890) radar-hr: Energy = 6.17e+06[0m
+[0;32mI (5900) radar-hr: Energy = 5.33e+06[0m
+[0;32mI (5900) radar-hr: Energy = 7.04e+06[0m
+[0;32mI (5900) radar-hr: Energy = 3.99e+06[0m
+[0;32mI (5900) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (5920) radar-hr: Energy = 6.13e+06[0m
+[0;32mI (5920) radar-hr: Energy = 5.58e+06[0m
+[0;32mI (5930) radar-hr: Energy = 6.70e+06[0m
+[0;32mI (5930) radar-hr: Energy = 3.93e+06[0m
+[0;32mI (5940) radar-hr: Energy = 3.74e+06[0m
+[0;32mI (5940) radar-hr: Energy = 5.50e+06[0m
+[0;32mI (5950) radar-hr: Energy = 5.54e+06[0m
+[0;32mI (5950) radar-hr: Energy = 5.54e+06[0m
+[0;32mI (5960) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (5960) radar-hr: Energy = 5.35e+06[0m
+[0;32mI (5970) radar-hr: Energy = 6.58e+06[0m
+[0;32mI (5970) radar-hr: Energy = 6.02e+06[0m
+[0;32mI (5980) radar-hr: Energy = 5.65e+06[0m
+[0;32mI (5980) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (5990) radar-hr: Energy = 5.33e+06[0m
+[0;32mI (5990) radar-hr: Energy = 6.33e+06[0m
+[0;32mI (6000) radar-hr: Energy = 4.63e+06[0m
+[0;32mI (6000) radar-hr: Energy = 6.63e+06[0m
+[0;32mI (6010) radar-hr: Energy = 3.70e+06[0m
+[0;32mI (6010) radar-hr: Energy = 3.21e+06[0m
+[0;32mI (6020) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (6020) radar-hr: Energy = 7.08e+06[0m
+[0;32mI (6030) radar-hr: Energy = 6.34e+06[0m
+[0;32mI (6030) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (6040) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (6040) radar-hr: Energy = 4.70e+06[0m
+[0;32mI (6050) radar-hr: Energy = 6.99e+06[0m
+[0;32mI (6050) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (6060) radar-hr: Energy = 6.87e+06[0m
+[0;32mI (6060) radar-hr: Energy = 5.02e+06[0m
+[0;32mI (6070) radar-hr: Energy = 3.24e+06[0m
+[0;32mI (6070) radar-hr: Energy = 6.50e+06[0m
+[0;32mI (6080) radar-hr: Energy = 4.63e+06[0m
+[0;32mI (6080) radar-hr: Energy = 3.50e+06[0m
+[0;32mI (6090) radar-hr: Energy = 4.30e+06[0m
+[0;32mI (6090) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (6100) radar-hr: Energy = 5.73e+06[0m
+[0;32mI (6100) radar-hr: Energy = 6.00e+06[0m
+[0;32mI (6110) radar-hr: Energy = 6.48e+06[0m
+[0;32mI (6110) radar-hr: Energy = 5.88e+06[0m
+[0;32mI (6120) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (6120) radar-hr: Energy = 6.21e+06[0m
+[0;32mI (6130) radar-hr: Energy = 5.68e+06[0m
+[0;32mI (6130) radar-hr: Energy = 6.83e+06[0m
+[0;32mI (6140) radar-hr: Energy = 5.02e+06[0m
+[0;32mI (6140) radar-hr: Energy = 3.40e+06[0m
+[0;32mI (6150) radar-hr: Energy = 4.78e+06[0m
+[0;32mI (6150) radar-hr: Energy = 7.17e+06[0m
+[0;32mI (6160) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (6160) radar-hr: Energy = 5.62e+06[0m
+[0;32mI (6170) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (6170) radar-hr: Energy = 7.79e+06[0m
+[0;32mI (6180) radar-hr: Energy = 6.78e+06[0m
+[0;32mI (6180) radar-hr: Energy = 5.94e+06[0m
+[0;32mI (6190) radar-hr: Energy = 7.41e+06[0m
+[0;32mI (6190) radar-hr: Energy = 4.21e+06[0m
+[0;32mI (6200) radar-hr: Energy = 6.64e+06[0m
+[0;32mI (6200) radar-hr: Energy = 5.99e+06[0m
+[0;32mI (6200) radar-hr: Energy = 6.93e+06[0m
+[0;32mI (6210) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (6220) radar-hr: Energy = 4.11e+06[0m
+[0;32mI (6220) radar-hr: Energy = 4.64e+06[0m
+[0;32mI (6230) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (6230) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (6240) radar-hr: Energy = 7.16e+06[0m
+[0;32mI (6240) radar-hr: Energy = 5.47e+06[0m
+[0;32mI (6250) radar-hr: Energy = 4.20e+06[0m
+[0;32mI (6250) radar-hr: Energy = 5.95e+06[0m
+[0;32mI (6260) radar-hr: Energy = 6.01e+06[0m
+[0;32mI (6260) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (6270) radar-hr: Energy = 5.03e+06[0m
+[0;32mI (6270) radar-hr: Energy = 3.76e+06[0m
+[0;32mI (6280) radar-hr: Energy = 5.11e+06[0m
+[0;32mI (6280) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (6290) radar-hr: Energy = 7.07e+06[0m
+[0;32mI (6290) radar-hr: Energy = 4.11e+06[0m
+[0;32mI (6300) radar-hr: Energy = 5.74e+06[0m
+[0;32mI (6300) radar-hr: Energy = 4.91e+06[0m
+[0;32mI (6310) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (6310) radar-hr: Energy = 6.24e+06[0m
+[0;32mI (6310) radar-hr: Energy = 3.88e+06[0m
+[0;32mI (6310) radar-hr: Energy = 6.49e+06[0m
+[0;32mI (6330) radar-hr: Energy = 5.28e+06[0m
+[0;32mI (6330) radar-hr: Energy = 5.49e+06[0m
+[0;32mI (6340) radar-hr: Energy = 6.30e+06[0m
+[0;32mI (6340) radar-hr: Energy = 4.21e+06[0m
+[0;32mI (6350) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (6350) radar-hr: Energy = 3.53e+06[0m
+[0;32mI (6360) radar-hr: Energy = 5.54e+06[0m
+[0;32mI (6360) radar-hr: Energy = 6.85e+06[0m
+[0;32mI (6370) radar-hr: Energy = 5.55e+06[0m
+[0;32mI (6370) radar-hr: Energy = 3.94e+06[0m
+[0;32mI (6380) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (6380) radar-hr: Energy = 6.16e+06[0m
+[0;32mI (6390) radar-hr: Energy = 7.62e+06[0m
+[0;32mI (6390) radar-hr: Energy = 5.60e+06[0m
+[0;32mI (6400) radar-hr: Energy = 2.98e+06[0m
+[0;32mI (6400) radar-hr: Energy = 5.32e+06[0m
+[0;32mI (6410) radar-hr: Energy = 6.36e+06[0m
+[0;32mI (6410) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (6420) radar-hr: Energy = 5.72e+06[0m
+[0;32mI (6420) radar-hr: Energy = 5.46e+06[0m
+[0;32mI (6430) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (6430) radar-hr: Energy = 6.72e+06[0m
+[0;32mI (6440) radar-hr: Energy = 5.70e+06[0m
+[0;32mI (6440) radar-hr: Energy = 4.85e+06[0m
+[0;32mI (6450) radar-hr: Energy = 5.37e+06[0m
+[0;32mI (6450) radar-hr: Energy = 5.01e+06[0m
+[0;32mI (6460) radar-hr: Energy = 4.43e+06[0m
+[0;32mI (6460) radar-hr: Energy = 5.58e+06[0m
+[0;32mI (6470) radar-hr: Energy = 5.05e+06[0m
+[0;32mI (6470) radar-hr: Energy = 4.38e+06[0m
+[0;32mI (6480) radar-hr: Energy = 4.08e+06[0m
+[0;32mI (6480) radar-hr: Energy = 3.86e+06[0m
+[0;32mI (6490) radar-hr: Energy = 6.10e+06[0m
+[0;32mI (6490) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (6500) radar-hr: Energy = 3.62e+06[0m
+[0;32mI (6500) radar-hr: Energy = 5.24e+06[0m
+[0;32mI (6510) radar-hr: Energy = 5.64e+06[0m
+[0;32mI (6510) radar-hr: Energy = 9.00e+06[0m
+[0;32mI (6520) radar-hr: Energy = 7.05e+06[0m
+[0;32mI (6520) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (6530) radar-hr: Energy = 3.13e+06[0m
+[0;32mI (6530) radar-hr: Energy = 3.71e+06[0m
+[0;32mI (6540) radar-hr: Energy = 5.55e+06[0m
+[0;32mI (6540) radar-hr: Energy = 5.43e+06[0m
+[0;32mI (6550) radar-hr: Energy = 5.55e+06[0m
+[0;32mI (6550) radar-hr: Energy = 3.12e+06[0m
+[0;32mI (6560) radar-hr: Energy = 5.17e+06[0m
+[0;32mI (6560) radar-hr: Energy = 5.92e+06[0m
+[0;32mI (6570) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (6570) radar-hr: Energy = 5.80e+06[0m
+[0;32mI (6580) radar-hr: Energy = 4.26e+06[0m
+[0;32mI (6580) radar-hr: Energy = 4.19e+06[0m
+[0;32mI (6590) radar-hr: Energy = 4.28e+06[0m
+[0;32mI (6590) radar-hr: Energy = 7.01e+06[0m
+[0;32mI (6600) radar-hr: Energy = 7.24e+06[0m
+[0;32mI (6600) radar-hr: Energy = 4.20e+06[0m
+[0;32mI (6610) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (6610) radar-hr: Energy = 5.35e+06[0m
+[0;32mI (6610) radar-hr: Energy = 7.05e+06[0m
+[0;32mI (6620) radar-hr: Energy = 7.58e+06[0m
+[0;32mI (6630) radar-hr: Energy = 3.17e+06[0m
+[0;32mI (6630) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (6640) radar-hr: Energy = 7.60e+06[0m
+[0;32mI (6640) radar-hr: Energy = 6.01e+06[0m
+[0;32mI (6650) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (6650) radar-hr: Energy = 5.26e+06[0m
+[0;32mI (6660) radar-hr: Energy = 4.19e+06[0m
+[0;32mI (6660) radar-hr: Energy = 7.06e+06[0m
+[0;32mI (6670) radar-hr: Energy = 6.15e+06[0m
+[0;32mI (6670) radar-hr: Energy = 5.88e+06[0m
+[0;32mI (6680) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (6680) radar-hr: Energy = 5.39e+06[0m
+[0;32mI (6690) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (6690) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (6700) radar-hr: Energy = 3.94e+06[0m
+[0;32mI (6700) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (6710) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (6710) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (6720) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (6720) radar-hr: Energy = 4.08e+06[0m
+[0;32mI (6730) radar-hr: Energy = 7.36e+06[0m
+[0;32mI (6730) radar-hr: Energy = 5.68e+06[0m
+[0;32mI (6740) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (6740) radar-hr: Energy = 4.96e+06[0m
+[0;32mI (6750) radar-hr: Energy = 5.99e+06[0m
+[0;32mI (6750) radar-hr: Energy = 6.81e+06[0m
+[0;32mI (6760) radar-hr: Energy = 6.05e+06[0m
+[0;32mI (6760) radar-hr: Energy = 5.30e+06[0m
+[0;32mI (6770) radar-hr: Energy = 6.56e+06[0m
+[0;32mI (6770) radar-hr: Energy = 5.23e+06[0m
+[0;32mI (6780) radar-hr: Energy = 7.33e+06[0m
+[0;32mI (6780) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (6790) radar-hr: Energy = 5.07e+06[0m
+[0;32mI (6790) radar-hr: Energy = 5.80e+06[0m
+[0;32mI (6800) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (6800) radar-hr: Energy = 5.44e+06[0m
+[0;32mI (6810) radar-hr: Energy = 5.31e+06[0m
+[0;32mI (6810) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (6820) radar-hr: Energy = 6.96e+06[0m
+[0;32mI (6820) radar-hr: Energy = 6.67e+06[0m
+[0;32mI (6830) radar-hr: Energy = 6.57e+06[0m
+[0;32mI (6830) radar-hr: Energy = 3.24e+06[0m
+[0;32mI (6840) radar-hr: Energy = 5.04e+06[0m
+[0;32mI (6840) radar-hr: Energy = 6.33e+06[0m
+[0;32mI (6850) radar-hr: Energy = 6.52e+06[0m
+[0;32mI (6850) radar-hr: Energy = 8.03e+06[0m
+[0;32mI (6860) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (6860) radar-hr: Energy = 4.22e+06[0m
+[0;32mI (6870) radar-hr: Energy = 4.52e+06[0m
+[0;32mI (6870) radar-hr: Energy = 5.73e+06[0m
+[0;32mI (6880) radar-hr: Energy = 5.83e+06[0m
+[0;32mI (6880) radar-hr: Energy = 3.47e+06[0m
+[0;32mI (6890) radar-hr: Energy = 4.76e+06[0m
+[0;32mI (6890) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (6900) radar-hr: Energy = 4.38e+06[0m
+[0;32mI (6900) radar-hr: Energy = 5.94e+06[0m
+[0;32mI (6910) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (6910) radar-hr: Energy = 3.90e+06[0m
+[0;32mI (6920) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (6920) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (6930) radar-hr: Energy = 5.73e+06[0m
+[0;32mI (6930) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (6940) radar-hr: Energy = 5.10e+06[0m
+[0;32mI (6940) radar-hr: Energy = 5.48e+06[0m
+[0;32mI (6950) radar-hr: Energy = 3.60e+06[0m
+[0;32mI (6950) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (6960) radar-hr: Energy = 7.75e+06[0m
+[0;32mI (6960) radar-hr: Energy = 5.62e+06[0m
+[0;32mI (6970) radar-hr: Energy = 5.14e+06[0m
+[0;32mI (6970) radar-hr: Energy = 5.37e+06[0m
+[0;32mI (6980) radar-hr: Energy = 4.81e+06[0m
+[0;32mI (6980) radar-hr: Energy = 7.81e+06[0m
+[0;32mI (6990) radar-hr: Energy = 4.17e+06[0m
+[0;32mI (6990) radar-hr: Energy = 4.15e+06[0m
+[0;32mI (7000) radar-hr: Energy = 5.81e+06[0m
+[0;32mI (7000) radar-hr: Energy = 6.70e+06[0m
+[0;32mI (7010) radar-hr: Energy = 6.62e+06[0m
+[0;32mI (7010) radar-hr: Energy = 5.84e+06[0m
+[0;32mI (7020) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (7020) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (7020) radar-hr: Energy = 6.37e+06[0m
+[0;32mI (7030) radar-hr: Energy = 6.65e+06[0m
+[0;32mI (7040) radar-hr: Energy = 4.86e+06[0m
+[0;32mI (7040) radar-hr: Energy = 5.03e+06[0m
+[0;32mI (7050) radar-hr: Energy = 7.21e+06[0m
+[0;32mI (7050) radar-hr: Energy = 4.13e+06[0m
+[0;32mI (7060) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (7060) radar-hr: Energy = 5.15e+06[0m
+[0;32mI (7070) radar-hr: Energy = 2.62e+06[0m
+[0;32mI (7070) radar-hr: Energy = 3.56e+06[0m
+[0;32mI (7080) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (7080) radar-hr: Energy = 7.03e+06[0m
+[0;32mI (7090) radar-hr: Energy = 6.82e+06[0m
+[0;32mI (7090) radar-hr: Energy = 4.32e+06[0m
+[0;32mI (7100) radar-hr: Energy = 5.67e+06[0m
+[0;32mI (7100) radar-hr: Energy = 6.06e+06[0m
+[0;32mI (7110) radar-hr: Energy = 7.04e+06[0m
+[0;32mI (7110) radar-hr: Energy = 6.19e+06[0m
+[0;32mI (7120) radar-hr: Energy = 5.37e+06[0m
+[0;32mI (7120) radar-hr: Energy = 4.95e+06[0m
+[0;32mI (7130) radar-hr: Energy = 5.33e+06[0m
+[0;32mI (7130) radar-hr: Energy = 4.80e+06[0m
+[0;32mI (7140) radar-hr: Energy = 5.95e+06[0m
+[0;32mI (7140) radar-hr: Energy = 4.02e+06[0m
+[0;32mI (7150) radar-hr: Energy = 4.01e+06[0m
+[0;32mI (7150) radar-hr: Energy = 6.76e+06[0m
+[0;32mI (7160) radar-hr: Energy = 7.52e+06[0m
+[0;32mI (7160) radar-hr: Energy = 7.07e+06[0m
+[0;32mI (7170) radar-hr: Energy = 5.38e+06[0m
+[0;32mI (7170) radar-hr: Energy = 4.15e+06[0m
+[0;32mI (7180) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (7180) radar-hr: Energy = 7.03e+06[0m
+[0;32mI (7190) radar-hr: Energy = 8.47e+06[0m
+[0;32mI (7190) radar-hr: Energy = 4.10e+06[0m
+[0;32mI (7200) radar-hr: Energy = 3.77e+06[0m
+[0;32mI (7200) radar-hr: Energy = 4.52e+06[0m
+[0;32mI (7210) radar-hr: Energy = 6.15e+06[0m
+[0;32mI (7210) radar-hr: Energy = 7.27e+06[0m
+[0;32mI (7220) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (7220) radar-hr: Energy = 3.83e+06[0m
+[0;32mI (7230) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (7230) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (7240) radar-hr: Energy = 6.91e+06[0m
+[0;32mI (7240) radar-hr: Energy = 5.81e+06[0m
+[0;32mI (7250) radar-hr: Energy = 4.23e+06[0m
+[0;32mI (7250) radar-hr: Energy = 6.37e+06[0m
+[0;32mI (7260) radar-hr: Energy = 6.41e+06[0m
+[0;32mI (7260) radar-hr: Energy = 6.27e+06[0m
+[0;32mI (7270) radar-hr: Energy = 7.29e+06[0m
+[0;32mI (7270) radar-hr: Energy = 2.64e+06[0m
+[0;32mI (7280) radar-hr: Energy = 4.24e+06[0m
+[0;32mI (7280) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (7290) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (7290) radar-hr: Energy = 6.65e+06[0m
+[0;32mI (7300) radar-hr: Energy = 4.16e+06[0m
+[0;32mI (7300) radar-hr: Energy = 3.83e+06[0m
+[0;32mI (7310) radar-hr: Energy = 5.88e+06[0m
+[0;32mI (7310) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (7320) radar-hr: Energy = 7.21e+06[0m
+[0;32mI (7320) radar-hr: Energy = 4.21e+06[0m
+[0;32mI (7330) radar-hr: Energy = 7.29e+06[0m
+[0;32mI (7330) radar-hr: Energy = 4.55e+06[0m
+[0;32mI (7340) radar-hr: Energy = 4.87e+06[0m
+[0;32mI (7340) radar-hr: Energy = 5.80e+06[0m
+[0;32mI (7350) radar-hr: Energy = 6.00e+06[0m
+[0;32mI (7350) radar-hr: Energy = 5.90e+06[0m
+[0;32mI (7360) radar-hr: Energy = 1.01e+07[0m
+[0;32mI (7360) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (7370) radar-hr: Energy = 5.23e+06[0m
+[0;32mI (7370) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (7380) radar-hr: Energy = 4.95e+06[0m
+[0;32mI (7380) radar-hr: Energy = 5.30e+06[0m
+[0;32mI (7390) radar-hr: Energy = 6.38e+06[0m
+[0;32mI (7390) radar-hr: Energy = 8.45e+06[0m
+[0;32mI (7400) radar-hr: Energy = 6.21e+06[0m
+[0;32mI (7400) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (7410) radar-hr: Energy = 3.67e+06[0m
+[0;32mI (7410) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (7420) radar-hr: Energy = 7.20e+06[0m
+[0;32mI (7420) radar-hr: Energy = 7.21e+06[0m
+[0;32mI (7430) radar-hr: Energy = 3.82e+06[0m
+[0;32mI (7430) radar-hr: Energy = 5.35e+06[0m
+[0;32mI (7440) radar-hr: Energy = 7.03e+06[0m
+[0;32mI (7440) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (7450) radar-hr: Energy = 6.85e+06[0m
+[0;32mI (7450) radar-hr: Energy = 6.25e+06[0m
+[0;32mI (7460) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (7460) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (7470) radar-hr: Energy = 6.18e+06[0m
+[0;32mI (7470) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (7480) radar-hr: Energy = 4.35e+06[0m
+[0;32mI (7480) radar-hr: Energy = 6.22e+06[0m
+[0;32mI (7490) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (7490) radar-hr: Energy = 4.42e+06[0m
+[0;32mI (7500) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (7500) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (7510) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (7510) radar-hr: Energy = 4.60e+06[0m
+[0;32mI (7520) radar-hr: Energy = 7.38e+06[0m
+[0;32mI (7520) radar-hr: Energy = 6.90e+06[0m
+[0;32mI (7530) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (7530) radar-hr: Energy = 7.14e+06[0m
+[0;32mI (7540) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (7540) radar-hr: Energy = 5.85e+06[0m
+[0;32mI (7550) radar-hr: Energy = 5.05e+06[0m
+[0;32mI (7550) radar-hr: Energy = 3.80e+06[0m
+[0;32mI (7560) radar-hr: Energy = 4.21e+06[0m
+[0;32mI (7560) radar-hr: Energy = 6.39e+06[0m
+[0;32mI (7570) radar-hr: Energy = 6.63e+06[0m
+[0;32mI (7570) radar-hr: Energy = 5.48e+06[0m
+[0;32mI (7580) radar-hr: Energy = 5.90e+06[0m
+[0;32mI (7580) radar-hr: Energy = 4.56e+06[0m
+[0;32mI (7590) radar-hr: Energy = 5.50e+06[0m
+[0;32mI (7590) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (7600) radar-hr: Energy = 7.23e+06[0m
+[0;32mI (7600) radar-hr: Energy = 4.50e+06[0m
+[0;32mI (7610) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (7610) radar-hr: Energy = 5.46e+06[0m
+[0;32mI (7620) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (7620) radar-hr: Energy = 6.25e+06[0m
+[0;32mI (7630) radar-hr: Energy = 6.65e+06[0m
+[0;32mI (7630) radar-hr: Energy = 7.44e+06[0m
+[0;32mI (7640) radar-hr: Energy = 2.95e+06[0m
+[0;32mI (7640) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (7650) radar-hr: Energy = 7.47e+06[0m
+[0;32mI (7650) radar-hr: Energy = 5.98e+06[0m
+[0;32mI (7660) radar-hr: Energy = 4.54e+06[0m
+[0;32mI (7660) radar-hr: Energy = 4.57e+06[0m
+[0;32mI (7670) radar-hr: Energy = 7.12e+06[0m
+[0;32mI (7670) radar-hr: Energy = 6.42e+06[0m
+[0;32mI (7680) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (7680) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (7690) radar-hr: Energy = 6.19e+06[0m
+[0;32mI (7690) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (7700) radar-hr: Energy = 5.67e+06[0m
+[0;32mI (7700) radar-hr: Energy = 5.24e+06[0m
+[0;32mI (7710) radar-hr: Energy = 5.15e+06[0m
+[0;32mI (7710) radar-hr: Energy = 3.19e+06[0m
+[0;32mI (7720) radar-hr: Energy = 3.88e+06[0m
+[0;32mI (7720) radar-hr: Energy = 7.48e+06[0m
+[0;32mI (7730) radar-hr: Energy = 5.03e+06[0m
+[0;32mI (7730) radar-hr: Energy = 6.04e+06[0m
+[0;32mI (7740) radar-hr: Energy = 4.35e+06[0m
+[0;32mI (7740) radar-hr: Energy = 3.48e+06[0m
+[0;32mI (7750) radar-hr: Energy = 6.15e+06[0m
+[0;32mI (7750) radar-hr: Energy = 6.07e+06[0m
+[0;32mI (7760) radar-hr: Energy = 4.78e+06[0m
+[0;32mI (7760) radar-hr: Energy = 3.37e+06[0m
+[0;32mI (7770) radar-hr: Energy = 4.66e+06[0m
+[0;32mI (7770) radar-hr: Energy = 6.62e+06[0m
+[0;32mI (7780) radar-hr: Energy = 5.76e+06[0m
+[0;32mI (7780) radar-hr: Energy = 5.07e+06[0m
+[0;32mI (7790) radar-hr: Energy = 3.74e+06[0m
+[0;32mI (7790) radar-hr: Energy = 3.72e+06[0m
+[0;32mI (7800) radar-hr: Energy = 5.79e+06[0m
+[0;32mI (7800) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (7810) radar-hr: Energy = 5.93e+06[0m
+[0;32mI (7810) radar-hr: Energy = 5.04e+06[0m
+[0;32mI (7820) radar-hr: Energy = 4.27e+06[0m
+[0;32mI (7820) radar-hr: Energy = 5.66e+06[0m
+[0;32mI (7830) radar-hr: Energy = 6.76e+06[0m
+[0;32mI (7830) radar-hr: Energy = 6.18e+06[0m
+[0;32mI (7840) radar-hr: Energy = 6.44e+06[0m
+[0;32mI (7840) radar-hr: Energy = 3.95e+06[0m
+[0;32mI (7850) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (7850) radar-hr: Energy = 5.90e+06[0m
+[0;32mI (7860) radar-hr: Energy = 7.51e+06[0m
+[0;32mI (7860) radar-hr: Energy = 8.09e+06[0m
+[0;32mI (7870) radar-hr: Energy = 3.51e+06[0m
+[0;32mI (7870) radar-hr: Energy = 3.93e+06[0m
+[0;32mI (7880) radar-hr: Energy = 4.64e+06[0m
+[0;32mI (7880) radar-hr: Energy = 5.42e+06[0m
+[0;32mI (7890) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (7890) radar-hr: Energy = 2.92e+06[0m
+[0;32mI (7900) radar-hr: Energy = 4.79e+06[0m
+[0;32mI (7900) radar-hr: Energy = 5.86e+06[0m
+[0;32mI (7910) radar-hr: Energy = 6.24e+06[0m
+[0;32mI (7910) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (7920) radar-hr: Energy = 3.95e+06[0m
+[0;32mI (7920) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (7930) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (7930) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (7940) radar-hr: Energy = 5.79e+06[0m
+[0;32mI (7940) radar-hr: Energy = 2.95e+06[0m
+[0;32mI (7950) radar-hr: Energy = 4.89e+06[0m
+[0;32mI (7950) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (7960) radar-hr: Energy = 6.14e+06[0m
+[0;32mI (7960) radar-hr: Energy = 4.94e+06[0m
+[0;32mI (7970) radar-hr: Energy = 2.63e+06[0m
+[0;32mI (7970) radar-hr: Energy = 5.48e+06[0m
+[0;32mI (7980) radar-hr: Energy = 6.36e+06[0m
+[0;32mI (7980) radar-hr: Energy = 5.40e+06[0m
+[0;32mI (7990) radar-hr: Energy = 7.40e+06[0m
+[0;32mI (7990) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (8000) radar-hr: Energy = 5.33e+06[0m
+[0;32mI (8000) radar-hr: Energy = 5.56e+06[0m
+[0;32mI (8010) radar-hr: Energy = 5.98e+06[0m
+[0;32mI (8010) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (8020) radar-hr: Energy = 5.67e+06[0m
+[0;32mI (8020) radar-hr: Energy = 5.69e+06[0m
+[0;32mI (8030) radar-hr: Energy = 4.59e+06[0m
+[0;32mI (8030) radar-hr: Energy = 7.17e+06[0m
+[0;32mI (8040) radar-hr: Energy = 6.87e+06[0m
+[0;32mI (8040) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (8050) radar-hr: Energy = 4.80e+06[0m
+[0;32mI (8050) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (8060) radar-hr: Energy = 5.50e+06[0m
+[0;32mI (8060) radar-hr: Energy = 4.33e+06[0m
+[0;32mI (8070) radar-hr: Energy = 4.90e+06[0m
+[0;32mI (8070) radar-hr: Energy = 3.23e+06[0m
+[0;32mI (8080) radar-hr: Energy = 5.36e+06[0m
+[0;32mI (8080) radar-hr: Energy = 6.66e+06[0m
+[0;32mI (8090) radar-hr: Energy = 5.99e+06[0m
+[0;32mI (8090) radar-hr: Energy = 4.98e+06[0m
+[0;32mI (8100) radar-hr: Energy = 2.80e+06[0m
+[0;32mI (8100) radar-hr: Energy = 2.96e+06[0m
+[0;32mI (8110) radar-hr: Energy = 3.78e+06[0m
+[0;32mI (8110) radar-hr: Energy = 5.30e+06[0m
+[0;32mI (8120) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (8120) radar-hr: Energy = 4.85e+06[0m
+[0;32mI (8130) radar-hr: Energy = 4.11e+06[0m
+[0;32mI (8130) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (8140) radar-hr: Energy = 4.72e+06[0m
+[0;32mI (8140) radar-hr: Energy = 5.89e+06[0m
+[0;32mI (8150) radar-hr: Energy = 5.38e+06[0m
+[0;32mI (8150) radar-hr: Energy = 4.48e+06[0m
+[0;32mI (8160) radar-hr: Energy = 4.09e+06[0m
+[0;32mI (8160) radar-hr: Energy = 5.44e+06[0m
+[0;32mI (8170) radar-hr: Energy = 7.33e+06[0m
+[0;32mI (8170) radar-hr: Energy = 4.76e+06[0m
+[0;32mI (8180) radar-hr: Energy = 4.39e+06[0m
+[0;32mI (8180) radar-hr: Energy = 7.12e+06[0m
+[0;32mI (8190) radar-hr: Energy = 5.03e+06[0m
+[0;32mI (8190) radar-hr: Energy = 4.96e+06[0m
+[0;32mI (8200) radar-hr: Energy = 6.39e+06[0m
+[0;32mI (8200) radar-hr: Energy = 4.99e+06[0m
+[0;32mI (8210) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (8210) radar-hr: Energy = 6.17e+06[0m
+[0;32mI (8220) radar-hr: Energy = 5.13e+06[0m
+[0;32mI (8220) radar-hr: Energy = 4.79e+06[0m
+[0;32mI (8230) radar-hr: Energy = 4.07e+06[0m
+[0;32mI (8230) radar-hr: Energy = 4.05e+06[0m
+[0;32mI (8240) radar-hr: Energy = 6.81e+06[0m
+[0;32mI (8240) radar-hr: Energy = 6.19e+06[0m
+[0;32mI (8250) radar-hr: Energy = 4.58e+06[0m
+[0;32mI (8250) radar-hr: Energy = 2.96e+06[0m
+[0;32mI (8260) radar-hr: Energy = 4.57e+06[0m
+[0;32mI (8260) radar-hr: Energy = 5.25e+06[0m
+[0;32mI (8270) radar-hr: Energy = 6.10e+06[0m
+[0;32mI (8270) radar-hr: Energy = 5.29e+06[0m
+[0;32mI (8280) radar-hr: Energy = 3.57e+06[0m
+[0;32mI (8280) radar-hr: Energy = 3.26e+06[0m
+[0;32mI (8290) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (8290) radar-hr: Energy = 5.39e+06[0m
+[0;32mI (8300) radar-hr: Energy = 5.84e+06[0m
+[0;32mI (8300) radar-hr: Energy = 4.36e+06[0m
+[0;32mI (8310) radar-hr: Energy = 4.11e+06[0m
+[0;32mI (8310) radar-hr: Energy = 7.15e+06[0m
+[0;32mI (8320) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (8320) radar-hr: Energy = 7.43e+06[0m
+[0;32mI (8330) radar-hr: Energy = 6.64e+06[0m
+[0;32mI (8330) radar-hr: Energy = 5.12e+06[0m
+[0;32mI (8340) radar-hr: Energy = 6.20e+06[0m
+[0;32mI (8340) radar-hr: Energy = 7.38e+06[0m
+[0;32mI (8350) radar-hr: Energy = 8.08e+06[0m
+[0;32mI (8350) radar-hr: Energy = 6.87e+06[0m
+[0;32mI (8360) radar-hr: Energy = 6.61e+06[0m
+[0;32mI (8360) radar-hr: Energy = 4.37e+06[0m
+[0;32mI (8370) radar-hr: Energy = 5.56e+06[0m
+[0;32mI (8370) radar-hr: Energy = 5.77e+06[0m
+[0;32mI (8380) radar-hr: Energy = 4.53e+06[0m
+[0;32mI (8380) radar-hr: Energy = 3.81e+06[0m
+[0;32mI (8390) radar-hr: Energy = 4.57e+06[0m
+[0;32mI (8390) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (8400) radar-hr: Energy = 5.42e+06[0m
+[0;32mI (8400) radar-hr: Energy = 4.78e+06[0m
+[0;32mI (8410) radar-hr: Energy = 3.72e+06[0m
+[0;32mI (8410) radar-hr: Energy = 5.42e+06[0m
+[0;32mI (8420) radar-hr: Energy = 5.86e+06[0m
+[0;32mI (8420) radar-hr: Energy = 5.40e+06[0m
+[0;32mI (8430) radar-hr: Energy = 6.80e+06[0m
+[0;32mI (8430) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (8440) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (8440) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (8450) radar-hr: Energy = 7.46e+06[0m
+[0;32mI (8450) radar-hr: Energy = 7.48e+06[0m
+[0;32mI (8460) radar-hr: Energy = 6.28e+06[0m
+[0;32mI (8460) radar-hr: Energy = 4.18e+06[0m
+[0;32mI (8470) radar-hr: Energy = 6.01e+06[0m
+[0;32mI (8470) radar-hr: Energy = 5.84e+06[0m
+[0;32mI (8480) radar-hr: Energy = 5.63e+06[0m
+[0;32mI (8480) radar-hr: Energy = 5.88e+06[0m
+[0;32mI (8490) radar-hr: Energy = 6.78e+06[0m
+[0;32mI (8490) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (8500) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (8500) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (8510) radar-hr: Energy = 6.91e+06[0m
+[0;32mI (8510) radar-hr: Energy = 5.06e+06[0m
+[0;32mI (8520) radar-hr: Energy = 5.33e+06[0m
+[0;32mI (8520) radar-hr: Energy = 4.87e+06[0m
+[0;32mI (8530) radar-hr: Energy = 6.63e+06[0m
+[0;32mI (8530) radar-hr: Energy = 3.63e+06[0m
+[0;32mI (8540) radar-hr: Energy = 5.98e+06[0m
+[0;32mI (8540) radar-hr: Energy = 6.58e+06[0m
+[0;32mI (8550) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (8550) radar-hr: Energy = 7.49e+06[0m
+[0;32mI (8560) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (8560) radar-hr: Energy = 3.96e+06[0m
+[0;32mI (8570) radar-hr: Energy = 4.38e+06[0m
+[0;32mI (8570) radar-hr: Energy = 6.26e+06[0m
+[0;32mI (8580) radar-hr: Energy = 5.83e+06[0m
+[0;32mI (8580) radar-hr: Energy = 8.25e+06[0m
+[0;32mI (8590) radar-hr: Energy = 4.70e+06[0m
+[0;32mI (8590) radar-hr: Energy = 5.70e+06[0m
+[0;32mI (8600) radar-hr: Energy = 8.63e+06[0m
+[0;32mI (8600) radar-hr: Energy = 6.16e+06[0m
+[0;32mI (8610) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (8610) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (8620) radar-hr: Energy = 6.67e+06[0m
+[0;32mI (8620) radar-hr: Energy = 4.41e+06[0m
+[0;32mI (8630) radar-hr: Energy = 7.12e+06[0m
+[0;32mI (8630) radar-hr: Energy = 6.43e+06[0m
+[0;32mI (8640) radar-hr: Energy = 7.06e+06[0m
+[0;32mI (8640) radar-hr: Energy = 4.13e+06[0m
+[0;32mI (8650) radar-hr: Energy = 5.82e+06[0m
+[0;32mI (8650) radar-hr: Energy = 8.46e+06[0m
+[0;32mI (8660) radar-hr: Energy = 8.83e+06[0m
+[0;32mI (8660) radar-hr: Energy = 6.98e+06[0m
+[0;32mI (8670) radar-hr: Energy = 2.97e+06[0m
+[0;32mI (8670) radar-hr: Energy = 5.57e+06[0m
+[0;32mI (8680) radar-hr: Energy = 5.71e+06[0m
+[0;32mI (8680) radar-hr: Energy = 7.04e+06[0m
+[0;32mI (8690) radar-hr: Energy = 7.53e+06[0m
+[0;32mI (8690) radar-hr: Energy = 6.23e+06[0m
+[0;32mI (8700) radar-hr: Energy = 5.17e+06[0m
+[0;32mI (8700) radar-hr: Energy = 6.49e+06[0m
+[0;32mI (8710) radar-hr: Energy = 8.74e+06[0m
+[0;32mI (8710) radar-hr: Energy = 7.13e+06[0m
+[0;32mI (8720) radar-hr: Energy = 6.60e+06[0m
+[0;32mI (8720) radar-hr: Energy = 5.41e+06[0m
+[0;32mI (8730) radar-hr: Energy = 6.49e+06[0m
+[0;32mI (8730) radar-hr: Energy = 7.39e+06[0m
+[0;32mI (8740) radar-hr: Energy = 8.51e+06[0m
+[0;32mI (8740) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (8750) radar-hr: Energy = 6.81e+06[0m
+[0;32mI (8750) radar-hr: Energy = 7.14e+06[0m
+[0;32mI (8760) radar-hr: Energy = 9.58e+06[0m
+[0;32mI (8760) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (8770) radar-hr: Energy = 4.01e+06[0m
+[0;32mI (8770) radar-hr: Energy = 4.78e+06[0m
+[0;32mI (8780) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (8780) radar-hr: Energy = 5.96e+06[0m
+[0;32mI (8790) radar-hr: Energy = 6.74e+06[0m
+[0;32mI (8790) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (8800) radar-hr: Energy = 6.49e+06[0m
+[0;32mI (8800) radar-hr: Energy = 5.49e+06[0m
+[0;32mI (8810) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (8810) radar-hr: Energy = 8.50e+06[0m
+[0;32mI (8820) radar-hr: Energy = 7.16e+06[0m
+[0;32mI (8820) radar-hr: Energy = 6.45e+06[0m
+[0;32mI (8830) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (8830) radar-hr: Energy = 6.34e+06[0m
+[0;32mI (8840) radar-hr: Energy = 7.36e+06[0m
+[0;32mI (8840) radar-hr: Energy = 5.66e+06[0m
+[0;32mI (8850) radar-hr: Energy = 6.89e+06[0m
+[0;32mI (8850) radar-hr: Energy = 6.15e+06[0m
+[0;32mI (8860) radar-hr: Energy = 6.69e+06[0m
+[0;32mI (8860) radar-hr: Energy = 6.11e+06[0m
+[0;32mI (8870) radar-hr: Energy = 5.78e+06[0m
+[0;32mI (8870) radar-hr: Energy = 4.91e+06[0m
+[0;32mI (8880) radar-hr: Energy = 4.93e+06[0m
+[0;32mI (8880) radar-hr: Energy = 6.93e+06[0m
+[0;32mI (8890) radar-hr: Energy = 5.43e+06[0m
+[0;32mI (8890) radar-hr: Energy = 6.71e+06[0m
+[0;32mI (8900) radar-hr: Energy = 3.53e+06[0m
+[0;32mI (8900) radar-hr: Energy = 5.96e+06[0m
+[0;32mI (8910) radar-hr: Energy = 6.32e+06[0m
+[0;32mI (8910) radar-hr: Energy = 7.34e+06[0m
+[0;32mI (8920) radar-hr: Energy = 6.70e+06[0m
+[0;32mI (8920) radar-hr: Energy = 7.39e+06[0m
+[0;32mI (8930) radar-hr: Energy = 6.73e+06[0m
+[0;32mI (8930) radar-hr: Energy = 7.45e+06[0m
+[0;32mI (8940) radar-hr: Energy = 5.90e+06[0m
+[0;32mI (8940) radar-hr: Energy = 9.47e+06[0m
+[0;32mI (8950) radar-hr: Energy = 5.52e+06[0m
+[0;32mI (8950) radar-hr: Energy = 6.40e+06[0m
+[0;32mI (8960) radar-hr: Energy = 4.76e+06[0m
+[0;32mI (8960) radar-hr: Energy = 5.22e+06[0m
+[0;32mI (8970) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (8970) radar-hr: Energy = 5.91e+06[0m
+[0;32mI (8980) radar-hr: Energy = 4.40e+06[0m
+[0;32mI (8980) radar-hr: Energy = 4.20e+06[0m
+[0;32mI (8990) radar-hr: Energy = 5.83e+06[0m
+[0;32mI (8990) radar-hr: Energy = 4.19e+06[0m
+[0;32mI (9000) radar-hr: Energy = 6.53e+06[0m
+[0;32mI (9000) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (9010) radar-hr: Energy = 4.46e+06[0m
+[0;32mI (9010) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (9020) radar-hr: Energy = 5.85e+06[0m
+[0;32mI (9020) radar-hr: Energy = 5.04e+06[0m
+[0;32mI (9030) radar-hr: Energy = 5.80e+06[0m
+[0;32mI (9030) radar-hr: Energy = 5.27e+06[0m
+[0;32mI (9040) radar-hr: Energy = 3.58e+06[0m
+[0;32mI (9040) radar-hr: Energy = 6.81e+06[0m
+[0;32mI (9050) radar-hr: Energy = 5.14e+06[0m
+[0;32mI (9050) radar-hr: Energy = 5.14e+06[0m
+[0;32mI (9060) radar-hr: Energy = 5.53e+06[0m
+[0;32mI (9060) radar-hr: Energy = 4.82e+06[0m
+[0;32mI (9070) radar-hr: Energy = 3.78e+06[0m
+[0;32mI (9070) radar-hr: Energy = 5.76e+06[0m
+[0;32mI (9080) radar-hr: Energy = 6.72e+06[0m
+[0;32mI (9080) radar-hr: Energy = 5.12e+06[0m
+[0;32mI (9090) radar-hr: Energy = 5.13e+06[0m
+[0;32mI (9090) radar-hr: Energy = 3.61e+06[0m
+[0;32mI (9100) radar-hr: Energy = 7.06e+06[0m
+[0;32mI (9100) radar-hr: Energy = 4.27e+06[0m
+[0;32mI (9110) radar-hr: Energy = 4.74e+06[0m
+[0;32mI (9110) radar-hr: Energy = 5.02e+06[0m
+[0;32mI (9120) radar-hr: Energy = 6.19e+06[0m
+[0;32mI (9120) radar-hr: Energy = 4.66e+06[0m
+[0;32mI (9130) radar-hr: Energy = 4.16e+06[0m
+[0;32mI (9130) radar-hr: Energy = 4.41e+06[0m
+[0;32mI (9140) radar-hr: Energy = 4.63e+06[0m
+[0;32mI (9140) radar-hr: Energy = 3.92e+06[0m
+[0;32mI (9150) radar-hr: Energy = 5.39e+06[0m
+[0;32mI (9150) radar-hr: Energy = 6.05e+06[0m
+[0;32mI (9160) radar-hr: Energy = 3.67e+06[0m
+[0;32mI (9160) radar-hr: Energy = 2.29e+06[0m
+[0;32mI (9170) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (9170) radar-hr: Energy = 6.91e+06[0m
+[0;32mI (9180) radar-hr: Energy = 6.98e+06[0m
+[0;32mI (9180) radar-hr: Energy = 4.71e+06[0m
+[0;32mI (9190) radar-hr: Energy = 3.50e+06[0m
+[0;32mI (9190) radar-hr: Energy = 5.46e+06[0m
+[0;32mI (9200) radar-hr: Energy = 5.34e+06[0m
+[0;32mI (9200) radar-hr: Energy = 4.06e+06[0m
+[0;32mI (9210) radar-hr: Energy = 4.95e+06[0m
+[0;32mI (9210) radar-hr: Energy = 3.93e+06[0m
+[0;32mI (9220) radar-hr: Energy = 5.59e+06[0m
+[0;32mI (9220) radar-hr: Energy = 6.21e+06[0m
+[0;32mI (9230) radar-hr: Energy = 7.06e+06[0m
+[0;32mI (9230) radar-hr: Energy = 4.13e+06[0m
+[0;32mI (9240) radar-hr: Energy = 4.99e+06[0m
+[0;32mI (9240) radar-hr: Energy = 4.51e+06[0m
+[0;32mI (9250) radar-hr: Energy = 5.31e+06[0m
+[0;32mI (9250) radar-hr: Energy = 6.96e+06[0m
+[0;32mI (9260) radar-hr: Energy = 5.26e+06[0m
+[0;32mI (9260) radar-hr: Energy = 4.44e+06[0m
+[0;32mI (9270) radar-hr: Energy = 4.76e+06[0m
+[0;32mI (9270) radar-hr: Energy = 6.20e+06[0m
+[0;32mI (9280) radar-hr: Energy = 5.15e+06[0m
+[0;32mI (9280) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (9290) radar-hr: Energy = 3.59e+06[0m
+[0;32mI (9290) radar-hr: Energy = 6.68e+06[0m
+[0;32mI (9300) radar-hr: Energy = 5.44e+06[0m
+[0;32mI (9300) radar-hr: Energy = 5.61e+06[0m
+[0;32mI (9310) radar-hr: Energy = 5.96e+06[0m
+[0;32mI (9310) radar-hr: Energy = 4.12e+06[0m
+[0;32mI (9330) radar-hr: Energy = 5.49e+06[0m
+[0;32mI (9330) radar-hr: Energy = 6.90e+06[0m
+[0;32mI (9330) radar-hr: Energy = 4.06e+06[0m
+[0;32mI (9330) radar-hr: Energy = 5.30e+06[0m
+[0;32mI (9350) radar-hr: Energy = 2.68e+06[0m
+[0;32mI (9350) radar-hr: Energy = 5.21e+06[0m
+[0;32mI (9350) radar-hr: Energy = 7.36e+06[0m
+[0;32mI (9350) radar-hr: Energy = 6.11e+06[0m
+[0;32mI (9370) radar-hr: Energy = 6.54e+06[0m
+[0;32mI (9370) radar-hr: Energy = 4.50e+06[0m
+[0;32mI (9370) radar-hr: Energy = 3.63e+06[0m
+[0;32mI (9370) radar-hr: Energy = 6.47e+06[0m
+[0;32mI (9380) radar-hr: Energy = 4.96e+06[0m
+[0;32mI (9380) radar-hr: Energy = 7.69e+06[0m
+[0;32mI (9400) radar-hr: Energy = 3.15e+06[0m
+[0;32mI (9400) radar-hr: Energy = 4.49e+06[0m
+[0;32mI (9400) radar-hr: Energy = 4.56e+06[0m
+[0;32mI (9400) radar-hr: Energy = 7.04e+06[0m
+[0;32mI (9420) radar-hr: Energy = 5.77e+06[0m
+[0;32mI (9420) radar-hr: Energy = 2.88e+06[0m
+[0;32mI (9420) radar-hr: Energy = 4.53e+06[0m
+[0;32mI (9420) radar-hr: Energy = 3.44e+06[0m
+[0;32mI (9430) radar-hr: Energy = 4.45e+06[0m
+[0;32mI (9430) radar-hr: Energy = 5.02e+06[0m
+[0;32mI (9450) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (9450) radar-hr: Energy = 3.27e+06[0m
+[0;32mI (9450) radar-hr: Energy = 3.52e+06[0m
+[0;32mI (9450) radar-hr: Energy = 5.75e+06[0m
+[0;32mI (9470) radar-hr: Energy = 5.27e+06[0m
+[0;32mI (9470) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (9470) radar-hr: Energy = 3.67e+06[0m
+[0;32mI (9470) radar-hr: Energy = 3.74e+06[0m
+[0;32mI (9480) radar-hr: Energy = 3.65e+06[0m
+[0;32mI (9480) radar-hr: Energy = 5.42e+06[0m
+[0;32mI (9480) radar-hr: Energy = 3.71e+06[0m
+[0;32mI (9500) radar-hr: Energy = 3.22e+06[0m
+[0;32mI (9500) radar-hr: Energy = 5.45e+06[0m
+[0;32mI (9500) radar-hr: Energy = 4.52e+06[0m
+[0;32mI (9520) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (9520) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (9520) radar-hr: Energy = 4.53e+06[0m
+[0;32mI (9520) radar-hr: Energy = 3.48e+06[0m
+[0;32mI (9540) radar-hr: Energy = 4.34e+06[0m
+[0;32mI (9540) radar-hr: Energy = 3.59e+06[0m
+[0;32mI (9540) radar-hr: Energy = 3.42e+06[0m
+[0;32mI (9540) radar-hr: Energy = 2.67e+06[0m
+[0;32mI (9560) radar-hr: Energy = 3.28e+06[0m
+[0;32mI (9560) radar-hr: Energy = 5.68e+06[0m
+[0;32mI (9560) radar-hr: Energy = 6.35e+06[0m
+[0;32mI (9560) radar-hr: Energy = 5.86e+06[0m
+[0;32mI (9580) radar-hr: Energy = 5.25e+06[0m
+[0;32mI (9580) radar-hr: Energy = 3.03e+06[0m
+[0;32mI (9580) radar-hr: Energy = 7.48e+06[0m
+[0;32mI (9580) radar-hr: Energy = 4.97e+06[0m
+[0;32mI (9590) radar-hr: Energy = 5.36e+06[0m
+[0;32mI (9590) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (9590) radar-hr: Energy = 3.13e+06[0m
+[0;32mI (9610) radar-hr: Energy = 3.17e+06[0m
+[0;32mI (9610) radar-hr: Energy = 3.50e+06[0m
+[0;32mI (9610) radar-hr: Energy = 4.13e+06[0m
+[0;32mI (9630) radar-hr: Energy = 3.14e+06[0m
+[0;32mI (9630) radar-hr: Energy = 4.03e+06[0m
+[0;32mI (9630) radar-hr: Energy = 4.68e+06[0m
+[0;32mI (9630) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (9650) radar-hr: Energy = 3.55e+06[0m
+[0;32mI (9650) radar-hr: Energy = 5.97e+06[0m
+[0;32mI (9650) radar-hr: Energy = 4.47e+06[0m
+[0;32mI (9650) radar-hr: Energy = 4.94e+06[0m
+[0;32mI (9670) radar-hr: Energy = 3.66e+06[0m
+[0;32mI (9670) radar-hr: Energy = 4.56e+06[0m
+[0;32mI (9670) radar-hr: Energy = 3.49e+06[0m
+[0;32mI (9670) radar-hr: Energy = 2.94e+06[0m
+[0;32mI (9690) radar-hr: Energy = 3.79e+06[0m
+[0;32mI (9690) radar-hr: Energy = 3.31e+06[0m
+[0;32mI (9690) radar-hr: Energy = 7.05e+06[0m
+[0;32mI (9690) radar-hr: Energy = 5.71e+06[0m
+[0;32mI (9710) radar-hr: Energy = 5.20e+06[0m
+[0;32mI (9710) radar-hr: Energy = 3.19e+06[0m
+[0;32mI (9710) radar-hr: Energy = 5.31e+06[0m
+[0;32mI (9710) radar-hr: Energy = 4.75e+06[0m
+[0;32mI (9730) radar-hr: Energy = 4.88e+06[0m
+[0;32mI (9730) radar-hr: Energy = 5.07e+06[0m
+[0;32mI (9730) radar-hr: Energy = 3.18e+06[0m
+[0;32mI (9730) radar-hr: Energy = 4.24e+06[0m
+[0;32mI (9750) radar-hr: Energy = 4.15e+06[0m
+[0;32mI (9750) radar-hr: Energy = 4.74e+06[0m
+[0;32mI (9750) radar-hr: Energy = 3.01e+06[0m
+[0;32mI (9750) radar-hr: Energy = 2.37e+06[0m
+[0;32mI (9770) radar-hr: Energy = 3.99e+06[0m
+[0;32mI (9770) radar-hr: Energy = 5.96e+06[0m
+[0;32mI (9770) radar-hr: Energy = 4.38e+06[0m
+[0;32mI (9770) radar-hr: Energy = 3.14e+06[0m
+[0;32mI (9790) radar-hr: Energy = 3.38e+06[0m
+[0;32mI (9790) radar-hr: Energy = 4.14e+06[0m
+[0;32mI (9790) radar-hr: Energy = 6.13e+06[0m
+[0;32mI (9790) radar-hr: Energy = 4.50e+06[0m
+[0;32mI (9810) radar-hr: Energy = 4.67e+06[0m
+[0;32mI (9810) radar-hr: Energy = 3.46e+06[0m
+[0;32mI (9810) radar-hr: Energy = 2.79e+06[0m
+[0;32mI (9810) radar-hr: Energy = 5.51e+06[0m
+[0;32mI (9830) radar-hr: Energy = 4.76e+06[0m
+[0;32mI (9830) radar-hr: Energy = 3.47e+06[0m
+[0;32mI (9830) radar-hr: Energy = 3.61e+06[0m
+[0;32mI (9830) radar-hr: Energy = 3.72e+06[0m
+[0;32mI (9850) radar-hr: Energy = 4.71e+06[0m
+[0;32mI (9850) radar-hr: Energy = 4.91e+06[0m
+[0;32mI (9850) radar-hr: Energy = 3.57e+06[0m
+[0;32mI (9850) radar-hr: Energy = 3.84e+06[0m
+[0;32mI (9870) radar-hr: Energy = 5.18e+06[0m
+[0;32mI (9870) radar-hr: Energy = 4.78e+06[0m
+[0;32mI (9870) radar-hr: Energy = 4.22e+06[0m
+[0;32mI (9870) radar-hr: Energy = 3.65e+06[0m
+[0;32mI (9890) radar-hr: Energy = 4.07e+06[0m
+[0;32mI (9890) radar-hr: Energy = 2.19e+06[0m
+[0;32mI (9890) radar-hr: Energy = 3.16e+06[0m
+[0;32mI (9890) radar-hr: Energy = 4.05e+06[0m
+[0;32mI (9900) radar-hr: Energy = 5.09e+06[0m
+[0;32mI (9900) radar-hr: Energy = 4.14e+06[0m
+[0;32mI (9920) radar-hr: Energy = 2.29e+06[0m
+[0;32mI (9920) radar-hr: Energy = 3.45e+06[0m
+[0;32mI (9920) radar-hr: Energy = 4.28e+06[0m
+[0;32mI (9920) radar-hr: Energy = 5.66e+06[0m
+[0;32mI (9940) radar-hr: Energy = 5.19e+06[0m
+[0;32mI (9940) radar-hr: Energy = 2.25e+06[0m
+[0;32mI (9940) radar-hr: Energy = 2.71e+06[0m
+[0;32mI (9940) radar-hr: Energy = 3.51e+06[0m
+[0;32mI (9960) radar-hr: Energy = 3.90e+06[0m
+[0;32mI (9960) radar-hr: Energy = 3.90e+06[0m
+[0;32mI (9960) radar-hr: Energy = 3.80e+06[0m
+[0;32mI (9960) radar-hr: Energy = 5.08e+06[0m
+[0;32mI (9980) radar-hr: Energy = 5.16e+06[0m
+[0;32mI (9980) radar-hr: Energy = 3.55e+06[0m
+[0;32mI (9980) radar-hr: Energy = 4.92e+06[0m
+[0;32mI (9980) radar-hr: Energy = 2.98e+06[0m
+[0;32mI (9990) radar-hr: Energy = 4.02e+06[0m
+[0;32mI (10000) radar-hr: Energy = 4.90e+06[0m
+[0;32mI (10000) radar-hr: Energy = 5.39e+06[0m

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Code/ESPIDF/Project_Anh_Sao/Service_MQTT
+# Install script for directory: D:/Code/ESPIDF/May-Do-Nhip-Tim-Radar/Service_MQTT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

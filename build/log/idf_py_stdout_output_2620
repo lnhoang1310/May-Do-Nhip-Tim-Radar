@@ -1,0 +1,764 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.1\tools/idf_monitor.py -p COM16 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\Project_Anh_Sao.elf D:\Code\ESPIDF\May-Do-Nhip-Tim-Radar\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.1\tools\idf.py' '-p' 'COM16'
+ESP-ROM:esp32s3-20210327
+Build:Mar 2�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x158c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f34
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.1 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Dec 21 2025 16:37:21[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=21b68h (138088) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=00031b90 vaddr=3fc9cb00 size=04b28h ( 19240) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=000366c0 vaddr=40374000 size=09958h ( 39256) load[0m
+[0;32mI (124) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a6c20h (683040) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000e6c48 vaddr=4037d958 size=0f158h ( 61784) load[0m
+[0;32mI (258) esp_image: segment 5: paddr=000f5da8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (268) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (268) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Multicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (287) app_init: Project name:     Project_Anh_Sao[0m
+[0;32mI (292) app_init: App version:      3b4af67-dirty[0m
+[0;32mI (296) app_init: Compile time:     Dec 21 2025 16:36:49[0m
+[0;32mI (301) app_init: ELF file SHA256:  208da320d...[0m
+[0;32mI (306) app_init: ESP-IDF:          v5.5.1[0m
+[0;32mI (310) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (313) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (317) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 3FCA5DA8 len 00043968 (270 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (338) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (343) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (349) spi_flash: detected chip: boya[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (367) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (373) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (380) main_task: Started on CPU0[0m
+[0;32mI (400) main_task: Calling app_main()[0m
+[0;32mI (430) pp: pp rom version: e7ae62f[0m
+[0;32mI (430) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (440) wifi:wifi driver task: 3fced4b0, prio:23, stack:6656, core=0[0m
+[0;32mI (450) wifi:wifi firmware version: 14da9b7[0m
+[0;32mI (450) wifi:wifi certification version: v7.0[0m
+[0;32mI (450) wifi:config NVS flash: enabled[0m
+[0;32mI (450) wifi:config nano formatting: disabled[0m
+[0;32mI (460) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (460) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (460) wifi:Init management short buffer num: 32[0m
+[0;32mI (470) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (470) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (480) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (480) wifi:Init static rx buffer num: 10[0m
+[0;32mI (480) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (490) wifi_init: rx ba win: 6[0m
+[0;32mI (490) wifi_init: accept mbox: 6[0m
+[0;32mI (490) wifi_init: tcpip mbox: 32[0m
+[0;32mI (500) wifi_init: udp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp mbox: 6[0m
+[0;32mI (500) wifi_init: tcp tx win: 5760[0m
+[0;32mI (510) wifi_init: tcp rx win: 5760[0m
+[0;32mI (510) wifi_init: tcp mss: 1440[0m
+[0;32mI (510) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (520) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (520) phy_init: phy_version 701,f4f1da3a,Mar  3 2025,15:50:10[0m
+[0;32mI (570) wifi:mode : sta (3c:dc:75:63:ed:7c)[0m
+[0;32mI (570) wifi:enable tsf[0m
+[0;32mI (570) WIFI: WiFi init finished[0m
+[0;32mI (570) WIFI: WiFi started → connecting...[0m
+[0;32mI (580) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (580) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (590) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (590) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (630) wifi:connected with Lâm Hoàng, aid = 1, channel 6, BW20, bssid = 42:af:68:77:84:97[0m
+[0;32mI (630) wifi:security: WPA2-PSK, phy: bgn, rssi: -44[0m
+[0;32mI (630) wifi:pm start, type: 1[0m
+
+[0;32mI (630) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (640) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (650) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2070) esp_netif_handlers: sta ip: 172.20.10.2, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (2070) WIFI: Got IP: 172.20.10.2[0m
+[0;32mI (2070) Main: Wifi Connected[0m
+[0;32mI (2070) MQTT_Service: MQTT Started[0m
+[0;32mI (2070) bgt60tr13c-driver: ID = 0x606[0m
+[0;32mI (2080) bgt60tr13c-driver: BGT60TR13C Verified. Digital Chip ID: 6 RF Chip ID: 6[0m
+[0;32mI (2080) wifi:<ba-add>idx:0 (ifx:0, 42:af:68:77:84:97), tid:0, ssn:2, winSize:64[0m
+[0;33mW (2100) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 1999472, instead register reads: 3998944[0m
+[0;33mW (2100) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 557584, instead register reads: 1115168[0m
+[1;31mE (2110) bgt60tr13c-driver: CLOCK NUMBER ERROR OCCURRED[0m
+ESP_ERROR_CHECK_WITHOUT_ABORT failed: esp_err_t 0x108 (ESP_ERR_INVALID_RESPONSE) at 0x420103c3
+file: "./bgt60tr13c_driver/bgt60tr13c_driver.c" line 253
+func: xensiv_bgt60tr13c_get_reg
+expression: xensiv_bgt60tr13c_check_gsr0_err(t.rx_data[0])
+[0;33mW (2140) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 15296509, instead register reads: 13815803[0m
+[0;33mW (2150) bgt60tr13c-driver: Verification for transaction failed. Tried to write: 525748, instead register reads: 1051496[0m
+[0;32mI (2160) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2170) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2180) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2190) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2200) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2210) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2220) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2230) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2240) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2250) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2260) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2270) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2280) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2290) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2300) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2310) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2320) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2330) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2340) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2350) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2360) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2370) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2380) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2390) bgt60tr13c-driver: Transaction verified. Successful write to register 0[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 1[0m
+[0;32mI (2400) bgt60tr13c-driver: Transaction verified. Successful write to register 4[0m
+[0;32mI (2410) bgt60tr13c-driver: Transaction verified. Successful write to register 5[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 6[0m
+[0;32mI (2420) bgt60tr13c-driver: Transaction verified. Successful write to register 7[0m
+[0;32mI (2430) bgt60tr13c-driver: Transaction verified. Successful write to register 8[0m
+[0;32mI (2440) bgt60tr13c-driver: Transaction verified. Successful write to register 9[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 10[0m
+[0;32mI (2450) bgt60tr13c-driver: Transaction verified. Successful write to register 11[0m
+[0;32mI (2460) bgt60tr13c-driver: Transaction verified. Successful write to register 12[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 14[0m
+[0;32mI (2470) bgt60tr13c-driver: Transaction verified. Successful write to register 15[0m
+[0;32mI (2480) bgt60tr13c-driver: Transaction verified. Successful write to register 16[0m
+[0;32mI (2490) bgt60tr13c-driver: Transaction verified. Successful write to register 17[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 18[0m
+[0;32mI (2500) bgt60tr13c-driver: Transaction verified. Successful write to register 22[0m
+[0;32mI (2510) bgt60tr13c-driver: Transaction verified. Successful write to register 29[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 36[0m
+[0;32mI (2520) bgt60tr13c-driver: Transaction verified. Successful write to register 43[0m
+[0;32mI (2530) bgt60tr13c-driver: Transaction verified. Successful write to register 44[0m
+[0;32mI (2540) bgt60tr13c-driver: Transaction verified. Successful write to register 45[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2550) bgt60tr13c-driver: Transaction verified. Successful write to register 47[0m
+[0;32mI (2560) bgt60tr13c-driver: Transaction verified. Successful write to register 48[0m
+[0;32mI (2570) bgt60tr13c-driver: Transaction verified. Successful write to register 49[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 50[0m
+[0;32mI (2580) bgt60tr13c-driver: Transaction verified. Successful write to register 51[0m
+[0;32mI (2590) bgt60tr13c-driver: Transaction verified. Successful write to register 52[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 53[0m
+[0;32mI (2600) bgt60tr13c-driver: Transaction verified. Successful write to register 55[0m
+[0;32mI (2610) bgt60tr13c-driver: Transaction verified. Successful write to register 63[0m
+[0;32mI (2620) bgt60tr13c-driver: Transaction verified. Successful write to register 71[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 79[0m
+[0;32mI (2630) bgt60tr13c-driver: Transaction verified. Successful write to register 86[0m
+[0;32mI (2640) bgt60tr13c-driver: Transaction verified. Successful write to register 91[0m
+[0;32mI (2650) radar-vital: Setting CCR2 for endless frames.[0m
+[0;32mI (2650) radar-vital: Original CCR2 value: 0x00000000[0m
+[0;32mI (2660) radar-vital: CCR2 value to write for endless frames (MAX_FRAME_CNT=0): 0x00000000[0m
+[0;32mI (2670) bgt60tr13c-driver: Transaction verified. Successful write to register 46[0m
+[0;32mI (2670) radar-vital: Successfully set CCR2 for endless frames.[0m
+[0;32mI (2680) radar-vital: New CCR2 value read back: 0x00000000[0m
+[0;32mI (2680) radar-vital: MAX_FRAME_CNT in CCR2 is 0. Configured for endless frames.[0m
+[0;32mI (2690) radar-vital: Measuring STARTED by MQTT[0m
+[0;32mI (2860) radar-vital: Variance: 0.0[0m
+[0;32mI (2860) radar-vital: Variance: 0.0[0m
+[0;32mI (2860) radar-vital: Variance: 0.0[0m
+[0;32mI (2880) radar-vital: Variance: 0.0[0m
+[0;32mI (2880) radar-vital: Variance: 0.0[0m
+[0;32mI (2880) radar-vital: Variance: 0.0[0m
+[0;32mI (2880) radar-vital: Variance: 0.0[0m
+[0;32mI (2890) radar-vital: Variance: 0.0[0m
+[0;32mI (2890) radar-vital: Variance: 0.0[0m
+[0;32mI (2890) radar-vital: Variance: 0.0[0m
+[0;32mI (2900) radar-vital: Variance: 2565637931008.0[0m
+[0;32mI (2900) radar-vital: Variance: 2263024140288.0[0m
+[0;32mI (2920) radar-vital: Variance: 2341702991872.0[0m
+[0;32mI (2920) radar-vital: Variance: 6517095399424.0[0m
+[0;32mI (2920) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (2920) radar-vital: Variance: 6345863987200.0[0m
+[0;32mI (2940) radar-vital: Variance: 6359095443456.0[0m
+[0;32mI (2940) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (2940) radar-vital: Variance: 6350388068352.0[0m
+[0;32mI (2940) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (2940) radar-vital: Variance: 6222450262016.0[0m
+[0;32mI (2950) radar-vital: Variance: 7325378674688.0[0m
+[0;32mI (2950) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (2960) radar-vital: Variance: 6859696111616.0[0m
+[0;32mI (2960) radar-vital: Variance: 6748675506176.0[0m
+[0;32mI (2960) radar-vital: Variance: 7514245562368.0[0m
+[0;32mI (2970) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (2970) radar-vital: Variance: 7696121069568.0[0m
+[0;32mI (2980) radar-vital: Variance: 3944148893696.0[0m
+[0;32mI (2980) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (2990) radar-vital: Variance: 3435085430784.0[0m
+[0;32mI (2990) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3000) radar-vital: Variance: 3446510452736.0[0m
+[0;32mI (3000) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3010) radar-vital: Variance: 5847319052288.0[0m
+[0;32mI (3010) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (3010) radar-vital: Variance: 5791824740352.0[0m
+[0;32mI (3020) radar-vital: Variance: 5568783712256.0[0m
+[0;32mI (3020) radar-vital: Variance: 8250861289472.0[0m
+[0;32mI (3030) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3030) radar-vital: Variance: 7975120928768.0[0m
+[0;32mI (3040) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (3040) radar-vital: Variance: 7236079321088.0[0m
+[0;32mI (3040) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (3050) radar-vital: Variance: 6159321792512.0[0m
+[0;32mI (3050) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (3060) radar-vital: Variance: 6181964742656.0[0m
+[0;32mI (3060) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (3070) radar-vital: Variance: 6793269870592.0[0m
+[0;32mI (3070) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3080) radar-vital: Variance: 6495530909696.0[0m
+[0;32mI (3080) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (3090) radar-vital: Variance: 5027680223232.0[0m
+[0;32mI (3090) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (3090) radar-vital: Variance: 4776108490752.0[0m
+[0;32mI (3100) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3100) radar-vital: Variance: 3807814877184.0[0m
+[0;32mI (3110) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3110) radar-vital: Variance: 2084555849728.0[0m
+[0;32mI (3120) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (3120) radar-vital: Variance: 2064709058560.0[0m
+[0;32mI (3120) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (3130) radar-vital: Variance: 2901350285312.0[0m
+[0;32mI (3130) radar-vital: Variance: 3025739186176.0[0m
+[0;32mI (3140) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (3140) radar-vital: Variance: 3184141533184.0[0m
+[0;32mI (3150) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3150) radar-vital: Variance: 1693144317952.0[0m
+[0;32mI (3160) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (3160) radar-vital: Variance: 1634673360896.0[0m
+[0;32mI (3160) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3170) radar-vital: Variance: 1647441084416.0[0m
+[0;32mI (3170) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3180) radar-vital: Variance: 1750493429760.0[0m
+[0;32mI (3180) radar-vital: Variance: 962129297408.0[0m
+[0;32mI (3190) radar-vital: Variance: 1128553775104.0[0m
+[0;32mI (3190) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3200) radar-vital: Variance: 1147848622080.0[0m
+[0;32mI (3200) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (3210) radar-vital: Variance: 731252129792.0[0m
+[0;32mI (3210) radar-vital: Variance: 698191708160.0[0m
+[0;32mI (3210) radar-vital: Variance: 703888097280.0[0m
+[0;32mI (3220) radar-vital: Variance: 844734201856.0[0m
+[0;32mI (3220) radar-vital: Variance: 1341808705536.0[0m
+[0;32mI (3230) radar-vital: Differ: 0.00, Unwrapped: -2.03[0m
+[0;32mI (3230) radar-vital: Variance: 1596894871552.0[0m
+[0;32mI (3230) radar-vital: Variance: 1883951595520.0[0m
+[0;32mI (3240) radar-vital: Variance: 1899022778368.0[0m
+[0;32mI (3240) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (3250) radar-vital: Variance: 1684166934528.0[0m
+[0;32mI (3250) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (3260) radar-vital: Variance: 1883465187328.0[0m
+[0;32mI (3260) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3270) radar-vital: Variance: 2005581692928.0[0m
+[0;32mI (3270) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (3270) radar-vital: Variance: 2779765276672.0[0m
+[0;32mI (3280) radar-vital: Variance: 2757714509824.0[0m
+[0;32mI (3280) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (3290) radar-vital: Variance: 2848205570048.0[0m
+[0;32mI (3290) radar-vital: Variance: 2234054344704.0[0m
+[0;32mI (3300) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (3300) radar-vital: Variance: 2271307628544.0[0m
+[0;32mI (3300) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (3310) radar-vital: Variance: 2024963833856.0[0m
+[0;32mI (3310) radar-vital: Variance: 2052017881088.0[0m
+[0;32mI (3320) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (3320) radar-vital: Variance: 2553016483840.0[0m
+[0;32mI (3330) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3330) radar-vital: Variance: 2405543444480.0[0m
+[0;32mI (3340) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (3340) radar-vital: Variance: 2325114781696.0[0m
+[0;32mI (3350) radar-vital: Variance: 2262273884160.0[0m
+[0;32mI (3350) radar-vital: Variance: 2809094209536.0[0m
+[0;32mI (3350) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (3360) radar-vital: Variance: 2608022421504.0[0m
+[0;32mI (3360) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3370) radar-vital: Variance: 2544217096192.0[0m
+[0;32mI (3370) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (3380) radar-vital: Variance: 4055390748672.0[0m
+[0;32mI (3380) radar-vital: Differ: 0.00, Unwrapped: -1.98[0m
+[0;32mI (3390) radar-vital: Variance: 4151854235648.0[0m
+[0;32mI (3390) radar-vital: Variance: 4178002837504.0[0m
+[0;32mI (3390) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3400) radar-vital: Variance: 3846011879424.0[0m
+[0;32mI (3400) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (3410) radar-vital: Variance: 4409768017920.0[0m
+[0;32mI (3410) radar-vital: Variance: 4181812051968.0[0m
+[0;32mI (3420) radar-vital: Differ: 0.00, Unwrapped: -2.04[0m
+[0;32mI (3420) radar-vital: Variance: 3647607406592.0[0m
+[0;32mI (3420) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (3430) radar-vital: Variance: 4915893633024.0[0m
+[0;32mI (3430) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (3440) radar-vital: Variance: 4837279268864.0[0m
+[0;32mI (3440) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (3450) radar-vital: Variance: 4843566530560.0[0m
+[0;32mI (3450) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (3460) radar-vital: Variance: 4450547138560.0[0m
+[0;32mI (3460) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (3470) radar-vital: Variance: 4340915896320.0[0m
+[0;32mI (3470) radar-vital: Variance: 4349601775616.0[0m
+[0;32mI (3470) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (3480) radar-vital: Variance: 4537517604864.0[0m
+[0;32mI (3480) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (3490) radar-vital: Variance: 3243230363648.0[0m
+[0;32mI (3490) radar-vital: Differ: 0.00, Unwrapped: -2.05[0m
+[0;32mI (3500) radar-vital: Variance: 3209435283456.0[0m
+[0;32mI (3500) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3510) radar-vital: Variance: 3727351349248.0[0m
+[0;32mI (3510) radar-vital: Variance: 2420928675840.0[0m
+[0;32mI (3510) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (3520) radar-vital: Variance: 3032120819712.0[0m
+[0;32mI (3520) radar-vital: Variance: 2726114885632.0[0m
+[0;32mI (3530) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (3530) radar-vital: Variance: 3113626370048.0[0m
+[0;32mI (3540) radar-vital: Variance: 3017723609088.0[0m
+[0;32mI (3540) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3550) radar-vital: Variance: 4102051069952.0[0m
+[0;32mI (3550) radar-vital: Variance: 4572165701632.0[0m
+[0;32mI (3550) radar-vital: Variance: 4499365167104.0[0m
+[0;32mI (3560) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (3560) radar-vital: Variance: 3824195207168.0[0m
+[0;32mI (3570) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (3570) radar-vital: Variance: 3831958077440.0[0m
+[0;32mI (3580) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (3580) radar-vital: Variance: 3991309647872.0[0m
+[0;32mI (3580) radar-vital: Differ: 0.00, Unwrapped: -2.27[0m
+[0;32mI (3590) radar-vital: Variance: 4138986110976.0[0m
+[0;32mI (3590) radar-vital: Differ: 0.00, Unwrapped: -2.06[0m
+[0;32mI (3600) radar-vital: Variance: 7029386117120.0[0m
+[0;32mI (3600) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (3610) radar-vital: Variance: 5847185883136.0[0m
+[0;32mI (3610) radar-vital: Differ: 0.00, Unwrapped: -1.97[0m
+[0;32mI (3620) radar-vital: Variance: 6942524702720.0[0m
+[0;32mI (3620) radar-vital: Variance: 5498465681408.0[0m
+[0;32mI (3620) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (3630) radar-vital: Variance: 4569223397376.0[0m
+[0;32mI (3630) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (3640) radar-vital: Variance: 4655555280896.0[0m
+[0;32mI (3640) radar-vital: Differ: 0.00, Unwrapped: -2.02[0m
+[0;32mI (3650) radar-vital: Variance: 4516563910656.0[0m
+[0;32mI (3650) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (3660) radar-vital: Variance: 7173757206528.0[0m
+[0;32mI (3660) radar-vital: Variance: 8731090747392.0[0m
+[0;32mI (3660) radar-vital: Variance: 9970470879232.0[0m
+[0;32mI (3670) radar-vital: Variance: 6129289003008.0[0m
+[0;32mI (3670) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (3680) radar-vital: Variance: 5938929991680.0[0m
+[0;32mI (3680) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (3690) radar-vital: Variance: 5593882427392.0[0m
+[0;32mI (3690) radar-vital: Variance: 6711315267584.0[0m
+[0;32mI (3690) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (3700) radar-vital: Variance: 6016319094784.0[0m
+[0;32mI (3700) radar-vital: Variance: 6143236112384.0[0m
+[0;32mI (3710) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (3710) radar-vital: Variance: 6020132765696.0[0m
+[0;32mI (3720) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3720) radar-vital: Variance: 4939587256320.0[0m
+[0;32mI (3730) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3730) radar-vital: Variance: 3824555130880.0[0m
+[0;32mI (3730) radar-vital: Differ: 0.00, Unwrapped: -2.06[0m
+[0;32mI (3740) radar-vital: Variance: 3006325587968.0[0m
+[0;32mI (3740) radar-vital: Variance: 4432188145664.0[0m
+[0;32mI (3750) radar-vital: Variance: 4239237054464.0[0m
+[0;32mI (3750) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (3760) radar-vital: Variance: 4017746870272.0[0m
+[0;32mI (3760) radar-vital: Differ: 0.00, Unwrapped: -0.71[0m
+[0;32mI (3770) radar-vital: Variance: 3019407622144.0[0m
+[0;32mI (3770) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (3780) radar-vital: Variance: 2689144979456.0[0m
+[0;32mI (3780) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3780) radar-vital: Variance: 1948685434880.0[0m
+[0;32mI (3790) radar-vital: Variance: 1728933920768.0[0m
+[0;32mI (3790) radar-vital: Variance: 1519882731520.0[0m
+[0;32mI (3800) radar-vital: Variance: 3201731919872.0[0m
+[0;32mI (3800) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (3810) radar-vital: Variance: 2990654619648.0[0m
+[0;32mI (3810) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (3820) radar-vital: Variance: 2783693242368.0[0m
+[0;32mI (3820) radar-vital: Differ: 0.00, Unwrapped: -2.06[0m
+[0;32mI (3820) radar-vital: Variance: 3873557970944.0[0m
+[0;32mI (3830) radar-vital: Variance: 3883958534144.0[0m
+[0;32mI (3830) radar-vital: Variance: 4146613452800.0[0m
+[0;32mI (3840) radar-vital: Variance: 4209220517888.0[0m
+[0;32mI (3840) radar-vital: Variance: 4118640852992.0[0m
+[0;32mI (3840) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (3850) radar-vital: Variance: 4775341981696.0[0m
+[0;32mI (3850) radar-vital: Variance: 4705337475072.0[0m
+[0;32mI (3860) radar-vital: Differ: 0.00, Unwrapped: -2.04[0m
+[0;32mI (3860) radar-vital: Variance: 4227524198400.0[0m
+[0;32mI (3870) radar-vital: Variance: 4142360428544.0[0m
+[0;32mI (3870) radar-vital: Variance: 1725971562496.0[0m
+[0;32mI (3880) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (3880) radar-vital: Variance: 2828401115136.0[0m
+[0;32mI (3880) radar-vital: Variance: 2706994102272.0[0m
+[0;32mI (3890) radar-vital: Variance: 2944118292480.0[0m
+[0;32mI (3890) radar-vital: Variance: 2811946074112.0[0m
+[0;32mI (3900) radar-vital: Variance: 2448444096512.0[0m
+[0;32mI (3900) radar-vital: Variance: 4195558096896.0[0m
+[0;32mI (3910) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (3910) radar-vital: Variance: 5290426630144.0[0m
+[0;32mI (3910) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (3920) radar-vital: Variance: 5154356068352.0[0m
+[0;32mI (3920) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (3930) radar-vital: Variance: 5175058104320.0[0m
+[0;32mI (3930) radar-vital: Variance: 5207017652224.0[0m
+[0;32mI (3940) radar-vital: Variance: 3937545486336.0[0m
+[0;32mI (3940) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (3950) radar-vital: Variance: 3868235923456.0[0m
+[0;32mI (3950) radar-vital: Differ: 0.00, Unwrapped: -2.04[0m
+[0;32mI (3960) radar-vital: Variance: 2904549752832.0[0m
+[0;32mI (3960) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3960) radar-vital: Variance: 4249452019712.0[0m
+[0;32mI (3970) radar-vital: Variance: 3499534319616.0[0m
+[0;32mI (3970) radar-vital: Variance: 3906133557248.0[0m
+[0;32mI (3980) radar-vital: Variance: 3890565087232.0[0m
+[0;32mI (3980) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (3990) radar-vital: Variance: 3730116968448.0[0m
+[0;32mI (3990) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (3990) radar-vital: Variance: 4361117237248.0[0m
+[0;32mI (4000) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (4000) radar-vital: Variance: 4124238938112.0[0m
+[0;32mI (4010) radar-vital: Variance: 4726254993408.0[0m
+[0;32mI (4010) radar-vital: Variance: 4595106447360.0[0m
+[0;32mI (4020) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (4020) radar-vital: Variance: 4150564487168.0[0m
+[0;32mI (4030) radar-vital: Variance: 3133129883648.0[0m
+[0;32mI (4030) radar-vital: Differ: 0.00, Unwrapped: -0.58[0m
+[0;32mI (4030) radar-vital: Variance: 3473438408704.0[0m
+[0;32mI (4040) radar-vital: Variance: 2891746377728.0[0m
+[0;32mI (4040) radar-vital: Differ: 0.00, Unwrapped: -2.27[0m
+[0;32mI (4050) radar-vital: Variance: 2408006287360.0[0m
+[0;32mI (4050) radar-vital: Differ: 0.00, Unwrapped: -2.29[0m
+[0;32mI (4060) radar-vital: Variance: 2381027999744.0[0m
+[0;32mI (4060) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4070) radar-vital: Variance: 2122036150272.0[0m
+[0;32mI (4070) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (4070) radar-vital: Variance: 2519453663232.0[0m
+[0;32mI (4080) radar-vital: Variance: 2372820271104.0[0m
+[0;32mI (4080) radar-vital: Variance: 2443939676160.0[0m
+[0;32mI (4090) radar-vital: Variance: 2464018595840.0[0m
+[0;32mI (4090) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (4100) radar-vital: Variance: 2610887393280.0[0m
+[0;32mI (4100) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4100) radar-vital: Variance: 2265093505024.0[0m
+[0;32mI (4110) radar-vital: Variance: 2496034242560.0[0m
+[0;32mI (4110) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (4120) radar-vital: Variance: 2642440355840.0[0m
+[0;32mI (4120) radar-vital: Differ: 0.00, Unwrapped: -2.13[0m
+[0;32mI (4130) radar-vital: Variance: 2744192598016.0[0m
+[0;32mI (4130) radar-vital: Variance: 2221035749376.0[0m
+[0;32mI (4140) radar-vital: Variance: 1958072680448.0[0m
+[0;32mI (4140) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4140) radar-vital: Variance: 1479595655168.0[0m
+[0;32mI (4150) radar-vital: Variance: 1841065230336.0[0m
+[0;32mI (4150) radar-vital: Differ: 0.00, Unwrapped: -2.34[0m
+[0;32mI (4160) radar-vital: Variance: 2607983099904.0[0m
+[0;32mI (4160) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4170) radar-vital: Variance: 3205079236608.0[0m
+[0;32mI (4170) radar-vital: Variance: 3350690529280.0[0m
+[0;32mI (4170) radar-vital: Variance: 3722636165120.0[0m
+[0;32mI (4180) radar-vital: Variance: 3668756398080.0[0m
+[0;32mI (4180) radar-vital: Variance: 3581953966080.0[0m
+[0;32mI (4190) radar-vital: Variance: 3703524818944.0[0m
+[0;32mI (4190) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (4200) radar-vital: Variance: 3547026423808.0[0m
+[0;32mI (4200) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (4210) radar-vital: Variance: 3265917353984.0[0m
+[0;32mI (4210) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (4210) radar-vital: Variance: 2741597896704.0[0m
+[0;32mI (4220) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (4220) radar-vital: Variance: 1431324590080.0[0m
+[0;32mI (4230) radar-vital: Variance: 1406331256832.0[0m
+[0;32mI (4230) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4240) radar-vital: Variance: 3788974850048.0[0m
+[0;32mI (4240) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4250) radar-vital: Variance: 3212156338176.0[0m
+[0;32mI (4250) radar-vital: Variance: 2711673634816.0[0m
+[0;32mI (4250) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4260) radar-vital: Variance: 3372316360704.0[0m
+[0;32mI (4260) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (4270) radar-vital: Variance: 3658864918528.0[0m
+[0;32mI (4270) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4280) radar-vital: Variance: 3558485262336.0[0m
+[0;32mI (4280) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (4290) radar-vital: Variance: 3684171251712.0[0m
+[0;32mI (4290) radar-vital: Variance: 4557315768320.0[0m
+[0;32mI (4290) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4300) radar-vital: Variance: 4012092948480.0[0m
+[0;32mI (4300) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4310) radar-vital: Variance: 4750077591552.0[0m
+[0;32mI (4310) radar-vital: Variance: 3908422860800.0[0m
+[0;32mI (4320) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4320) radar-vital: Variance: 3280460840960.0[0m
+[0;32mI (4320) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (4330) radar-vital: Variance: 3371062525952.0[0m
+[0;32mI (4330) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4340) radar-vital: Variance: 2891856740352.0[0m
+[0;32mI (4340) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (4350) radar-vital: Variance: 2917828919296.0[0m
+[0;32mI (4350) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (4360) radar-vital: Variance: 3403608227840.0[0m
+[0;32mI (4360) radar-vital: Variance: 4761060376576.0[0m
+[0;32mI (4360) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (4370) radar-vital: Variance: 4367808987136.0[0m
+[0;32mI (4370) radar-vital: Variance: 3587997696000.0[0m
+[0;32mI (4380) radar-vital: Differ: -0.00, Unwrapped: -0.61[0m
+[0;32mI (4380) radar-vital: Variance: 5325976502272.0[0m
+[0;32mI (4390) radar-vital: Variance: 5620115701760.0[0m
+[0;32mI (4390) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4400) radar-vital: Variance: 5923831021568.0[0m
+[0;32mI (4400) radar-vital: Variance: 5922203107328.0[0m
+[0;32mI (4400) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4410) radar-vital: Variance: 6717812768768.0[0m
+[0;32mI (4410) radar-vital: Variance: 7131948384256.0[0m
+[0;32mI (4420) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4420) radar-vital: Variance: 6939951497216.0[0m
+[0;32mI (4430) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4430) radar-vital: Variance: 4659247316992.0[0m
+[0;32mI (4440) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4440) radar-vital: Variance: 4517385994240.0[0m
+[0;32mI (4440) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4450) radar-vital: Variance: 4535381131264.0[0m
+[0;32mI (4450) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4460) radar-vital: Variance: 3353337135104.0[0m
+[0;32mI (4460) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (4470) radar-vital: Variance: 3132238856192.0[0m
+[0;32mI (4470) radar-vital: Variance: 2943344967680.0[0m
+[0;32mI (4480) radar-vital: Variance: 5857954758656.0[0m
+[0;32mI (4480) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4490) radar-vital: Variance: 5827715923968.0[0m
+[0;32mI (4490) radar-vital: Variance: 5751877140480.0[0m
+[0;32mI (4490) radar-vital: Differ: 0.00, Unwrapped: -2.29[0m
+[0;32mI (4500) radar-vital: Variance: 6034362990592.0[0m
+[0;32mI (4500) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4510) radar-vital: Variance: 6519123869696.0[0m
+[0;32mI (4510) radar-vital: Variance: 7006131322880.0[0m
+[0;32mI (4520) radar-vital: Differ: 0.00, Unwrapped: -2.24[0m
+[0;32mI (4520) radar-vital: Variance: 6992874176512.0[0m
+[0;32mI (4520) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (4530) radar-vital: Variance: 7793024172032.0[0m
+[0;32mI (4530) radar-vital: Variance: 7689398124544.0[0m
+[0;32mI (4540) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4540) radar-vital: Variance: 7467626921984.0[0m
+[0;32mI (4550) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4550) radar-vital: Variance: 4709715804160.0[0m
+[0;32mI (4560) radar-vital: Variance: 5506840133632.0[0m
+[0;32mI (4560) radar-vital: Variance: 5508127260672.0[0m
+[0;32mI (4560) radar-vital: Variance: 4677131829248.0[0m
+[0;32mI (4570) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (4570) radar-vital: Variance: 5346627158016.0[0m
+[0;32mI (4580) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4580) radar-vital: Variance: 4332752207872.0[0m
+[0;32mI (4590) radar-vital: Variance: 4395366875136.0[0m
+[0;32mI (4590) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4600) radar-vital: Variance: 3868418637824.0[0m
+[0;32mI (4600) radar-vital: Variance: 4016576135168.0[0m
+[0;32mI (4600) radar-vital: Variance: 3845460328448.0[0m
+[0;32mI (4610) radar-vital: Differ: 0.00, Unwrapped: -0.55[0m
+[0;32mI (4610) radar-vital: Variance: 4684644352000.0[0m
+[0;32mI (4620) radar-vital: Differ: 0.00, Unwrapped: -2.26[0m
+[0;32mI (4620) radar-vital: Variance: 2789818761216.0[0m
+[0;32mI (4630) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (4630) radar-vital: Variance: 2627532226560.0[0m
+[0;32mI (4630) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4640) radar-vital: Variance: 2585417220096.0[0m
+[0;32mI (4640) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (4650) radar-vital: Variance: 2168202854400.0[0m
+[0;32mI (4650) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4660) radar-vital: Variance: 2079346917376.0[0m
+[0;32mI (4660) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (4670) radar-vital: Variance: 2077658185728.0[0m
+[0;32mI (4670) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4680) radar-vital: Variance: 1855958286336.0[0m
+[0;32mI (4680) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (4680) radar-vital: Variance: 859008270336.0[0m
+[0;32mI (4690) radar-vital: Variance: 1204982251520.0[0m
+[0;32mI (4690) radar-vital: Variance: 902876889088.0[0m
+[0;32mI (4700) radar-vital: Variance: 1986475196416.0[0m
+[0;32mI (4700) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (4710) radar-vital: Variance: 1927711293440.0[0m
+[0;32mI (4710) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (4710) radar-vital: Variance: 4889870598144.0[0m
+[0;32mI (4720) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4720) radar-vital: Variance: 5102358757376.0[0m
+[0;32mI (4730) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4730) radar-vital: Variance: 5421671645184.0[0m
+[0;32mI (4740) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (4740) radar-vital: Variance: 6499423223808.0[0m
+[0;32mI (4750) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (4750) radar-vital: Variance: 6516594704384.0[0m
+[0;32mI (4750) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (4760) radar-vital: Variance: 6417047093248.0[0m
+[0;32mI (4760) radar-vital: Differ: 0.00, Unwrapped: -2.28[0m
+[0;32mI (4770) radar-vital: Variance: 5452514983936.0[0m
+[0;32mI (4770) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (4780) radar-vital: Variance: 7948177768448.0[0m
+[0;32mI (4780) radar-vital: Variance: 8769312391168.0[0m
+[0;32mI (4790) radar-vital: Variance: 9379894001664.0[0m
+[0;32mI (4790) radar-vital: Variance: 5624389697536.0[0m
+[0;32mI (4790) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4800) radar-vital: Variance: 6421769879552.0[0m
+[0;32mI (4800) radar-vital: Differ: 0.00, Unwrapped: -2.07[0m
+[0;32mI (4810) radar-vital: Variance: 6446493204480.0[0m
+[0;32mI (4810) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (4820) radar-vital: Variance: 4748378898432.0[0m
+[0;32mI (4820) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (4830) radar-vital: Variance: 4682944086016.0[0m
+[0;32mI (4830) radar-vital: Differ: 0.00, Unwrapped: -2.12[0m
+[0;32mI (4830) radar-vital: Variance: 4707178774528.0[0m
+[0;32mI (4840) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4840) radar-vital: Variance: 6192880418816.0[0m
+[0;32mI (4850) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4850) radar-vital: Variance: 4585459023872.0[0m
+[0;32mI (4860) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (4860) radar-vital: Variance: 3358623006720.0[0m
+[0;32mI (4870) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4870) radar-vital: Variance: 3097023217664.0[0m
+[0;32mI (4870) radar-vital: Variance: 3089960534016.0[0m
+[0;32mI (4880) radar-vital: Differ: 0.00, Unwrapped: -2.26[0m
+[0;32mI (4880) radar-vital: Variance: 2552286937088.0[0m
+[0;32mI (4890) radar-vital: Differ: 0.00, Unwrapped: -2.08[0m
+[0;32mI (4890) radar-vital: Variance: 2834560188416.0[0m
+[0;32mI (4900) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (4900) radar-vital: Variance: 4725997568000.0[0m
+[0;32mI (4910) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (4910) radar-vital: Variance: 4442521862144.0[0m
+[0;32mI (4910) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4920) radar-vital: Variance: 4322532261888.0[0m
+[0;32mI (4920) radar-vital: Differ: 0.00, Unwrapped: -2.05[0m
+[0;32mI (4930) radar-vital: Variance: 3601411342336.0[0m
+[0;32mI (4930) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (4940) radar-vital: Variance: 3408300343296.0[0m
+[0;32mI (4940) radar-vital: Differ: 0.00, Unwrapped: -2.06[0m
+[0;32mI (4950) radar-vital: Variance: 3649360625664.0[0m
+[0;32mI (4950) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (4960) radar-vital: Variance: 2700686655488.0[0m
+[0;32mI (4960) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (4960) radar-vital: Variance: 2115390275584.0[0m
+[0;32mI (4970) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (4970) radar-vital: Variance: 2379200593920.0[0m
+[0;32mI (4980) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4980) radar-vital: Variance: 2600465596416.0[0m
+[0;32mI (4990) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (4990) radar-vital: Variance: 2522664140800.0[0m
+[0;32mI (4990) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (5000) radar-vital: Variance: 2899641368576.0[0m
+[0;32mI (5000) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (5010) radar-vital: Variance: 2864058466304.0[0m
+[0;32mI (5010) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (5020) radar-vital: Variance: 3288113610752.0[0m
+[0;32mI (5020) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (5030) radar-vital: Variance: 2141098213376.0[0m
+[0;32mI (5030) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (5040) radar-vital: Variance: 2161153277952.0[0m
+[0;32mI (5040) radar-vital: Differ: 0.00, Unwrapped: -2.22[0m
+[0;32mI (5040) radar-vital: Variance: 3630400012288.0[0m
+[0;32mI (5050) radar-vital: Differ: 0.00, Unwrapped: -2.31[0m
+[0;32mI (5050) radar-vital: Variance: 3678572904448.0[0m
+[0;32mI (5060) radar-vital: Differ: 0.00, Unwrapped: -2.18[0m
+[0;32mI (5060) radar-vital: Variance: 6601328033792.0[0m
+[0;32mI (5070) radar-vital: Variance: 6641195941888.0[0m
+[0;32mI (5070) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (5080) radar-vital: Variance: 6546570870784.0[0m
+[0;32mI (5080) radar-vital: Differ: 0.00, Unwrapped: -2.24[0m
+[0;32mI (5080) radar-vital: Variance: 7337440968704.0[0m
+[0;32mI (5090) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (5090) radar-vital: Variance: 8810007625728.0[0m
+[0;32mI (5100) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (5100) radar-vital: Variance: 7884329975808.0[0m
+[0;32mI (5110) radar-vital: Differ: 0.00, Unwrapped: -2.10[0m
+[0;32mI (5110) radar-vital: Variance: 7741833740288.0[0m
+[0;32mI (5120) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (5120) radar-vital: Variance: 10950581157888.0[0m
+[0;32mI (5120) radar-vital: Differ: 0.00, Unwrapped: -2.16[0m
+[0;32mI (5130) radar-vital: Variance: 12801527513088.0[0m
+[0;32mI (5130) radar-vital: Differ: 0.00, Unwrapped: -2.17[0m
+[0;32mI (5140) radar-vital: Variance: 12621321338880.0[0m
+[0;32mI (5140) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (5150) radar-vital: Variance: 10250015997952.0[0m
+[0;32mI (5150) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (5160) radar-vital: Variance: 13818371506176.0[0m
+[0;32mI (5160) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (5170) radar-vital: Variance: 13607499726848.0[0m
+[0;32mI (5170) radar-vital: Differ: 0.00, Unwrapped: -2.29[0m
+[0;32mI (5170) radar-vital: Variance: 8242696552448.0[0m
+[0;32mI (5180) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (5180) radar-vital: Variance: 10951935918080.0[0m
+[0;32mI (5190) radar-vital: Differ: 0.00, Unwrapped: -2.28[0m
+[0;32mI (5190) radar-vital: Variance: 16853094105088.0[0m
+[0;32mI (5200) radar-vital: Differ: 0.00, Unwrapped: -2.19[0m
+[0;32mI (5200) radar-vital: Variance: 18946877030400.0[0m
+[0;32mI (5210) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (5210) radar-vital: Variance: 23763328434176.0[0m
+[0;32mI (5210) radar-vital: Variance: 21925640273920.0[0m
+[0;32mI (5220) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (5220) radar-vital: Variance: 22035159842816.0[0m
+[0;32mI (5230) radar-vital: Differ: 0.00, Unwrapped: -2.27[0m
+[0;32mI (5230) radar-vital: Variance: 16511226871808.0[0m
+[0;32mI (5240) radar-vital: Differ: 0.00, Unwrapped: -2.14[0m
+[0;32mI (5240) radar-vital: Variance: 6336255361024.0[0m
+[0;32mI (5250) radar-vital: Variance: 5152996589568.0[0m
+[0;32mI (5250) radar-vital: Differ: 0.00, Unwrapped: -2.20[0m
+[0;32mI (5260) radar-vital: Variance: 3114979295232.0[0m
+[0;32mI (5260) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (5260) radar-vital: Variance: 2467025125376.0[0m
+[0;32mI (5270) radar-vital: Differ: 0.00, Unwrapped: -2.09[0m
+[0;32mI (5270) radar-vital: Variance: 3794751979520.0[0m
+[0;32mI (5280) radar-vital: Differ: 0.00, Unwrapped: -2.15[0m
+[0;32mI (5280) radar-vital: Variance: 8599412670464.0[0m
+[0;32mI (5290) radar-vital: Differ: 0.00, Unwrapped: -2.06[0m
+[0;32mI (5290) radar-vital: Variance: 14492632088576.0[0m
+[0;32mI (5290) radar-vital: Differ: 0.00, Unwrapped: -2.11[0m
+[0;32mI (5300) radar-vital: Variance: 24248638767104.0[0m
+[0;32mI (5300) radar-vital: Differ: 0.00, Unwrapped: -2.23[0m
+[0;32mI (5310) radar-vital: Variance: 29534975950848.0[0m
+[0;32mI (5310) radar-vital: Differ: 0.00, Unwrapped: -2.24[0m
+[0;32mI (5320) radar-vital: Variance: 38617095340032.0[0m
+[0;32mI (5320) radar-vital: Differ: 0.00, Unwrapped: -2.27[0m
+[0;32mI (5330) radar-vital: Variance: 43407040839680.0[0m
+[0;32mI (5330) radar-vital: Differ: 0.00, Unwrapped: -2.24[0m
+[0;32mI (5340) radar-vital: Variance: 41345217462272.0[0m
+[0;32mI (5340) radar-vital: Differ: 0.00, Unwrapped: -2.21[0m
+[0;32mI (5350) radar-vital: Variance: 32617604841472.0[0m
+[0;32mI (5350) radar-vital: Differ: 0.00, Unwrapped: -2.25[0m
+[0;32mI (7430) MQTT_Service: MQTT Connected[0m
+[1;31mE (53490) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (53490) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (53500) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (73660) MQTT_Service: MQTT Connected[0m
+[1;31mE (353640) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[1;31mE (353640) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[1;31mE (353640) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (369610) MQTT_Service: MQTT Connected[0m
