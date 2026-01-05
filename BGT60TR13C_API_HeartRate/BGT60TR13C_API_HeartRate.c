@@ -16,7 +16,7 @@
 #define NUM_CHIRPS_PER_FRAME 1
 #define FRAME_RATE_HZ 200.0f // 1 / 0.005s
 
-#define HR_BUFFER_LEN  1024// ~2.56s window
+#define HR_BUFFER_LEN 1024 // ~2.56s window
 #define RANGE_BIN_START 10
 #define RANGE_BIN_END 50
 
@@ -30,8 +30,7 @@
 #define HUMAN_SCORE_TH 5
 #define HUMAN_SCORE_DECAY 1
 
-#define PHASE_WINDOW 64         // 320 ms @200Hz
-
+#define PHASE_WINDOW 64 // 320 ms @200Hz
 
 #define SPI_HOST SPI2_HOST
 #define SPI_CLK_SPEED 20
@@ -68,7 +67,6 @@ static uint32_t phase_idx = 0;
 static bool is_measuring = false;
 static bool human_present = false;
 static uint64_t measure_start_time = 0;
-static uint64_t last_publish_time = 0;
 static float minute_sum = 0.0f;
 static uint32_t minute_count = 0;
 static float current_minute_average = 0.0f;
@@ -195,7 +193,7 @@ static bool detect_human(
         if (human_score < 0)
             human_score = 0;
         stable_bin = -1;
-        //return false;
+        // return false;
     }
 
     /* ===== Bin smoothing ===== */
@@ -217,7 +215,7 @@ static bool detect_human(
         human_score -= 1; // giảm nhẹ hơn
         if (human_score < 0)
             human_score = 0;
-        //return false;
+        // return false;
     }
 
     /* ===== Phase variance ===== */
@@ -265,7 +263,6 @@ static bool detect_human(
 }
 
 /* ================= HEART RATE ================= */
-
 static void calculate_heart_rate(void)
 {
     static float bpm_smooth = 0.0f;
@@ -307,47 +304,20 @@ static void calculate_heart_rate(void)
             max_bin = i;
         }
     }
-    
-    if (max_bin < 0 || max_mag < 1e-3f){
+
+    if (max_bin < 0 || max_mag < 1e-3f)
+    {
         return;
     }
     ESP_LOGW(TAG, "max_bin = %d, max_mag = %.2e", max_bin, max_mag);
     float bpm = (fs * max_bin / HR_BUFFER_LEN) * 60.0f;
-    if(bpm_smooth == 0.0f){
+    if (bpm_smooth == 0.0f)
+    {
         bpm_smooth = bpm;
     }
-    bpm_smooth = 0.3*bpm + 0.7*bpm_smooth;
-
-    uint64_t current_time = esp_timer_get_time() / 1000;
+    bpm_smooth = 0.3 * bpm + 0.7 * bpm_smooth;
     minute_sum += bpm_smooth;
     minute_count++;
-    if (current_time - last_publish_time >= 60000)
-    {
-        if (minute_count > 0)
-        {
-            current_minute_average = minute_sum / minute_count;
-            current_minute_average = (last_hr_average * measure_count + current_minute_average) / (measure_count + 1);
-            measure_count++;
-            last_hr_average = current_minute_average;
-            MQTT_Publish((current_minute_average < MIN_HEART_RATE) ? "L" : ((current_minute_average > MAX_HEART_RATE) ? "H" : "M"), current_minute_average);
-            buzzer_cmd_t cmd = BUZZER_NONE;
-
-            if (current_minute_average < MIN_HEART_RATE)
-                cmd = BUZZER_LOW_HR;
-            else if (current_minute_average > MAX_HEART_RATE)
-                cmd = BUZZER_HIGH_HR;
-
-            if (cmd != BUZZER_NONE)
-                xQueueSend(buzzer_queue, &cmd, 0);
-
-            uint64_t elapsed_minutes = (current_time - measure_start_time) / 60000 + 1;
-            ESP_LOGI(TAG, "Published MINUTE %llu average: %.1f BPM (%lu samples)",
-                     elapsed_minutes, current_minute_average, minute_count);
-        }
-        minute_sum = 0.0f;
-        minute_count = 0;
-        last_publish_time = current_time;
-    }
 }
 
 /* ================= RADAR TASK ================= */
@@ -426,6 +396,44 @@ static void radar_task(void *arg)
     }
     free(fifo);
     vTaskDelete(NULL);
+}
+
+static void mqtt_update_task(void *arg)
+{
+    while (1)
+    {
+        vTaskDelay(pdMS_TO_TICKS(60000));
+        if (!is_measuring)
+            continue;
+        buzzer_cmd_t cmd = BUZZER_NONE;
+        if (minute_count > 0)
+        {
+            current_minute_average = minute_sum / minute_count;
+            current_minute_average = (last_hr_average * measure_count + current_minute_average) / (measure_count + 1);
+            measure_count++;
+            last_hr_average = current_minute_average;
+            MQTT_Publish((current_minute_average < MIN_HEART_RATE) ? "L" : ((current_minute_average > MAX_HEART_RATE) ? "H" : "M"), current_minute_average);
+
+            if (current_minute_average < MIN_HEART_RATE)
+                cmd = BUZZER_LOW_HR;
+            else if (current_minute_average > MAX_HEART_RATE)
+                cmd = BUZZER_HIGH_HR;
+
+            uint64_t current_time = esp_timer_get_time() / 1000;
+            uint64_t elapsed_minutes = (current_time - measure_start_time) / 60000 + 1;
+            ESP_LOGI(TAG, "Published MINUTE %llu average: %.1f BPM (%lu samples)",
+                     elapsed_minutes, current_minute_average, minute_count);
+        }
+        else
+        {
+            MQTT_Publish("L", 0.0f);
+            cmd = BUZZER_LOW_HR;
+        }
+        minute_sum = 0.0f;
+        minute_count = 0;
+        if (cmd != BUZZER_NONE)
+            xQueueSend(buzzer_queue, &cmd, 0);
+    }
 }
 
 /* ================= INIT ================= */
@@ -545,6 +553,7 @@ void BGT60TR13C_Init(spi_host_device_t spi)
 
     xTaskCreate(radar_task, "radar_task", 16384, NULL, 5, NULL);
     xTaskCreate(buzzer_task, "buzzer_task", 2048, NULL, 3, NULL);
+    xTaskCreatePinnedToCore(mqtt_update_task, "mqtt_update_task", 4096, NULL, 4, NULL, 1);
     // buzzer_cmd_t cmd = BUZZER_HIGH_HR;
     // xQueueSend(buzzer_queue, &cmd, 0);
 }
@@ -557,7 +566,6 @@ void Start_Measuring(void)
 
         uint64_t now = esp_timer_get_time() / 1000;
         measure_start_time = now;
-        last_publish_time = now;
         minute_sum = 0.0f;
         minute_count = 0;
         current_minute_average = 0.0f;
